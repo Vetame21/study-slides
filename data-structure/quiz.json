@@ -1,0 +1,404 @@
+[
+  {
+    "chapter": { "en": "Chapter 1. Data Structures and Algorithms", "id": "Bab 1. Struktur Data dan Algoritma" },
+    "questions": [
+      {
+        "source": "p. 8",
+        "q": { "en": "Why is having the necessary information not enough?", "id": "Mengapa memiliki informasi yang diperlukan saja tidak cukup?" },
+        "options": [
+          { "en": "It must be encrypted first", "id": "Informasi harus dienkripsi dulu" },
+          { "en": "It must be organized so answers can be found in time", "id": "Informasi harus diorganisasi agar jawaban dapat ditemukan tepat waktu" },
+          { "en": "It must be stored in a database", "id": "Informasi harus disimpan di basis data" },
+          { "en": "It must be written in C++", "id": "Informasi harus ditulis dalam C++" }
+        ],
+        "answer": 1,
+        "why": { "en": "The slide says we must organize information so that answers can be found in time to satisfy our needs.", "id": "Slide menyatakan informasi harus diorganisasi agar jawaban dapat ditemukan tepat waktu sesuai kebutuhan." }
+      },
+      {
+        "source": "p. 11",
+        "q": { "en": "Which is the definition of a data structure?", "id": "Manakah definisi struktur data?" },
+        "options": [
+          { "en": "A method or process followed to solve a problem", "id": "Metode atau proses yang diikuti untuk menyelesaikan masalah" },
+          { "en": "A language-independent model made of values and operations", "id": "Model yang tidak bergantung bahasa, terdiri dari nilai dan operasi" },
+          { "en": "A particular way of storing and organizing data so it can be used efficiently", "id": "Cara tertentu untuk menyimpan dan mengorganisasi data agar dapat digunakan secara efisien" },
+          { "en": "A program that runs within its resource constraints", "id": "Program yang berjalan dalam batasan sumber dayanya" }
+        ],
+        "answer": 2,
+        "why": { "en": "Option 1 is the definition of an algorithm (p. 22) and option 2 is an ADT (p. 17).", "id": "Pilihan 1 adalah definisi algoritma (hlm. 22) dan pilihan 2 adalah ADT (hlm. 17)." }
+      },
+      {
+        "source": "p. 13",
+        "q": { "en": "Which data structure does the deck use for games like Gobang, Chess and Tic-Tac-Toe?", "id": "Struktur data apa yang digunakan deck untuk permainan seperti Gobang, Catur, dan Tic-Tac-Toe?" },
+        "options": [
+          { "en": "List", "id": "List" },
+          { "en": "Tree", "id": "Tree" },
+          { "en": "Graph", "id": "Graph" }
+        ],
+        "answer": 1,
+        "why": { "en": "Page 13 pairs games with a Tree. The library catalogue is the List example (p. 12) and the social network is the Graph example (p. 14).", "id": "Halaman 13 memasangkan permainan dengan Tree. Katalog perpustakaan adalah contoh List (hlm. 12) dan jejaring sosial adalah contoh Graph (hlm. 14)." }
+      },
+      {
+        "source": "p. 14",
+        "q": { "en": "A social network is modelled with which data structure?", "id": "Jejaring sosial dimodelkan dengan struktur data apa?" },
+        "options": [
+          { "en": "Graph", "id": "Graph" },
+          { "en": "List", "id": "List" },
+          { "en": "Tree", "id": "Tree" }
+        ],
+        "answer": 0,
+        "why": { "en": "Page 14: Social network → Graph.", "id": "Halaman 14: Jejaring sosial → Graph." }
+      },
+      {
+        "source": "p. 17",
+        "q": { "en": "An Abstract Data Type (ADT) is defined in terms of…", "id": "Abstract Data Type (ADT) didefinisikan berdasarkan…" },
+        "options": [
+          { "en": "Source code and a compiler", "id": "Kode sumber dan kompiler" },
+          { "en": "An array and a pointer", "id": "Sebuah array dan pointer" },
+          { "en": "Input files and output files", "id": "File input dan file output" },
+          { "en": "A set of values and a set of operations on the data", "id": "Sekumpulan nilai dan sekumpulan operasi pada data" }
+        ],
+        "answer": 3,
+        "why": { "en": "Page 17 defines an ADT by its values and operations, independent of any language.", "id": "Halaman 17 mendefinisikan ADT dari nilai dan operasinya, tanpa bergantung pada bahasa apa pun." }
+      },
+      {
+        "source": "p. 18",
+        "q": { "en": "What does this List ADT NOT tell you?", "id": "Apa yang TIDAK diberitahukan oleh ADT List ini?" },
+        "code": "template <class Elem>\nclass List {\npublic:\n  virtual void clear() = 0;\n  virtual bool insert(const Elem&) = 0;\n  virtual bool append(const Elem&) = 0;\n  // ...\n};",
+        "options": [
+          { "en": "Which operations a list supports", "id": "Operasi apa saja yang didukung list" },
+          { "en": "How the elements are stored (e.g. in an array)", "id": "Bagaimana elemen disimpan (mis. dalam array)" },
+          { "en": "What type insert() returns", "id": "Tipe data yang dikembalikan insert()" },
+          { "en": "What parameter append() takes", "id": "Parameter apa yang diterima append()" }
+        ],
+        "answer": 1,
+        "why": { "en": "The slide says an ADT is 'only about input and output', with no detail about implementation.", "id": "Slide menyatakan ADT 'hanya tentang input dan output', tanpa detail implementasi." }
+      },
+      {
+        "source": "p. 19",
+        "q": { "en": "Implementing a data structure means deciding two things. Which two?", "id": "Mengimplementasikan struktur data berarti memutuskan dua hal. Apa saja?" },
+        "options": [
+          { "en": "How to store/organize the data, and how to implement the operations", "id": "Cara menyimpan/mengorganisasi data, dan cara mengimplementasikan operasi" },
+          { "en": "Which language to use, and which compiler to use", "id": "Bahasa yang dipakai, dan kompiler yang dipakai" },
+          { "en": "The best case, and the worst case", "id": "Kasus terbaik, dan kasus terburuk" },
+          { "en": "The upper bound, and the lower bound", "id": "Batas atas, dan batas bawah" }
+        ],
+        "answer": 0,
+        "why": { "en": "Page 19: decide how to store and organize the data, and how to implement the operations (each as one or more subroutines).", "id": "Halaman 19: tentukan cara menyimpan dan mengorganisasi data, serta cara mengimplementasikan operasi (masing-masing sebagai satu atau lebih subrutin)." }
+      },
+      {
+        "source": "p. 23",
+        "q": { "en": "Which of these is NOT one of the algorithm properties on the slide?", "id": "Manakah yang BUKAN salah satu sifat algoritma di slide?" },
+        "options": [
+          { "en": "It must terminate", "id": "Harus berhenti" },
+          { "en": "It must be composed of a finite number of steps", "id": "Harus terdiri dari jumlah langkah yang berhingga" },
+          { "en": "It must run in O(n) time", "id": "Harus berjalan dalam waktu O(n)" },
+          { "en": "There can be no ambiguity about which step is next", "id": "Tidak boleh ada ambiguitas tentang langkah berikutnya" }
+        ],
+        "answer": 2,
+        "why": { "en": "The five properties are: correct, concrete steps, no ambiguity, finite steps, terminates. Nothing about speed.", "id": "Lima sifatnya: benar, langkah konkret, tidak ambigu, langkah berhingga, berhenti. Tidak ada syarat kecepatan." }
+      },
+      {
+        "source": "p. 25",
+        "q": { "en": "Which statement matches the slide 'Data structure vs Algorithm'?", "id": "Pernyataan mana yang sesuai dengan slide 'Struktur Data vs Algoritma'?" },
+        "options": [
+          { "en": "Data structures process data; algorithms store it", "id": "Struktur data memproses data; algoritma menyimpannya" },
+          { "en": "Data structures and algorithms are unrelated", "id": "Struktur data dan algoritma tidak saling berkaitan" },
+          { "en": "A program needs only a good algorithm", "id": "Program hanya butuh algoritma yang bagus" },
+          { "en": "Data structures store and organize data; algorithms process it", "id": "Struktur data menyimpan dan mengorganisasi data; algoritma memprosesnya" }
+        ],
+        "answer": 3,
+        "why": { "en": "Data structures + algorithms = programs, and the two are strongly correlated.", "id": "Struktur data + algoritma = program, dan keduanya saling berkaitan erat." }
+      },
+      {
+        "source": "p. 27",
+        "q": { "en": "When is an algorithm called efficient?", "id": "Kapan sebuah algoritma disebut efisien?" },
+        "options": [
+          { "en": "When it is the shortest code", "id": "Saat kodenya paling pendek" },
+          { "en": "When it solves the problem within its resource constraints (space, time)", "id": "Saat menyelesaikan masalah dalam batasan sumber dayanya (ruang, waktu)" },
+          { "en": "When it uses no memory", "id": "Saat tidak menggunakan memori" },
+          { "en": "When it is easy to debug", "id": "Saat mudah di-debug" }
+        ],
+        "answer": 1,
+        "why": { "en": "Page 27 defines efficiency by resource constraints: space and time.", "id": "Halaman 27 mendefinisikan efisiensi berdasarkan batasan sumber daya: ruang dan waktu." }
+      },
+      {
+        "source": "p. 28",
+        "q": { "en": "What is the FIRST step when selecting a data structure?", "id": "Apa langkah PERTAMA saat memilih struktur data?" },
+        "options": [
+          { "en": "Pick the data structure you know best", "id": "Pilih struktur data yang paling kamu kuasai" },
+          { "en": "Write the code and measure it", "id": "Tulis kodenya lalu ukur" },
+          { "en": "Analyze the problem to determine the resource constraints", "id": "Analisis masalah untuk menentukan batasan sumber daya" },
+          { "en": "Choose the fastest sorting algorithm", "id": "Pilih algoritma pengurutan tercepat" }
+        ],
+        "answer": 2,
+        "why": { "en": "Order: 1) analyze constraints, 2) determine and quantify basic operations, 3) select the structure that best meets them.", "id": "Urutannya: 1) analisis batasan, 2) tentukan dan kuantifikasi operasi dasar, 3) pilih struktur yang paling memenuhi." }
+      },
+      {
+        "source": "p. 29",
+        "q": { "en": "Which is one of the questions the slide says to ask when selecting a data structure?", "id": "Manakah salah satu pertanyaan yang disarankan slide saat memilih struktur data?" },
+        "options": [
+          { "en": "Can data be deleted?", "id": "Apakah data bisa dihapus?" },
+          { "en": "Which IDE will be used?", "id": "IDE apa yang akan dipakai?" },
+          { "en": "How many programmers are on the team?", "id": "Berapa programmer di tim?" },
+          { "en": "Is the code open source?", "id": "Apakah kodenya open source?" }
+        ],
+        "answer": 0,
+        "why": { "en": "The three questions: when insertions happen, whether data can be deleted, and ordered vs random access.", "id": "Tiga pertanyaannya: kapan penyisipan terjadi, apakah data bisa dihapus, dan akses berurutan vs acak." }
+      }
+    ]
+  },
+  {
+    "chapter": { "en": "Chapter 2. Mathematical Preliminaries", "id": "Bab 2. Dasar-Dasar Matematika" },
+    "note": { "en": "[NOTE] The source only lists Chapter 2's topics. Questions 2–6 are [ADDED]: they test maths that the Chapter 3 slides rely on. Check them against the textbook (Shaffer, Ch. 2).", "id": "[NOTE] Sumber hanya mencantumkan topik Bab 2. Soal 2–6 adalah [ADDED]: menguji matematika yang dipakai di slide Bab 3. Cocokkan dengan buku teks (Shaffer, Bab 2)." },
+    "questions": [
+      {
+        "source": "p. 31",
+        "q": { "en": "Which of these is NOT a Chapter 2 topic?", "id": "Manakah yang BUKAN topik Bab 2?" },
+        "options": [
+          { "en": "Recursion", "id": "Rekursi" },
+          { "en": "Logarithms", "id": "Logaritma" },
+          { "en": "Big-Oh notation", "id": "Notasi Big-Oh" },
+          { "en": "Summations", "id": "Sumasi (penjumlahan)" }
+        ],
+        "answer": 2,
+        "why": { "en": "Chapter 2 covers sets, recursion, induction proofs, logarithms and summations. Big-Oh belongs to Chapter 3.", "id": "Bab 2 membahas himpunan, rekursi, pembuktian induksi, logaritma, dan sumasi. Big-Oh termasuk Bab 3." }
+      },
+      {
+        "source": "[ADDED] used on p. 60",
+        "q": { "en": "1 + 2 + 3 + … + n equals…", "id": "1 + 2 + 3 + … + n sama dengan…" },
+        "options": [
+          { "en": "n²", "id": "n²" },
+          { "en": "n(n+1)/2", "id": "n(n+1)/2" },
+          { "en": "2n", "id": "2n" },
+          { "en": "n(n−1)", "id": "n(n−1)" }
+        ],
+        "answer": 1,
+        "why": { "en": "This is the formula shown on p. 60 for the triangle-shaped double loop. Check: n = 4 gives 1+2+3+4 = 10 = 4·5/2.", "id": "Ini rumus yang ditampilkan di hlm. 60 untuk loop ganda berbentuk segitiga. Cek: n = 4 menghasilkan 1+2+3+4 = 10 = 4·5/2." }
+      },
+      {
+        "source": "[ADDED] used on p. 64",
+        "q": { "en": "What is log₂ 1024?", "id": "Berapa log₂ 1024?" },
+        "options": [
+          { "en": "10", "id": "10" },
+          { "en": "512", "id": "512" },
+          { "en": "32", "id": "32" },
+          { "en": "2", "id": "2" }
+        ],
+        "answer": 0,
+        "why": { "en": "2¹⁰ = 1024. log₂ n asks 'how many times can I halve n until I reach 1?', which is why binary search is Θ(log n).", "id": "2¹⁰ = 1024. log₂ n bertanya 'berapa kali n bisa dibagi dua sampai mencapai 1?', itulah sebabnya binary search Θ(log n)." }
+      },
+      {
+        "source": "[ADDED] Equation 2.8, used on p. 61",
+        "q": { "en": "If n is a power of 2, what is 1 + 2 + 4 + … + n?", "id": "Jika n adalah pangkat 2, berapa 1 + 2 + 4 + … + n?" },
+        "options": [
+          { "en": "n log n", "id": "n log n" },
+          { "en": "n²", "id": "n²" },
+          { "en": "log n", "id": "log n" },
+          { "en": "2n − 1", "id": "2n − 1" }
+        ],
+        "answer": 3,
+        "why": { "en": "Each power of 2 is one more than the sum of all smaller ones. Check: n = 16 gives 1+2+4+8+16 = 31 = 2·16 − 1. That is why the second loop on p. 61 is Θ(n).", "id": "Setiap pangkat 2 lebih satu dari jumlah semua pangkat yang lebih kecil. Cek: n = 16 menghasilkan 1+2+4+8+16 = 31 = 2·16 − 1. Itulah sebabnya loop kedua di hlm. 61 adalah Θ(n)." }
+      },
+      {
+        "source": "[ADDED] used on p. 64",
+        "q": { "en": "T(1) = c, T(n) = T(n/2) + c defines T in terms of itself on a smaller input. Which Chapter 2 topic is this?", "id": "T(1) = c, T(n) = T(n/2) + c mendefinisikan T dengan dirinya sendiri pada input yang lebih kecil. Ini topik Bab 2 yang mana?" },
+        "options": [
+          { "en": "Set notation", "id": "Notasi himpunan" },
+          { "en": "Logarithms", "id": "Logaritma" },
+          { "en": "Recursion", "id": "Rekursi" },
+          { "en": "Summations", "id": "Sumasi" }
+        ],
+        "answer": 2,
+        "why": { "en": "A definition that refers to itself on a smaller case, with a base case T(1), is recursive. (Solving it gives a logarithm, but the definition itself is recursion.)", "id": "Definisi yang merujuk ke dirinya sendiri pada kasus lebih kecil, dengan kasus dasar T(1), bersifat rekursif. (Penyelesaiannya menghasilkan logaritma, tetapi definisinya sendiri adalah rekursi.)" }
+      },
+      {
+        "source": "[ADDED]",
+        "q": { "en": "To prove a statement for all n ≥ 1 by induction, you prove the base case and then…", "id": "Untuk membuktikan pernyataan untuk semua n ≥ 1 dengan induksi, kamu membuktikan kasus dasar lalu…" },
+        "options": [
+          { "en": "Check it for n = 2 and n = 3", "id": "Mengecek untuk n = 2 dan n = 3" },
+          { "en": "Show that if it holds for n − 1, it also holds for n", "id": "Menunjukkan bahwa jika berlaku untuk n − 1, maka berlaku juga untuk n" },
+          { "en": "Show it fails for some large n", "id": "Menunjukkan bahwa pernyataan gagal untuk n besar" },
+          { "en": "Run the program for every n", "id": "Menjalankan program untuk setiap n" }
+        ],
+        "answer": 1,
+        "why": { "en": "Base case + induction step: like dominoes, the first one falls, and each one knocks over the next. Checking a few values is not a proof.", "id": "Kasus dasar + langkah induksi: seperti domino, yang pertama jatuh, dan setiap domino menjatuhkan yang berikutnya. Mengecek beberapa nilai bukan pembuktian." }
+      }
+    ]
+  },
+  {
+    "chapter": { "en": "Chapter 3. Algorithm Analysis", "id": "Bab 3. Analisis Algoritma" },
+    "questions": [
+      {
+        "source": "p. 37",
+        "q": { "en": "What does T(n) mean?", "id": "Apa arti T(n)?" },
+        "options": [
+          { "en": "The number of test cases", "id": "Jumlah kasus uji" },
+          { "en": "The space used, as a function of input size n", "id": "Ruang yang dipakai, sebagai fungsi ukuran input n" },
+          { "en": "The running time, as a function of input size n", "id": "Waktu eksekusi, sebagai fungsi ukuran input n" },
+          { "en": "The time to compile the program", "id": "Waktu untuk mengompilasi program" }
+        ],
+        "answer": 2,
+        "why": { "en": "T(n) is running time; S(n) is space. Both are functions of the input size n.", "id": "T(n) adalah waktu eksekusi; S(n) adalah ruang. Keduanya fungsi dari ukuran input n." }
+      },
+      {
+        "source": "p. 38",
+        "q": { "en": "The slide's code for an array of size n. What happens on the last loop pass?", "id": "Kode di slide untuk array berukuran n. Apa yang terjadi pada putaran loop terakhir?" },
+        "code": "int largest(int array[], int n) {\n  int currlarge = 0;\n  for (int i=1; i<=n; i++)\n    if (array[currlarge] < array[i])\n      currlarge = i;\n  return currlarge;\n}",
+        "options": [
+          { "en": "Nothing special; it compares the last element", "id": "Tidak ada yang khusus; membandingkan elemen terakhir" },
+          { "en": "It reads array[n], one past the end of the array", "id": "Membaca array[n], satu posisi melewati akhir array" },
+          { "en": "It does not compile", "id": "Tidak bisa dikompilasi" },
+          { "en": "It skips the first element", "id": "Melewatkan elemen pertama" }
+        ],
+        "answer": 1,
+        "why": { "en": "Valid indices are 0..n−1, so i <= n reads array[n]. Fix: i < n. (It compiles, but it is an out-of-bounds read; it does start at 1 because currlarge already holds index 0.)", "id": "Indeks valid adalah 0..n−1, jadi i <= n membaca array[n]. Perbaikan: i < n. (Kode ini bisa dikompilasi, tetapi membaca di luar batas; mulai dari 1 karena currlarge sudah memegang indeks 0.)" }
+      },
+      {
+        "source": "p. 41",
+        "q": { "en": "Sequential search in n integers, each position equally likely. Average number of compares?", "id": "Pencarian sekuensial pada n bilangan, setiap posisi berpeluang sama. Rata-rata jumlah perbandingan?" },
+        "options": [
+          { "en": "1", "id": "1" },
+          { "en": "n", "id": "n" },
+          { "en": "log n", "id": "log n" },
+          { "en": "(n+1)/2", "id": "(n+1)/2" }
+        ],
+        "answer": 3,
+        "why": { "en": "Best case 1, worst case n, average (n+1)/2.", "id": "Kasus terbaik 1, terburuk n, rata-rata (n+1)/2." }
+      },
+      {
+        "source": "p. 45",
+        "q": { "en": "T(n) is in O(f(n)) if there exist positive constants c and n₀ such that…", "id": "T(n) termasuk O(f(n)) jika ada konstanta positif c dan n₀ sehingga…" },
+        "options": [
+          { "en": "T(n) ≤ c·f(n) for all n > n₀", "id": "T(n) ≤ c·f(n) untuk semua n > n₀" },
+          { "en": "T(n) ≥ c·f(n) for all n > n₀", "id": "T(n) ≥ c·f(n) untuk semua n > n₀" },
+          { "en": "T(n) = c·f(n) for all n", "id": "T(n) = c·f(n) untuk semua n" },
+          { "en": "T(n) ≤ c·f(n) for some n", "id": "T(n) ≤ c·f(n) untuk beberapa n" }
+        ],
+        "answer": 0,
+        "why": { "en": "≤ makes it an upper bound, and it must hold for ALL n beyond n₀. Option 2 (≥) is the Big-Omega definition.", "id": "≤ menjadikannya batas atas, dan harus berlaku untuk SEMUA n setelah n₀. Pilihan 2 (≥) adalah definisi Big-Omega." }
+      },
+      {
+        "source": "p. 47",
+        "q": { "en": "T(n) = 3n². Which bound should you report?", "id": "T(n) = 3n². Batas mana yang sebaiknya dilaporkan?" },
+        "options": [
+          { "en": "O(n³), because it is also true", "id": "O(n³), karena itu juga benar" },
+          { "en": "O(3n²), keeping the constant", "id": "O(3n²), mempertahankan konstanta" },
+          { "en": "O(n²), the tightest upper bound", "id": "O(n²), batas atas paling ketat" },
+          { "en": "O(n)", "id": "O(n)" }
+        ],
+        "answer": 2,
+        "why": { "en": "O(n³) is true but loose; the tightest bound is preferred. O(n) is false: 3n² eventually exceeds any c·n.", "id": "O(n³) benar tetapi longgar; batas paling ketat lebih disukai. O(n) salah: 3n² pada akhirnya melebihi c·n berapa pun." }
+      },
+      {
+        "source": "p. 53",
+        "q": { "en": "To show c1n² + c2n is Ω(n²), which c works (with n₀ = 1)?", "id": "Untuk menunjukkan c1n² + c2n adalah Ω(n²), c mana yang berhasil (dengan n₀ = 1)?" },
+        "options": [
+          { "en": "c = c1", "id": "c = c1" },
+          { "en": "c = c1 + c2", "id": "c = c1 + c2" },
+          { "en": "c = c2", "id": "c = c2" },
+          { "en": "No c works", "id": "Tidak ada c yang berhasil" }
+        ],
+        "answer": 0,
+        "why": { "en": "c1n² + c2n ≥ c1n² because c2n ≥ 0. (c1 + c2 is the constant used for the Big-Oh proof on p. 49.)", "id": "c1n² + c2n ≥ c1n² karena c2n ≥ 0. (c1 + c2 adalah konstanta untuk bukti Big-Oh di hlm. 49.)" }
+      },
+      {
+        "source": "p. 55",
+        "q": { "en": "When is T(n) = Θ(h(n))?", "id": "Kapan T(n) = Θ(h(n))?" },
+        "options": [
+          { "en": "When T(n) = O(h(n)) only", "id": "Saat T(n) = O(h(n)) saja" },
+          { "en": "When T(n) = Ω(h(n)) only", "id": "Saat T(n) = Ω(h(n)) saja" },
+          { "en": "When T(n) = h(n) exactly", "id": "Saat T(n) = h(n) persis" },
+          { "en": "When T(n) = O(h(n)) and T(n) = Ω(h(n))", "id": "Saat T(n) = O(h(n)) dan T(n) = Ω(h(n))" }
+        ],
+        "answer": 3,
+        "why": { "en": "Theta needs both: an upper bound and a lower bound with the same h(n).", "id": "Theta membutuhkan keduanya: batas atas dan batas bawah dengan h(n) yang sama." }
+      },
+      {
+        "source": "p. 58",
+        "q": { "en": "Simplify 3n² + 2n + 4.", "id": "Sederhanakan 3n² + 2n + 4." },
+        "options": [
+          { "en": "O(n)", "id": "O(n)" },
+          { "en": "O(n²)", "id": "O(n²)" },
+          { "en": "O(n³)", "id": "O(n³)" },
+          { "en": "O(3n² + 2n)", "id": "O(3n² + 2n)" }
+        ],
+        "answer": 1,
+        "why": { "en": "Add Rule keeps the largest term (3n²), then the Constant Rule drops the 3.", "id": "Aturan Penjumlahan mempertahankan suku terbesar (3n²), lalu Aturan Konstanta membuang angka 3." }
+      },
+      {
+        "source": "p. 60",
+        "q": { "en": "What is the running time of this code?", "id": "Berapa waktu eksekusi kode ini?" },
+        "code": "sum = 0;\nfor (i=1; i<=n; i++)\n  for (j=1; j<=i; j++)\n    sum++;\nfor (k=0; k<n; k++)\n  A[k] = k;",
+        "options": [
+          { "en": "Θ(n)", "id": "Θ(n)" },
+          { "en": "Θ(n log n)", "id": "Θ(n log n)" },
+          { "en": "Θ(n²)", "id": "Θ(n²)" },
+          { "en": "Θ(n³)", "id": "Θ(n³)" }
+        ],
+        "answer": 2,
+        "why": { "en": "The double loop runs 1 + 2 + … + n = n(n+1)/2 times: Θ(n²). The second loop is Θ(n), which the Add Rule drops.", "id": "Loop ganda berjalan 1 + 2 + … + n = n(n+1)/2 kali: Θ(n²). Loop kedua Θ(n), yang dibuang oleh Aturan Penjumlahan." }
+      },
+      {
+        "source": "p. 61",
+        "q": { "en": "What is the running time of this code? (Watch the inner loop's limit.)", "id": "Berapa waktu eksekusi kode ini? (Perhatikan batas loop dalam.)" },
+        "code": "sum2 = 0;\nfor (k=1; k<=n; k*=2)\n  for (j=1; j<=k; j++)\n    sum2++;",
+        "options": [
+          { "en": "Θ(n log n)", "id": "Θ(n log n)" },
+          { "en": "Θ(n)", "id": "Θ(n)" },
+          { "en": "Θ(log n)", "id": "Θ(log n)" },
+          { "en": "Θ(n²)", "id": "Θ(n²)" }
+        ],
+        "answer": 1,
+        "why": { "en": "The inner loop runs k times, and k goes 1, 2, 4, …, n. The total 1 + 2 + 4 + … + n is about 2n, so Θ(n). With j <= n instead, it would be Θ(n log n).", "id": "Loop dalam berjalan k kali, dan k bernilai 1, 2, 4, …, n. Totalnya 1 + 2 + 4 + … + n sekitar 2n, jadi Θ(n). Jika j <= n, hasilnya Θ(n log n)." }
+      },
+      {
+        "source": "p. 63–64",
+        "q": { "en": "Binary search: what does it require, and what is its worst-case cost?", "id": "Binary search: apa syaratnya, dan berapa biaya kasus terburuknya?" },
+        "options": [
+          { "en": "Any array; Θ(n)", "id": "Array apa saja; Θ(n)" },
+          { "en": "A sorted array; Θ(n)", "id": "Array terurut; Θ(n)" },
+          { "en": "Any array; Θ(log n)", "id": "Array apa saja; Θ(log n)" },
+          { "en": "A sorted array; Θ(log n)", "id": "Array terurut; Θ(log n)" }
+        ],
+        "answer": 3,
+        "why": { "en": "It halves the search range each step, which is only safe if the array is sorted. T(n) = T(n/2) + c gives c(log n + 1) = Θ(log n).", "id": "Binary search membagi dua rentang pencarian setiap langkah, yang hanya aman jika array terurut. T(n) = T(n/2) + c menghasilkan c(log n + 1) = Θ(log n)." }
+      },
+      {
+        "source": "p. 65",
+        "q": { "en": "f1(n) = O(n) and f2(n) = O(log n). By the multiplication rule, f1(n)·f2(n) is…", "id": "f1(n) = O(n) dan f2(n) = O(log n). Menurut aturan perkalian, f1(n)·f2(n) adalah…" },
+        "options": [
+          { "en": "O(n + log n)", "id": "O(n + log n)" },
+          { "en": "O(n)", "id": "O(n)" },
+          { "en": "O(n log n)", "id": "O(n log n)" },
+          { "en": "O(log n)", "id": "O(log n)" }
+        ],
+        "answer": 2,
+        "why": { "en": "Multiply the bounds: O(g1·g2) = O(n·log n).", "id": "Kalikan batasnya: O(g1·g2) = O(n·log n)." }
+      },
+      {
+        "source": "p. 67",
+        "q": { "en": "The LOWER bound of a problem is…", "id": "Batas BAWAH suatu masalah adalah…" },
+        "options": [
+          { "en": "The lower bound of the best known algorithm", "id": "Batas bawah algoritma terbaik yang diketahui" },
+          { "en": "A bound for every possible algorithm, even ones not yet thought of", "id": "Batas untuk setiap algoritma yang mungkin, bahkan yang belum terpikirkan" },
+          { "en": "The best-case running time", "id": "Waktu eksekusi kasus terbaik" },
+          { "en": "The upper bound of the slowest algorithm", "id": "Batas atas algoritma paling lambat" }
+        ],
+        "answer": 1,
+        "why": { "en": "Upper bound of a problem = best known algorithm. Lower bound = no algorithm at all can beat it.", "id": "Batas atas masalah = algoritma terbaik yang diketahui. Batas bawah = tidak ada algoritma apa pun yang bisa mengalahkannya." }
+      },
+      {
+        "source": "p. 68",
+        "q": { "en": "Why is the sorting problem O(n log n) and not O(n²)?", "id": "Mengapa masalah pengurutan O(n log n) dan bukan O(n²)?" },
+        "options": [
+          { "en": "Because bubble sort is O(n log n)", "id": "Karena bubble sort O(n log n)" },
+          { "en": "Because every sort is O(n log n)", "id": "Karena semua pengurutan O(n log n)" },
+          { "en": "Because the best known sorts (Quicksort, Mergesort, Heapsort) are O(n log n)", "id": "Karena pengurutan terbaik yang diketahui (Quicksort, Mergesort, Heapsort) O(n log n)" },
+          { "en": "Because sorting is Ω(n²)", "id": "Karena pengurutan Ω(n²)" }
+        ],
+        "answer": 2,
+        "why": { "en": "A problem's upper bound comes from its best known algorithm. Bubble and insertion sort are O(n²).", "id": "Batas atas masalah berasal dari algoritma terbaik yang diketahui. Bubble sort dan insertion sort O(n²)." }
+      }
+    ]
+  }
+]

@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Study Slides</title>
+<style>
+  :root {
+    --bg: #f6f5f1; --card: #ffffff; --text: #1d1d1f; --muted: #6b6b70; --line: #e3e1da;
+    --accent: #2f5bd3; --tile: #e6ecfb; --code-bg: #f1f0ea;
+    --what: #2f5bd3; --how: #1f8a5b; --why: #b5651d; --remember: #8a3fb5;
+    --wrong: #c0392b; --right: #1f8a5b; --wrong-bg: #fbe9e7; --right-bg: #e5f5ec; --note-bg: #fff8e6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #181a1f; --card: #1f2228; --text: #e6e8ec; --muted: #9aa0aa; --line: #2c3038;
+      --accent: #8fa8ff; --tile: #1f2b3d; --code-bg: #262a31;
+      --what: #8fa8ff; --how: #5cc493; --why: #e3a15c; --remember: #c48ae6;
+      --wrong: #ef7a6d; --right: #5cc493; --wrong-bg: #3a2220; --right-bg: #1c3328; --note-bg: #2a2618;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 17px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 820px; margin: 0 auto; padding: 24px 16px 64px; }
+  a { color: var(--accent); }
+  h1 { font-size: 1.6rem; margin: 8px 0 4px; }
+  .muted { color: var(--muted); }
+  button { font: inherit; cursor: pointer; border: 1px solid var(--line); background: var(--card);
+           color: var(--text); border-radius: 8px; padding: 8px 14px; }
+  button:hover:not(:disabled) { border-color: var(--accent); }
+  button:disabled { opacity: .4; cursor: default; }
+  .topbar { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px; }
+
+  /* Menu rows: icon tile, title + subtitle, chevron */
+  .rows { margin-top: 16px; border-top: 1px solid var(--line); }
+  .row { display: flex; align-items: center; gap: 20px; padding: 16px 8px; text-decoration: none;
+         color: var(--text); border-bottom: 1px solid var(--line); }
+  .row:hover { background: color-mix(in srgb, var(--card) 60%, transparent); }
+  .row .tile { flex: none; width: 88px; height: 56px; border-radius: 10px; background: var(--tile);
+               display: grid; place-items: center; color: var(--accent); font-size: 1.5rem; }
+  .row .tile svg { width: 26px; height: 26px; }
+  .row .text { flex: 1; min-width: 0; }
+  .row b { display: block; font-size: 1.15rem; }
+  .row .chev { color: var(--muted); font-size: 1.6rem; line-height: 1; }
+
+  /* Slide card */
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 24px; margin-top: 16px; }
+  .chapter { font-size: .85rem; color: var(--muted); }
+  .tag { display: inline-block; font-size: .75rem; font-weight: 700; letter-spacing: .06em;
+         padding: 2px 8px; border-radius: 6px; border: 1px solid currentColor; margin-top: 8px; }
+  .tag.WHAT { color: var(--what); } .tag.HOW { color: var(--how); }
+  .tag.WHY { color: var(--why); } .tag.REMEMBER { color: var(--remember); }
+  h2 { margin: 8px 0 12px; font-size: 1.4rem; }
+  .body { white-space: pre-line; }
+  pre { background: var(--code-bg); padding: 14px; border-radius: 8px; overflow-x: auto;
+        font: 14px/1.45 ui-monospace, Menlo, Consolas, monospace; margin: 14px 0 0; }
+  .box { margin-top: 16px; padding: 12px 14px; border-radius: 8px; background: var(--note-bg); white-space: pre-line; }
+  .label { font-size: .8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 4px; }
+  .wr { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 16px; }
+  .wr > div { min-width: 0; }
+  .wr .wrong .label { color: var(--wrong); } .wr .right .label { color: var(--right); }
+  .wr pre { margin-top: 0; }
+  .wr .wrong pre { border-left: 3px solid var(--wrong); } .wr .right pre { border-left: 3px solid var(--right); }
+  .reason { margin-top: 6px; font-size: .95rem; }
+  .qc { margin-top: 16px; border-top: 1px dashed var(--line); padding-top: 14px; }
+  .qc .answer { margin-top: 8px; }
+  .nav { display: flex; justify-content: space-between; align-items: center; margin-top: 16px; }
+
+  /* Quiz */
+  .q { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 20px; margin-top: 16px; }
+  .q .src { font-size: .8rem; color: var(--muted); }
+  .q .stem { font-weight: 600; margin: 4px 0 0; }
+  .opts { display: grid; gap: 8px; margin-top: 12px; }
+  .opts button { text-align: left; padding: 10px 14px; }
+  .opts button.correct { border-color: var(--right); background: var(--right-bg); }
+  .opts button.chosen-wrong { border-color: var(--wrong); background: var(--wrong-bg); }
+  .opts button:disabled { opacity: 1; cursor: default; }
+  .why { margin-top: 12px; font-size: .95rem; }
+  .why b.ok { color: var(--right); } .why b.no { color: var(--wrong); }
+  .score { position: sticky; bottom: 0; margin-top: 20px; padding: 12px 16px; border-radius: 12px;
+           background: var(--card); border: 1px solid var(--line);
+           display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+  @media (max-width: 600px) {
+    .wr { grid-template-columns: 1fr; } .card { padding: 18px; }
+    .row { gap: 14px; } .row .tile { width: 64px; height: 48px; }
+  }
+</style>
+</head>
+<body>
+<main id="app"></main>
+<script>
+// Each subject is a folder holding slides.json (lectures) and quiz.json (class quizzes).
+// Add a subject by adding a line here. `book` is the textbook named in the course slides.
+const SUBJECTS = [
+  { id: "data-structure",         name: "Data Structure",            icon: "🌳",
+    book: "Data Structures and Algorithm Analysis in C++, Third Edition, Clifford A. Shaffer" },
+  { id: "statistics-probability", name: "Statistics and Probability", icon: "🎲" },
+  { id: "digital-logic",          name: "Digital Logic",             icon: "🔌" },
+  { id: "college-physics-2",      name: "College Physics 2",         icon: "⚛️" },
+];
+
+const ICON_QUIZ = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>';
+const ICON_LECTURE = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>';
+
+// UI strings that are not part of the slide/quiz data.
+const UI = {
+  en: { pick: "Pick a subject.", all: "← All subjects", soon: "Coming soon", quizzes: "Class quizzes",
+        toPractice: n => n + " to practice", lectures: "Lectures", chaptersOf: n => n + " chapters of slides",
+        slides: n => n + (n === 1 ? " slide" : " slides"), questions: n => n + " questions", back: "← Back", next: "Next →",
+        homeSub: (c, s) => `${c} chapters · ${s} slides`, textbook: "📖 Textbook: ",
+        show: "Show answer", correct: "Correct.", wrong: "Not quite.", score: (c, a, t) => `Score: ${c} / ${t}  (${a} answered)`,
+        retry: "Retry", empty: "Coming soon: nothing in this folder yet.", explain: "Explain",
+        wrongLbl: "✗ Wrong", rightLbl: "✓ Right", quickCheck: "Quick check", toggle: "🇮🇩 Bahasa Indonesia" },
+  id: { pick: "Pilih mata kuliah.", all: "← Semua mata kuliah", soon: "Segera hadir", quizzes: "Kuis kelas",
+        toPractice: n => n + " untuk latihan", lectures: "Materi kuliah", chaptersOf: n => n + " bab slide",
+        slides: n => n + " slide", questions: n => n + " soal", back: "← Kembali", next: "Lanjut →",
+        homeSub: (c, s) => `${c} bab · ${s} slide`, textbook: "📖 Buku teks: ",
+        show: "Tampilkan jawaban", correct: "Benar.", wrong: "Belum tepat.", score: (c, a, t) => `Skor: ${c} / ${t}  (${a} dijawab)`,
+        retry: "Ulangi", empty: "Segera hadir: folder ini belum berisi apa pun.", explain: "Penjelasan",
+        wrongLbl: "✗ Salah", rightLbl: "✓ Benar", quickCheck: "Cek cepat", toggle: "🇬🇧 English" },
+};
+
+const app = document.getElementById("app");
+const cache = {};
+let lang = "en";
+try { lang = localStorage.getItem("lang") || "en"; } catch (e) {}
+const ui = () => UI[lang];
+const tr = o => (o && typeof o === "object" ? o[lang] || o.en : o);  // pick {en, id} text
+
+function el(tag, attrs = {}, ...kids) {
+  const n = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (k === "onclick") n.onclick = v; else if (k === "html") n.innerHTML = v; else n.setAttribute(k, v);
+  }
+  for (const k of kids) if (k != null) n.append(k);
+  return n;
+}
+
+// file is "slides" or "quiz"; a missing file is cached as null.
+async function load(id, file) {
+  const key = id + "/" + file;
+  if (!(key in cache)) {
+    try {
+      const r = await fetch(key + ".json");
+      cache[key] = r.ok ? await r.json() : null;
+    } catch (e) { cache[key] = null; }
+  }
+  return cache[key];
+}
+
+// Chapters of a lecture deck: [{name, start}] where start is the first slide index.
+function chaptersOf(slides) {
+  const out = [];
+  slides.forEach((s, i) => {
+    if (!out.length || out[out.length - 1].key !== s.chapter)
+      out.push({ key: s.chapter, name: lang === "id" && s.id ? s.id.chapter : s.chapter, start: i, count: 0 });
+    out[out.length - 1].count++;
+  });
+  return out;
+}
+
+function row(href, tileHtml, title, sub) {
+  return el("a", { class: "row", href },
+    el("span", { class: "tile", html: tileHtml }),
+    el("span", { class: "text" }, el("b", {}, title), el("span", { class: "muted" }, sub)),
+    el("span", { class: "chev" }, "›"));
+}
+
+function topbar(backHref, backText) {
+  return el("div", { class: "topbar" },
+    el("a", { href: backHref }, backText),
+    el("button", { onclick: () => {
+      lang = lang === "en" ? "id" : "en";
+      try { localStorage.setItem("lang", lang); } catch (e) {}
+      route();
+    } }, ui().toggle));
+}
+
+function renderHome() {
+  const rows = SUBJECTS.map(s => row("#/" + s.id, s.icon, s.name, "…"));
+  app.replaceChildren(
+    el("div", { class: "topbar" }, el("h1", {}, "Study Slides"),
+      el("button", { onclick: () => { lang = lang === "en" ? "id" : "en";
+        try { localStorage.setItem("lang", lang); } catch (e) {} route(); } }, ui().toggle)),
+    el("p", { class: "muted" }, ui().pick),
+    el("div", { class: "rows" }, ...rows));
+  SUBJECTS.forEach((s, i) => load(s.id, "slides").then(d => {
+    rows[i].querySelector(".muted").textContent = d ? ui().homeSub(chaptersOf(d).length, d.length) : ui().soon;
+  }));
+}
+
+async function renderSubject(subject) {
+  const [slides, quiz] = await Promise.all([load(subject.id, "slides"), load(subject.id, "quiz")]);
+  const rows = [];
+  if (quiz) rows.push(row("#/" + subject.id + "/quiz", ICON_QUIZ, ui().quizzes, ui().toPractice(quiz.length)));
+  if (slides) rows.push(row("#/" + subject.id + "/lectures", ICON_LECTURE, ui().lectures, ui().chaptersOf(chaptersOf(slides).length)));
+  app.replaceChildren(topbar("#/", ui().all), el("h1", {}, subject.name),
+    ...(subject.book ? [el("p", { class: "muted" }, ui().textbook + subject.book)] : []),
+    rows.length ? el("div", { class: "rows" }, ...rows) : el("p", { class: "muted" }, ui().empty));
+}
+
+async function renderQuizList(subject) {
+  const quiz = await load(subject.id, "quiz");
+  if (!quiz) return renderSubject(subject);
+  app.replaceChildren(topbar("#/" + subject.id, "← " + subject.name), el("h1", {}, ui().quizzes),
+    el("div", { class: "rows" }, ...quiz.map((c, i) =>
+      row("#/" + subject.id + "/quiz/" + (i + 1), ICON_QUIZ, tr(c.chapter), ui().questions(c.questions.length)))));
+}
+
+async function renderLectureList(subject) {
+  const slides = await load(subject.id, "slides");
+  if (!slides) return renderSubject(subject);
+  app.replaceChildren(topbar("#/" + subject.id, "← " + subject.name), el("h1", {}, ui().lectures),
+    el("div", { class: "rows" }, ...chaptersOf(slides).map(c =>
+      row("#/" + subject.id + "/slides/" + (c.start + 1), ICON_LECTURE, c.name, ui().slides(c.count)))));
+}
+
+async function renderQuiz(subject, n) {
+  const quiz = await load(subject.id, "quiz");
+  const chap = quiz && quiz[n - 1];
+  if (!chap) return renderQuizList(subject);
+  const total = chap.questions.length;
+  let answered = 0, correct = 0;
+  const scoreText = el("span", {}, ui().score(0, 0, total));
+
+  const cards = chap.questions.map((q, qi) => {
+    const why = el("div", { class: "why" }); why.hidden = true;
+    const buttons = q.options.map((o, oi) => el("button", { onclick: () => {
+      buttons.forEach(b => b.disabled = true);
+      buttons[q.answer].classList.add("correct");
+      const ok = oi === q.answer;
+      if (!ok) buttons[oi].classList.add("chosen-wrong");
+      answered++; if (ok) correct++;
+      why.replaceChildren(el("b", { class: ok ? "ok" : "no" }, ok ? ui().correct : ui().wrong), " ", tr(q.why));
+      why.hidden = false;
+      scoreText.textContent = ui().score(correct, answered, total);
+    } }, String.fromCharCode(65 + oi) + ". " + tr(o)));
+    return el("div", { class: "q" },
+      el("div", { class: "src" }, (qi + 1) + " / " + total + " · " + q.source),
+      el("p", { class: "stem" }, tr(q.q)),
+      q.code ? el("pre", {}, q.code) : null,
+      el("div", { class: "opts" }, ...buttons),
+      why);
+  });
+
+  app.replaceChildren(
+    topbar("#/" + subject.id + "/quiz", "← " + ui().quizzes),
+    el("h1", {}, tr(chap.chapter)),
+    ...(chap.note ? [el("div", { class: "box" }, tr(chap.note))] : []),
+    ...cards,
+    el("div", { class: "score" }, scoreText, el("button", { onclick: () => { renderQuiz(subject, n); window.scrollTo(0, 0); } }, ui().retry)));
+}
+
+function renderSlide(subject, slides, i) {
+  const s = slides[i];
+  const t = lang === "id" && s.id ? s.id : s;  // Indonesian fields live in slide.id
+  const go = k => { location.hash = "#/" + subject.id + "/slides/" + (k + 1); };
+  const card = el("div", { class: "card" },
+    el("div", { class: "chapter" }, t.chapter),
+    el("span", { class: "tag " + s.tag }, s.tag),
+    el("h2", {}, t.title),
+    el("div", { class: "body" }, t.body),
+    s.code ? el("pre", {}, s.code) : null,
+    t.explain ? el("div", { class: "box" }, el("div", { class: "label" }, ui().explain), t.explain) : null,
+    s.wrong_right ? el("div", {},
+      el("div", { class: "wr" },
+        el("div", { class: "wrong" }, el("div", { class: "label" }, ui().wrongLbl), el("pre", {}, s.wrong_right.wrong)),
+        el("div", { class: "right" }, el("div", { class: "label" }, ui().rightLbl), el("pre", {}, s.wrong_right.right))),
+      el("div", { class: "reason" }, t.wrong_right_reason || s.wrong_right.reason)) : null,
+    t.quick_check ? quickCheck(t.quick_check) : null
+  );
+  app.replaceChildren(
+    topbar("#/" + subject.id + "/lectures", "← " + ui().lectures),
+    el("h1", {}, subject.name),
+    card,
+    el("div", { class: "nav" },
+      prevNext(ui().back, i > 0, () => go(i - 1)),
+      el("span", { class: "muted" }, (i + 1) + " / " + slides.length),
+      prevNext(ui().next, i < slides.length - 1, () => go(i + 1))));
+  document.onkeydown = e => {
+    if (e.key === "ArrowLeft" && i > 0) go(i - 1);
+    if (e.key === "ArrowRight" && i < slides.length - 1) go(i + 1);
+  };
+}
+
+function prevNext(label, enabled, fn) {
+  const b = el("button", { onclick: fn }, label);
+  b.disabled = !enabled;
+  return b;
+}
+
+function quickCheck(qc) {
+  const ans = el("div", { class: "answer" }, qc.a);
+  ans.hidden = true;
+  const btn = el("button", { onclick: () => { ans.hidden = false; btn.remove(); } }, ui().show);
+  return el("div", { class: "qc" }, el("div", { class: "label" }, ui().quickCheck), el("div", {}, qc.q), btn, ans);
+}
+
+// Routes:
+//   #/                          home (subjects)
+//   #/<subject>                 menu: Class quizzes / Lectures
+//   #/<subject>/quiz[/<n>]      quiz chapter list, or quiz for chapter n
+//   #/<subject>/lectures        lecture chapter list
+//   #/<subject>/slides/<n>      slide n
+async function route() {
+  document.onkeydown = null;
+  const [, id, view, num] = location.hash.split("/");
+  const subject = SUBJECTS.find(s => s.id === id);
+  if (!subject) return renderHome();
+  if (view === "quiz") return num ? renderQuiz(subject, parseInt(num) || 1) : renderQuizList(subject);
+  if (view === "lectures") return renderLectureList(subject);
+  if (view === "slides") {
+    const slides = await load(id, "slides");
+    if (!slides) return renderSubject(subject);
+    const i = Math.min(Math.max((parseInt(num) || 1) - 1, 0), slides.length - 1);
+    renderSlide(subject, slides, i);
+    return window.scrollTo(0, 0);
+  }
+  renderSubject(subject);
+}
+
+window.addEventListener("hashchange", route);
+route();
+</script>
+</body>
+</html>

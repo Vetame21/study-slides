@@ -1,0 +1,912 @@
+[
+  {
+    "chapter": "1. Data Structures and Algorithms",
+    "title": "Why Organize Information?",
+    "tag": "WHY",
+    "body": "Questions like 'How many cities over 250,000 people lie within 500 miles of Dallas?' need fast answers. Having information is not enough: we must organize it so answers come in time. Most programs mainly store and retrieve information.",
+    "quick_check": {
+      "q": "Why isn't simply having the data enough?",
+      "a": "It must be organized so answers can be found in time to meet our needs."
+    },
+    "id": {
+      "chapter": "1. Struktur Data dan Algoritma",
+      "title": "Mengapa Informasi Harus Diorganisasi?",
+      "body": "Pertanyaan seperti 'Berapa kota berpenduduk lebih dari 250.000 jiwa yang berada dalam radius 500 mil dari Dallas?' butuh jawaban cepat. Memiliki informasi saja tidak cukup: informasi harus diorganisasi agar jawaban ditemukan tepat waktu. Sebagian besar program terutama menyimpan dan mengambil informasi.",
+      "quick_check": {
+        "q": "Mengapa sekadar memiliki data saja tidak cukup?",
+        "a": "Data harus diorganisasi agar jawaban dapat ditemukan tepat waktu sesuai kebutuhan."
+      }
+    }
+  },
+  {
+    "chapter": "1. Data Structures and Algorithms",
+    "title": "Data Structures + Algorithms = Toolkit",
+    "tag": "WHAT",
+    "body": "A data structure organizes a collection of information. Algorithms manipulate that structure. Together they support efficient processing and form a programmer's basic toolkit.",
+    "quick_check": {
+      "q": "Which one organizes data, and which one manipulates it?",
+      "a": "The data structure organizes; the algorithm manipulates."
+    },
+    "id": {
+      "chapter": "1. Struktur Data dan Algoritma",
+      "title": "Struktur Data + Algoritma = Perangkat Dasar",
+      "body": "Struktur data mengorganisasi sekumpulan informasi. Algoritma memanipulasi struktur tersebut. Keduanya bersama-sama mendukung pemrosesan yang efisien dan menjadi perangkat dasar seorang programmer.",
+      "quick_check": {
+        "q": "Mana yang mengorganisasi data, dan mana yang memanipulasinya?",
+        "a": "Struktur data mengorganisasi; algoritma memanipulasi."
+      }
+    }
+  },
+  {
+    "chapter": "1. Data Structures and Algorithms",
+    "title": "Three Goals of This Course",
+    "tag": "REMEMBER",
+    "body": "1. Present the commonly used data structures.\n2. Explain the costs, benefits and tradeoffs of each.\n3. Teach how to measure the effectiveness of a data structure or algorithm.",
+    "quick_check": {
+      "q": "Name the three goals.",
+      "a": "Common structures; their costs/benefits/tradeoffs; measuring effectiveness."
+    },
+    "id": {
+      "chapter": "1. Struktur Data dan Algoritma",
+      "title": "Tiga Tujuan Mata Kuliah Ini",
+      "body": "1. Memperkenalkan struktur data yang umum digunakan.\n2. Menjelaskan biaya, manfaat, dan tradeoff (pertukaran untung-rugi) masing-masing.\n3. Mengajarkan cara mengukur efektivitas suatu struktur data atau algoritma.",
+      "quick_check": {
+        "q": "Sebutkan ketiga tujuan tersebut.",
+        "a": "Struktur data umum; biaya/manfaat/tradeoff-nya; cara mengukur efektivitas."
+      }
+    }
+  },
+  {
+    "chapter": "1. Data Structures and Algorithms",
+    "title": "What Is a Data Structure?",
+    "tag": "WHAT",
+    "body": "A particular way of storing and organizing data in a computer so it can be used efficiently. Examples: integer, floating-point number, sorted list of integers. Different structures suit different kinds of applications.",
+    "explain": "Think of it as choosing a container shape for your data. The same books can be piled on a desk or shelved in alphabetical order. Both hold the books, but finding one is much faster on the sorted shelf.",
+    "quick_check": {
+      "q": "Is there one 'best' data structure for every application?",
+      "a": "No. Different structures suit different applications."
+    },
+    "id": {
+      "chapter": "1. Struktur Data dan Algoritma",
+      "title": "Apa Itu Struktur Data?",
+      "body": "Cara tertentu untuk menyimpan dan mengorganisasi data di komputer agar dapat digunakan secara efisien. Contoh: integer, bilangan floating-point, list integer yang terurut. Jenis struktur data yang berbeda cocok untuk jenis aplikasi yang berbeda.",
+      "explain": "Bayangkan seperti memilih bentuk wadah untuk data. Buku yang sama bisa ditumpuk di meja atau disusun di rak menurut abjad. Keduanya sama-sama menampung buku, tetapi mencari satu buku jauh lebih cepat di rak yang terurut.",
+      "quick_check": {
+        "q": "Apakah ada satu struktur data 'terbaik' untuk semua aplikasi?",
+        "a": "Tidak. Struktur yang berbeda cocok untuk aplikasi yang berbeda."
+      }
+    }
+  },
+  {
+    "chapter": "1. Data Structures and Algorithms",
+    "title": "Three Example Structures: List, Tree, Graph",
+    "tag": "WHAT",
+    "body": "List: a digital library catalogue (ID, title, author, publisher), one record after another.\nTree: game states in Gobang, Chess, Tic-Tac-Toe.\nGraph: a social network.",
+    "explain": "[ADDED] List = items in a row. Tree = one start that branches (each move leads to several possible next positions). Graph = anything connected to anything (any person can be friends with any other).",
+    "quick_check": {
+      "q": "Which structure fits a social network?",
+      "a": "Graph."
+    },
+    "id": {
+      "chapter": "1. Struktur Data dan Algoritma",
+      "title": "Tiga Contoh Struktur: List, Tree, Graph",
+      "body": "List: katalog perpustakaan digital (ID, judul, penulis, penerbit), satu record setelah record lainnya.\nTree (pohon): keadaan permainan pada Gobang, Catur, Tic-Tac-Toe.\nGraph (graf): jejaring sosial.",
+      "explain": "[ADDED] List = item berjajar dalam satu baris. Tree = satu titik awal yang bercabang (setiap langkah membuka beberapa kemungkinan posisi berikutnya). Graph = apa saja bisa terhubung ke apa saja (siapa pun bisa berteman dengan siapa pun).",
+      "quick_check": {
+        "q": "Struktur mana yang cocok untuk jejaring sosial?",
+        "a": "Graph (graf)."
+      }
+    }
+  },
+  {
+    "chapter": "1. Data Structures and Algorithms",
+    "title": "Data Structures in Real Applications",
+    "tag": "WHY",
+    "body": "Virus simulation: List.\nInfrastructure project progress management: Graph.\nIntelligent traffic prediction: Graph, List.\nSearch engine: Tree, List.",
+    "quick_check": {
+      "q": "Which two structures does the slide pair with a search engine?",
+      "a": "Tree and List."
+    },
+    "id": {
+      "chapter": "1. Struktur Data dan Algoritma",
+      "title": "Struktur Data dalam Aplikasi Nyata",
+      "body": "Simulasi virus: List.\nManajemen progres proyek infrastruktur: Graph.\nPrediksi lalu lintas cerdas: Graph, List.\nMesin pencari: Tree, List.",
+      "quick_check": {
+        "q": "Dua struktur apa yang dipasangkan dengan mesin pencari di slide?",
+        "a": "Tree dan List."
+      }
+    }
+  },
+  {
+    "chapter": "1. Data Structures and Algorithms",
+    "title": "Abstract Data Type (ADT)",
+    "tag": "WHAT",
+    "body": "Different languages implement similar data structures in different ways. An ADT is a language-independent model of a data structure, defined by a set of values plus a set of operations on them.",
+    "explain": "An ADT is the 'menu': it says what you can order (the operations) but not how the kitchen cooks it. The implementation is the kitchen.",
+    "quick_check": {
+      "q": "What two things define an ADT?",
+      "a": "A set of values and a set of operations on the data."
+    },
+    "id": {
+      "chapter": "1. Struktur Data dan Algoritma",
+      "title": "Abstract Data Type (ADT / Tipe Data Abstrak)",
+      "body": "Bahasa pemrograman yang berbeda mengimplementasikan struktur data yang serupa dengan cara berbeda. ADT adalah model yang tidak bergantung pada bahasa untuk mendeskripsikan struktur data, didefinisikan oleh sekumpulan nilai dan sekumpulan operasi pada nilai tersebut.",
+      "explain": "ADT itu seperti 'menu': menyebutkan apa yang bisa dipesan (operasi), tetapi tidak menjelaskan cara dapur memasaknya. Implementasinya adalah dapurnya.",
+      "quick_check": {
+        "q": "Dua hal apa yang mendefinisikan sebuah ADT?",
+        "a": "Sekumpulan nilai dan sekumpulan operasi pada data tersebut."
+      }
+    }
+  },
+  {
+    "chapter": "1. Data Structures and Algorithms",
+    "title": "ADT Example: List in C++",
+    "tag": "HOW",
+    "body": "The ADT lists the operations only: their inputs and outputs. It says nothing about how they are implemented.",
+    "code": "template <class Elem>\nclass List {\npublic:\n  virtual void clear() = 0;\n  virtual bool insert(const Elem&) = 0;\n  virtual bool append(const Elem&) = 0;\n  virtual bool remove(Elem&) = 0;\n  virtual void setStart() = 0;\n  virtual void setEnd() = 0;\n  virtual void prev() = 0;\n  virtual void next() = 0;\n};",
+    "explain": "[ADDED] `= 0` makes a function 'pure virtual': it has no body here. Any class with a pure virtual function is abstract, so you cannot create a List object directly. You create a subclass (like AList) that supplies the bodies.",
+    "wrong_right": {
+      "wrong": "List<int> L;   // does not compile",
+      "right": "AList<int> L;  // concrete subclass compiles\nList<int>* p = &L;  // pointer to the ADT is fine",
+      "reason": "[ADDED] An abstract class (one with a pure virtual function) cannot be instantiated."
+    },
+    "quick_check": {
+      "q": "Does the List ADT say whether data is stored in an array?",
+      "a": "No. It only describes operations, not the implementation."
+    },
+    "id": {
+      "chapter": "1. Struktur Data dan Algoritma",
+      "title": "Contoh ADT: List dalam C++",
+      "body": "ADT hanya mencantumkan operasi: input dan output-nya. ADT tidak menjelaskan bagaimana operasi itu diimplementasikan.",
+      "explain": "[ADDED] `= 0` menjadikan fungsi 'pure virtual': fungsi itu tidak punya isi di sini. Kelas yang memiliki fungsi pure virtual bersifat abstrak, sehingga objek List tidak bisa dibuat langsung. Kita membuat subclass (seperti AList) yang menyediakan isi fungsinya.",
+      "wrong_right_reason": "[ADDED] Kelas abstrak (yang memiliki fungsi pure virtual) tidak dapat diinstansiasi.",
+      "quick_check": {
+        "q": "Apakah ADT List menyebutkan bahwa data disimpan dalam array?",
+        "a": "Tidak. ADT hanya mendeskripsikan operasi, bukan implementasi."
+      }
+    }
+  },
+  {
+    "chapter": "1. Data Structures and Algorithms",
+    "title": "Implementing a Data Structure",
+    "tag": "HOW",
+    "body": "Two decisions:\n1. How to store and organize the data.\n2. How to implement the operations; each operation becomes one or more subroutines.",
+    "code": "template <class Elem> // Array-based list\nclass AList : public List<Elem> {\nprivate:              // data storage\n  int maxSize;        // Maximum size of list\n  int listSize;       // Actual elem count\n  int fence;          // Position of fence\n  Elem* listArray;    // Array holding list\npublic:               // operations\n  // ...\n  void clear() {\n    delete [] listArray;\n    listSize = fence = 0;\n    listArray = new Elem[maxSize];\n  }\n  void setStart() { fence = 0; }\n  // ...\n};",
+    "explain": "The private fields are the storage decision (an array plus counters). The public functions are the operations from the ADT. [NOTE] The slide shows only part of AList (the '…' parts), so this fragment will not compile on its own until every pure virtual function from List is implemented.",
+    "quick_check": {
+      "q": "In AList, which part is 'storage' and which is 'operations'?",
+      "a": "Private fields (maxSize, listSize, fence, listArray) = storage; public functions (clear, setStart…) = operations."
+    },
+    "id": {
+      "chapter": "1. Struktur Data dan Algoritma",
+      "title": "Mengimplementasikan Struktur Data",
+      "body": "Dua keputusan:\n1. Bagaimana menyimpan dan mengorganisasi data.\n2. Bagaimana mengimplementasikan operasi; setiap operasi menjadi satu atau lebih subrutin.",
+      "explain": "Field private adalah keputusan penyimpanan (sebuah array ditambah penghitung). Fungsi public adalah operasi dari ADT. [NOTE] Slide hanya menampilkan sebagian AList (bagian '…'), jadi potongan ini tidak akan bisa dikompilasi sendiri sampai semua fungsi pure virtual dari List diimplementasikan.",
+      "quick_check": {
+        "q": "Pada AList, bagian mana yang 'penyimpanan' dan mana yang 'operasi'?",
+        "a": "Field private (maxSize, listSize, fence, listArray) = penyimpanan; fungsi public (clear, setStart…) = operasi."
+      }
+    }
+  },
+  {
+    "chapter": "1. Data Structures and Algorithms",
+    "title": "What Is an Algorithm?",
+    "tag": "WHAT",
+    "body": "A method or process followed to solve a problem. It takes the problem's input and transforms it into the output.\nExample, a sorting algorithm:\n23 11 67 54 43 100 33 → 11 23 33 43 54 67 100",
+    "quick_check": {
+      "q": "In the sorting example, what is the input and what is the output?",
+      "a": "Input: the unsorted integers. Output: the same integers in ascending order."
+    },
+    "id": {
+      "chapter": "1. Struktur Data dan Algoritma",
+      "title": "Apa Itu Algoritma?",
+      "body": "Metode atau proses yang diikuti untuk menyelesaikan suatu masalah. Algoritma menerima input masalah lalu mengubahnya menjadi output.\nContoh, algoritma pengurutan (sorting):\n23 11 67 54 43 100 33 → 11 23 33 43 54 67 100",
+      "quick_check": {
+        "q": "Pada contoh pengurutan, apa input dan apa output-nya?",
+        "a": "Input: bilangan bulat yang belum terurut. Output: bilangan yang sama dalam urutan naik."
+      }
+    }
+  },
+  {
+    "chapter": "1. Data Structures and Algorithms",
+    "title": "Five Properties of an Algorithm",
+    "tag": "REMEMBER",
+    "body": "1. It must be correct.\n2. It is a series of concrete steps.\n3. There is no ambiguity about which step comes next.\n4. It has a finite number of steps.\n5. It must terminate.",
+    "explain": "[ADDED] 'Finite number of steps' is about the written recipe being finite. 'Must terminate' is about running it: a short program with an endless loop has finitely many steps written down but never finishes.",
+    "wrong_right": {
+      "wrong": "int i = 0;\nwhile (i < 10) { /* forgot i++ */ }",
+      "right": "int i = 0;\nwhile (i < 10) { i++; }",
+      "reason": "[ADDED] The left loop never terminates, so it breaks property 5 and is not an algorithm."
+    },
+    "quick_check": {
+      "q": "Which property does a program with an infinite loop violate?",
+      "a": "It must terminate."
+    },
+    "id": {
+      "chapter": "1. Struktur Data dan Algoritma",
+      "title": "Lima Sifat Algoritma",
+      "body": "1. Harus benar.\n2. Terdiri dari serangkaian langkah konkret.\n3. Tidak ada ambiguitas tentang langkah mana yang berikutnya.\n4. Jumlah langkahnya berhingga.\n5. Harus berhenti (terminate).",
+      "explain": "[ADDED] 'Jumlah langkah berhingga' berkaitan dengan resep yang ditulis: resepnya terbatas. 'Harus berhenti' berkaitan dengan saat dijalankan: program pendek dengan loop tanpa akhir punya langkah tertulis yang berhingga, tetapi tidak pernah selesai.",
+      "wrong_right_reason": "[ADDED] Loop di sebelah kiri tidak pernah berhenti, sehingga melanggar sifat 5 dan bukan algoritma.",
+      "quick_check": {
+        "q": "Sifat mana yang dilanggar oleh program dengan loop tak berhingga?",
+        "a": "Harus berhenti (terminate)."
+      }
+    }
+  },
+  {
+    "chapter": "1. Data Structures and Algorithms",
+    "title": "Data Structure vs Algorithm",
+    "tag": "WHAT",
+    "body": "Data structures + algorithms = programs.\nData structures: how to store and organize the data.\nAlgorithms: how to process the data to solve problems.\nThe two are strongly correlated.",
+    "quick_check": {
+      "q": "Complete the formula: Data structures + ____ = Programs.",
+      "a": "Algorithms."
+    },
+    "id": {
+      "chapter": "1. Struktur Data dan Algoritma",
+      "title": "Struktur Data vs Algoritma",
+      "body": "Struktur data + algoritma = program.\nStruktur data: bagaimana menyimpan dan mengorganisasi data.\nAlgoritma: bagaimana memproses data untuk menyelesaikan masalah.\nKeduanya saling berkaitan erat.",
+      "quick_check": {
+        "q": "Lengkapi rumusnya: Struktur data + ____ = Program.",
+        "a": "Algoritma."
+      }
+    }
+  },
+  {
+    "chapter": "1. Data Structures and Algorithms",
+    "title": "What Makes an Algorithm Efficient?",
+    "tag": "WHY",
+    "body": "An algorithm is efficient if it solves the problem within its resource constraints: space and time. The choice of data structure and algorithm can make the difference between a program running in seconds or in many days.",
+    "quick_check": {
+      "q": "What are the two resource constraints named in the slides?",
+      "a": "Space and time."
+    },
+    "id": {
+      "chapter": "1. Struktur Data dan Algoritma",
+      "title": "Kapan Algoritma Disebut Efisien?",
+      "body": "Algoritma disebut efisien jika menyelesaikan masalah dalam batasan sumber dayanya: ruang (space) dan waktu (time). Pilihan struktur data dan algoritma bisa membuat program selesai dalam hitungan detik atau berhari-hari.",
+      "quick_check": {
+        "q": "Apa dua batasan sumber daya yang disebut di slide?",
+        "a": "Ruang (space) dan waktu (time)."
+      }
+    }
+  },
+  {
+    "chapter": "1. Data Structures and Algorithms",
+    "title": "Selecting a Data Structure: 3 Steps",
+    "tag": "HOW",
+    "body": "1. Analyze the problem to find the resource constraints a solution must meet.\n2. Determine the basic operations needed, and quantify the constraints for each.\n3. Select the data structure that best meets these requirements.",
+    "quick_check": {
+      "q": "What comes first: picking the structure or finding the required operations?",
+      "a": "Finding the operations and their constraints; the structure is chosen last."
+    },
+    "id": {
+      "chapter": "1. Struktur Data dan Algoritma",
+      "title": "Memilih Struktur Data: 3 Langkah",
+      "body": "1. Analisis masalah untuk menentukan batasan sumber daya yang harus dipenuhi solusi.\n2. Tentukan operasi dasar yang dibutuhkan, dan kuantifikasi batasan untuk tiap operasi.\n3. Pilih struktur data yang paling memenuhi kebutuhan tersebut.",
+      "quick_check": {
+        "q": "Mana yang lebih dulu: memilih struktur atau menentukan operasi yang dibutuhkan?",
+        "a": "Menentukan operasi dan batasannya; struktur dipilih paling akhir."
+      }
+    }
+  },
+  {
+    "chapter": "1. Data Structures and Algorithms",
+    "title": "Questions to Ask When Selecting",
+    "tag": "HOW",
+    "body": "Are all data inserted at the beginning, or are insertions mixed with other operations?\nCan data be deleted?\nIs data processed in a well-defined order, or is random access allowed?",
+    "quick_check": {
+      "q": "Give one question to ask before choosing a data structure.",
+      "a": "Any of: when insertions happen; whether deletion is allowed; ordered vs random access."
+    },
+    "id": {
+      "chapter": "1. Struktur Data dan Algoritma",
+      "title": "Pertanyaan Saat Memilih Struktur Data",
+      "body": "Apakah semua data dimasukkan di awal, atau penyisipan bercampur dengan operasi lain?\nApakah data bisa dihapus?\nApakah data diproses dalam urutan tertentu, atau akses acak (random access) diperbolehkan?",
+      "quick_check": {
+        "q": "Sebutkan satu pertanyaan sebelum memilih struktur data.",
+        "a": "Salah satu dari: kapan penyisipan terjadi; apakah penghapusan diperbolehkan; akses berurutan vs acak."
+      }
+    }
+  },
+  {
+    "chapter": "2. Mathematical Preliminaries",
+    "title": "Chapter 2 Topics",
+    "tag": "REMEMBER",
+    "body": "Set (集合) concepts and notation\nRecursion (递归)\nInduction proofs (归纳证明)\nLogarithms (对数公式)\nSummations (求和公式)\n[NOTE] The source deck lists these topics only, with no content. Study them from the textbook (Shaffer, Ch. 2).",
+    "quick_check": {
+      "q": "Name the five math topics in Chapter 2.",
+      "a": "Sets, recursion, induction proofs, logarithms, summations."
+    },
+    "id": {
+      "chapter": "2. Dasar-Dasar Matematika",
+      "title": "Topik Bab 2",
+      "body": "Konsep dan notasi himpunan (集合)\nRekursi (递归)\nPembuktian dengan induksi (归纳证明)\nLogaritma (对数公式)\nPenjumlahan / sumasi (求和公式)\n[NOTE] Deck sumber hanya mencantumkan topik-topik ini tanpa isi. Pelajari dari buku teks (Shaffer, Bab 2).",
+      "quick_check": {
+        "q": "Sebutkan lima topik matematika di Bab 2.",
+        "a": "Himpunan, rekursi, pembuktian induksi, logaritma, sumasi."
+      }
+    }
+  },
+  {
+    "chapter": "3. Algorithm Analysis",
+    "title": "Why Analyze Algorithms?",
+    "tag": "WHY",
+    "body": "How long will a larger workload take? Which of two programs should we choose? Is a slow program badly implemented, or is the problem inherently hard? These questions concern problem difficulty and relative efficiency.",
+    "quick_check": {
+      "q": "What two things do these motivating questions concern?",
+      "a": "Problem difficulty and relative efficiency."
+    },
+    "id": {
+      "chapter": "3. Analisis Algoritma",
+      "title": "Mengapa Algoritma Perlu Dianalisis?",
+      "body": "Berapa lama beban kerja yang lebih besar akan diproses? Mana dari dua program yang sebaiknya dipilih? Apakah program yang lambat diimplementasikan dengan buruk, atau masalahnya memang sulit? Pertanyaan ini menyangkut tingkat kesulitan masalah dan efisiensi relatif.",
+      "quick_check": {
+        "q": "Dua hal apa yang menjadi inti pertanyaan-pertanyaan ini?",
+        "a": "Tingkat kesulitan masalah dan efisiensi relatif."
+      }
+    }
+  },
+  {
+    "chapter": "3. Algorithm Analysis",
+    "title": "Two Goals of Programming",
+    "tag": "WHY",
+    "body": "Two goals, which sometimes conflict:\n1. An algorithm that is easy to understand, code and debug (design patterns, software engineering).\n2. An algorithm that uses the computer's resources efficiently (algorithm analysis: measuring efficiency).",
+    "quick_check": {
+      "q": "Which goal does algorithm analysis serve?",
+      "a": "Goal 2: efficient use of the computer's resources."
+    },
+    "id": {
+      "chapter": "3. Analisis Algoritma",
+      "title": "Dua Tujuan Pemrograman",
+      "body": "Dua tujuan yang kadang bertentangan:\n1. Algoritma yang mudah dipahami, dikodekan, dan di-debug (design pattern, rekayasa perangkat lunak).\n2. Algoritma yang memakai sumber daya komputer secara efisien (analisis algoritma: mengukur efisiensi).",
+      "quick_check": {
+        "q": "Tujuan mana yang dilayani oleh analisis algoritma?",
+        "a": "Tujuan 2: penggunaan sumber daya komputer secara efisien."
+      }
+    }
+  },
+  {
+    "chapter": "3. Algorithm Analysis",
+    "title": "Growth Rate Analysis",
+    "tag": "WHAT",
+    "body": "Two ways to measure efficiency: empirical comparison (run the programs) or growth rate analysis, i.e. how cost grows as input size grows.\nT(n): running time as a function of input size n.\nS(n): space used as a function of n.",
+    "quick_check": {
+      "q": "What does T(n) represent?",
+      "a": "Running time as a function of the input size n."
+    },
+    "id": {
+      "chapter": "3. Analisis Algoritma",
+      "title": "Analisis Laju Pertumbuhan (Growth Rate)",
+      "body": "Dua cara mengukur efisiensi: perbandingan empiris (menjalankan program) atau analisis laju pertumbuhan, yaitu bagaimana biaya bertambah saat ukuran input bertambah.\nT(n): waktu eksekusi sebagai fungsi ukuran input n.\nS(n): ruang yang dipakai sebagai fungsi n.",
+      "quick_check": {
+        "q": "Apa yang dinyatakan oleh T(n)?",
+        "a": "Waktu eksekusi sebagai fungsi dari ukuran input n."
+      }
+    }
+  },
+  {
+    "chapter": "3. Algorithm Analysis",
+    "title": "Example 1: Find the Largest Value",
+    "tag": "HOW",
+    "body": "One loop over the array, constant work per pass, plus constant setup and return.\nT(n) = c1·n + c2.",
+    "code": "// Find largest value in array[0..n-1]\nint largest(int array[], int n) {\n  int currlarge = 0;            // Largest value seen\n  for (int i = 1; i < n; i++)   // For each val\n    if (array[currlarge] < array[i])\n      currlarge = i;            // Remember pos\n  return currlarge;             // Return largest\n}",
+    "explain": "c1 = cost of one loop pass (one compare, maybe one assignment). c2 = one-time cost (setting currlarge, returning). Loop runs about n times, so total ≈ c1·n + c2. The exact constants do not matter later; only the 'n' shape does.",
+    "wrong_right": {
+      "wrong": "for (int i = 1; i <= n; i++)   // as on the source slide",
+      "right": "for (int i = 1; i < n; i++)",
+      "reason": "Off-by-one: valid indices are 0..n-1, so i <= n reads array[n], past the end. Verified with AddressSanitizer (stack-buffer-overflow). [NOTE] The source slide has i<=n; the textbook version uses i<n."
+    },
+    "quick_check": {
+      "q": "For an array of size n, what is the last valid index?",
+      "a": "n-1."
+    },
+    "id": {
+      "chapter": "3. Analisis Algoritma",
+      "title": "Contoh 1: Mencari Nilai Terbesar",
+      "body": "Satu loop melewati array, kerja konstan per putaran, ditambah inisialisasi dan return yang konstan.\nT(n) = c1·n + c2.",
+      "explain": "c1 = biaya satu putaran loop (satu perbandingan, mungkin satu penugasan). c2 = biaya sekali jalan (mengisi currlarge, return). Loop berjalan sekitar n kali, jadi total ≈ c1·n + c2. Nilai konstanta persisnya nanti tidak penting; yang penting hanya bentuk 'n'-nya.",
+      "wrong_right_reason": "Off-by-one (meleset satu): indeks yang valid adalah 0..n-1, sehingga i <= n membaca array[n], melewati batas akhir. Sudah diverifikasi dengan AddressSanitizer (stack-buffer-overflow). [NOTE] Slide sumber memakai i<=n; versi buku teks memakai i<n.",
+      "quick_check": {
+        "q": "Untuk array berukuran n, berapa indeks valid terakhir?",
+        "a": "n-1."
+      }
+    }
+  },
+  {
+    "chapter": "3. Algorithm Analysis",
+    "title": "Example 2: Nested Loops",
+    "tag": "HOW",
+    "body": "Outer loop runs n times; inner loop runs n times for each outer pass, so sum++ executes n·n times.\nT(n) = c1·n² + c2.",
+    "code": "int sum = 0;\nfor (int i = 1; i <= n; i++)\n  for (int j = 1; j <= n; j++)\n    sum++;",
+    "explain": "Count the innermost statement: n outer passes × n inner passes = n² executions. Here i <= n is correct because i and j are counters, not array indices.",
+    "wrong_right": {
+      "wrong": "sum = 0;\nfor (i=1; i<=n; i++)\n  for (j=1; j<=n; j++)\n    sum++;\n}   // as on the source slide",
+      "right": "sum = 0;\nfor (i=1; i<=n; i++)\n  for (j=1; j<=n; j++)\n    sum++;",
+      "reason": "Does not compile: the source slide ends with an extra '}' that has no matching '{'. Verified with clang ('extraneous closing brace')."
+    },
+    "quick_check": {
+      "q": "With n = 10, how many times does sum++ run?",
+      "a": "100 (10 × 10)."
+    },
+    "id": {
+      "chapter": "3. Analisis Algoritma",
+      "title": "Contoh 2: Loop Bersarang",
+      "body": "Loop luar berjalan n kali; loop dalam berjalan n kali untuk setiap putaran luar, sehingga sum++ dieksekusi n·n kali.\nT(n) = c1·n² + c2.",
+      "explain": "Hitung pernyataan terdalam: n putaran luar × n putaran dalam = n² eksekusi. Di sini i <= n benar karena i dan j adalah penghitung, bukan indeks array.",
+      "wrong_right_reason": "Tidak bisa dikompilasi: slide sumber diakhiri '}' tambahan yang tidak punya pasangan '{'. Sudah diverifikasi dengan clang ('extraneous closing brace').",
+      "quick_check": {
+        "q": "Dengan n = 10, berapa kali sum++ dijalankan?",
+        "a": "100 (10 × 10)."
+      }
+    }
+  },
+  {
+    "chapter": "3. Algorithm Analysis",
+    "title": "Growth Rates Compared",
+    "tag": "WHAT",
+    "body": "The slide's graphs plot 10n, 20n, 5n·log₂n, 2n², 2ⁿ and n!. For small n the curves cross and mix; as n grows, n! and 2ⁿ explode, 2n² climbs steeply, and the linear ones grow slowest.",
+    "explain": "Small inputs can mislead: at n = 5, 20n (100) is bigger than 2n² (50). By n = 50, 2n² is 5000 and 20n is only 1000. Growth rate is about what happens as n gets large. [NOTE] The source slide is graphs only; values here are read from those graphs and calculated.",
+    "quick_check": {
+      "q": "Which grows faster for large n: 20n or 2n²?",
+      "a": "2n² (it overtakes 20n after n = 10)."
+    },
+    "id": {
+      "chapter": "3. Analisis Algoritma",
+      "title": "Perbandingan Laju Pertumbuhan",
+      "body": "Grafik di slide memplot 10n, 20n, 5n·log₂n, 2n², 2ⁿ, dan n!. Untuk n kecil kurva-kurvanya saling silang; saat n membesar, n! dan 2ⁿ meledak, 2n² naik tajam, dan yang linear tumbuh paling lambat.",
+      "explain": "Input kecil bisa menyesatkan: pada n = 5, 20n (100) lebih besar dari 2n² (50). Pada n = 50, 2n² bernilai 5000 sedangkan 20n hanya 1000. Laju pertumbuhan membahas apa yang terjadi saat n menjadi besar. [NOTE] Slide sumber hanya berisi grafik; nilai di sini dibaca dari grafik dan dihitung.",
+      "quick_check": {
+        "q": "Mana yang tumbuh lebih cepat untuk n besar: 20n atau 2n²?",
+        "a": "2n² (melampaui 20n setelah n = 10)."
+      }
+    }
+  },
+  {
+    "chapter": "3. Algorithm Analysis",
+    "title": "Best, Worst and Average Cases",
+    "tag": "WHAT",
+    "body": "Inputs of the same size can take different times. Sequential search for K in n integers:\nBest: found at first position, 1 compare.\nWorst: found at last position, n compares.\nAverage: (n+1)/2 compares.",
+    "explain": "The average (n+1)/2 assumes K is equally likely to be in any position. Add up the costs 1 + 2 + … + n = n(n+1)/2, then divide by n positions = (n+1)/2.",
+    "quick_check": {
+      "q": "Searching 99 elements sequentially, what is the average number of compares?",
+      "a": "(99+1)/2 = 50."
+    },
+    "id": {
+      "chapter": "3. Analisis Algoritma",
+      "title": "Kasus Terbaik, Terburuk, dan Rata-rata",
+      "body": "Input berukuran sama bisa butuh waktu berbeda. Pencarian sekuensial K dalam n bilangan bulat:\nTerbaik: ditemukan di posisi pertama, 1 perbandingan.\nTerburuk: di posisi terakhir, n perbandingan.\nRata-rata: (n+1)/2 perbandingan.",
+      "explain": "Rata-rata (n+1)/2 mengasumsikan K berpeluang sama berada di posisi mana pun. Jumlahkan biayanya 1 + 2 + … + n = n(n+1)/2, lalu bagi dengan n posisi = (n+1)/2.",
+      "quick_check": {
+        "q": "Mencari secara sekuensial di 99 elemen, berapa rata-rata jumlah perbandingan?",
+        "a": "(99+1)/2 = 50."
+      }
+    }
+  },
+  {
+    "chapter": "3. Algorithm Analysis",
+    "title": "Asymptotic Analysis",
+    "tag": "WHAT",
+    "body": "T(n) is often a messy expression, e.g. T(n) = c1n² + c2·log n + …. Asymptotic analysis simplifies it while keeping its long-run trend. Three tools: Big-Oh (upper bound), Big-Omega (lower bound), Theta (both).",
+    "quick_check": {
+      "q": "Which notation gives an upper bound and which a lower bound?",
+      "a": "Big-Oh = upper bound; Big-Omega = lower bound."
+    },
+    "id": {
+      "chapter": "3. Analisis Algoritma",
+      "title": "Analisis Asimtotik",
+      "body": "T(n) sering berupa ekspresi rumit, mis. T(n) = c1n² + c2·log n + …. Analisis asimtotik menyederhanakannya sambil mempertahankan tren jangka panjangnya. Tiga alat: Big-Oh (batas atas), Big-Omega (batas bawah), Theta (keduanya).",
+      "quick_check": {
+        "q": "Notasi mana yang memberi batas atas dan mana yang batas bawah?",
+        "a": "Big-Oh = batas atas; Big-Omega = batas bawah."
+      }
+    }
+  },
+  {
+    "chapter": "3. Algorithm Analysis",
+    "title": "Big-Oh: Definition",
+    "tag": "WHAT",
+    "body": "For a non-negative function T(n), T(n) is in O(f(n)) if there exist positive constants c and n₀ such that T(n) ≤ c·f(n) for all n > n₀.",
+    "explain": "In plain words: after some starting point n₀, T(n) never rises above some fixed multiple c of f(n). Before n₀ anything can happen; we only care about large n. You get to choose c and n₀; you just need one pair that works.",
+    "quick_check": {
+      "q": "In the Big-Oh definition, does T(n) ≤ c·f(n) need to hold for small n?",
+      "a": "No, only for all n > n₀."
+    },
+    "id": {
+      "chapter": "3. Analisis Algoritma",
+      "title": "Big-Oh: Definisi",
+      "body": "Untuk fungsi tak-negatif T(n), T(n) termasuk dalam O(f(n)) jika ada konstanta positif c dan n₀ sehingga T(n) ≤ c·f(n) untuk semua n > n₀.",
+      "explain": "Dalam bahasa sederhana: setelah titik awal n₀, T(n) tidak pernah melebihi kelipatan tetap c dari f(n). Sebelum n₀ apa pun boleh terjadi; kita hanya peduli n yang besar. Kamu bebas memilih c dan n₀; cukup temukan satu pasangan yang berhasil.",
+      "quick_check": {
+        "q": "Dalam definisi Big-Oh, apakah T(n) ≤ c·f(n) harus berlaku untuk n kecil?",
+        "a": "Tidak, hanya untuk semua n > n₀."
+      }
+    }
+  },
+  {
+    "chapter": "3. Algorithm Analysis",
+    "title": "Big-Oh Means Upper Bound",
+    "tag": "REMEMBER",
+    "body": "Big-Oh indicates an upper bound. Some books write 'T(n) = O(f(n))' to mean T(n) is in the set O(f(n)). A full statement names a case: 'the running time is O(n²) in the [best / average / worst] case'.",
+    "explain": "The '=' in T(n) = O(f(n)) is not a real equals sign; it means 'belongs to'. And Big-Oh is not the same as 'worst case': you can give an upper bound for the best, average or worst case.",
+    "wrong_right": {
+      "wrong": "Big-Oh = worst case.",
+      "right": "Big-Oh = upper bound, which can be stated for best, average or worst case.",
+      "reason": "Bounds (O, Ω, Θ) and cases (best/avg/worst) are separate ideas."
+    },
+    "quick_check": {
+      "q": "What does the '=' in 'T(n) = O(n²)' really mean?",
+      "a": "T(n) is in the set O(n²)."
+    },
+    "id": {
+      "chapter": "3. Analisis Algoritma",
+      "title": "Big-Oh Berarti Batas Atas",
+      "body": "Big-Oh menyatakan batas atas. Beberapa buku menulis 'T(n) = O(f(n))' untuk berarti T(n) termasuk dalam himpunan O(f(n)). Pernyataan lengkap menyebut kasusnya: 'waktu eksekusinya O(n²) pada kasus [terbaik / rata-rata / terburuk]'.",
+      "explain": "Tanda '=' pada T(n) = O(f(n)) bukan tanda sama dengan sungguhan; artinya 'termasuk dalam'. Dan Big-Oh tidak sama dengan 'kasus terburuk': batas atas bisa dinyatakan untuk kasus terbaik, rata-rata, atau terburuk.",
+      "wrong_right_reason": "Batas (O, Ω, Θ) dan kasus (terbaik/rata-rata/terburuk) adalah dua konsep terpisah.",
+      "quick_check": {
+        "q": "Apa arti sebenarnya '=' pada 'T(n) = O(n²)'?",
+        "a": "T(n) termasuk dalam himpunan O(n²)."
+      }
+    }
+  },
+  {
+    "chapter": "3. Algorithm Analysis",
+    "title": "Prefer the Tightest Upper Bound",
+    "tag": "REMEMBER",
+    "body": "If T(n) = 3n², then T(n) = O(n²). Many upper bounds exist: T(n) = O(n³) is also true. Use the tightest one; O(n²) is preferred.",
+    "wrong_right": {
+      "wrong": "T(n) = 3n² is O(n³), so report O(n³).",
+      "right": "Report O(n²).",
+      "reason": "O(n³) is true but loose; O(n²) tells us more about the algorithm."
+    },
+    "quick_check": {
+      "q": "Is 3n² in O(n³)? Is that the best answer?",
+      "a": "Yes it is, but O(n²) is the tighter, preferred bound."
+    },
+    "id": {
+      "chapter": "3. Analisis Algoritma",
+      "title": "Pilih Batas Atas yang Paling Ketat",
+      "body": "Jika T(n) = 3n², maka T(n) = O(n²). Banyak batas atas yang berlaku: T(n) = O(n³) juga benar. Gunakan yang paling ketat; O(n²) lebih disukai.",
+      "wrong_right_reason": "O(n³) benar tetapi longgar; O(n²) memberi informasi lebih banyak tentang algoritma.",
+      "quick_check": {
+        "q": "Apakah 3n² termasuk O(n³)? Apakah itu jawaban terbaik?",
+        "a": "Ya, tetapi O(n²) adalah batas yang lebih ketat dan lebih disukai."
+      }
+    }
+  },
+  {
+    "chapter": "3. Algorithm Analysis",
+    "title": "Big-Oh: Worked Examples",
+    "tag": "HOW",
+    "body": "1. Average search: c0(n+1)/2 ≤ c0·n for n > 1, so O(n) with c = c0, n₀ = 1.\n2. c1n² + c2n ≤ (c1+c2)n² for n > 1, so O(n²).\n3. T(n) = c is O(1).",
+    "explain": "The trick in example 2: for n > 1, n ≤ n², so replace c2·n with the bigger c2·n². Now everything is a multiple of n², giving c = c1 + c2. Making the right side bigger is allowed because we only need an upper bound.",
+    "quick_check": {
+      "q": "Show 5n + 3 is O(n): give a c and n₀.",
+      "a": "[ADDED] For n > 1, 5n + 3 ≤ 5n + 3n = 8n, so c = 8, n₀ = 1."
+    },
+    "id": {
+      "chapter": "3. Analisis Algoritma",
+      "title": "Big-Oh: Contoh Soal",
+      "body": "1. Pencarian rata-rata: c0(n+1)/2 ≤ c0·n untuk n > 1, jadi O(n) dengan c = c0, n₀ = 1.\n2. c1n² + c2n ≤ (c1+c2)n² untuk n > 1, jadi O(n²).\n3. T(n) = c adalah O(1).",
+      "explain": "Triknya pada contoh 2: untuk n > 1, n ≤ n², jadi ganti c2·n dengan c2·n² yang lebih besar. Sekarang semuanya kelipatan n², sehingga c = c1 + c2. Memperbesar ruas kanan diperbolehkan karena kita hanya butuh batas atas.",
+      "quick_check": {
+        "q": "Tunjukkan 5n + 3 adalah O(n): berikan c dan n₀.",
+        "a": "[ADDED] Untuk n > 1, 5n + 3 ≤ 5n + 3n = 8n, jadi c = 8, n₀ = 1."
+      }
+    }
+  },
+  {
+    "chapter": "3. Algorithm Analysis",
+    "title": "Big-Omega: Definition",
+    "tag": "WHAT",
+    "body": "For non-negative T(n), T(n) is in Ω(g(n)) if there exist positive constants c and n₀ such that T(n) ≥ c·g(n) for all n > n₀. For all big enough inputs, the algorithm always takes more than c·g(n) steps: a lower bound.",
+    "explain": "Mirror image of Big-Oh: the ≤ becomes ≥. Big-Oh says 'no slower than this'; Big-Omega says 'no faster than this'.",
+    "quick_check": {
+      "q": "Which inequality sign is in the Big-Omega definition?",
+      "a": "≥ (T(n) ≥ c·g(n))."
+    },
+    "id": {
+      "chapter": "3. Analisis Algoritma",
+      "title": "Big-Omega: Definisi",
+      "body": "Untuk T(n) tak-negatif, T(n) termasuk dalam Ω(g(n)) jika ada konstanta positif c dan n₀ sehingga T(n) ≥ c·g(n) untuk semua n > n₀. Untuk input yang cukup besar, algoritma selalu butuh lebih dari c·g(n) langkah: batas bawah.",
+      "explain": "Cermin dari Big-Oh: ≤ menjadi ≥. Big-Oh berkata 'tidak lebih lambat dari ini'; Big-Omega berkata 'tidak lebih cepat dari ini'.",
+      "quick_check": {
+        "q": "Tanda pertidaksamaan apa yang ada di definisi Big-Omega?",
+        "a": "≥ (T(n) ≥ c·g(n))."
+      }
+    }
+  },
+  {
+    "chapter": "3. Algorithm Analysis",
+    "title": "Big-Omega: Worked Example",
+    "tag": "HOW",
+    "body": "T(n) = c1n² + c2n.\nFor n > 1, c1n² + c2n ≥ c1n².\nSo T(n) = Ω(n²) with c = c1, n₀ = 1.",
+    "explain": "For a lower bound we may make the right side smaller. Dropping the positive term c2n can only shrink the expression, so the inequality still holds.",
+    "quick_check": {
+      "q": "Why can we simply drop c2n in this proof?",
+      "a": "It is non-negative, so removing it makes the expression smaller, which keeps ≥ true."
+    },
+    "id": {
+      "chapter": "3. Analisis Algoritma",
+      "title": "Big-Omega: Contoh Soal",
+      "body": "T(n) = c1n² + c2n.\nUntuk n > 1, c1n² + c2n ≥ c1n².\nJadi T(n) = Ω(n²) dengan c = c1, n₀ = 1.",
+      "explain": "Untuk batas bawah, kita boleh memperkecil ruas kanan. Membuang suku positif c2n hanya membuat ekspresi lebih kecil, sehingga pertidaksamaan tetap berlaku.",
+      "quick_check": {
+        "q": "Mengapa c2n boleh langsung dibuang dalam pembuktian ini?",
+        "a": "Karena tak-negatif, membuangnya membuat ekspresi lebih kecil, sehingga ≥ tetap benar."
+      }
+    }
+  },
+  {
+    "chapter": "3. Algorithm Analysis",
+    "title": "Theta Notation",
+    "tag": "WHAT",
+    "body": "T(n) = Θ(h(n)) if T(n) = O(h(n)) and T(n) = Ω(h(n)).\nExample from the graph: T(n) sits between n² and 2n², so T(n) = O(n²) and Ω(n²), therefore Θ(n²).",
+    "explain": "Theta squeezes T(n) from both sides: above by one multiple of h(n), below by another. It describes the growth rate exactly, not just a ceiling or a floor.",
+    "quick_check": {
+      "q": "If T(n) is O(n²) but Ω(n), is it Θ(n²)?",
+      "a": "Not proven: Θ needs the same function for both bounds."
+    },
+    "id": {
+      "chapter": "3. Analisis Algoritma",
+      "title": "Notasi Theta",
+      "body": "T(n) = Θ(h(n)) jika T(n) = O(h(n)) dan T(n) = Ω(h(n)).\nContoh dari grafik: T(n) berada di antara n² dan 2n², jadi T(n) = O(n²) dan Ω(n²), sehingga Θ(n²).",
+      "explain": "Theta menjepit T(n) dari dua sisi: di atas oleh satu kelipatan h(n), di bawah oleh kelipatan lain. Theta menggambarkan laju pertumbuhan secara tepat, bukan hanya plafon atau lantainya.",
+      "quick_check": {
+        "q": "Jika T(n) adalah O(n²) tetapi Ω(n), apakah T(n) = Θ(n²)?",
+        "a": "Belum terbukti: Θ membutuhkan fungsi yang sama untuk kedua batas."
+      }
+    }
+  },
+  {
+    "chapter": "3. Algorithm Analysis",
+    "title": "Simplifying Rule: Constant Rule",
+    "tag": "REMEMBER",
+    "body": "If f(n) = O(k·g(n)) for any constant k > 0, then f(n) = O(g(n)).\nExample: 3n³ = O(3n³) = O(n³).\nAlso holds for Ω and Θ.",
+    "explain": "Constant multipliers never change the growth trend, so drop them.",
+    "quick_check": {
+      "q": "Simplify O(100n).",
+      "a": "O(n)."
+    },
+    "id": {
+      "chapter": "3. Analisis Algoritma",
+      "title": "Aturan Penyederhanaan: Aturan Konstanta",
+      "body": "Jika f(n) = O(k·g(n)) untuk sembarang konstanta k > 0, maka f(n) = O(g(n)).\nContoh: 3n³ = O(3n³) = O(n³).\nBerlaku juga untuk Ω dan Θ.",
+      "explain": "Pengali konstanta tidak pernah mengubah tren pertumbuhan, jadi buang saja.",
+      "quick_check": {
+        "q": "Sederhanakan O(100n).",
+        "a": "O(n)."
+      }
+    }
+  },
+  {
+    "chapter": "3. Algorithm Analysis",
+    "title": "Simplifying Rule: Add Rule",
+    "tag": "REMEMBER",
+    "body": "If f1(n) = O(g1(n)) and f2(n) = O(g2(n)), then f1(n) + f2(n) = O(max(g1(n), g2(n))).\nExamples: n² + n = O(n²); 3n² + 2n + 4 = O(3n²) = O(n²).\nAlso holds for Ω and Θ.",
+    "explain": "In a sum, keep only the fastest-growing term. Combine with the Constant Rule: drop smaller terms first, then drop the coefficient.",
+    "wrong_right": {
+      "wrong": "O(n²) + O(n) = O(n³)",
+      "right": "O(n²) + O(n) = O(n²)",
+      "reason": "Adding takes the max; multiplying is a different rule."
+    },
+    "quick_check": {
+      "q": "Simplify 7n³ + 50n² + 1000.",
+      "a": "O(n³)."
+    },
+    "id": {
+      "chapter": "3. Analisis Algoritma",
+      "title": "Aturan Penyederhanaan: Aturan Penjumlahan",
+      "body": "Jika f1(n) = O(g1(n)) dan f2(n) = O(g2(n)), maka f1(n) + f2(n) = O(max(g1(n), g2(n))).\nContoh: n² + n = O(n²); 3n² + 2n + 4 = O(3n²) = O(n²).\nBerlaku juga untuk Ω dan Θ.",
+      "explain": "Dalam penjumlahan, pertahankan hanya suku yang tumbuh paling cepat. Gabungkan dengan Aturan Konstanta: buang suku kecil dulu, lalu buang koefisiennya.",
+      "wrong_right_reason": "Penjumlahan mengambil nilai maksimum; perkalian adalah aturan yang berbeda.",
+      "quick_check": {
+        "q": "Sederhanakan 7n³ + 50n² + 1000.",
+        "a": "O(n³)."
+      }
+    }
+  },
+  {
+    "chapter": "3. Algorithm Analysis",
+    "title": "Other Rules: Transitive and Multiply",
+    "tag": "REMEMBER",
+    "body": "Transitive: if f(n) = O(g(n)) and g(n) = O(h(n)), then f(n) = O(h(n)).\nMultiply: if f1(n) = O(g1(n)) and f2(n) = O(g2(n)), then f1(n)·f2(n) = O(g1(n)·g2(n)).\nAlso hold for Ω and Θ.",
+    "explain": "[ADDED] Rule of thumb for code: loops one after another → Add Rule (take the max). One loop nested inside another → Multiply Rule.",
+    "quick_check": {
+      "q": "A loop of O(n) passes, each doing O(log n) work: total?",
+      "a": "O(n log n) by the Multiply Rule."
+    },
+    "id": {
+      "chapter": "3. Analisis Algoritma",
+      "title": "Aturan Lain: Transitif dan Perkalian",
+      "body": "Transitif: jika f(n) = O(g(n)) dan g(n) = O(h(n)), maka f(n) = O(h(n)).\nPerkalian: jika f1(n) = O(g1(n)) dan f2(n) = O(g2(n)), maka f1(n)·f2(n) = O(g1(n)·g2(n)).\nBerlaku juga untuk Ω dan Θ.",
+      "explain": "[ADDED] Patokan untuk kode: loop yang berurutan → Aturan Penjumlahan (ambil maksimum). Loop di dalam loop lain → Aturan Perkalian.",
+      "quick_check": {
+        "q": "Loop dengan O(n) putaran, tiap putaran O(log n) kerja: totalnya?",
+        "a": "O(n log n) menurut Aturan Perkalian."
+      }
+    }
+  },
+  {
+    "chapter": "3. Algorithm Analysis",
+    "title": "Code Example 1: Double Loop",
+    "tag": "HOW",
+    "body": "Inner statement runs n·n times plus constant setup.\nT1(n) = Θ(c1n² + c2) = Θ(n²).",
+    "code": "int sum1 = 0;\nfor (int i = 1; i <= n; i++)     // first double loop\n  for (int j = 1; j <= n; j++)   // do n times\n    sum1++;",
+    "quick_check": {
+      "q": "Which two simplifying rules turn c1n² + c2 into Θ(n²)?",
+      "a": "Add Rule (drop c2), then Constant Rule (drop c1)."
+    },
+    "id": {
+      "chapter": "3. Analisis Algoritma",
+      "title": "Contoh Kode 1: Loop Ganda",
+      "body": "Pernyataan terdalam berjalan n·n kali ditambah inisialisasi konstan.\nT1(n) = Θ(c1n² + c2) = Θ(n²).",
+      "quick_check": {
+        "q": "Dua aturan penyederhanaan apa yang mengubah c1n² + c2 menjadi Θ(n²)?",
+        "a": "Aturan Penjumlahan (buang c2), lalu Aturan Konstanta (buang c1)."
+      }
+    }
+  },
+  {
+    "chapter": "3. Algorithm Analysis",
+    "title": "Code Example 2: Three Parts",
+    "tag": "HOW",
+    "body": "First statement: Θ(1).\nDouble loop: Θ(n²).\nSecond loop: Θ(n).\nTotal by the Add Rule: Θ(n²).",
+    "code": "int sum = 0;\nfor (int i = 1; i <= n; i++)     // double loop\n  for (int j = 1; j <= i; j++)\n    sum++;\nfor (int k = 0; k < n; k++)      // second loop\n  A[k] = k;   // A must have at least n elements",
+    "explain": "Careful: the inner loop runs i times, not n. Total = 1 + 2 + … + n = n(n+1)/2 (the formula shown on the slide), which is still Θ(n²). Checked: n = 16 gives 136 = 16·17/2.",
+    "wrong_right": {
+      "wrong": "Inner loop depends on i, so it is not quadratic.",
+      "right": "Σ i = n(n+1)/2 = Θ(n²).",
+      "reason": "Half of n² is still n² growth; the constant ½ is dropped."
+    },
+    "quick_check": {
+      "q": "Why can the code analysis ignore the second loop?",
+      "a": "Θ(n) is smaller than Θ(n²); the Add Rule keeps only the max."
+    },
+    "id": {
+      "chapter": "3. Analisis Algoritma",
+      "title": "Contoh Kode 2: Tiga Bagian",
+      "body": "Pernyataan pertama: Θ(1).\nLoop ganda: Θ(n²).\nLoop kedua: Θ(n).\nTotal menurut Aturan Penjumlahan: Θ(n²).",
+      "explain": "Hati-hati: loop dalam berjalan i kali, bukan n. Total = 1 + 2 + … + n = n(n+1)/2 (rumus yang ada di slide), yang tetap Θ(n²). Sudah dicek: n = 16 menghasilkan 136 = 16·17/2.",
+      "wrong_right_reason": "Setengah dari n² tetap pertumbuhan n²; konstanta ½ dibuang.",
+      "quick_check": {
+        "q": "Mengapa analisis kode boleh mengabaikan loop kedua?",
+        "a": "Θ(n) lebih kecil dari Θ(n²); Aturan Penjumlahan hanya mempertahankan yang maksimum."
+      }
+    }
+  },
+  {
+    "chapter": "3. Algorithm Analysis",
+    "title": "Code Example 3: Doubling Loops",
+    "tag": "HOW",
+    "body": "k doubles each pass (1, 2, 4, …), so the outer loop runs about log n times.\nFirst: log n passes × n = Θ(n log n).\nSecond: 1 + 2 + 4 + … + n = Θ(n) (Equation 2.8).",
+    "code": "int sum1 = 0;\nfor (int k = 1; k <= n; k *= 2)\n  for (int j = 1; j <= n; j++)\n    sum1++;\nint sum2 = 0;\nfor (int k = 1; k <= n; k *= 2)\n  for (int j = 1; j <= k; j++)\n    sum2++;",
+    "explain": "The second one is the trap: same outer loop, but the inner loop runs k times, not n. Summing powers of 2 up to n gives about 2n, so it is linear. Checked with n = 16: sum1 = 80 (16 × 5), sum2 = 31 (1+2+4+8+16). The slide's formulas: first = Σ n for i = 0..log n; second = Σ 2ⁱ for i = 0..log n.",
+    "quick_check": {
+      "q": "How many times does `for (k = 1; k <= n; k *= 2)` run for n = 64?",
+      "a": "7 (k = 1, 2, 4, 8, 16, 32, 64), i.e. log₂n + 1."
+    },
+    "id": {
+      "chapter": "3. Analisis Algoritma",
+      "title": "Contoh Kode 3: Loop Berlipat Dua",
+      "body": "k berlipat dua tiap putaran (1, 2, 4, …), jadi loop luar berjalan sekitar log n kali.\nPertama: log n putaran × n = Θ(n log n).\nKedua: 1 + 2 + 4 + … + n = Θ(n) (Persamaan 2.8).",
+      "explain": "Yang kedua adalah jebakannya: loop luarnya sama, tetapi loop dalam berjalan k kali, bukan n. Menjumlahkan pangkat 2 sampai n menghasilkan sekitar 2n, jadi linear. Dicek dengan n = 16: sum1 = 80 (16 × 5), sum2 = 31 (1+2+4+8+16). Rumus di slide: pertama = Σ n untuk i = 0..log n; kedua = Σ 2ⁱ untuk i = 0..log n.",
+      "quick_check": {
+        "q": "Berapa kali `for (k = 1; k <= n; k *= 2)` berjalan untuk n = 64?",
+        "a": "7 kali (k = 1, 2, 4, 8, 16, 32, 64), yaitu log₂n + 1."
+      }
+    }
+  },
+  {
+    "chapter": "3. Algorithm Analysis",
+    "title": "Searching: Unsorted vs Sorted",
+    "tag": "WHAT",
+    "body": "Search for 45 in an unsorted array of 16 values: you may need to check every element, Θ(n). If the array is sorted, can we do better? O(?)",
+    "quick_check": {
+      "q": "What is the cost of searching an unsorted array?",
+      "a": "Θ(n)."
+    },
+    "id": {
+      "chapter": "3. Analisis Algoritma",
+      "title": "Pencarian: Tidak Terurut vs Terurut",
+      "body": "Mencari 45 dalam array tidak terurut berisi 16 nilai: mungkin perlu memeriksa setiap elemen, Θ(n). Jika array terurut, bisakah lebih baik? O(?)",
+      "quick_check": {
+        "q": "Berapa biaya pencarian pada array tidak terurut?",
+        "a": "Θ(n)."
+      }
+    }
+  },
+  {
+    "chapter": "3. Algorithm Analysis",
+    "title": "Binary Search",
+    "tag": "HOW",
+    "body": "On a sorted array, check the middle; discard the half that cannot contain K. Returns K's position, or n if not found.",
+    "code": "// Return position of element in sorted\n// array of size n with value K.\nint binary(int array[], int n, int K) {\n  int l = -1;\n  int r = n;  // l, r are beyond array bounds\n  while (l+1 != r) {  // Stop when l, r meet\n    int i = (l+r)/2;  // Check middle\n    if (K < array[i]) r = i;      // Left half\n    if (K == array[i]) return i;  // Found it\n    if (K > array[i]) l = i;      // Right half\n  }\n  return n;  // Search value not in array\n}",
+    "explain": "l and r start one step outside the array (-1 and n), so the search area is strictly between them. Each pass moves l or r to the middle, halving the gap. When l+1 == r nothing lies between them: not found. Tested: searching 45 in the slide's 16 sorted values returns index 8; searching 46 returns 16 (= n, not found).",
+    "wrong_right": {
+      "wrong": "Run binary() on the unsorted array 40 83 11 51 …",
+      "right": "Run binary() only on a sorted array.",
+      "reason": "[ADDED] Discarding a half is only safe if values are in order; otherwise K may be in the discarded half."
+    },
+    "quick_check": {
+      "q": "What does binary() return if K is not in the array?",
+      "a": "n."
+    },
+    "id": {
+      "chapter": "3. Analisis Algoritma",
+      "title": "Binary Search (Pencarian Biner)",
+      "body": "Pada array terurut, periksa elemen tengah; buang separuh yang tidak mungkin berisi K. Mengembalikan posisi K, atau n jika tidak ditemukan.",
+      "explain": "l dan r dimulai satu langkah di luar array (-1 dan n), jadi area pencarian berada tepat di antara keduanya. Tiap putaran menggeser l atau r ke tengah, membagi dua jaraknya. Saat l+1 == r tidak ada elemen di antaranya: tidak ditemukan. Sudah diuji: mencari 45 di 16 nilai terurut pada slide mengembalikan indeks 8; mencari 46 mengembalikan 16 (= n, tidak ditemukan).",
+      "wrong_right_reason": "[ADDED] Membuang separuh hanya aman jika nilainya terurut; jika tidak, K bisa saja ada di separuh yang dibuang.",
+      "quick_check": {
+        "q": "Apa yang dikembalikan binary() jika K tidak ada di array?",
+        "a": "n."
+      }
+    }
+  },
+  {
+    "chapter": "3. Algorithm Analysis",
+    "title": "Binary Search: Analysis",
+    "tag": "HOW",
+    "body": "Worst case:\nT(1) = c\nT(n) = T(n/2) + c for n > 1\nSo T(n) = c(log n + 1): Θ(log n).\nSequential search: average (n+1)/2, worst n, both Θ(n).",
+    "explain": "[ADDED] Unroll it: T(n) = T(n/2) + c = T(n/4) + 2c = … Each step halves n and adds c. After log n halvings you reach T(1) = c, so the total is c·log n + c. (Assumes n is a power of 2.)",
+    "quick_check": {
+      "q": "Worst-case compares (roughly) for binary search on 1024 sorted items?",
+      "a": "About log₂1024 + 1 = 11."
+    },
+    "id": {
+      "chapter": "3. Analisis Algoritma",
+      "title": "Binary Search: Analisis",
+      "body": "Kasus terburuk:\nT(1) = c\nT(n) = T(n/2) + c untuk n > 1\nJadi T(n) = c(log n + 1): Θ(log n).\nPencarian sekuensial: rata-rata (n+1)/2, terburuk n, keduanya Θ(n).",
+      "explain": "[ADDED] Uraikan: T(n) = T(n/2) + c = T(n/4) + 2c = … Setiap langkah membagi dua n dan menambah c. Setelah log n kali pembagian kita sampai di T(1) = c, jadi totalnya c·log n + c. (Mengasumsikan n adalah pangkat 2.)",
+      "quick_check": {
+        "q": "Kira-kira berapa perbandingan kasus terburuk binary search pada 1024 item terurut?",
+        "a": "Sekitar log₂1024 + 1 = 11."
+      }
+    }
+  },
+  {
+    "chapter": "3. Algorithm Analysis",
+    "title": "Analyzing Problems, Not Just Algorithms",
+    "tag": "WHAT",
+    "body": "One problem can be solved by many algorithms of different efficiency.\nUpper bound of a problem: the upper bound of the best known algorithm.\nLower bound of a problem: a bound for every possible algorithm, even ones not yet invented.",
+    "explain": "Upper bound = 'we already know how to do it this fast.' Lower bound = 'nobody can ever do better than this.' The lower bound is harder to prove because it covers algorithms nobody has written.",
+    "quick_check": {
+      "q": "Which problem bound must hold for algorithms not yet invented?",
+      "a": "The lower bound."
+    },
+    "id": {
+      "chapter": "3. Analisis Algoritma",
+      "title": "Menganalisis Masalah, Bukan Hanya Algoritma",
+      "body": "Satu masalah bisa diselesaikan oleh banyak algoritma dengan efisiensi berbeda.\nBatas atas masalah: batas atas algoritma terbaik yang diketahui.\nBatas bawah masalah: batas untuk setiap algoritma yang mungkin, bahkan yang belum ditemukan.",
+      "explain": "Batas atas = 'kita sudah tahu cara melakukannya secepat ini.' Batas bawah = 'tidak ada yang bisa lebih baik dari ini.' Batas bawah lebih sulit dibuktikan karena mencakup algoritma yang belum pernah ditulis siapa pun.",
+      "quick_check": {
+        "q": "Batas masalah mana yang harus berlaku untuk algoritma yang belum ditemukan?",
+        "a": "Batas bawah."
+      }
+    }
+  },
+  {
+    "chapter": "3. Algorithm Analysis",
+    "title": "Example: The Sorting Problem",
+    "tag": "REMEMBER",
+    "body": "Bubble or insertion sort: O(n²).\nBetter sorts (Quicksort, Mergesort, Heapsort): O(n log n).\nSo sorting is O(n log n) (upper bound).\nIt can also be proved that sorting is Ω(n log n) (lower bound).",
+    "explain": "Upper and lower bounds meet at n log n, so we know the best possible growth rate. [ADDED] Precisely, the Ω(n log n) bound applies to sorts that work by comparing elements. [NOTE] The source says the lower bound is proved 'later'; this course has not proved it yet.",
+    "quick_check": {
+      "q": "Is the sorting problem's upper bound set by bubble sort or by mergesort?",
+      "a": "Mergesort (the best known algorithm), giving O(n log n)."
+    },
+    "id": {
+      "chapter": "3. Analisis Algoritma",
+      "title": "Contoh: Masalah Pengurutan (Sorting)",
+      "body": "Bubble sort atau insertion sort: O(n²).\nPengurutan yang lebih baik (Quicksort, Mergesort, Heapsort): O(n log n).\nJadi sorting adalah O(n log n) (batas atas).\nDapat dibuktikan juga bahwa sorting adalah Ω(n log n) (batas bawah).",
+      "explain": "Batas atas dan bawah bertemu di n log n, jadi kita tahu laju pertumbuhan terbaik yang mungkin. [ADDED] Tepatnya, batas Ω(n log n) berlaku untuk pengurutan yang bekerja dengan membandingkan elemen. [NOTE] Sumber menyebut batas bawah dibuktikan 'nanti'; mata kuliah ini belum membuktikannya.",
+      "quick_check": {
+        "q": "Batas atas masalah sorting ditentukan oleh bubble sort atau mergesort?",
+        "a": "Mergesort (algoritma terbaik yang diketahui), menghasilkan O(n log n)."
+      }
+    }
+  }
+]
