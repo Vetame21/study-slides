@@ -96,7 +96,30 @@
         "q": "Struktur mana yang cocok untuk jejaring sosial?",
         "a": "Graph (graf)."
       }
-    }
+    },
+    "images": [
+      {
+        "src": "img/list.svg",
+        "caption": {
+          "en": "List: the library catalogue from p. 12, one record after another.",
+          "id": "List: katalog perpustakaan dari hlm. 12, satu record setelah yang lain."
+        }
+      },
+      {
+        "src": "img/tree.svg",
+        "caption": {
+          "en": "Tree: each board branches into the possible next moves (redrawn from p. 13).",
+          "id": "Tree: setiap papan bercabang ke langkah berikutnya yang mungkin (digambar ulang dari hlm. 13)."
+        }
+      },
+      {
+        "src": "img/graph.svg",
+        "caption": {
+          "en": "[ADDED] Graph: any person can connect to any other, like a social network (p. 14).",
+          "id": "[ADDED] Graph: siapa pun bisa terhubung dengan siapa pun, seperti jejaring sosial (hlm. 14)."
+        }
+      }
+    ]
   },
   {
     "chapter": "1. Data Structures and Algorithms",
@@ -186,7 +209,16 @@
         "q": "Pada AList, bagian mana yang 'penyimpanan' dan mana yang 'operasi'?",
         "a": "Field private (maxSize, listSize, fence, listArray) = penyimpanan; fungsi public (clear, setStart…) = operasi."
       }
-    }
+    },
+    "images": [
+      {
+        "src": "img/alist.svg",
+        "caption": {
+          "en": "[ADDED] AList's four fields drawn on example values: listArray, listSize, maxSize, fence.",
+          "id": "[ADDED] Empat field AList digambar dengan nilai contoh: listArray, listSize, maxSize, fence."
+        }
+      }
+    ]
   },
   {
     "chapter": "1. Data Structures and Algorithms",
@@ -205,7 +237,16 @@
         "q": "Pada contoh pengurutan, apa input dan apa output-nya?",
         "a": "Input: bilangan bulat yang belum terurut. Output: bilangan yang sama dalam urutan naik."
       }
-    }
+    },
+    "images": [
+      {
+        "src": "img/sorting.svg",
+        "caption": {
+          "en": "The sorting example from p. 22: input → algorithm → output.",
+          "id": "Contoh pengurutan dari hlm. 22: input → algoritma → output."
+        }
+      }
+    ]
   },
   {
     "chapter": "1. Data Structures and Algorithms",
@@ -461,7 +502,16 @@
         "q": "Mana yang tumbuh lebih cepat untuk n besar: 20n atau 2n²?",
         "a": "2n² (melampaui 20n setelah n = 10)."
       }
-    }
+    },
+    "images": [
+      {
+        "src": "img/growth.svg",
+        "caption": {
+          "en": "Redrawn from the p. 40 graph. Dashed lines are linear; n! and 2ⁿ leave the chart early.",
+          "id": "Digambar ulang dari grafik hlm. 40. Garis putus-putus linear; n! dan 2ⁿ cepat keluar dari grafik."
+        }
+      }
+    ]
   },
   {
     "chapter": "3. Algorithm Analysis",
@@ -522,7 +572,16 @@
         "q": "Dalam definisi Big-Oh, apakah T(n) ≤ c·f(n) harus berlaku untuk n kecil?",
         "a": "Tidak, hanya untuk semua n > n₀."
       }
-    }
+    },
+    "images": [
+      {
+        "src": "img/big-oh.svg",
+        "caption": {
+          "en": "T(n) stays under c·f(n) = 2n² (redrawn from p. 45).",
+          "id": "T(n) selalu di bawah c·f(n) = 2n² (digambar ulang dari hlm. 45)."
+        }
+      }
+    ]
   },
   {
     "chapter": "3. Algorithm Analysis",
@@ -616,7 +675,16 @@
         "q": "Tanda pertidaksamaan apa yang ada di definisi Big-Omega?",
         "a": "≥ (T(n) ≥ c·g(n))."
       }
-    }
+    },
+    "images": [
+      {
+        "src": "img/big-omega.svg",
+        "caption": {
+          "en": "T(n) stays above c·g(n) = n² (redrawn from p. 51).",
+          "id": "T(n) selalu di atas c·g(n) = n² (digambar ulang dari hlm. 51)."
+        }
+      }
+    ]
   },
   {
     "chapter": "3. Algorithm Analysis",
@@ -658,7 +726,16 @@
         "q": "Jika T(n) adalah O(n²) tetapi Ω(n), apakah T(n) = Θ(n²)?",
         "a": "Belum terbukti: Θ membutuhkan fungsi yang sama untuk kedua batas."
       }
-    }
+    },
+    "images": [
+      {
+        "src": "img/theta.svg",
+        "caption": {
+          "en": "T(n) is squeezed between n² and 2n², so T(n) = Θ(n²) (redrawn from p. 55).",
+          "id": "T(n) terjepit di antara n² dan 2n², jadi T(n) = Θ(n²) (digambar ulang dari hlm. 55)."
+        }
+      }
+    ]
   },
   {
     "chapter": "3. Algorithm Analysis",
@@ -775,7 +852,16 @@
         "q": "Mengapa analisis kode boleh mengabaikan loop kedua?",
         "a": "Θ(n) lebih kecil dari Θ(n²); Aturan Penjumlahan hanya mempertahankan yang maksimum."
       }
-    }
+    },
+    "images": [
+      {
+        "src": "img/triangle-loop.svg",
+        "caption": {
+          "en": "[ADDED] Row i has i filled cells: the inner loop's total work is a triangle, about half of n².",
+          "id": "[ADDED] Baris i berisi i sel terisi: total kerja loop dalam berbentuk segitiga, sekitar setengah n²."
+        }
+      }
+    ]
   },
   {
     "chapter": "3. Algorithm Analysis",
@@ -797,7 +883,16 @@
         "q": "Berapa kali `for (k = 1; k <= n; k *= 2)` berjalan untuk n = 64?",
         "a": "7 kali (k = 1, 2, 4, 8, 16, 32, 64), yaitu log₂n + 1."
       }
-    }
+    },
+    "images": [
+      {
+        "src": "img/doubling-loops.svg",
+        "caption": {
+          "en": "[ADDED] n = 16. Same outer loop; only the inner loop's limit differs (80 vs 31 steps).",
+          "id": "[ADDED] n = 16. Loop luar sama; hanya batas loop dalam yang berbeda (80 vs 31 langkah)."
+        }
+      }
+    ]
   },
   {
     "chapter": "3. Algorithm Analysis",
@@ -844,7 +939,16 @@
         "q": "Apa yang dikembalikan binary() jika K tidak ada di array?",
         "a": "n."
       }
-    }
+    },
+    "images": [
+      {
+        "src": "img/binary-search.svg",
+        "caption": {
+          "en": "Searching 45 with the code above: 4 probes (redrawn from p. 62–63; steps traced from binary()).",
+          "id": "Mencari 45 dengan kode di atas: 4 kali pemeriksaan (digambar ulang dari hlm. 62–63; langkah ditelusuri dari binary())."
+        }
+      }
+    ]
   },
   {
     "chapter": "3. Algorithm Analysis",
@@ -865,7 +969,16 @@
         "q": "Kira-kira berapa perbandingan kasus terburuk binary search pada 1024 item terurut?",
         "a": "Sekitar log₂1024 + 1 = 11."
       }
-    }
+    },
+    "images": [
+      {
+        "src": "img/halving.svg",
+        "caption": {
+          "en": "[ADDED] Each step halves the range and costs c, so n = 16 needs log₂16 + 1 = 5 levels.",
+          "id": "[ADDED] Setiap langkah membagi dua rentang dan berbiaya c, jadi n = 16 butuh log₂16 + 1 = 5 tingkat."
+        }
+      }
+    ]
   },
   {
     "chapter": "3. Algorithm Analysis",

@@ -10,6 +10,7 @@
     --accent: #2f5bd3; --tile: #e6ecfb; --code-bg: #f1f0ea;
     --what: #2f5bd3; --how: #1f8a5b; --why: #b5651d; --remember: #8a3fb5;
     --wrong: #c0392b; --right: #1f8a5b; --wrong-bg: #fbe9e7; --right-bg: #e5f5ec; --note-bg: #fff8e6;
+    --c1: #2f5bd3; --c2: #0f8b8d; --c3: #7a5af5; --c4: #d0661c; --c5: #b8336a; --c6: #c0392b;
   }
   @media (prefers-color-scheme: dark) {
     :root {
@@ -17,6 +18,7 @@
       --accent: #8fa8ff; --tile: #1f2b3d; --code-bg: #262a31;
       --what: #8fa8ff; --how: #5cc493; --why: #e3a15c; --remember: #c48ae6;
       --wrong: #ef7a6d; --right: #5cc493; --wrong-bg: #3a2220; --right-bg: #1c3328; --note-bg: #2a2618;
+      --c1: #8fa8ff; --c2: #4fd1c5; --c3: #b9a3ff; --c4: #f0a35e; --c5: #f07fb0; --c6: #ef7a6d;
     }
   }
   * { box-sizing: border-box; }
@@ -66,6 +68,34 @@
   .qc { margin-top: 16px; border-top: 1px dashed var(--line); padding-top: 14px; }
   .qc .answer { margin-top: 8px; }
   .nav { display: flex; justify-content: space-between; align-items: center; margin-top: 16px; }
+
+  /* Figures: inline SVGs from tools/figures.py, coloured by these classes */
+  .figs { display: flex; flex-wrap: wrap; gap: 16px 24px; margin-top: 16px; }
+  .fig { margin: 0; flex: 1 1 260px; min-width: 0; overflow-x: auto; }
+  .fig svg { display: block; width: 100%; height: auto; }
+  .fig figcaption { font-size: .85rem; color: var(--muted); margin-top: 6px; }
+  .fig text { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+  .fig .t { fill: var(--text); } .fig .m { fill: var(--muted); }
+  .fig .ax { stroke: var(--muted); stroke-width: 1.2; } .fig .grid { stroke: var(--line); }
+  .fig .box { fill: var(--card); stroke: var(--muted); stroke-width: 1.2; }
+  .fig .box.empty { fill: none; stroke-dasharray: 4 4; }
+  .fig .box.found { fill: var(--right-bg); stroke: var(--right); stroke-width: 2.5; }
+  .fig .edge { stroke: var(--muted); stroke-width: 1.2; }
+  .fig .node { fill: var(--tile); stroke: var(--accent); stroke-width: 1.5; }
+  .fig .mx { stroke: var(--wrong); stroke-width: 2.2; stroke-linecap: round; }
+  .fig .mo { fill: none; stroke: var(--how); stroke-width: 2; }
+  .fig .hl { stroke: var(--accent); stroke-width: 2; } .fig .ahead { fill: var(--accent); }
+  .fig .ok { stroke: var(--right); stroke-width: 2.5; }
+  .fig .cell { fill: none; stroke: var(--line); }
+  .fig .cell.on { fill: var(--accent); fill-opacity: .55; stroke: var(--card); }
+  .fig .badge { fill: var(--accent); } .fig .badge-t { fill: var(--card); font-weight: 700; }
+  .fig .curve { fill: none; stroke-width: 2.5; }
+  .fig .c1 { stroke: var(--c1); } .fig .c2 { stroke: var(--c2); } .fig .c3 { stroke: var(--c3); }
+  .fig .c4 { stroke: var(--c4); } .fig .c5 { stroke: var(--c5); } .fig .c6 { stroke: var(--c6); }
+  .fig text.c1, .fig rect.c1 { fill: var(--c1); stroke: none; } .fig text.c2 { fill: var(--c2); stroke: none; }
+  .fig text.c3 { fill: var(--c3); stroke: none; } .fig text.c4, .fig rect.c4 { fill: var(--c4); stroke: none; }
+  .fig text.c5 { fill: var(--c5); stroke: none; } .fig text.c6 { fill: var(--c6); stroke: none; }
+  .fig text.lbl { font-weight: 700; }
 
   /* Quiz */
   .q { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 20px; margin-top: 16px; }
@@ -262,6 +292,7 @@ function renderSlide(subject, slides, i) {
     el("h2", {}, t.title),
     el("div", { class: "body" }, t.body),
     s.code ? el("pre", {}, s.code) : null,
+    s.images ? el("div", { class: "figs" }, ...s.images.map(im => figure(subject.id + "/" + im.src, tr(im.caption)))) : null,
     t.explain ? el("div", { class: "box" }, el("div", { class: "label" }, ui().explain), t.explain) : null,
     s.wrong_right ? el("div", {},
       el("div", { class: "wr" },
@@ -282,6 +313,27 @@ function renderSlide(subject, slides, i) {
     if (e.key === "ArrowLeft" && i > 0) go(i - 1);
     if (e.key === "ArrowRight" && i < slides.length - 1) go(i + 1);
   };
+}
+
+// Figures are inlined (not <img>) so the page's CSS classes can colour them for light/dark.
+// They are our own files from tools/figures.py, so inserting their markup is safe.
+function figure(url, caption) {
+  const fig = el("figure", { class: "fig" }, el("figcaption", {}, caption));
+  const text = cache[url] ? Promise.resolve(cache[url])
+    : fetch(url).then(r => r.ok ? r.text() : "").then(t => (cache[url] = t));
+  text.then(t => {
+    const svg = t && new DOMParser().parseFromString(t, "image/svg+xml").documentElement;
+    if (!svg || svg.nodeName !== "svg") return;
+    svg.setAttribute("role", "img");
+    svg.setAttribute("aria-label", caption);
+    // Don't blow small figures up past ~1.2× their drawn size, and don't shrink wide
+    // ones below ~0.85× (text gets unreadable on phones; the figure scrolls instead).
+    const w = svg.viewBox.baseVal.width;
+    svg.style.maxWidth = (w * 1.2) + "px";
+    svg.style.minWidth = Math.min(w * 0.85, 560) + "px";
+    fig.prepend(document.importNode(svg, true));
+  });
+  return fig;
 }
 
 function prevNext(label, enabled, fn) {
