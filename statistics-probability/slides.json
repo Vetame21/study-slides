@@ -1,0 +1,1411 @@
+[
+  {
+    "chapter": "S01. Overview and Descriptive Statistics",
+    "title": "Statistics Starts from a Question",
+    "tag": "WHY",
+    "body": "Research question: among all drivers of these cars in a metropolitan area, do more than 50% regularly use the manual lap belt?\nRoute: question → recorded results → sample summary → population question.",
+    "explain": "Opinion can't answer the belt question; recorded observations can. Statistics builds an evidence-based route from a question to an answer.",
+    "quick_check": {
+      "q": "What are data, according to S01?",
+      "a": "Recorded observations used as evidence for a question."
+    },
+    "id": {
+      "chapter": "S01. Gambaran Umum dan Statistika Deskriptif",
+      "title": "Statistika Dimulai dari Pertanyaan",
+      "body": "Pertanyaan riset: di antara semua pengemudi mobil ini di suatu wilayah metropolitan, apakah lebih dari 50% rutin memakai sabuk pangkuan manual?\nAlur: pertanyaan → hasil tercatat → ringkasan sampel → pertanyaan populasi.",
+      "explain": "Opini tidak bisa menjawab pertanyaan sabuk; observasi yang tercatat bisa. Statistika membangun alur berbasis bukti dari pertanyaan menuju jawaban.",
+      "quick_check": {
+        "q": "Apa itu data menurut S01?",
+        "a": "Observasi tercatat yang dipakai sebagai bukti untuk sebuah pertanyaan."
+      }
+    }
+  },
+  {
+    "chapter": "S01. Overview and Descriptive Statistics",
+    "title": "Population vs Sample",
+    "tag": "WHAT",
+    "practice": "H01 Q1",
+    "body": "Population: the complete collection named by the research question (all stated drivers in the area). It sets the scope of the conclusion.\nSample: the subset actually observed (the 100 drivers).",
+    "explain": "Ask two questions. 'Who do we want to learn about?' gives the population. 'Who was actually observed?' gives the sample.",
+    "quick_check": {
+      "q": "A course has 180 students; 24 are surveyed. Which is the sample?",
+      "a": "The 24 surveyed students."
+    },
+    "id": {
+      "chapter": "S01. Gambaran Umum dan Statistika Deskriptif",
+      "title": "Populasi vs Sampel",
+      "body": "Populasi: kumpulan lengkap yang disebut oleh pertanyaan riset (semua pengemudi yang dimaksud di wilayah itu). Populasi menentukan cakupan kesimpulan.\nSampel: bagian yang benar-benar diamati (100 pengemudi).",
+      "explain": "Ajukan dua pertanyaan. 'Siapa yang ingin kita pelajari?' menghasilkan populasi. 'Siapa yang benar-benar diamati?' menghasilkan sampel.",
+      "quick_check": {
+        "q": "Sebuah mata kuliah punya 180 mahasiswa; 24 disurvei. Mana sampelnya?",
+        "a": "24 mahasiswa yang disurvei."
+      }
+    }
+  },
+  {
+    "chapter": "S01. Overview and Descriptive Statistics",
+    "title": "Unit, Variable, Observation",
+    "tag": "WHAT",
+    "body": "Observational unit: one case on which a variable is recorded (one driver).\nVariable: a characteristic recorded for every unit (regular lap-belt use).\nObservation: one unit's recorded value ('regular user').",
+    "explain": "Variable answers 'what is recorded for everyone?'. Observation answers 'what value did this one case get?'. Baseball: unit = one team in one game, variable = hits, observation = e.g. 8 hits.",
+    "quick_check": {
+      "q": "In the baseball data, what is one observational unit?",
+      "a": "One team in one nine-inning game."
+    },
+    "id": {
+      "chapter": "S01. Gambaran Umum dan Statistika Deskriptif",
+      "title": "Unit, Variabel, Observasi",
+      "body": "Unit observasi: satu kasus tempat variabel dicatat (satu pengemudi).\nVariabel: karakteristik yang dicatat untuk setiap unit (pemakaian sabuk pangkuan rutin).\nObservasi: nilai tercatat untuk satu unit ('pengguna rutin').",
+      "explain": "Variabel menjawab 'apa yang dicatat untuk semua orang?'. Observasi menjawab 'nilai apa yang didapat kasus ini?'. Bisbol: unit = satu tim dalam satu pertandingan, variabel = jumlah hit, observasi = mis. 8 hit.",
+      "quick_check": {
+        "q": "Pada data bisbol, apa satu unit observasinya?",
+        "a": "Satu tim dalam satu pertandingan sembilan inning."
+      }
+    }
+  },
+  {
+    "chapter": "S01. Overview and Descriptive Statistics",
+    "title": "Categorical vs Numerical",
+    "tag": "WHAT",
+    "practice": "H01 Q1–Q2",
+    "body": "Categorical: records a label or group (yes/no, a brand name).\nNumerical: records a number where arithmetic has meaning (a count, a distance with units).\nAsk: are the values labels or meaningful amounts?",
+    "explain": "Type follows what a value means, not how a computer stores it. Coding 'regular user' as 1 and 'not regular' as 0 just labels categories; it doesn't measure an amount of belt use.",
+    "wrong_right": {
+      "wrong": "Belt use is coded 1/0,\nso it is numerical.",
+      "right": "Belt use is categorical;\n1/0 are only labels.",
+      "reason": "Numerical labels don't automatically create a numerical variable."
+    },
+    "quick_check": {
+      "q": "Calculator brand, website visits, braking distance: which are numerical?",
+      "a": "Website visits (a count) and braking distance (a measurement). Brand is categorical."
+    },
+    "id": {
+      "chapter": "S01. Gambaran Umum dan Statistika Deskriptif",
+      "title": "Kategorik vs Numerik",
+      "body": "Kategorik: mencatat label atau kelompok (ya/tidak, nama merek).\nNumerik: mencatat angka yang aritmetikanya bermakna (cacahan, jarak dengan satuan).\nTanyakan: apakah nilainya label atau besaran yang bermakna?",
+      "explain": "Jenis variabel mengikuti arti nilainya, bukan cara komputer menyimpannya. Mengodekan 'pengguna rutin' sebagai 1 dan 'tidak rutin' sebagai 0 hanya memberi label kategori; tidak mengukur besaran pemakaian sabuk.",
+      "wrong_right_reason": "Label berupa angka tidak otomatis menjadikan variabel numerik.",
+      "quick_check": {
+        "q": "Merek kalkulator, jumlah kunjungan situs, jarak pengereman: mana yang numerik?",
+        "a": "Jumlah kunjungan (cacahan) dan jarak pengereman (pengukuran). Merek bersifat kategorik."
+      }
+    }
+  },
+  {
+    "chapter": "S01. Overview and Descriptive Statistics",
+    "title": "Describe the Sample; Don't Overclaim",
+    "tag": "REMEMBER",
+    "practice": "H01 Q1",
+    "body": "Descriptive statistics organizes and summarizes observed data (tables, graphs, counts, proportions).\nBelt study: 65 of 100 drivers, or 65%, were regular users in this sample.\nA summary can't silently become a population claim.",
+    "explain": "Going from the sample to the population (inference) needs a method that accounts for sampling uncertainty. That comes later in the course.",
+    "wrong_right": {
+      "wrong": "12 of 20 sampled users prefer\ndark mode, so exactly 60% of\nALL users prefer dark mode.",
+      "right": "In the sample, 12 of 20 users,\nor 60%, preferred dark mode.",
+      "reason": "Match the claim's scope to the group actually observed."
+    },
+    "quick_check": {
+      "q": "Does '65% of this sample' establish a population percentage?",
+      "a": "No. It describes the observed sample only."
+    },
+    "id": {
+      "chapter": "S01. Gambaran Umum dan Statistika Deskriptif",
+      "title": "Jelaskan Sampel; Jangan Berlebihan",
+      "body": "Statistika deskriptif mengorganisasi dan meringkas data yang diamati (tabel, grafik, cacahan, proporsi).\nStudi sabuk: 65 dari 100 pengemudi, atau 65%, adalah pengguna rutin dalam sampel ini.\nRingkasan tidak boleh diam-diam menjadi klaim populasi.",
+      "explain": "Beralih dari sampel ke populasi (inferensi) memerlukan metode yang memperhitungkan ketidakpastian sampling. Itu dibahas nanti di mata kuliah ini.",
+      "wrong_right_reason": "Sesuaikan cakupan klaim dengan kelompok yang benar-benar diamati.",
+      "quick_check": {
+        "q": "Apakah '65% dari sampel ini' menetapkan persentase populasi?",
+        "a": "Tidak. Itu hanya mendeskripsikan sampel yang diamati."
+      }
+    }
+  },
+  {
+    "chapter": "S01. Overview and Descriptive Statistics",
+    "title": "Frequency and Relative Frequency",
+    "tag": "HOW",
+    "body": "Frequency: number of observations with a stated value.\nRelative frequency = frequency ÷ total observations.\nBaseball: 2403 of 19,383 team-games had 8 hits → 2403/19,383 ≈ 0.1240 = 12.40%.",
+    "explain": "A raw list of 19,383 hit counts is too long to compare. A frequency table gives exact counts; dividing by the total turns each count into a share you can compare across datasets with different totals.",
+    "quick_check": {
+      "q": "65 regular users out of 100 drivers: relative frequency?",
+      "a": "65/100 = 0.65 = 65%."
+    },
+    "id": {
+      "chapter": "S01. Gambaran Umum dan Statistika Deskriptif",
+      "title": "Frekuensi dan Frekuensi Relatif",
+      "body": "Frekuensi: banyaknya observasi dengan nilai tertentu.\nFrekuensi relatif = frekuensi ÷ total observasi.\nBisbol: 2403 dari 19.383 tim-pertandingan punya 8 hit → 2403/19.383 ≈ 0,1240 = 12,40%.",
+      "explain": "Daftar mentah 19.383 jumlah hit terlalu panjang untuk dibandingkan. Tabel frekuensi memberi cacahan tepat; membaginya dengan total mengubah tiap cacahan menjadi bagian yang bisa dibandingkan antar-data dengan total berbeda.",
+      "quick_check": {
+        "q": "65 pengguna rutin dari 100 pengemudi: frekuensi relatifnya?",
+        "a": "65/100 = 0,65 = 65%."
+      }
+    }
+  },
+  {
+    "chapter": "S01. Overview and Descriptive Statistics",
+    "title": "Center, Spread, and Shape",
+    "tag": "WHAT",
+    "body": "A histogram shows a distribution: values and their frequencies.\nCenter: where values cluster. Spread: low-to-high extent. Shape: peaks and tails.\nBaseball hits: center near 8, spread 0–27, unimodal with slight positive skew.",
+    "explain": "Skew is named after the LONGER tail. Right tail extends farther → positive skew; left tail farther → negative skew. 'Slight' is a judgement, not a fixed cutoff.",
+    "wrong_right": {
+      "wrong": "The peak is on the left,\nso it is negatively skewed.",
+      "right": "The right tail is longer,\nso it is positively skewed.",
+      "reason": "[ADDED] Skew direction comes from the longer tail, not from where the peak sits."
+    },
+    "quick_check": {
+      "q": "One peak, neither tail longer: how do you describe the shape?",
+      "a": "Unimodal and roughly symmetric."
+    },
+    "id": {
+      "chapter": "S01. Gambaran Umum dan Statistika Deskriptif",
+      "title": "Pusat, Sebaran, dan Bentuk",
+      "body": "Histogram menunjukkan distribusi: nilai dan frekuensinya.\nPusat: tempat nilai berkumpul. Sebaran: rentang rendah ke tinggi. Bentuk: puncak dan ekor.\nHit bisbol: pusat dekat 8, sebaran 0–27, unimodal dengan kemencengan positif ringan.",
+      "explain": "Kemencengan dinamai berdasarkan ekor yang LEBIH PANJANG. Ekor kanan lebih jauh → menceng positif; ekor kiri lebih jauh → menceng negatif. 'Ringan' adalah penilaian, bukan batas pasti.",
+      "wrong_right_reason": "[ADDED] Arah kemencengan ditentukan oleh ekor yang lebih panjang, bukan letak puncak.",
+      "quick_check": {
+        "q": "Satu puncak, tidak ada ekor yang lebih panjang: bagaimana bentuknya?",
+        "a": "Unimodal dan kira-kira simetris."
+      }
+    }
+  },
+  {
+    "chapter": "S01. Overview and Descriptive Statistics",
+    "title": "The Sample Mean",
+    "tag": "HOW",
+    "practice": "H01 Q2–Q3",
+    "body": "x̄ = (1/n) Σ xᵢ: add every observation, divide by n.\nWater absorption, n = 14, Σxᵢ = 229.0% → x̄ = 229.0/14 = 16.36%.\nThe mean keeps the data's unit.",
+    "explain": "Think of the mean as the balance point of a dotplot. Each value pulls toward its side, and farther values have more leverage. Move one value far away and the mean follows it.",
+    "quick_check": {
+      "q": "Mean of 2, 4, 6 seconds?",
+      "a": "12/3 = 4 seconds."
+    },
+    "id": {
+      "chapter": "S01. Gambaran Umum dan Statistika Deskriptif",
+      "title": "Rata-rata Sampel",
+      "body": "x̄ = (1/n) Σ xᵢ: jumlahkan semua observasi, bagi dengan n.\nPenyerapan air, n = 14, Σxᵢ = 229,0% → x̄ = 229,0/14 = 16,36%.\nRata-rata memakai satuan data yang sama.",
+      "explain": "Bayangkan rata-rata sebagai titik keseimbangan dotplot. Setiap nilai menarik ke sisinya, dan nilai yang lebih jauh punya daya ungkit lebih besar. Pindahkan satu nilai jauh-jauh dan rata-rata akan mengikutinya.",
+      "quick_check": {
+        "q": "Rata-rata dari 2, 4, 6 detik?",
+        "a": "12/3 = 4 detik."
+      }
+    }
+  },
+  {
+    "chapter": "S01. Overview and Descriptive Statistics",
+    "title": "The Sample Median",
+    "tag": "HOW",
+    "practice": "H01 Q3",
+    "body": "x̃ = the middle value after ordering.\nOdd n: take the one middle value. Even n: average the two middle values.\nSymphony durations, n = 12, middle pair 66.4 and 67.4 → x̃ = 66.90 min.",
+    "explain": "The median depends on position, not on every magnitude. Raise the two longest recordings by 10 minutes: the middle pair is unchanged, so the median stays 66.90, but the mean rises.",
+    "wrong_right": {
+      "wrong": "Median of 7, 1, 5 = 1\n(the middle as written)",
+      "right": "Order first: 1, 5, 7\n→ median = 5",
+      "reason": "Order the data before picking the middle."
+    },
+    "quick_check": {
+      "q": "Median of 2, 3, 3, 4, 28?",
+      "a": "3 (the third of five ordered values)."
+    },
+    "id": {
+      "chapter": "S01. Gambaran Umum dan Statistika Deskriptif",
+      "title": "Median Sampel",
+      "body": "x̃ = nilai tengah setelah data diurutkan.\nn ganjil: ambil satu nilai tengah. n genap: rata-ratakan dua nilai tengah.\nDurasi simfoni, n = 12, pasangan tengah 66,4 dan 67,4 → x̃ = 66,90 menit.",
+      "explain": "Median bergantung pada posisi, bukan pada setiap besaran. Naikkan dua rekaman terpanjang 10 menit: pasangan tengah tidak berubah, jadi median tetap 66,90, tetapi rata-rata naik.",
+      "wrong_right_reason": "Urutkan data sebelum memilih nilai tengah.",
+      "quick_check": {
+        "q": "Median dari 2, 3, 3, 4, 28?",
+        "a": "3 (nilai ketiga dari lima nilai terurut)."
+      }
+    }
+  },
+  {
+    "chapter": "S01. Overview and Descriptive Statistics",
+    "title": "Mean or Median? The Slow Server",
+    "tag": "WHY",
+    "practice": "H01 Q3",
+    "demo": "mean-median",
+    "body": "Server times 1, 2, 2, 2, 3 s → one becomes 13 s.\nMean: 2 → 4 s. Median: 2 → 2 s.\nUse the mean for roughly symmetric data without strong extremes; prefer the median for skew or strong extremes.",
+    "explain": "One extreme value drags the mean toward it, but the median only cares about the middle position. Always look at the graph first: center, spread, shape, extremes. Then pick the center that fits. Drag the value in the demo to see it happen.",
+    "quick_check": {
+      "q": "Response times 2, 3, 3, 4, 28 s: mean or median as 'typical'?",
+      "a": "Median, 3 s. The 28 s value pulls the mean to 8 s, away from the main body."
+    },
+    "id": {
+      "chapter": "S01. Gambaran Umum dan Statistika Deskriptif",
+      "title": "Rata-rata atau Median? Server yang Lambat",
+      "body": "Waktu server 1, 2, 2, 2, 3 dtk → satu menjadi 13 dtk.\nRata-rata: 2 → 4 dtk. Median: 2 → 2 dtk.\nPakai rata-rata untuk data kira-kira simetris tanpa nilai ekstrem kuat; pilih median untuk data menceng atau ekstrem.",
+      "explain": "Satu nilai ekstrem menarik rata-rata ke arahnya, tetapi median hanya peduli pada posisi tengah. Selalu lihat grafiknya dulu: pusat, sebaran, bentuk, nilai ekstrem. Lalu pilih ukuran pusat yang cocok. Geser nilai di demo untuk melihatnya.",
+      "quick_check": {
+        "q": "Waktu respons 2, 3, 3, 4, 28 dtk: rata-rata atau median sebagai 'tipikal'?",
+        "a": "Median, 3 dtk. Nilai 28 dtk menarik rata-rata menjadi 8 dtk, jauh dari kelompok utama."
+      }
+    }
+  },
+  {
+    "chapter": "S01. Overview and Descriptive Statistics",
+    "title": "Same Center, Different Spread",
+    "tag": "WHY",
+    "body": "Loading times A: 3, 4, 5 s. B: 1, 4, 7 s.\nBoth have mean 4 s and median 4 s.\nA extends 3–5 s; B extends 1–7 s, so B is less consistent.\nCenter alone is not enough.",
+    "quick_check": {
+      "q": "Datasets 4, 4, 4 / 3, 4, 5 / 1, 4, 7: which has zero standard deviation?",
+      "a": "4, 4, 4. Every value equals the mean."
+    },
+    "id": {
+      "chapter": "S01. Gambaran Umum dan Statistika Deskriptif",
+      "title": "Pusat Sama, Sebaran Berbeda",
+      "body": "Waktu muat A: 3, 4, 5 dtk. B: 1, 4, 7 dtk.\nKeduanya punya rata-rata 4 dtk dan median 4 dtk.\nA membentang 3–5 dtk; B membentang 1–7 dtk, jadi B kurang konsisten.\nUkuran pusat saja tidak cukup.",
+      "quick_check": {
+        "q": "Data 4, 4, 4 / 3, 4, 5 / 1, 4, 7: mana yang simpangan bakunya nol?",
+        "a": "4, 4, 4. Setiap nilai sama dengan rata-rata."
+      }
+    }
+  },
+  {
+    "chapter": "S01. Overview and Descriptive Statistics",
+    "title": "Deviations Always Sum to Zero",
+    "tag": "WHAT",
+    "practice": "H01 Q4",
+    "body": "Deviation = xᵢ − x̄: signed distance from the mean, in the data's unit.\nData 2, 4, 6 s (x̄ = 4): deviations −2, 0, 2 s.\nSum = 0, so raw deviations can't measure spread.",
+    "explain": "Negative and positive deviations cancel around the mean, always. A zero sum is a property of the mean, not evidence of zero spread. That's why we square them next.",
+    "quick_check": {
+      "q": "Data 2, 4, 6 s. Why can't Σ(xᵢ − x̄) = 0 measure spread?",
+      "a": "The −2 and +2 cancel; the sum around the mean is always 0, whatever the spread."
+    },
+    "id": {
+      "chapter": "S01. Gambaran Umum dan Statistika Deskriptif",
+      "title": "Jumlah Deviasi Selalu Nol",
+      "body": "Deviasi = xᵢ − x̄: jarak bertanda dari rata-rata, dalam satuan data.\nData 2, 4, 6 dtk (x̄ = 4): deviasi −2, 0, 2 dtk.\nJumlahnya 0, jadi deviasi mentah tidak bisa mengukur sebaran.",
+      "explain": "Deviasi negatif dan positif selalu saling meniadakan di sekitar rata-rata. Jumlah nol adalah sifat rata-rata, bukan bukti sebaran nol. Itulah sebabnya kita mengkuadratkannya.",
+      "quick_check": {
+        "q": "Data 2, 4, 6 dtk. Mengapa Σ(xᵢ − x̄) = 0 tidak bisa mengukur sebaran?",
+        "a": "−2 dan +2 saling meniadakan; jumlah di sekitar rata-rata selalu 0, berapa pun sebarannya."
+      }
+    }
+  },
+  {
+    "chapter": "S01. Overview and Descriptive Statistics",
+    "title": "Variance and Standard Deviation",
+    "tag": "HOW",
+    "practice": "H01 Q4",
+    "demo": "spread",
+    "body": "Sxx = Σ(xᵢ − x̄)²\ns² = Sxx / (n − 1)   (squared units)\ns = √s²   (original units)\n2, 4, 6 s: Sxx = 4 + 0 + 4 = 8 s², s² = 8/2 = 4 s², s = 2 s.",
+    "explain": "Squaring stops cancellation and makes farther values count more, but turns seconds into seconds². The square root brings the unit back. s is a representative distance from the mean, not every value's exact distance. The course uses n − 1 for samples; the reason comes later.",
+    "wrong_right": {
+      "wrong": "s² = 8/3            (used n)\ns² = 4 seconds      (unit)\ns  = 4 seconds²     (no root)",
+      "right": "s² = 8/2 = 4\ns² = 4 s²\ns  = √4 = 2 s",
+      "reason": "Divide by n − 1, variance has squared units, and s is the square root."
+    },
+    "quick_check": {
+      "q": "Ford Focus: n = 11, Sxx = 314.110 mpg². Find s.",
+      "a": "s² = 314.110/10 = 31.41 mpg², s = √31.41 ≈ 5.60 mpg."
+    },
+    "id": {
+      "chapter": "S01. Gambaran Umum dan Statistika Deskriptif",
+      "title": "Variansi dan Simpangan Baku",
+      "body": "Sxx = Σ(xᵢ − x̄)²\ns² = Sxx / (n − 1)   (satuan kuadrat)\ns = √s²   (satuan asli)\n2, 4, 6 dtk: Sxx = 4 + 0 + 4 = 8 dtk², s² = 8/2 = 4 dtk², s = 2 dtk.",
+      "explain": "Pengkuadratan mencegah saling meniadakan dan membuat nilai yang lebih jauh lebih berpengaruh, tetapi mengubah detik menjadi detik². Akar kuadrat mengembalikan satuannya. s adalah jarak representatif dari rata-rata, bukan jarak tepat setiap nilai. Mata kuliah ini memakai n − 1 untuk sampel; alasannya dibahas nanti.",
+      "wrong_right_reason": "Bagi dengan n − 1, variansi bersatuan kuadrat, dan s adalah akar kuadratnya.",
+      "quick_check": {
+        "q": "Ford Focus: n = 11, Sxx = 314,110 mpg². Hitung s.",
+        "a": "s² = 314,110/10 = 31,41 mpg², s = √31,41 ≈ 5,60 mpg."
+      }
+    }
+  },
+  {
+    "chapter": "S01. Overview and Descriptive Statistics",
+    "title": "Reading a Boxplot",
+    "tag": "WHAT",
+    "body": "Line = median. Box = middle half of the data. Whiskers = overall extent.\nTurbocharger failure times (40 values): the lower whisker is longer and the box is broad → longer low-end extension, fairly large middle-half spread.",
+    "explain": "A longer low-end extension supports recognizing negative skew. Box width shows spread graphically; s gives it as a number in the original unit. They complement each other.",
+    "quick_check": {
+      "q": "In a boxplot, what does the box show?",
+      "a": "The middle half of the data."
+    },
+    "id": {
+      "chapter": "S01. Gambaran Umum dan Statistika Deskriptif",
+      "title": "Membaca Boxplot",
+      "body": "Garis = median. Kotak = separuh data bagian tengah. Whisker = rentang keseluruhan.\nWaktu gagal turbocharger (40 nilai): whisker bawah lebih panjang dan kotaknya lebar → perpanjangan ke arah rendah lebih jauh, sebaran separuh tengah cukup besar.",
+      "explain": "Perpanjangan yang lebih jauh ke arah rendah mendukung pengenalan kemencengan negatif. Lebar kotak menunjukkan sebaran secara grafis; s memberikannya sebagai angka dalam satuan asli. Keduanya saling melengkapi.",
+      "quick_check": {
+        "q": "Pada boxplot, apa yang ditunjukkan kotaknya?",
+        "a": "Separuh data bagian tengah."
+      }
+    }
+  },
+  {
+    "chapter": "S02. Sample Spaces, Events, and Probability Rules",
+    "title": "Experiment and Outcome",
+    "tag": "WHAT",
+    "body": "Experiment: an activity whose result is uncertain (inspect one weld). It need not be in a lab.\nOutcome: one complete possible result (N = not defective, D = defective).",
+    "wrong_right": {
+      "wrong": "Outcome: 'inspect the weld'",
+      "right": "Experiment: inspect the weld\nOutcome: D (defective)",
+      "reason": "Don't confuse the action with its result."
+    },
+    "quick_check": {
+      "q": "Is 'the weld is defective' an experiment or an outcome?",
+      "a": "An outcome."
+    },
+    "id": {
+      "chapter": "S02. Ruang Sampel, Kejadian, dan Aturan Peluang",
+      "title": "Eksperimen dan Hasil",
+      "body": "Eksperimen: kegiatan yang hasilnya tidak pasti (memeriksa satu las). Tidak harus di laboratorium.\nHasil (outcome): satu kemungkinan hasil yang lengkap (N = tidak cacat, D = cacat).",
+      "wrong_right_reason": "Jangan tertukar antara tindakan dan hasilnya.",
+      "quick_check": {
+        "q": "Apakah 'lasnya cacat' adalah eksperimen atau hasil?",
+        "a": "Hasil."
+      }
+    }
+  },
+  {
+    "chapter": "S02. Sample Spaces, Events, and Probability Rules",
+    "title": "The Sample Space",
+    "tag": "WHAT",
+    "practice": "H01 Q5",
+    "body": "𝒮 = the set of all possible outcomes. One weld: 𝒮 = {N, D}.\nThree welds in order: 8 outcomes, each of length 3:\n{NNN, NND, NDN, NDD, DNN, DND, DDN, DDD}.\nCheck: complete, and every entry at the same level of detail.",
+    "explain": "List systematically: hold the first symbol at N and list the four endings, then hold it at D. NDN means first fine, second defective, third fine; order matters.",
+    "wrong_right": {
+      "wrong": "{NNN, NND, NDN, NDD,\n DNN, DND, DDN, D}",
+      "right": "{NNN, NND, NDN, NDD,\n DNN, DND, DDN, DDD}",
+      "reason": "'D' is an incomplete report, and DDD is missing."
+    },
+    "quick_check": {
+      "q": "For one weld, is {N} a complete sample space?",
+      "a": "No. The outcome D is missing."
+    },
+    "id": {
+      "chapter": "S02. Ruang Sampel, Kejadian, dan Aturan Peluang",
+      "title": "Ruang Sampel",
+      "body": "𝒮 = himpunan semua hasil yang mungkin. Satu las: 𝒮 = {N, D}.\nTiga las berurutan: 8 hasil, masing-masing sepanjang 3:\n{NNN, NND, NDN, NDD, DNN, DND, DDN, DDD}.\nCek: lengkap, dan setiap anggota pada tingkat detail yang sama.",
+      "explain": "Tulis secara sistematis: tahan simbol pertama di N lalu tulis empat akhiran, kemudian tahan di D. NDN berarti las pertama baik, kedua cacat, ketiga baik; urutan berpengaruh.",
+      "wrong_right_reason": "'D' adalah laporan tidak lengkap, dan DDD hilang.",
+      "quick_check": {
+        "q": "Untuk satu las, apakah {N} ruang sampel yang lengkap?",
+        "a": "Tidak. Hasil D tidak ada."
+      }
+    }
+  },
+  {
+    "chapter": "S02. Sample Spaces, Events, and Probability Rules",
+    "title": "Events",
+    "tag": "WHAT",
+    "body": "An event is any subset of 𝒮 (including ∅).\nA = exactly one defective = {DNN, NDN, NND}.\nA occurs when the actual outcome belongs to A.\nSimple: one outcome. Compound: more than one. Null: none.",
+    "explain": "An outcome is an element; an event is a set of outcomes. Exactly one outcome happens, but it can belong to several events at once.",
+    "wrong_right": {
+      "wrong": "DNN is a simple event",
+      "right": "DNN is an outcome;\n{DNN} is a simple event",
+      "reason": "Braces turn an outcome into a (singleton) event."
+    },
+    "quick_check": {
+      "q": "Does A = {DNN, NDN, NND} occur when the result is NDD?",
+      "a": "No. NDD is not in A."
+    },
+    "id": {
+      "chapter": "S02. Ruang Sampel, Kejadian, dan Aturan Peluang",
+      "title": "Kejadian (Event)",
+      "body": "Kejadian adalah sembarang himpunan bagian dari 𝒮 (termasuk ∅).\nA = tepat satu cacat = {DNN, NDN, NND}.\nA terjadi jika hasil sebenarnya termasuk dalam A.\nSederhana: satu hasil. Majemuk: lebih dari satu. Kosong: tidak ada.",
+      "explain": "Hasil adalah elemen; kejadian adalah himpunan hasil. Tepat satu hasil yang terjadi, tetapi hasil itu bisa termasuk dalam beberapa kejadian sekaligus.",
+      "wrong_right_reason": "Kurung kurawal mengubah hasil menjadi kejadian (singleton).",
+      "quick_check": {
+        "q": "Apakah A = {DNN, NDN, NND} terjadi jika hasilnya NDD?",
+        "a": "Tidak. NDD tidak ada di A."
+      }
+    }
+  },
+  {
+    "chapter": "S02. Sample Spaces, Events, and Probability Rules",
+    "title": "Complement, Union, Intersection",
+    "tag": "HOW",
+    "practice": "H01 Q5",
+    "body": "A′: everything in 𝒮 not in A.\nA ∪ B: in A, in B, or both.\nA ∩ B: in both. Disjoint: A ∩ B = ∅.\nPumps: 𝒮 = {0..6}, A = {0..4}, B = {3..6} → A′ = {5, 6}, A ∩ B = {3, 4}.",
+    "explain": "A complement always depends on the stated sample space. In a union, an outcome in both events is listed once.",
+    "quick_check": {
+      "q": "Are A and A′ mutually exclusive?",
+      "a": "Yes, A ∩ A′ = ∅ always."
+    },
+    "id": {
+      "chapter": "S02. Ruang Sampel, Kejadian, dan Aturan Peluang",
+      "title": "Komplemen, Gabungan, Irisan",
+      "body": "A′: semua di 𝒮 yang tidak di A.\nA ∪ B: di A, di B, atau keduanya.\nA ∩ B: di keduanya. Saling lepas: A ∩ B = ∅.\nPompa: 𝒮 = {0..6}, A = {0..4}, B = {3..6} → A′ = {5, 6}, A ∩ B = {3, 4}.",
+      "explain": "Komplemen selalu bergantung pada ruang sampel yang dinyatakan. Dalam gabungan, hasil yang ada di kedua kejadian ditulis sekali saja.",
+      "quick_check": {
+        "q": "Apakah A dan A′ saling lepas?",
+        "a": "Ya, A ∩ A′ = ∅ selalu."
+      }
+    }
+  },
+  {
+    "chapter": "S02. Sample Spaces, Events, and Probability Rules",
+    "title": "The Three Axioms",
+    "tag": "REMEMBER",
+    "body": "1. P(A) ≥ 0 for every event.\n2. P(𝒮) = 1.\n3. Disjoint events add: P(A₁ ∪ A₂ ∪ …) = Σ P(Aᵢ).\nConsequences: P(∅) = 0 and 0 ≤ P(A) ≤ 1.",
+    "explain": "Axioms say which assignments are valid, not which one is right for the situation. A thumbtack with P(U) = 1/2 or P(U) = 3/4 both obey the axioms; physical knowledge or data decides.",
+    "quick_check": {
+      "q": "Is P(A) = 5/4 valid?",
+      "a": "No. Probabilities can't exceed 1."
+    },
+    "id": {
+      "chapter": "S02. Ruang Sampel, Kejadian, dan Aturan Peluang",
+      "title": "Tiga Aksioma",
+      "body": "1. P(A) ≥ 0 untuk setiap kejadian.\n2. P(𝒮) = 1.\n3. Kejadian saling lepas dijumlahkan: P(A₁ ∪ A₂ ∪ …) = Σ P(Aᵢ).\nAkibatnya: P(∅) = 0 dan 0 ≤ P(A) ≤ 1.",
+      "explain": "Aksioma menyatakan penugasan mana yang sah, bukan mana yang tepat untuk situasinya. Paku payung dengan P(U) = 1/2 atau P(U) = 3/4 sama-sama memenuhi aksioma; pengetahuan fisik atau data yang menentukan.",
+      "quick_check": {
+        "q": "Apakah P(A) = 5/4 sah?",
+        "a": "Tidak. Peluang tidak bisa melebihi 1."
+      }
+    }
+  },
+  {
+    "chapter": "S02. Sample Spaces, Events, and Probability Rules",
+    "title": "Is This a Valid Probability Model?",
+    "tag": "HOW",
+    "body": "Check BOTH: every value ≥ 0, and the total = 1.\n(1/2, 1/4, 1/4): valid.\n(1/2, 3/4, −1/4): invalid, negative value.\n(1/2, 1/4, 1/2): invalid, total 5/4.",
+    "wrong_right": {
+      "wrong": "Only check the total:\n(1/2, 3/4, −1/4) sums to 1 ✓",
+      "right": "Check both conditions:\n−1/4 < 0 → invalid",
+      "reason": "Checking only the total accepts row 2; checking only ranges accepts row 3."
+    },
+    "quick_check": {
+      "q": "Probabilities 1/8, 1/4, 3/8, x fill 𝒮. Find x.",
+      "a": "x = 1 − 3/4 = 1/4."
+    },
+    "id": {
+      "chapter": "S02. Ruang Sampel, Kejadian, dan Aturan Peluang",
+      "title": "Apakah Model Peluang Ini Sah?",
+      "body": "Cek KEDUANYA: setiap nilai ≥ 0, dan totalnya = 1.\n(1/2, 1/4, 1/4): sah.\n(1/2, 3/4, −1/4): tidak sah, ada nilai negatif.\n(1/2, 1/4, 1/2): tidak sah, total 5/4.",
+      "wrong_right_reason": "Hanya mengecek total menerima baris 2; hanya mengecek rentang menerima baris 3.",
+      "quick_check": {
+        "q": "Peluang 1/8, 1/4, 3/8, x mengisi 𝒮. Cari x.",
+        "a": "x = 1 − 3/4 = 1/4."
+      }
+    }
+  },
+  {
+    "chapter": "S02. Sample Spaces, Events, and Probability Rules",
+    "title": "Relative Frequency and the Long Run",
+    "tag": "WHAT",
+    "demo": "long-run",
+    "body": "Observed relative frequency = n(A)/n.\nDeliveries: 5 of the first 10 arrived within a day → 1/2. One more Y → 6/11.\nShort runs move; over many repetitions the share stabilizes, and that limit is identified with P(A).",
+    "explain": "Relative frequency is an observed share; probability is the long-run chance in the model. Flip the coin in the demo 10 times, then 1000, and watch the line settle.",
+    "wrong_right": {
+      "wrong": "P(A) = 0.6, so every 10 trials\ncontain exactly 6 A's",
+      "right": "About 60% of a LARGE number\nof repetitions are in A",
+      "reason": "A probability doesn't force short runs or guarantee the next result."
+    },
+    "quick_check": {
+      "q": "Does P(A) = 0.6 guarantee the next outcome is in A?",
+      "a": "No."
+    },
+    "id": {
+      "chapter": "S02. Ruang Sampel, Kejadian, dan Aturan Peluang",
+      "title": "Frekuensi Relatif dan Jangka Panjang",
+      "body": "Frekuensi relatif teramati = n(A)/n.\nPengiriman: 5 dari 10 pertama tiba dalam sehari → 1/2. Satu Y lagi → 6/11.\nRangkaian pendek berubah-ubah; setelah banyak pengulangan, proporsinya stabil, dan batas itu diidentikkan dengan P(A).",
+      "explain": "Frekuensi relatif adalah proporsi yang diamati; peluang adalah kesempatan jangka panjang dalam model. Lempar koin di demo 10 kali, lalu 1000 kali, dan lihat garisnya menjadi stabil.",
+      "wrong_right_reason": "Peluang tidak memaksa rangkaian pendek atau menjamin hasil berikutnya.",
+      "quick_check": {
+        "q": "Apakah P(A) = 0,6 menjamin hasil berikutnya ada di A?",
+        "a": "Tidak."
+      }
+    }
+  },
+  {
+    "chapter": "S02. Sample Spaces, Events, and Probability Rules",
+    "title": "Build Events from Simple Events",
+    "tag": "HOW",
+    "practice": "H01 Q7",
+    "body": "Simple events are disjoint and fill 𝒮, so P(A) = sum of the simple-event probabilities in A.\nBond funds: 0.15 + 0.10 + 0.05 = 0.30.\nTrain cars, weights 1, 2, 4, 2, 1: P({2, 3, 4}) = 4/5.",
+    "explain": "For 'twice as likely' problems, give the smallest outcome one weight x, translate the ratios, then make the total 1.",
+    "quick_check": {
+      "q": "Train cars: what is p₃?",
+      "a": "4x with x = 1/10, so 2/5."
+    },
+    "id": {
+      "chapter": "S02. Ruang Sampel, Kejadian, dan Aturan Peluang",
+      "title": "Membangun Kejadian dari Kejadian Sederhana",
+      "body": "Kejadian sederhana saling lepas dan mengisi 𝒮, jadi P(A) = jumlah peluang kejadian sederhana di A.\nReksa dana obligasi: 0,15 + 0,10 + 0,05 = 0,30.\nGerbong kereta, bobot 1, 2, 4, 2, 1: P({2, 3, 4}) = 4/5.",
+      "explain": "Untuk soal 'dua kali lebih mungkin', beri hasil terkecil satu bobot x, terjemahkan rasionya, lalu buat totalnya 1.",
+      "quick_check": {
+        "q": "Gerbong kereta: berapa p₃?",
+        "a": "4x dengan x = 1/10, jadi 2/5."
+      }
+    }
+  },
+  {
+    "chapter": "S02. Sample Spaces, Events, and Probability Rules",
+    "title": "Equally Likely Is an Assumption",
+    "tag": "REMEMBER",
+    "practice": "H01 Q8",
+    "body": "Only if all N outcomes are equally likely: P(A) = N(A)/N.\nBooks: 9 of 36 equally likely pairs are both paperback → 1/4.\nTrain cars aren't equally likely: the middle three have 4/5, not 3/5.",
+    "wrong_right": {
+      "wrong": "3 of 5 cars → P = 3/5",
+      "right": "Unequal weights → P = 4/5",
+      "reason": "Don't use N(A)/N just because outcomes have been listed."
+    },
+    "quick_check": {
+      "q": "When may you use P(A) = N(A)/N?",
+      "a": "Only when the outcomes are equally likely."
+    },
+    "id": {
+      "chapter": "S02. Ruang Sampel, Kejadian, dan Aturan Peluang",
+      "title": "Sama Mungkin Adalah Asumsi",
+      "body": "Hanya jika semua N hasil sama mungkin: P(A) = N(A)/N.\nBuku: 9 dari 36 pasangan sama mungkin keduanya paperback → 1/4.\nGerbong kereta tidak sama mungkin: tiga gerbong tengah berpeluang 4/5, bukan 3/5.",
+      "wrong_right_reason": "Jangan pakai N(A)/N hanya karena hasilnya sudah didaftar.",
+      "quick_check": {
+        "q": "Kapan boleh memakai P(A) = N(A)/N?",
+        "a": "Hanya jika hasil-hasilnya sama mungkin."
+      }
+    }
+  },
+  {
+    "chapter": "S02. Sample Spaces, Events, and Probability Rules",
+    "title": "The Complement Rule",
+    "tag": "HOW",
+    "body": "A and A′ partition 𝒮, so P(A) + P(A′) = 1:\nP(A′) = 1 − P(A).\nDryers: P(at most one buys electric) = 0.428 → P(at least two) = 1 − 0.428 = 0.572.",
+    "explain": "Use it when the opposite event is easier to name or already known. Name the opposite in words before subtracting.",
+    "wrong_right": {
+      "wrong": "opposite of 'at most one'\n= 'exactly two'",
+      "right": "opposite of 'at most one'\n= 'at least two'",
+      "reason": "The complement must include every outcome outside the event."
+    },
+    "quick_check": {
+      "q": "P({U}) = 3/4 for a thumbtack. P({D})?",
+      "a": "1 − 3/4 = 1/4."
+    },
+    "id": {
+      "chapter": "S02. Ruang Sampel, Kejadian, dan Aturan Peluang",
+      "title": "Aturan Komplemen",
+      "body": "A dan A′ mempartisi 𝒮, jadi P(A) + P(A′) = 1:\nP(A′) = 1 − P(A).\nPengering: P(paling banyak satu membeli listrik) = 0,428 → P(paling sedikit dua) = 1 − 0,428 = 0,572.",
+      "explain": "Pakai aturan ini jika kejadian lawannya lebih mudah disebut atau sudah diketahui. Sebutkan lawannya dengan kata-kata sebelum mengurangkan.",
+      "wrong_right_reason": "Komplemen harus mencakup setiap hasil di luar kejadian itu.",
+      "quick_check": {
+        "q": "P({U}) = 3/4 untuk paku payung. P({D})?",
+        "a": "1 − 3/4 = 1/4."
+      }
+    }
+  },
+  {
+    "chapter": "S02. Sample Spaces, Events, and Probability Rules",
+    "title": "The General Addition Rule",
+    "tag": "HOW",
+    "practice": "H01 Q6",
+    "demo": "venn",
+    "body": "P(A ∪ B) = P(A) + P(B) − P(A ∩ B).\nIf disjoint, P(A ∩ B) = 0 and it becomes P(A) + P(B).\nInternet 0.6, TV 0.8, both 0.5 → P(at least one) = 0.6 + 0.8 − 0.5 = 0.9.",
+    "explain": "P(A) and P(B) each include the shared region, so adding them counts the overlap twice. Subtract one copy. Check the intersection before deciding; the word 'or' alone doesn't make events disjoint.",
+    "wrong_right": {
+      "wrong": "P(A ∪ B) = 0.6 + 0.8 = 1.4",
+      "right": "P(A ∪ B) = 0.6 + 0.8 − 0.5\n         = 0.9",
+      "reason": "Direct addition counts the 0.5 overlap twice."
+    },
+    "quick_check": {
+      "q": "A ∩ B = ∅. Which rule?",
+      "a": "Direct addition: P(A ∪ B) = P(A) + P(B)."
+    },
+    "id": {
+      "chapter": "S02. Ruang Sampel, Kejadian, dan Aturan Peluang",
+      "title": "Aturan Penjumlahan Umum",
+      "body": "P(A ∪ B) = P(A) + P(B) − P(A ∩ B).\nJika saling lepas, P(A ∩ B) = 0 dan menjadi P(A) + P(B).\nInternet 0,6, TV 0,8, keduanya 0,5 → P(paling sedikit satu) = 0,6 + 0,8 − 0,5 = 0,9.",
+      "explain": "P(A) dan P(B) masing-masing mencakup daerah irisan, jadi menjumlahkannya menghitung irisan dua kali. Kurangi satu salinan. Cek irisannya sebelum memutuskan; kata 'atau' saja tidak membuat kejadian saling lepas.",
+      "wrong_right_reason": "Penjumlahan langsung menghitung irisan 0,5 dua kali.",
+      "quick_check": {
+        "q": "A ∩ B = ∅. Aturan apa yang dipakai?",
+        "a": "Penjumlahan langsung: P(A ∪ B) = P(A) + P(B)."
+      }
+    }
+  },
+  {
+    "chapter": "S02. Sample Spaces, Events, and Probability Rules",
+    "title": "At Least One vs Exactly One vs Neither",
+    "tag": "REMEMBER",
+    "practice": "H01 Q6",
+    "body": "Map the three Venn regions first.\nInternet 0.6, TV 0.8, both 0.5 → only-Internet 0.1, only-TV 0.3.\nAt least one = A ∪ B = 0.9 (overlap included).\nExactly one = 0.1 + 0.3 = 0.4 (overlap excluded).",
+    "explain": "Card example: Visa 0.6, MasterCard 0.4, both 0.3. At least one = 0.7, so neither = 1 − 0.7 = 0.3. Similar words name different regions; translate before you calculate.",
+    "wrong_right": {
+      "wrong": "P(neither) = 1 − P(A ∩ B)\n           = 1 − 0.3",
+      "right": "P(neither) = 1 − P(A ∪ B)\n           = 1 − 0.7 = 0.3",
+      "reason": "Neither is the complement of the union, not of the overlap."
+    },
+    "quick_check": {
+      "q": "Visa 0.6, MasterCard 0.4, both 0.3. P(Visa but not MasterCard)?",
+      "a": "0.6 − 0.3 = 0.3."
+    },
+    "id": {
+      "chapter": "S02. Ruang Sampel, Kejadian, dan Aturan Peluang",
+      "title": "Paling Sedikit Satu vs Tepat Satu vs Tidak Keduanya",
+      "body": "Petakan dulu tiga daerah Venn.\nInternet 0,6, TV 0,8, keduanya 0,5 → hanya-Internet 0,1, hanya-TV 0,3.\nPaling sedikit satu = A ∪ B = 0,9 (irisan termasuk).\nTepat satu = 0,1 + 0,3 = 0,4 (irisan tidak termasuk).",
+      "explain": "Contoh kartu: Visa 0,6, MasterCard 0,4, keduanya 0,3. Paling sedikit satu = 0,7, jadi tidak keduanya = 1 − 0,7 = 0,3. Kata-kata yang mirip menunjuk daerah berbeda; terjemahkan sebelum menghitung.",
+      "wrong_right_reason": "'Tidak keduanya' adalah komplemen gabungan, bukan komplemen irisan.",
+      "quick_check": {
+        "q": "Visa 0,6, MasterCard 0,4, keduanya 0,3. P(Visa tetapi bukan MasterCard)?",
+        "a": "0,6 − 0,3 = 0,3."
+      }
+    }
+  },
+  {
+    "chapter": "S03. Counting Techniques for Probability",
+    "title": "Why Count? N and N(A)",
+    "tag": "WHY",
+    "body": "With equally likely outcomes, P(A) = N(A)/N.\nN counts every outcome in 𝒮; N(A) counts those in A.\nListing works when N is small. Counting rules replace a long list when N is large.",
+    "explain": "Equal likelihood must be justified by the experiment or the sampling method first. Counting alone doesn't create a probability model.",
+    "quick_check": {
+      "q": "What must be true before using N(A)/N?",
+      "a": "The outcomes must be equally likely."
+    },
+    "id": {
+      "chapter": "S03. Teknik Pencacahan untuk Peluang",
+      "title": "Mengapa Mencacah? N dan N(A)",
+      "body": "Dengan hasil yang sama mungkin, P(A) = N(A)/N.\nN mencacah semua hasil di 𝒮; N(A) mencacah hasil di A.\nMendaftar cukup jika N kecil. Aturan pencacahan menggantikan daftar panjang jika N besar.",
+      "explain": "Kesamaan peluang harus dibenarkan dulu oleh eksperimen atau metode samplingnya. Mencacah saja tidak membuat model peluang.",
+      "quick_check": {
+        "q": "Apa yang harus benar sebelum memakai N(A)/N?",
+        "a": "Hasil-hasilnya harus sama mungkin."
+      }
+    }
+  },
+  {
+    "chapter": "S03. Counting Techniques for Probability",
+    "title": "The Product Rule",
+    "tag": "HOW",
+    "practice": "H02 Q1",
+    "body": "Stage 1 has n₁ choices; every stage-1 choice allows the same n₂ stage-2 choices → N = n₁·n₂.\n12 plumbers × 9 electricians = 108 pairs.\nk stages: N = n₁·n₂⋯n_k (5 dealers · 12 · 9 = 540).",
+    "explain": "Name each stage before multiplying, and check that every complete outcome uses one choice from every stage. A later choice may depend on earlier ones (doctors from the chosen clinic), as long as the COUNT at each stage stays fixed.",
+    "wrong_right": {
+      "wrong": "4 plumbers, 3 electricians\n→ 4 + 3 = 7 pairs",
+      "right": "→ 4 · 3 = 12 pairs",
+      "reason": "Every complete outcome needs both stages, so multiply."
+    },
+    "quick_check": {
+      "q": "3 receivers, 2 players, 2 speaker sets: how many complete systems?",
+      "a": "3 · 2 · 2 = 12."
+    },
+    "id": {
+      "chapter": "S03. Teknik Pencacahan untuk Peluang",
+      "title": "Aturan Perkalian",
+      "body": "Tahap 1 punya n₁ pilihan; setiap pilihan tahap 1 memberi n₂ pilihan tahap 2 yang sama banyak → N = n₁·n₂.\n12 tukang ledeng × 9 teknisi listrik = 108 pasangan.\nk tahap: N = n₁·n₂⋯n_k (5 dealer · 12 · 9 = 540).",
+      "explain": "Sebutkan setiap tahap sebelum mengalikan, dan cek bahwa setiap hasil lengkap memakai satu pilihan dari setiap tahap. Pilihan berikutnya boleh bergantung pada pilihan sebelumnya (dokter dari klinik yang dipilih), asalkan BANYAKNYA pilihan di tiap tahap tetap.",
+      "wrong_right_reason": "Setiap hasil lengkap memerlukan kedua tahap, jadi kalikan.",
+      "quick_check": {
+        "q": "3 receiver, 2 pemutar, 2 set speaker: berapa sistem lengkap?",
+        "a": "3 · 2 · 2 = 12."
+      }
+    }
+  },
+  {
+    "chapter": "S03. Counting Techniques for Probability",
+    "title": "Tree Diagrams",
+    "tag": "WHAT",
+    "body": "Each stage is one generation of branches. Each root-to-leaf path is one complete outcome.\n4 first-stage branches, each with 3 leaves → 4 · 3 = 12 leaves.",
+    "explain": "If the branch counts are unequal, one product won't count all leaves. The tree still organizes the list; count the leaves by cases.",
+    "wrong_right": {
+      "wrong": "2-letter names from A, B, C, D\nwith repetition: 4 · 3 = 12",
+      "right": "Repetition allowed:\n4 · 4 = 16",
+      "reason": "4 · 3 is for selection without replacement."
+    },
+    "quick_check": {
+      "q": "What does one path from root to leaf represent?",
+      "a": "One complete outcome."
+    },
+    "id": {
+      "chapter": "S03. Teknik Pencacahan untuk Peluang",
+      "title": "Diagram Pohon",
+      "body": "Setiap tahap adalah satu generasi cabang. Setiap jalur dari akar ke daun adalah satu hasil lengkap.\n4 cabang tahap pertama, masing-masing 3 daun → 4 · 3 = 12 daun.",
+      "explain": "Jika banyak cabangnya tidak sama, satu perkalian tidak akan mencacah semua daun. Pohon tetap membantu menyusun daftar; cacah daunnya per kasus.",
+      "wrong_right_reason": "4 · 3 berlaku untuk pemilihan tanpa pengembalian.",
+      "quick_check": {
+        "q": "Apa arti satu jalur dari akar ke daun?",
+        "a": "Satu hasil lengkap."
+      }
+    }
+  },
+  {
+    "chapter": "S03. Counting Techniques for Probability",
+    "title": "Factorial",
+    "tag": "REMEMBER",
+    "body": "m! = m(m − 1)⋯2·1 for a positive integer m.\n4! = 4·3·2·1 = 24.\n0! = 1: there is one way to arrange nothing (do nothing).",
+    "wrong_right": {
+      "wrong": "0! = 0",
+      "right": "0! = 1",
+      "reason": "The empty arrangement is one outcome."
+    },
+    "quick_check": {
+      "q": "3! = ?",
+      "a": "3·2·1 = 6."
+    },
+    "id": {
+      "chapter": "S03. Teknik Pencacahan untuk Peluang",
+      "title": "Faktorial",
+      "body": "m! = m(m − 1)⋯2·1 untuk bilangan bulat positif m.\n4! = 4·3·2·1 = 24.\n0! = 1: ada satu cara menyusun tidak ada apa-apa (tidak melakukan apa pun).",
+      "wrong_right_reason": "Susunan kosong adalah satu hasil.",
+      "quick_check": {
+        "q": "3! = ?",
+        "a": "3·2·1 = 6."
+      }
+    }
+  },
+  {
+    "chapter": "S03. Counting Techniques for Probability",
+    "title": "Permutations: Order Matters",
+    "tag": "HOW",
+    "practice": "H02 Q2",
+    "body": "A permutation is an ordered selection of distinct objects.\nP(k,n) = n(n − 1)⋯(n − k + 1) = n!/(n − k)!\nChair, vice-chair, secretary from 7: P(3,7) = 7·6·5 = 210.",
+    "explain": "The three offices are different roles, so swapping who holds which office creates a different outcome. Fill the roles one at a time without replacement; the choices descend.",
+    "quick_check": {
+      "q": "Six representatives; chair, vice-chair and secretary. How many assignments?",
+      "a": "P(3,6) = 6·5·4 = 120."
+    },
+    "id": {
+      "chapter": "S03. Teknik Pencacahan untuk Peluang",
+      "title": "Permutasi: Urutan Berpengaruh",
+      "body": "Permutasi adalah pemilihan objek berbeda secara berurutan.\nP(k,n) = n(n − 1)⋯(n − k + 1) = n!/(n − k)!\nKetua, wakil ketua, sekretaris dari 7 orang: P(3,7) = 7·6·5 = 210.",
+      "explain": "Tiga jabatan itu peran yang berbeda, jadi menukar siapa memegang jabatan apa menghasilkan hasil berbeda. Isi peran satu per satu tanpa pengembalian; pilihannya menurun.",
+      "quick_check": {
+        "q": "Enam perwakilan; ketua, wakil ketua, dan sekretaris. Berapa susunannya?",
+        "a": "P(3,6) = 6·5·4 = 120."
+      }
+    }
+  },
+  {
+    "chapter": "S03. Counting Techniques for Probability",
+    "title": "Combinations: Only the Group Matters",
+    "tag": "HOW",
+    "practice": "H02 Q2–Q3",
+    "demo": "order-or-not",
+    "body": "A combination is an unordered selection.\nP(k,n) counts each group k! times (once per internal order), so divide:\nC(n,k) = P(k,n)/k! = n!/(k!(n − k)!)\nThree delegates from 7: C(7,3) = 7·6·5/(3·2·1) = 35.",
+    "explain": "{a, c, g} is the same delegation in all 3! = 6 listing orders. Boundary values: C(n,0) = 1, C(n,1) = n, C(n,n) = 1. The demo shows ordered lists collapsing into groups.",
+    "quick_check": {
+      "q": "C(5,3) = ?",
+      "a": "5·4·3/(3·2·1) = 10."
+    },
+    "id": {
+      "chapter": "S03. Teknik Pencacahan untuk Peluang",
+      "title": "Kombinasi: Hanya Kelompoknya yang Penting",
+      "body": "Kombinasi adalah pemilihan tanpa memperhatikan urutan.\nP(k,n) menghitung setiap kelompok k! kali (sekali per urutan internal), jadi bagi:\nC(n,k) = P(k,n)/k! = n!/(k!(n − k)!)\nTiga delegasi dari 7: C(7,3) = 7·6·5/(3·2·1) = 35.",
+      "explain": "{a, c, g} adalah delegasi yang sama dalam ke-3! = 6 urutan penulisannya. Nilai batas: C(n,0) = 1, C(n,1) = n, C(n,n) = 1. Demo menunjukkan daftar berurutan yang melebur menjadi kelompok.",
+      "quick_check": {
+        "q": "C(5,3) = ?",
+        "a": "5·4·3/(3·2·1) = 10."
+      }
+    }
+  },
+  {
+    "chapter": "S03. Counting Techniques for Probability",
+    "title": "Officers or Delegates?",
+    "tag": "WHY",
+    "body": "Five people, choose three.\nChair / vice-chair / secretary: order by role matters → P(3,5) = 60.\nThree equal delegates: only the group matters → C(5,3) = 10.\nEach group gives 3! = 6 officer orders: 60/6 = 10.",
+    "explain": "Ask one question: does swapping two selected people change the recorded result? Yes → permutation. No → combination. Several required stages → product rule.",
+    "wrong_right": {
+      "wrong": "Both pick 3 people,\nso both use C(5,3)",
+      "right": "Distinct offices → P(3,5)\nEqual roles → C(5,3)",
+      "reason": "Selecting people doesn't decide it; the final outcome's description does."
+    },
+    "quick_check": {
+      "q": "Gold, silver and bronze for 3 of 6 finalists: permutation or combination?",
+      "a": "Permutation: the positions are distinct."
+    },
+    "id": {
+      "chapter": "S03. Teknik Pencacahan untuk Peluang",
+      "title": "Pengurus atau Delegasi?",
+      "body": "Lima orang, pilih tiga.\nKetua / wakil / sekretaris: urutan berdasarkan peran berpengaruh → P(3,5) = 60.\nTiga delegasi setara: hanya kelompoknya yang penting → C(5,3) = 10.\nSetiap kelompok memberi 3! = 6 susunan pengurus: 60/6 = 10.",
+      "explain": "Ajukan satu pertanyaan: apakah menukar dua orang terpilih mengubah hasil yang dicatat? Ya → permutasi. Tidak → kombinasi. Beberapa tahap wajib → aturan perkalian.",
+      "wrong_right_reason": "Memilih orang tidak menentukannya; deskripsi hasil akhirnya yang menentukan.",
+      "quick_check": {
+        "q": "Emas, perak, perunggu untuk 3 dari 6 finalis: permutasi atau kombinasi?",
+        "a": "Permutasi: posisinya berbeda."
+      }
+    }
+  },
+  {
+    "chapter": "S03. Counting Techniques for Probability",
+    "title": "From Counts to Probability",
+    "tag": "HOW",
+    "body": "1. Define the experiment and its outcomes.\n2. Justify equal likelihood.\n3. Count N.\n4. Count N(A).\n5. Divide exactly and interpret.\nNumerator and denominator must use the same outcome type.",
+    "wrong_right": {
+      "wrong": "Ordered denominator,\nunordered numerator",
+      "right": "Both counted as unordered\n(or both as ordered)",
+      "reason": "Mixing outcome types gives a meaningless ratio."
+    },
+    "quick_check": {
+      "q": "Can the final ratio N(A)/N be greater than 1?",
+      "a": "No. If it is, a count is wrong."
+    },
+    "id": {
+      "chapter": "S03. Teknik Pencacahan untuk Peluang",
+      "title": "Dari Cacahan ke Peluang",
+      "body": "1. Tentukan eksperimen dan hasilnya.\n2. Benarkan bahwa hasilnya sama mungkin.\n3. Cacah N.\n4. Cacah N(A).\n5. Bagi secara eksak dan tafsirkan.\nPembilang dan penyebut harus memakai jenis hasil yang sama.",
+      "wrong_right_reason": "Mencampur jenis hasil menghasilkan rasio yang tidak bermakna.",
+      "quick_check": {
+        "q": "Bisakah rasio akhir N(A)/N lebih dari 1?",
+        "a": "Tidak. Jika ya, ada cacahan yang salah."
+      }
+    }
+  },
+  {
+    "chapter": "S03. Counting Techniques for Probability",
+    "title": "Worked Example: Printer Inspection",
+    "tag": "HOW",
+    "practice": "H02 Q2",
+    "body": "2 laser + 4 inkjet; pick 3 uniformly, order ignored. A = exactly one laser.\nN = C(6,3) = 20.\nN(A) = C(2,1)·C(4,2) = 2·6 = 12.\nP(A) = 12/20 = 3/5.",
+    "explain": "The favorable count is a product because both type-specific selections are required in the same sample: one laser AND two inkjets.",
+    "quick_check": {
+      "q": "Cards R1, R2, B1, B2, B3; pick 2. P(exactly one red)?",
+      "a": "C(2,1)·C(3,1)/C(5,2) = 6/10 = 3/5."
+    },
+    "id": {
+      "chapter": "S03. Teknik Pencacahan untuk Peluang",
+      "title": "Contoh: Inspeksi Printer",
+      "body": "2 laser + 4 inkjet; ambil 3 secara seragam, urutan diabaikan. A = tepat satu laser.\nN = C(6,3) = 20.\nN(A) = C(2,1)·C(4,2) = 2·6 = 12.\nP(A) = 12/20 = 3/5.",
+      "explain": "Cacahan yang menguntungkan berupa perkalian karena kedua pemilihan per jenis wajib ada dalam sampel yang sama: satu laser DAN dua inkjet.",
+      "quick_check": {
+        "q": "Kartu R1, R2, B1, B2, B3; ambil 2. P(tepat satu merah)?",
+        "a": "C(2,1)·C(3,1)/C(5,2) = 6/10 = 3/5."
+      }
+    }
+  },
+  {
+    "chapter": "S03. Counting Techniques for Probability",
+    "title": "Use the Complement for 'At Least One'",
+    "tag": "HOW",
+    "body": "6 keyboards: 2 electrical, 4 mechanical defects; pick 2.\nA = at least one electrical. Opposite: both mechanical.\nN = C(6,2) = 15, N(A′) = C(4,2) = 6.\nN(A) = 15 − 6 = 9 → P(A) = 9/15 = 3/5.",
+    "explain": "'At least one' includes exactly one AND two. Its opposite is a single condition, so count that and subtract.",
+    "wrong_right": {
+      "wrong": "N(A) = C(2,1)·C(4,1) = 8\n→ P = 8/15",
+      "right": "N(A) = 15 − C(4,2) = 9\n→ P = 9/15 = 3/5",
+      "reason": "8 counts only 'exactly one'; it misses the pair with both electrical keyboards."
+    },
+    "quick_check": {
+      "q": "Same keyboards: P(exactly one electrical)?",
+      "a": "8/15."
+    },
+    "id": {
+      "chapter": "S03. Teknik Pencacahan untuk Peluang",
+      "title": "Pakai Komplemen untuk 'Paling Sedikit Satu'",
+      "body": "6 keyboard: 2 cacat listrik, 4 cacat mekanis; ambil 2.\nA = paling sedikit satu listrik. Lawannya: keduanya mekanis.\nN = C(6,2) = 15, N(A′) = C(4,2) = 6.\nN(A) = 15 − 6 = 9 → P(A) = 9/15 = 3/5.",
+      "explain": "'Paling sedikit satu' mencakup tepat satu DAN dua. Lawannya hanya satu kondisi, jadi cacah itu lalu kurangkan.",
+      "wrong_right_reason": "8 hanya menghitung 'tepat satu'; pasangan dengan kedua keyboard listrik terlewat.",
+      "quick_check": {
+        "q": "Keyboard yang sama: P(tepat satu listrik)?",
+        "a": "8/15."
+      }
+    }
+  },
+  {
+    "chapter": "S04. Conditional Probability and Independence",
+    "title": "Information Restricts the Sample Space",
+    "tag": "WHAT",
+    "body": "Components: older line 2 defective + 6 good; newer line 1 defective + 9 good (18 total).\nGiven 'defective', ignore the 15 good ones: the new sample space is just the 3 defective components, 2 of them from the older line.",
+    "explain": "'Given B' means only outcomes in B are still possible. B becomes the whole world, and you count inside it.",
+    "quick_check": {
+      "q": "Given 'defective', how many components remain possible?",
+      "a": "3."
+    },
+    "id": {
+      "chapter": "S04. Peluang Bersyarat dan Kebebasan (Independensi)",
+      "title": "Informasi Mempersempit Ruang Sampel",
+      "body": "Komponen: lini lama 2 cacat + 6 baik; lini baru 1 cacat + 9 baik (total 18).\nDiketahui 'cacat', abaikan 15 yang baik: ruang sampel baru hanya 3 komponen cacat, 2 di antaranya dari lini lama.",
+      "explain": "'Diketahui B' berarti hanya hasil di B yang masih mungkin. B menjadi seluruh dunia, dan kita mencacah di dalamnya.",
+      "quick_check": {
+        "q": "Diketahui 'cacat', berapa komponen yang masih mungkin?",
+        "a": "3."
+      }
+    }
+  },
+  {
+    "chapter": "S04. Conditional Probability and Independence",
+    "title": "Conditional Probability",
+    "tag": "REMEMBER",
+    "body": "For P(B) > 0:\nP(A | B) = P(A ∩ B) / P(B)\nWith equally likely outcomes: N(A ∩ B) / N(B).\nRead the condition after the bar first: 'A given B'.\nRestrict to B → intersect with A → divide.",
+    "explain": "P(A | B) is the proportion of the restricted group B that also belongs to A. The denominator is the restricted space, not the original one.",
+    "quick_check": {
+      "q": "Components: P(older | defective)?",
+      "a": "2/3."
+    },
+    "id": {
+      "chapter": "S04. Peluang Bersyarat dan Kebebasan (Independensi)",
+      "title": "Peluang Bersyarat",
+      "body": "Untuk P(B) > 0:\nP(A | B) = P(A ∩ B) / P(B)\nDengan hasil sama mungkin: N(A ∩ B) / N(B).\nBaca syarat setelah garis lebih dulu: 'A diketahui B'.\nBatasi ke B → iriskan dengan A → bagi.",
+      "explain": "P(A | B) adalah proporsi kelompok terbatas B yang juga termasuk A. Penyebutnya adalah ruang yang dibatasi, bukan ruang awal.",
+      "quick_check": {
+        "q": "Komponen: P(lini lama | cacat)?",
+        "a": "2/3."
+      }
+    }
+  },
+  {
+    "chapter": "S04. Conditional Probability and Independence",
+    "title": "Reverse Conditions Have Different Denominators",
+    "tag": "HOW",
+    "practice": "H02 Q4",
+    "body": "Components: P(older | defective) = 2/3, but P(defective | older) = 2/8 = 1/4.\nCoffee table: P(decaf | small) = 20/34 = 10/17, P(small | decaf) = 20/40 = 1/2.\nSame intersection, different reference groups.",
+    "explain": "Ask: which event is now the whole reference set? It's the event after the bar. Read the matching row or column total.",
+    "wrong_right": {
+      "wrong": "P(A|B) = P(B|A) = .30/.40\n(same intersection)",
+      "right": "P(A|B) = .30/.40 = .75\nP(B|A) = .30/.60 = .50",
+      "reason": "The numerator is shared; the denominator follows the condition."
+    },
+    "quick_check": {
+      "q": "Coffee: which total is the denominator for P(small | decaf)?",
+      "a": "The decaf column total, 40%."
+    },
+    "id": {
+      "chapter": "S04. Peluang Bersyarat dan Kebebasan (Independensi)",
+      "title": "Syarat Terbalik, Penyebut Berbeda",
+      "body": "Komponen: P(lama | cacat) = 2/3, tetapi P(cacat | lama) = 2/8 = 1/4.\nTabel kopi: P(decaf | kecil) = 20/34 = 10/17, P(kecil | decaf) = 20/40 = 1/2.\nIrisan sama, kelompok acuan berbeda.",
+      "explain": "Tanyakan: kejadian mana yang sekarang menjadi seluruh himpunan acuan? Yaitu kejadian setelah garis. Baca total baris atau kolom yang sesuai.",
+      "wrong_right_reason": "Pembilangnya sama; penyebutnya mengikuti syarat.",
+      "quick_check": {
+        "q": "Kopi: total mana yang menjadi penyebut untuk P(kecil | decaf)?",
+        "a": "Total kolom decaf, 40%."
+      }
+    }
+  },
+  {
+    "chapter": "S04. Conditional Probability and Independence",
+    "title": "Information Can Change Probability",
+    "tag": "WHY",
+    "body": "Unconditional: P(older) = 8/18 = 4/9.\nAfter learning 'defective': P(older | defective) = 2/3.\nThe information raised the probability that the component came from the older line.",
+    "quick_check": {
+      "q": "If learning B changes P(A), are A and B independent?",
+      "a": "No, they are dependent."
+    },
+    "id": {
+      "chapter": "S04. Peluang Bersyarat dan Kebebasan (Independensi)",
+      "title": "Informasi Bisa Mengubah Peluang",
+      "body": "Tanpa syarat: P(lama) = 8/18 = 4/9.\nSetelah tahu 'cacat': P(lama | cacat) = 2/3.\nInformasi itu menaikkan peluang bahwa komponen berasal dari lini lama.",
+      "quick_check": {
+        "q": "Jika mengetahui B mengubah P(A), apakah A dan B independen?",
+        "a": "Tidak, keduanya dependen."
+      }
+    }
+  },
+  {
+    "chapter": "S04. Conditional Probability and Independence",
+    "title": "The Multiplication Rule",
+    "tag": "HOW",
+    "body": "Rearrange the definition:\nP(A ∩ B) = P(A)·P(B | A) = P(B)·P(A | B).\nOne of four people is the desired donor; pick two in order without replacement:\nP(neither is the donor) = 3/4 · 2/3 = 1/2.",
+    "explain": "Pick the orientation that matches the conditional probability you're given. Without replacement, each later branch is conditioned on everything earlier on that route; don't reuse the first branch's probability.",
+    "quick_check": {
+      "q": "Why is the second factor 2/3, not 3/4?",
+      "a": "One non-donor is already gone: 2 of the remaining 3 are non-donors."
+    },
+    "id": {
+      "chapter": "S04. Peluang Bersyarat dan Kebebasan (Independensi)",
+      "title": "Aturan Perkalian",
+      "body": "Susun ulang definisinya:\nP(A ∩ B) = P(A)·P(B | A) = P(B)·P(A | B).\nSatu dari empat orang adalah donor yang dicari; pilih dua berurutan tanpa pengembalian:\nP(keduanya bukan donor) = 3/4 · 2/3 = 1/2.",
+      "explain": "Pilih orientasi yang sesuai dengan peluang bersyarat yang diberikan. Tanpa pengembalian, setiap cabang berikutnya bersyarat pada semua hasil sebelumnya di jalur itu; jangan pakai ulang peluang cabang pertama.",
+      "quick_check": {
+        "q": "Mengapa faktor kedua 2/3, bukan 3/4?",
+        "a": "Satu non-donor sudah terambil: 2 dari 3 sisanya non-donor."
+      }
+    }
+  },
+  {
+    "chapter": "S04. Conditional Probability and Independence",
+    "title": "Probability Trees",
+    "tag": "HOW",
+    "body": "Model A sells 3/5, model B 2/5. Repair needed: 1/3 of A, 1/4 of B.\nRoute A → R: prior 3/5 × conditional 1/3 = joint 1/5.\nRoute B → R: 2/5 × 1/4 = 1/10.\nBranches leaving one node must sum to 1.",
+    "explain": "Multiply ALONG a route to get a joint probability. Check every split first: 3/5 + 2/5 = 1, 1/3 + 2/3 = 1, 1/4 + 3/4 = 1.",
+    "quick_check": {
+      "q": "What do you get by multiplying along one route?",
+      "a": "The joint probability of that route, e.g. P(A ∩ R)."
+    },
+    "id": {
+      "chapter": "S04. Peluang Bersyarat dan Kebebasan (Independensi)",
+      "title": "Pohon Peluang",
+      "body": "Model A terjual 3/5, model B 2/5. Perlu perbaikan: 1/3 dari A, 1/4 dari B.\nJalur A → R: prior 3/5 × bersyarat 1/3 = gabungan 1/5.\nJalur B → R: 2/5 × 1/4 = 1/10.\nCabang yang keluar dari satu simpul harus berjumlah 1.",
+      "explain": "Kalikan SEPANJANG jalur untuk mendapat peluang gabungan. Cek setiap percabangan dulu: 3/5 + 2/5 = 1, 1/3 + 2/3 = 1, 1/4 + 3/4 = 1.",
+      "quick_check": {
+        "q": "Apa hasil mengalikan sepanjang satu jalur?",
+        "a": "Peluang gabungan jalur itu, mis. P(A ∩ R)."
+      }
+    }
+  },
+  {
+    "chapter": "S04. Conditional Probability and Independence",
+    "title": "Total Probability",
+    "tag": "HOW",
+    "practice": "H02 Q5",
+    "body": "If A₁, …, A_k are mutually exclusive and exhaustive:\nP(B) = Σ P(Aᵢ)·P(B | Aᵢ).\nRepair: P(R) = 1/5 + 1/10 = 3/10.",
+    "explain": "Multiply within each route, then add across all the disjoint routes that end at the observation. The spam example uses three account routes the same way.",
+    "quick_check": {
+      "q": "Why can the routes be added?",
+      "a": "They are disjoint: each device is either model A or model B."
+    },
+    "id": {
+      "chapter": "S04. Peluang Bersyarat dan Kebebasan (Independensi)",
+      "title": "Peluang Total",
+      "body": "Jika A₁, …, A_k saling lepas dan menyeluruh:\nP(B) = Σ P(Aᵢ)·P(B | Aᵢ).\nPerbaikan: P(R) = 1/5 + 1/10 = 3/10.",
+      "explain": "Kalikan di dalam setiap jalur, lalu jumlahkan semua jalur saling lepas yang berakhir di observasi. Contoh spam memakai tiga jalur akun dengan cara yang sama.",
+      "quick_check": {
+        "q": "Mengapa jalur-jalurnya boleh dijumlahkan?",
+        "a": "Saling lepas: setiap perangkat adalah model A atau model B."
+      }
+    }
+  },
+  {
+    "chapter": "S04. Conditional Probability and Independence",
+    "title": "Bayes' Rule",
+    "tag": "REMEMBER",
+    "practice": "H02 Q5",
+    "body": "P(Aⱼ | B) = P(Aⱼ)·P(B | Aⱼ) / Σ P(Aᵢ)·P(B | Aᵢ)\nprior → likelihood → joint route → total evidence → posterior.\nRepair: P(A | R) = (1/5)/(3/10) = 2/3.",
+    "explain": "Multiply, add, divide: the desired route divided by ALL routes to the observation. Among devices needing repair, two thirds are model A. The posterior describes the repaired group, not all sales.",
+    "quick_check": {
+      "q": "In Bayes' rule, what is the denominator?",
+      "a": "The total probability of the observation, summed over all routes."
+    },
+    "id": {
+      "chapter": "S04. Peluang Bersyarat dan Kebebasan (Independensi)",
+      "title": "Aturan Bayes",
+      "body": "P(Aⱼ | B) = P(Aⱼ)·P(B | Aⱼ) / Σ P(Aᵢ)·P(B | Aᵢ)\nprior → likelihood → jalur gabungan → bukti total → posterior.\nPerbaikan: P(A | R) = (1/5)/(3/10) = 2/3.",
+      "explain": "Kalikan, jumlahkan, bagi: jalur yang dicari dibagi SEMUA jalur menuju observasi. Di antara perangkat yang perlu perbaikan, dua pertiga adalah model A. Posterior menggambarkan kelompok yang diperbaiki, bukan semua penjualan.",
+      "quick_check": {
+        "q": "Dalam aturan Bayes, apa penyebutnya?",
+        "a": "Peluang total observasi, dijumlahkan atas semua jalur."
+      }
+    }
+  },
+  {
+    "chapter": "S04. Conditional Probability and Independence",
+    "title": "Likelihood Is Not the Posterior",
+    "tag": "WHY",
+    "practice": "H02 Q6",
+    "demo": "bayes",
+    "body": "Fictional screening: P(D) = 1/10, P(+ | D) = 4/5, P(+ | D′) = 1/5.\nDisease-positive route: 2/25. No-disease-positive route: 9/50.\nP(+) = 13/50, so P(D | +) = 4/13 ≈ 0.31, not 4/5.",
+    "explain": "Positive results come from both groups, and the no-disease group is 9 times bigger, so its false positives outnumber the true positives. The posterior compares the disease-positive route with ALL positive routes. Try the sliders in the demo.",
+    "wrong_right": {
+      "wrong": "The test catches 4/5 of disease,\nso P(D | +) = 4/5",
+      "right": "P(+ | D) = 4/5 is the likelihood;\nP(D | +) = 4/13",
+      "reason": "Likelihood conditions on disease; the posterior conditions on a positive result."
+    },
+    "quick_check": {
+      "q": "P(D) = 1/20, P(+|D) = 9/10, P(+|D′) = 1/10. Find P(D | +).",
+      "a": "(9/200)/(28/200) = 9/28."
+    },
+    "id": {
+      "chapter": "S04. Peluang Bersyarat dan Kebebasan (Independensi)",
+      "title": "Likelihood Bukan Posterior",
+      "body": "Skrining fiktif: P(D) = 1/10, P(+ | D) = 4/5, P(+ | D′) = 1/5.\nJalur sakit-positif: 2/25. Jalur tidak-sakit-positif: 9/50.\nP(+) = 13/50, jadi P(D | +) = 4/13 ≈ 0,31, bukan 4/5.",
+      "explain": "Hasil positif datang dari kedua kelompok, dan kelompok tidak-sakit 9 kali lebih besar, sehingga positif palsunya melebihi positif benar. Posterior membandingkan jalur sakit-positif dengan SEMUA jalur positif. Coba slider di demo.",
+      "wrong_right_reason": "Likelihood bersyarat pada penyakit; posterior bersyarat pada hasil positif.",
+      "quick_check": {
+        "q": "P(D) = 1/20, P(+|D) = 9/10, P(+|D′) = 1/10. Cari P(D | +).",
+        "a": "(9/200)/(28/200) = 9/28."
+      }
+    }
+  },
+  {
+    "chapter": "S04. Conditional Probability and Independence",
+    "title": "Independence",
+    "tag": "WHAT",
+    "practice": "H02 Q7",
+    "body": "A and B are independent if knowing one doesn't change the other:\nP(A | B) = P(A), equivalently P(A ∩ B) = P(A)·P(B).\nOne label from {1..6}: A = {2,4,6}, C = {2,3,4,5}.\nP(A ∩ C) = 1/3 = (1/2)(2/3) → independent.",
+    "explain": "Use whichever criterion fits the data you have: compare P(A | B) with P(A) when conditionals are given, or P(A ∩ B) with P(A)P(B) when the intersection is given. Equal marginals are not required.",
+    "quick_check": {
+      "q": "P(A) = 2/5, P(B) = 1/2, P(A ∩ B) = 1/5. Independent?",
+      "a": "Yes: (2/5)(1/2) = 1/5."
+    },
+    "id": {
+      "chapter": "S04. Peluang Bersyarat dan Kebebasan (Independensi)",
+      "title": "Kebebasan (Independensi)",
+      "body": "A dan B independen jika mengetahui salah satunya tidak mengubah yang lain:\nP(A | B) = P(A), setara dengan P(A ∩ B) = P(A)·P(B).\nSatu label dari {1..6}: A = {2,4,6}, C = {2,3,4,5}.\nP(A ∩ C) = 1/3 = (1/2)(2/3) → independen.",
+      "explain": "Pakai kriteria yang sesuai dengan data: bandingkan P(A | B) dengan P(A) jika peluang bersyarat diberikan, atau P(A ∩ B) dengan P(A)P(B) jika irisan diberikan. Peluang marginal tidak harus sama.",
+      "quick_check": {
+        "q": "P(A) = 2/5, P(B) = 1/2, P(A ∩ B) = 1/5. Independen?",
+        "a": "Ya: (2/5)(1/2) = 1/5."
+      }
+    }
+  },
+  {
+    "chapter": "S04. Conditional Probability and Independence",
+    "title": "Independent Is Not Mutually Exclusive",
+    "tag": "WHY",
+    "practice": "H02 Q7",
+    "body": "Mutually exclusive: A ∩ B = ∅, so P(A ∩ B) = 0.\nIf P(A) > 0 and P(B) > 0, then P(A)P(B) > 0 ≠ 0.\nSo positive-probability disjoint events are DEPENDENT: seeing B makes A impossible.",
+    "wrong_right": {
+      "wrong": "A and B can't happen together,\nso they are independent",
+      "right": "Can't happen together (P > 0)\n→ dependent",
+      "reason": "Learning B changes P(A) to 0, which is the opposite of 'no difference'."
+    },
+    "quick_check": {
+      "q": "Can two independent events with positive probability occur together?",
+      "a": "Yes."
+    },
+    "id": {
+      "chapter": "S04. Peluang Bersyarat dan Kebebasan (Independensi)",
+      "title": "Independen Bukan Saling Lepas",
+      "body": "Saling lepas: A ∩ B = ∅, jadi P(A ∩ B) = 0.\nJika P(A) > 0 dan P(B) > 0, maka P(A)P(B) > 0 ≠ 0.\nJadi kejadian saling lepas berpeluang positif bersifat DEPENDEN: melihat B membuat A mustahil.",
+      "wrong_right_reason": "Mengetahui B mengubah P(A) menjadi 0, kebalikan dari 'tidak ada pengaruh'.",
+      "quick_check": {
+        "q": "Bisakah dua kejadian independen berpeluang positif terjadi bersamaan?",
+        "a": "Ya."
+      }
+    }
+  },
+  {
+    "chapter": "S04. Conditional Probability and Independence",
+    "title": "Complements, and More Than Two Events",
+    "tag": "REMEMBER",
+    "body": "If A and B are independent, so are (A′, B), (A, B′) and (A′, B′).\nP(A) = .30, P(B) = .10: P(A ∩ B) = .03, P(A′ ∩ B′) = .70·.90 = .63.\nFor 3+ events, pairwise checks are not enough.",
+    "explain": "Mutual independence of more than two events needs every relevant subset product. Also, a tree diagram shows conditional branches; it doesn't prove independence. Multiply marginals only when independence is given or verified.",
+    "quick_check": {
+      "q": "Independent A, B. Is P(A′ ∩ B′) = P(A′)P(B′)?",
+      "a": "Yes. Complements of independent events stay independent."
+    },
+    "id": {
+      "chapter": "S04. Peluang Bersyarat dan Kebebasan (Independensi)",
+      "title": "Komplemen, dan Lebih dari Dua Kejadian",
+      "body": "Jika A dan B independen, begitu juga (A′, B), (A, B′), dan (A′, B′).\nP(A) = 0,30, P(B) = 0,10: P(A ∩ B) = 0,03, P(A′ ∩ B′) = 0,70·0,90 = 0,63.\nUntuk 3+ kejadian, cek berpasangan tidak cukup.",
+      "explain": "Independensi bersama lebih dari dua kejadian memerlukan setiap perkalian subhimpunan yang relevan. Diagram pohon menunjukkan cabang bersyarat; ia tidak membuktikan independensi. Kalikan peluang marginal hanya jika independensi diberikan atau sudah diverifikasi.",
+      "quick_check": {
+        "q": "A, B independen. Apakah P(A′ ∩ B′) = P(A′)P(B′)?",
+        "a": "Ya. Komplemen dari kejadian independen tetap independen."
+      }
+    }
+  },
+  {
+    "chapter": "S04. Conditional Probability and Independence",
+    "title": "Reliability: At Least One Works",
+    "tag": "HOW",
+    "practice": "H02 Q8",
+    "body": "A service stays up if at least one of two independent modules works; each works with probability 3/4.\nP(both fail) = (1/4)(1/4) = 1/16.\nP(available) = 1 − 1/16 = 15/16.",
+    "explain": "'At least one works' has several routes; 'both fail' is one route. Independence is what allows multiplying the two failure probabilities.",
+    "quick_check": {
+      "q": "What justifies multiplying 1/4 · 1/4?",
+      "a": "The modules are independent."
+    },
+    "id": {
+      "chapter": "S04. Peluang Bersyarat dan Kebebasan (Independensi)",
+      "title": "Keandalan: Paling Sedikit Satu Bekerja",
+      "body": "Layanan tetap hidup jika paling sedikit satu dari dua modul independen bekerja; masing-masing bekerja dengan peluang 3/4.\nP(keduanya gagal) = (1/4)(1/4) = 1/16.\nP(tersedia) = 1 − 1/16 = 15/16.",
+      "explain": "'Paling sedikit satu bekerja' punya beberapa jalur; 'keduanya gagal' hanya satu jalur. Independensilah yang membolehkan dua peluang gagal itu dikalikan.",
+      "quick_check": {
+        "q": "Apa yang membenarkan perkalian 1/4 · 1/4?",
+        "a": "Modul-modulnya independen."
+      }
+    }
+  },
+  {
+    "chapter": "S05. Random Variables, PMF, and CDF",
+    "title": "Random Variables",
+    "tag": "WHAT",
+    "body": "A random variable X assigns a real number to every outcome:\nX : 𝒮 → ℝ, ω ↦ X(ω).\nThe rule is fixed; the outcome is random.\nBernoulli: only values 0 and 1, e.g. X(S) = 1, X(F) = 0.",
+    "explain": "One experiment has many details; a random variable picks out one numerical feature: how many components fail, total waiting time, whether support is immediate (1) or not (0).",
+    "quick_check": {
+      "q": "What are the possible values of a Bernoulli random variable?",
+      "a": "0 and 1."
+    },
+    "id": {
+      "chapter": "S05. Variabel Acak, PMF, dan CDF",
+      "title": "Variabel Acak",
+      "body": "Variabel acak X memberi bilangan real pada setiap hasil:\nX : 𝒮 → ℝ, ω ↦ X(ω).\nAturannya tetap; hasilnya acak.\nBernoulli: hanya bernilai 0 dan 1, mis. X(S) = 1, X(F) = 0.",
+      "explain": "Satu eksperimen punya banyak detail; variabel acak memilih satu ciri numerik: berapa komponen yang gagal, total waktu tunggu, apakah layanan langsung (1) atau tidak (0).",
+      "quick_check": {
+        "q": "Apa nilai-nilai yang mungkin dari variabel acak Bernoulli?",
+        "a": "0 dan 1."
+      }
+    }
+  },
+  {
+    "chapter": "S05. Random Variables, PMF, and CDF",
+    "title": "X vs x",
+    "tag": "REMEMBER",
+    "body": "Uppercase X: the random variable, a rule defined for every outcome.\nLowercase x: one possible or observed value.\nOne outcome ω = (2, 3) pumps in use: total X(ω) = 5, difference Y(ω) = −1.",
+    "explain": "The same outcome can feed different rules. X and Y are two different random variables on the same sample space.",
+    "quick_check": {
+      "q": "In p(x) = P(X = x), which one is the rule?",
+      "a": "X (uppercase)."
+    },
+    "id": {
+      "chapter": "S05. Variabel Acak, PMF, dan CDF",
+      "title": "X vs x",
+      "body": "X kapital: variabel acak, aturan yang berlaku untuk setiap hasil.\nx kecil: satu nilai yang mungkin atau teramati.\nSatu hasil ω = (2, 3) pompa terpakai: total X(ω) = 5, selisih Y(ω) = −1.",
+      "explain": "Hasil yang sama bisa dimasukkan ke aturan berbeda. X dan Y adalah dua variabel acak berbeda pada ruang sampel yang sama.",
+      "quick_check": {
+        "q": "Pada p(x) = P(X = x), mana yang merupakan aturan?",
+        "a": "X (kapital)."
+      }
+    }
+  },
+  {
+    "chapter": "S05. Random Variables, PMF, and CDF",
+    "title": "Discrete or Continuous?",
+    "tag": "WHAT",
+    "body": "Discrete: possible values form a finite or countably infinite set (usually counting).\nContinuous: values fill an interval, and P(X = c) = 0 for each single c (usually measuring).\nTrials until first success: 1, 2, 3, … is still discrete.",
+    "wrong_right": {
+      "wrong": "Infinitely many values\n→ continuous",
+      "right": "1, 2, 3, … is countably infinite\n→ discrete",
+      "reason": "Infinite does not automatically mean continuous."
+    },
+    "quick_check": {
+      "q": "X = number of nonzero digits in a random 4-digit PIN. Range and type?",
+      "a": "{0, 1, 2, 3, 4}; discrete (finite range)."
+    },
+    "id": {
+      "chapter": "S05. Variabel Acak, PMF, dan CDF",
+      "title": "Diskrit atau Kontinu?",
+      "body": "Diskrit: nilai-nilai yang mungkin membentuk himpunan berhingga atau tak hingga terhitung (biasanya hasil mencacah).\nKontinu: nilai mengisi suatu interval, dan P(X = c) = 0 untuk setiap c tunggal (biasanya hasil mengukur).\nPercobaan sampai sukses pertama: 1, 2, 3, … tetap diskrit.",
+      "wrong_right_reason": "Tak hingga tidak otomatis berarti kontinu.",
+      "quick_check": {
+        "q": "X = banyaknya digit bukan nol pada PIN 4 digit acak. Rentang dan jenisnya?",
+        "a": "{0, 1, 2, 3, 4}; diskrit (rentang berhingga)."
+      }
+    }
+  },
+  {
+    "chapter": "S05. Random Variables, PMF, and CDF",
+    "title": "The Probability Mass Function",
+    "tag": "WHAT",
+    "body": "For a discrete X: p(x) = P(X = x), the probability that X equals x.\nIt shows how the total probability 1 is spread over the possible values.\nValid only if p(x) ≥ 0 for every x AND Σ p(x) = 1.",
+    "wrong_right": {
+      "wrong": "x:    0    1    2    3\np(x): .20  .35  .30  .25\nAll ≥ 0, so it's a pmf",
+      "right": "Total = 1.10 ≠ 1\n→ not a pmf",
+      "reason": "Do both checks: nonnegative AND summing to 1."
+    },
+    "quick_check": {
+      "q": "What does p(x) give?",
+      "a": "The probability mass exactly at the value x."
+    },
+    "id": {
+      "chapter": "S05. Variabel Acak, PMF, dan CDF",
+      "title": "Fungsi Massa Peluang (PMF)",
+      "body": "Untuk X diskrit: p(x) = P(X = x), peluang X sama dengan x.\nPMF menunjukkan bagaimana total peluang 1 tersebar ke nilai-nilai yang mungkin.\nSah hanya jika p(x) ≥ 0 untuk setiap x DAN Σ p(x) = 1.",
+      "wrong_right_reason": "Lakukan kedua cek: tak negatif DAN berjumlah 1.",
+      "quick_check": {
+        "q": "Apa yang diberikan p(x)?",
+        "a": "Massa peluang tepat di nilai x."
+      }
+    }
+  },
+  {
+    "chapter": "S05. Random Variables, PMF, and CDF",
+    "title": "Building a PMF",
+    "tag": "HOW",
+    "body": "Six equally likely boxes hold 0, 2, 0, 1, 2, 0 defectives. X = defectives in the chosen box.\nGroup by value, divide by 6:\np(0) = 1/2, p(1) = 1/6, p(2) = 1/3.\nCheck: they sum to 1.",
+    "explain": "Many outcomes can give the same value; p(x) collects all of them. In a probability histogram, each bar sits at a possible value and its height is the mass there.",
+    "quick_check": {
+      "q": "Why is p(0) = 3/6?",
+      "a": "Three of the six equally likely boxes have 0 defectives."
+    },
+    "id": {
+      "chapter": "S05. Variabel Acak, PMF, dan CDF",
+      "title": "Menyusun PMF",
+      "body": "Enam kotak sama mungkin berisi 0, 2, 0, 1, 2, 0 cacat. X = banyak cacat di kotak terpilih.\nKelompokkan per nilai, bagi 6:\np(0) = 1/2, p(1) = 1/6, p(2) = 1/3.\nCek: jumlahnya 1.",
+      "explain": "Banyak hasil bisa memberi nilai yang sama; p(x) mengumpulkan semuanya. Pada histogram peluang, setiap batang berada di nilai yang mungkin dan tingginya adalah massa di sana.",
+      "quick_check": {
+        "q": "Mengapa p(0) = 3/6?",
+        "a": "Tiga dari enam kotak sama mungkin berisi 0 cacat."
+      }
+    }
+  },
+  {
+    "chapter": "S05. Random Variables, PMF, and CDF",
+    "title": "Translate the Words, Then Add",
+    "tag": "HOW",
+    "body": "At most 2: X ≤ 2. Fewer than 2: X < 2. At least 2: X ≥ 2.\nIf p(0) = .20, p(1) = .30, p(2) = .50:\nP(X ≥ 1) = .30 + .50 = .80, or 1 − p(0) = .80.",
+    "explain": "Add p(x) over exactly the included values. The complement is often shorter, but keep the event boundary visible.",
+    "quick_check": {
+      "q": "Lines in use: p = .10 .15 .20 .25 .20 .06 .04 for x = 0..6. P(X ≥ 3)?",
+      "a": ".25 + .20 + .06 + .04 = .55."
+    },
+    "id": {
+      "chapter": "S05. Variabel Acak, PMF, dan CDF",
+      "title": "Terjemahkan Kata-katanya, Lalu Jumlahkan",
+      "body": "Paling banyak 2: X ≤ 2. Kurang dari 2: X < 2. Paling sedikit 2: X ≥ 2.\nJika p(0) = 0,20, p(1) = 0,30, p(2) = 0,50:\nP(X ≥ 1) = 0,30 + 0,50 = 0,80, atau 1 − p(0) = 0,80.",
+      "explain": "Jumlahkan p(x) tepat pada nilai-nilai yang termasuk. Komplemen sering lebih singkat, tetapi tetap perhatikan batas kejadiannya.",
+      "quick_check": {
+        "q": "Saluran terpakai: p = 0,10 0,15 0,20 0,25 0,20 0,06 0,04 untuk x = 0..6. P(X ≥ 3)?",
+        "a": "0,25 + 0,20 + 0,06 + 0,04 = 0,55."
+      }
+    }
+  },
+  {
+    "chapter": "S05. Random Variables, PMF, and CDF",
+    "title": "The Cumulative Distribution Function",
+    "tag": "WHAT",
+    "demo": "pmf-cdf",
+    "body": "F(x) = P(X ≤ x) = Σ p(y) over y ≤ x.\nFlash drive Y: p = .05, .10, .35, .40, .10 at 1, 2, 4, 8, 16 GB.\nRunning totals: F = .05, .15, .50, .90, 1.",
+    "explain": "The pmf is the mass AT one value; the cdf is the mass accumulated AT OR BELOW a value. Edit the bars in the demo and watch the steps move.",
+    "quick_check": {
+      "q": "Flash drive: P(Y ≤ 4)?",
+      "a": "F(4) = .50."
+    },
+    "id": {
+      "chapter": "S05. Variabel Acak, PMF, dan CDF",
+      "title": "Fungsi Distribusi Kumulatif (CDF)",
+      "body": "F(x) = P(X ≤ x) = Σ p(y) untuk y ≤ x.\nFlash drive Y: p = 0,05, 0,10, 0,35, 0,40, 0,10 di 1, 2, 4, 8, 16 GB.\nTotal berjalan: F = 0,05, 0,15, 0,50, 0,90, 1.",
+      "explain": "PMF adalah massa TEPAT di satu nilai; CDF adalah massa yang terkumpul DI ATAU DI BAWAH suatu nilai. Ubah batang di demo dan lihat anak tangganya bergeser.",
+      "quick_check": {
+        "q": "Flash drive: P(Y ≤ 4)?",
+        "a": "F(4) = 0,50."
+      }
+    }
+  },
+  {
+    "chapter": "S05. Random Variables, PMF, and CDF",
+    "title": "A Discrete CDF Is a Step Function",
+    "tag": "REMEMBER",
+    "body": "Flat between possible values; jumps at each value with positive mass.\nNo value lies between 4 and 8, so F(7) = F(4) = .50.\nBelow the smallest value F = 0; at or beyond the largest F = 1; F never decreases.",
+    "quick_check": {
+      "q": "Flash drive: F(10)?",
+      "a": "F(8) = .90 (no value between 8 and 16)."
+    },
+    "id": {
+      "chapter": "S05. Variabel Acak, PMF, dan CDF",
+      "title": "CDF Diskrit Berbentuk Tangga",
+      "body": "Datar di antara nilai-nilai yang mungkin; melompat di setiap nilai bermassa positif.\nTidak ada nilai antara 4 dan 8, jadi F(7) = F(4) = 0,50.\nDi bawah nilai terkecil F = 0; di atau melewati nilai terbesar F = 1; F tidak pernah turun.",
+      "quick_check": {
+        "q": "Flash drive: F(10)?",
+        "a": "F(8) = 0,90 (tidak ada nilai antara 8 dan 16)."
+      }
+    }
+  },
+  {
+    "chapter": "S05. Random Variables, PMF, and CDF",
+    "title": "Strict vs Inclusive Inequalities",
+    "tag": "HOW",
+    "body": "p(0) = .20, p(1) = .25, p(2) = .30:\nP(X < 2) = .20 + .25 = .45\nP(X ≤ 2) = .20 + .25 + .30 = .75\nThe second includes the mass at 2.",
+    "wrong_right": {
+      "wrong": "P(X < 2) = F(2) = .75",
+      "right": "P(X < 2) = F(1) = .45",
+      "reason": "For integer X, 'X < 2' means X ≤ 1."
+    },
+    "quick_check": {
+      "q": "Integer X: rewrite P(X < 5) using ≤.",
+      "a": "P(X ≤ 4) = F(4)."
+    },
+    "id": {
+      "chapter": "S05. Variabel Acak, PMF, dan CDF",
+      "title": "Pertidaksamaan Tegas vs Inklusif",
+      "body": "p(0) = 0,20, p(1) = 0,25, p(2) = 0,30:\nP(X < 2) = 0,20 + 0,25 = 0,45\nP(X ≤ 2) = 0,20 + 0,25 + 0,30 = 0,75\nYang kedua mencakup massa di 2.",
+      "wrong_right_reason": "Untuk X bilangan bulat, 'X < 2' berarti X ≤ 1.",
+      "quick_check": {
+        "q": "X bilangan bulat: tulis ulang P(X < 5) dengan ≤.",
+        "a": "P(X ≤ 4) = F(4)."
+      }
+    }
+  },
+  {
+    "chapter": "S05. Random Variables, PMF, and CDF",
+    "title": "Probabilities from the CDF",
+    "tag": "HOW",
+    "body": "Integer X:\nP(a ≤ X ≤ b) = F(b) − F(a − 1)\np(a) = F(a) − F(a − 1)\nATMs: F(1) = .19, F(2) = .39, F(5) = .97 → P(X = 2) = .20, P(2 ≤ X ≤ 5) = .78.",
+    "explain": "A point mass is one jump of the step function. Subtracting F(a − 1) keeps the mass at a inside the interval.",
+    "wrong_right": {
+      "wrong": "P(2 ≤ X ≤ 5) = F(5) − F(2)\n             = .58",
+      "right": "P(2 ≤ X ≤ 5) = F(5) − F(1)\n             = .78",
+      "reason": "Subtracting F(2) removes the mass at 2, which should be included."
+    },
+    "quick_check": {
+      "q": "ATMs: P(X = 2) from the cdf?",
+      "a": "F(2) − F(1) = .39 − .19 = .20."
+    },
+    "id": {
+      "chapter": "S05. Variabel Acak, PMF, dan CDF",
+      "title": "Peluang dari CDF",
+      "body": "X bulat:\nP(a ≤ X ≤ b) = F(b) − F(a − 1)\np(a) = F(a) − F(a − 1)\nATM: F(1) = 0,19, F(2) = 0,39, F(5) = 0,97 → P(X = 2) = 0,20, P(2 ≤ X ≤ 5) = 0,78.",
+      "explain": "Massa titik adalah satu lompatan fungsi tangga. Mengurangkan F(a − 1) menjaga massa di a tetap di dalam interval.",
+      "wrong_right_reason": "Mengurangkan F(2) membuang massa di 2, padahal seharusnya termasuk.",
+      "quick_check": {
+        "q": "ATM: P(X = 2) dari cdf?",
+        "a": "F(2) − F(1) = 0,39 − 0,19 = 0,20."
+      }
+    }
+  }
+]

@@ -97,6 +97,47 @@
   .fig text.c5 { fill: var(--c5); stroke: none; } .fig text.c6 { fill: var(--c6); stroke: none; }
   .fig text.lbl { font-weight: 700; }
 
+  /* Interactive demos (demos.js) */
+  .practice { display: inline-block; margin-left: 8px; font-size: .75rem; color: var(--muted);
+              border: 1px dashed var(--line); border-radius: 6px; padding: 1px 7px; vertical-align: 1px; }
+  .demo { margin-top: 16px; border: 1px solid var(--line); border-radius: 12px; padding: 14px; background: var(--bg); }
+  .demo-head { font-size: .8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: var(--accent); }
+  .demo-controls { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; margin: 10px 0; }
+  .demo-controls button { padding: 6px 10px; font-size: .9rem; }
+  .demo-controls button.active { border-color: var(--accent); background: var(--tile); }
+  .demo-slider { display: flex; align-items: center; gap: 8px; font-size: .9rem; }
+  .demo-slider input { accent-color: var(--accent); width: 130px; }
+  .demo-slider output { font-variant-numeric: tabular-nums; min-width: 2.6em; }
+  .demo input.num { width: 4.2em; font: inherit; padding: 4px 6px; border: 1px solid var(--line);
+                    border-radius: 6px; background: var(--card); color: var(--text); }
+  .demo-readout { margin-top: 8px; display: grid; gap: 6px; font-size: .95rem; }
+  .demo-readout .muted { color: var(--muted); font-size: .9rem; }
+  .demo .mono { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: .88rem; overflow-x: auto; white-space: nowrap; }
+  .demo .warn { color: var(--wrong); font-weight: 600; }
+  .demo-table { border-collapse: collapse; font-variant-numeric: tabular-nums; justify-self: start; }
+  .demo-table th, .demo-table td { padding: 2px 14px 2px 0; text-align: right; border-bottom: 1px solid var(--line); }
+  .demo-table tr.sum td { font-weight: 700; border-bottom: none; }
+  .demo-legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: .85rem; margin-top: 8px; }
+  .sw { display: inline-block; width: 11px; height: 11px; border-radius: 2px; margin-right: 6px; vertical-align: -1px; }
+  .sw.tp, .fig .person.tp { background: var(--c6); fill: var(--c6); }
+  .sw.fn, .fig .person.fn { background: var(--c6); fill: var(--c6); opacity: .3; }
+  .sw.fp, .fig .person.fp { background: var(--c4); fill: var(--c4); }
+  .sw.tn, .fig .person.tn { background: var(--line); fill: var(--line); }
+  .bayes-compare { display: flex; flex-wrap: wrap; gap: 6px 24px; }
+  .fig .dot { fill: var(--accent); } .fig .dot.hot { fill: var(--c4); }
+  .fig .fulcrum { fill: var(--c4); } .fig .stepdot { fill: var(--c2); }
+  .fig .band { fill: var(--accent); fill-opacity: .12; }
+  .fig .region { fill: transparent; transition: fill-opacity .2s; }
+  .fig .region.on { fill: var(--accent); fill-opacity: .35; }
+  .fig .outline { fill: none; stroke: var(--text); stroke-width: 1.5; }
+  .fig rect.c2 { fill: var(--c2); stroke: none; }
+  .perm-grid { display: grid; gap: 5px; margin-top: 6px; font-family: ui-monospace, Menlo, Consolas, monospace; font-size: .85rem; }
+  .perm-row { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; }
+  .chip { padding: 2px 7px; border: 1px solid var(--line); border-radius: 6px; background: var(--card); transition: opacity .4s; }
+  .perm-grid.collapsed .chip.dup-able { opacity: .15; text-decoration: line-through; }
+  .perm-grid.collapsed .chip.first { border-color: var(--accent); background: var(--tile); font-weight: 700; }
+  .perm-count { color: var(--muted); font-size: .8rem; margin-left: 4px; }
+
   /* Quiz */
   .q { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 20px; margin-top: 16px; }
   .q .src { font-size: .8rem; color: var(--muted); }
@@ -119,13 +160,15 @@
 </head>
 <body>
 <main id="app"></main>
+<script src="demos.js"></script>
 <script>
 // Each subject is a folder holding slides.json (lectures) and quiz.json (class quizzes).
 // Add a subject by adding a line here. `book` is the textbook named in the course slides.
 const SUBJECTS = [
   { id: "data-structure",         name: "Data Structure",            icon: "🌳",
     book: "Data Structures and Algorithm Analysis in C++, Third Edition, Clifford A. Shaffer" },
-  { id: "statistics-probability", name: "Statistics and Probability", icon: "🎲" },
+  { id: "statistics-probability", name: "Statistics and Probability", icon: "🎲",
+    book: "Probability and Statistics for Engineering and the Sciences, International 9th ed. (2017), Jay L. Devore" },
   { id: "digital-logic",          name: "Digital Logic",             icon: "🔌" },
   { id: "college-physics-2",      name: "College Physics 2",         icon: "⚛️" },
 ];
@@ -139,6 +182,7 @@ const UI = {
         toPractice: n => n + " to practice", lectures: "Lectures", chaptersOf: n => n + " chapters of slides",
         slides: n => n + (n === 1 ? " slide" : " slides"), questions: n => n + " questions", back: "← Back", next: "Next →",
         homeSub: (c, s) => `${c} chapters · ${s} slides`, textbook: "📖 Textbook: ",
+        tryIt: "▶ Try it", practised: "📝 Practised in ",
         show: "Show answer", correct: "Correct.", wrong: "Not quite.", score: (c, a, t) => `Score: ${c} / ${t}  (${a} answered)`,
         retry: "Retry", empty: "Coming soon: nothing in this folder yet.", explain: "Explain",
         wrongLbl: "✗ Wrong", rightLbl: "✓ Right", quickCheck: "Quick check", toggle: "🇮🇩 Bahasa Indonesia" },
@@ -146,6 +190,7 @@ const UI = {
         toPractice: n => n + " untuk latihan", lectures: "Materi kuliah", chaptersOf: n => n + " bab slide",
         slides: n => n + " slide", questions: n => n + " soal", back: "← Kembali", next: "Lanjut →",
         homeSub: (c, s) => `${c} bab · ${s} slide`, textbook: "📖 Buku teks: ",
+        tryIt: "▶ Coba", practised: "📝 Dilatih di ",
         show: "Tampilkan jawaban", correct: "Benar.", wrong: "Belum tepat.", score: (c, a, t) => `Skor: ${c} / ${t}  (${a} dijawab)`,
         retry: "Ulangi", empty: "Segera hadir: folder ini belum berisi apa pun.", explain: "Penjelasan",
         wrongLbl: "✗ Salah", rightLbl: "✓ Benar", quickCheck: "Cek cepat", toggle: "🇬🇧 English" },
@@ -289,10 +334,12 @@ function renderSlide(subject, slides, i) {
   const card = el("div", { class: "card" },
     el("div", { class: "chapter" }, t.chapter),
     el("span", { class: "tag " + s.tag }, s.tag),
+    s.practice ? el("span", { class: "practice" }, ui().practised + s.practice) : null,
     el("h2", {}, t.title),
     el("div", { class: "body" }, t.body),
     s.code ? el("pre", {}, s.code) : null,
     s.images ? el("div", { class: "figs" }, ...s.images.map(im => figure(subject.id + "/" + im.src, tr(im.caption)))) : null,
+    s.demo && window.DEMOS && DEMOS[s.demo] ? demoBox(s.demo) : null,
     t.explain ? el("div", { class: "box" }, el("div", { class: "label" }, ui().explain), t.explain) : null,
     s.wrong_right ? el("div", {},
       el("div", { class: "wr" },
@@ -334,6 +381,13 @@ function figure(url, caption) {
     fig.prepend(document.importNode(svg, true));
   });
   return fig;
+}
+
+// Interactive demo from demos.js; it draws itself into the box in the current language.
+function demoBox(name) {
+  const box = el("div", { class: "demo" }, el("div", { class: "demo-head" }, ui().tryIt));
+  DEMOS[name](box, lang);
+  return box;
 }
 
 function prevNext(label, enabled, fn) {

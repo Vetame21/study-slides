@@ -1,0 +1,544 @@
+[
+  {
+    "chapter": { "en": "S01. Overview and Descriptive Statistics", "id": "S01. Gambaran Umum dan Statistika Deskriptif" },
+    "questions": [
+      {
+        "source": "S01 p. 16–17",
+        "q": { "en": "Population: 180 enrolled students. 24 are surveyed about how they debug. What is the sample?", "id": "Populasi: 180 mahasiswa terdaftar. 24 disurvei tentang cara debugging. Apa sampelnya?" },
+        "options": [
+          { "en": "All 180 enrolled students", "id": "Semua 180 mahasiswa terdaftar" },
+          { "en": "The 24 surveyed students", "id": "24 mahasiswa yang disurvei" },
+          { "en": "One surveyed student", "id": "Satu mahasiswa yang disurvei" },
+          { "en": "The answer 'run unit tests'", "id": "Jawaban 'menjalankan unit test'" }
+        ],
+        "answer": 1,
+        "why": { "en": "The sample is the group actually observed. One student is the observational unit; 'run unit tests' is one observation.", "id": "Sampel adalah kelompok yang benar-benar diamati. Satu mahasiswa adalah unit observasi; 'menjalankan unit test' adalah satu observasi." }
+      },
+      {
+        "source": "S01 p. 13",
+        "q": { "en": "Belt use is stored as 1 = regular user, 0 = not regular. What type of variable is it?", "id": "Pemakaian sabuk disimpan sebagai 1 = pengguna rutin, 0 = tidak rutin. Variabel jenis apa ini?" },
+        "options": [
+          { "en": "Numerical, because the values are numbers", "id": "Numerik, karena nilainya angka" },
+          { "en": "Numerical, because you can compute an average", "id": "Numerik, karena rata-ratanya bisa dihitung" },
+          { "en": "Categorical, because 1 and 0 only label groups", "id": "Kategorik, karena 1 dan 0 hanya label kelompok" },
+          { "en": "Neither", "id": "Bukan keduanya" }
+        ],
+        "answer": 2,
+        "why": { "en": "The codes don't measure an amount of belt use. Numerical labels don't make a numerical variable.", "id": "Kode itu tidak mengukur besaran pemakaian sabuk. Label berupa angka tidak menjadikan variabel numerik." }
+      },
+      {
+        "source": "S01 p. 20–21",
+        "q": { "en": "12 of 20 sampled users prefer dark mode. Which statement is justified?", "id": "12 dari 20 pengguna sampel menyukai mode gelap. Pernyataan mana yang dapat dibenarkan?" },
+        "options": [
+          { "en": "In the sample, 60% preferred dark mode", "id": "Dalam sampel, 60% menyukai mode gelap" },
+          { "en": "Exactly 60% of all users prefer dark mode", "id": "Tepat 60% dari semua pengguna menyukai mode gelap" },
+          { "en": "Most users in the world prefer dark mode", "id": "Sebagian besar pengguna di dunia menyukai mode gelap" },
+          { "en": "None; 20 is too small to say anything", "id": "Tidak ada; 20 terlalu sedikit untuk menyatakan apa pun" }
+        ],
+        "answer": 0,
+        "why": { "en": "A description matches the observed group. A population claim needs a method that accounts for sampling uncertainty.", "id": "Deskripsi sesuai dengan kelompok yang diamati. Klaim populasi memerlukan metode yang memperhitungkan ketidakpastian sampling." }
+      },
+      {
+        "source": "S01 p. 32",
+        "q": { "en": "The baseball-hits histogram rises to one peak near 8 and its right tail extends a bit farther. Its shape is…", "id": "Histogram hit bisbol naik ke satu puncak dekat 8 dan ekor kanannya sedikit lebih panjang. Bentuknya…" },
+        "options": [
+          { "en": "Bimodal", "id": "Bimodal" },
+          { "en": "Unimodal with slight negative skew", "id": "Unimodal dengan kemencengan negatif ringan" },
+          { "en": "Perfectly symmetric", "id": "Simetris sempurna" },
+          { "en": "Unimodal with slight positive skew", "id": "Unimodal dengan kemencengan positif ringan" }
+        ],
+        "answer": 3,
+        "why": { "en": "One peak = unimodal. The longer RIGHT tail means positive skew.", "id": "Satu puncak = unimodal. Ekor KANAN yang lebih panjang berarti menceng positif." }
+      },
+      {
+        "source": "S01 p. 39–40",
+        "q": { "en": "Server times change from 1, 2, 2, 2, 3 s to 1, 2, 2, 2, 13 s. What happens?", "id": "Waktu server berubah dari 1, 2, 2, 2, 3 dtk menjadi 1, 2, 2, 2, 13 dtk. Apa yang terjadi?" },
+        "code": "before: 1, 2, 2, 2, 3\nafter:  1, 2, 2, 2, 13",
+        "options": [
+          { "en": "Mean 2 → 4 s; median stays 2 s", "id": "Rata-rata 2 → 4 dtk; median tetap 2 dtk" },
+          { "en": "Both mean and median become 4 s", "id": "Rata-rata dan median menjadi 4 dtk" },
+          { "en": "Median 2 → 4 s; mean stays 2 s", "id": "Median 2 → 4 dtk; rata-rata tetap 2 dtk" },
+          { "en": "Nothing changes", "id": "Tidak ada yang berubah" }
+        ],
+        "answer": 0,
+        "why": { "en": "The mean uses every magnitude: 20/5 = 4. The median uses position: the middle value is still 2.", "id": "Rata-rata memakai setiap besaran: 20/5 = 4. Median memakai posisi: nilai tengahnya tetap 2." }
+      },
+      {
+        "source": "S01 p. 41–42",
+        "q": { "en": "Which center should you prefer for strongly skewed data?", "id": "Ukuran pusat mana yang sebaiknya dipilih untuk data yang sangat menceng?" },
+        "options": [
+          { "en": "The mean", "id": "Rata-rata" },
+          { "en": "The median", "id": "Median" },
+          { "en": "The largest value", "id": "Nilai terbesar" },
+          { "en": "The standard deviation", "id": "Simpangan baku" }
+        ],
+        "answer": 1,
+        "why": { "en": "The median resists extremes. Use the mean for roughly symmetric data without strong extremes.", "id": "Median tahan terhadap nilai ekstrem. Pakai rata-rata untuk data kira-kira simetris tanpa ekstrem kuat." }
+      },
+      {
+        "source": "S01 p. 46–47",
+        "q": { "en": "Why can't the raw sum of deviations Σ(xᵢ − x̄) measure spread?", "id": "Mengapa jumlah mentah deviasi Σ(xᵢ − x̄) tidak bisa mengukur sebaran?" },
+        "options": [
+          { "en": "It is always negative", "id": "Selalu negatif" },
+          { "en": "It has squared units", "id": "Satuannya kuadrat" },
+          { "en": "It is always 0, because deviations cancel around the mean", "id": "Selalu 0, karena deviasi saling meniadakan di sekitar rata-rata" },
+          { "en": "It is too hard to compute", "id": "Terlalu sulit dihitung" }
+        ],
+        "answer": 2,
+        "why": { "en": "For 2, 4, 6: −2 + 0 + 2 = 0. Zero is a property of the mean, not evidence of zero spread.", "id": "Untuk 2, 4, 6: −2 + 0 + 2 = 0. Nol adalah sifat rata-rata, bukan bukti sebaran nol." }
+      },
+      {
+        "source": "S01 p. 52–56",
+        "q": { "en": "Task times 2, 4, 6 s. What is the sample variance s²?", "id": "Waktu tugas 2, 4, 6 dtk. Berapa variansi sampel s²?" },
+        "options": [
+          { "en": "8/3 s²", "id": "8/3 dtk²" },
+          { "en": "4 s", "id": "4 dtk" },
+          { "en": "2 s", "id": "2 dtk" },
+          { "en": "4 s²", "id": "4 dtk²" }
+        ],
+        "answer": 3,
+        "why": { "en": "Sxx = 4 + 0 + 4 = 8 s². Divide by n − 1 = 2: s² = 4 s² (squared units). 8/3 wrongly divides by n; 2 s is the standard deviation.", "id": "Sxx = 4 + 0 + 4 = 8 dtk². Bagi dengan n − 1 = 2: s² = 4 dtk² (satuan kuadrat). 8/3 salah karena membagi n; 2 dtk adalah simpangan baku." }
+      },
+      {
+        "source": "S01 p. 67–68",
+        "q": { "en": "Which dataset has the largest standard deviation?", "id": "Data mana yang simpangan bakunya paling besar?" },
+        "options": [
+          { "en": "4, 4, 4", "id": "4, 4, 4" },
+          { "en": "3, 4, 5", "id": "3, 4, 5" },
+          { "en": "1, 4, 7", "id": "1, 4, 7" },
+          { "en": "They are all equal, because the means are equal", "id": "Semuanya sama, karena rata-ratanya sama" }
+        ],
+        "answer": 2,
+        "why": { "en": "Its values lie farthest from the mean 4. 4, 4, 4 has s = 0. Equal means don't imply equal spread.", "id": "Nilainya paling jauh dari rata-rata 4. 4, 4, 4 punya s = 0. Rata-rata sama tidak berarti sebaran sama." }
+      }
+    ]
+  },
+  {
+    "chapter": { "en": "S02. Sample Spaces, Events, and Probability Rules", "id": "S02. Ruang Sampel, Kejadian, dan Aturan Peluang" },
+    "questions": [
+      {
+        "source": "S02 p. 11",
+        "q": { "en": "Three welds are inspected in order, each N or D. How many outcomes are in 𝒮?", "id": "Tiga las diperiksa berurutan, masing-masing N atau D. Berapa hasil di 𝒮?" },
+        "options": [
+          { "en": "3", "id": "3" },
+          { "en": "4", "id": "4" },
+          { "en": "6", "id": "6" },
+          { "en": "8", "id": "8" }
+        ],
+        "answer": 3,
+        "why": { "en": "Each outcome is an ordered length-3 sequence: NNN, NND, …, DDD, which is 8 outcomes.", "id": "Setiap hasil adalah barisan berurutan sepanjang 3: NNN, NND, …, DDD, yaitu 8 hasil." }
+      },
+      {
+        "source": "S02 p. 16–17",
+        "q": { "en": "What is {DNN, NDN, NND}?", "id": "Apakah {DNN, NDN, NND} itu?" },
+        "options": [
+          { "en": "An outcome", "id": "Sebuah hasil" },
+          { "en": "A compound event", "id": "Kejadian majemuk" },
+          { "en": "The sample space", "id": "Ruang sampel" },
+          { "en": "An experiment", "id": "Eksperimen" }
+        ],
+        "answer": 1,
+        "why": { "en": "It is a subset of 𝒮 with more than one outcome: 'exactly one weld is defective'.", "id": "Ini himpunan bagian 𝒮 dengan lebih dari satu hasil: 'tepat satu las cacat'." }
+      },
+      {
+        "source": "S02 p. 21–22",
+        "q": { "en": "𝒮 = {0,…,6}, A = {0,1,2,3,4}, B = {3,4,5,6}. Which is true?", "id": "𝒮 = {0,…,6}, A = {0,1,2,3,4}, B = {3,4,5,6}. Mana yang benar?" },
+        "options": [
+          { "en": "A ∩ B = {3, 4}, so A and B are not mutually exclusive", "id": "A ∩ B = {3, 4}, jadi A dan B tidak saling lepas" },
+          { "en": "A ∩ B = ∅, so they are mutually exclusive", "id": "A ∩ B = ∅, jadi saling lepas" },
+          { "en": "A′ = {0, 1, 2}", "id": "A′ = {0, 1, 2}" },
+          { "en": "A ∪ B = {3, 4}", "id": "A ∪ B = {3, 4}" }
+        ],
+        "answer": 0,
+        "why": { "en": "They share 3 and 4. A′ = {5, 6} and A ∪ B = 𝒮.", "id": "Keduanya berbagi 3 dan 4. A′ = {5, 6} dan A ∪ B = 𝒮." }
+      },
+      {
+        "source": "S02 p. 30–31",
+        "q": { "en": "Outcomes a, b, c get probabilities (1/2, 3/4, −1/4). Is this a valid model?", "id": "Hasil a, b, c diberi peluang (1/2, 3/4, −1/4). Apakah model ini sah?" },
+        "options": [
+          { "en": "Valid, because the total is 1", "id": "Sah, karena totalnya 1" },
+          { "en": "Invalid, because the total is not 1", "id": "Tidak sah, karena totalnya bukan 1" },
+          { "en": "Invalid, because −1/4 is negative", "id": "Tidak sah, karena −1/4 negatif" },
+          { "en": "Valid if the outcomes are equally likely", "id": "Sah jika hasilnya sama mungkin" }
+        ],
+        "answer": 2,
+        "why": { "en": "The sum is 1, but Axiom 1 (nonnegativity) fails. A valid model needs both checks.", "id": "Jumlahnya 1, tetapi Aksioma 1 (tak negatif) dilanggar. Model sah memerlukan kedua cek." }
+      },
+      {
+        "source": "S02 p. 36",
+        "q": { "en": "P(A) = 0.6. What does this mean in the long-run interpretation?", "id": "P(A) = 0,6. Apa artinya menurut tafsiran jangka panjang?" },
+        "options": [
+          { "en": "Every 10 trials contain exactly 6 A's", "id": "Setiap 10 percobaan berisi tepat 6 kali A" },
+          { "en": "About 60% of a large number of repetitions are in A", "id": "Sekitar 60% dari sangat banyak pengulangan termasuk A" },
+          { "en": "The next result is guaranteed to be in A", "id": "Hasil berikutnya pasti di A" },
+          { "en": "The first 10 results have relative frequency 0.6", "id": "10 hasil pertama punya frekuensi relatif 0,6" }
+        ],
+        "answer": 1,
+        "why": { "en": "Probability is the long-run share; short runs can differ and nothing is guaranteed for the next trial.", "id": "Peluang adalah proporsi jangka panjang; rangkaian pendek bisa berbeda dan hasil berikutnya tidak dijamin." }
+      },
+      {
+        "source": "S02 p. 39–42",
+        "q": { "en": "Train cars 1–5 have weights 1, 2, 4, 2, 1. P(one of the middle three cars)?", "id": "Gerbong 1–5 berbobot 1, 2, 4, 2, 1. P(salah satu dari tiga gerbong tengah)?" },
+        "options": [
+          { "en": "3/5", "id": "3/5" },
+          { "en": "4/5", "id": "4/5" },
+          { "en": "2/5", "id": "2/5" },
+          { "en": "1/2", "id": "1/2" }
+        ],
+        "answer": 1,
+        "why": { "en": "10x = 1, so p₂ + p₃ + p₄ = 2/10 + 4/10 + 2/10 = 4/5. 3/5 wrongly treats the cars as equally likely.", "id": "10x = 1, jadi p₂ + p₃ + p₄ = 2/10 + 4/10 + 2/10 = 4/5. 3/5 salah karena menganggap gerbong sama mungkin." }
+      },
+      {
+        "source": "S02 p. 47–48",
+        "q": { "en": "P(at most one of five customers buys electric) = 0.428. P(at least two buy electric)?", "id": "P(paling banyak satu dari lima pelanggan membeli listrik) = 0,428. P(paling sedikit dua membeli listrik)?" },
+        "options": [
+          { "en": "0.428", "id": "0,428" },
+          { "en": "0.214", "id": "0,214" },
+          { "en": "0.572", "id": "0,572" },
+          { "en": "Can't tell without P(exactly two)", "id": "Tidak bisa ditentukan tanpa P(tepat dua)" }
+        ],
+        "answer": 2,
+        "why": { "en": "'At least two' is the complement of 'at most one': 1 − 0.428 = 0.572.", "id": "'Paling sedikit dua' adalah komplemen 'paling banyak satu': 1 − 0,428 = 0,572." }
+      },
+      {
+        "source": "S02 p. 60–62",
+        "q": { "en": "Visa 0.6, MasterCard 0.4, both 0.3. P(neither card)?", "id": "Visa 0,6, MasterCard 0,4, keduanya 0,3. P(tidak punya keduanya)?" },
+        "options": [
+          { "en": "0.7", "id": "0,7" },
+          { "en": "0.3", "id": "0,3" },
+          { "en": "0", "id": "0" },
+          { "en": "0.4", "id": "0,4" }
+        ],
+        "answer": 1,
+        "why": { "en": "P(A ∪ B) = 0.6 + 0.4 − 0.3 = 0.7, so neither = 1 − 0.7 = 0.3. (It equals 1 − 0.7, not 1 − the overlap.)", "id": "P(A ∪ B) = 0,6 + 0,4 − 0,3 = 0,7, jadi tidak keduanya = 1 − 0,7 = 0,3. (Ini 1 − 0,7, bukan 1 − irisan.)" }
+      },
+      {
+        "source": "S02 p. 58",
+        "q": { "en": "Internet 0.6, TV 0.8, both 0.5. P(exactly one service)?", "id": "Internet 0,6, TV 0,8, keduanya 0,5. P(tepat satu layanan)?" },
+        "options": [
+          { "en": "0.9", "id": "0,9" },
+          { "en": "1.4", "id": "1,4" },
+          { "en": "0.5", "id": "0,5" },
+          { "en": "0.4", "id": "0,4" }
+        ],
+        "answer": 3,
+        "why": { "en": "Only-Internet 0.1 + only-TV 0.3 = 0.4. 0.9 is 'at least one' (includes the overlap).", "id": "Hanya-Internet 0,1 + hanya-TV 0,3 = 0,4. 0,9 adalah 'paling sedikit satu' (termasuk irisan)." }
+      }
+    ]
+  },
+  {
+    "chapter": { "en": "S03. Counting Techniques for Probability", "id": "S03. Teknik Pencacahan untuk Peluang" },
+    "questions": [
+      {
+        "source": "S03 p. 14–15",
+        "q": { "en": "Choose one of 4 plumbers and one of 3 electricians. How many complete pairs?", "id": "Pilih satu dari 4 tukang ledeng dan satu dari 3 teknisi listrik. Berapa pasangan lengkap?" },
+        "options": [
+          { "en": "7", "id": "7" },
+          { "en": "12", "id": "12" },
+          { "en": "4", "id": "4" },
+          { "en": "64", "id": "64" }
+        ],
+        "answer": 1,
+        "why": { "en": "Every outcome needs both stages: 4 · 3 = 12. Adding (7) is the classic mistake.", "id": "Setiap hasil memerlukan kedua tahap: 4 · 3 = 12. Menjumlahkan (7) adalah kesalahan klasik." }
+      },
+      {
+        "source": "S03 p. 63–64",
+        "q": { "en": "Two-character names from A, B, C, D, repetition allowed. How many?", "id": "Nama dua karakter dari A, B, C, D, boleh berulang. Berapa banyak?" },
+        "options": [
+          { "en": "12", "id": "12" },
+          { "en": "8", "id": "8" },
+          { "en": "16", "id": "16" },
+          { "en": "6", "id": "6" }
+        ],
+        "answer": 2,
+        "why": { "en": "Repetition allowed → 4 choices at each stage: 4 · 4 = 16. 4 · 3 would be without replacement.", "id": "Boleh berulang → 4 pilihan di tiap tahap: 4 · 4 = 16. 4 · 3 berlaku tanpa pengembalian." }
+      },
+      {
+        "source": "S03 p. 26",
+        "q": { "en": "What is 0! ?", "id": "Berapa 0! ?" },
+        "options": [
+          { "en": "0", "id": "0" },
+          { "en": "1", "id": "1" },
+          { "en": "Undefined", "id": "Tidak terdefinisi" },
+          { "en": "∞", "id": "∞" }
+        ],
+        "answer": 1,
+        "why": { "en": "There is exactly one way to arrange nothing.", "id": "Ada tepat satu cara menyusun tidak ada apa-apa." }
+      },
+      {
+        "source": "S03 p. 31–32",
+        "q": { "en": "Six representatives: choose a chair, vice-chair and secretary. How many assignments?", "id": "Enam perwakilan: pilih ketua, wakil ketua, dan sekretaris. Berapa susunan?" },
+        "options": [
+          { "en": "20", "id": "20" },
+          { "en": "120", "id": "120" },
+          { "en": "216", "id": "216" },
+          { "en": "18", "id": "18" }
+        ],
+        "answer": 1,
+        "why": { "en": "Distinct offices → order by role matters → P(3,6) = 6·5·4 = 120. 20 = C(6,3) ignores the roles.", "id": "Jabatan berbeda → urutan berdasarkan peran berpengaruh → P(3,6) = 6·5·4 = 120. 20 = C(6,3) mengabaikan peran." }
+      },
+      {
+        "source": "S03 p. 39–40",
+        "q": { "en": "Five representatives: choose three convention delegates with equal roles. How many groups?", "id": "Lima perwakilan: pilih tiga delegasi konvensi dengan peran setara. Berapa kelompok?" },
+        "options": [
+          { "en": "60", "id": "60" },
+          { "en": "15", "id": "15" },
+          { "en": "125", "id": "125" },
+          { "en": "10", "id": "10" }
+        ],
+        "answer": 3,
+        "why": { "en": "Only the group matters → C(5,3) = 10. Each group appears 3! = 6 times among the 60 ordered lists.", "id": "Hanya kelompoknya yang penting → C(5,3) = 10. Setiap kelompok muncul 3! = 6 kali di antara 60 daftar berurutan." }
+      },
+      {
+        "source": "S03 p. 65–66",
+        "q": { "en": "Choose 3 of 6 files for inspection, order ignored. Which method?", "id": "Pilih 3 dari 6 file untuk diperiksa, urutan diabaikan. Metode apa?" },
+        "options": [
+          { "en": "Product rule", "id": "Aturan perkalian" },
+          { "en": "Permutation", "id": "Permutasi" },
+          { "en": "Combination", "id": "Kombinasi" },
+          { "en": "Factorial only", "id": "Faktorial saja" }
+        ],
+        "answer": 2,
+        "why": { "en": "Only the group of three matters, so use a combination: C(6,3).", "id": "Hanya kelompok tiga file yang penting, jadi pakai kombinasi: C(6,3)." }
+      },
+      {
+        "source": "S03 p. 49–52",
+        "q": { "en": "2 laser + 4 inkjet printers; pick 3 uniformly, order ignored. P(exactly one laser)?", "id": "2 printer laser + 4 inkjet; ambil 3 secara seragam, urutan diabaikan. P(tepat satu laser)?" },
+        "options": [
+          { "en": "3/5", "id": "3/5" },
+          { "en": "1/3", "id": "1/3" },
+          { "en": "12/120", "id": "12/120" },
+          { "en": "2/5", "id": "2/5" }
+        ],
+        "answer": 0,
+        "why": { "en": "N = C(6,3) = 20; N(A) = C(2,1)·C(4,2) = 12; 12/20 = 3/5.", "id": "N = C(6,3) = 20; N(A) = C(2,1)·C(4,2) = 12; 12/20 = 3/5." }
+      },
+      {
+        "source": "S03 p. 57–59",
+        "q": { "en": "6 keyboards: 2 electrical, 4 mechanical; pick 2. P(at least one electrical)?", "id": "6 keyboard: 2 listrik, 4 mekanis; ambil 2. P(paling sedikit satu listrik)?" },
+        "options": [
+          { "en": "8/15", "id": "8/15" },
+          { "en": "1/15", "id": "1/15" },
+          { "en": "2/5", "id": "2/5" },
+          { "en": "3/5", "id": "3/5" }
+        ],
+        "answer": 3,
+        "why": { "en": "Complement: both mechanical = C(4,2) = 6 of 15. So 1 − 6/15 = 9/15 = 3/5. 8/15 misses the pair with both electrical keyboards.", "id": "Komplemen: keduanya mekanis = C(4,2) = 6 dari 15. Jadi 1 − 6/15 = 9/15 = 3/5. 8/15 melewatkan pasangan dua keyboard listrik." }
+      }
+    ]
+  },
+  {
+    "chapter": { "en": "S04. Conditional Probability and Independence", "id": "S04. Peluang Bersyarat dan Kebebasan (Independensi)" },
+    "questions": [
+      {
+        "source": "S04 p. 8–18",
+        "q": { "en": "Older line: 2 defective, 6 good. Newer line: 1 defective, 9 good. P(older | defective)?", "id": "Lini lama: 2 cacat, 6 baik. Lini baru: 1 cacat, 9 baik. P(lama | cacat)?" },
+        "options": [
+          { "en": "2/3", "id": "2/3" },
+          { "en": "1/4", "id": "1/4" },
+          { "en": "4/9", "id": "4/9" },
+          { "en": "2/18", "id": "2/18" }
+        ],
+        "answer": 0,
+        "why": { "en": "Restrict to the 3 defective components; 2 are from the older line. 1/4 is the reverse, P(defective | older).", "id": "Batasi ke 3 komponen cacat; 2 dari lini lama. 1/4 adalah kebalikannya, P(cacat | lama)." }
+      },
+      {
+        "source": "S04 p. 67–68",
+        "q": { "en": "P(A) = .60, P(B) = .40, P(A ∩ B) = .30. Find P(B | A).", "id": "P(A) = 0,60, P(B) = 0,40, P(A ∩ B) = 0,30. Cari P(B | A)." },
+        "options": [
+          { "en": ".75", "id": "0,75" },
+          { "en": ".30", "id": "0,30" },
+          { "en": ".50", "id": "0,50" },
+          { "en": ".24", "id": "0,24" }
+        ],
+        "answer": 2,
+        "why": { "en": "Given A, divide by P(A): .30/.60 = .50. (.75 = .30/.40 is P(A | B).)", "id": "Diketahui A, bagi dengan P(A): 0,30/0,60 = 0,50. (0,75 = 0,30/0,40 adalah P(A | B).)" }
+      },
+      {
+        "source": "S04 p. 28",
+        "q": { "en": "One of four people is the desired donor. Two are picked in order without replacement. P(neither is the donor)?", "id": "Satu dari empat orang adalah donor yang dicari. Dua dipilih berurutan tanpa pengembalian. P(keduanya bukan donor)?" },
+        "options": [
+          { "en": "9/16", "id": "9/16" },
+          { "en": "1/2", "id": "1/2" },
+          { "en": "3/4", "id": "3/4" },
+          { "en": "1/4", "id": "1/4" }
+        ],
+        "answer": 1,
+        "why": { "en": "3/4 · 2/3 = 1/2. 9/16 = (3/4)² wrongly reuses the first branch as if with replacement.", "id": "3/4 · 2/3 = 1/2. 9/16 = (3/4)² salah karena memakai ulang cabang pertama seolah-olah dengan pengembalian." }
+      },
+      {
+        "source": "S04 p. 35–36",
+        "q": { "en": "Model A: 3/5 of sales, 1/3 need repair. Model B: 2/5 of sales, 1/4 need repair. P(repair)?", "id": "Model A: 3/5 penjualan, 1/3 perlu perbaikan. Model B: 2/5 penjualan, 1/4 perlu perbaikan. P(perbaikan)?" },
+        "options": [
+          { "en": "7/12", "id": "7/12" },
+          { "en": "1/5", "id": "1/5" },
+          { "en": "3/10", "id": "3/10" },
+          { "en": "2/3", "id": "2/3" }
+        ],
+        "answer": 2,
+        "why": { "en": "Multiply each route, then add: (3/5)(1/3) + (2/5)(1/4) = 1/5 + 1/10 = 3/10.", "id": "Kalikan tiap jalur, lalu jumlahkan: (3/5)(1/3) + (2/5)(1/4) = 1/5 + 1/10 = 3/10." }
+      },
+      {
+        "source": "S04 p. 36–37",
+        "q": { "en": "Same devices. Given that a device needs repair, P(it is model A)?", "id": "Perangkat yang sama. Diketahui perangkat perlu perbaikan, P(model A)?" },
+        "options": [
+          { "en": "3/5", "id": "3/5" },
+          { "en": "1/3", "id": "1/3" },
+          { "en": "1/5", "id": "1/5" },
+          { "en": "2/3", "id": "2/3" }
+        ],
+        "answer": 3,
+        "why": { "en": "Bayes: (1/5)/(3/10) = 2/3. 1/5 is the joint route, not the posterior.", "id": "Bayes: (1/5)/(3/10) = 2/3. 1/5 adalah jalur gabungan, bukan posterior." }
+      },
+      {
+        "source": "S04 p. 42–44",
+        "q": { "en": "Fictional screening: P(D) = 1/10, P(+ | D) = 4/5, P(+ | D′) = 1/5. P(D | +)?", "id": "Skrining fiktif: P(D) = 1/10, P(+ | D) = 4/5, P(+ | D′) = 1/5. P(D | +)?" },
+        "options": [
+          { "en": "4/5", "id": "4/5" },
+          { "en": "4/13", "id": "4/13" },
+          { "en": "1/10", "id": "1/10" },
+          { "en": "2/25", "id": "2/25" }
+        ],
+        "answer": 1,
+        "why": { "en": "(2/25)/(2/25 + 9/50) = (2/25)/(13/50) = 4/13. 4/5 is the likelihood; the false-positive route is large.", "id": "(2/25)/(2/25 + 9/50) = (2/25)/(13/50) = 4/13. 4/5 adalah likelihood; jalur positif palsu besar." }
+      },
+      {
+        "source": "S04 p. 53–54",
+        "q": { "en": "One label from {1,…,6}. A = {2,4,6}, C = {2,3,4,5}. Are A and C independent?", "id": "Satu label dari {1,…,6}. A = {2,4,6}, C = {2,3,4,5}. Apakah A dan C independen?" },
+        "options": [
+          { "en": "Yes: P(A ∩ C) = 1/3 = (1/2)(2/3)", "id": "Ya: P(A ∩ C) = 1/3 = (1/2)(2/3)" },
+          { "en": "No, because they overlap", "id": "Tidak, karena beririsan" },
+          { "en": "No, because P(A) ≠ P(C)", "id": "Tidak, karena P(A) ≠ P(C)" },
+          { "en": "Can't tell", "id": "Tidak bisa ditentukan" }
+        ],
+        "answer": 0,
+        "why": { "en": "The product criterion holds, and P(A | C) = 2/4 = 1/2 = P(A). Overlap and unequal marginals don't decide independence.", "id": "Kriteria perkalian terpenuhi, dan P(A | C) = 2/4 = 1/2 = P(A). Irisan dan peluang marginal yang berbeda tidak menentukan independensi." }
+      },
+      {
+        "source": "S04 p. 50–51",
+        "q": { "en": "A ∩ B = ∅ with P(A) > 0 and P(B) > 0. Then A and B are…", "id": "A ∩ B = ∅ dengan P(A) > 0 dan P(B) > 0. Maka A dan B…" },
+        "options": [
+          { "en": "Independent", "id": "Independen" },
+          { "en": "Dependent", "id": "Dependen" },
+          { "en": "Both independent and mutually exclusive", "id": "Independen sekaligus saling lepas" },
+          { "en": "Impossible events", "id": "Kejadian mustahil" }
+        ],
+        "answer": 1,
+        "why": { "en": "P(A ∩ B) = 0 but P(A)P(B) > 0. Observing B makes A impossible, so information matters.", "id": "P(A ∩ B) = 0 tetapi P(A)P(B) > 0. Melihat B membuat A mustahil, jadi informasi berpengaruh." }
+      },
+      {
+        "source": "S04 p. 60–61",
+        "q": { "en": "Two independent modules each work with probability 3/4. P(at least one works)?", "id": "Dua modul independen masing-masing bekerja dengan peluang 3/4. P(paling sedikit satu bekerja)?" },
+        "options": [
+          { "en": "9/16", "id": "9/16" },
+          { "en": "3/4", "id": "3/4" },
+          { "en": "15/16", "id": "15/16" },
+          { "en": "1", "id": "1" }
+        ],
+        "answer": 2,
+        "why": { "en": "1 − P(both fail) = 1 − (1/4)(1/4) = 15/16. 9/16 is 'both work'.", "id": "1 − P(keduanya gagal) = 1 − (1/4)(1/4) = 15/16. 9/16 adalah 'keduanya bekerja'." }
+      }
+    ]
+  },
+  {
+    "chapter": { "en": "S05. Random Variables, PMF, and CDF", "id": "S05. Variabel Acak, PMF, dan CDF" },
+    "questions": [
+      {
+        "source": "S05 p. 7",
+        "q": { "en": "A random variable X is…", "id": "Variabel acak X adalah…" },
+        "options": [
+          { "en": "A rule assigning a real number to every outcome", "id": "Aturan yang memberi bilangan real pada setiap hasil" },
+          { "en": "One observed number", "id": "Satu angka yang teramati" },
+          { "en": "A probability between 0 and 1", "id": "Peluang antara 0 dan 1" },
+          { "en": "A set of outcomes", "id": "Himpunan hasil" }
+        ],
+        "answer": 0,
+        "why": { "en": "X : 𝒮 → ℝ. The rule is fixed; the outcome is random. One observed number is a lowercase x.", "id": "X : 𝒮 → ℝ. Aturannya tetap; hasilnya acak. Satu angka teramati ditulis x kecil." }
+      },
+      {
+        "source": "S05 p. 11–13",
+        "q": { "en": "Number of attempts until the first success: 1, 2, 3, … What type?", "id": "Banyak percobaan sampai sukses pertama: 1, 2, 3, … Jenis apa?" },
+        "options": [
+          { "en": "Continuous, because the range is infinite", "id": "Kontinu, karena rentangnya tak hingga" },
+          { "en": "Categorical", "id": "Kategorik" },
+          { "en": "Neither discrete nor continuous", "id": "Bukan diskrit maupun kontinu" },
+          { "en": "Discrete, because the range is countably infinite", "id": "Diskrit, karena rentangnya tak hingga terhitung" }
+        ],
+        "answer": 3,
+        "why": { "en": "Countably infinite is still discrete. Infinite does not mean continuous.", "id": "Tak hingga terhitung tetap diskrit. Tak hingga tidak berarti kontinu." }
+      },
+      {
+        "source": "S05 p. 21",
+        "q": { "en": "Is p(0) = .20, p(1) = .35, p(2) = .30, p(3) = .25 a valid pmf?", "id": "Apakah p(0) = 0,20, p(1) = 0,35, p(2) = 0,30, p(3) = 0,25 PMF yang sah?" },
+        "options": [
+          { "en": "Yes, all values are nonnegative", "id": "Ya, semua nilai tak negatif" },
+          { "en": "No, the total is 1.10", "id": "Tidak, totalnya 1,10" },
+          { "en": "No, p(3) is too small", "id": "Tidak, p(3) terlalu kecil" },
+          { "en": "Yes, because there are 4 values", "id": "Ya, karena ada 4 nilai" }
+        ],
+        "answer": 1,
+        "why": { "en": "Both checks are needed: nonnegative AND summing to 1. This one sums to 1.10.", "id": "Kedua cek diperlukan: tak negatif DAN berjumlah 1. Yang ini berjumlah 1,10." }
+      },
+      {
+        "source": "S05 p. 22–23",
+        "q": { "en": "Six equally likely boxes hold 0, 2, 0, 1, 2, 0 defectives. p(2) = ?", "id": "Enam kotak sama mungkin berisi 0, 2, 0, 1, 2, 0 cacat. p(2) = ?" },
+        "options": [
+          { "en": "1/6", "id": "1/6" },
+          { "en": "1/2", "id": "1/2" },
+          { "en": "1/3", "id": "1/3" },
+          { "en": "2", "id": "2" }
+        ],
+        "answer": 2,
+        "why": { "en": "Two of the six boxes have 2 defectives: 2/6 = 1/3.", "id": "Dua dari enam kotak berisi 2 cacat: 2/6 = 1/3." }
+      },
+      {
+        "source": "S05 p. 27–28",
+        "q": { "en": "Lines in use: x = 0..6 with p = .10 .15 .20 .25 .20 .06 .04. P(X ≥ 3)?", "id": "Saluran terpakai: x = 0..6 dengan p = 0,10 0,15 0,20 0,25 0,20 0,06 0,04. P(X ≥ 3)?" },
+        "options": [
+          { "en": ".55", "id": "0,55" },
+          { "en": ".30", "id": "0,30" },
+          { "en": ".45", "id": "0,45" },
+          { "en": ".25", "id": "0,25" }
+        ],
+        "answer": 0,
+        "why": { "en": ".25 + .20 + .06 + .04 = .55. 'At least 3' includes 3.", "id": "0,25 + 0,20 + 0,06 + 0,04 = 0,55. 'Paling sedikit 3' termasuk 3." }
+      },
+      {
+        "source": "S05 p. 33–35",
+        "q": { "en": "Flash drive: F(1) = .05, F(2) = .15, F(4) = .50, F(8) = .90, F(16) = 1. What is F(7)?", "id": "Flash drive: F(1) = 0,05, F(2) = 0,15, F(4) = 0,50, F(8) = 0,90, F(16) = 1. Berapa F(7)?" },
+        "options": [
+          { "en": "0, because 7 GB is impossible", "id": "0, karena 7 GB mustahil" },
+          { "en": ".90", "id": "0,90" },
+          { "en": "Undefined", "id": "Tidak terdefinisi" },
+          { "en": ".50", "id": "0,50" }
+        ],
+        "answer": 3,
+        "why": { "en": "The cdf is defined everywhere. No value lies between 4 and 8, so F(7) = P(Y ≤ 7) = F(4) = .50.", "id": "CDF terdefinisi di mana-mana. Tidak ada nilai antara 4 dan 8, jadi F(7) = P(Y ≤ 7) = F(4) = 0,50." }
+      },
+      {
+        "source": "S05 p. 36",
+        "q": { "en": "p(0) = .20, p(1) = .25, p(2) = .30. P(X < 2)?", "id": "p(0) = 0,20, p(1) = 0,25, p(2) = 0,30. P(X < 2)?" },
+        "options": [
+          { "en": ".75", "id": "0,75" },
+          { "en": ".45", "id": "0,45" },
+          { "en": ".30", "id": "0,30" },
+          { "en": ".55", "id": "0,55" }
+        ],
+        "answer": 1,
+        "why": { "en": "Strict: excludes 2. .20 + .25 = .45. (.75 is P(X ≤ 2).)", "id": "Tegas: tidak termasuk 2. 0,20 + 0,25 = 0,45. (0,75 adalah P(X ≤ 2).)" }
+      },
+      {
+        "source": "S05 p. 38–39",
+        "q": { "en": "ATMs: F(1) = .19, F(2) = .39, F(5) = .97. P(2 ≤ X ≤ 5)?", "id": "ATM: F(1) = 0,19, F(2) = 0,39, F(5) = 0,97. P(2 ≤ X ≤ 5)?" },
+        "options": [
+          { "en": ".58", "id": "0,58" },
+          { "en": ".97", "id": "0,97" },
+          { "en": ".78", "id": "0,78" },
+          { "en": ".20", "id": "0,20" }
+        ],
+        "answer": 2,
+        "why": { "en": "F(5) − F(1) = .97 − .19 = .78. Subtracting F(2) (giving .58) would drop the mass at 2.", "id": "F(5) − F(1) = 0,97 − 0,19 = 0,78. Mengurangkan F(2) (hasil 0,58) membuang massa di 2." }
+      }
+    ]
+  }
+]

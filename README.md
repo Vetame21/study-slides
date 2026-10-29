@@ -16,11 +16,13 @@ This README explains how to add content so that every subject looks and reads th
 
 ```
 index.html                  the whole website (no build step)
+demos.js                    interactive demos used by slides ("demo" field)
 data-structure/
   slides.json               lecture slides
   quiz.json                 chapter quizzes
   img/*.svg                 figures (generated, don't edit by hand)
-statistics-probability/     empty for now
+statistics-probability/
+  slides.json, quiz.json    S01–S05, with 7 interactive demos
 digital-logic/              empty for now
 college-physics-2/          empty for now
 tools/figures.py            draws the Data Structure figures
@@ -74,6 +76,9 @@ These rules apply to every subject. They are what make the slides trustworthy.
 9. **Cite the page.** Quiz questions say which PPT page they come from (`"source": "p. 38"`).
 10. **No copyrighted pictures.** The site is public. Don't upload textbook figures, screenshots, TV stills
     or logos. Redraw diagrams as SVG instead (see [Figures](#figures)).
+11. **No homework answers.** Graded homework must never appear on the site: not the questions, not the
+    answers, not the homework's own numbers. You may tag a slide with `"practice": "H01 Q3"` so students
+    know which slide to study for it. Quiz and quick-check questions use the lecture slides' own examples.
 
 ---
 
@@ -120,6 +125,8 @@ so **keep each chapter's slides together**.
 | `explain` | optional | for anything subtle |
 | `wrong_right` | optional | `wrong`, `right`, `reason` |
 | `images` | optional | list of figures, paths relative to the subject folder |
+| `demo` | optional | name of an interactive demo in `demos.js`, e.g. `"bayes"` (see [Interactive demos](#interactive-demos)) |
+| `practice` | optional | homework this slide prepares for, e.g. `"H01 Q3"`; shown as a small tag. Never the answer. |
 | `id` | yes | Indonesian versions of the text fields. `code` and `wrong_right.wrong/right` are **not** repeated here. If `explain` or `wrong_right` exists in English, it must exist in `id` too. |
 
 ---
@@ -190,6 +197,38 @@ Draw from the PPT's own data, and caption it "redrawn from p. X" (or `[ADDED]` i
 
 ---
 
+## Interactive demos
+
+A slide with `"demo": "<name>"` gets a live widget under it ("▶ Try it"). Demos live in `demos.js`:
+
+| Name | Slide | What it shows |
+|---|---|---|
+| `mean-median` | S01 Mean or Median? | drag one value: the mean moves, the median doesn't |
+| `spread` | S01 Variance and SD | deviations, Sxx, s², s update as you move values |
+| `long-run` | S02 Relative Frequency | real random flips; the running share settles near P(A) |
+| `venn` | S02 General Addition Rule | sliders for P(A), P(B), P(A∩B); shades union / exactly one / neither |
+| `order-or-not` | S03 Combinations | 60 officer lists collapse into 10 delegate groups |
+| `bayes` | S04 Likelihood ≠ Posterior | 1000 people; why a good test can still give a low P(D \| +) |
+| `pmf-cdf` | S05 The CDF | edit the pmf, the cdf steps follow; P(a ≤ Y ≤ b) = F(b) − F(a − 1) |
+
+To add one, write a function in `demos.js`:
+
+```js
+DEMOS["my-demo"] = function (root, lang) {
+  const { t, num } = makeT(lang);        // t("English", "Indonesia"), num(0.5) → "0.50" / "0,50"
+  // build controls with slider() / button(), draw with s("svg"...), append everything to root
+};
+```
+
+Rules for demos:
+- **Start from the slide's own example** (same numbers), so the demo and the slide agree.
+- **Show the formula with the live numbers**, not just a picture.
+- **Never fake randomness.** A simulation must use real random draws, triggered by the student.
+- Use the CSS classes from [Figures](#figures) for colours, so it works in light and dark mode.
+- Put text through `fill(node, ...)`, not `replaceChildren`, which prints `null` for empty slots.
+
+---
+
 ## Testing before you push
 
 The page loads JSON files, so double-clicking `index.html` won't work.
@@ -204,6 +243,7 @@ Then open http://localhost:8000 and check:
 - [ ] every slide opens, in both 🇬🇧 English and 🇮🇩 Bahasa Indonesia
 - [ ] figures show up and are readable in dark and light mode, and on a phone-width window
 - [ ] each quiz marks the right answer as correct
+- [ ] every demo opens, its numbers match the slide's example, and nothing shows `null`
 - [ ] the JSON is valid: `python3 -m json.tool your-folder/slides.json > /dev/null`
 
 ---
