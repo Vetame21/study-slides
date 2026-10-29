@@ -1,0 +1,998 @@
+[
+  {
+    "chapter": "21. Electric Charge",
+    "title": "Two Kinds of Charge",
+    "tag": "WHAT",
+    "body": "Electric charge is an intrinsic property of fundamental particles. There are two kinds: positive and negative.\nEqual amounts of both → electrically neutral. Unequal → charged.\nLike signs repel; opposite signs attract.",
+    "quick_check": {
+      "q": "A glass rod and a plastic rod have opposite charges. Do they attract or repel?",
+      "a": "Attract: opposite signs attract."
+    },
+    "id": {
+      "chapter": "21. Muatan Listrik",
+      "title": "Dua Jenis Muatan",
+      "body": "Muatan listrik adalah sifat bawaan partikel fundamental. Ada dua jenis: positif dan negatif.\nJumlah keduanya sama → netral listrik. Tidak sama → bermuatan.\nTanda sama tolak-menolak; tanda berlawanan tarik-menarik.",
+      "quick_check": {
+        "q": "Batang kaca dan batang plastik bermuatan berlawanan. Tarik-menarik atau tolak-menolak?",
+        "a": "Tarik-menarik: tanda berlawanan saling menarik."
+      }
+    }
+  },
+  {
+    "chapter": "21. Electric Charge",
+    "title": "Charging by Rubbing",
+    "tag": "HOW",
+    "body": "Rub glass with silk, or plastic with fur: electrons move from one material to the other, while the positive atoms stay put.\nThe result is an imbalance of charge in both materials.",
+    "explain": "Only electrons move. A body becomes positive by LOSING electrons, not by gaining positive charge. Electrostatic charges are stationary or move very slowly.",
+    "wrong_right": {
+      "wrong": "Rubbing moves positive\ncharge onto the glass",
+      "right": "Rubbing moves electrons\noff the glass",
+      "reason": "In solids the positive ions are fixed; only electrons transfer."
+    },
+    "quick_check": {
+      "q": "A neutral object becomes positively charged. Did it gain or lose electrons?",
+      "a": "It lost electrons."
+    },
+    "id": {
+      "chapter": "21. Muatan Listrik",
+      "title": "Memberi Muatan dengan Menggosok",
+      "body": "Gosok kaca dengan sutra, atau plastik dengan bulu: elektron berpindah dari satu bahan ke bahan lain, sementara atom positif tetap di tempat.\nHasilnya ketidakseimbangan muatan pada kedua bahan.",
+      "explain": "Hanya elektron yang berpindah. Benda menjadi positif karena KEHILANGAN elektron, bukan karena mendapat muatan positif. Muatan elektrostatis diam atau bergerak sangat lambat.",
+      "wrong_right_reason": "Pada zat padat ion positif tetap di tempat; hanya elektron yang berpindah.",
+      "quick_check": {
+        "q": "Benda netral menjadi bermuatan positif. Ia mendapat atau kehilangan elektron?",
+        "a": "Kehilangan elektron."
+      }
+    }
+  },
+  {
+    "chapter": "21. Electric Charge",
+    "title": "Conductors and Insulators",
+    "tag": "WHAT",
+    "practice": "HW01 Q1",
+    "body": "Conductors (metals, the human body, tap water): some electrons move freely.\nInsulators (glass, plastic, pure water): electrons are held to their atoms and can't move freely.\nThe difference is the number of nearly free electrons.",
+    "quick_check": {
+      "q": "Is pure water a conductor or an insulator, according to the slides?",
+      "a": "An insulator (tap water is a conductor)."
+    },
+    "id": {
+      "chapter": "21. Muatan Listrik",
+      "title": "Konduktor dan Isolator",
+      "body": "Konduktor (logam, tubuh manusia, air keran): sebagian elektron bergerak bebas.\nIsolator (kaca, plastik, air murni): elektron terikat pada atomnya dan tidak bebas bergerak.\nBedanya adalah banyaknya elektron yang hampir bebas.",
+      "quick_check": {
+        "q": "Menurut slide, air murni konduktor atau isolator?",
+        "a": "Isolator (air keran adalah konduktor)."
+      }
+    }
+  },
+  {
+    "chapter": "21. Electric Charge",
+    "title": "Induction: Charged Objects Attract Neutral Conductors",
+    "tag": "WHY",
+    "body": "Bring a positive rod near a neutral conductor: free electrons are pulled toward the rod.\nThe near side gets induced negative charge, the far side induced positive charge.\nThe near side is closer, so attraction wins.",
+    "explain": "The conductor is still neutral overall; its charge is only rearranged. A negatively charged object also attracts an isolated neutral conductor: electrons are pushed away, leaving the near side positive.",
+    "quick_check": {
+      "q": "Does a NEGATIVE rod attract or repel an isolated neutral conductor?",
+      "a": "Attract. Induction makes the near side positive."
+    },
+    "id": {
+      "chapter": "21. Muatan Listrik",
+      "title": "Induksi: Benda Bermuatan Menarik Konduktor Netral",
+      "body": "Dekatkan batang positif ke konduktor netral: elektron bebas tertarik ke arah batang.\nSisi dekat mendapat muatan induksi negatif, sisi jauh muatan induksi positif.\nSisi dekat lebih dekat, jadi gaya tarik yang menang.",
+      "explain": "Secara keseluruhan konduktor tetap netral; muatannya hanya tersusun ulang. Benda bermuatan negatif juga menarik konduktor netral terisolasi: elektron didorong menjauh, sisi dekat menjadi positif.",
+      "quick_check": {
+        "q": "Apakah batang NEGATIF menarik atau menolak konduktor netral terisolasi?",
+        "a": "Menarik. Induksi membuat sisi dekat positif."
+      }
+    }
+  },
+  {
+    "chapter": "21. Electric Charge",
+    "title": "Coulomb's Law",
+    "tag": "REMEMBER",
+    "practice": "HW01 Q2–Q4, Q18",
+    "demo": "coulomb",
+    "body": "F = k|q₁||q₂| / r²\nk = 1/(4πε₀) = 8.99 × 10⁹ N·m²/C²\nε₀ = 8.85 × 10⁻¹² C²/(N·m²)\nThe force acts along the line joining the charges. Like charges repel, unlike attract.",
+    "explain": "It's an inverse-square law: double the distance and the force drops to a quarter. Double one charge and the force doubles. Drag the charges in the demo. [NOTE] The source slide writes k's unit as 'C⁻² m²/N'; the correct unit is N·m²/C².",
+    "wrong_right": {
+      "wrong": "r doubles → F halves",
+      "right": "r doubles → F becomes F/4",
+      "reason": "F depends on 1/r², not 1/r."
+    },
+    "quick_check": {
+      "q": "Two charges 1 m apart feel force F. What is the force at 3 m?",
+      "a": "F/9."
+    },
+    "id": {
+      "chapter": "21. Muatan Listrik",
+      "title": "Hukum Coulomb",
+      "body": "F = k|q₁||q₂| / r²\nk = 1/(4πε₀) = 8,99 × 10⁹ N·m²/C²\nε₀ = 8,85 × 10⁻¹² C²/(N·m²)\nGaya bekerja sepanjang garis yang menghubungkan muatan. Muatan sejenis tolak-menolak, tidak sejenis tarik-menarik.",
+      "explain": "Ini hukum kuadrat terbalik: jarak dua kali lipat, gaya menjadi seperempat. Satu muatan dua kali lipat, gaya dua kali lipat. Geser muatan di demo. [NOTE] Slide sumber menulis satuan k 'C⁻² m²/N'; satuan yang benar adalah N·m²/C².",
+      "wrong_right_reason": "F bergantung pada 1/r², bukan 1/r.",
+      "quick_check": {
+        "q": "Dua muatan berjarak 1 m merasakan gaya F. Berapa gayanya pada 3 m?",
+        "a": "F/9."
+      }
+    },
+    "formula": [
+      "F = k\\,\\frac{|q_1|\\,|q_2|}{r^2}",
+      "k = \\frac{1}{4\\pi\\varepsilon_0} = 8.99\\times10^{9}\\ \\mathrm{N\\,m^2/C^2}",
+      "\\varepsilon_0 = 8.85\\times10^{-12}\\ \\mathrm{C^2/(N\\,m^2)}"
+    ]
+  },
+  {
+    "chapter": "21. Electric Charge",
+    "title": "Superposition: Forces Add as Vectors",
+    "tag": "HOW",
+    "practice": "HW01 Q5, Q7, Q8, Q17",
+    "body": "With several charges, the net force on particle 1 is the VECTOR sum of the individual forces:\nF₁,net = F₁₂ + F₁₃ + F₁₄ + …\nEach pair force is found with Coulomb's law, ignoring the other charges.",
+    "explain": "Split every force into x and y components, add the x's and the y's separately, then rebuild the magnitude with √(Fx² + Fy²) and the direction with tan⁻¹(Fy/Fx).",
+    "wrong_right": {
+      "wrong": "|F_net| = |F₁₂| + |F₁₃|",
+      "right": "F_net = F₁₂ + F₁₃ (as vectors):\nadd x-parts, add y-parts",
+      "reason": "Magnitudes only add when the forces point the same way."
+    },
+    "quick_check": {
+      "q": "Two equal forces act on a charge in opposite directions. Net force?",
+      "a": "Zero."
+    },
+    "id": {
+      "chapter": "21. Muatan Listrik",
+      "title": "Superposisi: Gaya Dijumlahkan sebagai Vektor",
+      "body": "Dengan beberapa muatan, gaya total pada partikel 1 adalah jumlah VEKTOR gaya-gaya individual:\nF₁,net = F₁₂ + F₁₃ + F₁₄ + …\nSetiap gaya pasangan dihitung dengan hukum Coulomb, mengabaikan muatan lain.",
+      "explain": "Uraikan setiap gaya menjadi komponen x dan y, jumlahkan x dan y secara terpisah, lalu bangun kembali besarnya dengan √(Fx² + Fy²) dan arahnya dengan tan⁻¹(Fy/Fx).",
+      "wrong_right_reason": "Besar gaya hanya bisa dijumlahkan langsung jika arahnya sama.",
+      "quick_check": {
+        "q": "Dua gaya sama besar bekerja pada muatan dengan arah berlawanan. Gaya totalnya?",
+        "a": "Nol."
+      }
+    },
+    "formula": [
+      "\\vec F_{1,\\mathrm{net}} = \\vec F_{12} + \\vec F_{13} + \\vec F_{14} + \\cdots",
+      "|\\vec F| = \\sqrt{F_x^2 + F_y^2}, \\qquad \\theta = \\tan^{-1}\\frac{F_y}{F_x}"
+    ]
+  },
+  {
+    "chapter": "21. Electric Charge",
+    "title": "Example: Three Charges on a 3-4-5 Triangle",
+    "tag": "HOW",
+    "body": "q₁ = 6.00 nC, q₂ = −2.00 nC, q₃ = 5.00 nC; r₃₁ = 5.00 m, r₃₂ = 4.00 m.\nF₃₁ = k q₃q₁/r₃₁² = 1.08 × 10⁻⁸ N, F₃₂ = 5.62 × 10⁻⁹ N.\nFx = F₃₁cos37° − F₃₂ = 3.01 × 10⁻⁹ N, Fy = 6.50 × 10⁻⁹ N.\n|F| = 7.16 × 10⁻⁹ N at 65.2°.",
+    "explain": "q₁ (positive) pushes q₃ away along the 5 m side; q₂ (negative) pulls q₃ toward it along the 4 m side, in the opposite x-direction, which is why the x-parts subtract. [NOTE] The source slide prints F₃₁ = 1.08 × 10⁻⁹ N and Fx = F₃₂ + F₃₁cos37°. Checked in code: its own Fy and final answer only work with 1.08 × 10⁻⁸ N and a minus sign.",
+    "quick_check": {
+      "q": "Why is Fy = F₃₁ sin37° and not F₃₁ + F₃₂?",
+      "a": "F₃₂ lies along x, so only F₃₁ has a y-component."
+    },
+    "id": {
+      "chapter": "21. Muatan Listrik",
+      "title": "Contoh: Tiga Muatan pada Segitiga 3-4-5",
+      "body": "q₁ = 6,00 nC, q₂ = −2,00 nC, q₃ = 5,00 nC; r₃₁ = 5,00 m, r₃₂ = 4,00 m.\nF₃₁ = k q₃q₁/r₃₁² = 1,08 × 10⁻⁸ N, F₃₂ = 5,62 × 10⁻⁹ N.\nFx = F₃₁cos37° − F₃₂ = 3,01 × 10⁻⁹ N, Fy = 6,50 × 10⁻⁹ N.\n|F| = 7,16 × 10⁻⁹ N pada 65,2°.",
+      "explain": "q₁ (positif) mendorong q₃ menjauh sepanjang sisi 5 m; q₂ (negatif) menarik q₃ sepanjang sisi 4 m, berlawanan arah x, itulah sebabnya komponen x dikurangkan. [NOTE] Slide sumber mencetak F₃₁ = 1,08 × 10⁻⁹ N dan Fx = F₃₂ + F₃₁cos37°. Dicek dengan kode: Fy dan jawaban akhirnya hanya cocok dengan 1,08 × 10⁻⁸ N dan tanda minus.",
+      "quick_check": {
+        "q": "Mengapa Fy = F₃₁ sin37° dan bukan F₃₁ + F₃₂?",
+        "a": "F₃₂ searah sumbu x, jadi hanya F₃₁ yang punya komponen y."
+      }
+    },
+    "formula": [
+      "F_{31} = k\\,\\frac{q_3 q_1}{r_{31}^2} = 1.08\\times10^{-8}\\ \\mathrm{N}",
+      "F_{32} = k\\,\\frac{q_3 |q_2|}{r_{32}^2} = 5.62\\times10^{-9}\\ \\mathrm{N}",
+      "F_x = F_{31}\\cos 37^\\circ - F_{32}, \\qquad F_y = F_{31}\\sin 37^\\circ",
+      "|F| = \\sqrt{F_x^2 + F_y^2} = 7.16\\times10^{-9}\\ \\mathrm{N}"
+    ]
+  },
+  {
+    "chapter": "21. Electric Charge",
+    "title": "Example: Force on Particle 1 from Particles 2 and 4",
+    "tag": "HOW",
+    "body": "q₁ and q₂ on the x axis, R = 0.020 m apart; q₄ is ¾R from q₁ at 60°.\nF₁₂ points −x (repulsion); F₁₄ points toward q₄ (attraction).\nF₁,net = F₁₂ + F₁₄ cos60° î + F₁₄ sin60° ĵ.",
+    "explain": "Resolve F₁₄ into components first, then add F₁₂ to the x-part only. [NOTE] The slide gives q₁ = 1.6 × 10⁻⁹ C, q₂ = 3.2 × 10⁻⁹ C, q₄ = −3.2 × 10⁻⁹ C, but its answers (F₁₂ = 1.15 × 10⁻²⁴ N, F₁₄ = 2.05 × 10⁻²⁴ N) belong to charges of × 10⁻¹⁹ C. Checked in code: with × 10⁻⁹ C, F₁₂ = 1.15 × 10⁻⁴ N and F₁₄ = 2.05 × 10⁻⁴ N; either way F₁,net ≈ (−0.13 î + 1.77 ĵ) × F-unit.",
+    "quick_check": {
+      "q": "Why does F₁₄ point toward particle 4?",
+      "a": "q₁ is positive and q₄ is negative, so they attract."
+    },
+    "id": {
+      "chapter": "21. Muatan Listrik",
+      "title": "Contoh: Gaya pada Partikel 1 dari Partikel 2 dan 4",
+      "body": "q₁ dan q₂ di sumbu x, berjarak R = 0,020 m; q₄ berjarak ¾R dari q₁ pada 60°.\nF₁₂ ke arah −x (tolakan); F₁₄ ke arah q₄ (tarikan).\nF₁,net = F₁₂ + F₁₄ cos60° î + F₁₄ sin60° ĵ.",
+      "explain": "Uraikan F₁₄ menjadi komponen dulu, lalu tambahkan F₁₂ hanya pada komponen x. [NOTE] Slide memberi q₁ = 1,6 × 10⁻⁹ C, q₂ = 3,2 × 10⁻⁹ C, q₄ = −3,2 × 10⁻⁹ C, tetapi jawabannya (F₁₂ = 1,15 × 10⁻²⁴ N, F₁₄ = 2,05 × 10⁻²⁴ N) milik muatan × 10⁻¹⁹ C. Dicek dengan kode: dengan × 10⁻⁹ C, F₁₂ = 1,15 × 10⁻⁴ N dan F₁₄ = 2,05 × 10⁻⁴ N; keduanya memberi F₁,net ≈ (−0,13 î + 1,77 ĵ) × satuan F.",
+      "quick_check": {
+        "q": "Mengapa F₁₄ mengarah ke partikel 4?",
+        "a": "q₁ positif dan q₄ negatif, jadi tarik-menarik."
+      }
+    },
+    "formula": [
+      "\\vec F_{1,\\mathrm{net}} = \\left(-F_{12} + F_{14}\\cos 60^\\circ\\right)\\hat\\imath + F_{14}\\sin 60^\\circ\\,\\hat\\jmath"
+    ]
+  },
+  {
+    "chapter": "21. Electric Charge",
+    "title": "The Shell Theorems",
+    "tag": "REMEMBER",
+    "body": "1. A uniformly charged shell acts on a charge OUTSIDE it as if all its charge were at the center.\n2. A charge INSIDE a uniform shell feels no net force from the shell.\n3. Excess charge on a conducting sphere spreads uniformly over its surface.",
+    "explain": "Excess charges spread out to maximize the distances between all pairs of electrons. Chapter 23 proves theorems 1 and 2 with Gauss' law.",
+    "quick_check": {
+      "q": "A point charge sits inside a uniformly charged shell. What net force does the shell exert?",
+      "a": "Zero."
+    },
+    "id": {
+      "chapter": "21. Muatan Listrik",
+      "title": "Teorema Kulit Bola",
+      "body": "1. Kulit bermuatan seragam bekerja pada muatan di LUAR seolah semua muatannya di pusat.\n2. Muatan di DALAM kulit seragam tidak merasakan gaya total dari kulit.\n3. Muatan lebih pada bola konduktor menyebar merata di permukaannya.",
+      "explain": "Muatan lebih menyebar untuk memaksimalkan jarak antar semua pasangan elektron. Bab 23 membuktikan teorema 1 dan 2 dengan hukum Gauss.",
+      "quick_check": {
+        "q": "Muatan titik berada di dalam kulit bermuatan seragam. Berapa gaya total dari kulit?",
+        "a": "Nol."
+      }
+    }
+  },
+  {
+    "chapter": "21. Electric Charge",
+    "title": "Charge Is Quantized",
+    "tag": "WHAT",
+    "practice": "HW01 Q14",
+    "body": "Charge only comes in whole multiples of the elementary charge:\nq = ne, n = ±1, ±2, ±3, …\ne = 1.6 × 10⁻¹⁹ C.\nProton +e, electron −e, neutron 0.",
+    "explain": "Quantized means only discrete values are allowed. Millikan measured e in 1909 and found every charge was a multiple of it. [NOTE] The slides say the proton is '≈ 1000' times as heavy as the electron; the actual ratio is about 1836 (m_p = 1.67 × 10⁻²⁷ kg, m_e ≈ 9.11 × 10⁻³¹ kg).",
+    "wrong_right": {
+      "wrong": "q = 2.4 × 10⁻¹⁹ C is possible",
+      "right": "2.4 × 10⁻¹⁹ C = 1.5e → impossible",
+      "reason": "[ADDED] n must be a whole number."
+    },
+    "quick_check": {
+      "q": "How many electrons make −1 C?",
+      "a": "[ADDED] 1/(1.6 × 10⁻¹⁹) = 6.25 × 10¹⁸ electrons."
+    },
+    "id": {
+      "chapter": "21. Muatan Listrik",
+      "title": "Muatan Terkuantisasi",
+      "body": "Muatan hanya berupa kelipatan bulat muatan elementer:\nq = ne, n = ±1, ±2, ±3, …\ne = 1,6 × 10⁻¹⁹ C.\nProton +e, elektron −e, neutron 0.",
+      "explain": "Terkuantisasi berarti hanya nilai diskrit yang diizinkan. Millikan mengukur e pada 1909 dan mendapati setiap muatan adalah kelipatannya. [NOTE] Slide menyebut proton '≈ 1000' kali lebih berat dari elektron; rasio sebenarnya sekitar 1836 (m_p = 1,67 × 10⁻²⁷ kg, m_e ≈ 9,11 × 10⁻³¹ kg).",
+      "wrong_right_reason": "[ADDED] n harus bilangan bulat.",
+      "quick_check": {
+        "q": "Berapa elektron untuk −1 C?",
+        "a": "[ADDED] 1/(1,6 × 10⁻¹⁹) = 6,25 × 10¹⁸ elektron."
+      }
+    },
+    "formula": [
+      "q = ne, \\qquad n = \\pm1, \\pm2, \\pm3, \\ldots, \\qquad e = 1.6\\times10^{-19}\\ \\mathrm{C}"
+    ]
+  },
+  {
+    "chapter": "21. Electric Charge",
+    "title": "Charge Is Conserved",
+    "tag": "REMEMBER",
+    "practice": "HW01 Q13, Q15, Q20",
+    "body": "Charge is never created or destroyed, only transferred; the net amount stays constant in every process.\nDecay: ²³⁸U → ²³⁴Th + ⁴He.\nAnnihilation: e⁻ + e⁺ → γ + γ.\nPair production: γ → e⁻ + e⁺.",
+    "explain": "Check each reaction: total charge before = total after. In annihilation, (−e) + (+e) = 0, and photons carry no charge. In the decay, 92 = 90 + 2 protons.",
+    "quick_check": {
+      "q": "e⁻ + e⁺ → γ + γ: total charge before and after?",
+      "a": "0 before, 0 after."
+    },
+    "id": {
+      "chapter": "21. Muatan Listrik",
+      "title": "Muatan Kekal",
+      "body": "Muatan tidak pernah diciptakan atau dimusnahkan, hanya dipindahkan; jumlah totalnya tetap dalam setiap proses.\nPeluruhan: ²³⁸U → ²³⁴Th + ⁴He.\nAnihilasi: e⁻ + e⁺ → γ + γ.\nProduksi pasangan: γ → e⁻ + e⁺.",
+      "explain": "Cek setiap reaksi: total muatan sebelum = sesudah. Pada anihilasi, (−e) + (+e) = 0, dan foton tidak bermuatan. Pada peluruhan, 92 = 90 + 2 proton.",
+      "quick_check": {
+        "q": "e⁻ + e⁺ → γ + γ: total muatan sebelum dan sesudah?",
+        "a": "0 sebelum, 0 sesudah."
+      }
+    },
+    "formula": [
+      "{}^{238}_{\\ 92}\\mathrm{U} \\to {}^{234}_{\\ 90}\\mathrm{Th} + {}^{4}_{2}\\mathrm{He}",
+      "e^- + e^+ \\to \\gamma + \\gamma, \\qquad \\gamma \\to e^- + e^+"
+    ]
+  },
+  {
+    "chapter": "22. Electric Field",
+    "title": "What Is an Electric Field?",
+    "tag": "WHAT",
+    "practice": "HW02 Q1",
+    "body": "A charge sets up an electric field in all space around it.\nTo measure it at point P, place a small POSITIVE test charge q₀ there and measure the force:\nE = F / q₀   (unit N/C)\nE is a vector field: one vector at every point.",
+    "explain": "The field answers 'how does a charge know the other one is there?'. The field exists whether or not q₀ is there; q₀ just measures it. With several source charges, use the net force: E = F₀,net / q₀.",
+    "quick_check": {
+      "q": "What sign must the test charge q₀ have?",
+      "a": "Positive."
+    },
+    "id": {
+      "chapter": "22. Medan Listrik",
+      "title": "Apa Itu Medan Listrik?",
+      "body": "Muatan membentuk medan listrik di seluruh ruang di sekitarnya.\nUntuk mengukurnya di titik P, taruh muatan uji POSITIF kecil q₀ di sana dan ukur gayanya:\nE = F / q₀   (satuan N/C)\nE adalah medan vektor: satu vektor di setiap titik.",
+      "explain": "Medan menjawab 'bagaimana sebuah muatan tahu muatan lain ada?'. Medan ada dengan atau tanpa q₀; q₀ hanya mengukurnya. Dengan beberapa muatan sumber, pakai gaya total: E = F₀,net / q₀.",
+      "quick_check": {
+        "q": "Muatan uji q₀ harus bertanda apa?",
+        "a": "Positif."
+      }
+    },
+    "formula": [
+      "\\vec E = \\frac{\\vec F}{q_0}"
+    ]
+  },
+  {
+    "chapter": "22. Electric Field",
+    "title": "Electric Field Lines",
+    "tag": "WHAT",
+    "practice": "HW02 Q2, Q19",
+    "demo": "field-explorer",
+    "body": "Field lines start on positive charges and end on negative charges.\nAt any point, the tangent to a field line gives the direction of E.\nIdea due to Faraday.",
+    "explain": "[ADDED] Where lines crowd together the field is stronger; where they spread out it is weaker. Two field lines never cross, because E has only one direction at each point. Drag the charges in the demo and watch the lines rearrange.",
+    "quick_check": {
+      "q": "Do field lines point toward or away from a negative charge?",
+      "a": "Toward it."
+    },
+    "id": {
+      "chapter": "22. Medan Listrik",
+      "title": "Garis Medan Listrik",
+      "body": "Garis medan berawal di muatan positif dan berakhir di muatan negatif.\nDi setiap titik, garis singgung garis medan memberi arah E.\nGagasan dari Faraday.",
+      "explain": "[ADDED] Di tempat garis-garis rapat, medan lebih kuat; di tempat renggang, lebih lemah. Dua garis medan tidak pernah berpotongan, karena E hanya punya satu arah di setiap titik. Geser muatan di demo dan lihat garisnya berubah.",
+      "quick_check": {
+        "q": "Garis medan mengarah ke atau menjauhi muatan negatif?",
+        "a": "Ke arahnya."
+      }
+    }
+  },
+  {
+    "chapter": "22. Electric Field",
+    "title": "Field of Point Charges",
+    "tag": "REMEMBER",
+    "practice": "HW02 Q3–Q8",
+    "body": "One point charge: E = (1/4πε₀) · q/r² · r̂, pointing away from q if q > 0, toward q if q < 0.\nSeveral charges (superposition):\nE_net = E₁ + E₂ + … = Σ qᵢ/(4πε₀rᵢ²) r̂ᵢ",
+    "explain": "Same recipe as forces in Ch 21: find each charge's field at the point, then add them as vectors, component by component. E falls as 1/r², so doubling the distance gives a quarter of the field.",
+    "wrong_right": {
+      "wrong": "E from a −q points away from it",
+      "right": "E from a −q points toward it",
+      "reason": "E is the force on a POSITIVE test charge, which is attracted to −q."
+    },
+    "quick_check": {
+      "q": "A point charge makes field E at 1 m. Field at 2 m?",
+      "a": "E/4."
+    },
+    "id": {
+      "chapter": "22. Medan Listrik",
+      "title": "Medan Muatan Titik",
+      "body": "Satu muatan titik: E = (1/4πε₀) · q/r² · r̂, menjauhi q jika q > 0, menuju q jika q < 0.\nBeberapa muatan (superposisi):\nE_net = E₁ + E₂ + … = Σ qᵢ/(4πε₀rᵢ²) r̂ᵢ",
+      "explain": "Resep sama seperti gaya di Bab 21: cari medan tiap muatan di titik itu, lalu jumlahkan sebagai vektor, komponen demi komponen. E turun sebanding 1/r², jadi jarak dua kali lipat memberi seperempat medan.",
+      "wrong_right_reason": "E adalah gaya pada muatan uji POSITIF, yang tertarik ke −q.",
+      "quick_check": {
+        "q": "Muatan titik membuat medan E pada 1 m. Medan pada 2 m?",
+        "a": "E/4."
+      }
+    },
+    "formula": [
+      "\\vec E = \\frac{1}{4\\pi\\varepsilon_0}\\,\\frac{q}{r^2}\\,\\hat r",
+      "\\vec E_{\\mathrm{net}} = \\sum_{i=1}^{n} \\frac{q_i}{4\\pi\\varepsilon_0 r_i^2}\\,\\hat r_i"
+    ]
+  },
+  {
+    "chapter": "22. Electric Field",
+    "title": "Example: Three Charges, Field at the Origin",
+    "tag": "HOW",
+    "body": "q₁ = +2Q, q₂ = −2Q, q₃ = −4Q, each a distance d from the origin (see the slide's figure).\nE₁ and E₂ point the same way, so E₁ + E₂ = k·4Q/d², equal in size to E₃; both make 30° with the x axis.\nThe y-parts cancel: E = 2(k·4Q/d²)cos30° = 6.93 Q/(4πε₀d²), along +x.",
+    "explain": "Look for symmetry before calculating: two equal vectors placed symmetrically about the x axis keep only their x-components, each multiplied by cos30°.",
+    "quick_check": {
+      "q": "Why does the y-component of the net field vanish?",
+      "a": "The two equal fields are symmetric about the x axis, so their y-parts cancel."
+    },
+    "id": {
+      "chapter": "22. Medan Listrik",
+      "title": "Contoh: Tiga Muatan, Medan di Titik Asal",
+      "body": "q₁ = +2Q, q₂ = −2Q, q₃ = −4Q, masing-masing berjarak d dari titik asal (lihat gambar di slide).\nE₁ dan E₂ searah, jadi E₁ + E₂ = k·4Q/d², sama besar dengan E₃; keduanya membentuk 30° dengan sumbu x.\nKomponen y saling meniadakan: E = 2(k·4Q/d²)cos30° = 6,93 Q/(4πε₀d²), ke arah +x.",
+      "explain": "Cari simetri sebelum menghitung: dua vektor sama besar yang simetris terhadap sumbu x hanya menyisakan komponen x, masing-masing dikali cos30°.",
+      "quick_check": {
+        "q": "Mengapa komponen y medan total hilang?",
+        "a": "Dua medan sama besar simetris terhadap sumbu x, jadi komponen y-nya saling meniadakan."
+      }
+    },
+    "formula": [
+      "E = 2\\left(k\\,\\frac{4Q}{d^2}\\right)\\cos 30^\\circ = \\frac{6.93\\,Q}{4\\pi\\varepsilon_0 d^2}"
+    ]
+  },
+  {
+    "chapter": "22. Electric Field",
+    "title": "The Electric Dipole",
+    "tag": "WHAT",
+    "body": "A dipole is two equal and opposite charges, ±q, a small distance d apart.\nDipole moment: p = qd, pointing from the NEGATIVE to the POSITIVE charge.\nExamples: H₂O and HCl, where O or Cl pulls the hydrogen's electrons.",
+    "quick_check": {
+      "q": "Which way does p point?",
+      "a": "From −q to +q."
+    },
+    "id": {
+      "chapter": "22. Medan Listrik",
+      "title": "Dipol Listrik",
+      "body": "Dipol adalah dua muatan sama besar dan berlawanan, ±q, berjarak kecil d.\nMomen dipol: p = qd, mengarah dari muatan NEGATIF ke POSITIF.\nContoh: H₂O dan HCl, di mana O atau Cl menarik elektron hidrogen.",
+      "quick_check": {
+        "q": "Ke mana arah p?",
+        "a": "Dari −q ke +q."
+      }
+    },
+    "formula": [
+      "p = qd"
+    ]
+  },
+  {
+    "chapter": "22. Electric Field",
+    "title": "Dipole Field Far Along Its Axis",
+    "tag": "HOW",
+    "demo": "dipole-axis",
+    "body": "Exact: E = kq/(z − d/2)² − kq/(z + d/2)².\nFor z ≫ d, expand and keep the first term:\nE ≈ 2kqd/z³ = 2kp/z³.\nA dipole's field falls as 1/z³, faster than a point charge's 1/z².",
+    "explain": "Far away, the + and − fields almost cancel; only the small difference from their unequal distances survives. That's why it fades faster. The demo compares exact and approximate values as you move z.",
+    "quick_check": {
+      "q": "Double z far from a dipole. What happens to E?",
+      "a": "It drops to 1/8."
+    },
+    "id": {
+      "chapter": "22. Medan Listrik",
+      "title": "Medan Dipol Jauh di Sumbunya",
+      "body": "Eksak: E = kq/(z − d/2)² − kq/(z + d/2)².\nUntuk z ≫ d, uraikan dan ambil suku pertama:\nE ≈ 2kqd/z³ = 2kp/z³.\nMedan dipol turun sebanding 1/z³, lebih cepat dari 1/z² muatan titik.",
+      "explain": "Di kejauhan, medan + dan − hampir saling meniadakan; hanya selisih kecil akibat jarak yang berbeda yang tersisa. Itulah sebabnya ia cepat melemah. Demo membandingkan nilai eksak dan pendekatan saat z digeser.",
+      "quick_check": {
+        "q": "z dilipatduakan jauh dari dipol. Apa yang terjadi pada E?",
+        "a": "Turun menjadi 1/8."
+      }
+    },
+    "formula": [
+      "E = \\frac{kq}{(z - d/2)^2} - \\frac{kq}{(z + d/2)^2}",
+      "E \\approx \\frac{2kqd}{z^3} = \\frac{2kp}{z^3} \\qquad (z \\gg d)"
+    ]
+  },
+  {
+    "chapter": "22. Electric Field",
+    "title": "Field of a Ring of Charge",
+    "tag": "HOW",
+    "practice": "HW02 Q9, Q16, Q20",
+    "body": "Ring of radius R, uniform λ, total charge q. On its axis at distance z:\nE = (1/4πε₀) · qz / (R² + z²)^{3/2}\nRecipe: dq = λ ds → dE → use symmetry → integrate.",
+    "explain": "Each little piece ds gives a dE pointing away from it. By symmetry, the pieces on opposite sides cancel each other's sideways parts, so only the components along z (dE cosθ) add up. At the center (z = 0) the field is zero.",
+    "quick_check": {
+      "q": "What is E at the very center of the ring (z = 0)?",
+      "a": "Zero: all the dE vectors cancel."
+    },
+    "id": {
+      "chapter": "22. Medan Listrik",
+      "title": "Medan Cincin Bermuatan",
+      "body": "Cincin berjari-jari R, λ seragam, muatan total q. Pada sumbunya di jarak z:\nE = (1/4πε₀) · qz / (R² + z²)^{3/2}\nResep: dq = λ ds → dE → pakai simetri → integralkan.",
+      "explain": "Setiap potongan kecil ds memberi dE yang menjauhinya. Karena simetri, potongan di sisi berseberangan saling meniadakan komponen menyampingnya, jadi hanya komponen sepanjang z (dE cosθ) yang terjumlah. Di pusat (z = 0) medannya nol.",
+      "quick_check": {
+        "q": "Berapa E tepat di pusat cincin (z = 0)?",
+        "a": "Nol: semua vektor dE saling meniadakan."
+      }
+    },
+    "formula": [
+      "dq = \\lambda\\,ds",
+      "E = \\frac{1}{4\\pi\\varepsilon_0}\\,\\frac{qz}{\\left(R^2 + z^2\\right)^{3/2}}"
+    ]
+  },
+  {
+    "chapter": "22. Electric Field",
+    "title": "Example: A 120° Charged Arc",
+    "tag": "HOW",
+    "body": "Plastic arc of radius r, angle 120°, uniform total charge −Q. Field at the center:\ndE_y integrates to 0 by symmetry;\nE = ∫ λr dθ cosθ / (4πε₀r²) from −60° to +60° = 1.73 λ/(4πε₀r),\npointing toward the rod (the charge is negative).",
+    "explain": "Choose θ as the variable, since ds = r dθ. ∫cosθ dθ from −60° to 60° = 2 sin60° = 1.73. [NOTE] The slide's final line shows 1.73/(4πε₀r) without λ. [ADDED] With λ = Q/(2πr/3) this becomes E = 0.83 Q/(4πε₀r²).",
+    "quick_check": {
+      "q": "Why does the field point toward the arc?",
+      "a": "The arc is negatively charged, and fields point toward negative charge."
+    },
+    "id": {
+      "chapter": "22. Medan Listrik",
+      "title": "Contoh: Busur Bermuatan 120°",
+      "body": "Busur plastik berjari-jari r, sudut 120°, muatan total seragam −Q. Medan di pusat:\ndE_y terintegrasi menjadi 0 karena simetri;\nE = ∫ λr dθ cosθ / (4πε₀r²) dari −60° sampai +60° = 1,73 λ/(4πε₀r),\nmengarah ke batang (muatannya negatif).",
+      "explain": "Pilih θ sebagai variabel, karena ds = r dθ. ∫cosθ dθ dari −60° sampai 60° = 2 sin60° = 1,73. [NOTE] Baris akhir slide menulis 1,73/(4πε₀r) tanpa λ. [ADDED] Dengan λ = Q/(2πr/3) hasilnya E = 0,83 Q/(4πε₀r²).",
+      "quick_check": {
+        "q": "Mengapa medan mengarah ke busur?",
+        "a": "Busur bermuatan negatif, dan medan mengarah ke muatan negatif."
+      }
+    },
+    "formula": [
+      "E = \\int_{-60^\\circ}^{60^\\circ} \\frac{\\lambda r\\,d\\theta}{4\\pi\\varepsilon_0 r^2}\\cos\\theta = \\frac{1.73\\,\\lambda}{4\\pi\\varepsilon_0 r}"
+    ]
+  },
+  {
+    "chapter": "22. Electric Field",
+    "title": "Field of a Charged Disk",
+    "tag": "HOW",
+    "body": "Disk of radius R, uniform surface density σ. Split it into thin rings (dq = σ·2πr dr), reuse the ring result, integrate r from 0 to R:\nE = (σ/2ε₀)[1 − z/√(R² + z²)]\nAs R → ∞ (or z → 0): E = σ/(2ε₀), an infinite sheet.",
+    "explain": "Checking limits is a powerful habit: a huge disk seen from close up looks like an infinite sheet, and the formula agrees.",
+    "quick_check": {
+      "q": "What is the field near an infinite charged sheet?",
+      "a": "σ/(2ε₀)."
+    },
+    "id": {
+      "chapter": "22. Medan Listrik",
+      "title": "Medan Piringan Bermuatan",
+      "body": "Piringan berjari-jari R, rapat muatan permukaan σ seragam. Bagi menjadi cincin tipis (dq = σ·2πr dr), pakai hasil cincin, integralkan r dari 0 sampai R:\nE = (σ/2ε₀)[1 − z/√(R² + z²)]\nJika R → ∞ (atau z → 0): E = σ/(2ε₀), lembaran tak hingga.",
+      "explain": "Mengecek limit adalah kebiasaan yang ampuh: piringan besar dilihat dari dekat tampak seperti lembaran tak hingga, dan rumusnya sesuai.",
+      "quick_check": {
+        "q": "Berapa medan di dekat lembaran bermuatan tak hingga?",
+        "a": "σ/(2ε₀)."
+      }
+    },
+    "formula": [
+      "E = \\frac{\\sigma}{2\\varepsilon_0}\\left(1 - \\frac{z}{\\sqrt{R^2 + z^2}}\\right)",
+      "R \\to \\infty: \\quad E = \\frac{\\sigma}{2\\varepsilon_0}"
+    ]
+  },
+  {
+    "chapter": "22. Electric Field",
+    "title": "A Point Charge in a Field: F = qE",
+    "tag": "REMEMBER",
+    "practice": "HW02 Q13, Q17, Q18",
+    "body": "A charge q in an external field E feels F = qE.\nq > 0: F points along E.\nq < 0: F points opposite to E.\nMillikan (1909) used this to show q = ne and measure e = 1.6 × 10⁻¹⁹ C.",
+    "explain": "Once you know F, it's ordinary mechanics: a = F/m = qE/m. In a uniform field that's constant acceleration, so the projectile-motion formulas apply.",
+    "wrong_right": {
+      "wrong": "An electron in a downward field\nis pushed downward",
+      "right": "An electron (q < 0) in a downward\nfield is pushed upward",
+      "reason": "For negative q, F = qE points opposite to E."
+    },
+    "quick_check": {
+      "q": "E points east. Which way is the force on a proton?",
+      "a": "East (q > 0)."
+    },
+    "id": {
+      "chapter": "22. Medan Listrik",
+      "title": "Muatan Titik dalam Medan: F = qE",
+      "body": "Muatan q dalam medan luar E merasakan F = qE.\nq > 0: F searah E.\nq < 0: F berlawanan arah E.\nMillikan (1909) memakai ini untuk menunjukkan q = ne dan mengukur e = 1,6 × 10⁻¹⁹ C.",
+      "explain": "Setelah F diketahui, sisanya mekanika biasa: a = F/m = qE/m. Dalam medan seragam percepatannya konstan, jadi rumus gerak parabola berlaku.",
+      "wrong_right_reason": "Untuk q negatif, F = qE berlawanan arah dengan E.",
+      "quick_check": {
+        "q": "E mengarah ke timur. Ke mana gaya pada proton?",
+        "a": "Timur (q > 0)."
+      }
+    },
+    "formula": [
+      "\\vec F = q\\vec E, \\qquad \\vec a = \\frac{q\\vec E}{m}"
+    ]
+  },
+  {
+    "chapter": "22. Electric Field",
+    "title": "Example: Ink-Jet Printing",
+    "tag": "HOW",
+    "demo": "ink-jet",
+    "body": "Drop: m = 1.3 × 10⁻¹⁰ kg, Q = −1.5 × 10⁻¹³ C, vₓ = 18 m/s; plates L = 1.6 cm, E = 1.4 × 10⁶ N/C downward.\nt = L/vₓ, a_y = QE/m, y = ½a_y t² = QEL²/(2mvₓ²)\ny = 6.4 × 10⁻⁴ m = 0.64 mm.",
+    "explain": "It's projectile motion with gravity replaced by the electric force (gravity is negligible here). The drop is negative and E points down, so the drop is deflected UP. The computer controls Q, which sets where the drop lands. [NOTE] The source slide gives the answer as '0.64 m'; checked in code, it is 0.64 mm.",
+    "quick_check": {
+      "q": "Double the drop's speed vₓ. What happens to y?",
+      "a": "It drops to 1/4 (y ∝ 1/vₓ²)."
+    },
+    "id": {
+      "chapter": "22. Medan Listrik",
+      "title": "Contoh: Printer Ink-Jet",
+      "body": "Tetes: m = 1,3 × 10⁻¹⁰ kg, Q = −1,5 × 10⁻¹³ C, vₓ = 18 m/s; pelat L = 1,6 cm, E = 1,4 × 10⁶ N/C ke bawah.\nt = L/vₓ, a_y = QE/m, y = ½a_y t² = QEL²/(2mvₓ²)\ny = 6,4 × 10⁻⁴ m = 0,64 mm.",
+      "explain": "Ini gerak parabola dengan gravitasi diganti gaya listrik (gravitasi diabaikan di sini). Tetesnya negatif dan E ke bawah, jadi tetes dibelokkan ke ATAS. Komputer mengatur Q, yang menentukan tempat tetes mendarat. [NOTE] Slide sumber menulis jawabannya '0,64 m'; dicek dengan kode, hasilnya 0,64 mm.",
+      "quick_check": {
+        "q": "Kecepatan vₓ dilipatduakan. Apa yang terjadi pada y?",
+        "a": "Turun menjadi 1/4 (y ∝ 1/vₓ²)."
+      }
+    },
+    "formula": [
+      "t = \\frac{L}{v_x}, \\qquad a_y = \\frac{QE}{m}",
+      "y = \\tfrac{1}{2}a_y t^2 = \\frac{QEL^2}{2 m v_x^2} = 6.4\\times10^{-4}\\ \\mathrm{m}"
+    ]
+  },
+  {
+    "chapter": "22. Electric Field",
+    "title": "A Dipole in a Uniform Field: Torque",
+    "tag": "WHAT",
+    "practice": "HW02 Q14",
+    "demo": "dipole-field",
+    "body": "The dipole has no net charge, so the net force is zero: qE + (−q)E = 0.\nBut the two forces form a couple, giving a torque:\nτ = pE sinθ, or as a vector τ = p × E.\nThe torque turns p toward E.",
+    "quick_check": {
+      "q": "At what angle θ is the torque on a dipole largest?",
+      "a": "90°: τ = pE."
+    },
+    "id": {
+      "chapter": "22. Medan Listrik",
+      "title": "Dipol dalam Medan Seragam: Torsi",
+      "body": "Dipol tidak bermuatan total, jadi gaya totalnya nol: qE + (−q)E = 0.\nTetapi kedua gaya membentuk kopel yang menghasilkan torsi:\nτ = pE sinθ, atau sebagai vektor τ = p × E.\nTorsi memutar p ke arah E.",
+      "quick_check": {
+        "q": "Pada sudut θ berapa torsi pada dipol paling besar?",
+        "a": "90°: τ = pE."
+      }
+    },
+    "formula": [
+      "\\vec F_{\\mathrm{net}} = q\\vec E + (-q)\\vec E = 0",
+      "\\vec\\tau = \\vec p\\times\\vec E, \\qquad \\tau = pE\\sin\\theta"
+    ]
+  },
+  {
+    "chapter": "22. Electric Field",
+    "title": "Dipole Potential Energy",
+    "tag": "REMEMBER",
+    "practice": "HW02 Q15",
+    "body": "U = −pE cosθ = −p · E\nθ = 0°: U = −pE, minimum, stable equilibrium (τ = 0).\nθ = 90°: U = 0, maximum torque.\nθ = 180°: U = +pE, maximum, unstable equilibrium (τ = 0).",
+    "explain": "Like a pendulum, a dipole released at an angle swings back and forth around θ = 0. Losses make it settle unless energy is pumped in by an oscillating field, which is how a microwave oven heats water molecules. Release the dipole in the demo to see the swing.",
+    "wrong_right": {
+      "wrong": "τ = 0 at 180°, so it's stable there",
+      "right": "τ = 0 at 180°, but U is maximum:\nunstable",
+      "reason": "A tiny nudge at 180° makes the torque push it further away."
+    },
+    "quick_check": {
+      "q": "Work to rotate a dipole from 0° to 180°?",
+      "a": "W = U_f − U_i = pE − (−pE) = 2pE."
+    },
+    "id": {
+      "chapter": "22. Medan Listrik",
+      "title": "Energi Potensial Dipol",
+      "body": "U = −pE cosθ = −p · E\nθ = 0°: U = −pE, minimum, kesetimbangan stabil (τ = 0).\nθ = 90°: U = 0, torsi maksimum.\nθ = 180°: U = +pE, maksimum, kesetimbangan labil (τ = 0).",
+      "explain": "Seperti bandul, dipol yang dilepas pada suatu sudut berayun bolak-balik di sekitar θ = 0. Kehilangan energi membuatnya diam kecuali energi dipompa oleh medan berosilasi, begitulah oven microwave memanaskan molekul air. Lepaskan dipol di demo untuk melihat ayunannya.",
+      "wrong_right_reason": "Sedikit dorongan di 180° membuat torsi mendorongnya makin menjauh.",
+      "quick_check": {
+        "q": "Usaha untuk memutar dipol dari 0° ke 180°?",
+        "a": "W = U_f − U_i = pE − (−pE) = 2pE."
+      }
+    },
+    "formula": [
+      "U = -\\vec p\\cdot\\vec E = -pE\\cos\\theta",
+      "W = U_f - U_i"
+    ]
+  },
+  {
+    "chapter": "22. Electric Field",
+    "title": "Example: The Water Molecule",
+    "tag": "HOW",
+    "body": "p = 6.2 × 10⁻³⁰ C·m, with q = 10e (8 protons in O + 2 in H):\nd = p/q = 3.9 × 10⁻¹² m.\nIn E = 1.5 × 10⁴ N/C: τ_max = pE = 9.3 × 10⁻²⁶ N·m.\nWork to turn it from 0° to 180°: W = 2pE = 1.9 × 10⁻²⁵ J.",
+    "quick_check": {
+      "q": "Why use q = 10e for water?",
+      "a": "The molecule has 10 protons: 8 in oxygen and 1 in each hydrogen."
+    },
+    "id": {
+      "chapter": "22. Medan Listrik",
+      "title": "Contoh: Molekul Air",
+      "body": "p = 6,2 × 10⁻³⁰ C·m, dengan q = 10e (8 proton di O + 2 di H):\nd = p/q = 3,9 × 10⁻¹² m.\nDalam E = 1,5 × 10⁴ N/C: τ_maks = pE = 9,3 × 10⁻²⁶ N·m.\nUsaha memutarnya dari 0° ke 180°: W = 2pE = 1,9 × 10⁻²⁵ J.",
+      "quick_check": {
+        "q": "Mengapa memakai q = 10e untuk air?",
+        "a": "Molekulnya punya 10 proton: 8 di oksigen dan 1 di tiap hidrogen."
+      }
+    },
+    "formula": [
+      "d = \\frac{p}{q} = \\frac{6.2\\times10^{-30}}{10\\,e} = 3.9\\times10^{-12}\\ \\mathrm{m}",
+      "\\tau_{\\max} = pE, \\qquad W_{0^\\circ \\to 180^\\circ} = 2pE"
+    ]
+  },
+  {
+    "chapter": "23. Gauss' Law",
+    "title": "Why Gauss' Law?",
+    "tag": "WHY",
+    "body": "Coulomb's law can give any field, but for many charge shapes the sum is hard work.\nFor symmetric shapes (spheres, cylinders, planes) Gauss' law gets E far faster.\nIt is the same physics as Coulomb's law, written differently.",
+    "explain": "Gauss' law works the other way round too: if you know E over any imaginary closed surface (a Gaussian surface), you can find the net charge inside it.",
+    "quick_check": {
+      "q": "For which charge distributions is Gauss' law most useful?",
+      "a": "Symmetric ones: spherical, cylindrical, planar."
+    },
+    "id": {
+      "chapter": "23. Hukum Gauss",
+      "title": "Mengapa Hukum Gauss?",
+      "body": "Hukum Coulomb bisa memberi medan apa pun, tetapi untuk banyak bentuk muatan penjumlahannya berat.\nUntuk bentuk simetris (bola, silinder, bidang) hukum Gauss mendapatkan E jauh lebih cepat.\nFisikanya sama dengan hukum Coulomb, hanya ditulis berbeda.",
+      "explain": "Hukum Gauss juga berlaku sebaliknya: jika E diketahui di seluruh permukaan tertutup imajiner (permukaan Gauss), muatan total di dalamnya bisa dicari.",
+      "quick_check": {
+        "q": "Untuk distribusi muatan apa hukum Gauss paling berguna?",
+        "a": "Yang simetris: bola, silinder, bidang."
+      }
+    },
+    "formula": [
+      "\\varepsilon_0 \\oint \\vec E\\cdot d\\vec A = q_{\\mathrm{enc}}"
+    ]
+  },
+  {
+    "chapter": "23. Gauss' Law",
+    "title": "Flux",
+    "tag": "WHAT",
+    "demo": "flux-loop",
+    "body": "Air flowing at speed v through a loop of area A tilted at θ: volume per second Φ = vA cosθ.\nElectric flux through a small area: ΔΦ = E · ΔA = E ΔA cosθ.\nΔA points along the area's normal. ΔΦ can be positive, negative or zero.",
+    "explain": "θ is the angle between E and the area's normal (not the surface itself). Face-on (θ = 0) catches the most flux; edge-on (θ = 90°) catches none; past 90° the flux is negative. Tilt the loop in the demo.",
+    "wrong_right": {
+      "wrong": "θ = angle between E\nand the surface",
+      "right": "θ = angle between E\nand the surface's NORMAL",
+      "reason": "ΔA is a vector perpendicular to the surface."
+    },
+    "quick_check": {
+      "q": "Field parallel to a flat surface. Flux through it?",
+      "a": "Zero (θ = 90° to the normal)."
+    },
+    "id": {
+      "chapter": "23. Hukum Gauss",
+      "title": "Fluks",
+      "body": "Udara mengalir dengan kecepatan v melalui loop seluas A yang miring θ: volume per detik Φ = vA cosθ.\nFluks listrik melalui luas kecil: ΔΦ = E · ΔA = E ΔA cosθ.\nΔA searah normal bidang. ΔΦ bisa positif, negatif, atau nol.",
+      "explain": "θ adalah sudut antara E dan normal bidang (bukan bidangnya). Menghadap langsung (θ = 0) menangkap fluks terbanyak; menyamping (θ = 90°) tidak menangkap apa pun; lewat 90° fluksnya negatif. Miringkan loop di demo.",
+      "wrong_right_reason": "ΔA adalah vektor yang tegak lurus bidang.",
+      "quick_check": {
+        "q": "Medan sejajar bidang datar. Fluks melaluinya?",
+        "a": "Nol (θ = 90° terhadap normal)."
+      }
+    },
+    "formula": [
+      "\\Phi = vA\\cos\\theta",
+      "\\Delta\\Phi = \\vec E\\cdot\\Delta\\vec A = E\\,\\Delta A\\cos\\theta"
+    ]
+  },
+  {
+    "chapter": "23. Gauss' Law",
+    "title": "Flux Through a Closed Surface",
+    "tag": "WHAT",
+    "body": "Φ = ∮ E · dA over a closed (Gaussian) surface, with dA pointing OUTWARD.\nIt is proportional to the net number of field lines leaving the surface.\nCylinder in a uniform field along its axis: left cap −EA, right cap +EA, side 0 → total 0.",
+    "explain": "Lines going in count negative, lines coming out count positive. With no charge inside, every line that enters also leaves, so the total is zero.",
+    "quick_check": {
+      "q": "A closed surface sits in a uniform field with no charge inside. Total flux?",
+      "a": "Zero."
+    },
+    "id": {
+      "chapter": "23. Hukum Gauss",
+      "title": "Fluks Melalui Permukaan Tertutup",
+      "body": "Φ = ∮ E · dA pada permukaan tertutup (permukaan Gauss), dengan dA mengarah KELUAR.\nSebanding dengan jumlah bersih garis medan yang keluar dari permukaan.\nSilinder dalam medan seragam sejajar sumbunya: tutup kiri −EA, tutup kanan +EA, selimut 0 → total 0.",
+      "explain": "Garis yang masuk dihitung negatif, garis yang keluar positif. Tanpa muatan di dalam, setiap garis yang masuk juga keluar, jadi totalnya nol.",
+      "quick_check": {
+        "q": "Permukaan tertutup berada di medan seragam tanpa muatan di dalam. Fluks totalnya?",
+        "a": "Nol."
+      }
+    },
+    "formula": [
+      "\\Phi = \\oint \\vec E\\cdot d\\vec A"
+    ]
+  },
+  {
+    "chapter": "23. Gauss' Law",
+    "title": "Example: Flux Through the Faces of a Cube",
+    "tag": "HOW",
+    "body": "E = 3x î + 4 ĵ (N/C), cube from x = 1 m to 3 m, y and z from 0 to 2 m (each face 4 m²).\nRight face (x = 3, dA = +î): Φ = ∫3x dA = 3·3·4 = 36 N·m²/C.\nLeft face (x = 1, dA = −î): Φ = −3·1·4 = −12 N·m²/C.\nTop face (dA = +ĵ): Φ = 4·4 = 16 N·m²/C.",
+    "explain": "Only the component of E along each face's outward normal counts: î·ĵ = 0, so the 4ĵ part gives nothing on the left and right faces, and the 3x î part gives nothing on the top.",
+    "quick_check": {
+      "q": "Why is the left-face flux negative?",
+      "a": "Its outward normal is −î, opposite to the x-part of E."
+    },
+    "id": {
+      "chapter": "23. Hukum Gauss",
+      "title": "Contoh: Fluks Melalui Sisi-sisi Kubus",
+      "body": "E = 3x î + 4 ĵ (N/C), kubus dari x = 1 m sampai 3 m, y dan z dari 0 sampai 2 m (tiap sisi 4 m²).\nSisi kanan (x = 3, dA = +î): Φ = ∫3x dA = 3·3·4 = 36 N·m²/C.\nSisi kiri (x = 1, dA = −î): Φ = −3·1·4 = −12 N·m²/C.\nSisi atas (dA = +ĵ): Φ = 4·4 = 16 N·m²/C.",
+      "explain": "Hanya komponen E sepanjang normal keluar tiap sisi yang dihitung: î·ĵ = 0, jadi bagian 4ĵ tidak memberi apa pun di sisi kiri dan kanan, dan bagian 3x î tidak memberi apa pun di sisi atas.",
+      "quick_check": {
+        "q": "Mengapa fluks sisi kiri negatif?",
+        "a": "Normal keluarnya −î, berlawanan dengan komponen x dari E."
+      }
+    },
+    "formula": [
+      "\\Phi_{x=3} = \\int 3x\\,dA = 3(3)(4) = 36\\ \\mathrm{N\\,m^2/C}",
+      "\\Phi_{x=1} = -3(1)(4) = -12, \\qquad \\Phi_{y=2} = 4(4) = 16"
+    ]
+  },
+  {
+    "chapter": "23. Gauss' Law",
+    "title": "Gauss' Law",
+    "tag": "REMEMBER",
+    "demo": "gauss",
+    "body": "ε₀ ∮ E · dA = q_enc\nThe flux through ANY closed surface depends only on the net charge enclosed.\nSphere of radius r around +q: E·4πr² = q/ε₀ → Φ = q/ε₀, for every r.",
+    "explain": "Positive charge inside creates lines that leave; negative charge inside ends lines that came in. Charge OUTSIDE adds zero net flux: its lines enter and leave. The shape and size of the surface don't matter. Drag the Gaussian surface in the demo.",
+    "wrong_right": {
+      "wrong": "A bigger Gaussian sphere\ncatches more flux",
+      "right": "Same enclosed charge\n→ same flux, Φ = q/ε₀",
+      "reason": "E falls as 1/r² while the area grows as r²; they cancel."
+    },
+    "quick_check": {
+      "q": "A Gaussian surface encloses +3 nC and −3 nC. Net flux?",
+      "a": "Zero (q_enc = 0)."
+    },
+    "id": {
+      "chapter": "23. Hukum Gauss",
+      "title": "Hukum Gauss",
+      "body": "ε₀ ∮ E · dA = q_enc\nFluks melalui permukaan tertutup APA PUN hanya bergantung pada muatan total di dalamnya.\nBola berjari-jari r di sekitar +q: E·4πr² = q/ε₀ → Φ = q/ε₀, untuk setiap r.",
+      "explain": "Muatan positif di dalam menciptakan garis yang keluar; muatan negatif di dalam mengakhiri garis yang masuk. Muatan di LUAR memberi fluks bersih nol: garisnya masuk lalu keluar. Bentuk dan ukuran permukaan tidak berpengaruh. Geser permukaan Gauss di demo.",
+      "wrong_right_reason": "E turun sebanding 1/r² sementara luas naik sebanding r²; keduanya saling meniadakan.",
+      "quick_check": {
+        "q": "Permukaan Gauss melingkupi +3 nC dan −3 nC. Fluks totalnya?",
+        "a": "Nol (q_enc = 0)."
+      }
+    },
+    "formula": [
+      "\\varepsilon_0 \\oint \\vec E\\cdot d\\vec A = q_{\\mathrm{enc}}",
+      "\\Phi = \\frac{q}{\\varepsilon_0}"
+    ]
+  },
+  {
+    "chapter": "23. Gauss' Law",
+    "title": "Gauss' Law Gives Back Coulomb's Law",
+    "tag": "HOW",
+    "body": "Sphere of radius r around a point charge q. By symmetry, E is the same everywhere on it and parallel to dA:\nε₀ E (4πr²) = q → E = (1/4πε₀) q/r².\nThat is exactly the point-charge field.",
+    "quick_check": {
+      "q": "Why can E come out of the integral here?",
+      "a": "By symmetry E has the same size at every point of the sphere and is parallel to dA."
+    },
+    "id": {
+      "chapter": "23. Hukum Gauss",
+      "title": "Hukum Gauss Menghasilkan Hukum Coulomb",
+      "body": "Bola berjari-jari r di sekitar muatan titik q. Karena simetri, E sama di setiap titik bola dan sejajar dA:\nε₀ E (4πr²) = q → E = (1/4πε₀) q/r².\nItulah persis medan muatan titik.",
+      "quick_check": {
+        "q": "Mengapa E bisa dikeluarkan dari integral di sini?",
+        "a": "Karena simetri, besar E sama di setiap titik bola dan sejajar dA."
+      }
+    },
+    "formula": [
+      "\\varepsilon_0\\,E\\,(4\\pi r^2) = q \\;\\Rightarrow\\; E = \\frac{1}{4\\pi\\varepsilon_0}\\,\\frac{q}{r^2}"
+    ]
+  },
+  {
+    "chapter": "23. Gauss' Law",
+    "title": "Conductors: E = 0 Inside",
+    "tag": "WHAT",
+    "body": "In electrostatic equilibrium, E inside a conductor is zero; otherwise its free electrons would keep moving.\nSo any Gaussian surface just inside the conductor has zero flux and zero charge enclosed.\n→ All excess charge sits on the OUTER surface.",
+    "quick_check": {
+      "q": "Where does excess charge on an isolated conductor end up?",
+      "a": "On its outer surface."
+    },
+    "id": {
+      "chapter": "23. Hukum Gauss",
+      "title": "Konduktor: E = 0 di Dalam",
+      "body": "Dalam kesetimbangan elektrostatis, E di dalam konduktor nol; jika tidak, elektron bebasnya akan terus bergerak.\nJadi permukaan Gauss tepat di dalam konduktor punya fluks nol dan muatan terlingkupi nol.\n→ Semua muatan lebih berada di permukaan LUAR.",
+      "quick_check": {
+        "q": "Di mana muatan lebih pada konduktor terisolasi berada?",
+        "a": "Di permukaan luarnya."
+      }
+    },
+    "formula": [
+      "E_{\\mathrm{in}} = 0 \\;\\Rightarrow\\; \\Phi = 0 \\;\\Rightarrow\\; q_{\\mathrm{enc}} = 0"
+    ]
+  },
+  {
+    "chapter": "23. Gauss' Law",
+    "title": "A Conductor with a Cavity",
+    "tag": "HOW",
+    "body": "Empty cavity: no charge on its walls; excess charge stays on the outside.\nCharge q in the cavity: the inner wall gets −q, the outer surface the rest.\nNeutral shell, −5 μC off-center: inner wall +5 μC (lopsided), outer −5 μC (uniform).",
+    "explain": "The inner wall's charge crowds toward the off-center charge, but the outer surface can't 'see' inside through the metal (E = 0 there), so it spreads out uniformly.",
+    "quick_check": {
+      "q": "+2 μC sits inside the cavity of a neutral conducting shell. Charge on the inner wall?",
+      "a": "−2 μC."
+    },
+    "id": {
+      "chapter": "23. Hukum Gauss",
+      "title": "Konduktor dengan Rongga",
+      "body": "Rongga kosong: tidak ada muatan di dindingnya; muatan lebih tetap di luar.\nMuatan q di rongga: dinding dalam mendapat −q, permukaan luar sisanya.\nKulit netral, −5 μC tidak di pusat: dinding dalam +5 μC (tidak merata), luar −5 μC (merata).",
+      "explain": "Muatan dinding dalam berkumpul ke arah muatan yang tidak di pusat, tetapi permukaan luar tidak bisa 'melihat' ke dalam melalui logam (E = 0 di sana), jadi tersebar merata.",
+      "quick_check": {
+        "q": "+2 μC berada di rongga kulit konduktor netral. Muatan di dinding dalam?",
+        "a": "−2 μC."
+      }
+    },
+    "formula": [
+      "q_{\\mathrm{inner}} = -q, \\qquad q_{\\mathrm{outer}} = Q_{\\mathrm{shell}} + q"
+    ]
+  },
+  {
+    "chapter": "23. Gauss' Law",
+    "title": "Field Just Outside a Conductor",
+    "tag": "REMEMBER",
+    "body": "Just outside a conductor's surface, where the local surface charge density is σ:\nE = σ/ε₀, perpendicular to the surface.\nUse a small cylinder through the surface: the inner cap has E = 0, the side has no flux, so E·ΔA = σΔA/ε₀.",
+    "explain": "Compare with an isolated non-conducting sheet, σ/(2ε₀). The conductor's field is twice as big because all of its field goes out one side (inside is zero). On real conductors σ is larger where the surface is more sharply curved.",
+    "quick_check": {
+      "q": "Field just outside a conductor with σ?",
+      "a": "σ/ε₀."
+    },
+    "id": {
+      "chapter": "23. Hukum Gauss",
+      "title": "Medan Tepat di Luar Konduktor",
+      "body": "Tepat di luar permukaan konduktor, dengan rapat muatan permukaan lokal σ:\nE = σ/ε₀, tegak lurus permukaan.\nPakai silinder kecil menembus permukaan: tutup dalam E = 0, selimut tanpa fluks, jadi E·ΔA = σΔA/ε₀.",
+      "explain": "Bandingkan dengan lembaran nonkonduktor terisolasi, σ/(2ε₀). Medan konduktor dua kali lebih besar karena seluruh medannya keluar ke satu sisi (di dalam nol). Pada konduktor nyata σ lebih besar di bagian permukaan yang lebih melengkung tajam.",
+      "quick_check": {
+        "q": "Medan tepat di luar konduktor dengan σ?",
+        "a": "σ/ε₀."
+      }
+    },
+    "formula": [
+      "E = \\frac{\\sigma}{\\varepsilon_0}"
+    ]
+  },
+  {
+    "chapter": "23. Gauss' Law",
+    "title": "Choosing a Gaussian Surface",
+    "tag": "HOW",
+    "body": "1. Match the symmetry of the charge (sphere, cylinder, pillbox).\n2. On each part of the surface, E and θ should be constant, so they come out of the integral.\n3. The remaining area must be simple to add up.\nThen Φ = E cosθ ∮dA.",
+    "quick_check": {
+      "q": "What Gaussian surface suits a long charged wire?",
+      "a": "A coaxial cylinder."
+    },
+    "id": {
+      "chapter": "23. Hukum Gauss",
+      "title": "Memilih Permukaan Gauss",
+      "body": "1. Sesuaikan dengan simetri muatan (bola, silinder, kotak pil).\n2. Di setiap bagian permukaan, E dan θ harus konstan agar bisa dikeluarkan dari integral.\n3. Luas sisanya harus mudah dijumlahkan.\nLalu Φ = E cosθ ∮dA.",
+      "quick_check": {
+        "q": "Permukaan Gauss apa yang cocok untuk kawat bermuatan panjang?",
+        "a": "Silinder sesumbu."
+      }
+    },
+    "formula": [
+      "\\Phi = \\oint E\\cos\\theta\\,dA = E\\cos\\theta \\oint dA"
+    ]
+  },
+  {
+    "chapter": "23. Gauss' Law",
+    "title": "Cylindrical Symmetry: An Infinite Line",
+    "tag": "HOW",
+    "body": "Infinite rod with uniform linear charge density λ. Gaussian cylinder: radius r, length h.\nEnd caps: no flux. Curved side: E·2πrh.\nε₀E(2πrh) = λh → E = λ/(2πε₀r), radially outward for λ > 0.",
+    "explain": "The line's field falls as 1/r, more slowly than a point charge's 1/r², because the charge is spread along a line instead of concentrated at a point.",
+    "quick_check": {
+      "q": "Distance from a long charged line doubles. E becomes?",
+      "a": "E/2."
+    },
+    "id": {
+      "chapter": "23. Hukum Gauss",
+      "title": "Simetri Silinder: Garis Tak Hingga",
+      "body": "Batang tak hingga dengan rapat muatan garis λ seragam. Silinder Gauss: jari-jari r, panjang h.\nTutup: tanpa fluks. Selimut: E·2πrh.\nε₀E(2πrh) = λh → E = λ/(2πε₀r), radial keluar untuk λ > 0.",
+      "explain": "Medan garis turun sebanding 1/r, lebih lambat dari 1/r² muatan titik, karena muatannya tersebar sepanjang garis, bukan terpusat di satu titik.",
+      "quick_check": {
+        "q": "Jarak dari garis bermuatan panjang dilipatduakan. E menjadi?",
+        "a": "E/2."
+      }
+    },
+    "formula": [
+      "\\varepsilon_0 E\\,(2\\pi r h) = \\lambda h \\;\\Rightarrow\\; E = \\frac{\\lambda}{2\\pi\\varepsilon_0 r}"
+    ]
+  },
+  {
+    "chapter": "23. Gauss' Law",
+    "title": "Planar Symmetry: Sheets and Plates",
+    "tag": "HOW",
+    "body": "Thin infinite non-conducting sheet, density σ: E = σ/(2ε₀), uniform and perpendicular to the sheet.\nTwo plates with ±σ on both faces of each (slide's setup):\nE = 0 outside, E = 2σ/ε₀ between, pointing from + to −.",
+    "explain": "Add each sheet's field σ/(2ε₀) with its direction: outside the plates the contributions cancel, between them they add. For conducting plates, the charge moves to the inner faces (±2σ), giving the same 2σ/ε₀ between and 0 outside. Holds for finite sheets near the middle, away from the edges.",
+    "quick_check": {
+      "q": "How does the field of an infinite sheet change with distance?",
+      "a": "It doesn't: it's uniform."
+    },
+    "id": {
+      "chapter": "23. Hukum Gauss",
+      "title": "Simetri Bidang: Lembaran dan Pelat",
+      "body": "Lembaran nonkonduktor tipis tak hingga, rapat σ: E = σ/(2ε₀), seragam dan tegak lurus lembaran.\nDua pelat dengan ±σ di kedua sisi masing-masing (susunan di slide):\nE = 0 di luar, E = 2σ/ε₀ di antara, mengarah dari + ke −.",
+      "explain": "Jumlahkan medan σ/(2ε₀) tiap lembaran beserta arahnya: di luar pelat kontribusinya saling meniadakan, di antara pelat saling menjumlah. Untuk pelat konduktor, muatan pindah ke sisi dalam (±2σ), memberi 2σ/ε₀ yang sama di antara dan 0 di luar. Berlaku untuk lembaran terbatas di dekat tengahnya, jauh dari tepi.",
+      "quick_check": {
+        "q": "Bagaimana medan lembaran tak hingga berubah terhadap jarak?",
+        "a": "Tidak berubah: seragam."
+      }
+    },
+    "formula": [
+      "E_{\\mathrm{sheet}} = \\frac{\\sigma}{2\\varepsilon_0}",
+      "E_{\\mathrm{between}} = \\frac{2\\sigma}{\\varepsilon_0}, \\qquad E_{\\mathrm{outside}} = 0"
+    ]
+  },
+  {
+    "chapter": "23. Gauss' Law",
+    "title": "Spherical Symmetry: Shells and Solid Spheres",
+    "tag": "REMEMBER",
+    "demo": "spheres",
+    "body": "Uniform shell (radius R, charge q): outside E = kq/r²; inside E = 0.\nUniform solid sphere: outside E = kq/r²; inside E = kqr/R³, because only q_enc = q(r³/R³) is enclosed.\nOutside, both act like a point charge at the center.",
+    "explain": "These are the shell theorems from Ch 21, now proved: a spherical Gaussian surface inside a shell encloses nothing. Inside a solid sphere, E grows linearly with r up to the surface, then falls as 1/r². Switch between models in the demo.",
+    "quick_check": {
+      "q": "Field at the center of a uniformly charged solid sphere?",
+      "a": "Zero (E = kqr/R³ with r = 0)."
+    },
+    "id": {
+      "chapter": "23. Hukum Gauss",
+      "title": "Simetri Bola: Kulit dan Bola Pejal",
+      "body": "Kulit seragam (jari-jari R, muatan q): di luar E = kq/r²; di dalam E = 0.\nBola pejal seragam: di luar E = kq/r²; di dalam E = kqr/R³, karena hanya q_enc = q(r³/R³) yang terlingkupi.\nDi luar, keduanya bertindak seperti muatan titik di pusat.",
+      "explain": "Ini teorema kulit bola dari Bab 21, kini terbukti: permukaan Gauss bola di dalam kulit tidak melingkupi apa pun. Di dalam bola pejal, E naik linear terhadap r sampai permukaan, lalu turun sebanding 1/r². Ganti model di demo.",
+      "quick_check": {
+        "q": "Medan di pusat bola pejal bermuatan seragam?",
+        "a": "Nol (E = kqr/R³ dengan r = 0)."
+      }
+    },
+    "formula": [
+      "r > R: \\quad E = \\frac{kq}{r^2}",
+      "r < R: \\quad E_{\\mathrm{shell}} = 0, \\qquad E_{\\mathrm{solid}} = \\frac{kq\\,r}{R^3}"
+    ]
+  },
+  {
+    "chapter": "23. Gauss' Law",
+    "title": "Example: Sphere Inside a Conducting Shell",
+    "tag": "WHY",
+    "body": "Insulating sphere (R = 5 cm, charge q) inside a neutral conducting shell (10–15 cm). Points A (4 cm), B (8 cm), C (12 cm), D (16 cm):\nE_A = kq(4/5)³/(4 cm)², E_B = kq/(8 cm)², E_C = 0 (inside metal), E_D = kq/(16 cm)².\nRanking: A > B > D > C.",
+    "explain": "C is inside the metal, so E = 0. At D, the shell's induced −q and +q add to zero, so it sees just q. A is inside the sphere: only (4/5)³ of q is enclosed, but it's very close. Try the 'sphere + shell' preset in the demo.",
+    "quick_check": {
+      "q": "Why is E = 0 at C?",
+      "a": "C is inside the conductor, where E = 0 in electrostatic equilibrium."
+    },
+    "id": {
+      "chapter": "23. Hukum Gauss",
+      "title": "Contoh: Bola di Dalam Kulit Konduktor",
+      "body": "Bola isolator (R = 5 cm, muatan q) di dalam kulit konduktor netral (10–15 cm). Titik A (4 cm), B (8 cm), C (12 cm), D (16 cm):\nE_A = kq(4/5)³/(4 cm)², E_B = kq/(8 cm)², E_C = 0 (di dalam logam), E_D = kq/(16 cm)².\nUrutan: A > B > D > C.",
+      "explain": "C berada di dalam logam, jadi E = 0. Di D, muatan induksi −q dan +q pada kulit berjumlah nol, jadi D hanya melihat q. A di dalam bola: hanya (4/5)³ dari q yang terlingkupi, tetapi sangat dekat. Coba preset 'bola + kulit' di demo.",
+      "quick_check": {
+        "q": "Mengapa E = 0 di C?",
+        "a": "C berada di dalam konduktor, tempat E = 0 dalam kesetimbangan elektrostatis."
+      }
+    },
+    "formula": [
+      "E_A = \\frac{kq\\,(4/5)^3}{(4\\,\\mathrm{cm})^2} > E_B = \\frac{kq}{(8\\,\\mathrm{cm})^2} > E_D = \\frac{kq}{(16\\,\\mathrm{cm})^2} > E_C = 0"
+    ]
+  }
+]

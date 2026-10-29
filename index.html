@@ -4,6 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Study Slides</title>
+<!-- KaTeX typesets the slides' "formula" lines; without it they fall back to raw LaTeX text. -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <style>
   :root {
     --bg: #f6f5f1; --card: #ffffff; --text: #1d1d1f; --muted: #6b6b70; --line: #e3e1da;
@@ -57,6 +60,11 @@
   .body { white-space: pre-line; }
   pre { background: var(--code-bg); padding: 14px; border-radius: 8px; overflow-x: auto;
         font: 14px/1.45 ui-monospace, Menlo, Consolas, monospace; margin: 14px 0 0; }
+  .formula { margin-top: 14px; padding: 6px 16px; border-radius: 10px; background: var(--code-bg);
+             border-left: 3px solid var(--accent); overflow-x: auto; }
+  .formula .katex-display { margin: 10px 0; }
+  .formula .katex { font-size: 1.15em; }
+  .formula-line.raw { font: 14px/1.6 ui-monospace, Menlo, Consolas, monospace; padding: 8px 0; }
   .box { margin-top: 16px; padding: 12px 14px; border-radius: 8px; background: var(--note-bg); white-space: pre-line; }
   .label { font-size: .8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 4px; }
   .wr { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 16px; }
@@ -138,6 +146,27 @@
   .perm-grid.collapsed .chip.first { border-color: var(--accent); background: var(--tile); font-weight: 700; }
   .perm-count { color: var(--muted); font-size: .8rem; margin-left: 4px; }
 
+  /* Physics demos */
+  .fig .vec { stroke-width: 2; } .fig .vechead { stroke: none; }
+  .fig .vec.part { stroke: var(--muted); stroke-width: 1.5; } .fig .vechead.part { fill: var(--muted); }
+  .fig .vec.net { stroke: var(--c4); stroke-width: 3; } .fig .vechead.net { fill: var(--c4); }
+  .fig .vec.c4 { stroke: var(--c4); } .fig .vechead.c4 { fill: var(--c4); }
+  .fig .vec.efield { stroke: var(--line); stroke-width: 1.5; } .fig .vechead.efield { fill: var(--line); }
+  .fig .vec.fhit { stroke: var(--accent); stroke-width: 2; } .fig .vechead.fhit { fill: var(--accent); }
+  .fig .vec.fdir { stroke: none; } .fig .vechead.fdir { fill: var(--muted); }
+  .fig .fline { fill: none; stroke: var(--muted); stroke-width: 1; opacity: .7; }
+  .fig .charge { stroke: var(--card); stroke-width: 2; cursor: grab; }
+  .fig .charge.pos { fill: var(--c6); } .fig .charge.neg { fill: var(--c1); } .fig .charge.zero { fill: var(--muted); }
+  .fig .chg-t { fill: #fff; font-weight: 700; pointer-events: none; }
+  .fig .probe { fill: var(--text); stroke: var(--card); stroke-width: 2; cursor: grab; }
+  .fig .plate { fill: var(--muted); } .fig .drop { fill: var(--c2); }
+  .fig .rod { stroke: var(--muted); stroke-width: 4; stroke-linecap: round; }
+  .fig .loop { stroke: var(--text); stroke-width: 5; stroke-linecap: round; }
+  .fig .gsurf { fill: none; stroke-width: 4; } .fig .gsurf.out { stroke: var(--c6); } .fig .gsurf.in { stroke: var(--c1); }
+  .fig .shellline { fill: none; stroke: var(--c6); stroke-width: 4; }
+  .fig .solid { fill: var(--c6); fill-opacity: .35; stroke: var(--c6); stroke-width: 2; }
+  .fig .metal { fill: none; stroke: var(--muted); stroke-opacity: .35; }
+
   /* Quiz */
   .q { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 20px; margin-top: 16px; }
   .q .src { font-size: .8rem; color: var(--muted); }
@@ -170,7 +199,8 @@ const SUBJECTS = [
   { id: "statistics-probability", name: "Statistics and Probability", icon: "🎲",
     book: "Probability and Statistics for Engineering and the Sciences, International 9th ed. (2017), Jay L. Devore" },
   { id: "digital-logic",          name: "Digital Logic",             icon: "🔌" },
-  { id: "college-physics-2",      name: "College Physics 2",         icon: "⚛️" },
+  { id: "college-physics-2",      name: "College Physics 2",         icon: "⚛️",
+    book: "Fundamentals of Physics (Halliday, Resnick & Walker) · lecture slides © mxhuang@scut.edu.cn" },
 ];
 
 const ICON_QUIZ = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>';
@@ -337,6 +367,7 @@ function renderSlide(subject, slides, i) {
     s.practice ? el("span", { class: "practice" }, ui().practised + s.practice) : null,
     el("h2", {}, t.title),
     el("div", { class: "body" }, t.body),
+    s.formula ? formulaBox(s.formula) : null,
     s.code ? el("pre", {}, s.code) : null,
     s.images ? el("div", { class: "figs" }, ...s.images.map(im => figure(subject.id + "/" + im.src, tr(im.caption)))) : null,
     s.demo && window.DEMOS && DEMOS[s.demo] ? demoBox(s.demo) : null,
@@ -381,6 +412,16 @@ function figure(url, caption) {
     fig.prepend(document.importNode(svg, true));
   });
   return fig;
+}
+
+// Key formulas (LaTeX) typeset by KaTeX; if KaTeX didn't load, show the LaTeX source instead.
+function formulaBox(lines) {
+  return el("div", { class: "formula" }, ...lines.map(tex => {
+    const line = el("div", { class: "formula-line" });
+    if (window.katex) katex.render(tex, line, { displayMode: true, throwOnError: false });
+    else { line.textContent = tex; line.classList.add("raw"); }
+    return line;
+  }));
 }
 
 // Interactive demo from demos.js; it draws itself into the box in the current language.

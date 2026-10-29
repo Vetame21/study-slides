@@ -24,7 +24,8 @@ data-structure/
 statistics-probability/
   slides.json, quiz.json    S01–S05, with 7 interactive demos
 digital-logic/              empty for now
-college-physics-2/          empty for now
+college-physics-2/
+  slides.json, quiz.json    Ch 21–23 (charge, field, Gauss' law), with 8 physics demos
 tools/figures.py            draws the Data Structure figures
 ```
 
@@ -125,6 +126,7 @@ so **keep each chapter's slides together**.
 | `explain` | optional | for anything subtle |
 | `wrong_right` | optional | `wrong`, `right`, `reason` |
 | `images` | optional | list of figures, paths relative to the subject folder |
+| `formula` | optional | list of LaTeX strings, typeset by KaTeX in a box under the body (see [Formulas](#formulas)) |
 | `demo` | optional | name of an interactive demo in `demos.js`, e.g. `"bayes"` (see [Interactive demos](#interactive-demos)) |
 | `practice` | optional | homework this slide prepares for, e.g. `"H01 Q3"`; shown as a small tag. Never the answer. |
 | `id` | yes | Indonesian versions of the text fields. `code` and `wrong_right.wrong/right` are **not** repeated here. If `explain` or `wrong_right` exists in English, it must exist in `id` too. |
@@ -197,6 +199,34 @@ Draw from the PPT's own data, and caption it "redrawn from p. X" (or `[ADDED]` i
 
 ---
 
+## Formulas
+
+Key formulas go in a slide's `formula` list as LaTeX, one line per entry. KaTeX draws them as real
+fractions, roots and integrals in a box under the body:
+
+```json
+"formula": [
+  "F = k\\,\\frac{|q_1|\\,|q_2|}{r^2}",
+  "\\varepsilon_0 = 8.85\\times10^{-12}\\ \\mathrm{C^2/(N\\,m^2)}"
+]
+```
+
+- In JSON every backslash is doubled: `\\frac`, not `\frac`.
+- Keep each line short enough for a phone (split long ones into several entries).
+- Use `\dfrac` / `\dbinom` when a fraction sits inside another fraction, so it stays readable.
+- Keep the plain-text version in `body` too; the formula box is the tidy, typeset copy.
+- Check that every formula renders: open the page and run this in the browser console
+  (it prints the titles of any formula with a LaTeX mistake):
+
+```js
+for (const sub of ["data-structure", "statistics-probability", "college-physics-2"])
+  for (const s of await fetch(sub + "/slides.json").then(r => r.json()))
+    for (const tex of s.formula || [])
+      try { katex.renderToString(tex, { throwOnError: true }); } catch (e) { console.log(sub, s.title, e.message); }
+```
+
+---
+
 ## Interactive demos
 
 A slide with `"demo": "<name>"` gets a live widget under it ("▶ Try it"). Demos live in `demos.js`:
@@ -210,6 +240,14 @@ A slide with `"demo": "<name>"` gets a live widget under it ("▶ Try it"). Demo
 | `order-or-not` | S03 Combinations | 60 officer lists collapse into 10 delegate groups |
 | `bayes` | S04 Likelihood ≠ Posterior | 1000 people; why a good test can still give a low P(D \| +) |
 | `pmf-cdf` | S05 The CDF | edit the pmf, the cdf steps follow; P(a ≤ Y ≤ b) = F(b) − F(a − 1) |
+| `coulomb` | Ch 21 Coulomb's Law | change q₁, q₂, r; force arrows and the 1/r² curve |
+| `field-explorer` | Ch 22 Field Lines | drag charges and a probe; field lines, each E vector and the vector sum |
+| `dipole-axis` | Ch 22 Dipole Field | exact field vs 2kp/z³ on a log scale |
+| `ink-jet` | Ch 22 Ink-Jet Printing | fire a drop between the plates; y = QEL²/(2mvₓ²) |
+| `dipole-field` | Ch 22 Dipole in a Field | rotate or release the dipole; τ = pE sinθ, U = −pE cosθ |
+| `flux-loop` | Ch 23 Flux | tilt a loop; Φ = EA cosθ goes +, 0, − |
+| `gauss` | Ch 23 Gauss' Law | drag a Gaussian sphere; numerically integrated ∮E·dA vs q_enc/ε₀ |
+| `spheres` | Ch 23 Spherical Symmetry | E(r) for shell, solid sphere, and sphere + conducting shell |
 
 To add one, write a function in `demos.js`:
 

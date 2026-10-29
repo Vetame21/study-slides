@@ -138,7 +138,10 @@
         "q": "65 pengguna rutin dari 100 pengemudi: frekuensi relatifnya?",
         "a": "65/100 = 0,65 = 65%."
       }
-    }
+    },
+    "formula": [
+      "\\text{rel. freq.} = \\frac{f}{n} = \\frac{2403}{19{,}383} \\approx 0.1240"
+    ]
   },
   {
     "chapter": "S01. Overview and Descriptive Statistics",
@@ -187,7 +190,10 @@
         "q": "Rata-rata dari 2, 4, 6 detik?",
         "a": "12/3 = 4 detik."
       }
-    }
+    },
+    "formula": [
+      "\\bar x = \\frac{1}{n}\\sum_{i=1}^{n} x_i = \\frac{229.0}{14} = 16.36\\%"
+    ]
   },
   {
     "chapter": "S01. Overview and Descriptive Statistics",
@@ -215,7 +221,10 @@
         "q": "Median dari 2, 3, 3, 4, 28?",
         "a": "3 (nilai ketiga dari lima nilai terurut)."
       }
-    }
+    },
+    "formula": [
+      "\\tilde x = \\frac{66.4 + 67.4}{2} = 66.90"
+    ]
   },
   {
     "chapter": "S01. Overview and Descriptive Statistics",
@@ -238,7 +247,10 @@
         "q": "Waktu respons 2, 3, 3, 4, 28 dtk: rata-rata atau median sebagai 'tipikal'?",
         "a": "Median, 3 dtk. Nilai 28 dtk menarik rata-rata menjadi 8 dtk, jauh dari kelompok utama."
       }
-    }
+    },
+    "formula": [
+      "\\bar x = \\frac{1+2+2+2+13}{5} = 4, \\qquad \\tilde x = 2"
+    ]
   },
   {
     "chapter": "S01. Overview and Descriptive Statistics",
@@ -279,7 +291,10 @@
         "q": "Data 2, 4, 6 dtk. Mengapa Σ(xᵢ − x̄) = 0 tidak bisa mengukur sebaran?",
         "a": "−2 dan +2 saling meniadakan; jumlah di sekitar rata-rata selalu 0, berapa pun sebarannya."
       }
-    }
+    },
+    "formula": [
+      "\\sum_{i=1}^{n}\\left(x_i - \\bar x\\right) = 0"
+    ]
   },
   {
     "chapter": "S01. Overview and Descriptive Statistics",
@@ -308,7 +323,11 @@
         "q": "Ford Focus: n = 11, Sxx = 314,110 mpg². Hitung s.",
         "a": "s² = 314,110/10 = 31,41 mpg², s = √31,41 ≈ 5,60 mpg."
       }
-    }
+    },
+    "formula": [
+      "S_{xx} = \\sum_{i=1}^{n}\\left(x_i - \\bar x\\right)^2, \\qquad s^2 = \\frac{S_{xx}}{n-1}, \\qquad s = \\sqrt{s^2}",
+      "2, 4, 6: \\quad S_{xx} = 8, \\quad s^2 = \\frac{8}{2} = 4, \\quad s = 2"
+    ]
   },
   {
     "chapter": "S01. Overview and Descriptive Statistics",
@@ -382,7 +401,10 @@
         "q": "Untuk satu las, apakah {N} ruang sampel yang lengkap?",
         "a": "Tidak. Hasil D tidak ada."
       }
-    }
+    },
+    "formula": [
+      "\\mathcal S = \\{N, D\\}"
+    ]
   },
   {
     "chapter": "S02. Sample Spaces, Events, and Probability Rules",
@@ -431,7 +453,10 @@
         "q": "Apakah A dan A′ saling lepas?",
         "a": "Ya, A ∩ A′ = ∅ selalu."
       }
-    }
+    },
+    "formula": [
+      "A', \\qquad A\\cup B, \\qquad A\\cap B, \\qquad A\\cap B = \\varnothing"
+    ]
   },
   {
     "chapter": "S02. Sample Spaces, Events, and Probability Rules",
@@ -452,7 +477,10 @@
         "q": "Apakah P(A) = 5/4 sah?",
         "a": "Tidak. Peluang tidak bisa melebihi 1."
       }
-    }
+    },
+    "formula": [
+      "P(A) \\ge 0, \\qquad P(\\mathcal S) = 1, \\qquad P\\Big(\\bigcup_i A_i\\Big) = \\sum_i P(A_i)"
+    ]
   },
   {
     "chapter": "S02. Sample Spaces, Events, and Probability Rules",
@@ -505,7 +533,10 @@
         "q": "Apakah P(A) = 0,6 menjamin hasil berikutnya ada di A?",
         "a": "Tidak."
       }
-    }
+    },
+    "formula": [
+      "\\frac{n(A)}{n} \\;\\longrightarrow\\; P(A) \\quad (n \\to \\infty)"
+    ]
   },
   {
     "chapter": "S02. Sample Spaces, Events, and Probability Rules",
@@ -527,7 +558,10 @@
         "q": "Gerbong kereta: berapa p₃?",
         "a": "4x dengan x = 1/10, jadi 2/5."
       }
-    }
+    },
+    "formula": [
+      "P(A) = \\sum_{E_i \\in A} P(E_i)"
+    ]
   },
   {
     "chapter": "S02. Sample Spaces, Events, and Probability Rules",
@@ -553,7 +587,10 @@
         "q": "Kapan boleh memakai P(A) = N(A)/N?",
         "a": "Hanya jika hasil-hasilnya sama mungkin."
       }
-    }
+    },
+    "formula": [
+      "P(A) = \\frac{N(A)}{N}"
+    ]
   },
   {
     "chapter": "S02. Sample Spaces, Events, and Probability Rules",
@@ -580,7 +617,10 @@
         "q": "P({U}) = 3/4 untuk paku payung. P({D})?",
         "a": "1 − 3/4 = 1/4."
       }
-    }
+    },
+    "formula": [
+      "P(A') = 1 - P(A)"
+    ]
   },
   {
     "chapter": "S02. Sample Spaces, Events, and Probability Rules",
@@ -609,7 +649,10 @@
         "q": "A ∩ B = ∅. Aturan apa yang dipakai?",
         "a": "Penjumlahan langsung: P(A ∪ B) = P(A) + P(B)."
       }
-    }
+    },
+    "formula": [
+      "P(A\\cup B) = P(A) + P(B) - P(A\\cap B)"
+    ]
   },
   {
     "chapter": "S02. Sample Spaces, Events, and Probability Rules",
@@ -637,7 +680,11 @@
         "q": "Visa 0,6, MasterCard 0,4, keduanya 0,3. P(Visa tetapi bukan MasterCard)?",
         "a": "0,6 − 0,3 = 0,3."
       }
-    }
+    },
+    "formula": [
+      "P\\big((A\\cup B)'\\big) = 1 - P(A\\cup B)",
+      "P(\\text{exactly one}) = P(A\\cap B') + P(A'\\cap B)"
+    ]
   },
   {
     "chapter": "S03. Counting Techniques for Probability",
@@ -658,7 +705,10 @@
         "q": "Apa yang harus benar sebelum memakai N(A)/N?",
         "a": "Hasil-hasilnya harus sama mungkin."
       }
-    }
+    },
+    "formula": [
+      "P(A) = \\frac{N(A)}{N}"
+    ]
   },
   {
     "chapter": "S03. Counting Techniques for Probability",
@@ -686,7 +736,10 @@
         "q": "3 receiver, 2 pemutar, 2 set speaker: berapa sistem lengkap?",
         "a": "3 · 2 · 2 = 12."
       }
-    }
+    },
+    "formula": [
+      "N = n_1 n_2 \\cdots n_k"
+    ]
   },
   {
     "chapter": "S03. Counting Techniques for Probability",
@@ -738,7 +791,10 @@
         "q": "3! = ?",
         "a": "3·2·1 = 6."
       }
-    }
+    },
+    "formula": [
+      "m! = m(m-1)\\cdots 2\\cdot 1, \\qquad 0! = 1"
+    ]
   },
   {
     "chapter": "S03. Counting Techniques for Probability",
@@ -760,7 +816,10 @@
         "q": "Enam perwakilan; ketua, wakil ketua, dan sekretaris. Berapa susunannya?",
         "a": "P(3,6) = 6·5·4 = 120."
       }
-    }
+    },
+    "formula": [
+      "P_{k,n} = n(n-1)\\cdots(n-k+1) = \\frac{n!}{(n-k)!}"
+    ]
   },
   {
     "chapter": "S03. Counting Techniques for Probability",
@@ -783,7 +842,10 @@
         "q": "C(5,3) = ?",
         "a": "5·4·3/(3·2·1) = 10."
       }
-    }
+    },
+    "formula": [
+      "\\binom{n}{k} = \\frac{P_{k,n}}{k!} = \\frac{n!}{k!\\,(n-k)!}"
+    ]
   },
   {
     "chapter": "S03. Counting Techniques for Probability",
@@ -810,7 +872,10 @@
         "q": "Emas, perak, perunggu untuk 3 dari 6 finalis: permutasi atau kombinasi?",
         "a": "Permutasi: posisinya berbeda."
       }
-    }
+    },
+    "formula": [
+      "P_{3,5} = 5\\cdot4\\cdot3 = 60, \\qquad \\binom{5}{3} = \\frac{60}{3!} = 10"
+    ]
   },
   {
     "chapter": "S03. Counting Techniques for Probability",
@@ -857,7 +922,10 @@
         "q": "Kartu R1, R2, B1, B2, B3; ambil 2. P(tepat satu merah)?",
         "a": "C(2,1)·C(3,1)/C(5,2) = 6/10 = 3/5."
       }
-    }
+    },
+    "formula": [
+      "P(A) = \\dfrac{\\dbinom{2}{1}\\dbinom{4}{2}}{\\dbinom{6}{3}} = \\dfrac{2\\cdot 6}{20} = \\dfrac{3}{5}"
+    ]
   },
   {
     "chapter": "S03. Counting Techniques for Probability",
@@ -884,7 +952,10 @@
         "q": "Keyboard yang sama: P(tepat satu listrik)?",
         "a": "8/15."
       }
-    }
+    },
+    "formula": [
+      "P(A) = 1 - \\dfrac{\\dbinom{4}{2}}{\\dbinom{6}{2}} = 1 - \\dfrac{6}{15} = \\dfrac{3}{5}"
+    ]
   },
   {
     "chapter": "S04. Conditional Probability and Independence",
@@ -926,7 +997,10 @@
         "q": "Komponen: P(lini lama | cacat)?",
         "a": "2/3."
       }
-    }
+    },
+    "formula": [
+      "P(A \\mid B) = \\frac{P(A\\cap B)}{P(B)}, \\qquad P(B) > 0"
+    ]
   },
   {
     "chapter": "S04. Conditional Probability and Independence",
@@ -954,7 +1028,10 @@
         "q": "Kopi: total mana yang menjadi penyebut untuk P(kecil | decaf)?",
         "a": "Total kolom decaf, 40%."
       }
-    }
+    },
+    "formula": [
+      "P(A \\mid B) = \\frac{P(A\\cap B)}{P(B)} \\;\\ne\\; P(B \\mid A) = \\frac{P(A\\cap B)}{P(A)}"
+    ]
   },
   {
     "chapter": "S04. Conditional Probability and Independence",
@@ -994,7 +1071,10 @@
         "q": "Mengapa faktor kedua 2/3, bukan 3/4?",
         "a": "Satu non-donor sudah terambil: 2 dari 3 sisanya non-donor."
       }
-    }
+    },
+    "formula": [
+      "P(A\\cap B) = P(A)\\,P(B \\mid A) = P(B)\\,P(A \\mid B)"
+    ]
   },
   {
     "chapter": "S04. Conditional Probability and Independence",
@@ -1015,7 +1095,10 @@
         "q": "Apa hasil mengalikan sepanjang satu jalur?",
         "a": "Peluang gabungan jalur itu, mis. P(A ∩ R)."
       }
-    }
+    },
+    "formula": [
+      "P(A\\cap R) = \\tfrac35 \\cdot \\tfrac13 = \\tfrac15"
+    ]
   },
   {
     "chapter": "S04. Conditional Probability and Independence",
@@ -1037,7 +1120,10 @@
         "q": "Mengapa jalur-jalurnya boleh dijumlahkan?",
         "a": "Saling lepas: setiap perangkat adalah model A atau model B."
       }
-    }
+    },
+    "formula": [
+      "P(B) = \\sum_{i=1}^{k} P(A_i)\\,P(B \\mid A_i)"
+    ]
   },
   {
     "chapter": "S04. Conditional Probability and Independence",
@@ -1059,7 +1145,10 @@
         "q": "Dalam aturan Bayes, apa penyebutnya?",
         "a": "Peluang total observasi, dijumlahkan atas semua jalur."
       }
-    }
+    },
+    "formula": [
+      "P(A_j \\mid B) = \\frac{P(A_j)\\,P(B \\mid A_j)}{\\sum_{i} P(A_i)\\,P(B \\mid A_i)}"
+    ]
   },
   {
     "chapter": "S04. Conditional Probability and Independence",
@@ -1088,7 +1177,11 @@
         "q": "P(D) = 1/20, P(+|D) = 9/10, P(+|D′) = 1/10. Cari P(D | +).",
         "a": "(9/200)/(28/200) = 9/28."
       }
-    }
+    },
+    "formula": [
+      "P(D \\mid +) = \\dfrac{(1/10)(4/5)}{(1/10)(4/5) + (9/10)(1/5)}",
+      "= \\dfrac{2/25}{13/50} = \\dfrac{4}{13} \\approx 0.31"
+    ]
   },
   {
     "chapter": "S04. Conditional Probability and Independence",
@@ -1110,7 +1203,10 @@
         "q": "P(A) = 2/5, P(B) = 1/2, P(A ∩ B) = 1/5. Independen?",
         "a": "Ya: (2/5)(1/2) = 1/5."
       }
-    }
+    },
+    "formula": [
+      "P(A \\mid B) = P(A) \\iff P(A\\cap B) = P(A)\\,P(B)"
+    ]
   },
   {
     "chapter": "S04. Conditional Probability and Independence",
@@ -1136,7 +1232,10 @@
         "q": "Bisakah dua kejadian independen berpeluang positif terjadi bersamaan?",
         "a": "Ya."
       }
-    }
+    },
+    "formula": [
+      "A\\cap B = \\varnothing \\;\\Rightarrow\\; P(A\\cap B) = 0 \\ne P(A)\\,P(B)"
+    ]
   },
   {
     "chapter": "S04. Conditional Probability and Independence",
@@ -1157,7 +1256,10 @@
         "q": "A, B independen. Apakah P(A′ ∩ B′) = P(A′)P(B′)?",
         "a": "Ya. Komplemen dari kejadian independen tetap independen."
       }
-    }
+    },
+    "formula": [
+      "P(A'\\cap B') = P(A')\\,P(B') = 0.70 \\times 0.90 = 0.63"
+    ]
   },
   {
     "chapter": "S04. Conditional Probability and Independence",
@@ -1179,7 +1281,10 @@
         "q": "Apa yang membenarkan perkalian 1/4 · 1/4?",
         "a": "Modul-modulnya independen."
       }
-    }
+    },
+    "formula": [
+      "P(\\text{available}) = 1 - P(\\text{both fail}) = 1 - \\left(\\tfrac14\\right)^2 = \\tfrac{15}{16}"
+    ]
   },
   {
     "chapter": "S05. Random Variables, PMF, and CDF",
@@ -1200,7 +1305,10 @@
         "q": "Apa nilai-nilai yang mungkin dari variabel acak Bernoulli?",
         "a": "0 dan 1."
       }
-    }
+    },
+    "formula": [
+      "X : \\mathcal S \\to \\mathbb R, \\qquad \\omega \\mapsto X(\\omega)"
+    ]
   },
   {
     "chapter": "S05. Random Variables, PMF, and CDF",
@@ -1271,7 +1379,10 @@
         "q": "Apa yang diberikan p(x)?",
         "a": "Massa peluang tepat di nilai x."
       }
-    }
+    },
+    "formula": [
+      "p(x) = P(X = x), \\qquad p(x) \\ge 0, \\qquad \\sum_{x} p(x) = 1"
+    ]
   },
   {
     "chapter": "S05. Random Variables, PMF, and CDF",
@@ -1313,7 +1424,10 @@
         "q": "Saluran terpakai: p = 0,10 0,15 0,20 0,25 0,20 0,06 0,04 untuk x = 0..6. P(X ≥ 3)?",
         "a": "0,25 + 0,20 + 0,06 + 0,04 = 0,55."
       }
-    }
+    },
+    "formula": [
+      "P(X \\ge 1) = 1 - p(0)"
+    ]
   },
   {
     "chapter": "S05. Random Variables, PMF, and CDF",
@@ -1335,7 +1449,10 @@
         "q": "Flash drive: P(Y ≤ 4)?",
         "a": "F(4) = 0,50."
       }
-    }
+    },
+    "formula": [
+      "F(x) = P(X \\le x) = \\sum_{y \\le x} p(y)"
+    ]
   },
   {
     "chapter": "S05. Random Variables, PMF, and CDF",
@@ -1379,7 +1496,10 @@
         "q": "X bilangan bulat: tulis ulang P(X < 5) dengan ≤.",
         "a": "P(X ≤ 4) = F(4)."
       }
-    }
+    },
+    "formula": [
+      "P(X < 2) = F(1), \\qquad P(X \\le 2) = F(2)"
+    ]
   },
   {
     "chapter": "S05. Random Variables, PMF, and CDF",
@@ -1406,6 +1526,9 @@
         "q": "ATM: P(X = 2) dari cdf?",
         "a": "F(2) − F(1) = 0,39 − 0,19 = 0,20."
       }
-    }
+    },
+    "formula": [
+      "P(a \\le X \\le b) = F(b) - F(a-1), \\qquad p(a) = F(a) - F(a-1)"
+    ]
   }
 ]

@@ -532,7 +532,10 @@
         "q": "Mencari secara sekuensial di 99 elemen, berapa rata-rata jumlah perbandingan?",
         "a": "(99+1)/2 = 50."
       }
-    }
+    },
+    "formula": [
+      "\\text{average} = \\frac{1 + 2 + \\cdots + n}{n} = \\frac{n+1}{2}"
+    ]
   },
   {
     "chapter": "3. Algorithm Analysis",
@@ -581,6 +584,9 @@
           "id": "T(n) selalu di bawah c·f(n) = 2n² (digambar ulang dari hlm. 45)."
         }
       }
+    ],
+    "formula": [
+      "T(n) \\le c\\,f(n) \\quad \\text{for all } n > n_0"
     ]
   },
   {
@@ -684,6 +690,9 @@
           "id": "T(n) selalu di atas c·g(n) = n² (digambar ulang dari hlm. 51)."
         }
       }
+    ],
+    "formula": [
+      "T(n) \\ge c\\,g(n) \\quad \\text{for all } n > n_0"
     ]
   },
   {
@@ -735,6 +744,9 @@
           "id": "T(n) terjepit di antara n² dan 2n², jadi T(n) = Θ(n²) (digambar ulang dari hlm. 55)."
         }
       }
+    ],
+    "formula": [
+      "T(n) = \\Theta(h(n)) \\iff T(n) = O(h(n)) \\;\\text{and}\\; T(n) = \\Omega(h(n))"
     ]
   },
   {
@@ -783,7 +795,10 @@
         "q": "Sederhanakan 7n³ + 50n² + 1000.",
         "a": "O(n³)."
       }
-    }
+    },
+    "formula": [
+      "f_1(n) + f_2(n) = O\\big(\\max(g_1(n), g_2(n))\\big)"
+    ]
   },
   {
     "chapter": "3. Algorithm Analysis",
@@ -861,6 +876,9 @@
           "id": "[ADDED] Baris i berisi i sel terisi: total kerja loop dalam berbentuk segitiga, sekitar setengah n²."
         }
       }
+    ],
+    "formula": [
+      "\\sum_{i=1}^{n} i = \\frac{n(n+1)}{2} = \\Theta(n^2)"
     ]
   },
   {
@@ -978,6 +996,9 @@
           "id": "[ADDED] Setiap langkah membagi dua rentang dan berbiaya c, jadi n = 16 butuh log₂16 + 1 = 5 tingkat."
         }
       }
+    ],
+    "formula": [
+      "T(n) = T(n/2) + c \\;\\Rightarrow\\; T(n) = c\\,(\\log_2 n + 1) = \\Theta(\\log n)"
     ]
   },
   {
