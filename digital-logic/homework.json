@@ -1,0 +1,322 @@
+[
+ {
+  "id": "ps1",
+  "title": "PS1 · Number system conversions (Ch 2)",
+  "source": "Digital Logic homework for Sep. 4",
+  "intro": "[ADDED] The original problem sets have no solutions. These worked solutions were written for this site; every conversion and every Boolean result was checked in code (truth tables and an exact K-map minimizer), and the VHDL was compiled. Compare them with your lecturer's model answers when those are released.",
+  "items": [
+   {
+    "n": 1,
+    "kind": "problem",
+    "q": "Perform the following number system conversions.",
+    "parts": [
+     {
+      "label": "(a)",
+      "q": "$1101011_2 = ?_{16}$",
+      "answer": "$\\mathrm{6B}_{16}$",
+      "solution": "Group 4 bits from the right: $110\\;1011 \\to 0110\\;1011 = \\mathrm{6\\;B}$.",
+      "method": "Binary ↔ hex: groups of 4 bits, because $16 = 2^4$."
+     },
+     {
+      "label": "(b)",
+      "q": "$174003_8 = ?_2$",
+      "answer": "$1111100000000011_2$",
+      "solution": "Replace each octal digit by 3 bits: $1 \\to 001,\\ 7 \\to 111,\\ 4 \\to 100,\\ 0 \\to 000,\\ 0 \\to 000,\\ 3 \\to 011$, giving $001\\,111\\,100\\,000\\,000\\,011$. Drop the leading zeros.",
+      "method": "Octal → binary: one digit = 3 bits, because $8 = 2^3$."
+     },
+     {
+      "label": "(c)",
+      "q": "$10100.1101_2 = ?_{16}$",
+      "answer": "$\\mathrm{14.D}_{16}$",
+      "solution": "Group outward from the point. Whole part: $1\\;0100 \\to 0001\\;0100 = 14$. Fraction: $1101 = \\mathrm{D}$.",
+      "method": "Group from the radix point, padding with zeros at the outer ends."
+     },
+     {
+      "label": "(d)",
+      "q": "$\\mathrm{F3A5}_{16} = ?_2$",
+      "answer": "$1111001110100101_2$",
+      "solution": "$\\mathrm{F} \\to 1111,\\ 3 \\to 0011,\\ \\mathrm{A} \\to 1010,\\ 5 \\to 0101$.",
+      "method": "Hex → binary: one digit = 4 bits."
+     },
+     {
+      "label": "(e)",
+      "q": "$101111.0111_2 = ?_8$",
+      "answer": "$57.34_8$",
+      "solution": "Whole part: $101\\;111 = 5\\;7$. Fraction: $011\\;1\\underline{00} = 3\\;4$ (pad with zeros on the RIGHT of a fraction). Check: $57.34_8 = 47 + \\frac38 + \\frac4{64} = 47.4375 = 101111.0111_2$.",
+      "method": "Binary → octal: groups of 3 bits from the point."
+     },
+     {
+      "label": "(f)",
+      "q": "$\\mathrm{15C.38}_{16} = ?_2$",
+      "answer": "$101011100.00111_2$",
+      "solution": "$1 \\to 0001,\\ 5 \\to 0101,\\ \\mathrm{C} \\to 1100\\ .\\ 3 \\to 0011,\\ 8 \\to 1000$, so $0001\\,0101\\,1100.0011\\,1000$. Drop the leading and trailing zeros.",
+      "method": "Hex → binary digit by digit."
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "kind": "problem",
+    "q": "Convert the following numbers into decimal.",
+    "parts": [
+     {
+      "label": "(a)",
+      "q": "$1101011_2$",
+      "answer": "$107$",
+      "solution": "$64 + 32 + 8 + 2 + 1 = 107$.",
+      "method": "Radix $r$ → decimal: multiply each digit by its weight $r^i$ and add."
+     },
+     {
+      "label": "(b)",
+      "q": "$174003_8$",
+      "answer": "$63491$",
+      "solution": "$1\\cdot8^5 + 7\\cdot8^4 + 4\\cdot8^3 + 0 + 0 + 3 = 32768 + 28672 + 2048 + 3 = 63491$.",
+      "method": "Weights are powers of 8."
+     },
+     {
+      "label": "(c)",
+      "q": "$10100.1101_2$",
+      "answer": "$20.8125$",
+      "solution": "Whole: $16 + 4 = 20$. Fraction: $\\frac12 + \\frac14 + \\frac1{16} = 0.8125$.",
+      "method": "Digits after the point have weights $2^{-1}, 2^{-2}, \\ldots$"
+     },
+     {
+      "label": "(d)",
+      "q": "$\\mathrm{F3A5}_{16}$",
+      "answer": "$62373$",
+      "solution": "$15\\cdot4096 + 3\\cdot256 + 10\\cdot16 + 5 = 61440 + 768 + 160 + 5 = 62373$.",
+      "method": "Weights are powers of 16; $\\mathrm{A} = 10$, $\\mathrm{F} = 15$."
+     },
+     {
+      "label": "(e)",
+      "q": "$12010_3$",
+      "answer": "$138$",
+      "solution": "$1\\cdot81 + 2\\cdot27 + 0\\cdot9 + 1\\cdot3 + 0 = 81 + 54 + 3 = 138$. (The handout prints this as “120103”: the subscript 3 was lost.)",
+      "method": "Same rule for any radix, here $r = 3$."
+     },
+     {
+      "label": "(f)",
+      "q": "$\\mathrm{15C.38}_{16}$",
+      "answer": "$348.21875$",
+      "solution": "Whole: $1\\cdot256 + 5\\cdot16 + 12 = 348$. Fraction: $\\frac3{16} + \\frac8{256} = 0.1875 + 0.03125 = 0.21875$.",
+      "method": "Negative powers of 16 after the point."
+     }
+    ]
+   }
+  ],
+  "pdf": "homework/ps1-solutions.pdf"
+ },
+ {
+  "id": "ps2",
+  "title": "PS2 · Switching algebra and canonical sums (Ch 4)",
+  "source": "Digital Logic homework for Sep. 11",
+  "intro": "[ADDED] The original problem sets have no solutions. These worked solutions were written for this site; every conversion and every Boolean result was checked in code (truth tables and an exact K-map minimizer), and the VHDL was compiled. Compare them with your lecturer's model answers when those are released.",
+  "items": [
+   {
+    "n": 1,
+    "kind": "problem",
+    "q": "Prove the following equations using switching algebra.",
+    "parts": [
+     {
+      "label": "(a)",
+      "q": "$BC + D + D'(B' + C')(AD + B) = B + D$",
+      "answer": "Proved: both sides equal $B + D$.",
+      "solution": "First, $D'(AD + B) = AD'D + BD' = BD'$ (since $D'D = 0$). The last term becomes $BD'(B' + C') = BB'D' + BC'D' = BC'D'$. So the left side is $BC + D + BC'D'$. Now $D + D'(BC') = D + BC'$ (theorem $X + X'Y = X + Y$). Then $BC + BC' + D = B(C + C') + D = B + D$. ∎",
+      "method": "Expand the product, kill terms with $XX' = 0$, then combine with $X + X'Y = X + Y$ and $XY + XY' = X$."
+     },
+     {
+      "label": "(b)",
+      "q": "$AB + A'C + (B' + C')D = AB + A'C + D$",
+      "answer": "Proved.",
+      "solution": "By DeMorgan, $(B' + C') = (BC)'$. By consensus, $AB + A'C = AB + A'C + BC$, so the left side is $AB + A'C + BC + (BC)'D$. Since $X + X'D = X + D$ with $X = BC$: $= AB + A'C + BC + D$. Remove the consensus term $BC$ again: $= AB + A'C + D$. ∎",
+      "method": "Add a consensus term to create an $X + X'Y$ pattern, then remove it again."
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "kind": "problem",
+    "q": "Use switching-algebra theorems to simplify each function.",
+    "parts": [
+     {
+      "label": "(a)",
+      "q": "$F = A + ABC + AB'C' + CB + C'B'$",
+      "answer": "$F = A + BC + B'C'$  (that is, $A + (B \\oplus C)'$)",
+      "solution": "Covering ($X + XY = X$): $A + ABC + AB'C' = A$. What's left is $A + BC + B'C'$, and $BC + B'C'$ is the XNOR of $B$ and $C$.",
+      "method": "Covering removes every term that already contains $A$."
+     },
+     {
+      "label": "(b)",
+      "q": "$F = (AB + A'B' + A'B + AB')'$",
+      "answer": "$F = 0$",
+      "solution": "$AB + AB' = A$ and $A'B + A'B' = A'$, so the inside is $A + A' = 1$ and $F = 1' = 0$. (The four terms are all four minterms of $A, B$.)",
+      "method": "Combining theorem $XY + XY' = X$, then $X + X' = 1$."
+     }
+    ]
+   },
+   {
+    "n": 3,
+    "kind": "problem",
+    "q": "Write the canonical sum from the shorthand.",
+    "parts": [
+     {
+      "label": "(1)",
+      "q": "$F = \\Sigma_{X,Y}(1, 2)$",
+      "answer": "$F = X'Y + XY'$  $(= X \\oplus Y)$",
+      "solution": "Row 1 = 01 → $X'Y$; row 2 = 10 → $XY'$.",
+      "method": "Write each row number in binary; complement the variables that are 0."
+     },
+     {
+      "label": "(2)",
+      "q": "$F = \\Sigma_{A,B,C}(1, 2, 4, 6)$",
+      "answer": "$F = A'B'C + A'BC' + AB'C' + ABC'$",
+      "solution": "$1 = 001 \\to A'B'C$, $2 = 010 \\to A'BC'$, $4 = 100 \\to AB'C'$, $6 = 110 \\to ABC'$. (Not asked, but it simplifies to $A'B'C + BC' + AC'$.)",
+      "method": "Canonical sum = OR of the minterms, each containing every variable."
+     }
+    ]
+   }
+  ],
+  "pdf": "homework/ps2-solutions.pdf"
+ },
+ {
+  "id": "ps3",
+  "title": "PS3 · Karnaugh maps (Ch 4)",
+  "source": "Digital Logic homework for Sep. 18",
+  "intro": "[ADDED] The original problem sets have no solutions. These worked solutions were written for this site; every conversion and every Boolean result was checked in code (truth tables and an exact K-map minimizer), and the VHDL was compiled. Compare them with your lecturer's model answers when those are released.",
+  "items": [
+   {
+    "n": 1,
+    "kind": "problem",
+    "q": "Use Karnaugh maps to find a minimal sum of products.",
+    "parts": [
+     {
+      "label": "(a)",
+      "q": "$F = \\Sigma_{x,y,z}(1, 3, 5, 6, 7)$",
+      "answer": "$F = z + xy$",
+      "solution": "Cells 1, 3, 5, 7 all have $z = 1$: one group of 4 → $z$. Cell 6 (110) pairs with 7 (111) → $xy$. Two groups cover every 1.",
+      "method": "Make each group as large as possible (a power of 2), and use as few groups as possible."
+     },
+     {
+      "label": "(b)",
+      "q": "$F = \\Sigma_{w,x,y,z}(1, 4, 5, 6, 7, 9, 14, 15)$",
+      "answer": "$F = w'x + xy + x'y'z$",
+      "solution": "4, 5, 6, 7 (row $w'x$) → $w'x$. 6, 7, 14, 15 (column $xy$) → $xy$. 1 (0001) and 9 (1001) differ only in $w$ → $x'y'z$. The exact minimizer confirms this is the only minimal sum (3 terms, 7 literals).",
+      "method": "Look for the groups of 4 first; then cover the leftovers with the largest group that contains them."
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "kind": "problem",
+    "q": "Use Karnaugh maps to find a minimal sum of products; d(…) are don't-cares.",
+    "parts": [
+     {
+      "label": "(a)",
+      "q": "$F = \\Sigma_{w,x,y,z}(0, 1, 2, 8, 11) + d(3, 9, 15)$",
+      "answer": "$F = x'y' + w'x' + x'z$",
+      "solution": "$0, 1, 8, 9_d \\to x'y'$ (group of 4 using $d$9). $0, 1, 2, 3_d \\to w'x'$. $1, 3_d, 9_d, 11 \\to x'z$ (the only way to put 11 in a group of 4). $d$15 is not needed.",
+      "method": "Use a don't-care only when it makes a group bigger; never cover a group of only d's."
+     },
+     {
+      "label": "(b)",
+      "q": "$F = \\Sigma_{A,B,C,D}(1, 5, 12, 13, 14, 15) + d(7, 9)$",
+      "answer": "$F = AB + C'D$",
+      "solution": "12, 13, 14, 15 → $AB$. $1, 5, 9_d, 13 \\to C'D$ (using $d$9). $d$7 is left as 0.",
+      "method": "Don't-cares let two groups of 4 replace smaller ones."
+     }
+    ]
+   }
+  ],
+  "pdf": "homework/ps3-solutions.pdf"
+ },
+ {
+  "id": "ps4",
+  "title": "PS4 · Structural VHDL (Ch 5)",
+  "source": "Digital Logic homework for Oct. 9",
+  "intro": "[ADDED] The original problem sets have no solutions. These worked solutions were written for this site; every conversion and every Boolean result was checked in code (truth tables and an exact K-map minimizer), and the VHDL was compiled. Compare them with your lecturer's model answers when those are released.",
+  "items": [
+   {
+    "n": 1,
+    "kind": "problem",
+    "q": "Write a structural VHDL program (entity and architecture) for the full-adder circuit in the figure.",
+    "parts": [
+     {
+      "label": "",
+      "q": "Write the entity and the structural architecture.",
+      "answer": "One entity (inputs X, Y, CIN; outputs S, COUT) and an architecture with six component instances U1–U6 matching the figure.",
+      "solution": "```\nlibrary IEEE;\nuse IEEE.std_logic_1164.all;\n\nentity full_adder is\n  port ( X, Y, CIN: in STD_LOGIC;\n         S, COUT:   out STD_LOGIC );\nend full_adder;\n\narchitecture full_adder_s of full_adder is\n  signal X_xor_Y, X_CIN, Y_CIN, X_Y: STD_LOGIC;\n  component XOR2 port (I0, I1: in STD_LOGIC; O: out STD_LOGIC); end component;\n  component AND2 port (I0, I1: in STD_LOGIC; O: out STD_LOGIC); end component;\n  component OR3  port (I0, I1, I2: in STD_LOGIC; O: out STD_LOGIC); end component;\nbegin\n  U1: XOR2 port map (X, Y, X_xor_Y);\n  U2: AND2 port map (X, CIN, X_CIN);\n  U3: AND2 port map (Y, CIN, Y_CIN);\n  U4: AND2 port map (X, Y, X_Y);\n  U5: XOR2 port map (X_xor_Y, CIN, S);\n  U6: OR3  port map (X_CIN, Y_CIN, X_Y, COUT);\nend full_adder_s;\n```\nReading the figure: U1 is an XOR of X and Y (signal X_xor_Y); U2, U3, U4 are ANDs making X_CIN, Y_CIN, X_Y; U5 XORs X_xor_Y with CIN to give S; U6 is a 3-input OR giving COUT. Each internal wire becomes a signal, and each gate becomes a component instance wired with port map. XOR2, AND2 and OR3 are library gates (as on the slides with UNISIM); to simulate on your own, give each a one-line entity such as O <= I0 xor I1;. The code was compiled and simulated for all 8 input rows: S = X ⊕ Y ⊕ CIN and COUT = XY + X·CIN + Y·CIN.",
+      "method": "Structural = one component instance per gate in the schematic, one signal per internal wire. The slides' dataflow solution (p60) is the same circuit written with expressions instead."
+     }
+    ],
+    "figure": "homework/img/ps4-p1.png"
+   }
+  ],
+  "pdf": "homework/ps4-solutions.pdf"
+ },
+ {
+  "id": "ps5",
+  "title": "PS5 · PLDs and decoders (Ch 6)",
+  "source": "Digital Logic homework for Oct. 23",
+  "intro": "[ADDED] The original problem sets have no solutions. These worked solutions were written for this site; every conversion and every Boolean result was checked in code (truth tables and an exact K-map minimizer), and the VHDL was compiled. Compare them with your lecturer's model answers when those are released.",
+  "items": [
+   {
+    "n": 1,
+    "kind": "problem",
+    "q": "Simplify and implement with a PLD; draw the circuit in compact representation. $F_1 = A'BCD + AC'D' + B'CD$, $F_2 = A'B + AB' + C'D + CD'$, $F_3 = (A + B + CD)(A' + B + C' + D) + A'B'C'$.",
+    "parts": [
+     {
+      "label": "(a)",
+      "q": "Simplify $F_1$.",
+      "answer": "$F_1 = A'CD + B'CD + AC'D'$",
+      "solution": "Minterms: $A'BCD = 7$, $AC'D' = 8, 12$, $B'CD = 3, 11$, so $F_1 = \\Sigma(3, 7, 8, 11, 12)$. On the K-map, 3 and 7 pair → $A'CD$; 3 and 11 pair → $B'CD$; 8 and 12 pair → $AC'D'$. (Algebraically: $A'BCD + B'CD = CD(A'B + B') = CD(A' + B')$, which expands to $A'CD + B'CD$.)",
+      "method": "K-map on the minterm list; 15 is not in $F_1$, so $CD$ alone can't be used."
+     },
+     {
+      "label": "(b)",
+      "q": "Simplify $F_2$.",
+      "answer": "$F_2 = A'B + AB' + C'D + CD'$  $(= A \\oplus B + C \\oplus D)$",
+      "solution": "It is already minimal: each pair is an XOR, and the K-map (12 ones, zeros only at 0, 3, 12, 15) has no group of 4 or 8, so it needs four groups of 2.",
+      "method": "Check minimality with the K-map before 'simplifying' further."
+     },
+     {
+      "label": "(c)",
+      "q": "Simplify $F_3$.",
+      "answer": "$F_3 = B + C' + D$",
+      "solution": "Use $(X + B)(Y + B) = B + XY$ with $X = A + CD$, $Y = A' + C' + D$: $XY = AC' + AD + A'CD + CD = AC' + AD + CD$. So $F_3 = B + AC' + AD + CD + A'B'C'$. Since $B + B'(A'C') = B + A'C'$: $F_3 = B + AC' + A'C' + AD + CD = B + C' + AD + CD$. Then $C' + CD = C' + D$, and $D$ covers $AD$: $F_3 = B + C' + D$. Check: $F_3 = 0$ only for $B = 0, C = 1, D = 0$ (minterms 2 and 10).",
+      "method": "Factor the common $B$ out of the product of sums first, then use $X + X'Y = X + Y$ twice."
+     },
+     {
+      "label": "(d)",
+      "q": "Draw the PLA in compact representation.",
+      "answer": "4 inputs, 10 product terms, 3 outputs (figure).",
+      "solution": "Each row of the AND array is one product term; a dot means 'this literal is connected'. Each column of the OR array is one output; a dot means 'this term is ORed in'. $F_1$ uses $A'CD, B'CD, AC'D'$; $F_2$ uses $A'B, AB', C'D, CD'$; $F_3$ uses the one-literal terms $B, C', D$. No term is shared here, so a PAL would work just as well.",
+      "method": "Compact (dot) notation from Ch 6: draw only the connections you keep.",
+      "figure": "homework/img/ps5-pla.svg"
+     }
+    ]
+   },
+   {
+    "n": 2,
+    "kind": "problem",
+    "q": "Implement each function using a 4-to-16 decoder (active-low outputs, like the 74x154) and NAND gates.",
+    "parts": [
+     {
+      "label": "(1)",
+      "q": "$F(A,B,C,D) = \\Sigma(0, 4, 5, 8, 12, 13, 14)$",
+      "answer": "One 7-input NAND of $\\overline{Y_0}, \\overline{Y_4}, \\overline{Y_5}, \\overline{Y_8}, \\overline{Y_{12}}, \\overline{Y_{13}}, \\overline{Y_{14}}$",
+      "solution": "Inputs $A, B, C, D$ drive the decoder's select inputs ($A$ = MSB). Each active-low output $\\overline{Y_i}$ is 0 exactly for minterm $i$. $F = Y_0 + Y_4 + \\cdots + Y_{14} = (\\overline{Y_0}\\cdot\\overline{Y_4}\\cdots\\overline{Y_{14}})'$ by DeMorgan, which is a NAND of those outputs.",
+      "method": "Decoder = minterm generator; OR of active-low lines = NAND."
+     },
+     {
+      "label": "(2)",
+      "q": "$F(A,B,C,D) = A'BCD + AC'D' + B'CD$",
+      "answer": "$F = \\Sigma(3, 7, 8, 11, 12)$: a 5-input NAND of $\\overline{Y_3}, \\overline{Y_7}, \\overline{Y_8}, \\overline{Y_{11}}, \\overline{Y_{12}}$",
+      "solution": "First expand to a canonical sum: $A'BCD = 7$; $AC'D' \\to 8, 12$; $B'CD \\to 3, 11$. Then NAND the matching decoder outputs, exactly as in (1).",
+      "method": "Always convert to minterms first; the decoder can't use a simplified form."
+     }
+    ]
+   }
+  ],
+  "pdf": "homework/ps5-solutions.pdf"
+ }
+]

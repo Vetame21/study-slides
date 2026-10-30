@@ -24,7 +24,9 @@ data-structure/
 statistics-probability/
   slides.json, quiz.json    S01–S05, with 7 interactive demos
   homework.json, homework/  H01–H02 practice + solution PDFs (generated, see Homework)
-digital-logic/              empty for now
+digital-logic/
+  slides.json, quiz.json    Ch 1, 2, 4, 5 (VHDL), 6, with 5 logic demos
+  homework.json, homework/  PS1–PS5 practice + solution PDFs (generated)
 college-physics-2/
   slides.json, quiz.json    Ch 21–24 (charge, field, Gauss' law, potential), with 13 physics demos
   homework.json, homework/  HW01, HW02, HW04, HW05 practice + solution PDFs (generated)
@@ -210,6 +212,8 @@ Both are generated from one source file per subject in `tools/homework/`:
 |---|---|
 | `phys_hw01.py` … `phys_hw05.py` | College Physics HW01, HW02, HW04, HW05 (official answer keys) |
 | `stats_hw.py` | Statistics H01, H02 (solutions written for the site, marked [ADDED]) |
+| `dl_hw.py` | Digital Logic PS1–PS5 (solutions written for the site, marked [ADDED]) |
+| `dl_figs.py` | draws the PS5 PLA figure (`python3 tools/homework/dl_figs.py .`) |
 | `hwlib.py` | helpers: `M(...)` multiple-choice item, `P(...)` problem with `part(...)`s |
 | `hwbuild.py` | builds `<subject>/homework.json`, copies figures, prints the PDFs with Chrome |
 
@@ -222,7 +226,10 @@ To change a solution or add a homework set: edit the source file, then from the 
 python3 tools/homework/hwbuild.py .
 ```
 
-It regenerates `homework.json` and every PDF. Check the answers in code before publishing, and if the
+It regenerates `homework.json` and every PDF. Add subject ids to rebuild only those
+(`python3 tools/homework/hwbuild.py . digital-logic`), so other subjects' PDFs don't change.
+Code blocks in a solution go between ```` ``` ```` lines, and a part can carry its own figure with
+`part(..., fig="homework/img/x.svg")`. Check the answers in code before publishing, and if the
 official solution has a slip, keep the official answer but explain it in a **[NOTE]**.
 
 ---
@@ -281,6 +288,11 @@ A slide with `"demo": "<name>"` gets a live widget under it ("▶ Try it"). Demo
 | `potential-sphere` | Ch 24 Potential of a Charged Sphere | E(r) and V(r): conductor (V flat inside) vs solid sphere |
 | `e-from-v` | Ch 24 Field from the Potential | tangent to V(x) gives Eₓ = −dV/dx |
 | `assemble` | Ch 24 Potential Energy of a System | bring 3 charges in from ∞; work adds to −17 mJ |
+| `base-convert` | DL Ch 2 Converting Between Bases | exact base 2/3/8/10/13/16 conversion, fractions too, with the division steps |
+| `truth-table` | DL Ch 4 Theorems, Minterms | type two expressions; truth table, Σ lists, and whether they are equivalent |
+| `kmap` | DL Ch 4 K-maps, Don't-Cares | click cells (1 / d); exact minimal sum with the groups marked |
+| `decoder-mux` | DL Ch 6 Decoders, MUX | 74x138 with enables + NAND function builder; 8:1 MUX as a function generator |
+| `vhdl-loop` | DL Ch 5–6 loops | step through CONV_INTEGER, CONV_STD_LOGIC_VECTOR, parity9 and prime9 |
 
 To add one, write a function in `demos.js`:
 
@@ -316,6 +328,8 @@ Then open http://localhost:8000 and check:
 - [ ] each quiz marks the right answer as correct
 - [ ] every demo opens, its numbers match the slide's example, and nothing shows `null`
 - [ ] the JSON is valid: `python3 -m json.tool your-folder/slides.json > /dev/null`
+- [ ] VHDL code compiles: paste it into a file and run `ghdl -a --std=08 file.vhd` (a test bench with
+      `assert`s is even better). Fix the teacher's typos in the code and explain them in a **[NOTE]**.
 
 ---
 

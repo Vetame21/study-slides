@@ -1303,5 +1303,372 @@
     draw();
   };
 
+  // ---- Digital Logic ---------------------------------------------------------------------
+
+  // Small toggle button that shows 0/1 and flips on click.
+  function bitButton(get, set, label = "") {
+    const b = button("", () => { set(get() ? 0 : 1); });
+    const show = () => { b.textContent = label + get(); b.classList.toggle("active", !!get()); };
+    show();
+    return { b, show };
+  }
+
+  function table(head, rows) {
+    return h("table", { class: "demo-table" },
+      h("tr", {}, ...head.map(c => h("th", {}, c))),
+      ...rows.map(r => h("tr", { class: r.cls || "" }, ...r.cells.map(c => h("td", {}, c)))));
+  }
+
+  // ---- Ch 2: base converter (exact, with fractions) ----
+  DEMOS["base-convert"] = function (root, lang) {
+    const { t } = makeT(lang);
+    const DIG = "0123456789ABCDEF";
+    const input = h("input", { type: "text", value: "10100.1101", class: "num", style: "width: 11em" });
+    const base = h("select", {}, ...[2, 3, 8, 10, 13, 16].map(b => h("option", { value: b }, t("base ", "basis ") + b)));
+    const readout = h("div", { class: "demo-readout" });
+    // Value as an exact fraction num / den (BigInt).
+    function parse(str, r) {
+      const m = str.trim().toUpperCase().match(/^([0-9A-F]*)(?:\.([0-9A-F]*))?$/);
+      if (!m || (!m[1] && !m[2])) return null;
+      const digits = (m[1] || "") + (m[2] || "");
+      let num = 0n;
+      for (const ch of digits) {
+        const d = DIG.indexOf(ch);
+        if (d < 0 || d >= r) return null;
+        num = num * BigInt(r) + BigInt(d);
+      }
+      return { num, den: BigInt(r) ** BigInt((m[2] || "").length), whole: m[1] || "0", frac: m[2] || "" };
+    }
+    function toBase(num, den, b, maxFrac = 10) {
+      const B = BigInt(b);
+      let w = num / den, rem = num % den, ws = "";
+      do { ws = DIG[Number(w % B)] + ws; w /= B; } while (w > 0n);
+      let fs = "";
+      while (rem > 0n && fs.length < maxFrac) { rem *= B; fs += DIG[Number(rem / den)]; rem %= den; }
+      return ws + (fs ? "." + fs : "") + (rem > 0n ? " …" : "");
+    }
+    function draw() {
+      const r = +base.value, v = parse(input.value, r);
+      if (!v) {
+        fill(readout, h("div", { class: "warn" }, t(`Not a valid base-${r} number.`, `Bukan bilangan basis ${r} yang sah.`)));
+        return;
+      }
+      const terms = [];
+      [...v.whole].forEach((ch, i) => terms.push(`${ch}·${r}^${v.whole.length - 1 - i}`));
+      [...v.frac].forEach((ch, i) => terms.push(`${ch}·${r}^−${i + 1}`));
+      const dec = Number(v.num) / Number(v.den);
+      // Whole part → binary by repeated division, the slide method.
+      let q = Number(v.num / v.den), steps = [];
+      if (q > 0 && q < 2 ** 20) while (q > 0) { steps.push(`${q} ÷ 2 = ${Math.floor(q / 2)} r ${q % 2}`); q = Math.floor(q / 2); }
+      fill(readout,
+        table([t("Base", "Basis"), t("Value", "Nilai")], [2, 8, 10, 16].map(b => ({ cells: [String(b), toBase(v.num, v.den, b)], cls: b === r ? "hl" : "" }))),
+        h("div", { class: "mono" }, `= ${terms.join(" + ")} = ${dec}`),
+        steps.length ? h("div", { class: "mono" }, t("Whole part to binary (read remainders bottom-up): ", "Bagian bulat ke biner (baca sisa dari bawah): ") + steps.join(" · ")) : null,
+        h("div", { class: "muted" }, t("“…” means the fraction doesn't end in that base: it was cut after 10 digits.",
+          "“…” berarti pecahannya tidak berakhir di basis itu: dipotong setelah 10 digit.")));
+    }
+    input.addEventListener("input", draw);
+    base.addEventListener("change", draw);
+    const preset = (txt, b) => button(`${txt}₍${b}₎`, () => { input.value = txt; base.value = b; draw(); });
+    root.append(h("div", { class: "demo-controls" }, input, base),
+      h("div", { class: "demo-controls" }, preset("329", 13), preset("923", 16), preset("0.7875", 10), preset("174003", 8), preset("15C.38", 16)),
+      readout);
+    draw();
+  };
+
+  // ---- Ch 4: Boolean expressions ----
+  // Grammar: sum of products; juxtaposition, · or * = AND; + = OR; ⊕ or ^ = XOR; postfix ' = NOT.
+  function parseBool(src) {
+    const s = src.replace(/[’′]/g, "'").replace(/\s+/g, "");
+    let i = 0;
+    const vars = new Set();
+    const peek = () => s[i];
+    function primary() {
+      let node;
+      if (peek() === "(") { i++; node = expr(); if (s[i++] !== ")") throw "paren"; }
+      else if (/[A-Za-z]/.test(peek() || "")) { const v = s[i++].toUpperCase(); vars.add(v); node = env => env[v]; }
+      else if (peek() === "0" || peek() === "1") { const c = s[i++] === "1"; node = () => c; }
+      else throw "token";
+      while (peek() === "'") { i++; const inner = node; node = env => !inner(env); }
+      return node;
+    }
+    function product() {
+      let node = primary();
+      while (i < s.length && (/[A-Za-z01(]/.test(peek()) || peek() === "·" || peek() === "*")) {
+        if (peek() === "·" || peek() === "*") i++;
+        const a = node, b = primary(); node = env => a(env) && b(env);
+      }
+      return node;
+    }
+    function xor() {
+      let node = product();
+      while (peek() === "⊕" || peek() === "^") { i++; const a = node, b = product(); node = env => a(env) !== b(env); }
+      return node;
+    }
+    function expr() {
+      let node = xor();
+      while (peek() === "+") { i++; const a = node, b = xor(); node = env => a(env) || b(env); }
+      return node;
+    }
+    const f = expr();
+    if (i !== s.length) throw "trailing";
+    return { f, vars };
+  }
+
+  DEMOS["truth-table"] = function (root, lang) {
+    const { t } = makeT(lang);
+    const e1 = h("input", { type: "text", value: "XY + X'Z + YZ", class: "num", style: "width: 15em" });
+    const e2 = h("input", { type: "text", value: "XY + X'Z", class: "num", style: "width: 15em" });
+    const readout = h("div", { class: "demo-readout" });
+    function draw() {
+      let p1, p2;
+      try { p1 = parseBool(e1.value); p2 = parseBool(e2.value); }
+      catch (e) { fill(readout, h("div", { class: "warn" }, t("Can't read that expression. Use letters, ', +, ·, ⊕ and ( ).", "Ekspresi tidak terbaca. Pakai huruf, ', +, ·, ⊕, dan ( ).")) ); return; }
+      const vars = [...new Set([...p1.vars, ...p2.vars])].sort();
+      if (vars.length > 5) { fill(readout, h("div", { class: "warn" }, t("At most 5 variables.", "Maksimal 5 variabel."))); return; }
+      const n = vars.length, rows = [], on1 = [], on2 = [], diff = [];
+      for (let m = 0; m < 2 ** n; m++) {
+        const env = {};
+        vars.forEach((v, k) => { env[v] = !!((m >> (n - 1 - k)) & 1); });
+        const a = +p1.f(env), b = +p2.f(env);
+        if (a) on1.push(m); if (b) on2.push(m); if (a !== b) diff.push(m);
+        rows.push({ cells: [String(m), ...vars.map(v => +env[v] + ""), a + "", b + ""], cls: a !== b ? "bad" : "" });
+      }
+      const sig = on => `Σ(${on.join(", ")})`;
+      fill(readout,
+        h("div", {}, h("b", { class: diff.length ? "no" : "ok" }, diff.length
+          ? t(`Not equivalent: they differ in row(s) ${diff.join(", ")}.`, `Tidak ekuivalen: berbeda di baris ${diff.join(", ")}.`)
+          : t("Equivalent: same output in every row (perfect induction).", "Ekuivalen: output sama di setiap baris (induksi sempurna)."))),
+        h("div", { class: "mono" }, `F₁ = ${sig(on1)}`), h("div", { class: "mono" }, `F₂ = ${sig(on2)}`),
+        table(["#", ...vars, "F₁", "F₂"], rows));
+    }
+    e1.addEventListener("input", draw); e2.addEventListener("input", draw);
+    const preset = (label, a, b) => button(label, () => { e1.value = a; e2.value = b; draw(); });
+    root.append(
+      h("div", { class: "demo-controls" }, h("label", {}, "F₁ = ", e1), h("label", {}, "F₂ = ", e2)),
+      h("div", { class: "demo-controls" },
+        preset(t("Consensus", "Konsensus"), "XY + X'Z + YZ", "XY + X'Z"),
+        preset("DeMorgan", "(XY)'", "X' + Y'"),
+        preset(t("Common mistake", "Kesalahan umum"), "(X+Y)(X+Z)", "X+Y+Z"),
+        preset("PS2 (a)", "BC+D+D'(B'+C')(AD+B)", "B+D"),
+        preset(t("Blood types", "Golongan darah"), "XY + MN' + X'Y'N' + YM'N", "X'Y'M'N' + X'Y'MN' + X'YM'N + X'YMN' + XY'MN' + XYM'N' + XYM'N + XYMN' + XYMN")),
+      readout);
+    draw();
+  };
+
+  // ---- Ch 4: Karnaugh map with an exact minimizer ----
+  function primeImplicants(on, dc) {
+    let terms = [...new Set([...on, ...dc])].map(m => [m, 0]);
+    const primes = [];
+    while (terms.length) {
+      const used = new Set(), next = new Map();
+      for (let a = 0; a < terms.length; a++) for (let b = a + 1; b < terms.length; b++) {
+        const [va, ma] = terms[a], [vb, mb] = terms[b], d = va ^ vb;
+        if (ma === mb && d && !(d & (d - 1))) { next.set(`${va & ~d},${ma | d}`, [va & ~d, ma | d]); used.add(a); used.add(b); }
+      }
+      terms.forEach((tm, k) => { if (!used.has(k)) primes.push(tm); });
+      terms = [...next.values()];
+    }
+    return primes;
+  }
+  const covers = ([v, mask], m) => (m & ~mask) === v;
+  function minimalCover(n, on, dc) {
+    if (!on.length) return [];
+    const all = primeImplicants(on, dc), lits = ([, mask]) => n - mask.toString(2).split("1").length + 1;
+    // Essential primes (the only cover of some 1) belong to every minimal sum: take them first.
+    const ess = [];
+    for (const m of on) {
+      const cov = all.filter(p => covers(p, m));
+      if (cov.length === 1 && !ess.includes(cov[0])) ess.push(cov[0]);
+    }
+    const left = on.filter(m => !ess.some(p => covers(p, m)));
+    const P = all.filter(p => !ess.includes(p) && left.some(m => covers(p, m)));
+    let best = left.length ? null : { terms: [] };
+    const pick = (start, chosen, k) => {
+      if (chosen.length === k) {
+        if (left.every(m => chosen.some(p => covers(p, m)))) {
+          const cost = chosen.reduce((c, p) => c + lits(p), 0);
+          if (!best || cost < best.cost) best = { cost, terms: [...chosen] };
+        }
+        return;
+      }
+      for (let j = start; j < P.length; j++) { chosen.push(P[j]); pick(j + 1, chosen, k); chosen.pop(); }
+    };
+    for (let k = 1; k <= P.length && !best; k++) pick(0, [], k);
+    return [...ess, ...best.terms];
+  }
+  function termText([v, mask], names) {
+    const n = names.length;
+    const out = names.map((x, k) => { const bit = 1 << (n - 1 - k); return mask & bit ? "" : x + (v & bit ? "" : "′"); }).join("");
+    return out || "1";
+  }
+
+  DEMOS["kmap"] = function (root, lang) {
+    const { t } = makeT(lang);
+    const GRAY = [0, 1, 3, 2];
+    const NAMES = { 2: ["X", "Y"], 3: ["X", "Y", "Z"], 4: ["W", "X", "Y", "Z"] };
+    let n = 4, cell = {};      // minterm → 0 | 1 | "d"
+    const svg = svgBox(360, 300, 300);
+    const readout = h("div", { class: "demo-readout" });
+    const sizeBtns = [2, 3, 4].map(k => button(t(`${k} variables`, `${k} variabel`), () => { n = k; cell = {}; draw(); }));
+    function layout() {
+      const rb = n === 4 ? 2 : 1, cb = n - rb;
+      const rows = rb === 2 ? GRAY : [0, 1], cols = cb === 2 ? GRAY : [0, 1];
+      return { rb, cb, rows, cols, at: (r, c) => (rows[r] << cb) | cols[c] };
+    }
+    function draw() {
+      sizeBtns.forEach((b, k) => b.classList.toggle("active", k + 2 === n));
+      const names = NAMES[n], L = layout(), on = [], dc = [];
+      for (const [m, v] of Object.entries(cell)) { if (v === 1) on.push(+m); if (v === "d") dc.push(+m); }
+      const sol = minimalCover(n, on, dc);
+      const X0 = 90, Y0 = 70, S = 56;
+      svg.replaceChildren();
+      const bits = (v, k) => v.toString(2).padStart(k, "0");
+      svg.append(s("text", { x: X0 - 12, y: Y0 - 12, class: "m", "font-size": 13, "text-anchor": "end" },
+        names.slice(0, L.rb).join("") + " \\ " + names.slice(L.rb).join("")));
+      L.cols.forEach((c, j) => svg.append(s("text", { x: X0 + j * S + S / 2, y: Y0 - 10, class: "t", "font-size": 14, "text-anchor": "middle" }, bits(c, L.cb))));
+      L.rows.forEach((r, i) => svg.append(s("text", { x: X0 - 12, y: Y0 + i * S + S / 2 + 5, class: "t", "font-size": 14, "text-anchor": "end" }, bits(r, L.rb))));
+      L.rows.forEach((_, i) => L.cols.forEach((_, j) => {
+        const m = L.at(i, j), v = cell[m] || 0, x = X0 + j * S, y = Y0 + i * S;
+        const g = s("g", { style: "cursor: pointer" },
+          s("rect", { x, y, width: S, height: S, class: "cell" + (v === 1 ? " on" : "") }),
+          s("text", { x: x + S / 2, y: y + S / 2 + 6, class: "t", "font-size": 18, "text-anchor": "middle", "font-weight": 700 }, v === 0 ? "" : v === 1 ? "1" : "d"),
+          s("text", { x: x + 4, y: y + 12, class: "m", "font-size": 10 }, String(m)));
+        sol.forEach((p, k) => { if (covers(p, m)) g.append(s("circle", { cx: x + 10 + k * 9, cy: y + S - 9, r: 3.5, style: `fill: var(--c${(k % 6) + 1})` })); });
+        g.addEventListener("click", () => { cell[m] = v === 0 ? 1 : v === 1 ? "d" : 0; draw(); });
+        svg.append(g);
+      }));
+      fill(readout,
+        h("div", { class: "mono" }, `F = Σ(${on.sort((a, b) => a - b).join(", ")})` + (dc.length ? ` + d(${dc.sort((a, b) => a - b).join(", ")})` : "")),
+        h("div", {}, h("b", {}, t("Minimal sum: ", "Jumlah minimal: ")),
+          on.length === 0 ? "F = 0" : sol.length === 1 && sol[0][1] === 2 ** n - 1 ? "F = 1" :
+          h("span", {}, "F = ", ...sol.flatMap((p, k) => [k ? " + " : "", h("b", { style: `color: var(--c${(k % 6) + 1})` }, termText(p, names))]))),
+        h("div", { class: "muted" }, t("Click a cell: blank → 1 → d → blank. Coloured dots show which group covers each cell. Remember the map wraps around at the edges.",
+          "Klik sel: kosong → 1 → d → kosong. Titik berwarna menunjukkan kelompok yang menutup setiap sel. Ingat peta menyambung di tepinya.")));
+    }
+    const preset = (label, k, on, dc = []) => button(label, () => { n = k; cell = {}; on.forEach(m => cell[m] = 1); dc.forEach(m => cell[m] = "d"); draw(); });
+    root.append(h("div", { class: "demo-controls" }, ...sizeBtns, button(t("Clear", "Hapus"), () => { cell = {}; draw(); })),
+      h("div", { class: "demo-controls" },
+        preset(t("Slide: primes", "Slide: prima"), 4, [1, 2, 3, 5, 7, 11, 13]),
+        preset(t("Slide: Σ(1,2,5,7)", "Slide: Σ(1,2,5,7)"), 3, [1, 2, 5, 7]),
+        preset(t("Don't-care demo", "Contoh don't-care"), 3, [0, 1, 2, 4], [5, 6])),
+      h("div", { class: "fig" }, svg), readout);
+    draw();
+  };
+
+  // ---- Ch 6: decoder and multiplexer lab ----
+  DEMOS["decoder-mux"] = function (root, lang) {
+    const { t } = makeT(lang);
+    let mode = "dec", A = [0, 1, 1], G1 = 1, G2A = 0, G2B = 0, D = [0, 0, 0, 1, 0, 1, 1, 1], pick = new Set();
+    const readout = h("div", { class: "demo-readout" }), controls = h("div", {});
+    const modeBtns = [["dec", t("74x138 decoder", "Decoder 74x138")], ["mux", t("8:1 multiplexer", "Multiplexer 8:1")]]
+      .map(([m, label]) => button(label, () => { mode = m; draw(); }));
+    const led = on => h("span", { style: `display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:4px;vertical-align:-1px;background:${on ? "var(--accent)" : "var(--line)"}` });
+    function draw() {
+      modeBtns.forEach((b, k) => b.classList.toggle("active", ["dec", "mux"][k] === mode));
+      const sel = A[0] * 4 + A[1] * 2 + A[2];
+      const selBits = ["A2", "A1", "A0"].map((nm, k) => bitButton(() => A[k], v => { A[k] = v; draw(); }, nm + " = ").b);
+      if (mode === "dec") {
+        const en = G1 === 1 && G2A === 0 && G2B === 0;
+        fill(controls, h("div", { class: "demo-controls" }, ...selBits),
+          h("div", { class: "demo-controls" },
+            bitButton(() => G1, v => { G1 = v; draw(); }, "G1 = ").b,
+            bitButton(() => G2A, v => { G2A = v; draw(); }, "G2A_L = ").b,
+            bitButton(() => G2B, v => { G2B = v; draw(); }, "G2B_L = ").b));
+        const yl = [...Array(8)].map((_, i) => (en && i === sel ? 0 : 1));
+        const F = [...pick].some(i => yl[i] === 0) ? 1 : 0;
+        fill(readout,
+          h("div", {}, h("b", {}, en ? t(`Enabled: output Y${sel}_L goes LOW.`, `Aktif: output Y${sel}_L menjadi LOW.`)
+            : t("Disabled (needs G1 = 1, G2A_L = 0, G2B_L = 0): every output stays HIGH.", "Nonaktif (perlu G1 = 1, G2A_L = 0, G2B_L = 0): semua output tetap HIGH."))),
+          h("div", { class: "mono" }, "Y_L(0 to 7) = \"" + yl.join("") + "\""),
+          h("div", { class: "demo-controls" }, ...yl.map((v, i) => {
+            const b = button("", () => { pick.has(i) ? pick.delete(i) : pick.add(i); draw(); });
+            b.append(led(v === 0), `Y${i}_L`); b.classList.toggle("active", pick.has(i)); return b;
+          })),
+          h("div", {}, t("Build a function: click outputs to feed them into a NAND. ", "Bangun fungsi: klik output untuk memasukkannya ke NAND. "),
+            pick.size ? h("b", {}, `F = Σ(${[...pick].sort().join(", ")}) = NAND(${[...pick].sort().map(i => `Y${i}_L`).join(", ")}) = ${F}`) : null),
+          h("div", { class: "muted" }, t("A NAND outputs 1 when ANY of its inputs is 0, so it ORs the active-low minterm lines.",
+            "NAND mengeluarkan 1 jika SALAH SATU inputnya 0, jadi ia meng-OR-kan garis minterm aktif-rendah.")));
+      } else {
+        fill(controls, h("div", { class: "demo-controls" }, ...selBits.map((b, k) => { b.textContent = ["C", "B", "A"][k] + " = " + A[k]; return b; })),
+          h("div", { class: "demo-controls" }, ...D.map((_, i) => bitButton(() => D[i], v => { D[i] = v; draw(); }, `D${i} = `).b)));
+        const on = D.map((v, i) => (v ? i : -1)).filter(i => i >= 0);
+        fill(readout,
+          h("div", {}, h("b", {}, t(`Select CBA = ${A.join("")} = ${sel} → Y = D${sel} = ${D[sel]}`, `Pilih CBA = ${A.join("")} = ${sel} → Y = D${sel} = ${D[sel]}`))),
+          h("div", { class: "mono" }, `Y = Σ mᵢ·Dᵢ  →  F(C,B,A) = Σ(${on.join(", ")})`),
+          h("div", { class: "muted" }, t("Setting each Dᵢ to the function's value in row i turns the MUX into that function (the slide example 0,0,0,1,0,1,1,1 is the majority function).",
+            "Mengisi setiap Dᵢ dengan nilai fungsi di baris i mengubah MUX menjadi fungsi itu (contoh slide 0,0,0,1,0,1,1,1 adalah fungsi mayoritas).")));
+      }
+    }
+    root.append(h("div", { class: "demo-controls" }, ...modeBtns), controls, readout);
+    draw();
+  };
+
+  // ---- Ch 5–6: step through VHDL loops ----
+  DEMOS["vhdl-loop"] = function (root, lang) {
+    const { t } = makeT(lang);
+    const PROGS = {
+      conv_int: { label: "CONV_INTEGER", input: "10011", head: ["i", "X(i)", "RESULT*2", "RESULT"],
+        run(x) {
+          if (!/^[01]{1,16}$/.test(x)) return null;
+          let R = 0; const rows = [];
+          [...x].forEach((b, i) => { const d = R * 2; R = d + +b; rows.push([i, `'${b}'`, d, R]); });
+          return { rows, result: `RESULT = ${R}` };
+        } },
+      conv_vec: { label: "CONV_STD_LOGIC_VECTOR", input: "19, 5", head: ["i", "temp", "temp mod 2", "result(i)", "temp/2"],
+        run(x) {
+          const m = x.match(/^\s*(\d{1,6})\s*,\s*(\d{1,2})\s*$/); if (!m) return null;
+          let temp = +m[1]; const size = +m[2], res = Array(size).fill("0"), rows = [];
+          if (size < 1 || size > 20) return null;
+          for (let i = 0; i < size; i++) { const r = temp % 2; res[size - 1 - i] = String(r); rows.push([i, temp, r, `'${r}'`, Math.floor(temp / 2)]); temp = Math.floor(temp / 2); }
+          return { rows, result: `result = "${res.join("")}"` + (temp ? t("  (too few bits: the high part was lost)", "  (bit kurang: bagian atas hilang)") : "") };
+        } },
+      parity: { label: "parity9", input: "100110101", head: ["j", "I(j)", "p := not p?", "p"],
+        run(x) {
+          if (!/^[01]{9}$/.test(x)) return null;
+          let p = +x[0]; const rows = [["—", `'${x[0]}'`, "p := I(1)", `'${p}'`]];
+          for (let j = 2; j <= 9; j++) { const flip = x[j - 1] === "1"; if (flip) p ^= 1; rows.push([j, `'${x[j - 1]}'`, flip ? t("yes", "ya") : "—", `'${p}'`]); }
+          return { rows, result: `ODD <= '${p}', EVEN <= '${1 - p}'` };
+        } },
+      prime: { label: "prime9", input: "9", head: ["i", "NI mod i", "NI /= i", "prime"],
+        run(x) {
+          if (!/^\d{1,3}$/.test(x) || +x > 255) return null;
+          const NI = +x, rows = []; let prime = true;
+          if (NI === 1 || NI === 2) rows.push(["—", "—", "—", t("true (boundary case)", "true (kasus batas)")]);
+          else for (let i = 2; i <= 253; i++) {
+            const r = NI % i, hit = r === 0 && NI !== i;
+            if (hit) prime = false;
+            if (i <= 8 || hit) rows.push([i, r, NI !== i ? t("yes", "ya") : t("no", "tidak"), hit ? "false → exit" : "true"]);
+            if (hit) break;
+            if (i === 9) rows.push(["…", "…", "…", t("true (keeps going to 253)", "true (terus sampai 253)")]);
+          }
+          return { rows, result: `F <= '${prime ? 1 : 0}'` };
+        } },
+    };
+    let key = "conv_int", shown = 0;
+    const input = h("input", { type: "text", class: "num", style: "width: 9em" });
+    const readout = h("div", { class: "demo-readout" });
+    const progBtns = Object.entries(PROGS).map(([k, p]) => button(p.label, () => { key = k; input.value = p.input; shown = 0; draw(); }));
+    function draw() {
+      progBtns.forEach((b, k) => b.classList.toggle("active", Object.keys(PROGS)[k] === key));
+      const P = PROGS[key], out = P.run(input.value);
+      if (!out) { fill(readout, h("div", { class: "warn" }, t(`Input format: ${P.input}`, `Format input: ${P.input}`))); return; }
+      const rows = out.rows.slice(0, shown);
+      fill(readout,
+        table(P.head, rows.map((r, k) => ({ cells: r.map(String), cls: k === shown - 1 ? "hl" : "" }))),
+        shown >= out.rows.length ? h("div", {}, h("b", { class: "ok" }, out.result))
+          : h("div", { class: "muted" }, t(`Step ${shown} of ${out.rows.length}`, `Langkah ${shown} dari ${out.rows.length}`)));
+    }
+    input.addEventListener("input", () => { shown = 0; draw(); });
+    root.append(h("div", { class: "demo-controls" }, ...progBtns),
+      h("div", { class: "demo-controls" }, h("label", {}, t("Input ", "Input "), input),
+        button(t("▶ Step", "▶ Langkah"), () => { shown++; draw(); }),
+        button(t("Run all", "Jalankan semua"), () => { shown = 1e9; draw(); }),
+        button(t("Reset", "Ulang"), () => { shown = 0; draw(); })),
+      readout);
+    input.value = PROGS[key].input;
+    draw();
+  };
+
   window.DEMOS = DEMOS;
 })();

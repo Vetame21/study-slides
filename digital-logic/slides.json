@@ -1,0 +1,1229 @@
+[
+ {
+  "chapter": "1. Introduction",
+  "title": "Combinational vs Sequential Logic",
+  "tag": "WHAT",
+  "body": "Combinational circuit: outputs depend only on the CURRENT inputs.\nSequential circuit: outputs also depend on the PAST sequence of inputs (it has memory).\nExample: a TV's channel up/down buttons; the channel depends on all the earlier pushes.",
+  "quick_check": {
+   "q": "A circuit's output depends on what you pressed 5 seconds ago. Which type is it?",
+   "a": "Sequential."
+  },
+  "id": {
+   "chapter": "1. Pendahuluan",
+   "title": "Logika Kombinasional vs Sekuensial",
+   "body": "Rangkaian kombinasional: output hanya bergantung pada input SAAT INI.\nRangkaian sekuensial: output juga bergantung pada URUTAN input sebelumnya (punya memori).\nContoh: tombol naik/turun kanal TV; kanal bergantung pada semua tekanan sebelumnya.",
+   "quick_check": {
+    "q": "Output rangkaian bergantung pada tombol yang ditekan 5 detik lalu. Jenis apa?",
+    "a": "Sekuensial."
+   }
+  }
+ },
+ {
+  "chapter": "1. Introduction",
+  "title": "Analog vs Digital",
+  "tag": "WHAT",
+  "body": "Analog signals can take any value in a continuous range.\nDigital circuits use signals with only two values: 0/1, LOW/HIGH or FALSE/TRUE (the digits of binary).\nMany once-analog systems have 'gone digital': audio (CD, MP3), phones, cameras, engine control.",
+  "quick_check": {
+   "q": "How many values can a digital signal take?",
+   "a": "Two: 0 and 1."
+  },
+  "id": {
+   "chapter": "1. Pendahuluan",
+   "title": "Analog vs Digital",
+   "body": "Sinyal analog bisa bernilai berapa pun dalam rentang kontinu.\nRangkaian digital memakai sinyal dengan dua nilai saja: 0/1, LOW/HIGH, atau FALSE/TRUE (digit biner).\nBanyak sistem yang dulu analog sudah 'menjadi digital': audio (CD, MP3), telepon, kamera, kontrol mesin.",
+   "quick_check": {
+    "q": "Berapa nilai yang bisa diambil sinyal digital?",
+    "a": "Dua: 0 dan 1."
+   }
+  }
+ },
+ {
+  "chapter": "1. Introduction",
+  "title": "Gates and Flip-Flops",
+  "tag": "WHAT",
+  "body": "Gates are the most basic digital devices: they allow or block ('gate') the flow of information. The three most important are AND, OR and NOT.\nA flip-flop stores one bit (0 or 1); its state changes only at times set by a clock input.",
+  "quick_check": {
+   "q": "Which device stores a bit: a gate or a flip-flop?",
+   "a": "A flip-flop."
+  },
+  "id": {
+   "chapter": "1. Pendahuluan",
+   "title": "Gerbang dan Flip-Flop",
+   "body": "Gerbang adalah perangkat digital paling dasar: meneruskan atau menahan aliran informasi. Tiga yang terpenting: AND, OR, dan NOT.\nFlip-flop menyimpan satu bit (0 atau 1); keadaannya berubah hanya pada waktu yang ditentukan input clock.",
+   "quick_check": {
+    "q": "Perangkat mana yang menyimpan bit: gerbang atau flip-flop?",
+    "a": "Flip-flop."
+   }
+  }
+ },
+ {
+  "chapter": "1. Introduction",
+  "title": "Hardware Description Languages",
+  "tag": "WHY",
+  "body": "An HDL describes a hardware module in text, much like a programming language: declarations of data plus the operations that happen.\nThe three main HDLs are Verilog, VHDL and ABEL.\nWhy: easier to understand, easy to change, and CAD tools can verify and synthesize the design for ASICs or FPGAs.",
+  "quick_check": {
+   "q": "Name the three HDLs listed on the slides.",
+   "a": "Verilog, VHDL and ABEL."
+  },
+  "id": {
+   "chapter": "1. Pendahuluan",
+   "title": "Bahasa Deskripsi Perangkat Keras (HDL)",
+   "body": "HDL mendeskripsikan modul perangkat keras dalam teks, mirip bahasa pemrograman: deklarasi data plus operasi yang terjadi.\nTiga HDL utama: Verilog, VHDL, dan ABEL.\nMengapa: lebih mudah dipahami, mudah diubah, dan alat CAD bisa memverifikasi serta mensintesis desain untuk ASIC atau FPGA.",
+   "quick_check": {
+    "q": "Sebutkan tiga HDL di slide.",
+    "a": "Verilog, VHDL, dan ABEL."
+   }
+  }
+ },
+ {
+  "chapter": "1. Introduction",
+  "title": "Integrated Circuits by Size",
+  "tag": "REMEMBER",
+  "body": "SSI: 1–20 gates.\nMSI: 20–200 gates (registers, decoders, counters).\nLSI: 200–200,000 gates (small memories, some microprocessors, PLDs).\nVLSI: counted in transistors, over 1,000,000 (most microprocessors and memories).",
+  "quick_check": {
+   "q": "A decoder chip with about 50 gates is which scale?",
+   "a": "MSI (20–200 gates)."
+  },
+  "id": {
+   "chapter": "1. Pendahuluan",
+   "title": "Sirkuit Terpadu Menurut Ukuran",
+   "body": "SSI: 1–20 gerbang.\nMSI: 20–200 gerbang (register, decoder, counter).\nLSI: 200–200.000 gerbang (memori kecil, sebagian mikroprosesor, PLD).\nVLSI: dihitung dalam transistor, lebih dari 1.000.000 (kebanyakan mikroprosesor dan memori).",
+   "quick_check": {
+    "q": "Chip decoder dengan sekitar 50 gerbang termasuk skala apa?",
+    "a": "MSI (20–200 gerbang)."
+   }
+  }
+ },
+ {
+  "chapter": "1. Introduction",
+  "title": "Programmable Logic Devices",
+  "tag": "WHAT",
+  "body": "A programmable device gets its logic function after manufacture, so a design bug can often be fixed without rewiring.\nPLA: two-level AND-OR arrays, both programmable. PAL: programmable AND, fixed OR, cheaper. CPLD: several PLDs on one chip. FPGA: many small logic blocks plus a large interconnect.",
+  "quick_check": {
+   "q": "In a PAL, which array is fixed?",
+   "a": "The OR array."
+  },
+  "id": {
+   "chapter": "1. Pendahuluan",
+   "title": "Perangkat Logika Terprogram (PLD)",
+   "body": "Perangkat terprogram mendapat fungsi logikanya setelah diproduksi, jadi bug desain sering bisa diperbaiki tanpa merangkai ulang.\nPLA: larik AND-OR dua tingkat, keduanya terprogram. PAL: AND terprogram, OR tetap, lebih murah. CPLD: beberapa PLD dalam satu chip. FPGA: banyak blok logika kecil plus interkoneksi besar.",
+   "quick_check": {
+    "q": "Pada PAL, larik mana yang tetap?",
+    "a": "Larik OR."
+   }
+  }
+ },
+ {
+  "chapter": "2. Number Systems and Codes",
+  "title": "Positional Number Systems",
+  "tag": "WHAT",
+  "body": "Each digit position has a weight: a power of the radix r.\n$D = \\sum d_i\\, r^i$ (negative $i$ for digits after the point).\nThe leftmost bit is the MSB (most significant), the rightmost the LSB.",
+  "formula": [
+   "D = \\sum_{i=-n}^{p-1} d_i\\, r^i",
+   "101.001_2 = 4 + 0 + 1 + 0 + 0 + 0.125 = 5.125_{10}"
+  ],
+  "quick_check": {
+   "q": "What is 329₁₃ in decimal?",
+   "a": "3·169 + 2·13 + 9 = 542."
+  },
+  "id": {
+   "chapter": "2. Sistem Bilangan dan Kode",
+   "title": "Sistem Bilangan Posisional",
+   "body": "Setiap posisi digit punya bobot: pangkat dari radix r.\n$D = \\sum d_i\\, r^i$ ($i$ negatif untuk digit setelah koma).\nBit paling kiri adalah MSB (paling signifikan), paling kanan LSB.",
+   "quick_check": {
+    "q": "Berapa 329₁₃ dalam desimal?",
+    "a": "3·169 + 2·13 + 9 = 542."
+   }
+  }
+ },
+ {
+  "chapter": "2. Number Systems and Codes",
+  "title": "Binary, Octal, Decimal, Hexadecimal",
+  "tag": "REMEMBER",
+  "body": "Binary r = 2 {0,1}; octal r = 8 {0–7}; decimal r = 10; hexadecimal r = 16 {0–9, A–F}.\nAll four write the same number: 255₁₀ = 377₈ = 11111111₂ = FF₁₆.",
+  "quick_check": {
+   "q": "What decimal value is the hex digit C?",
+   "a": "12."
+  },
+  "id": {
+   "chapter": "2. Sistem Bilangan dan Kode",
+   "title": "Biner, Oktal, Desimal, Heksadesimal",
+   "body": "Biner r = 2 {0,1}; oktal r = 8 {0–7}; desimal r = 10; heksadesimal r = 16 {0–9, A–F}.\nKeempatnya menulis bilangan yang sama: 255₁₀ = 377₈ = 11111111₂ = FF₁₆.",
+   "quick_check": {
+    "q": "Berapa nilai desimal digit heksa C?",
+    "a": "12."
+   }
+  }
+ },
+ {
+  "chapter": "2. Number Systems and Codes",
+  "title": "Converting Between Bases",
+  "tag": "HOW",
+  "body": "Radix r → decimal: multiply each digit by its weight and add.\nDecimal → radix r: whole part by repeated DIVISION by r (remainders, last first); fraction part by repeated MULTIPLICATION by r (integer parts, first first).\nBinary ↔ octal: groups of 3 bits. Binary ↔ hex: groups of 4 bits.",
+  "explain": "Group bits starting at the radix point and going outward, padding with zeros at the ends: 10100.1101₂ = 0001 0100 . 1101 = 14.D₁₆.",
+  "demo": "base-convert",
+  "practice": "PS1",
+  "quick_check": {
+   "q": "Convert 1101011₂ to hex.",
+   "a": "[ADDED] Group from the point: 110 1011 → 6B₁₆."
+  },
+  "id": {
+   "chapter": "2. Sistem Bilangan dan Kode",
+   "title": "Konversi Antar Basis",
+   "body": "Radix r → desimal: kalikan setiap digit dengan bobotnya lalu jumlahkan.\nDesimal → radix r: bagian bulat dengan PEMBAGIAN berulang oleh r (sisa, terakhir dulu); bagian pecahan dengan PERKALIAN berulang oleh r (bagian bulat, pertama dulu).\nBiner ↔ oktal: kelompok 3 bit. Biner ↔ heksa: kelompok 4 bit.",
+   "quick_check": {
+    "q": "Ubah 1101011₂ ke heksa.",
+    "a": "[ADDED] Kelompokkan dari koma: 110 1011 → 6B₁₆."
+   },
+   "explain": "Kelompokkan bit mulai dari koma ke arah luar, tambahkan nol di ujung: 10100.1101₂ = 0001 0100 . 1101 = 14.D₁₆."
+  }
+ },
+ {
+  "chapter": "2. Number Systems and Codes",
+  "title": "Decimal Fractions to Another Base",
+  "tag": "HOW",
+  "body": "Multiply the fraction by the radix; the integer part is the next digit; keep the remaining fraction and repeat.\n0.7875₁₀ → octal: 0.7875×8 = 6.3 → 6; 0.3×8 = 2.4 → 2; 0.4×8 = 3.2 → 3; … so 0.7875₁₀ ≈ 0.623₈.",
+  "wrong_right": {
+   "wrong": "0.75 → binary by repeated\ndivision by 2",
+   "right": "0.75 × 2 = 1.5 → 1\n0.5 × 2 = 1.0 → 1\n→ 0.11₂",
+   "reason": "The fraction part uses repeated multiplication, not division."
+  },
+  "practice": "PS1",
+  "quick_check": {
+   "q": "Why might the fraction never end?",
+   "a": "Some decimal fractions have no finite representation in the new base, so you stop after enough digits (≈)."
+  },
+  "id": {
+   "chapter": "2. Sistem Bilangan dan Kode",
+   "title": "Pecahan Desimal ke Basis Lain",
+   "body": "Kalikan pecahan dengan radix; bagian bulatnya adalah digit berikutnya; simpan sisa pecahannya dan ulangi.\n0,7875₁₀ → oktal: 0,7875×8 = 6,3 → 6; 0,3×8 = 2,4 → 2; 0,4×8 = 3,2 → 3; … jadi 0,7875₁₀ ≈ 0,623₈.",
+   "quick_check": {
+    "q": "Mengapa pecahannya bisa tidak berakhir?",
+    "a": "Beberapa pecahan desimal tidak punya representasi berhingga di basis baru, jadi berhenti setelah cukup digit (≈)."
+   },
+   "wrong_right_reason": "Bagian pecahan memakai perkalian berulang, bukan pembagian."
+  }
+ },
+ {
+  "chapter": "4. Combinational Logic Design Principles",
+  "title": "Switching Algebra",
+  "tag": "WHAT",
+  "body": "Boolean (switching) algebra works on two elements, 0 and 1, with three operations: AND (·), OR (+) and NOT (′).\nA truth table lists every input combination with its output: the most basic way to describe a logic function.",
+  "formula": [
+   "0 + 1 = 1, \\qquad 1 \\cdot 0 = 0, \\qquad 0' = 1"
+  ],
+  "quick_check": {
+   "q": "What is 0 OR 1? And NOT 1?",
+   "a": "1 and 0."
+  },
+  "id": {
+   "chapter": "4. Prinsip Desain Logika Kombinasional",
+   "title": "Aljabar Switching",
+   "body": "Aljabar Boolean (switching) bekerja pada dua elemen, 0 dan 1, dengan tiga operasi: AND (·), OR (+), dan NOT (′).\nTabel kebenaran mendaftar setiap kombinasi input beserta outputnya: cara paling dasar mendeskripsikan fungsi logika.",
+   "quick_check": {
+    "q": "Berapa 0 OR 1? Dan NOT 1?",
+    "a": "1 dan 0."
+   }
+  }
+ },
+ {
+  "chapter": "4. Combinational Logic Design Principles",
+  "title": "Single- and Two-Variable Theorems",
+  "tag": "REMEMBER",
+  "body": "Prove any of them by perfect induction: try every input combination.\nIdentities, null elements, idempotency, complements, involution, covering and combining:",
+  "formula": [
+   "X + 0 = X,\\quad X\\cdot 1 = X,\\quad X + 1 = 1,\\quad X \\cdot 0 = 0",
+   "X + X = X,\\quad X + X' = 1,\\quad X\\cdot X' = 0,\\quad (X')' = X",
+   "X + XY = X,\\qquad XY + XY' = X,\\qquad XY' + Y = X + Y"
+  ],
+  "demo": "truth-table",
+  "practice": "PS2",
+  "quick_check": {
+   "q": "Simplify (AB′ + D)E + 1.",
+   "a": "1 (null element: X + 1 = 1)."
+  },
+  "id": {
+   "chapter": "4. Prinsip Desain Logika Kombinasional",
+   "title": "Teorema Satu dan Dua Variabel",
+   "body": "Buktikan dengan induksi sempurna: coba setiap kombinasi input.\nIdentitas, elemen nol, idempoten, komplemen, involusi, covering, dan combining:",
+   "quick_check": {
+    "q": "Sederhanakan (AB′ + D)E + 1.",
+    "a": "1 (elemen nol: X + 1 = 1)."
+   }
+  }
+ },
+ {
+  "chapter": "4. Combinational Logic Design Principles",
+  "title": "Distributive Laws and Consensus",
+  "tag": "REMEMBER",
+  "body": "Unlike ordinary algebra, BOTH distributive laws hold.\nThe consensus theorem removes a redundant term: in XY + X′Z + YZ, the YZ term is already covered.",
+  "formula": [
+   "XY + XZ = X(Y + Z), \\qquad (X + Y)(X + Z) = X + YZ",
+   "XY + X'Z + YZ = XY + X'Z"
+  ],
+  "explain": "Consensus proof: multiply YZ by (X + X′) = 1, giving XYZ + X′YZ. XYZ is covered by XY and X′YZ by X′Z, so both disappear.",
+  "wrong_right": {
+   "wrong": "(X + Y)(X + Z) = X + Y + Z",
+   "right": "(X + Y)(X + Z) = X + YZ",
+   "reason": "The second distributive law gives the product YZ, not a sum."
+  },
+  "practice": "PS2",
+  "quick_check": {
+   "q": "Simplify AB + A′C + BC.",
+   "a": "AB + A′C (consensus)."
+  },
+  "id": {
+   "chapter": "4. Prinsip Desain Logika Kombinasional",
+   "title": "Hukum Distributif dan Konsensus",
+   "body": "Berbeda dengan aljabar biasa, KEDUA hukum distributif berlaku.\nTeorema konsensus menghapus suku berlebih: dalam XY + X′Z + YZ, suku YZ sudah tercakup.",
+   "quick_check": {
+    "q": "Sederhanakan AB + A′C + BC.",
+    "a": "AB + A′C (konsensus)."
+   },
+   "explain": "Bukti konsensus: kalikan YZ dengan (X + X′) = 1, menjadi XYZ + X′YZ. XYZ tercakup oleh XY dan X′YZ oleh X′Z, jadi keduanya hilang.",
+   "wrong_right_reason": "Hukum distributif kedua menghasilkan perkalian YZ, bukan penjumlahan."
+  }
+ },
+ {
+  "chapter": "4. Combinational Logic Design Principles",
+  "title": "DeMorgan's Theorems",
+  "tag": "REMEMBER",
+  "body": "The complement of a sum is the product of the complements, and vice versa.\nGeneralized (T14): to complement any expression, swap + and ·, and complement every variable.\nGate view: a NOR = AND with inverted inputs; a NAND = OR with inverted inputs.",
+  "formula": [
+   "(X + Y)' = X'Y', \\qquad (XY)' = X' + Y'"
+  ],
+  "wrong_right": {
+   "wrong": "(XY)' = X'Y'",
+   "right": "(XY)' = X' + Y'",
+   "reason": "When you complement, AND turns into OR."
+  },
+  "quick_check": {
+   "q": "Complement f = wx(y′z + yz′).",
+   "a": "f′ = w′ + x′ + yz + y′z′."
+  },
+  "id": {
+   "chapter": "4. Prinsip Desain Logika Kombinasional",
+   "title": "Teorema DeMorgan",
+   "body": "Komplemen dari jumlah adalah hasil kali komplemen, dan sebaliknya.\nUmum (T14): untuk mengkomplemenkan ekspresi apa pun, tukar + dan ·, dan komplemenkan setiap variabel.\nTampilan gerbang: NOR = AND dengan input terbalik; NAND = OR dengan input terbalik.",
+   "quick_check": {
+    "q": "Komplemenkan f = wx(y′z + yz′).",
+    "a": "f′ = w′ + x′ + yz + y′z′."
+   },
+   "wrong_right_reason": "Saat mengkomplemenkan, AND berubah menjadi OR."
+  }
+ },
+ {
+  "chapter": "4. Combinational Logic Design Principles",
+  "title": "The Duality Principle",
+  "tag": "REMEMBER",
+  "body": "Any theorem stays true if you swap 0 ↔ 1 and · ↔ +.\nBut keep the original operator precedence: add parentheses before swapping.",
+  "wrong_right": {
+   "wrong": "X + X·Y = X\n→ X · X + Y = X  (so X + Y = X?!)",
+   "right": "X + (X·Y) = X\n→ X · (X + Y) = X",
+   "reason": "Without the parentheses the precedence changes and the 'dual' is wrong."
+  },
+  "quick_check": {
+   "q": "What is the dual of X + X·Y = X?",
+   "a": "X·(X + Y) = X."
+  },
+  "id": {
+   "chapter": "4. Prinsip Desain Logika Kombinasional",
+   "title": "Prinsip Dualitas",
+   "body": "Setiap teorema tetap benar jika 0 ↔ 1 dan · ↔ + ditukar.\nTetapi pertahankan urutan operasi aslinya: tambahkan tanda kurung sebelum menukar.",
+   "quick_check": {
+    "q": "Apa dual dari X + X·Y = X?",
+    "a": "X·(X + Y) = X."
+   },
+   "wrong_right_reason": "Tanpa tanda kurung, urutan operasi berubah dan 'dual'-nya salah."
+  }
+ },
+ {
+  "chapter": "4. Combinational Logic Design Principles",
+  "title": "Minterms and the Canonical Sum",
+  "tag": "WHAT",
+  "body": "A literal is a variable or its complement. A minterm is a product of ALL n variables, true or complemented: there are 2ⁿ of them, numbered by their truth-table row.\nThe canonical sum ORs the minterms of the rows where F = 1, written in short as Σ.",
+  "formula": [
+   "F = \\Sigma_{X,Y,Z}(0, 3, 4, 6, 7) = X'Y'Z' + X'YZ + XY'Z' + XYZ' + XYZ"
+  ],
+  "explain": "Read the row number in binary: row 3 = 011 means X = 0, Y = 1, Z = 1, which gives the minterm X′YZ (complement each variable that is 0).",
+  "demo": "truth-table",
+  "practice": "PS2",
+  "quick_check": {
+   "q": "How many minterms do 4 variables have?",
+   "a": "2⁴ = 16."
+  },
+  "id": {
+   "chapter": "4. Prinsip Desain Logika Kombinasional",
+   "title": "Minterm dan Jumlah Kanonik",
+   "body": "Literal adalah variabel atau komplemennya. Minterm adalah hasil kali SEMUA n variabel, asli atau dikomplemenkan: ada 2ⁿ, diberi nomor sesuai baris tabel kebenaran.\nJumlah kanonik meng-OR-kan minterm dari baris di mana F = 1, ditulis singkat dengan Σ.",
+   "quick_check": {
+    "q": "Berapa minterm untuk 4 variabel?",
+    "a": "2⁴ = 16."
+   },
+   "explain": "Baca nomor baris dalam biner: baris 3 = 011 berarti X = 0, Y = 1, Z = 1, sehingga mintermnya X′YZ (komplemenkan setiap variabel yang bernilai 0)."
+  }
+ },
+ {
+  "chapter": "4. Combinational Logic Design Principles",
+  "title": "Combinational Circuit Analysis",
+  "tag": "HOW",
+  "body": "Start from the logic diagram: write each gate's output, build the truth table, and read off the canonical sum. Then manipulate the expression into other forms.\nExample: F = ((X + Y′)·Z) + X′YZ′ = Σ(1, 2, 5, 7) = XZ + Y′Z + X′YZ′.",
+  "formula": [
+   "F = ((X + Y')Z) + X'YZ' = XZ + Y'Z + X'YZ' = (X + Y' + Z')(X' + Z)(Y + Z)"
+  ],
+  "quick_check": {
+   "q": "Which rows give F = 1 in the example?",
+   "a": "Rows 1, 2, 5 and 7."
+  },
+  "id": {
+   "chapter": "4. Prinsip Desain Logika Kombinasional",
+   "title": "Analisis Rangkaian Kombinasional",
+   "body": "Mulai dari diagram logika: tulis output setiap gerbang, buat tabel kebenaran, dan baca jumlah kanoniknya. Lalu ubah ekspresinya ke bentuk lain.\nContoh: F = ((X + Y′)·Z) + X′YZ′ = Σ(1, 2, 5, 7) = XZ + Y′Z + X′YZ′.",
+   "quick_check": {
+    "q": "Baris mana yang memberi F = 1 pada contoh?",
+    "a": "Baris 1, 2, 5, dan 7."
+   }
+  }
+ },
+ {
+  "chapter": "4. Combinational Logic Design Principles",
+  "title": "Synthesis: From Words to a Circuit",
+  "tag": "HOW",
+  "body": "Turn a verbal description into a truth table or expression, simplify it, then draw the circuit.\nAlarm: ALARM = 1 if PANIC, or if ENABLE is on, EXITING is off and the house is not secure (SECURE = WINDOW·DOOR·GARAGE).",
+  "formula": [
+   "\\text{ALARM} = \\text{PANIC} + \\text{ENABLE}\\cdot\\text{EXITING}'\\cdot(\\text{W}\\cdot\\text{D}\\cdot\\text{G})'"
+  ],
+  "quick_check": {
+   "q": "Write ALARM in terms of the inputs.",
+   "a": "PANIC + ENABLE·EXITING′·(WINDOW·DOOR·GARAGE)′."
+  },
+  "id": {
+   "chapter": "4. Prinsip Desain Logika Kombinasional",
+   "title": "Sintesis: Dari Kata-kata ke Rangkaian",
+   "body": "Ubah deskripsi verbal menjadi tabel kebenaran atau ekspresi, sederhanakan, lalu gambar rangkaiannya.\nAlarm: ALARM = 1 jika PANIC, atau jika ENABLE menyala, EXITING mati, dan rumah tidak aman (SECURE = WINDOW·DOOR·GARAGE).",
+   "quick_check": {
+    "q": "Tulis ALARM dalam bentuk inputnya.",
+    "a": "PANIC + ENABLE·EXITING′·(WINDOW·DOOR·GARAGE)′."
+   }
+  }
+ },
+ {
+  "chapter": "4. Combinational Logic Design Principles",
+  "title": "AND-OR to NAND-NAND (and NOR-NOR)",
+  "tag": "HOW",
+  "body": "NAND and NOR are faster than AND/OR in most technologies.\nSum of products → NAND-NAND: complement twice and apply DeMorgan.\nProduct of sums → NOR-NOR, the dual idea.",
+  "formula": [
+   "F = AB' + A'C = \\big((AB')' \\cdot (A'C)'\\big)'",
+   "F = AB' + A'C = \\big((A + C)' + (A' + B')'\\big)'"
+  ],
+  "explain": "Double complement changes nothing: F = (F′)′. Push the inner complement through the OR with DeMorgan, and every AND becomes a NAND feeding a final NAND.",
+  "quick_check": {
+   "q": "Realize F = AB′ + A′C with NAND gates only.",
+   "a": "F = ((AB′)′·(A′C)′)′."
+  },
+  "id": {
+   "chapter": "4. Prinsip Desain Logika Kombinasional",
+   "title": "AND-OR ke NAND-NAND (dan NOR-NOR)",
+   "body": "NAND dan NOR lebih cepat daripada AND/OR di kebanyakan teknologi.\nJumlah hasil kali → NAND-NAND: komplemenkan dua kali lalu pakai DeMorgan.\nHasil kali jumlah → NOR-NOR, gagasan dualnya.",
+   "quick_check": {
+    "q": "Realisasikan F = AB′ + A′C hanya dengan gerbang NAND.",
+    "a": "F = ((AB′)′·(A′C)′)′."
+   },
+   "explain": "Komplemen ganda tidak mengubah apa pun: F = (F′)′. Dorong komplemen dalam melewati OR dengan DeMorgan, dan setiap AND menjadi NAND yang masuk ke NAND terakhir."
+  }
+ },
+ {
+  "chapter": "4. Combinational Logic Design Principles",
+  "title": "Karnaugh Maps",
+  "tag": "WHAT",
+  "body": "A K-map is a truth table drawn as a grid of 2ⁿ cells, ordered so that NEIGHBOURING cells differ in exactly one variable (Gray order 00, 01, 11, 10).\nEdges wrap around: in a 4-variable map every cell has 4 neighbours (cell 0 touches 1, 2, 4 and 8).",
+  "demo": "kmap",
+  "practice": "PS3",
+  "quick_check": {
+   "q": "Why is the column order 00, 01, 11, 10 and not 00, 01, 10, 11?",
+   "a": "So that neighbours differ in only one bit."
+  },
+  "id": {
+   "chapter": "4. Prinsip Desain Logika Kombinasional",
+   "title": "Peta Karnaugh",
+   "body": "K-map adalah tabel kebenaran yang digambar sebagai grid 2ⁿ sel, diurutkan agar sel BERTETANGGA berbeda tepat satu variabel (urutan Gray 00, 01, 11, 10).\nTepinya menyambung: pada peta 4 variabel setiap sel punya 4 tetangga (sel 0 menyentuh 1, 2, 4, dan 8).",
+   "quick_check": {
+    "q": "Mengapa urutan kolomnya 00, 01, 11, 10, bukan 00, 01, 10, 11?",
+    "a": "Agar tetangga hanya berbeda satu bit."
+   }
+  }
+ },
+ {
+  "chapter": "4. Combinational Logic Design Principles",
+  "title": "Minimizing with a K-map",
+  "tag": "HOW",
+  "body": "Circle groups of adjacent 1s whose sizes are powers of 2 (1, 2, 4, 8…). A group of 2ᵏ cells removes k variables.\nUse as FEW and as LARGE groups as possible to cover every 1. The minimal sum is not always unique, but all minimal sums are equivalent.",
+  "formula": [
+   "\\Sigma_{X,Y,Z}(1,2,5,7) = XZ + Y'Z + X'YZ'",
+   "\\Sigma_{N_3N_2N_1N_0}(1,2,3,5,7,11,13) = N_3'N_0 + N_3'N_2'N_1 + N_2'N_1N_0 + N_2N_1'N_0"
+  ],
+  "wrong_right": {
+   "wrong": "Circle a group of 3 cells",
+   "right": "Groups must have 1, 2, 4, 8… cells",
+   "reason": "Only groups whose size is a power of 2 remove variables."
+  },
+  "demo": "kmap",
+  "practice": "PS3",
+  "quick_check": {
+   "q": "A group of 4 cells in a 4-variable map leaves how many literals?",
+   "a": "2."
+  },
+  "id": {
+   "chapter": "4. Prinsip Desain Logika Kombinasional",
+   "title": "Minimisasi dengan K-map",
+   "body": "Lingkari kelompok 1 bertetangga berukuran pangkat 2 (1, 2, 4, 8…). Kelompok 2ᵏ sel menghilangkan k variabel.\nPakai kelompok sesedikit dan sebesar mungkin untuk menutup semua 1. Jumlah minimal tidak selalu unik, tetapi semuanya setara.",
+   "quick_check": {
+    "q": "Kelompok 4 sel pada peta 4 variabel menyisakan berapa literal?",
+    "a": "2."
+   },
+   "wrong_right_reason": "Hanya kelompok berukuran pangkat 2 yang menghilangkan variabel."
+  }
+ },
+ {
+  "chapter": "4. Combinational Logic Design Principles",
+  "title": "Don't-Care Conditions",
+  "tag": "HOW",
+  "body": "Some input combinations never happen, or their output doesn't matter: mark them d (or x).\nUse a d inside a group when it makes the group bigger, and never circle a group of only d's.\nExample: treating F(1,0,1) and F(1,1,0) as 1 shrinks A′B′ + A′C′ + B′C′ to just B′ + C′.",
+  "demo": "kmap",
+  "practice": "PS3",
+  "quick_check": {
+   "q": "Must every d be covered?",
+   "a": "No. Use a d only when it helps make a group larger."
+  },
+  "id": {
+   "chapter": "4. Prinsip Desain Logika Kombinasional",
+   "title": "Kondisi Don't-Care",
+   "body": "Beberapa kombinasi input tidak pernah terjadi, atau outputnya tidak penting: tandai dengan d (atau x).\nPakai d di dalam kelompok jika membuat kelompok lebih besar, dan jangan pernah melingkari kelompok yang hanya berisi d.\nContoh: menganggap F(1,0,1) dan F(1,1,0) bernilai 1 menyusutkan A′B′ + A′C′ + B′C′ menjadi B′ + C′.",
+   "quick_check": {
+    "q": "Apakah setiap d harus tercakup?",
+    "a": "Tidak. Pakai d hanya jika membantu memperbesar kelompok."
+   }
+  }
+ },
+ {
+  "chapter": "4. Combinational Logic Design Principles",
+  "title": "Design Example: Blood-Transfusion Indicator",
+  "tag": "WHY",
+  "body": "Donor XY and recipient MN coded A = 00, B = 01, AB = 10, O = 11. Compatible if the types match, the recipient is AB, or the donor is O.\nGreen F1 = Σ(0,2,5,6,10,12,13,14,15) = XY + MN′ + X′Y′N′ + YM′N; red F2 = F1′.",
+  "formula": [
+   "F_1 = XY + MN' + X'Y'N' + YM'N, \\qquad F_2 = F_1'"
+  ],
+  "explain": "Checked by brute force: the 9 rows where the rules allow a transfusion are exactly the minterms listed, and the 4-term expression produces the same truth table.",
+  "quick_check": {
+   "q": "Can type A (00) donate to type O (11)?",
+   "a": "No: row XYMN = 0011 isn't in the list."
+  },
+  "id": {
+   "chapter": "4. Prinsip Desain Logika Kombinasional",
+   "title": "Contoh Desain: Indikator Transfusi Darah",
+   "body": "Donor XY dan penerima MN dikodekan A = 00, B = 01, AB = 10, O = 11. Cocok jika golongan sama, penerima AB, atau donor O.\nHijau F1 = Σ(0,2,5,6,10,12,13,14,15) = XY + MN′ + X′Y′N′ + YM′N; merah F2 = F1′.",
+   "quick_check": {
+    "q": "Bisakah golongan A (00) mendonor ke golongan O (11)?",
+    "a": "Tidak: baris XYMN = 0011 tidak ada di daftar."
+   },
+   "explain": "Dicek secara brute force: 9 baris yang diizinkan aturan persis sama dengan minterm yang tercantum, dan ekspresi 4 suku menghasilkan tabel kebenaran yang sama."
+  }
+ },
+ {
+  "chapter": "5. Hardware Description Languages (VHDL)",
+  "title": "HDLs and the Tool Suite",
+  "tag": "WHAT",
+  "body": "With an HDL you specify only the logic function; a CAD tool produces the optimized gates.\nTools: a text editor; a compiler (parses the code, finds syntax errors); a synthesizer (turns code into a netlist of gates and wires); a simulator (applies inputs and checks outputs).\nDebugging in simulation is far cheaper than in hardware.",
+  "explain": "Design flow on the slides: hierarchy/block diagram → coding → compilation → simulation/verification → synthesis → fitting/place+route → timing verification. Mistakes found early cost the least to fix.",
+  "quick_check": {
+   "q": "Which tool turns VHDL into a list of gates and wires?",
+   "a": "The synthesizer (its output is a netlist)."
+  },
+  "id": {
+   "chapter": "5. Bahasa Deskripsi Perangkat Keras (VHDL)",
+   "title": "HDL dan Perangkat Alatnya",
+   "body": "Dengan HDL kita hanya menentukan fungsi logika; alat CAD menghasilkan gerbang yang sudah dioptimalkan.\nAlat: editor teks; compiler (mem-parsing kode, mencari kesalahan sintaks); synthesizer (mengubah kode menjadi netlist gerbang dan kabel); simulator (memberi input dan memeriksa output).\nDebugging di simulasi jauh lebih murah daripada di perangkat keras.",
+   "quick_check": {
+    "q": "Alat mana yang mengubah VHDL menjadi daftar gerbang dan kabel?",
+    "a": "Synthesizer (outputnya netlist)."
+   },
+   "explain": "Alur desain di slide: hierarki/diagram blok → coding → kompilasi → simulasi/verifikasi → sintesis → fitting/place+route → verifikasi timing. Kesalahan yang ditemukan lebih awal paling murah diperbaiki."
+  }
+ },
+ {
+  "chapter": "5. Hardware Description Languages (VHDL)",
+  "title": "Entity + Architecture: the Full Adder",
+  "tag": "WHAT",
+  "body": "Every VHDL design has two parts. The entity declares the interface (the ports); the architecture defines what happens inside.\nVHDL = VHSIC HDL, sponsored by the IEEE and the US DoD in the mid-1980s.",
+  "formula": [
+   "S = A \\oplus B \\oplus C_{in}, \\qquad C_{out} = BC_{in} + AC_{in} + AB"
+  ],
+  "code": "library IEEE;\nuse IEEE.std_logic_1164.all;\n\nentity full_adder is        -- a one-bit full adder\n  port ( A, B, Cin: in BIT;   -- three binary inputs\n         S, Cout: out BIT );  -- two binary outputs\nend full_adder;\n\narchitecture full_adder_arch of full_adder is\nbegin\n  S    <= A xor B xor Cin;\n  Cout <= (B and Cin) or (A and Cin) or (A and B);\nend full_adder_arch;",
+  "explain": "Why S is an XOR: S = A′BCin′ + A′B′Cin + AB′Cin′ + ABCin = A′(B ⊕ Cin) + A(B ⊕ Cin)′ = A ⊕ B ⊕ Cin. Cout is 1 when at least two inputs are 1.",
+  "quick_check": {
+   "q": "Which part lists the inputs and outputs?",
+   "a": "The entity declaration."
+  },
+  "id": {
+   "chapter": "5. Bahasa Deskripsi Perangkat Keras (VHDL)",
+   "title": "Entity + Architecture: Full Adder",
+   "body": "Setiap desain VHDL punya dua bagian. Entity mendeklarasikan antarmuka (port); architecture mendefinisikan apa yang terjadi di dalamnya.\nVHDL = VHSIC HDL, disponsori oleh IEEE dan Departemen Pertahanan AS pada pertengahan 1980-an.",
+   "quick_check": {
+    "q": "Bagian mana yang mendaftar input dan output?",
+    "a": "Deklarasi entity."
+   },
+   "explain": "Mengapa S berupa XOR: S = A′BCin′ + A′B′Cin + AB′Cin′ + ABCin = A′(B ⊕ Cin) + A(B ⊕ Cin)′ = A ⊕ B ⊕ Cin. Cout bernilai 1 jika minimal dua input bernilai 1."
+  }
+ },
+ {
+  "chapter": "5. Hardware Description Languages (VHDL)",
+  "title": "Entity and Architecture Syntax",
+  "tag": "REMEMBER",
+  "body": "Port modes: in, out, buffer, inout.\nSemicolons separate the port declarations, so there is NO semicolon after the last signal type.\nAn architecture has declarations (types, signals, constants, functions, components), then begin, then concurrent statements.",
+  "code": "entity Inhibit is      -- also known as 'BUT-NOT'\n  port ( X: in BIT;      -- as in 'X but not Y'\n         Y: in BIT;\n         Z: out BIT );   -- no semicolon after the last one\nend Inhibit;\n\narchitecture Inhibit_arch of Inhibit is\nbegin\n  Z <= '1' when X='1' and Y='0' else '0';\nend Inhibit_arch;",
+  "wrong_right": {
+   "wrong": "Z <= '1' when X='1' and Y='0' else '0'\nend Inhibit_arch;",
+   "right": "Z <= '1' when X='1' and Y='0' else '0';\nend Inhibit_arch;",
+   "reason": "[NOTE] The syntax slide (p13) leaves out this semicolon. Every concurrent statement must end with ';' or the compiler stops."
+  },
+  "quick_check": {
+   "q": "Where is a semicolon NOT allowed in a port list?",
+   "a": "After the last signal type, before the closing parenthesis."
+  },
+  "id": {
+   "chapter": "5. Bahasa Deskripsi Perangkat Keras (VHDL)",
+   "title": "Sintaks Entity dan Architecture",
+   "body": "Mode port: in, out, buffer, inout.\nTitik koma memisahkan deklarasi port, jadi TIDAK ada titik koma setelah tipe sinyal terakhir.\nArchitecture berisi deklarasi (tipe, sinyal, konstanta, fungsi, komponen), lalu begin, lalu pernyataan konkuren.",
+   "quick_check": {
+    "q": "Di mana titik koma TIDAK boleh ada dalam daftar port?",
+    "a": "Setelah tipe sinyal terakhir, sebelum kurung tutup."
+   },
+   "wrong_right_reason": "[NOTE] Slide sintaks (hlm. 13) tidak menulis titik koma ini. Setiap pernyataan konkuren harus diakhiri ';' atau compiler berhenti."
+  }
+ },
+ {
+  "chapter": "5. Hardware Description Languages (VHDL)",
+  "title": "Predefined Types and Operators",
+  "tag": "REMEMBER",
+  "body": "Types: bit, bit_vector, boolean, character, integer (at least −2³¹+1 to 2³¹−1), real, string, time, severity_level (note, warning, error, failure).\nLogic operators: and, or, nand, nor, xor, xnor, not. Integer: + − * / mod rem abs **.\nmod takes the sign of the divisor; rem takes the sign of the dividend.",
+  "formula": [
+   "5 \\bmod (-2) = -1, \\qquad 5 \\operatorname{rem} (-2) = 1, \\qquad 9 \\bmod 3 = 0"
+  ],
+  "explain": "[NOTE] The slide lists mod(X,0) = X. In VHDL, X mod 0 is an error (division by zero), not X. Also, VHDL writes these as 5 mod (-2), not mod(5,-2).",
+  "quick_check": {
+   "q": "What is 7 mod 2? And 5 mod (−2)?",
+   "a": "1 and −1."
+  },
+  "id": {
+   "chapter": "5. Bahasa Deskripsi Perangkat Keras (VHDL)",
+   "title": "Tipe dan Operator Bawaan",
+   "body": "Tipe: bit, bit_vector, boolean, character, integer (minimal −2³¹+1 sampai 2³¹−1), real, string, time, severity_level (note, warning, error, failure).\nOperator logika: and, or, nand, nor, xor, xnor, not. Integer: + − * / mod rem abs **.\nmod mengikuti tanda pembagi; rem mengikuti tanda yang dibagi.",
+   "quick_check": {
+    "q": "Berapa 7 mod 2? Dan 5 mod (−2)?",
+    "a": "1 dan −1."
+   },
+   "explain": "[NOTE] Slide menulis mod(X,0) = X. Di VHDL, X mod 0 adalah error (pembagian dengan nol), bukan X. Selain itu, VHDL menulisnya 5 mod (-2), bukan mod(5,-2)."
+  }
+ },
+ {
+  "chapter": "5. Hardware Description Languages (VHDL)",
+  "title": "Enumerated Types, std_logic and Constants",
+  "tag": "WHAT",
+  "body": "An enumerated type lists its values, e.g. the states of a state machine.\nstd_logic is the standard 9-valued logic type: 'U' uninitialized, 'X' unknown, '0', '1', 'Z' high impedance, 'W', 'L', 'H' weak, '-' don't care.\nConstants: constant BUS_SIZE: integer := 32;",
+  "code": "type traffic_light_state is (reset, stop, wait_s, go);\nsubtype bitnum is integer range 31 downto 0;\nconstant BUS_SIZE: integer := 32;          -- width of component\nconstant MSB: integer := BUS_SIZE-1;      -- bit number of MSB",
+  "explain": "[NOTE] The slide's state list is (reset, stop, wait, go). But wait is a reserved word in VHDL, so that line does not compile; the code here renames it wait_s.",
+  "wrong_right": {
+   "wrong": "A := B;   -- for a signal\nX <= Y;   -- for a variable",
+   "right": "A <= B;   -- signal: updated at a later time point\nX := Y;   -- variable: updated instantly",
+   "reason": "Signals are assigned with <=, variables (and constants) with :=."
+  },
+  "quick_check": {
+   "q": "Which std_logic value means high impedance?",
+   "a": "'Z'."
+  },
+  "id": {
+   "chapter": "5. Bahasa Deskripsi Perangkat Keras (VHDL)",
+   "title": "Tipe Enumerasi, std_logic, dan Konstanta",
+   "body": "Tipe enumerasi mendaftar nilai-nilainya, misalnya keadaan sebuah state machine.\nstd_logic adalah tipe logika standar 9 nilai: 'U' belum diinisialisasi, 'X' tidak diketahui, '0', '1', 'Z' impedansi tinggi, 'W', 'L', 'H' lemah, '-' don't care.\nKonstanta: constant BUS_SIZE: integer := 32;",
+   "quick_check": {
+    "q": "Nilai std_logic mana yang berarti impedansi tinggi?",
+    "a": "'Z'."
+   },
+   "explain": "[NOTE] Daftar keadaan di slide adalah (reset, stop, wait, go). Tetapi wait adalah kata kunci di VHDL, jadi baris itu tidak bisa dikompilasi; kode di sini menggantinya menjadi wait_s.",
+   "wrong_right_reason": "Sinyal diberi nilai dengan <=, variabel (dan konstanta) dengan :=."
+  }
+ },
+ {
+  "chapter": "5. Hardware Description Languages (VHDL)",
+  "title": "Arrays, Slices and Concatenation",
+  "tag": "HOW",
+  "body": "type byte is array (7 downto 0) of STD_LOGIC; the leftmost index comes first.\nLiterals: B := \"11111111\"; or W := (0=>'0', 8=>'0', others=>'1');\nSlice: W(15 downto 8). Join with &.\nstd_logic_vector is an unconstrained array: array (natural range <>) of STD_LOGIC.",
+  "wrong_right": {
+   "wrong": "'0' & '1' & '1Z'",
+   "right": "'0' & '1' & '1' & 'Z'   -- = \"011Z\"",
+   "reason": "[NOTE] The slide writes '1Z', which is not a valid literal: single quotes hold exactly one character. Two characters need double quotes: '0' & '1' & \"1Z\" also works."
+  },
+  "quick_check": {
+   "q": "For type byte above, which index is the leftmost element?",
+   "a": "7."
+  },
+  "id": {
+   "chapter": "5. Bahasa Deskripsi Perangkat Keras (VHDL)",
+   "title": "Array, Slice, dan Konkatenasi",
+   "body": "type byte is array (7 downto 0) of STD_LOGIC; indeks paling kiri muncul pertama.\nLiteral: B := \"11111111\"; atau W := (0=>'0', 8=>'0', others=>'1');\nSlice: W(15 downto 8). Gabungkan dengan &.\nstd_logic_vector adalah array tak terbatas: array (natural range <>) of STD_LOGIC.",
+   "quick_check": {
+    "q": "Untuk tipe byte di atas, indeks mana elemen paling kiri?",
+    "a": "7."
+   },
+   "wrong_right_reason": "[NOTE] Slide menulis '1Z', yang bukan literal valid: tanda kutip tunggal hanya berisi satu karakter. Dua karakter perlu kutip ganda: '0' & '1' & \"1Z\" juga benar."
+  }
+ },
+ {
+  "chapter": "5. Hardware Description Languages (VHDL)",
+  "title": "Functions",
+  "tag": "HOW",
+  "body": "A function takes arguments and returns one result. Its body is sequential statements (run in order, like software).\nHere the inhibit gate (X but not Y) is rewritten using a function ButNot.",
+  "code": "architecture Inhibit_archf of Inhibit is\n  function ButNot (A, B: bit) return bit is\n  begin\n    if B = '0' then return A;\n    else return '0';\n    end if;\n  end ButNot;\nbegin\n  Z <= ButNot(X, Y);\nend Inhibit_archf;",
+  "quick_check": {
+   "q": "What does ButNot('1', '1') return?",
+   "a": "'0' (B = '1', so the else branch runs)."
+  },
+  "id": {
+   "chapter": "5. Bahasa Deskripsi Perangkat Keras (VHDL)",
+   "title": "Fungsi",
+   "body": "Fungsi menerima argumen dan mengembalikan satu hasil. Isinya pernyataan sekuensial (dijalankan berurutan, seperti perangkat lunak).\nDi sini gerbang inhibit (X tetapi bukan Y) ditulis ulang memakai fungsi ButNot.",
+   "quick_check": {
+    "q": "Apa hasil ButNot('1', '1')?",
+    "a": "'0' (B = '1', jadi cabang else yang berjalan)."
+   }
+  }
+ },
+ {
+  "chapter": "5. Hardware Description Languages (VHDL)",
+  "title": "CONV_INTEGER: Vector to Integer",
+  "tag": "HOW",
+  "body": "Walk the bits from left to right: double the result, then add 1 if the bit is '1' (or 'H').\n\"10011\": 0→1→2→4→9→19.",
+  "code": "function CONV_INTEGER (X: STD_LOGIC_VECTOR) return INTEGER is\n  variable RESULT: INTEGER;\nbegin\n  RESULT := 0;\n  for i in X'range loop          -- X'range: the index range of X\n    RESULT := RESULT * 2;\n    case X(i) is\n      when '0' | 'L' => null;\n      when '1' | 'H' => RESULT := RESULT + 1;\n      when others    => null;\n    end case;\n  end loop;\n  return RESULT;\nend CONV_INTEGER;",
+  "explain": "This is Horner's rule: 10011₂ = (((1·2 + 0)·2 + 0)·2 + 1)·2 + 1 = 19. Doubling shifts everything already read one place to the left.",
+  "demo": "vhdl-loop",
+  "quick_check": {
+   "q": "What does CONV_INTEGER(\"0110\") return?",
+   "a": "6 (0→0→1→3→6)."
+  },
+  "id": {
+   "chapter": "5. Bahasa Deskripsi Perangkat Keras (VHDL)",
+   "title": "CONV_INTEGER: Vektor ke Integer",
+   "body": "Telusuri bit dari kiri ke kanan: gandakan hasil, lalu tambah 1 jika bitnya '1' (atau 'H').\n\"10011\": 0→1→2→4→9→19.",
+   "quick_check": {
+    "q": "Apa hasil CONV_INTEGER(\"0110\")?",
+    "a": "6 (0→0→1→3→6)."
+   },
+   "explain": "Ini aturan Horner: 10011₂ = (((1·2 + 0)·2 + 0)·2 + 1)·2 + 1 = 19. Menggandakan menggeser semua yang sudah dibaca satu posisi ke kiri."
+  }
+ },
+ {
+  "chapter": "5. Hardware Description Languages (VHDL)",
+  "title": "CONV_STD_LOGIC_VECTOR: Integer to Vector",
+  "tag": "HOW",
+  "body": "The reverse: repeated division by 2. Each remainder (temp mod 2) becomes the next bit, starting at bit 0 (the LSB).\nARG = 19, SIZE = 5: remainders 1, 1, 0, 0, 1 → result = \"10011\".",
+  "code": "function CONV_STD_LOGIC_VECTOR (ARG: INTEGER; SIZE: INTEGER)\n    return STD_LOGIC_VECTOR is\n  variable result: STD_LOGIC_VECTOR(SIZE-1 downto 0);\n  variable temp: integer;\nbegin\n  temp := ARG;\n  for i in 0 to SIZE-1 loop\n    if (temp mod 2) = 1 then result(i) := '1';\n    else result(i) := '0';\n    end if;\n    temp := temp / 2;\n  end loop;\n  return result;\nend;",
+  "explain": "[NOTE] The slide writes 'variable temp: integer' with no semicolon; it is added here so the function compiles. This is the same 'repeated division' method as decimal-to-binary in Chapter 2.",
+  "demo": "vhdl-loop",
+  "quick_check": {
+   "q": "CONV_STD_LOGIC_VECTOR(6, 4) = ?",
+   "a": "\"0110\"."
+  },
+  "id": {
+   "chapter": "5. Bahasa Deskripsi Perangkat Keras (VHDL)",
+   "title": "CONV_STD_LOGIC_VECTOR: Integer ke Vektor",
+   "body": "Kebalikannya: pembagian berulang dengan 2. Setiap sisa (temp mod 2) menjadi bit berikutnya, mulai dari bit 0 (LSB).\nARG = 19, SIZE = 5: sisa 1, 1, 0, 0, 1 → result = \"10011\".",
+   "quick_check": {
+    "q": "CONV_STD_LOGIC_VECTOR(6, 4) = ?",
+    "a": "\"0110\"."
+   },
+   "explain": "[NOTE] Slide menulis 'variable temp: integer' tanpa titik koma; di sini ditambahkan agar fungsinya bisa dikompilasi. Ini metode 'pembagian berulang' yang sama dengan desimal ke biner di Bab 2."
+  }
+ },
+ {
+  "chapter": "5. Hardware Description Languages (VHDL)",
+  "title": "Libraries and Packages",
+  "tag": "WHAT",
+  "body": "A library is where the compiler stores a project's analysed units; your own design goes into the library work automatically.\nA package holds shared definitions (types, constants, functions, components). use makes them visible.",
+  "code": "library IEEE;\nuse IEEE.std_logic_1164.all;     -- everything in the package\n-- use IEEE.std_logic_1164.std_ulogic;  would import only that one name\n\npackage my_defs is               -- declarations: what other units can see\n  constant BUS_SIZE: integer := 32;\n  function ButNot (A, B: bit) return bit;\nend my_defs;\n\npackage body my_defs is          -- bodies of the functions and procedures\n  function ButNot (A, B: bit) return bit is\n  begin\n    if B = '0' then return A; else return '0'; end if;\n  end ButNot;\nend my_defs;\n\n-- another file:  use work.my_defs.all;",
+  "explain": "A procedure is like a function but returns no result. A function call stands in place of an expression; a procedure call stands in place of a statement, and its arguments may be out or inout.",
+  "quick_check": {
+   "q": "Which line makes std_logic available?",
+   "a": "use IEEE.std_logic_1164.all; (after library IEEE;)."
+  },
+  "id": {
+   "chapter": "5. Bahasa Deskripsi Perangkat Keras (VHDL)",
+   "title": "Library dan Package",
+   "body": "Library adalah tempat compiler menyimpan unit yang sudah dianalisis; desain kita otomatis masuk ke library work.\nPackage berisi definisi bersama (tipe, konstanta, fungsi, komponen). use membuatnya terlihat.",
+   "quick_check": {
+    "q": "Baris mana yang membuat std_logic tersedia?",
+    "a": "use IEEE.std_logic_1164.all; (setelah library IEEE;)."
+   },
+   "explain": "Procedure mirip fungsi tetapi tidak mengembalikan hasil. Pemanggilan fungsi menggantikan ekspresi; pemanggilan procedure menggantikan pernyataan, dan argumennya boleh out atau inout."
+  }
+ },
+ {
+  "chapter": "5. Hardware Description Languages (VHDL)",
+  "title": "Structural Design: the Prime Detector",
+  "tag": "HOW",
+  "body": "A structural architecture declares components and wires them with port map, exactly like a schematic.\nF = 1 when the 4-bit input N is prime (1, 2, 3, 5, 7, 11, 13, counting 1 as on the slides).\nAll the statements are concurrent: their order doesn't matter.",
+  "formula": [
+   "F = N_3'N_0 + N_3'N_2'N_1 + N_2'N_1N_0 + N_2N_1'N_0"
+  ],
+  "code": "architecture prime1_arch of prime is\n  signal N3_L, N2_L, N1_L: STD_LOGIC;\n  signal N3L_N0, N3L_N2L_N1, N2L_N1_N0, N2_N1L_N0: STD_LOGIC;\n  component INV port (I: in STD_LOGIC; O: out STD_LOGIC); end component;\n  component AND2 port (I0,I1: in STD_LOGIC; O: out STD_LOGIC); end component;\n  component AND3 port (I0,I1,I2: in STD_LOGIC; O: out STD_LOGIC); end component;\n  component OR4 port (I0,I1,I2,I3: in STD_LOGIC; O: out STD_LOGIC); end component;\nbegin\n  U1: INV port map (N(3), N3_L);\n  U2: INV port map (N(2), N2_L);\n  U3: INV port map (N(1), N1_L);\n  U4: AND2 port map (N3_L, N(0), N3L_N0);\n  U5: AND3 port map (N3_L, N2_L, N(1), N3L_N2L_N1);\n  U6: AND3 port map (N2_L, N(1), N(0), N2L_N1_N0);\n  U7: AND3 port map (N(2), N1_L, N(0), N2_N1L_N0);\n  U8: OR4 port map (N3L_N0, N3L_N2L_N1, N2L_N1_N0, N2_N1L_N0, F);\nend prime1_arch;",
+  "explain": "Ports can be connected by position, as here, or by name: U4: AND2 port map (I0 => N3_L, I1 => N(0), O => N3L_N0); naming is safer when a component has many ports.",
+  "quick_check": {
+   "q": "What does U4 compute?",
+   "a": "N3′·N0 (the inverted N(3) AND N(0))."
+  },
+  "id": {
+   "chapter": "5. Bahasa Deskripsi Perangkat Keras (VHDL)",
+   "title": "Desain Struktural: Detektor Bilangan Prima",
+   "body": "Architecture struktural mendeklarasikan komponen dan menghubungkannya dengan port map, persis seperti skematik.\nF = 1 jika input 4-bit N prima (1, 2, 3, 5, 7, 11, 13; 1 dihitung seperti di slide).\nSemua pernyataan bersifat konkuren: urutannya tidak berpengaruh.",
+   "quick_check": {
+    "q": "Apa yang dihitung U4?",
+    "a": "N3′·N0 (N(3) yang dibalik AND N(0))."
+   },
+   "explain": "Port bisa dihubungkan berdasarkan posisi, seperti di sini, atau berdasarkan nama: U4: AND2 port map (I0 => N3_L, I1 => N(0), O => N3L_N0); penamaan lebih aman jika komponen punya banyak port."
+  }
+ },
+ {
+  "chapter": "5. Hardware Description Languages (VHDL)",
+  "title": "Generate and Generic",
+  "tag": "HOW",
+  "body": "for … generate makes many copies of a structure without writing each one.\ngeneric leaves a parameter (like a bus width) open until the entity is instantiated with generic map.",
+  "code": "entity businv is\n  generic (WIDTH: positive);\n  port ( X: in STD_LOGIC_VECTOR (WIDTH-1 downto 0);\n         Y: out STD_LOGIC_VECTOR (WIDTH-1 downto 0) );\nend businv;\n\narchitecture businv_arch of businv is\n  component INV port (I: in STD_LOGIC; O: out STD_LOGIC); end component;\nbegin\n  g1: for b in WIDTH-1 downto 0 generate\n    U1: INV port map (X(b), Y(b));\n  end generate;\nend businv_arch;\n\n-- using it:  U1: businv generic map (WIDTH=>8) port map (IN8, OUT8);",
+  "explain": "[NOTE] The slide's businv ends with 'end businv_arch' and no semicolon; it is added here. One entity now serves 8-, 16- and 32-bit buses.",
+  "quick_check": {
+   "q": "How many INV gates does businv generic map (WIDTH=>16) create?",
+   "a": "16."
+  },
+  "id": {
+   "chapter": "5. Bahasa Deskripsi Perangkat Keras (VHDL)",
+   "title": "Generate dan Generic",
+   "body": "for … generate membuat banyak salinan sebuah struktur tanpa menulisnya satu per satu.\ngeneric membiarkan parameter (seperti lebar bus) terbuka sampai entity diinstansiasi dengan generic map.",
+   "quick_check": {
+    "q": "Berapa gerbang INV yang dibuat businv generic map (WIDTH=>16)?",
+    "a": "16."
+   },
+   "explain": "[NOTE] businv di slide diakhiri 'end businv_arch' tanpa titik koma; di sini ditambahkan. Satu entity kini melayani bus 8, 16, dan 32 bit."
+  }
+ },
+ {
+  "chapter": "5. Hardware Description Languages (VHDL)",
+  "title": "Dataflow Design",
+  "tag": "HOW",
+  "body": "Describe the flow of data with concurrent signal assignments:\n• signal <= expression;\n• when … else (conditional)\n• with … select (selected): picks the value whose choice matches.\nnot has the highest precedence, so no parentheses are needed.",
+  "code": "architecture prime2_arch of prime is      -- dataflow\n  signal N3L_N0, N3L_N2L_N1, N2L_N1_N0, N2_N1L_N0: STD_LOGIC;\nbegin\n  N3L_N0     <= not N(3) and N(0);\n  N3L_N2L_N1 <= not N(3) and not N(2) and N(1);\n  N2L_N1_N0  <= not N(2) and N(1) and N(0);\n  N2_N1L_N0  <= N(2) and not N(1) and N(0);\n  F <= N3L_N0 or N3L_N2L_N1 or N2L_N1_N0 or N2_N1L_N0;\nend prime2_arch;\n\narchitecture prime4_arch of prime is      -- selected assignment\nbegin\n  with N select\n    F <= '1' when \"0001\" | \"0010\" | \"0011\" | \"0101\" | \"0111\"\n                | \"1011\" | \"1101\",\n         '0' when others;\nend prime4_arch;",
+  "wrong_right": {
+   "wrong": "S <= X_xor_Y xor CIN\nCOUT <= X_CIN or Y_CIN or X_Y;",
+   "right": "S    <= X_xor_Y xor CIN;\nCOUT <= X_CIN or Y_CIN or X_Y;",
+   "reason": "[ADDED] Each assignment ends with a semicolon. (This is the slide's own full-adder practice, p60, which is correct.)"
+  },
+  "practice": "PS4",
+  "quick_check": {
+   "q": "In prime4, what is F for N = \"1001\" (9)?",
+   "a": "'0': 9 is not in the list, so 'others' applies."
+  },
+  "id": {
+   "chapter": "5. Bahasa Deskripsi Perangkat Keras (VHDL)",
+   "title": "Desain Dataflow",
+   "body": "Deskripsikan aliran data dengan penugasan sinyal konkuren:\n• signal <= ekspresi;\n• when … else (bersyarat)\n• with … select (terpilih): memilih nilai yang pilihannya cocok.\nnot punya prioritas tertinggi, jadi tidak perlu tanda kurung.",
+   "quick_check": {
+    "q": "Pada prime4, berapa F untuk N = \"1001\" (9)?",
+    "a": "'0': 9 tidak ada di daftar, jadi 'others' berlaku."
+   },
+   "wrong_right_reason": "[ADDED] Setiap penugasan diakhiri titik koma. (Ini latihan full adder di slide, hlm. 60, yang sudah benar.)"
+  }
+ },
+ {
+  "chapter": "5. Hardware Description Languages (VHDL)",
+  "title": "Processes: Behavioral Design",
+  "tag": "WHAT",
+  "body": "A process holds SEQUENTIAL statements and runs in parallel with everything else.\nIt is suspended until a signal in its sensitivity list changes, then runs to the end.\nA process may declare variables (local, updated at once) but not signals.",
+  "code": "architecture prime6_arch of prime is\nbegin\n  process(N)\n    variable N3L_N0, N3L_N2L_N1, N2L_N1_N0, N2_N1L_N0: STD_LOGIC;\n  begin\n    N3L_N0     := not N(3) and N(0);\n    N3L_N2L_N1 := not N(3) and not N(2) and N(1);\n    N2L_N1_N0  := not N(2) and N(1) and N(0);\n    N2_N1L_N0  := N(2) and not N(1) and N(0);\n    F <= N3L_N0 or N3L_N2L_N1 or N2L_N1_N0 or N2_N1L_N0;\n  end process;\nend prime6_arch;",
+  "quick_check": {
+   "q": "When does process(N) run?",
+   "a": "Whenever N changes value."
+  },
+  "id": {
+   "chapter": "5. Bahasa Deskripsi Perangkat Keras (VHDL)",
+   "title": "Process: Desain Behavioral",
+   "body": "Process berisi pernyataan SEKUENSIAL dan berjalan paralel dengan semua yang lain.\nProcess berhenti sampai sebuah sinyal di daftar sensitivitasnya berubah, lalu berjalan sampai akhir.\nProcess boleh mendeklarasikan variabel (lokal, langsung diperbarui) tetapi tidak sinyal.",
+   "quick_check": {
+    "q": "Kapan process(N) berjalan?",
+    "a": "Setiap kali N berubah nilai."
+   }
+  }
+ },
+ {
+  "chapter": "5. Hardware Description Languages (VHDL)",
+  "title": "if, case and Loops",
+  "tag": "HOW",
+  "body": "if … then … elsif … else … end if;\ncase expression is when choices => … end case;\nLoops: loop … end loop; for i in range loop … end loop; while condition loop … end loop;\nThe for-loop variable is declared automatically.",
+  "code": "architecture prime7_arch of prime is\nbegin\n  process(N)\n    variable NI: INTEGER;\n  begin\n    NI := CONV_INTEGER(N);\n    if NI=1 or NI=2 then F <= '1';\n    elsif NI=3 or NI=5 or NI=7 or NI=11 or NI=13 then F <= '1';\n    else F <= '0';\n    end if;\n  end process;\nend prime7_arch;\n\narchitecture prime8_arch of prime is\nbegin\n  process(N)\n  begin\n    case CONV_INTEGER(N) is\n      when 1 => F <= '1';\n      when 2 => F <= '1';\n      when 3 | 5 | 7 | 11 | 13 => F <= '1';\n      when others => F <= '0';\n    end case;\n  end process;\nend prime8_arch;",
+  "explain": "[NOTE] prime8 on the slides also declares 'variable NI: INTEGER;' without using it; it is removed here. The slide's final 'when others => F <= ‘0'' uses a curly quote, which must be a straight ' in code.",
+  "wrong_right": {
+   "wrong": "elseif NI=3 then F <= '1';",
+   "right": "elsif NI=3 then F <= '1';",
+   "reason": "[NOTE] The syntax slide (p70) writes 'elseif'. The VHDL keyword is 'elsif' (the slide's own example on p71 spells it correctly)."
+  },
+  "quick_check": {
+   "q": "Which keyword ends a case statement?",
+   "a": "end case;"
+  },
+  "id": {
+   "chapter": "5. Bahasa Deskripsi Perangkat Keras (VHDL)",
+   "title": "if, case, dan Perulangan",
+   "body": "if … then … elsif … else … end if;\ncase ekspresi is when pilihan => … end case;\nPerulangan: loop … end loop; for i in range loop … end loop; while kondisi loop … end loop;\nVariabel for-loop dideklarasikan otomatis.",
+   "quick_check": {
+    "q": "Kata kunci apa yang mengakhiri pernyataan case?",
+    "a": "end case;"
+   },
+   "explain": "[NOTE] prime8 di slide juga mendeklarasikan 'variable NI: INTEGER;' tanpa memakainya; di sini dihapus. 'when others => F <= ‘0'' di slide memakai kutip melengkung, yang harus kutip lurus ' di kode.",
+   "wrong_right_reason": "[NOTE] Slide sintaks (hlm. 70) menulis 'elseif'. Kata kunci VHDL adalah 'elsif' (contoh di slide hlm. 71 menulisnya dengan benar)."
+  }
+ },
+ {
+  "chapter": "5. Hardware Description Languages (VHDL)",
+  "title": "Good Code, Bad Circuit",
+  "tag": "WHY",
+  "body": "prime9 tests every divisor with a for loop, so it scales to 8-bit inputs without listing hundreds of primes.\nBut mod needs a divider, and the loop is unrolled into 252 dividers in hardware: very expensive.\nHardware loops are copied, not repeated.",
+  "code": "architecture prime9_arch of prime is\nbegin\n  process(N)\n    variable NI: INTEGER;\n    variable prime: boolean;\n  begin\n    NI := CONV_INTEGER(N);\n    prime := true;\n    if NI=1 or NI=2 then null;      -- boundary cases\n    else\n      for i in 2 to 253 loop\n        if NI mod i = 0 and NI /= i then\n          prime := false; exit;\n        end if;\n      end loop;\n    end if;\n    if prime then F <= '1'; else F <= '0'; end if;\n  end process;\nend prime9_arch;",
+  "demo": "vhdl-loop",
+  "quick_check": {
+   "q": "For NI = 4, when does the loop exit?",
+   "a": "At i = 2: 4 mod 2 = 0 and 4 ≠ 2, so prime := false."
+  },
+  "id": {
+   "chapter": "5. Bahasa Deskripsi Perangkat Keras (VHDL)",
+   "title": "Kode Bagus, Rangkaian Buruk",
+   "body": "prime9 menguji setiap pembagi dengan for loop, jadi bisa dipakai untuk input 8-bit tanpa mendaftar ratusan bilangan prima.\nTetapi mod butuh pembagi (divider), dan loop dibentangkan menjadi 252 divider di perangkat keras: sangat mahal.\nLoop perangkat keras disalin, bukan diulang.",
+   "quick_check": {
+    "q": "Untuk NI = 4, kapan loop berhenti?",
+    "a": "Pada i = 2: 4 mod 2 = 0 dan 4 ≠ 2, jadi prime := false."
+   }
+  }
+ },
+ {
+  "chapter": "5. Hardware Description Languages (VHDL)",
+  "title": "Time, wait and Test Benches",
+  "tag": "HOW",
+  "body": "after models delay: Z <= '1' after 4 ns when X='1' and Y='0' else '0' after 3 ns;\nwait for 10 ns; pauses a process. A bare wait; suspends it forever.\nA test bench has an empty entity, instantiates the unit under test (UUT), and drives inputs; assert … report … severity checks the outputs.",
+  "code": "entity InhibitTBc is\nend InhibitTBc;\n\narchitecture InhibitTB_arch of InhibitTBc is\n  component Inhibit port (X, Y: in BIT; Z: out BIT); end component;\n  signal XT, YT, ZT: BIT;\nbegin\n  U1: Inhibit port map (XT, YT, ZT);\n  process\n  begin\n    report \"Beginning test bench for Inhibit\" severity NOTE;\n    XT <= '0'; YT <= '0'; wait for 10 ns;\n    assert (ZT = '0') report \"Failed - 0,0\" severity ERROR;\n    XT <= '0'; YT <= '1'; wait for 10 ns;\n    assert (ZT = '0') report \"Failed - 0,1\" severity ERROR;\n    XT <= '1'; YT <= '0'; wait for 10 ns;\n    assert (ZT = '1') report \"Failed - 1,0\" severity ERROR;\n    XT <= '1'; YT <= '1'; wait for 10 ns;\n    assert (ZT = '0') report \"Failed - 1,1\" severity ERROR;\n    report \"Ending test bench for Inhibit\" severity NOTE;\n    wait;   -- all done: suspend forever\n  end process;\nend InhibitTB_arch;",
+  "explain": "[NOTE] Fixed from the slide (p79, p83): the entity is InhibTBc but the architecture says InhibitTBc (names must match); 'U1: … port map (XT,YT,ZT)' needs a semicolon; 'Inbibit' is a typo; and the curly quotes must be straight. This version compiles and passes all four asserts.",
+  "quick_check": {
+   "q": "Why does a test bench entity have no ports?",
+   "a": "It is the top level: it creates its own input signals and checks the outputs itself."
+  },
+  "id": {
+   "chapter": "5. Bahasa Deskripsi Perangkat Keras (VHDL)",
+   "title": "Waktu, wait, dan Test Bench",
+   "body": "after memodelkan tunda: Z <= '1' after 4 ns when X='1' and Y='0' else '0' after 3 ns;\nwait for 10 ns; menjeda process. wait; saja menghentikannya selamanya.\nTest bench punya entity kosong, menginstansiasi unit yang diuji (UUT), dan memberi input; assert … report … severity memeriksa output.",
+   "quick_check": {
+    "q": "Mengapa entity test bench tidak punya port?",
+    "a": "Ia tingkat teratas: ia membuat sinyal input sendiri dan memeriksa outputnya sendiri."
+   },
+   "explain": "[NOTE] Diperbaiki dari slide (hlm. 79, 83): entity bernama InhibTBc tetapi architecture menyebut InhibitTBc (nama harus sama); 'U1: … port map (XT,YT,ZT)' butuh titik koma; 'Inbibit' salah ketik; dan kutip melengkung harus lurus. Versi ini bisa dikompilasi dan lolos keempat assert."
+  }
+ },
+ {
+  "chapter": "6. Combinational Logic Design Practices",
+  "title": "Programmable Logic Arrays (PLA)",
+  "tag": "WHAT",
+  "body": "A PLA is a two-level AND-OR device that can be programmed to realize any sum of products, within its limits: n inputs, m outputs and p product terms.\nBoth the AND array and the OR array are programmable, and outputs can share product terms.",
+  "formula": [
+   "F_1 = a'bd + abd + ab'c' + b'c, \\quad F_2 = a'bd + c, \\quad F_3 = abd + ab'c' + bc"
+  ],
+  "explain": "The slide example uses only 6 distinct product terms for 3 outputs: a′bd and abd are each used twice. That sharing is what makes a PLA efficient.",
+  "practice": "PS5",
+  "quick_check": {
+   "q": "A 4×3 PLA with 6 product terms: how many outputs?",
+   "a": "3."
+  },
+  "id": {
+   "chapter": "6. Praktik Desain Logika Kombinasional",
+   "title": "Programmable Logic Array (PLA)",
+   "body": "PLA adalah perangkat AND-OR dua tingkat yang bisa diprogram untuk merealisasikan jumlah hasil kali apa pun, dalam batasnya: n input, m output, dan p suku hasil kali.\nLarik AND dan larik OR sama-sama bisa diprogram, dan output bisa berbagi suku hasil kali.",
+   "quick_check": {
+    "q": "PLA 4×3 dengan 6 suku hasil kali: berapa outputnya?",
+    "a": "3."
+   },
+   "explain": "Contoh di slide hanya memakai 6 suku hasil kali berbeda untuk 3 output: a′bd dan abd masing-masing dipakai dua kali. Berbagi inilah yang membuat PLA efisien."
+  }
+ },
+ {
+  "chapter": "6. Combinational Logic Design Practices",
+  "title": "PAL and GAL Devices",
+  "tag": "WHAT",
+  "body": "PAL: a special PLA whose AND array is programmable (with fuses) but whose OR array is fixed; each output gets its own fixed set of AND terms. Example: PAL16L8.\nGAL (Lattice): a reprogrammable PLD; the GAL16V8 can be configured to behave like a PAL16L8.",
+  "practice": "PS5",
+  "quick_check": {
+   "q": "Can two PAL outputs share one product term?",
+   "a": "No. The OR array is fixed, so each output has its own AND terms."
+  },
+  "id": {
+   "chapter": "6. Praktik Desain Logika Kombinasional",
+   "title": "Perangkat PAL dan GAL",
+   "body": "PAL: PLA khusus yang larik AND-nya bisa diprogram (dengan sekering) tetapi larik OR-nya tetap; setiap output mendapat kelompok suku AND tetapnya sendiri. Contoh: PAL16L8.\nGAL (Lattice): PLD yang bisa diprogram ulang; GAL16V8 bisa dikonfigurasi agar berperilaku seperti PAL16L8.",
+   "quick_check": {
+    "q": "Bisakah dua output PAL berbagi satu suku hasil kali?",
+    "a": "Tidak. Larik OR tetap, jadi setiap output punya suku AND sendiri."
+   }
+  }
+ },
+ {
+  "chapter": "6. Combinational Logic Design Practices",
+  "title": "Binary Decoders",
+  "tag": "WHAT",
+  "body": "An n-to-2ⁿ decoder turns an n-bit code into one active output: only the output whose number equals the input is 1.\nEach output is a minterm. Enable inputs must be active, or every output takes the 'disabled' value.",
+  "formula": [
+   "F_0 = X'Y', \\quad F_1 = X'Y, \\quad F_2 = XY', \\quad F_3 = XY"
+  ],
+  "demo": "decoder-mux",
+  "quick_check": {
+   "q": "A 3-to-8 decoder gets input 101. Which output is active?",
+   "a": "Y5."
+  },
+  "id": {
+   "chapter": "6. Praktik Desain Logika Kombinasional",
+   "title": "Decoder Biner",
+   "body": "Decoder n-ke-2ⁿ mengubah kode n-bit menjadi satu output aktif: hanya output yang nomornya sama dengan input yang bernilai 1.\nSetiap output adalah minterm. Input enable harus aktif, jika tidak semua output mengambil nilai 'nonaktif'.",
+   "quick_check": {
+    "q": "Decoder 3-ke-8 mendapat input 101. Output mana yang aktif?",
+    "a": "Y5."
+   }
+  }
+ },
+ {
+  "chapter": "6. Combinational Logic Design Practices",
+  "title": "The 74x138 and Cascading",
+  "tag": "HOW",
+  "body": "The 74x138 is a 3-to-8 decoder with active-low outputs (Y_L) and three enables: G1 (active high), G2A_L and G2B_L (active low).\nLarger decoders are cascaded: use the extra high bits to enable one of several smaller decoders (two 3-to-8s make a 4-to-16).",
+  "explain": "Active-low means 'asserted = 0'. The _L suffix in a signal name reminds you of that. A bubble on a symbol marks an active-low pin; drawing a bubble AND an _L name would be a double negation (the slides call that incorrect).",
+  "demo": "decoder-mux",
+  "quick_check": {
+   "q": "A = 011, G1 = 1, G2A_L = G2B_L = 0. Which output is LOW?",
+   "a": "Y3_L; all the others stay HIGH."
+  },
+  "id": {
+   "chapter": "6. Praktik Desain Logika Kombinasional",
+   "title": "74x138 dan Cascading",
+   "body": "74x138 adalah decoder 3-ke-8 dengan output aktif-rendah (Y_L) dan tiga enable: G1 (aktif tinggi), G2A_L dan G2B_L (aktif rendah).\nDecoder yang lebih besar dibuat dengan cascading: bit tinggi tambahan dipakai untuk mengaktifkan salah satu decoder kecil (dua 3-ke-8 menjadi 4-ke-16).",
+   "quick_check": {
+    "q": "A = 011, G1 = 1, G2A_L = G2B_L = 0. Output mana yang LOW?",
+    "a": "Y3_L; semua lainnya tetap HIGH."
+   },
+   "explain": "Aktif-rendah berarti 'aktif = 0'. Akhiran _L di nama sinyal mengingatkan hal itu. Gelembung di simbol menandai pin aktif-rendah; menggambar gelembung DAN nama _L akan menjadi negasi ganda (slide menyebutnya salah)."
+  }
+ },
+ {
+  "chapter": "6. Combinational Logic Design Practices",
+  "title": "Decoders in VHDL",
+  "tag": "HOW",
+  "body": "Dataflow style: a selected assignment produces the 8 active-low patterns, and a conditional assignment applies the enables.",
+  "code": "entity V74x138 is\n  port ( G1:    in STD_LOGIC;                     -- enable inputs\n         G2A_L: in STD_LOGIC;\n         G2B_L: in STD_LOGIC;\n         A:     in STD_LOGIC_VECTOR (2 downto 0); -- select inputs\n         Y_L:   out STD_LOGIC_VECTOR (0 to 7) );  -- decoded outputs\nend V74x138;\n\narchitecture V74x138_a of V74x138 is\n  signal Y_L_i: STD_LOGIC_VECTOR (0 to 7);\nbegin\n  with A select Y_L_i <=\n    \"01111111\" when \"000\",\n    \"10111111\" when \"001\",\n    \"11011111\" when \"010\",\n    \"11101111\" when \"011\",\n    \"11110111\" when \"100\",\n    \"11111011\" when \"101\",\n    \"11111101\" when \"110\",\n    \"11111110\" when \"111\",\n    \"11111111\" when others;\n  Y_L <= Y_L_i when (G1 and not G2A_L and not G2B_L) = '1'\n         else \"11111111\";\nend V74x138_a;",
+  "explain": "[NOTE] One slide (p27) is titled 'VHDL for 3-to-8 decoder' but shows the structural 2-to-4 decoder V2to4dec_s (two inverters and four 3-input ANDs with EN). The 3-to-8 version is this V74x138.",
+  "quick_check": {
+   "q": "What is Y_L when G1 = 0?",
+   "a": "\"11111111\": the decoder is disabled."
+  },
+  "id": {
+   "chapter": "6. Praktik Desain Logika Kombinasional",
+   "title": "Decoder dalam VHDL",
+   "body": "Gaya dataflow: penugasan terpilih menghasilkan 8 pola aktif-rendah, dan penugasan bersyarat menerapkan enable.",
+   "quick_check": {
+    "q": "Berapa Y_L jika G1 = 0?",
+    "a": "\"11111111\": decoder nonaktif."
+   },
+   "explain": "[NOTE] Satu slide (hlm. 27) berjudul 'VHDL for 3-to-8 decoder' tetapi menampilkan decoder 2-ke-4 struktural V2to4dec_s (dua inverter dan empat AND 3-input dengan EN). Versi 3-ke-8 adalah V74x138 ini."
+  }
+ },
+ {
+  "chapter": "6. Combinational Logic Design Practices",
+  "title": "Functions from a Decoder and a NAND",
+  "tag": "HOW",
+  "body": "A decoder already produces every minterm. Write F as a canonical sum, then OR the decoder outputs for those minterms.\nWith active-low outputs, the OR becomes a NAND (DeMorgan): F = (Y_L₁ · Y_L₂ · …)′.",
+  "formula": [
+   "F = Y_1 + Y_2 + Y_7 = \\big(\\overline{Y_1}\\cdot\\overline{Y_2}\\cdot\\overline{Y_7}\\big)'"
+  ],
+  "demo": "decoder-mux",
+  "practice": "PS5",
+  "quick_check": {
+   "q": "F = Σ(1, 2, 7) with a 74x138: which outputs go into the NAND?",
+   "a": "Y1_L, Y2_L and Y7_L."
+  },
+  "id": {
+   "chapter": "6. Praktik Desain Logika Kombinasional",
+   "title": "Fungsi dari Decoder dan NAND",
+   "body": "Decoder sudah menghasilkan setiap minterm. Tulis F sebagai jumlah kanonik, lalu OR-kan output decoder untuk minterm tersebut.\nDengan output aktif-rendah, OR berubah menjadi NAND (DeMorgan): F = (Y_L₁ · Y_L₂ · …)′.",
+   "quick_check": {
+    "q": "F = Σ(1, 2, 7) dengan 74x138: output mana yang masuk ke NAND?",
+    "a": "Y1_L, Y2_L, dan Y7_L."
+   }
+  }
+ },
+ {
+  "chapter": "6. Combinational Logic Design Practices",
+  "title": "Encoders and Priority Encoders",
+  "tag": "WHAT",
+  "body": "An encoder does the reverse of a decoder: 2ⁿ inputs → an n-bit code. A plain binary encoder assumes exactly one input is 1.\nA priority encoder reports the HIGHEST active input (I7 first), and IDLE when none is active. The 74x148 has active-low I/O.",
+  "formula": [
+   "Y_0 = I_1 + I_3 + I_5 + I_7,\\quad Y_1 = I_2 + I_3 + I_6 + I_7,\\quad Y_2 = I_4 + I_5 + I_6 + I_7",
+   "H_7 = I_7,\\quad H_6 = I_6 I_7',\\quad H_5 = I_5 I_6' I_7',\\ \\ldots \\qquad A_2 = H_4 + H_5 + H_6 + H_7"
+  ],
+  "quick_check": {
+   "q": "8-input priority encoder, I2 and I5 are 1. Output A2A1A0?",
+   "a": "101 (I5 wins)."
+  },
+  "id": {
+   "chapter": "6. Praktik Desain Logika Kombinasional",
+   "title": "Encoder dan Priority Encoder",
+   "body": "Encoder melakukan kebalikan decoder: 2ⁿ input → kode n-bit. Encoder biner biasa menganggap tepat satu input bernilai 1.\nPriority encoder melaporkan input aktif TERTINGGI (I7 lebih dulu), dan IDLE jika tidak ada yang aktif. 74x148 punya I/O aktif-rendah.",
+   "quick_check": {
+    "q": "Priority encoder 8 input, I2 dan I5 bernilai 1. Output A2A1A0?",
+    "a": "101 (I5 menang)."
+   }
+  }
+ },
+ {
+  "chapter": "6. Combinational Logic Design Practices",
+  "title": "Three-State Buffers",
+  "tag": "WHAT",
+  "body": "A three-state buffer outputs 0, 1 or Z (high impedance, effectively disconnected).\nThis lets several devices share one 'party line' or bus, as long as only one talks at a time.\nExample: a 74x541 as a microprocessor input port, enabled only when INSEL1 and READ are asserted.",
+  "quick_check": {
+   "q": "What happens if two enabled three-state drivers fight on one bus?",
+   "a": "The bus is undefined (and the chips can be damaged): only one may be enabled at a time."
+  },
+  "id": {
+   "chapter": "6. Praktik Desain Logika Kombinasional",
+   "title": "Buffer Tiga Keadaan",
+   "body": "Buffer tiga keadaan mengeluarkan 0, 1, atau Z (impedansi tinggi, praktis terputus).\nIni memungkinkan beberapa perangkat berbagi satu 'jalur bersama' atau bus, asalkan hanya satu yang 'bicara' pada satu waktu.\nContoh: 74x541 sebagai port input mikroprosesor, aktif hanya saat INSEL1 dan READ di-assert.",
+   "quick_check": {
+    "q": "Apa yang terjadi jika dua driver tiga keadaan aktif bersamaan di satu bus?",
+    "a": "Nilai bus tidak terdefinisi (dan chip bisa rusak): hanya satu yang boleh aktif pada satu waktu."
+   }
+  }
+ },
+ {
+  "chapter": "6. Combinational Logic Design Practices",
+  "title": "Multiplexers",
+  "tag": "WHAT",
+  "body": "A MUX is a digital switch: s select bits choose one of n = 2ˢ data inputs and connect it to the output.\nLarger MUXes are built from smaller ones: two 4:1 MUXes plus a 2:1 MUX make an 8:1.",
+  "formula": [
+   "Y = \\sum_{i=0}^{7} m_i\\, D_i = C'B'A'D_0 + C'B'AD_1 + \\cdots + CBAD_7"
+  ],
+  "demo": "decoder-mux",
+  "quick_check": {
+   "q": "An 8:1 MUX has CBA = 110. Which input reaches Y?",
+   "a": "D6."
+  },
+  "id": {
+   "chapter": "6. Praktik Desain Logika Kombinasional",
+   "title": "Multiplexer",
+   "body": "MUX adalah saklar digital: s bit pemilih memilih salah satu dari n = 2ˢ input data dan menghubungkannya ke output.\nMUX yang lebih besar dibangun dari yang kecil: dua MUX 4:1 plus satu MUX 2:1 menjadi 8:1.",
+   "quick_check": {
+    "q": "MUX 8:1 dengan CBA = 110. Input mana yang sampai ke Y?",
+    "a": "D6."
+   }
+  }
+ },
+ {
+  "chapter": "6. Combinational Logic Design Practices",
+  "title": "Functions from a Multiplexer",
+  "tag": "HOW",
+  "body": "Same number of variables as select lines: each data input is the function's value (0 or 1) for that row.\nOne variable more: use the other variables as the select lines, and feed each Dᵢ with 0, 1, the extra variable or its complement.",
+  "formula": [
+   "\\text{8:1 example: } D_0..D_7 = 0,0,0,1,0,1,1,1 \\;\\Rightarrow\\; F = \\Sigma(3,5,6,7)",
+   "\\text{4:1 example: } D_0 = Z,\\ D_1 = 1,\\ D_2 = 1,\\ D_3 = Z'"
+  ],
+  "explain": "Why it works: the MUX output is Σ mᵢ·Dᵢ over the select minterms. Splitting F into the same minterms of the select variables (Shannon expansion) tells you exactly what each Dᵢ must be.",
+  "demo": "decoder-mux",
+  "quick_check": {
+   "q": "F(X,Y,Z) with a 4:1 MUX, XY as select. The rows XY = 00 give F = Z. What is D0?",
+   "a": "D0 = Z."
+  },
+  "id": {
+   "chapter": "6. Praktik Desain Logika Kombinasional",
+   "title": "Fungsi dari Multiplexer",
+   "body": "Jumlah variabel sama dengan jumlah garis pemilih: setiap input data adalah nilai fungsi (0 atau 1) untuk baris tersebut.\nSatu variabel lebih: pakai variabel lain sebagai garis pemilih, dan isi setiap Dᵢ dengan 0, 1, variabel tambahan, atau komplemennya.",
+   "quick_check": {
+    "q": "F(X,Y,Z) dengan MUX 4:1, XY sebagai pemilih. Baris XY = 00 memberi F = Z. Berapa D0?",
+    "a": "D0 = Z."
+   },
+   "explain": "Mengapa berhasil: output MUX adalah Σ mᵢ·Dᵢ atas minterm pemilih. Memecah F menjadi minterm variabel pemilih yang sama (ekspansi Shannon) memberi tahu persis berapa nilai setiap Dᵢ."
+  }
+ },
+ {
+  "chapter": "6. Combinational Logic Design Practices",
+  "title": "Demultiplexers",
+  "tag": "WHAT",
+  "body": "A demultiplexer does the reverse of a MUX: it sends one data input to one of n outputs, chosen by the select bits.\nUse a binary decoder: the data goes into the decoder's enable input.\nA MUX at one end and a DEMUX at the other let many devices share a single line.",
+  "formula": [
+   "Y_0 = D S_1' S_0',\\quad Y_1 = D S_1' S_0,\\quad Y_2 = D S_1 S_0',\\quad Y_3 = D S_1 S_0"
+  ],
+  "quick_check": {
+   "q": "1-to-4 DEMUX, S1S0 = 10, D = 1. Which output is 1?",
+   "a": "Y2."
+  },
+  "id": {
+   "chapter": "6. Praktik Desain Logika Kombinasional",
+   "title": "Demultiplexer",
+   "body": "Demultiplexer melakukan kebalikan MUX: mengirim satu input data ke salah satu dari n output, dipilih oleh bit pemilih.\nPakai decoder biner: datanya masuk ke input enable decoder.\nMUX di satu ujung dan DEMUX di ujung lain membuat banyak perangkat bisa berbagi satu jalur.",
+   "quick_check": {
+    "q": "DEMUX 1-ke-4, S1S0 = 10, D = 1. Output mana yang bernilai 1?",
+    "a": "Y2."
+   }
+  }
+ },
+ {
+  "chapter": "6. Combinational Logic Design Practices",
+  "title": "XOR, XNOR and Parity",
+  "tag": "HOW",
+  "body": "XOR is 1 when the inputs differ; XNOR is its complement.\nAn odd-parity circuit outputs 1 when an odd number of its inputs are 1; it detects any single-bit error. A balanced tree of XORs is faster than a chain.",
+  "formula": [
+   "X \\oplus Y = X'Y + XY', \\qquad X' \\oplus Y' = X \\oplus Y"
+  ],
+  "code": "entity parity9 is\n  port ( I: in STD_LOGIC_VECTOR (1 to 9);\n         EVEN, ODD: out STD_LOGIC );\nend parity9;\n\narchitecture parity9p of parity9 is\nbegin\n  process (I)\n    variable p: STD_LOGIC;\n  begin\n    p := I(1);\n    for j in 2 to 9 loop\n      if I(j) = '1' then p := not p;\n      end if;\n    end loop;\n    ODD  <= p;\n    EVEN <= not p;\n  end process;\nend parity9p;",
+  "demo": "vhdl-loop",
+  "quick_check": {
+   "q": "parity9 with I = \"100110101\": what are ODD and EVEN?",
+   "a": "Five 1s → ODD = '1', EVEN = '0'."
+  },
+  "id": {
+   "chapter": "6. Praktik Desain Logika Kombinasional",
+   "title": "XOR, XNOR, dan Paritas",
+   "body": "XOR bernilai 1 jika input-inputnya berbeda; XNOR adalah komplemennya.\nRangkaian paritas ganjil mengeluarkan 1 jika jumlah input bernilai 1 ganjil; ini mendeteksi setiap kesalahan satu bit. Pohon XOR yang seimbang lebih cepat daripada rantai.",
+   "quick_check": {
+    "q": "parity9 dengan I = \"100110101\": berapa ODD dan EVEN?",
+    "a": "Lima angka 1 → ODD = '1', EVEN = '0'."
+   }
+  }
+ },
+ {
+  "chapter": "6. Combinational Logic Design Practices",
+  "title": "Comparators",
+  "tag": "WHAT",
+  "body": "A 1-bit comparator is just an XOR: 1 when the bits differ.\nAn n-bit equality comparator ORs (or NORs) the XORs of every bit pair.\nIterative circuits chain n identical modules, passing a result along. The 74x682 compares two 8-bit values: P = Q and P > Q outputs.",
+  "formula": [
+   "\\text{EQ} = \\big((A_3 \\oplus B_3) + (A_2 \\oplus B_2) + (A_1 \\oplus B_1) + (A_0 \\oplus B_0)\\big)'"
+  ],
+  "quick_check": {
+   "q": "Two 4-bit values are equal when…?",
+   "a": "All four bit-pair XORs are 0."
+  },
+  "id": {
+   "chapter": "6. Praktik Desain Logika Kombinasional",
+   "title": "Komparator",
+   "body": "Komparator 1-bit hanyalah XOR: bernilai 1 jika bitnya berbeda.\nKomparator kesamaan n-bit meng-OR-kan (atau NOR) XOR dari setiap pasangan bit.\nRangkaian iteratif merangkai n modul identik yang meneruskan hasil. 74x682 membandingkan dua nilai 8-bit: output P = Q dan P > Q.",
+   "quick_check": {
+    "q": "Dua nilai 4-bit sama jika…?",
+    "a": "Keempat XOR pasangan bit bernilai 0."
+   }
+  }
+ }
+]

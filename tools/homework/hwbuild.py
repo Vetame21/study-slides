@@ -1,6 +1,6 @@
 """Build homework practice JSON, figures and solution PDFs for the site.
 
-python3 tools/homework/hwbuild.py .      (run from the repo root; needs Google Chrome)
+python3 tools/homework/hwbuild.py . [subject-id]      (run from the repo root; needs Google Chrome; default: every subject)
   → <site>/<subject>/homework.json
   → <site>/<subject>/homework/img/*.png      (figures, renamed per question)
   → <site>/<subject>/homework/<id>-solutions.pdf   (KaTeX-typeset, printed by headless Chrome)
@@ -15,6 +15,7 @@ from phys_hw02 import HW02
 from phys_hw04 import HW04
 from phys_hw05 import HW05
 from stats_hw import H01, H02
+from dl_hw import PS1, PS2, PS3, PS4, PS5
 
 SITE = os.path.abspath(sys.argv[1])
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -33,11 +34,13 @@ FIGS = {  # site name → extracted file (checked by eye on a contact sheet)
 SUBJECTS = {
     "college-physics-2": [HW01, HW02, HW04, HW05],
     "statistics-probability": [H01, H02],
+    "digital-logic": [PS1, PS2, PS3, PS4, PS5],
 }
 
 def md(text):
-    """Escape HTML but keep $math$ intact for KaTeX auto-render; **bold** → <b>."""
+    """Escape HTML but keep $math$ intact for KaTeX auto-render; **bold** → <b>; ```code``` → <pre>."""
     out = html.escape(text, quote=False)
+    out = re.sub(r"```\n(.*?)\n```\n?", r"<pre>\1</pre>", out, flags=re.S)
     return re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", out)
 
 def all_figures(s):
@@ -59,6 +62,8 @@ ol.opts li.ok { font-weight: 700; color: #1f6b47; } ol.opts li.ok::after { conte
 .note { background: #fff1f0; border-left: 3px solid #c0392b; padding: 4px 10px; font-size: 9.5pt; margin: 4px 0; }
 .fig { max-width: 62%; max-height: 170px; display: block; margin: 6px 0; }
 .part { margin: 6px 0 4px 10px; }
+.fig.big { max-width: 85%; max-height: 330px; }
+pre { font: 8.5pt/1.35 Menlo, monospace; background: #f5f5f7; padding: 6px 10px; border-radius: 4px; white-space: pre-wrap; }
 .katex-display { margin: 6px 0; }
 """
 
@@ -85,6 +90,7 @@ def build_html(s, subject):
                 h.append(f"<div class='part'><b>{md(p['label'])}</b> {md(p['q'])}"
                          f"<div class='ans'><b>Answer:</b> {md(p['answer'])}</div>"
                          + (f"<div class='sol'>{md(p['solution'])}</div>" if p["solution"] else "")
+                         + (f"<img class='fig big' src='file://{os.path.join(SITE, subject, p['figure'])}'>" if p.get("figure") else "")
                          + (f"<div class='why'>Why this method: {md(p['method'])}</div>" if p.get("method") else "")
                          + "</div>")
         h.append("</div>")
@@ -97,13 +103,15 @@ def build_html(s, subject):
 <script>renderMathInElement(document.body, {{delimiters: [{{left: "$$", right: "$$", display: true}}, {{left: "$", right: "$", display: false}}], throwOnError: false}});
 document.title = "ready";</script></body></html>"""
 
+ONLY = sys.argv[2:]   # optional subject ids, so other subjects' PDFs aren't rebuilt needlessly
 for subject, sets in SUBJECTS.items():
+    if ONLY and subject not in ONLY: continue
     root = os.path.join(SITE, subject, "homework")
     os.makedirs(os.path.join(root, "img"), exist_ok=True)
     for s in sets:
         for fig in all_figures(s):
             name = os.path.splitext(os.path.basename(fig))[0]
-            src, dest = os.path.join(FIG_SRC, FIGS[name] + ".png"), os.path.join(SITE, subject, fig)
+            src, dest = os.path.join(FIG_SRC, FIGS.get(name, name) + ".png"), os.path.join(SITE, subject, fig)
             if os.path.exists(src): shutil.copy(src, dest)
             elif not os.path.exists(dest): sys.exit(f"missing figure {dest} (and no raw source {src})")
         s["pdf"] = f"homework/{s['id']}-solutions.pdf"

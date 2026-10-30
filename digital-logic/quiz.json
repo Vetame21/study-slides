@@ -1,0 +1,1362 @@
+[
+ {
+  "chapter": {
+   "en": "1. Introduction",
+   "id": "1. Pendahuluan"
+  },
+  "questions": [
+   {
+    "source": "Ch 1",
+    "q": {
+     "en": "A circuit's output depends only on its present inputs. It is…",
+     "id": "Output rangkaian hanya bergantung pada input saat ini. Rangkaian itu…"
+    },
+    "options": [
+     {
+      "en": "Sequential",
+      "id": "Sekuensial"
+     },
+     {
+      "en": "Combinational",
+      "id": "Kombinasional"
+     },
+     {
+      "en": "Analog",
+      "id": "Analog"
+     },
+     {
+      "en": "A flip-flop",
+      "id": "Sebuah flip-flop"
+     }
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Combinational = outputs depend only on the current inputs. Sequential circuits also remember past inputs.",
+     "id": "Kombinasional = output hanya bergantung pada input saat ini. Rangkaian sekuensial juga mengingat input sebelumnya."
+    }
+   },
+   {
+    "source": "Ch 1",
+    "q": {
+     "en": "Which device stores one bit and changes state on a clock?",
+     "id": "Perangkat mana yang menyimpan satu bit dan berubah keadaan saat clock?"
+    },
+    "options": [
+     {
+      "en": "Flip-flop",
+      "id": "Flip-flop"
+     },
+     {
+      "en": "Multiplexer",
+      "id": "Multiplexer"
+     },
+     {
+      "en": "AND gate",
+      "id": "Gerbang AND"
+     },
+     {
+      "en": "Inverter",
+      "id": "Inverter"
+     }
+    ],
+    "answer": 0,
+    "why": {
+     "en": "A flip-flop stores a 0 or 1; gates and MUXes have no memory.",
+     "id": "Flip-flop menyimpan 0 atau 1; gerbang dan MUX tidak punya memori."
+    }
+   },
+   {
+    "source": "Ch 1",
+    "q": {
+     "en": "An IC with about 1,000 gates is classed as…",
+     "id": "IC dengan sekitar 1.000 gerbang termasuk…"
+    },
+    "options": [
+     {
+      "en": "VLSI",
+      "id": "VLSI"
+     },
+     {
+      "en": "SSI",
+      "id": "SSI"
+     },
+     {
+      "en": "MSI",
+      "id": "MSI"
+     },
+     {
+      "en": "LSI",
+      "id": "LSI"
+     }
+    ],
+    "answer": 3,
+    "why": {
+     "en": "LSI covers 200–200,000 gates. MSI is 20–200; VLSI is counted in millions of transistors.",
+     "id": "LSI mencakup 200–200.000 gerbang. MSI 20–200; VLSI dihitung dalam jutaan transistor."
+    }
+   },
+   {
+    "source": "Ch 1",
+    "q": {
+     "en": "In which PLD is the AND array programmable but the OR array fixed?",
+     "id": "Pada PLD mana larik AND bisa diprogram tetapi larik OR tetap?"
+    },
+    "options": [
+     {
+      "en": "ROM",
+      "id": "ROM"
+     },
+     {
+      "en": "PLA",
+      "id": "PLA"
+     },
+     {
+      "en": "PAL",
+      "id": "PAL"
+     },
+     {
+      "en": "FPGA",
+      "id": "FPGA"
+     }
+    ],
+    "answer": 2,
+    "why": {
+     "en": "PAL = programmable AND, fixed OR. A PLA programs both arrays.",
+     "id": "PAL = AND terprogram, OR tetap. PLA memprogram kedua larik."
+    }
+   },
+   {
+    "source": "Ch 1",
+    "q": {
+     "en": "Which is NOT one of the three HDLs named on the slides?",
+     "id": "Mana yang BUKAN salah satu dari tiga HDL di slide?"
+    },
+    "options": [
+     {
+      "en": "ABEL",
+      "id": "ABEL"
+     },
+     {
+      "en": "Python",
+      "id": "Python"
+     },
+     {
+      "en": "VHDL",
+      "id": "VHDL"
+     },
+     {
+      "en": "Verilog",
+      "id": "Verilog"
+     }
+    ],
+    "answer": 1,
+    "why": {
+     "en": "The slides name Verilog, VHDL and ABEL. Python is a software language.",
+     "id": "Slide menyebut Verilog, VHDL, dan ABEL. Python adalah bahasa perangkat lunak."
+    }
+   },
+   {
+    "source": "Ch 1",
+    "q": {
+     "en": "What does a digital signal NOT do?",
+     "id": "Apa yang TIDAK dilakukan sinyal digital?"
+    },
+    "options": [
+     {
+      "en": "Take any value in a continuous range",
+      "id": "Bernilai berapa pun dalam rentang kontinu"
+     },
+     {
+      "en": "Represent LOW/HIGH",
+      "id": "Mewakili LOW/HIGH"
+     },
+     {
+      "en": "Take only the values 0 and 1",
+      "id": "Hanya bernilai 0 dan 1"
+     },
+     {
+      "en": "Represent TRUE/FALSE",
+      "id": "Mewakili TRUE/FALSE"
+     }
+    ],
+    "answer": 0,
+    "why": {
+     "en": "A continuous range is analog. Digital signals have exactly two values.",
+     "id": "Rentang kontinu adalah analog. Sinyal digital tepat punya dua nilai."
+    }
+   }
+  ]
+ },
+ {
+  "chapter": {
+   "en": "2. Number Systems and Codes",
+   "id": "2. Sistem Bilangan dan Kode"
+  },
+  "questions": [
+   {
+    "source": "Ch 2 p. 4",
+    "q": {
+     "en": "923₁₃ in decimal is…",
+     "id": "923₁₃ dalam desimal adalah…"
+    },
+    "options": [
+     {
+      "en": "2339",
+      "id": "2339"
+     },
+     {
+      "en": "542",
+      "id": "542"
+     },
+     {
+      "en": "923",
+      "id": "923"
+     },
+     {
+      "en": "1550",
+      "id": "1550"
+     }
+    ],
+    "answer": 3,
+    "why": {
+     "en": "9·169 + 2·13 + 3 = 1521 + 26 + 3 = 1550. (2339 is 923₁₆; 542 is 329₁₃.)",
+     "id": "9·169 + 2·13 + 3 = 1521 + 26 + 3 = 1550. (2339 adalah 923₁₆; 542 adalah 329₁₃.)"
+    }
+   },
+   {
+    "source": "Ch 2 p. 7",
+    "q": {
+     "en": "10011₂ in decimal is…",
+     "id": "10011₂ dalam desimal adalah…"
+    },
+    "options": [
+     {
+      "en": "35",
+      "id": "35"
+     },
+     {
+      "en": "25",
+      "id": "25"
+     },
+     {
+      "en": "19",
+      "id": "19"
+     },
+     {
+      "en": "11",
+      "id": "11"
+     }
+    ],
+    "answer": 2,
+    "why": {
+     "en": "16 + 2 + 1 = 19.",
+     "id": "16 + 2 + 1 = 19."
+    }
+   },
+   {
+    "source": "Ch 2 p. 7",
+    "q": {
+     "en": "101.001₂ in decimal is…",
+     "id": "101.001₂ dalam desimal adalah…"
+    },
+    "options": [
+     {
+      "en": "5.001",
+      "id": "5.001"
+     },
+     {
+      "en": "5.125",
+      "id": "5.125"
+     },
+     {
+      "en": "5.25",
+      "id": "5.25"
+     },
+     {
+      "en": "5.1",
+      "id": "5.1"
+     }
+    ],
+    "answer": 1,
+    "why": {
+     "en": "4 + 1 + 0.125 = 5.125: the third place after the point weighs 2⁻³.",
+     "id": "4 + 1 + 0,125 = 5,125: tempat ketiga setelah koma berbobot 2⁻³."
+    }
+   },
+   {
+    "source": "Ch 2 p. 15",
+    "q": {
+     "en": "Binary to hexadecimal: replace groups of how many bits?",
+     "id": "Biner ke heksadesimal: ganti kelompok berapa bit?"
+    },
+    "options": [
+     {
+      "en": "4",
+      "id": "4"
+     },
+     {
+      "en": "8",
+      "id": "8"
+     },
+     {
+      "en": "2",
+      "id": "2"
+     },
+     {
+      "en": "3",
+      "id": "3"
+     }
+    ],
+    "answer": 0,
+    "why": {
+     "en": "16 = 2⁴, so one hex digit = 4 bits. Octal uses groups of 3.",
+     "id": "16 = 2⁴, jadi satu digit heksa = 4 bit. Oktal memakai kelompok 3."
+    }
+   },
+   {
+    "source": "Ch 2 p. 15",
+    "q": {
+     "en": "To convert a decimal FRACTION to binary you…",
+     "id": "Untuk mengubah PECAHAN desimal ke biner, kita…"
+    },
+    "options": [
+     {
+      "en": "Group in 4 bits",
+      "id": "Mengelompokkan 4 bit"
+     },
+     {
+      "en": "Subtract powers of 10",
+      "id": "Mengurangi pangkat 10"
+     },
+     {
+      "en": "Divide by 2 repeatedly",
+      "id": "Membagi 2 berulang kali"
+     },
+     {
+      "en": "Multiply by 2 repeatedly",
+      "id": "Mengalikan 2 berulang kali"
+     }
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Fractions: repeated multiplication, taking the integer parts in order. Whole numbers: repeated division.",
+     "id": "Pecahan: perkalian berulang, ambil bagian bulat secara berurutan. Bilangan bulat: pembagian berulang."
+    }
+   },
+   {
+    "source": "Ch 2 p. 14",
+    "q": {
+     "en": "0.7875₁₀ in octal (3 digits) is about…",
+     "id": "0,7875₁₀ dalam oktal (3 digit) kira-kira…"
+    },
+    "options": [
+     {
+      "en": "0.787₈",
+      "id": "0.787₈"
+     },
+     {
+      "en": "0.630₈",
+      "id": "0.630₈"
+     },
+     {
+      "en": "0.623₈",
+      "id": "0.623₈"
+     },
+     {
+      "en": "0.326₈",
+      "id": "0.326₈"
+     }
+    ],
+    "answer": 2,
+    "why": {
+     "en": "×8: 6.3 → 6, 0.3×8 = 2.4 → 2, 0.4×8 = 3.2 → 3. Read the digits in the order they appear.",
+     "id": "×8: 6,3 → 6, 0,3×8 = 2,4 → 2, 0,4×8 = 3,2 → 3. Baca digit sesuai urutan munculnya."
+    }
+   },
+   {
+    "source": "Ch 2 p. 8",
+    "q": {
+     "en": "FF₁₆ equals…",
+     "id": "FF₁₆ sama dengan…"
+    },
+    "options": [
+     {
+      "en": "256₁₀",
+      "id": "256₁₀"
+     },
+     {
+      "en": "377₈",
+      "id": "377₈"
+     },
+     {
+      "en": "11110000₂",
+      "id": "11110000₂"
+     },
+     {
+      "en": "1515₁₀",
+      "id": "1515₁₀"
+     }
+    ],
+    "answer": 1,
+    "why": {
+     "en": "FF₁₆ = 255₁₀ = 11111111₂ = 377₈ (011 111 111).",
+     "id": "FF₁₆ = 255₁₀ = 11111111₂ = 377₈ (011 111 111)."
+    }
+   },
+   {
+    "source": "[ADDED]",
+    "q": {
+     "en": "Decimal 45 in binary is…",
+     "id": "Desimal 45 dalam biner adalah…"
+    },
+    "options": [
+     {
+      "en": "101101₂",
+      "id": "101101₂"
+     },
+     {
+      "en": "110101₂",
+      "id": "110101₂"
+     },
+     {
+      "en": "101011₂",
+      "id": "101011₂"
+     },
+     {
+      "en": "100101₂",
+      "id": "100101₂"
+     }
+    ],
+    "answer": 0,
+    "why": {
+     "en": "45 ÷ 2 remainders: 1, 0, 1, 1, 0, 1 → read bottom-up: 101101₂ = 32 + 8 + 4 + 1.",
+     "id": "Sisa 45 ÷ 2: 1, 0, 1, 1, 0, 1 → baca dari bawah ke atas: 101101₂ = 32 + 8 + 4 + 1."
+    }
+   }
+  ]
+ },
+ {
+  "chapter": {
+   "en": "4. Combinational Logic Design Principles",
+   "id": "4. Prinsip Desain Logika Kombinasional"
+  },
+  "questions": [
+   {
+    "source": "Ch 4",
+    "q": {
+     "en": "X + XY simplifies to…",
+     "id": "X + XY disederhanakan menjadi…"
+    },
+    "options": [
+     {
+      "en": "X + Y",
+      "id": "X + Y"
+     },
+     {
+      "en": "1",
+      "id": "1"
+     },
+     {
+      "en": "XY",
+      "id": "XY"
+     },
+     {
+      "en": "X",
+      "id": "X"
+     }
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Covering theorem: X + XY = X(1 + Y) = X.",
+     "id": "Teorema covering: X + XY = X(1 + Y) = X."
+    }
+   },
+   {
+    "source": "Ch 4",
+    "q": {
+     "en": "(X + Y)(X + Z) equals…",
+     "id": "(X + Y)(X + Z) sama dengan…"
+    },
+    "options": [
+     {
+      "en": "XYZ",
+      "id": "XYZ"
+     },
+     {
+      "en": "XY + XZ",
+      "id": "XY + XZ"
+     },
+     {
+      "en": "X + YZ",
+      "id": "X + YZ"
+     },
+     {
+      "en": "X + Y + Z",
+      "id": "X + Y + Z"
+     }
+    ],
+    "answer": 2,
+    "why": {
+     "en": "The second distributive law, true in switching algebra (not in ordinary algebra).",
+     "id": "Hukum distributif kedua, benar di aljabar switching (tidak di aljabar biasa)."
+    }
+   },
+   {
+    "source": "Ch 4",
+    "q": {
+     "en": "(A + B′C)′ equals…",
+     "id": "(A + B′C)′ sama dengan…"
+    },
+    "options": [
+     {
+      "en": "A′BC′",
+      "id": "A′BC′"
+     },
+     {
+      "en": "A′(B + C′)",
+      "id": "A′(B + C′)"
+     },
+     {
+      "en": "A′ + BC′",
+      "id": "A′ + BC′"
+     },
+     {
+      "en": "A′ + B + C′",
+      "id": "A′ + B + C′"
+     }
+    ],
+    "answer": 1,
+    "why": {
+     "en": "DeMorgan: (A + B′C)′ = A′·(B′C)′ = A′(B + C′).",
+     "id": "DeMorgan: (A + B′C)′ = A′·(B′C)′ = A′(B + C′)."
+    }
+   },
+   {
+    "source": "Ch 4",
+    "q": {
+     "en": "The dual of X + 0 = X is…",
+     "id": "Dual dari X + 0 = X adalah…"
+    },
+    "options": [
+     {
+      "en": "X · 1 = X",
+      "id": "X · 1 = X"
+     },
+     {
+      "en": "X + 1 = 1",
+      "id": "X + 1 = 1"
+     },
+     {
+      "en": "X′ + 0 = X′",
+      "id": "X′ + 0 = X′"
+     },
+     {
+      "en": "X · 0 = 0",
+      "id": "X · 0 = 0"
+     }
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Swap + ↔ · and 0 ↔ 1.",
+     "id": "Tukar + ↔ · dan 0 ↔ 1."
+    }
+   },
+   {
+    "source": "Ch 4",
+    "q": {
+     "en": "AB + A′C + BC simplifies to…",
+     "id": "AB + A′C + BC disederhanakan menjadi…"
+    },
+    "options": [
+     {
+      "en": "B + C",
+      "id": "B + C"
+     },
+     {
+      "en": "AB + BC",
+      "id": "AB + BC"
+     },
+     {
+      "en": "A′C + BC",
+      "id": "A′C + BC"
+     },
+     {
+      "en": "AB + A′C",
+      "id": "AB + A′C"
+     }
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Consensus theorem: BC is the consensus of AB and A′C, so it is redundant.",
+     "id": "Teorema konsensus: BC adalah konsensus dari AB dan A′C, jadi berlebih."
+    }
+   },
+   {
+    "source": "Ch 4",
+    "q": {
+     "en": "For F(X,Y,Z), minterm 5 is…",
+     "id": "Untuk F(X,Y,Z), minterm 5 adalah…"
+    },
+    "options": [
+     {
+      "en": "XYZ′",
+      "id": "XYZ′"
+     },
+     {
+      "en": "X + Y′ + Z",
+      "id": "X + Y′ + Z"
+     },
+     {
+      "en": "XY′Z",
+      "id": "XY′Z"
+     },
+     {
+      "en": "X′YZ′",
+      "id": "X′YZ′"
+     }
+    ],
+    "answer": 2,
+    "why": {
+     "en": "5 = 101: X = 1, Y = 0, Z = 1 → XY′Z.",
+     "id": "5 = 101: X = 1, Y = 0, Z = 1 → XY′Z."
+    }
+   },
+   {
+    "source": "Ch 4",
+    "q": {
+     "en": "In a 4-variable K-map, which cell is NOT adjacent to cell 0?",
+     "id": "Pada K-map 4 variabel, sel mana yang TIDAK bertetangga dengan sel 0?"
+    },
+    "options": [
+     {
+      "en": "8",
+      "id": "8"
+     },
+     {
+      "en": "3",
+      "id": "3"
+     },
+     {
+      "en": "1",
+      "id": "1"
+     },
+     {
+      "en": "2",
+      "id": "2"
+     }
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Cell 0 = 0000 touches 0001, 0010, 0100, 1000 (one bit different). 3 = 0011 differs in two bits.",
+     "id": "Sel 0 = 0000 bertetangga dengan 0001, 0010, 0100, 1000 (beda satu bit). 3 = 0011 beda dua bit."
+    }
+   },
+   {
+    "source": "Ch 4",
+    "q": {
+     "en": "Minimal sum of F = Σ_{X,Y,Z}(0, 2, 4, 6)?",
+     "id": "Jumlah minimal F = Σ_{X,Y,Z}(0, 2, 4, 6)?"
+    },
+    "options": [
+     {
+      "en": "Z′",
+      "id": "Z′"
+     },
+     {
+      "en": "Y′Z′ + YZ′",
+      "id": "Y′Z′ + YZ′"
+     },
+     {
+      "en": "X′ + Z′",
+      "id": "X′ + Z′"
+     },
+     {
+      "en": "X′Z′ + XZ′",
+      "id": "X′Z′ + XZ′"
+     }
+    ],
+    "answer": 0,
+    "why": {
+     "en": "All four cells have Z = 0, which is one group of 4, so F = Z′.",
+     "id": "Keempat sel punya Z = 0, satu kelompok 4, jadi F = Z′."
+    }
+   },
+   {
+    "source": "Ch 4",
+    "q": {
+     "en": "How should you treat don't-care cells?",
+     "id": "Bagaimana memperlakukan sel don't-care?"
+    },
+    "options": [
+     {
+      "en": "Treat them as 0",
+      "id": "Anggap 0"
+     },
+     {
+      "en": "Always cover them",
+      "id": "Selalu menutupnya"
+     },
+     {
+      "en": "Never use them",
+      "id": "Tidak pernah memakainya"
+     },
+     {
+      "en": "Use them only if they make groups larger",
+      "id": "Pakai hanya jika memperbesar kelompok"
+     }
+    ],
+    "answer": 3,
+    "why": {
+     "en": "A d can be 0 or 1, whichever helps. Never circle a group of only d's.",
+     "id": "d boleh 0 atau 1, mana yang membantu. Jangan melingkari kelompok yang hanya berisi d."
+    }
+   },
+   {
+    "source": "Ch 4",
+    "q": {
+     "en": "AND-OR (sum of products) converts directly into…",
+     "id": "AND-OR (jumlah hasil kali) langsung diubah menjadi…"
+    },
+    "options": [
+     {
+      "en": "XOR-XOR",
+      "id": "XOR-XOR"
+     },
+     {
+      "en": "NOR-NOR",
+      "id": "NOR-NOR"
+     },
+     {
+      "en": "NAND-NAND",
+      "id": "NAND-NAND"
+     },
+     {
+      "en": "OR-AND",
+      "id": "OR-AND"
+     }
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Double-complement and DeMorgan: AB + CD = ((AB)′(CD)′)′. Product of sums maps to NOR-NOR.",
+     "id": "Komplemen ganda dan DeMorgan: AB + CD = ((AB)′(CD)′)′. Hasil kali jumlah menjadi NOR-NOR."
+    }
+   }
+  ]
+ },
+ {
+  "chapter": {
+   "en": "5. Hardware Description Languages (VHDL)",
+   "id": "5. Bahasa Deskripsi Perangkat Keras (VHDL)"
+  },
+  "questions": [
+   {
+    "source": "Ch 5 p. 3",
+    "q": {
+     "en": "Which tool converts VHDL into a netlist of gates?",
+     "id": "Alat mana yang mengubah VHDL menjadi netlist gerbang?"
+    },
+    "options": [
+     {
+      "en": "Simulator",
+      "id": "Simulator"
+     },
+     {
+      "en": "Synthesizer",
+      "id": "Synthesizer"
+     },
+     {
+      "en": "Test bench",
+      "id": "Test bench"
+     },
+     {
+      "en": "Text editor",
+      "id": "Text editor"
+     }
+    ],
+    "answer": 1,
+    "why": {
+     "en": "The synthesizer produces the netlist; the simulator only checks behaviour.",
+     "id": "Synthesizer menghasilkan netlist; simulator hanya memeriksa perilaku."
+    }
+   },
+   {
+    "source": "Ch 5 p. 12",
+    "q": {
+     "en": "Which part of a VHDL design describes its ports?",
+     "id": "Bagian mana dari desain VHDL yang mendeskripsikan port-nya?"
+    },
+    "options": [
+     {
+      "en": "entity",
+      "id": "entity"
+     },
+     {
+      "en": "process",
+      "id": "process"
+     },
+     {
+      "en": "package body",
+      "id": "package body"
+     },
+     {
+      "en": "architecture",
+      "id": "architecture"
+     }
+    ],
+    "answer": 0,
+    "why": {
+     "en": "The entity is the interface; the architecture is the inside.",
+     "id": "Entity adalah antarmuka; architecture adalah bagian dalam."
+    }
+   },
+   {
+    "source": "Ch 5 p. 18",
+    "q": {
+     "en": "Inside a process, how do you assign a VARIABLE v?",
+     "id": "Di dalam process, bagaimana memberi nilai VARIABEL v?"
+    },
+    "options": [
+     {
+      "en": "v = a and b;",
+      "id": "v = a and b;"
+     },
+     {
+      "en": "v => a and b;",
+      "id": "v => a and b;"
+     },
+     {
+      "en": "v <= a and b;",
+      "id": "v <= a and b;"
+     },
+     {
+      "en": "v := a and b;",
+      "id": "v := a and b;"
+     }
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Variables use := (immediate). Signals use <=.",
+     "id": "Variabel memakai := (langsung). Sinyal memakai <=."
+    }
+   },
+   {
+    "source": "Ch 5 p. 15",
+    "q": {
+     "en": "What is 5 mod (−2) in VHDL?",
+     "id": "Berapa 5 mod (−2) di VHDL?"
+    },
+    "options": [
+     {
+      "en": "−2",
+      "id": "−2"
+     },
+     {
+      "en": "1",
+      "id": "1"
+     },
+     {
+      "en": "−1",
+      "id": "−1"
+     },
+     {
+      "en": "2",
+      "id": "2"
+     }
+    ],
+    "answer": 2,
+    "why": {
+     "en": "mod takes the sign of the right operand: 5 = (−3)(−2) + (−1). rem would give 1.",
+     "id": "mod mengikuti tanda operand kanan: 5 = (−3)(−2) + (−1). rem menghasilkan 1."
+    }
+   },
+   {
+    "source": "Ch 5 p. 25–34",
+    "q": {
+     "en": "CONV_INTEGER(\"1101\") returns…",
+     "id": "CONV_INTEGER(\"1101\") menghasilkan…"
+    },
+    "options": [
+     {
+      "en": "11",
+      "id": "11"
+     },
+     {
+      "en": "13",
+      "id": "13"
+     },
+     {
+      "en": "14",
+      "id": "14"
+     },
+     {
+      "en": "26",
+      "id": "26"
+     }
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Double-and-add from the left: 0→1→3→6→13.",
+     "id": "Gandakan-lalu-tambah dari kiri: 0→1→3→6→13."
+    }
+   },
+   {
+    "source": "Ch 5 p. 70",
+    "q": {
+     "en": "Which line is valid VHDL?",
+     "id": "Baris mana yang VHDL valid?"
+    },
+    "options": [
+     {
+      "en": "elsif A='1' then",
+      "id": "elsif A='1' then"
+     },
+     {
+      "en": "elif A='1' then",
+      "id": "elif A='1' then"
+     },
+     {
+      "en": "elseif A='1' then",
+      "id": "elseif A='1' then"
+     },
+     {
+      "en": "else if A='1' then … (one end if)",
+      "id": "else if A='1' then … (one end if)"
+     }
+    ],
+    "answer": 0,
+    "why": {
+     "en": "The keyword is elsif. The slide's syntax table spells it 'elseif', which won't compile.",
+     "id": "Kata kuncinya elsif. Tabel sintaks di slide menulis 'elseif', yang tidak bisa dikompilasi."
+    }
+   },
+   {
+    "source": "Ch 5 p. 66",
+    "q": {
+     "en": "When does process(A, B) start running?",
+     "id": "Kapan process(A, B) mulai berjalan?"
+    },
+    "options": [
+     {
+      "en": "Only once at time 0",
+      "id": "Hanya sekali pada waktu 0"
+     },
+     {
+      "en": "When any signal in the design changes",
+      "id": "Saat sinyal apa pun di desain berubah"
+     },
+     {
+      "en": "Every clock edge",
+      "id": "Setiap tepi clock"
+     },
+     {
+      "en": "When A or B changes",
+      "id": "Saat A atau B berubah"
+     }
+    ],
+    "answer": 3,
+    "why": {
+     "en": "A process wakes up when a signal in its sensitivity list changes.",
+     "id": "Process aktif saat sinyal di daftar sensitivitasnya berubah."
+    }
+   },
+   {
+    "source": "Ch 5 p. 53–55",
+    "q": {
+     "en": "Which statement makes many copies of a component?",
+     "id": "Pernyataan mana yang membuat banyak salinan komponen?"
+    },
+    "options": [
+     {
+      "en": "with … select",
+      "id": "with … select"
+     },
+     {
+      "en": "wait for",
+      "id": "wait for"
+     },
+     {
+      "en": "for … generate",
+      "id": "for … generate"
+     },
+     {
+      "en": "for … loop",
+      "id": "for … loop"
+     }
+    ],
+    "answer": 2,
+    "why": {
+     "en": "generate is concurrent and replicates hardware; a for loop is sequential (inside a process).",
+     "id": "generate bersifat konkuren dan menggandakan perangkat keras; for loop bersifat sekuensial (di dalam process)."
+    }
+   },
+   {
+    "source": "Ch 5 p. 76",
+    "q": {
+     "en": "Why is prime9 (a loop over mod) a bad circuit?",
+     "id": "Mengapa prime9 (loop dengan mod) rangkaian yang buruk?"
+    },
+    "options": [
+     {
+      "en": "It gives wrong answers",
+      "id": "Hasilnya salah"
+     },
+     {
+      "en": "mod needs a divider, copied for every loop step",
+      "id": "mod butuh divider, disalin untuk setiap langkah loop"
+     },
+     {
+      "en": "Loops are not allowed in processes",
+      "id": "Loop tidak boleh di process"
+     },
+     {
+      "en": "It needs a clock",
+      "id": "Butuh clock"
+     }
+    ],
+    "answer": 1,
+    "why": {
+     "en": "The code is correct, but synthesis unrolls the loop into about 252 dividers.",
+     "id": "Kodenya benar, tetapi sintesis membentangkan loop menjadi sekitar 252 divider."
+    }
+   },
+   {
+    "source": "Ch 5 p. 81",
+    "q": {
+     "en": "A test bench entity normally has…",
+     "id": "Entity test bench biasanya punya…"
+    },
+    "options": [
+     {
+      "en": "No ports",
+      "id": "Tidak ada port"
+     },
+     {
+      "en": "Only inputs",
+      "id": "Hanya input"
+     },
+     {
+      "en": "Only outputs",
+      "id": "Hanya output"
+     },
+     {
+      "en": "A clock port",
+      "id": "Port clock"
+     }
+    ],
+    "answer": 0,
+    "why": {
+     "en": "It is the top level: it generates the UUT's inputs and checks its outputs internally.",
+     "id": "Ia tingkat teratas: ia membuat input UUT dan memeriksa outputnya secara internal."
+    }
+   }
+  ]
+ },
+ {
+  "chapter": {
+   "en": "6. Combinational Logic Design Practices",
+   "id": "6. Praktik Desain Logika Kombinasional"
+  },
+  "questions": [
+   {
+    "source": "Ch 6 p. 17",
+    "q": {
+     "en": "How many outputs does a 4-to-16 decoder activate at once (when enabled)?",
+     "id": "Berapa output decoder 4-ke-16 yang aktif sekaligus (saat enable)?"
+    },
+    "options": [
+     {
+      "en": "4",
+      "id": "4"
+     },
+     {
+      "en": "16",
+      "id": "16"
+     },
+     {
+      "en": "0",
+      "id": "0"
+     },
+     {
+      "en": "1",
+      "id": "1"
+     }
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Exactly one: the output whose number equals the input code.",
+     "id": "Tepat satu: output yang nomornya sama dengan kode input."
+    }
+   },
+   {
+    "source": "Ch 6 p. 21",
+    "q": {
+     "en": "74x138 with G1 = 1, G2A_L = 0, G2B_L = 0, A = 110. Y_L = ?",
+     "id": "74x138 dengan G1 = 1, G2A_L = 0, G2B_L = 0, A = 110. Y_L = ?"
+    },
+    "options": [
+     {
+      "en": "\"10111111\"",
+      "id": "\"10111111\""
+     },
+     {
+      "en": "\"11111111\"",
+      "id": "\"11111111\""
+     },
+     {
+      "en": "\"11111101\"",
+      "id": "\"11111101\""
+     },
+     {
+      "en": "\"00000010\"",
+      "id": "\"00000010\""
+     }
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Enabled; output 6 goes LOW. Y_L is indexed 0 to 7, so the 0 is in position 6.",
+     "id": "Aktif; output 6 menjadi LOW. Y_L diindeks 0 sampai 7, jadi angka 0 ada di posisi 6."
+    }
+   },
+   {
+    "source": "Ch 6 p. 30",
+    "q": {
+     "en": "F = Σ(2, 5) using a 74x138 (active-low outputs). Which gate collects the outputs?",
+     "id": "F = Σ(2, 5) memakai 74x138 (output aktif-rendah). Gerbang apa yang mengumpulkan output?"
+    },
+    "options": [
+     {
+      "en": "AND of Y2_L, Y5_L",
+      "id": "AND dari Y2_L, Y5_L"
+     },
+     {
+      "en": "NAND of Y2_L, Y5_L",
+      "id": "NAND dari Y2_L, Y5_L"
+     },
+     {
+      "en": "NOR of Y2_L, Y5_L",
+      "id": "NOR dari Y2_L, Y5_L"
+     },
+     {
+      "en": "OR of Y2_L, Y5_L",
+      "id": "OR dari Y2_L, Y5_L"
+     }
+    ],
+    "answer": 1,
+    "why": {
+     "en": "F = Y2 + Y5 = (Y2_L · Y5_L)′ by DeMorgan, which is a NAND.",
+     "id": "F = Y2 + Y5 = (Y2_L · Y5_L)′ menurut DeMorgan, yaitu NAND."
+    }
+   },
+   {
+    "source": "Ch 6 p. 35–36",
+    "q": {
+     "en": "8-input priority encoder: I1, I4 and I6 are active. A2A1A0 = ?",
+     "id": "Priority encoder 8 input: I1, I4, dan I6 aktif. A2A1A0 = ?"
+    },
+    "options": [
+     {
+      "en": "110",
+      "id": "110"
+     },
+     {
+      "en": "111",
+      "id": "111"
+     },
+     {
+      "en": "001",
+      "id": "001"
+     },
+     {
+      "en": "100",
+      "id": "100"
+     }
+    ],
+    "answer": 0,
+    "why": {
+     "en": "The highest active input wins: 6 = 110.",
+     "id": "Input aktif tertinggi menang: 6 = 110."
+    }
+   },
+   {
+    "source": "Ch 6 p. 41–42",
+    "q": {
+     "en": "What does a disabled three-state buffer output?",
+     "id": "Apa output buffer tiga keadaan yang nonaktif?"
+    },
+    "options": [
+     {
+      "en": "The last value",
+      "id": "Nilai terakhir"
+     },
+     {
+      "en": "0",
+      "id": "0"
+     },
+     {
+      "en": "1",
+      "id": "1"
+     },
+     {
+      "en": "High impedance (Z)",
+      "id": "Impedansi tinggi (Z)"
+     }
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Z means effectively disconnected, so another device can drive the bus.",
+     "id": "Z berarti praktis terputus, sehingga perangkat lain bisa menggerakkan bus."
+    }
+   },
+   {
+    "source": "Ch 6 p. 46",
+    "q": {
+     "en": "How many select lines does a 16:1 MUX need?",
+     "id": "Berapa garis pemilih yang dibutuhkan MUX 16:1?"
+    },
+    "options": [
+     {
+      "en": "16",
+      "id": "16"
+     },
+     {
+      "en": "2",
+      "id": "2"
+     },
+     {
+      "en": "4",
+      "id": "4"
+     },
+     {
+      "en": "8",
+      "id": "8"
+     }
+    ],
+    "answer": 2,
+    "why": {
+     "en": "2⁴ = 16.",
+     "id": "2⁴ = 16."
+    }
+   },
+   {
+    "source": "Ch 6 p. 55",
+    "q": {
+     "en": "8:1 MUX with D0..D7 = 0,0,0,1,0,1,1,1. F = ?",
+     "id": "MUX 8:1 dengan D0..D7 = 0,0,0,1,0,1,1,1. F = ?"
+    },
+    "options": [
+     {
+      "en": "Σ(4,5,6,7)",
+      "id": "Σ(4,5,6,7)"
+     },
+     {
+      "en": "Σ(3,5,6,7)",
+      "id": "Σ(3,5,6,7)"
+     },
+     {
+      "en": "Σ(0,1,2,4)",
+      "id": "Σ(0,1,2,4)"
+     },
+     {
+      "en": "Σ(1,3,5,7)",
+      "id": "Σ(1,3,5,7)"
+     }
+    ],
+    "answer": 1,
+    "why": {
+     "en": "F is 1 exactly on the select rows whose Dᵢ = 1: rows 3, 5, 6, 7 (the majority function).",
+     "id": "F bernilai 1 tepat pada baris pemilih yang Dᵢ = 1: baris 3, 5, 6, 7 (fungsi mayoritas)."
+    }
+   },
+   {
+    "source": "Ch 6 p. 50",
+    "q": {
+     "en": "A demultiplexer is usually built from…",
+     "id": "Demultiplexer biasanya dibangun dari…"
+    },
+    "options": [
+     {
+      "en": "A decoder, data on the enable input",
+      "id": "Decoder, data di input enable"
+     },
+     {
+      "en": "A MUX with inverted outputs",
+      "id": "MUX dengan output terbalik"
+     },
+     {
+      "en": "XOR gates",
+      "id": "Gerbang XOR"
+     },
+     {
+      "en": "An encoder",
+      "id": "Encoder"
+     }
+    ],
+    "answer": 0,
+    "why": {
+     "en": "The selected decoder output follows the enable line, which carries the data.",
+     "id": "Output decoder yang terpilih mengikuti garis enable, yang membawa data."
+    }
+   },
+   {
+    "source": "Ch 6 p. 67",
+    "q": {
+     "en": "Odd parity of 1011001 is…",
+     "id": "Paritas ganjil dari 1011001 adalah…"
+    },
+    "options": [
+     {
+      "en": "1",
+      "id": "1"
+     },
+     {
+      "en": "4",
+      "id": "4"
+     },
+     {
+      "en": "Undefined",
+      "id": "Tidak terdefinisi"
+     },
+     {
+      "en": "0",
+      "id": "0"
+     }
+    ],
+    "answer": 3,
+    "why": {
+     "en": "There are four 1s (even), so the odd-parity output is 0.",
+     "id": "Ada empat angka 1 (genap), jadi output paritas ganjil 0."
+    }
+   },
+   {
+    "source": "Ch 6 p. 78",
+    "q": {
+     "en": "A 1-bit comparator that outputs 1 when the bits DIFFER is a…",
+     "id": "Komparator 1-bit yang mengeluarkan 1 saat bit BERBEDA adalah…"
+    },
+    "options": [
+     {
+      "en": "AND",
+      "id": "AND"
+     },
+     {
+      "en": "OR",
+      "id": "OR"
+     },
+     {
+      "en": "XOR",
+      "id": "XOR"
+     },
+     {
+      "en": "XNOR",
+      "id": "XNOR"
+     }
+    ],
+    "answer": 2,
+    "why": {
+     "en": "XOR = 1 when the inputs differ; XNOR = 1 when they are equal.",
+     "id": "XOR = 1 saat input berbeda; XNOR = 1 saat sama."
+    }
+   }
+  ]
+ }
+]

@@ -14,8 +14,9 @@ def M(n, q, opts, ans, why, sol=None, fig=None, nofig=False, note=None):
     if note: item["note"] = note
     return item
 
-def part(label, q, answer, sol, method=None):
-    return {"label": label, "q": q, "answer": answer, "solution": sol, **({"method": method} if method else {})}
+def part(label, q, answer, sol, method=None, fig=None):
+    return {"label": label, "q": q, "answer": answer, "solution": sol, **({"method": method} if method else {}),
+            **({"figure": fig} if fig else {})}
 
 def P(n, q, parts, fig=None, nofig=False, note=None):
     item = {"n": n, "kind": "problem", "q": q, "parts": parts}

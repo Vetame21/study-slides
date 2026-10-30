@@ -130,6 +130,8 @@
   .demo .warn { color: var(--wrong); font-weight: 600; }
   .demo-table { border-collapse: collapse; font-variant-numeric: tabular-nums; justify-self: start; }
   .demo-table th, .demo-table td { padding: 2px 14px 2px 0; text-align: right; border-bottom: 1px solid var(--line); }
+  .demo-table tr.hl td { background: var(--tile); } .demo-table tr.bad td { color: var(--wrong); font-weight: 600; }
+  .demo b.ok { color: var(--right); } .demo b.no { color: var(--wrong); }
   .demo-table tr.sum td { font-weight: 700; border-bottom: none; }
   .demo-legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: .85rem; margin-top: 8px; }
   .sw { display: inline-block; width: 11px; height: 11px; border-radius: 2px; margin-right: 6px; vertical-align: -1px; }
@@ -207,7 +209,8 @@ const SUBJECTS = [
     book: "Data Structures and Algorithm Analysis in C++, Third Edition, Clifford A. Shaffer" },
   { id: "statistics-probability", name: "Statistics and Probability", icon: "🎲",
     book: "Probability and Statistics for Engineering and the Sciences, International 9th ed. (2017), Jay L. Devore" },
-  { id: "digital-logic",          name: "Digital Logic",             icon: "🔌" },
+  { id: "digital-logic",          name: "Digital Logic",             icon: "🔌",
+    book: "Digital Design: Principles and Practices, 4th ed., John F. Wakerly · lecture slides © Dr. HeWei Yu (hwyu@scut.edu.cn)" },
   { id: "college-physics-2",      name: "College Physics 2",         icon: "⚛️",
     book: "Fundamentals of Physics (Halliday, Resnick & Walker) · lecture slides © mxhuang@scut.edu.cn" },
 ];
@@ -493,6 +496,7 @@ async function renderHomework(subject, n) {
         ...it.parts.map(p => el("div", { class: "hw-part" },
           el("div", {}, p.label ? el("b", {}, p.label + " ") : null, rich(p.q)),
           ...reveal(ui().show, [el("b", { class: "ok" }, ui().answerIs), rich(p.answer),
+            ...(p.figure ? [el("img", { class: "hwfig", src: subject.id + "/" + p.figure, alt: "figure" })] : []),
             ...(p.method ? [el("div", { class: "muted" }, ui().method, rich(p.method))] : [])]))));
     }
     const noOpts = it.options.every(o => o === "(see figure)");
