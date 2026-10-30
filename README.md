@@ -23,9 +23,11 @@ data-structure/
   img/*.svg                 figures (generated, don't edit by hand)
 statistics-probability/
   slides.json, quiz.json    S01–S05, with 7 interactive demos
+  homework.json, homework/  H01–H02 practice + solution PDFs (generated, see Homework)
 digital-logic/              empty for now
 college-physics-2/
   slides.json, quiz.json    Ch 21–24 (charge, field, Gauss' law, potential), with 13 physics demos
+  homework.json, homework/  HW01, HW02, HW04, HW05 practice + solution PDFs (generated)
 tools/figures.py            draws the Data Structure figures
 ```
 
@@ -77,9 +79,9 @@ These rules apply to every subject. They are what make the slides trustworthy.
 9. **Cite the page.** Quiz questions say which PPT page they come from (`"source": "p. 38"`).
 10. **No copyrighted pictures.** The site is public. Don't upload textbook figures, screenshots, TV stills
     or logos. Redraw diagrams as SVG instead (see [Figures](#figures)).
-11. **No homework answers.** Graded homework must never appear on the site: not the questions, not the
-    answers, not the homework's own numbers. You may tag a slide with `"practice": "H01 Q3"` so students
-    know which slide to study for it. Quiz and quick-check questions use the lecture slides' own examples.
+11. **Homework lives only in the homework section.** Homework questions and solutions are published in
+    `homework.json` and the solution PDFs (see [Homework](#homework)), not mixed into the lecture slides
+    or class quizzes. Slides may point to it with `"practice": "H01 Q3"`.
 
 ---
 
@@ -196,6 +198,32 @@ python3 tools/figures.py
 
 For a new subject, add your figure functions to `tools/figures.py` the same way, or make a similar script.
 Draw from the PPT's own data, and caption it "redrawn from p. X" (or `[ADDED]` if it's new).
+
+---
+
+## Homework
+
+Each subject can have a **Homework practice** page and a **Homework solutions** page (PDFs).
+Both are generated from one source file per subject in `tools/homework/`:
+
+| File | Content |
+|---|---|
+| `phys_hw01.py` … `phys_hw05.py` | College Physics HW01, HW02, HW04, HW05 (official answer keys) |
+| `stats_hw.py` | Statistics H01, H02 (solutions written for the site, marked [ADDED]) |
+| `hwlib.py` | helpers: `M(...)` multiple-choice item, `P(...)` problem with `part(...)`s |
+| `hwbuild.py` | builds `<subject>/homework.json`, copies figures, prints the PDFs with Chrome |
+
+Text can contain LaTeX between `$…$` (inline) or `$$…$$` (display), and `**bold**`.
+Every solution should say **why** the method is used (`method=` for problem parts).
+
+To change a solution or add a homework set: edit the source file, then from the repo root run
+
+```bash
+python3 tools/homework/hwbuild.py .
+```
+
+It regenerates `homework.json` and every PDF. Check the answers in code before publishing, and if the
+official solution has a slip, keep the official answer but explain it in a **[NOTE]**.
 
 ---
 

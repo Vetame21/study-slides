@@ -1,0 +1,1573 @@
+[
+ {
+  "id": "hw01",
+  "title": "HW01 · Ch 21 Coulomb's Law",
+  "source": "CST homework01 (Chapter 21), mxhuang@scut.edu.cn",
+  "intro": null,
+  "items": [
+   {
+    "n": 1,
+    "kind": "mcq",
+    "q": "A conductor is distinguished from an insulator with the same number of atoms by the number of:",
+    "options": [
+     "nearly free atoms",
+     "electrons",
+     "nearly free electrons",
+     "protons",
+     "molecules"
+    ],
+    "answer": 2,
+    "why": "What makes a material a conductor is having electrons that can move freely. Both have the same atoms (and so the same electrons and protons); the conductor just has many *nearly free* electrons.",
+    "solution": "What makes a material a conductor is having electrons that can move freely. Both have the same atoms (and so the same electrons and protons); the conductor just has many *nearly free* electrons."
+   },
+   {
+    "n": 2,
+    "kind": "mcq",
+    "q": "A small object has charge $Q$. Charge $q$ is removed from it and placed on a second small object. The two objects are placed 1 m apart. For the force that each object exerts on the other to be a maximum, $q$ should be:",
+    "options": [
+     "$2Q$",
+     "$Q$",
+     "$Q/2$",
+     "$Q/4$",
+     "$0$"
+    ],
+    "answer": 2,
+    "why": "$F \\propto (Q-q)\\,q$. This product is largest when the charge is split evenly: $\\frac{dF}{dq} \\propto Q - 2q = 0 \\Rightarrow q = Q/2$.",
+    "solution": "The two charges are $Q-q$ and $q$, so $$F = k\\frac{(Q-q)\\,q}{r^2}.$$ With $r$ fixed, maximize $f(q) = (Q-q)q = Qq - q^2$: $$\\frac{df}{dq} = Q - 2q = 0 \\;\\Rightarrow\\; q = \\frac{Q}{2}.$$ **Why this method:** \"maximum\" means set the derivative to zero. (It's a downward parabola, so this is a maximum.)"
+   },
+   {
+    "n": 3,
+    "kind": "mcq",
+    "q": "Two small charged objects repel each other with a force $F$ when separated by a distance $d$. If the charge on each object is reduced to one-fourth of its original value and the distance between them is reduced to $d/2$, the force becomes:",
+    "options": [
+     "$F/16$",
+     "$F/8$",
+     "$F/4$",
+     "$F/2$",
+     "$F$"
+    ],
+    "answer": 2,
+    "why": "$F \\propto q_1q_2/r^2$: the charges give $\\frac14\\cdot\\frac14 = \\frac1{16}$, halving $r$ gives $\\times 4$. Total $\\frac{4}{16}F = F/4$.",
+    "solution": "$$F' = k\\frac{(q_1/4)(q_2/4)}{(d/2)^2} = \\frac{1/16}{1/4}\\,k\\frac{q_1q_2}{d^2} = \\frac{F}{4}.$$ **Why this method:** use ratios. You never need the actual charges; just track how each factor in Coulomb's law changes."
+   },
+   {
+    "n": 4,
+    "kind": "mcq",
+    "q": "A 5.0-C charge is 10 m from a −2.0 C charge. The electrostatic force on the positive charge is:",
+    "options": [
+     "$9.0\\times10^{8}$ N toward the negative charge",
+     "$9.0\\times10^{8}$ N away from the negative charge",
+     "$9.0\\times10^{9}$ N toward the negative charge",
+     "$9.0\\times10^{9}$ N away from the negative charge",
+     "none of these"
+    ],
+    "answer": 0,
+    "why": "$F = k\\frac{|q_1q_2|}{r^2} = (9\\times10^9)\\frac{(5)(2)}{10^2} = 9.0\\times10^{8}$ N. Opposite signs attract, so it points toward the negative charge.",
+    "solution": "$F = k\\frac{|q_1q_2|}{r^2} = (9\\times10^9)\\frac{(5)(2)}{10^2} = 9.0\\times10^{8}$ N. Opposite signs attract, so it points toward the negative charge."
+   },
+   {
+    "n": 5,
+    "kind": "mcq",
+    "q": "A particle with charge $Q$ is on the $y$ axis a distance $a$ from the origin and a particle with charge $q$ is on the $x$ axis a distance $d$ from the origin. The value of $d$ for which the $x$ component of the force on the second particle is the greatest is:",
+    "options": [
+     "$0$",
+     "$a$",
+     "$\\sqrt2\\,a$",
+     "$a/2$",
+     "$a/\\sqrt2$"
+    ],
+    "answer": 4,
+    "why": "$F_x = k\\frac{Qq}{d^2+a^2}\\cos\\theta = kQq\\frac{d}{(d^2+a^2)^{3/2}}$. Setting $dF_x/dd = 0$ gives $a^2 = 2d^2$, so $d = a/\\sqrt2$.",
+    "solution": "The distance is $\\sqrt{d^2+a^2}$ and $\\cos\\theta = d/\\sqrt{d^2+a^2}$, so $$F_x = kQq\\,\\frac{d}{(d^2+a^2)^{3/2}}.$$ Differentiate: $$\\frac{d}{dd}\\left[\\frac{d}{(d^2+a^2)^{3/2}}\\right] = \\frac{(d^2+a^2) - 3d^2}{(d^2+a^2)^{5/2}} = 0 \\;\\Rightarrow\\; a^2 = 2d^2 \\;\\Rightarrow\\; d = \\frac{a}{\\sqrt2}.$$ **Why this method:** at $d = 0$ the force is all vertical ($F_x = 0$), and far away the force is tiny, so there's a maximum in between; calculus finds it."
+   },
+   {
+    "n": 6,
+    "kind": "mcq",
+    "q": "A particle with a charge of $5.0\\times10^{-6}$ C and a mass of 20 g moves uniformly with a speed of 7 m/s in a circular orbit around a stationary particle with a charge of $-5.0\\times10^{-6}$ C. The radius of the orbit is:",
+    "options": [
+     "0 m",
+     "0.23 m",
+     "0.62 m",
+     "1.6 m",
+     "4.4 m"
+    ],
+    "answer": 1,
+    "why": "The electric attraction is the centripetal force: $k\\frac{Qq}{r^2} = \\frac{mv^2}{r} \\Rightarrow r = \\frac{kQq}{mv^2} = \\frac{(9\\times10^9)(25\\times10^{-12})}{(0.020)(49)} = 0.23$ m.",
+    "solution": "The electric attraction is the centripetal force: $k\\frac{Qq}{r^2} = \\frac{mv^2}{r} \\Rightarrow r = \\frac{kQq}{mv^2} = \\frac{(9\\times10^9)(25\\times10^{-12})}{(0.020)(49)} = 0.23$ m."
+   },
+   {
+    "n": 7,
+    "kind": "mcq",
+    "q": "Two protons ($p_1$ and $p_2$) and an electron ($e$) lie on a straight line, as shown. The directions of the force of $p_1$ on $e$, the force of $p_2$ on $e$, and the total force on $e$, respectively, are:",
+    "options": [
+     "(see figure)",
+     "(see figure)",
+     "(see figure)",
+     "(see figure)",
+     "(see figure)"
+    ],
+    "answer": 3,
+    "why": "Each proton pulls the electron toward itself (opposite charges attract). The total force points toward the CLOSER proton, because Coulomb's force grows as $1/r^2$.",
+    "solution": "Each proton pulls the electron toward itself (opposite charges attract). The total force points toward the CLOSER proton, because Coulomb's force grows as $1/r^2$.",
+    "missing_figure": true,
+    "note": "The answer arrows and the figure were images in the original file; official answer D."
+   },
+   {
+    "n": 8,
+    "kind": "mcq",
+    "q": "Particle 1 with charge $q_1$ and particle 2 with charge $q_2$ are on the $x$ axis, with particle 1 at $x = a$ and particle 2 at $x = -2a$. For the net force on a third charged particle at the origin to be zero, $q_1$ and $q_2$ must be related by $q_2 =$",
+    "options": [
+     "$2q_1$",
+     "$4q_1$",
+     "$-2q_1$",
+     "$-4q_1$",
+     "$-q_1/4$"
+    ],
+    "answer": 1,
+    "why": "The two forces must point in opposite directions, so $q_1$ and $q_2$ have the SAME sign, and be equal in size: $\\frac{q_1}{a^2} = \\frac{q_2}{(2a)^2} \\Rightarrow q_2 = 4q_1$.",
+    "solution": "The two forces must point in opposite directions, so $q_1$ and $q_2$ have the SAME sign, and be equal in size: $\\frac{q_1}{a^2} = \\frac{q_2}{(2a)^2} \\Rightarrow q_2 = 4q_1$."
+   },
+   {
+    "n": 9,
+    "kind": "mcq",
+    "q": "A particle with charge 2 μC is placed at the origin. An identical particle is placed 2 m from the origin on the $x$ axis, and a third identical particle 2 m from the origin on the $y$ axis. The magnitude of the force on the particle at the origin is:",
+    "options": [
+     "$9.0\\times10^{-3}$ N",
+     "$6.4\\times10^{-3}$ N",
+     "$1.3\\times10^{-2}$ N",
+     "$1.8\\times10^{-2}$ N",
+     "$3.6\\times10^{-2}$ N"
+    ],
+    "answer": 2,
+    "why": "Each neighbour pushes with $F = k\\frac{(2\\times10^{-6})^2}{2^2} = 9.0\\times10^{-3}$ N, one along $-x$ and one along $-y$. At right angles they add to $\\sqrt2\\,F = 1.3\\times10^{-2}$ N.",
+    "solution": "Each neighbour pushes with $F = k\\frac{(2\\times10^{-6})^2}{2^2} = 9.0\\times10^{-3}$ N, one along $-x$ and one along $-y$. At right angles they add to $\\sqrt2\\,F = 1.3\\times10^{-2}$ N."
+   },
+   {
+    "n": 10,
+    "kind": "mcq",
+    "q": "Two particles, each with charge $Q$, and a third particle with charge $q$ are placed at the vertices of an equilateral triangle as shown. The total force on the particle with charge $q$ is:",
+    "options": [
+     "parallel to the left side of the triangle",
+     "parallel to the right side of the triangle",
+     "parallel to the bottom side of the triangle",
+     "perpendicular to the bottom side of the triangle",
+     "perpendicular to the left side of the triangle"
+    ],
+    "answer": 3,
+    "why": "The two equal charges $Q$ sit symmetrically about the vertical line through $q$. Their sideways components cancel and the vertical ones add, so the total force is perpendicular to the bottom side.",
+    "solution": "The two equal charges $Q$ sit symmetrically about the vertical line through $q$. Their sideways components cancel and the vertical ones add, so the total force is perpendicular to the bottom side.",
+    "missing_figure": true
+   },
+   {
+    "n": 11,
+    "kind": "mcq",
+    "q": "Charge is distributed uniformly on the surface of a spherical nonconducting shell. A point particle with charge $q$ is inside. The electrical force on the particle $q$ is least when:",
+    "options": [
+     "it is near the inside surface of the shell",
+     "it is at the center of the shell",
+     "it is halfway between the shell center and the inside surface",
+     "it is near, but not at, the center of the shell",
+     "all of the above (the force is zero everywhere inside)"
+    ],
+    "answer": 4,
+    "why": "Shell theorem: a uniformly charged shell exerts NO net force on a charge anywhere inside it, so the force is zero (and equally 'least') at every point.",
+    "solution": "Shell theorem: a uniformly charged shell exerts NO net force on a charge anywhere inside it, so the force is zero (and equally 'least') at every point."
+   },
+   {
+    "n": 12,
+    "kind": "mcq",
+    "q": "Two uncharged metal spheres, L and M, are in contact. A negatively charged rod is brought close to L, but not touching it, as shown. The two spheres are slightly separated and the rod is then withdrawn. As a result:",
+    "options": [
+     "both spheres are neutral",
+     "both spheres are positive",
+     "both spheres are negative",
+     "L is negative and M is positive",
+     "L is positive and M is negative"
+    ],
+    "answer": 4,
+    "why": "The negative rod pushes free electrons from L over to M. Separating the spheres traps that imbalance: L (near the rod) ends up positive and M negative. This is charging by induction.",
+    "solution": "The negative rod pushes free electrons from L over to M. Separating the spheres traps that imbalance: L (near the rod) ends up positive and M negative. This is charging by induction.",
+    "missing_figure": true
+   },
+   {
+    "n": 13,
+    "kind": "mcq",
+    "q": "Two identical conducting spheres A and B carry equal charge and exert electrostatic forces of magnitude $F$ on each other. A third identical, uncharged conducting sphere C is first touched to A, then to B, and finally removed. The force between A and B becomes:",
+    "options": [
+     "$F/2$",
+     "$F/4$",
+     "$3F/8$",
+     "$F/16$",
+     "$0$"
+    ],
+    "answer": 2,
+    "why": "Identical conductors share charge equally. C + A: each gets $q/2$. C + B: $(q/2 + q)/2 = 3q/4$ each. New force $\\propto \\frac{q}{2}\\cdot\\frac{3q}{4} = \\frac38 q^2$, so $F' = 3F/8$.",
+    "solution": "Identical conductors share charge equally. C + A: each gets $q/2$. C + B: $(q/2 + q)/2 = 3q/4$ each. New force $\\propto \\frac{q}{2}\\cdot\\frac{3q}{4} = \\frac38 q^2$, so $F' = 3F/8$."
+   },
+   {
+    "n": 14,
+    "kind": "mcq",
+    "q": "Which of the following is NOT a possible value for the electric charge on an object?",
+    "options": [
+     "$8.0\\times10^{-20}$ C",
+     "$8.0\\times10^{-19}$ C",
+     "$8.0\\times10^{-18}$ C",
+     "$8.0\\times10^{-17}$ C",
+     "$8.0\\times10^{-16}$ C"
+    ],
+    "answer": 0,
+    "why": "Charge comes in whole multiples of $e = 1.6\\times10^{-19}$ C. $8.0\\times10^{-20}$ C $= 0.5e$, which is impossible; the others are $5e$, $50e$, $500e$, $5000e$.",
+    "solution": "Charge comes in whole multiples of $e = 1.6\\times10^{-19}$ C. $8.0\\times10^{-20}$ C $= 0.5e$, which is impossible; the others are $5e$, $50e$, $500e$, $5000e$."
+   },
+   {
+    "n": 15,
+    "kind": "mcq",
+    "q": "In positron emission tomography, a positron interacts with an atomic electron, emitting gamma rays that are detected by the imager. This gamma ray emission process is called:",
+    "options": [
+     "pair production",
+     "annihilation",
+     "absorption",
+     "alpha decay",
+     "fission"
+    ],
+    "answer": 1,
+    "why": "$e^- + e^+ \\to \\gamma + \\gamma$ is annihilation (total charge $-e + e = 0$ before and after). Pair production is the reverse, $\\gamma \\to e^- + e^+$.",
+    "solution": "$e^- + e^+ \\to \\gamma + \\gamma$ is annihilation (total charge $-e + e = 0$ before and after). Pair production is the reverse, $\\gamma \\to e^- + e^+$."
+   },
+   {
+    "n": 16,
+    "kind": "mcq",
+    "q": "A particle ($m = 50$ g, $q = 5.0$ μC) is released from rest when it is 50 cm from a second particle ($Q = -20.0$ μC). Determine the magnitude of the initial acceleration of the 50 g particle.",
+    "options": [
+     "54 m/s$^2$",
+     "90 m/s$^2$",
+     "72 m/s$^2$",
+     "65 m/s$^2$",
+     "36 m/s$^2$"
+    ],
+    "answer": 2,
+    "why": "$F = k\\frac{|qQ|}{r^2} = (9\\times10^9)\\frac{(5\\times10^{-6})(20\\times10^{-6})}{0.5^2} = 3.6$ N, then $a = F/m = 3.6/0.050 = 72$ m/s$^2$.",
+    "solution": "$F = k\\frac{|qQ|}{r^2} = (9\\times10^9)\\frac{(5\\times10^{-6})(20\\times10^{-6})}{0.5^2} = 3.6$ N, then $a = F/m = 3.6/0.050 = 72$ m/s$^2$."
+   },
+   {
+    "n": 17,
+    "kind": "mcq",
+    "q": "Identical point charges $Q$ are placed at each of the four corners of a 3.0 m × 4.0 m rectangle. If $Q = 40$ μC, what is the magnitude of the electrostatic force on any one of the charges?",
+    "options": [
+     "3.0 N",
+     "2.4 N",
+     "1.8 N",
+     "3.7 N",
+     "2.0 N"
+    ],
+    "answer": 1,
+    "why": "Three neighbours push the chosen charge: along the 3 m side, along the 4 m side, and along the 5 m diagonal. Add components: $F_x = kQ^2\\left(\\frac1{3^2} + \\frac1{5^2}\\cdot\\frac35\\right)$, $F_y = kQ^2\\left(\\frac1{4^2} + \\frac1{5^2}\\cdot\\frac45\\right)$, $|F| \\approx 2.4$ N.",
+    "solution": "With $kQ^2 = (9\\times10^9)(40\\times10^{-6})^2 = 14.4$ N·m², take the charge at the origin with neighbours at $(3,0)$, $(0,4)$ and $(3,4)$. All forces are repulsive (pointing away), so in magnitude: $$F_x = 14.4\\left(\\frac{1}{9} + \\frac{1}{25}\\cdot\\frac{3}{5}\\right) = 1.947\\ \\text{N},\\qquad F_y = 14.4\\left(\\frac{1}{16} + \\frac{1}{25}\\cdot\\frac{4}{5}\\right) = 1.361\\ \\text{N},$$ $$|F| = \\sqrt{1.947^2 + 1.361^2} = 2.4\\ \\text{N}.$$ **Why this method:** superposition. Each pair force comes from Coulomb's law, and the diagonal one is split with $\\cos\\theta = 3/5$, $\\sin\\theta = 4/5$."
+   },
+   {
+    "n": 18,
+    "kind": "mcq",
+    "q": "The symbol $\\frac{1}{4\\pi\\varepsilon_0}$ appears in Coulomb's law because we use independently defined units for:",
+    "options": [
+     "force and distance",
+     "charge and distance",
+     "distance and force",
+     "force, distance and electric charge",
+     "charge"
+    ],
+    "answer": 3,
+    "why": "Newtons, metres and coulombs are each defined on their own, so a constant is needed to make $F = (\\text{const})\\,q_1q_2/r^2$ come out right. That constant is $1/(4\\pi\\varepsilon_0)$.",
+    "solution": "Newtons, metres and coulombs are each defined on their own, so a constant is needed to make $F = (\\text{const})\\,q_1q_2/r^2$ come out right. That constant is $1/(4\\pi\\varepsilon_0)$."
+   },
+   {
+    "n": 19,
+    "kind": "mcq",
+    "q": "A point charge $Q$ is at the origin and a second charge $2Q$ is on the $x$ axis at $x = -3.0$ m. If $Q = 50$ μC, what is the magnitude of the electrostatic force on a third point charge $-Q$ placed on the $y$ axis at $y = +4.0$ m?",
+    "options": [
+     "2.5 N",
+     "3.0 N",
+     "3.7 N",
+     "4.4 N",
+     "1.8 N"
+    ],
+    "answer": 1,
+    "why": "Both forces on $-Q$ are attractive. From $Q$ (4 m away): $kQ^2/16$, straight down. From $2Q$ (5 m away): $2kQ^2/25$, toward $(-3,0)$, i.e. with components $(-\\frac35, -\\frac45)$. Adding gives $|F| \\approx 3.0$ N.",
+    "solution": "$kQ^2 = (9\\times10^9)(50\\times10^{-6})^2 = 22.5$ N·m². $$F_x = -\\frac{2(22.5)}{25}\\cdot\\frac35 = -1.08\\ \\text{N},\\qquad F_y = -\\frac{22.5}{16} - \\frac{2(22.5)}{25}\\cdot\\frac45 = -2.85\\ \\text{N},$$ $$|F| = \\sqrt{1.08^2 + 2.85^2} = 3.0\\ \\text{N}.$$ **Why this method:** vector superposition. The 3-4-5 triangle gives the direction cosines for free."
+   },
+   {
+    "n": 20,
+    "kind": "mcq",
+    "q": "Two small non-conducting spheres are both charged positively, the combined charge being 40 μC. When the two spheres are 50 cm apart, each is repelled from the other by a force of 2.0 N. Determine the magnitude of the smaller of the two charges.",
+    "options": [
+     "1.4 μC",
+     "1.1 μC",
+     "2.0 μC",
+     "3.3 μC",
+     "17 μC"
+    ],
+    "answer": 0,
+    "why": "Let the charges be $x$ and $40\\,\\mu\\text{C} - x$: $k\\frac{x(40\\times10^{-6}-x)}{0.5^2} = 2.0$. Solving the quadratic, the smaller root is $x \\approx 1.4$ μC.",
+    "solution": "$$x(40\\times10^{-6} - x) = \\frac{(2.0)(0.25)}{9\\times10^9} = 5.56\\times10^{-11}$$ $$x^2 - (40\\times10^{-6})x + 5.56\\times10^{-11} = 0 \\;\\Rightarrow\\; x = \\frac{40\\times10^{-6} \\pm \\sqrt{1.6\\times10^{-9} - 2.22\\times10^{-10}}}{2}.$$ The two roots, 1.4 μC and 38.6 μC, are the two charges; the smaller is **1.4 μC**. **Why this method:** two unknowns, two facts (their sum and the force), so substitute and solve the quadratic."
+   },
+   {
+    "n": 21,
+    "kind": "problem",
+    "q": "Problem 1. Three charges A, B and C are arranged as shown in the figure. Rank the charges in order of increasing magnitude of the net force $F_A$, $F_B$, $F_C$ they experience. Indicate ties where appropriate.",
+    "parts": [
+     {
+      "label": "",
+      "q": "",
+      "answer": "$C < A < B$",
+      "solution": "From the official solution (charges of size $q$, neighbouring spacing $d$): $$F_A = k\\frac{q^2}{d^2} + k\\frac{q^2}{(2d)^2} = \\frac54\\,k\\frac{q^2}{d^2},\\quad |F_B| = 2k\\frac{q^2}{d^2},\\quad F_C = -k\\frac{q^2}{(2d)^2} + k\\frac{q^2}{d^2} = \\frac34\\,k\\frac{q^2}{d^2}.$$ So $\\frac34 < \\frac54 < 2$: **C < A < B**.",
+      "method": "Superposition along a line: add the two Coulomb forces with signs (same direction adds, opposite directions subtract)."
+     }
+    ],
+    "missing_figure": true
+   },
+   {
+    "n": 22,
+    "kind": "problem",
+    "q": "Problem 2. A charge $q_1 = -6.50$ μC is at the origin, and $q_2 = -2.42$ μC is on the $x$ axis at $x = 1.00$ m. Find the net force on $q_3 = +1.40$ μC located at $x = 0.55$ m. ($k = 9.0\\times10^9$ N·m²/C²)",
+    "parts": [
+     {
+      "label": "",
+      "q": "",
+      "answer": "$\\vec F_3 = -0.12\\ \\text{N}\\,\\hat\\imath$",
+      "solution": "$q_3$ is attracted toward both negative charges. Toward $q_1$ (to the left): $$F_{31} = k\\frac{|q_1q_3|}{0.55^2} = (9\\times10^9)\\frac{(6.50\\times10^{-6})(1.40\\times10^{-6})}{0.3025} = 0.27\\ \\text{N}\\ (-\\hat\\imath).$$ Toward $q_2$ (to the right, 0.45 m away): $$F_{32} = (9\\times10^9)\\frac{(2.42\\times10^{-6})(1.40\\times10^{-6})}{0.2025} = 0.15\\ \\text{N}\\ (+\\hat\\imath).$$ Net: $-0.27 + 0.15 = -0.12$ N, i.e. **0.12 N toward $-x$**.",
+      "method": "1-D superposition: give each force a sign from its direction, then add."
+     }
+    ]
+   },
+   {
+    "n": 23,
+    "kind": "problem",
+    "q": "Problem 3. With the same $q_1 = -6.50$ μC at the origin and $q_2 = -2.42$ μC at $x = 1.00$ m, find the position $x$ (between them) where the net force on a test charge $q_3$ is zero.",
+    "parts": [
+     {
+      "label": "",
+      "q": "",
+      "answer": "$x \\approx 0.62$ m",
+      "solution": "Between two like charges the pulls are opposite, so set the magnitudes equal: $$\\frac{|q_1|}{x^2} = \\frac{|q_2|}{(1.00 - x)^2} \\;\\Rightarrow\\; \\frac{1.00 - x}{x} = \\sqrt{\\frac{|q_2|}{|q_1|}} \\;\\Rightarrow\\; x = \\frac{1.00\\ \\text{m}}{1 + \\sqrt{2.42/6.50}} = 0.62\\ \\text{m}.$$ It sits closer to the SMALLER charge $q_2$, as expected.",
+      "method": "Balance of forces: equal magnitudes, then take square roots (choose the root that lies between the charges)."
+     }
+    ],
+    "missing_figure": true
+   },
+   {
+    "n": 24,
+    "kind": "problem",
+    "q": "Problem 4. Three charges are placed as shown: $q_1 = +2.00$ μC and $q_3 = +4.00$ μC; the sign and value of $q_2$ are unknown. The net force on $q_3$ is entirely in the $-x$ direction. (a) Find the magnitude of $q_2$. (b) Find the magnitude of the net force on $q_3$.",
+    "parts": [
+     {
+      "label": "(a)",
+      "q": "",
+      "answer": "$|q_2| = 0.843$ μC (positive)",
+      "solution": "Only a positive $q_2$ can make the net force point along $-x$. The $y$-components must cancel: $$k\\frac{|q_1|q_3}{(0.040)^2}\\sin\\theta_1 = k\\frac{|q_2|q_3}{(0.030)^2}\\sin\\theta_2 \\;\\Rightarrow\\; q_2 = \\frac{9}{16}\\,q_1\\frac{\\sin\\theta_1}{\\sin\\theta_2} = \\frac{9}{16}(2.00\\ \\mu\\text{C})\\cdot\\frac34 = 0.843\\ \\mu\\text{C}.$$",
+      "method": "Use the given direction of the net force as an equation: zero $y$-component."
+     },
+     {
+      "label": "(b)",
+      "q": "",
+      "answer": "$F = 56.2$ N",
+      "solution": "Now add the $x$-components: $$F = k q_3\\left[\\frac{q_1}{(0.040)^2}\\cdot\\frac45 + \\frac{q_2}{(0.030)^2}\\cdot\\frac35\\right] = (9\\times10^9)(4.00\\times10^{-6})\\left[1.00\\times10^{-3} + 5.62\\times10^{-4}\\right] = 56.2\\ \\text{N}.$$",
+      "method": "With $F_y = 0$, the net force is just $F_x$."
+     }
+    ],
+    "missing_figure": true
+   }
+  ],
+  "pdf": "homework/hw01-solutions.pdf"
+ },
+ {
+  "id": "hw02",
+  "title": "HW02 · Ch 22 Electric Field",
+  "source": "CST homework02 (Chapter 22), mxhuang@scut.edu.cn",
+  "intro": null,
+  "items": [
+   {
+    "n": 1,
+    "kind": "mcq",
+    "q": "An electric field is most directly related to:",
+    "options": [
+     "the momentum of a test charge",
+     "the kinetic energy of a test charge",
+     "the potential energy of a test charge",
+     "the force acting on a test charge",
+     "the charge carried by a test charge"
+    ],
+    "answer": 3,
+    "why": "By definition $\\vec E = \\vec F/q_0$: the field is the force per unit charge on a test charge.",
+    "solution": "By definition $\\vec E = \\vec F/q_0$: the field is the force per unit charge on a test charge."
+   },
+   {
+    "n": 2,
+    "kind": "mcq",
+    "q": "The diagram shows the electric field lines due to two charged parallel metal plates. We conclude that:",
+    "options": [
+     "the upper plate is positive and the lower plate is negative",
+     "a proton at X would experience the same force if it were placed at Y",
+     "a proton at X experiences a greater force than if it were placed at Z",
+     "a proton at X experiences less force than if it were placed at Z",
+     "an electron at X could have its weight balanced by the electrical force"
+    ],
+    "answer": 1,
+    "why": "Between parallel plates the field lines are straight, parallel and evenly spaced, so the field is uniform ($E = \\sigma/\\varepsilon_0$). A proton feels the same force $qE$ at X and at Y.",
+    "solution": "Between parallel plates the field lines are straight, parallel and evenly spaced, so the field is uniform ($E = \\sigma/\\varepsilon_0$). A proton feels the same force $qE$ at X and at Y.",
+    "missing_figure": true
+   },
+   {
+    "n": 3,
+    "kind": "mcq",
+    "q": "An isolated charged point particle produces an electric field with magnitude $E$ at a point 2 m away. A point at which the field magnitude is $E/4$ is:",
+    "options": [
+     "0.5 m away",
+     "1 m away",
+     "2 m away",
+     "4 m away",
+     "8 m away"
+    ],
+    "answer": 3,
+    "why": "$E \\propto 1/r^2$. To divide $E$ by 4, multiply $r$ by $\\sqrt4 = 2$: from 2 m to 4 m.",
+    "solution": "$E \\propto 1/r^2$. To divide $E$ by 4, multiply $r$ by $\\sqrt4 = 2$: from 2 m to 4 m."
+   },
+   {
+    "n": 4,
+    "kind": "mcq",
+    "q": "An isolated charged point particle produces an electric field with magnitude $E$ at a point 2 m away. At a point 1 m from the particle the magnitude of the field is:",
+    "options": [
+     "$E$",
+     "$2E$",
+     "$4E$",
+     "$E/2$",
+     "$E/4$"
+    ],
+    "answer": 2,
+    "why": "Halving $r$ multiplies $1/r^2$ by 4, so the field is $4E$.",
+    "solution": "Halving $r$ multiplies $1/r^2$ by 4, so the field is $4E$."
+   },
+   {
+    "n": 5,
+    "kind": "mcq",
+    "q": "Two point particles with charges $q_1$ and $q_2$ are a distance $r$ apart. The electric field is zero at a point $P$ between them on the segment joining them. We conclude that:",
+    "options": [
+     "$q_1$ and $q_2$ must have the same magnitude and sign",
+     "$P$ must be midway between the particles",
+     "$q_1$ and $q_2$ must have the same sign but may have different magnitudes",
+     "$q_1$ and $q_2$ must have equal magnitudes and opposite signs",
+     "$q_1$ and $q_2$ must have opposite signs and may have different magnitudes"
+    ],
+    "answer": 2,
+    "why": "Between the charges, the two fields can only point opposite ways if the charges have the SAME sign. The zero point then shifts toward the smaller charge, so the magnitudes can differ.",
+    "solution": "Between the charges, the two fields can only point opposite ways if the charges have the SAME sign. The zero point then shifts toward the smaller charge, so the magnitudes can differ."
+   },
+   {
+    "n": 6,
+    "kind": "mcq",
+    "q": "The diagrams depict four different charge distributions, all with particles the same distance from the origin. The electric field at the origin:",
+    "options": [
+     "is least for situation 1",
+     "is greatest for situation 3",
+     "is zero for situation 4",
+     "is downward for situation 1",
+     "is downward for situation 3"
+    ],
+    "answer": 2,
+    "why": "In situation 4 the charges are arranged symmetrically so that their fields cancel in pairs at the origin.",
+    "solution": "In situation 4 the charges are arranged symmetrically so that their fields cancel in pairs at the origin.",
+    "missing_figure": true
+   },
+   {
+    "n": 7,
+    "kind": "mcq",
+    "q": "Two point particles, $+8\\times10^{-9}$ C and $-2\\times10^{-9}$ C, are 4 m apart. The electric field midway between them is:",
+    "options": [
+     "$9\\times10^{9}$ N/C",
+     "13,500 N/C",
+     "135,000 N/C",
+     "$36\\times10^{-9}$ N/C",
+     "22.5 N/C"
+    ],
+    "answer": 4,
+    "why": "At the midpoint (2 m from each), both fields point from + toward −, so they ADD: $E = k\\frac{8\\times10^{-9}}{2^2} + k\\frac{2\\times10^{-9}}{2^2} = 18 + 4.5 = 22.5$ N/C.",
+    "solution": "At the midpoint (2 m from each), both fields point from + toward −, so they ADD: $E = k\\frac{8\\times10^{-9}}{2^2} + k\\frac{2\\times10^{-9}}{2^2} = 18 + 4.5 = 22.5$ N/C."
+   },
+   {
+    "n": 8,
+    "kind": "mcq",
+    "q": "Two point charges are arranged as shown. In which region could a third charge +1 C be placed so that the net electrostatic force on it is zero?",
+    "options": [
+     "I only",
+     "I and II only",
+     "III only",
+     "I and III only",
+     "II only"
+    ],
+    "answer": 0,
+    "why": "For opposite charges, the zero point lies OUTSIDE the pair, on the side of the smaller-magnitude charge (here region I), where $k\\frac{2}{r_1^2} = k\\frac{4}{r_2^2}$ can balance.",
+    "solution": "For opposite charges, the zero point lies OUTSIDE the pair, on the side of the smaller-magnitude charge (here region I), where $k\\frac{2}{r_1^2} = k\\frac{4}{r_2^2}$ can balance.",
+    "missing_figure": true
+   },
+   {
+    "n": 9,
+    "kind": "mcq",
+    "q": "Positive charge $+Q$ is uniformly distributed on the upper half of a semicircular rod and $-Q$ on the lower half. What is the direction of the electric field at P, the center of the semicircle?",
+    "options": [
+     "(see figure)",
+     "(see figure)",
+     "(see figure)",
+     "(see figure)",
+     "(see figure)"
+    ],
+    "answer": 1,
+    "why": "Each half's field at P points away from $+Q$ and toward $-Q$, so the horizontal parts cancel and the total field points straight DOWN (from the + half toward the − half).",
+    "solution": "Each half's field at P points away from $+Q$ and toward $-Q$, so the horizontal parts cancel and the total field points straight DOWN (from the + half toward the − half).",
+    "missing_figure": true,
+    "note": "The answer arrows were images in the original file; official answer B."
+   },
+   {
+    "n": 10,
+    "kind": "mcq",
+    "q": "Positive charge $+Q$ is uniformly distributed on the upper half of a rod and $-Q$ on the lower half. What is the direction of the electric field at P, on the perpendicular bisector of the rod?",
+    "options": [
+     "(see figure)",
+     "(see figure)",
+     "(see figure)",
+     "(see figure)",
+     "(see figure)"
+    ],
+    "answer": 1,
+    "why": "By the same symmetry as Q9, the components along the bisector cancel and the field points from the + half toward the − half, parallel to the rod (downward).",
+    "solution": "By the same symmetry as Q9, the components along the bisector cancel and the field points from the + half toward the − half, parallel to the rod (downward).",
+    "missing_figure": true,
+    "note": "The answer arrows were images in the original file; official answer B."
+   },
+   {
+    "n": 11,
+    "kind": "mcq",
+    "q": "A disk with uniform positive surface charge density $2.5\\times10^{-6}$ C/m² lies in the $xy$ plane, centered on the origin, with radius 7.5 cm. What is the electric field at $z = 15$ cm?",
+    "options": [
+     "30 N/C",
+     "300 N/C",
+     "3000 N/C",
+     "$1.5\\times10^{4}$ N/C",
+     "$3.0\\times10^{7}$ N/C"
+    ],
+    "answer": 3,
+    "why": "$E = \\frac{\\sigma}{2\\varepsilon_0}\\left[1 - \\frac{z}{\\sqrt{z^2+R^2}}\\right] = (1.41\\times10^5)\\left[1 - \\frac{0.15}{0.168}\\right] = 1.5\\times10^4$ N/C.",
+    "solution": "Use the charged-disk result from Ch 22: $$E = \\frac{\\sigma}{2\\varepsilon_0}\\left(1 - \\frac{z}{\\sqrt{z^2 + R^2}}\\right),\\qquad \\frac{\\sigma}{2\\varepsilon_0} = \\frac{2.5\\times10^{-6}}{2(8.85\\times10^{-12})} = 1.41\\times10^5\\ \\text{N/C}.$$ $$\\sqrt{0.15^2 + 0.075^2} = 0.1677\\ \\text{m} \\;\\Rightarrow\\; E = 1.41\\times10^5\\,(1 - 0.894) = 1.5\\times10^4\\ \\text{N/C}.$$ **Why this method:** the point is on the disk's axis, which is exactly where the formula applies."
+   },
+   {
+    "n": 12,
+    "kind": "mcq",
+    "q": "The electric field due to a uniform distribution of charge on a spherical shell is zero:",
+    "options": [
+     "everywhere",
+     "nowhere",
+     "only at the center of the shell",
+     "only inside the shell",
+     "only outside the shell"
+    ],
+    "answer": 3,
+    "why": "Gauss' law: a sphere inside the shell encloses no charge, so $E = 0$ everywhere inside. Outside, it equals $kq/r^2$.",
+    "solution": "Gauss' law: a sphere inside the shell encloses no charge, so $E = 0$ everywhere inside. Outside, it equals $kq/r^2$."
+   },
+   {
+    "n": 13,
+    "kind": "mcq",
+    "q": "A charged oil drop with a mass of $2\\times10^{-4}$ kg is held suspended by a downward electric field of 300 N/C. The charge on the drop is:",
+    "options": [
+     "$+1.5\\times10^{-6}$ C",
+     "$-1.5\\times10^{-6}$ C",
+     "$+6.5\\times10^{-6}$ C",
+     "$-6.5\\times10^{-6}$ C",
+     "0 C"
+    ],
+    "answer": 3,
+    "why": "Balance: $|q|E = mg \\Rightarrow |q| = \\frac{(2\\times10^{-4})(9.8)}{300} = 6.5\\times10^{-6}$ C. The electric force must point UP while $\\vec E$ points down, so $q$ is negative.",
+    "solution": "Balance: $|q|E = mg \\Rightarrow |q| = \\frac{(2\\times10^{-4})(9.8)}{300} = 6.5\\times10^{-6}$ C. The electric force must point UP while $\\vec E$ points down, so $q$ is negative."
+   },
+   {
+    "n": 14,
+    "kind": "mcq",
+    "q": "A uniform electric field of 300 N/C makes an angle of 25° with the dipole moment of an electric dipole. If the torque has a magnitude of $2.5\\times10^{-7}$ N·m, the dipole moment must be:",
+    "options": [
+     "$8.3\\times10^{-10}$ C·m",
+     "$9.2\\times10^{-10}$ C·m",
+     "$2.0\\times10^{-9}$ C·m",
+     "$8.3\\times10^{-5}$ C·m",
+     "$1.8\\times10^{-4}$ C·m"
+    ],
+    "answer": 2,
+    "why": "$\\tau = pE\\sin\\theta \\Rightarrow p = \\frac{2.5\\times10^{-7}}{300\\,\\sin25^\\circ} = 2.0\\times10^{-9}$ C·m.",
+    "solution": "$\\tau = pE\\sin\\theta \\Rightarrow p = \\frac{2.5\\times10^{-7}}{300\\,\\sin25^\\circ} = 2.0\\times10^{-9}$ C·m."
+   },
+   {
+    "n": 15,
+    "kind": "mcq",
+    "q": "A dipole ($p = 2\\times10^{-9}$ C·m) in a 300 N/C field is initially perpendicular to the field and rotates until it points along the field. The work done by the field is:",
+    "options": [
+     "$-12\\times10^{-7}$ J",
+     "$-6\\times10^{-7}$ J",
+     "0 J",
+     "$6\\times10^{-7}$ J",
+     "$12\\times10^{-7}$ J"
+    ],
+    "answer": 3,
+    "why": "$W = -\\Delta U = -(U_f - U_i)$ with $U = -pE\\cos\\theta$: $U_i = 0$ (at 90°), $U_f = -pE$ (at 0°). So $W = pE = (2\\times10^{-9})(300) = 6\\times10^{-7}$ J.",
+    "solution": "$W = -\\Delta U = -(U_f - U_i)$ with $U = -pE\\cos\\theta$: $U_i = 0$ (at 90°), $U_f = -pE$ (at 0°). So $W = pE = (2\\times10^{-9})(300) = 6\\times10^{-7}$ J."
+   },
+   {
+    "n": 16,
+    "kind": "mcq",
+    "q": "Charge $Q$ is distributed uniformly along a semicircle of radius $a$. Which formula gives the magnitude of the force on a particle of charge $q$ at the center of the circle?",
+    "options": [
+     "$\\frac{1}{4\\pi\\varepsilon_0}\\frac{qQ}{\\pi a}$",
+     "$\\frac{1}{4\\pi\\varepsilon_0}\\frac{qQ}{\\pi a^2}$",
+     "$\\frac{1}{4\\pi\\varepsilon_0}\\frac{2qQ}{\\pi a}$",
+     "$\\frac{1}{4\\pi\\varepsilon_0}\\frac{2qQ}{\\pi a^2}$",
+     "$\\frac{1}{4\\pi\\varepsilon_0}\\frac{2qQ}{a^2}$"
+    ],
+    "answer": 3,
+    "why": "$E = \\int_{-90^\\circ}^{90^\\circ}\\frac{\\lambda a\\,d\\theta}{4\\pi\\varepsilon_0 a^2}\\cos\\theta = \\frac{2\\lambda}{4\\pi\\varepsilon_0 a}$ with $\\lambda = \\frac{Q}{\\pi a}$, so $F = qE = \\frac{1}{4\\pi\\varepsilon_0}\\frac{2qQ}{\\pi a^2}$.",
+    "solution": "Same method as the 120° arc in Ch 22, but over 180°: $$E = \\frac{\\lambda}{4\\pi\\varepsilon_0 a}\\int_{-\\pi/2}^{\\pi/2}\\cos\\theta\\,d\\theta = \\frac{2\\lambda}{4\\pi\\varepsilon_0 a},\\qquad \\lambda = \\frac{Q}{\\pi a}.$$ $$F = qE = \\frac{1}{4\\pi\\varepsilon_0}\\,\\frac{2qQ}{\\pi a^2}.$$ **Why this method:** by symmetry the perpendicular components cancel, so only $\\int dE\\cos\\theta$ survives. A quick check: the units must be $qQ/\\text{length}^2$, which rules out A and C."
+   },
+   {
+    "n": 17,
+    "kind": "mcq",
+    "q": "A particle ($m = 20$ mg, $q = -5.0$ μC) moves in a uniform electric field of 60 N/C in the $+x$ direction. At $t = 0$ it moves at 30 m/s in the $+x$ direction through the origin. Determine the maximum distance beyond $x = 0$ it travels in the $+x$ direction.",
+    "options": [
+     "25 m",
+     "20 m",
+     "15 m",
+     "30 m",
+     "60 m"
+    ],
+    "answer": 3,
+    "why": "The charge is negative, so it is pushed back: $a = \\frac{qE}{m} = \\frac{-(5\\times10^{-6})(60)}{2\\times10^{-5}} = -15$ m/s². It stops when $0 - 30^2 = 2(-15)x$, so $x = 30$ m.",
+    "solution": "The charge is negative, so it is pushed back: $a = \\frac{qE}{m} = \\frac{-(5\\times10^{-6})(60)}{2\\times10^{-5}} = -15$ m/s². It stops when $0 - 30^2 = 2(-15)x$, so $x = 30$ m."
+   },
+   {
+    "n": 18,
+    "kind": "mcq",
+    "q": "A particle (mass 5.0 g, charge 40 mC) is in a uniform field $E_x = 2.5$ N/C, $E_y = E_z = 0$. At $t = 0$ its velocity is $v_y = 50$ m/s. What is its speed at $t = 2.0$ s?",
+    "options": [
+     "81 m/s",
+     "72 m/s",
+     "64 m/s",
+     "89 m/s",
+     "25 m/s"
+    ],
+    "answer": 2,
+    "why": "Acceleration only along $x$: $a_x = \\frac{qE}{m} = \\frac{(0.040)(2.5)}{0.005} = 20$ m/s², so $v_x = 40$ m/s at 2 s while $v_y$ stays 50 m/s. Speed $= \\sqrt{40^2 + 50^2} = 64$ m/s.",
+    "solution": "Acceleration only along $x$: $a_x = \\frac{qE}{m} = \\frac{(0.040)(2.5)}{0.005} = 20$ m/s², so $v_x = 40$ m/s at 2 s while $v_y$ stays 50 m/s. Speed $= \\sqrt{40^2 + 50^2} = 64$ m/s."
+   },
+   {
+    "n": 19,
+    "kind": "mcq",
+    "q": "Which one of the diagrams is not a possible electric field configuration for a region of space that contains no charges?",
+    "options": [
+     "(see figure)",
+     "(see figure)",
+     "(see figure)",
+     "(see figure)",
+     "(see figure)"
+    ],
+    "answer": 3,
+    "why": "Electric field lines can never cross, and in a charge-free region they can't start or stop. The impossible diagram breaks one of these rules.",
+    "solution": "Electric field lines can never cross, and in a charge-free region they can't start or stop. The impossible diagram breaks one of these rules.",
+    "missing_figure": true,
+    "note": "The diagrams were images in the original file; official answer D (from the answer form)."
+   },
+   {
+    "n": 20,
+    "kind": "mcq",
+    "q": "A 24 nC charge is distributed uniformly along the $x$ axis from $x = 2$ m to $x = 6$ m. Which integral gives the magnitude (in N/C) of the electric field at $x = +8$ m?",
+    "options": [
+     "$\\int_2^6 \\frac{54\\,dx}{(8-x)^2}$",
+     "$\\int_2^6 \\frac{216\\,dx}{(8-x)^2}$",
+     "$\\int_2^6 \\frac{54\\,dx}{x^2}$",
+     "$\\int_2^6 \\frac{216\\,dx}{x^2}$",
+     "none of these"
+    ],
+    "answer": 0,
+    "why": "$\\lambda = 24\\ \\text{nC}/4\\ \\text{m} = 6$ nC/m, so $k\\lambda = (9\\times10^9)(6\\times10^{-9}) = 54$. A piece at $x$ is $(8-x)$ from the point: $dE = \\frac{54\\,dx}{(8-x)^2}$.",
+    "solution": "$\\lambda = 24\\ \\text{nC}/4\\ \\text{m} = 6$ nC/m, so $k\\lambda = (9\\times10^9)(6\\times10^{-9}) = 54$. A piece at $x$ is $(8-x)$ from the point: $dE = \\frac{54\\,dx}{(8-x)^2}$."
+   },
+   {
+    "n": 21,
+    "kind": "problem",
+    "q": "Problem 1. Two charged particles, 5.00 nC and −20.00 nC, are placed as shown in the figure. Find the electric field at the origin. ($k = 9.0\\times10^9$ N·m²/C²)",
+    "parts": [
+     {
+      "label": "",
+      "q": "",
+      "answer": "$\\vec E = (1.3\\times10^{5}\\,\\hat\\imath + 4.0\\times10^{4}\\,\\hat\\jmath)$ N/C",
+      "solution": "From the official solution: the 5.00 nC charge is 3.0 cm away and gives $E_+ = k\\frac{5.00\\times10^{-9}}{(0.030)^2} = 5.0\\times10^4$ N/C along $+\\hat\\imath$. The −20.00 nC charge sits at $(0.040, 0.020)$ m and gives a field pointing TOWARD it: $$E_- = k\\frac{20.00\\times10^{-9}}{0.040^2 + 0.020^2} = 9.0\\times10^4\\ \\text{N/C} \\;\\Rightarrow\\; (8.0\\times10^4\\,\\hat\\imath + 4.0\\times10^4\\,\\hat\\jmath)\\ \\text{N/C}.$$ Sum: $\\vec E = (1.3\\times10^5\\,\\hat\\imath + 4.0\\times10^4\\,\\hat\\jmath)$ N/C.",
+      "method": "Superposition: each field from $kq/r^2$, its direction from the unit vector; add components."
+     }
+    ],
+    "missing_figure": true
+   },
+   {
+    "n": 22,
+    "kind": "problem",
+    "q": "Problem 2. Two point charges, −6.25 nC and −12.5 nC, are 25.0 cm apart (figure). Find the net field at (a) point A and (b) point B. (c) What force would act on a proton at A?",
+    "parts": [
+     {
+      "label": "(a)",
+      "q": "",
+      "answer": "$8.75\\times10^{3}$ N/C, to the right",
+      "solution": "At A (0.150 m from $q_1$, 0.100 m from $q_2$) the fields point in opposite directions: $$E_{A1} = k\\frac{6.25\\times10^{-9}}{0.150^2} = 2.50\\times10^3,\\qquad E_{A2} = k\\frac{12.5\\times10^{-9}}{0.100^2} = 1.125\\times10^4\\ \\text{N/C}.$$ Net $= 1.125\\times10^4 - 2.50\\times10^3 = 8.75\\times10^3$ N/C, to the right.",
+      "method": "Opposite directions → subtract magnitudes."
+     },
+     {
+      "label": "(b)",
+      "q": "",
+      "answer": "$6.54\\times10^{3}$ N/C, to the right",
+      "solution": "At B (0.100 m from $q_1$, 0.350 m from $q_2$) both fields point the same way: $$5.625\\times10^3 + 9.18\\times10^2 = 6.54\\times10^3\\ \\text{N/C}.$$",
+      "method": "Same direction → add magnitudes."
+     },
+     {
+      "label": "(c)",
+      "q": "",
+      "answer": "$1.40\\times10^{-15}$ N, to the right",
+      "solution": "$F = qE = (1.60\\times10^{-19})(8.75\\times10^3) = 1.40\\times10^{-15}$ N, along $\\vec E$ because the proton is positive.",
+      "method": "$\\vec F = q\\vec E$."
+     }
+    ],
+    "missing_figure": true
+   },
+   {
+    "n": 23,
+    "kind": "problem",
+    "q": "Problem 3. Two particles with charges $q_1 = 0.500$ nC and $q_2 = 8.00$ nC are 1.20 m apart. At what point along the line joining them is the total electric field zero?",
+    "parts": [
+     {
+      "label": "",
+      "q": "",
+      "answer": "0.24 m from $q_1$ (0.96 m from $q_2$)",
+      "solution": "Like charges, so the zero point is BETWEEN them, closer to the smaller charge. With $x$ measured from $q_1$: $$\\frac{0.500}{x^2} = \\frac{8.00}{(1.20 - x)^2} \\;\\Rightarrow\\; (1.20 - x)^2 = 16x^2 \\;\\Rightarrow\\; 1.20 - x = 4x \\;\\Rightarrow\\; x = 0.24\\ \\text{m}.$$",
+      "method": "Equal magnitudes, opposite directions; the square root turns it into a linear equation."
+     }
+    ]
+   },
+   {
+    "n": 24,
+    "kind": "problem",
+    "q": "Problem 4. A positively charged rod of length $L = 0.250$ m with $\\lambda = 2.33$ μC/m lies along the $x$ axis from $x = 0$ to $x = L$. Find the electric field at P, a distance 0.375 m from the origin on the $x$ axis.",
+    "parts": [
+     {
+      "label": "",
+      "q": "",
+      "answer": "$1.12\\times10^{5}$ N/C, along $+x$",
+      "solution": "Each piece $dq = \\lambda\\,dr$ at position $r$ is $(x - r)$ from P: $$E = \\int_0^L \\frac{k\\lambda\\,dr}{(x - r)^2} = k\\lambda\\left[\\frac{1}{x - r}\\right]_0^L = \\frac{k\\lambda L}{x(x - L)}.$$ $$E = \\frac{(9.0\\times10^9)(2.33\\times10^{-6})(0.250)}{(0.375)(0.125)} = 1.12\\times10^5\\ \\text{N/C}.$$",
+      "method": "Continuous charge: slice it, use the point-charge field for each slice, integrate. All slices point the same way, so no components are needed."
+     }
+    ],
+    "missing_figure": true
+   }
+  ],
+  "pdf": "homework/hw02-solutions.pdf"
+ },
+ {
+  "id": "hw04",
+  "title": "HW04 · Ch 24 Electric Potential",
+  "source": "CST homework04 (Chapter 24), mxhuang@scut.edu.cn",
+  "intro": null,
+  "items": [
+   {
+    "n": 1,
+    "kind": "mcq",
+    "q": "If 500 J of work are required to carry a 40 C charge from one point to another, the potential difference between these two points is:",
+    "options": [
+     "12.5 V",
+     "20,000 V",
+     "0.08 V",
+     "depends on the path",
+     "none of these"
+    ],
+    "answer": 0,
+    "why": "$W = q\\,\\Delta V \\Rightarrow \\Delta V = \\frac{500}{40} = 12.5$ V. The electric force is conservative, so the path doesn't matter.",
+    "solution": "$W = q\\,\\Delta V \\Rightarrow \\Delta V = \\frac{500}{40} = 12.5$ V. The electric force is conservative, so the path doesn't matter."
+   },
+   {
+    "n": 2,
+    "kind": "mcq",
+    "q": "An electron goes from one equipotential surface to another along one of the four paths shown. Rank the paths according to the work done by the electric field, from least to greatest.",
+    "options": [
+     "1, 2, 3, 4",
+     "4, 3, 2, 1",
+     "1, then 3, then 4 and 2 tie",
+     "4 and 2 tie, then 3, then 1",
+     "4, 3, 1, 2"
+    ],
+    "answer": 3,
+    "why": "Work by the field depends only on the start and end potentials: $W = -q\\,\\Delta V = e(V_f - V_i)$ for an electron. Paths 2 and 4 start and end on the same pair of surfaces (a tie); ranking $e(V_f - V_i)$ gives 4 = 2, then 3, then 1.",
+    "solution": "Work by the field depends only on the start and end potentials: $W = -q\\,\\Delta V = e(V_f - V_i)$ for an electron. Paths 2 and 4 start and end on the same pair of surfaces (a tie); ranking $e(V_f - V_i)$ gives 4 = 2, then 3, then 1.",
+    "figure": "homework/img/hw04-q2.png"
+   },
+   {
+    "n": 3,
+    "kind": "mcq",
+    "q": "The graph shows $E_x$ as a function of position. If $E_{xs} = 100$ N/C, what is the potential difference $V(6\\,\\text{m}) - V(3\\,\\text{m})$?",
+    "options": [
+     "250 V",
+     "50 V",
+     "0 V",
+     "−50 V",
+     "−250 V"
+    ],
+    "answer": 4,
+    "why": "$\\Delta V = -\\int_3^6 E_x\\,dx = -(\\text{area under the graph from 3 to 6})$. The area is a triangle (3→4 m, rising 0→100) plus a rectangle (4→6 m at 100): $50 + 200 = 250$, so $\\Delta V = -250$ V.",
+    "solution": "$\\Delta V = -\\int_3^6 E_x\\,dx = -(\\text{area under the graph from 3 to 6})$. The area is a triangle (3→4 m, rising 0→100) plus a rectangle (4→6 m at 100): $50 + 200 = 250$, so $\\Delta V = -250$ V.",
+    "figure": "homework/img/hw04-q3.png"
+   },
+   {
+    "n": 4,
+    "kind": "mcq",
+    "q": "Two particles with charges $Q$ and $-Q$ are fixed at two vertices of an equilateral triangle with side $a$. The work required to move a charge $q$ from the third vertex to the midpoint of the line joining the fixed charges is:",
+    "options": [
+     "0",
+     "$kQq/a$",
+     "$kQq/a^2$",
+     "$2kQq/a$",
+     "$\\sqrt2\\,kQq/a$"
+    ],
+    "answer": 0,
+    "why": "Both points are equidistant from $+Q$ and $-Q$, so $V = k\\frac{Q}{r} - k\\frac{Q}{r} = 0$ at each. Same potential, so $W = q\\,\\Delta V = 0$.",
+    "solution": "Both points are equidistant from $+Q$ and $-Q$, so $V = k\\frac{Q}{r} - k\\frac{Q}{r} = 0$ at each. Same potential, so $W = q\\,\\Delta V = 0$.",
+    "figure": "homework/img/hw04-q4.png"
+   },
+   {
+    "n": 5,
+    "kind": "mcq",
+    "q": "A wire with charge density $\\lambda$ C/m is bent into a circle of radius $r$. What is the electric potential at the center of the circle?",
+    "options": [
+     "$\\lambda/4\\pi\\varepsilon_0 r$",
+     "$\\lambda/4\\pi\\varepsilon_0$",
+     "$\\lambda/4\\varepsilon_0$",
+     "$\\lambda/2\\varepsilon_0$",
+     "$\\lambda/\\varepsilon_0$"
+    ],
+    "answer": 3,
+    "why": "Every bit of the ring is the same distance $r$ from the center, so $V = \\frac{q}{4\\pi\\varepsilon_0 r}$ with $q = 2\\pi r\\lambda$: $V = \\frac{2\\pi r\\lambda}{4\\pi\\varepsilon_0 r} = \\frac{\\lambda}{2\\varepsilon_0}$.",
+    "solution": "Every bit of the ring is the same distance $r$ from the center, so $V = \\frac{q}{4\\pi\\varepsilon_0 r}$ with $q = 2\\pi r\\lambda$: $V = \\frac{2\\pi r\\lambda}{4\\pi\\varepsilon_0 r} = \\frac{\\lambda}{2\\varepsilon_0}$.",
+    "figure": "homework/img/hw04-q5.png"
+   },
+   {
+    "n": 6,
+    "kind": "mcq",
+    "q": "The electric potential in a region is $V = -7.5x^2 + 3x$ (V, m). In this region the equipotential surfaces are:",
+    "options": [
+     "planes parallel to the $x$ axis",
+     "planes parallel to the $yz$ plane",
+     "concentric spheres centered at the origin",
+     "concentric cylinders with the $x$ axis as the cylinder axis",
+     "unknown unless the charge is given"
+    ],
+    "answer": 1,
+    "why": "$V$ depends only on $x$, so $V$ is constant wherever $x$ is constant: the planes $x = \\text{const}$, which are parallel to the $yz$ plane.",
+    "solution": "$V$ depends only on $x$, so $V$ is constant wherever $x$ is constant: the planes $x = \\text{const}$, which are parallel to the $yz$ plane."
+   },
+   {
+    "n": 7,
+    "kind": "mcq",
+    "q": "The electric potential is $V = -7.5x^2 + 3x$ (V, m). What is the electric field?",
+    "options": [
+     "$(15x - 3)\\,\\hat\\imath$",
+     "$(-15x + 3)\\,\\hat\\imath$",
+     "$(-2.5x^3 + 1.5x^2)\\,\\hat\\imath$",
+     "$(2.5x^3 - 1.5x^2)\\,\\hat\\imath$",
+     "0"
+    ],
+    "answer": 0,
+    "why": "$E_x = -\\frac{dV}{dx} = -(-15x + 3) = 15x - 3$. Don't forget the minus sign: option B is the derivative without it.",
+    "solution": "$E_x = -\\frac{dV}{dx} = -(-15x + 3) = 15x - 3$. Don't forget the minus sign: option B is the derivative without it."
+   },
+   {
+    "n": 8,
+    "kind": "mcq",
+    "q": "The graph shows $V(x)$ in a region. What is $E_x$ if $V_s = 50$ V?",
+    "options": [
+     "250 V/m",
+     "40 V/m",
+     "10 V/m",
+     "−40 V/m",
+     "−250 V/m"
+    ],
+    "answer": 0,
+    "why": "The graph is a straight line falling from 50 V at $x = 0$ to 0 at $x = 0.2$ m, a slope of $-250$ V/m. $E_x = -\\frac{dV}{dx} = +250$ V/m.",
+    "solution": "The graph is a straight line falling from 50 V at $x = 0$ to 0 at $x = 0.2$ m, a slope of $-250$ V/m. $E_x = -\\frac{dV}{dx} = +250$ V/m.",
+    "figure": "homework/img/hw04-q8.png"
+   },
+   {
+    "n": 9,
+    "kind": "mcq",
+    "q": "A charge $5.5\\times10^{-8}$ C is fixed at the origin. A charge $-2.3\\times10^{-8}$ C is moved from $x = 3.5$ cm to $y = 4.3$ cm. The change in potential energy of the system is:",
+    "options": [
+     "$3.1\\times10^{-5}$ J",
+     "$-3.1\\times10^{-5}$ J",
+     "$6.0\\times10^{-5}$ J",
+     "$-6.0\\times10^{-5}$ J",
+     "0 J"
+    ],
+    "answer": 2,
+    "why": "$\\Delta U = q\\,(V_f - V_i) = (-2.3\\times10^{-8})(9\\times10^9)(5.5\\times10^{-8})\\left(\\frac1{0.043} - \\frac1{0.035}\\right) = +6.0\\times10^{-5}$ J. Pulling the negative charge farther from the positive one raises U.",
+    "solution": "$\\Delta U = q\\,(V_f - V_i) = (-2.3\\times10^{-8})(9\\times10^9)(5.5\\times10^{-8})\\left(\\frac1{0.043} - \\frac1{0.035}\\right) = +6.0\\times10^{-5}$ J. Pulling the negative charge farther from the positive one raises U.",
+    "figure": "homework/img/hw04-q9.png"
+   },
+   {
+    "n": 10,
+    "kind": "mcq",
+    "q": "Particles on the $x$ axis: $1\\times10^{-8}$ C at 1 cm, $2\\times10^{-8}$ C at 2 cm, $-3\\times10^{-8}$ C at 3 cm. The potential energy of the arrangement (zero at infinite separation) is:",
+    "options": [
+     "$+4.9\\times10^{-4}$ J",
+     "$-4.9\\times10^{-4}$ J",
+     "$+8.5\\times10^{-4}$ J",
+     "$-8.5\\times10^{-4}$ J",
+     "0 J"
+    ],
+    "answer": 1,
+    "why": "Add one term per pair: $U = k\\left(\\frac{q_1q_2}{0.01} + \\frac{q_1q_3}{0.02} + \\frac{q_2q_3}{0.01}\\right) = (9\\times10^9)(2 - 1.5 - 6)\\times10^{-14} = -4.9\\times10^{-4}$ J.",
+    "solution": "$$U = k\\left[\\frac{(1)(2)}{0.01} + \\frac{(1)(-3)}{0.02} + \\frac{(2)(-3)}{0.01}\\right]\\times10^{-16} = (9\\times10^9)(-5.5\\times10^{-14}) = -4.9\\times10^{-4}\\ \\text{J}.$$ Note that particles 1 and 3 are 0.02 m apart. **[NOTE]** The official solution writes 0.01 m for this pair, but its final answer, $-4.9\\times10^{-4}$ J, matches the correct 0.02 m. **Why this method:** the energy of a system is the sum over every pair, $kq_iq_j/r_{ij}$.",
+    "figure": "homework/img/hw04-q10.png"
+   },
+   {
+    "n": 11,
+    "kind": "mcq",
+    "q": "Two identical particles, each with charge $q$, are on the $x$ axis at the origin and at $x = 5$ cm. A third particle, $-q$, is placed on the $x$ axis so that the system's potential energy is zero. Its $x$ coordinate is:",
+    "options": [
+     "13 cm",
+     "2.5 cm",
+     "7.5 cm",
+     "10 cm",
+     "−5 cm"
+    ],
+    "answer": 0,
+    "why": "$U = kq^2\\left(\\frac15 - \\frac1x - \\frac1{x-5}\\right) = 0$ (cm) $\\Rightarrow x^2 - 15x + 25 = 0 \\Rightarrow x = \\frac{15 + \\sqrt{125}}{2} = 13.1$ cm.",
+    "solution": "$U = kq^2\\left(\\frac15 - \\frac1x - \\frac1{x-5}\\right) = 0$ (cm) $\\Rightarrow x^2 - 15x + 25 = 0 \\Rightarrow x = \\frac{15 + \\sqrt{125}}{2} = 13.1$ cm.",
+    "figure": "homework/img/hw04-q11.png"
+   },
+   {
+    "n": 12,
+    "kind": "mcq",
+    "q": "Points R and T are each a distance $d$ from each of two equal positive charges $Q$, as shown. The work required to move a charge $q$ from R to T is:",
+    "options": [
+     "0",
+     "$kQq/d^2$",
+     "$kQq/d$",
+     "$kqQ/(\\sqrt2 d)$",
+     "$kQq/(2d)$"
+    ],
+    "answer": 0,
+    "why": "At R and at T the potential is the same, $V = 2kQ/d$, so $W = q\\,\\Delta V = 0$.",
+    "solution": "At R and at T the potential is the same, $V = 2kQ/d$, so $W = q\\,\\Delta V = 0$.",
+    "figure": "homework/img/hw04-q12.png"
+   },
+   {
+    "n": 13,
+    "kind": "mcq",
+    "q": "A 5 cm radius conducting sphere has surface charge density $2\\times10^{-6}$ C/m². Its potential (relative to far away) is:",
+    "options": [
+     "$1.1\\times10^{4}$ V",
+     "$2.2\\times10^{4}$ V",
+     "$2.3\\times10^{5}$ V",
+     "$3.6\\times10^{5}$ V",
+     "$7.2\\times10^{6}$ V"
+    ],
+    "answer": 0,
+    "why": "$V = \\frac{kq}{R}$ with $q = 4\\pi R^2\\sigma$ gives $V = \\frac{\\sigma R}{\\varepsilon_0} = \\frac{(2\\times10^{-6})(0.05)}{8.85\\times10^{-12}} = 1.1\\times10^4$ V.",
+    "solution": "$V = \\frac{kq}{R}$ with $q = 4\\pi R^2\\sigma$ gives $V = \\frac{\\sigma R}{\\varepsilon_0} = \\frac{(2\\times10^{-6})(0.05)}{8.85\\times10^{-12}} = 1.1\\times10^4$ V."
+   },
+   {
+    "n": 14,
+    "kind": "mcq",
+    "q": "Two conducting spheres are far apart. The smaller carries total charge $Q$; the larger has twice the radius and is neutral. After they are connected by a wire, the charges on the smaller and larger spheres are:",
+    "options": [
+     "$Q/2$ and $Q/2$",
+     "$Q/3$ and $2Q/3$",
+     "$2Q/3$ and $Q/3$",
+     "0 and $Q$",
+     "$2Q$ and $-Q$"
+    ],
+    "answer": 1,
+    "why": "Connected conductors reach the SAME potential: $\\frac{kq_1}{r} = \\frac{kq_2}{2r} \\Rightarrow q_2 = 2q_1$. With $q_1 + q_2 = Q$: $q_1 = Q/3$, $q_2 = 2Q/3$.",
+    "solution": "Connected conductors reach the SAME potential: $\\frac{kq_1}{r} = \\frac{kq_2}{2r} \\Rightarrow q_2 = 2q_1$. With $q_1 + q_2 = Q$: $q_1 = Q/3$, $q_2 = 2Q/3$."
+   },
+   {
+    "n": 15,
+    "kind": "mcq",
+    "q": "A 5 cm radius isolated conducting sphere is charged to +100 V relative to far away. The charge density on its surface is:",
+    "options": [
+     "$+2.2\\times10^{-7}$ C/m²",
+     "$-2.2\\times10^{-7}$ C/m²",
+     "$+3.5\\times10^{-7}$ C/m²",
+     "$-3.5\\times10^{-7}$ C/m²",
+     "$+1.8\\times10^{-8}$ C/m²"
+    ],
+    "answer": 4,
+    "why": "Reverse of Q13: $\\sigma = \\frac{\\varepsilon_0 V}{R} = \\frac{(8.85\\times10^{-12})(100)}{0.05} = 1.8\\times10^{-8}$ C/m², positive because $V > 0$.",
+    "solution": "Reverse of Q13: $\\sigma = \\frac{\\varepsilon_0 V}{R} = \\frac{(8.85\\times10^{-12})(100)}{0.05} = 1.8\\times10^{-8}$ C/m², positive because $V > 0$."
+   },
+   {
+    "n": 16,
+    "kind": "mcq",
+    "q": "For the potential $V = 3x^2z - 2yz^3$, what is the electric field at the point (2, 2, 2)?",
+    "options": [
+     "$-24\\hat\\imath + 16\\hat\\jmath + 36\\hat k$",
+     "$12\\hat\\imath - 16\\hat\\jmath - 16\\hat k$",
+     "$24\\hat\\imath - 16\\hat\\jmath - 36\\hat k$",
+     "$-6\\hat\\imath + 2\\hat\\jmath + 6\\hat k$",
+     "The correct answer is not given."
+    ],
+    "answer": 0,
+    "why": "$\\vec E = -\\nabla V = -6xz\\,\\hat\\imath + 2z^3\\,\\hat\\jmath - (3x^2 - 6yz^2)\\,\\hat k$. At (2,2,2): $-24\\hat\\imath + 16\\hat\\jmath - (12 - 48)\\hat k = -24\\hat\\imath + 16\\hat\\jmath + 36\\hat k$.",
+    "solution": "$\\vec E = -\\nabla V = -6xz\\,\\hat\\imath + 2z^3\\,\\hat\\jmath - (3x^2 - 6yz^2)\\,\\hat k$. At (2,2,2): $-24\\hat\\imath + 16\\hat\\jmath - (12 - 48)\\hat k = -24\\hat\\imath + 16\\hat\\jmath + 36\\hat k$."
+   },
+   {
+    "n": 17,
+    "kind": "mcq",
+    "q": "Charge of uniform density 3.5 nC/m is distributed along the circular arc shown (radius $R$, angle 60°). Determine the potential at the center P.",
+    "options": [
+     "61 V",
+     "42 V",
+     "52 V",
+     "33 V",
+     "22 V"
+    ],
+    "answer": 3,
+    "why": "Every piece is the same distance $R$ from P: $V = \\frac{kq}{R} = \\frac{k\\lambda(R\\theta)}{R} = k\\lambda\\theta = (9\\times10^9)(3.5\\times10^{-9})\\frac{\\pi}{3} = 33$ V. The radius cancels.",
+    "solution": "Every piece is the same distance $R$ from P: $V = \\frac{kq}{R} = \\frac{k\\lambda(R\\theta)}{R} = k\\lambda\\theta = (9\\times10^9)(3.5\\times10^{-9})\\frac{\\pi}{3} = 33$ V. The radius cancels.",
+    "figure": "homework/img/hw04-q17.png"
+   },
+   {
+    "n": 18,
+    "kind": "mcq",
+    "q": "10 nC is distributed uniformly along the $x$ axis from $x = -2$ m to $x = +3$ m. Which integral gives the potential at $x = +5$ m?",
+    "options": [
+     "$\\int_{-2}^{3}\\frac{90\\,dx}{x}$",
+     "$\\int_{-2}^{3}\\frac{90\\,dx}{5-x}$",
+     "$\\int_{-2}^{3}\\frac{18\\,dx}{x}$",
+     "$\\int_{-2}^{3}\\frac{18\\,dx}{5-x}$",
+     "$\\int_{-2}^{3}\\frac{90\\,dx}{5+x}$"
+    ],
+    "answer": 3,
+    "why": "$\\lambda = 10\\ \\text{nC}/5\\ \\text{m} = 2$ nC/m, so $k\\lambda = 18$. A piece at $x$ is $(5 - x)$ from the point: $dV = \\frac{18\\,dx}{5 - x}$.",
+    "solution": "$\\lambda = 10\\ \\text{nC}/5\\ \\text{m} = 2$ nC/m, so $k\\lambda = 18$. A piece at $x$ is $(5 - x)$ from the point: $dV = \\frac{18\\,dx}{5 - x}$.",
+    "figure": "homework/img/hw04-q18.png"
+   },
+   {
+    "n": 19,
+    "kind": "mcq",
+    "q": "Charge of uniform density 50 nC/m³ fills a long nonconducting cylindrical rod (radius 5.0 cm). Find $|V_A - V_B|$ between A (2.0 cm from the axis) and B (4.0 cm).",
+    "options": [
+     "2.7 V",
+     "2.0 V",
+     "2.4 V",
+     "1.7 V",
+     "3.4 V"
+    ],
+    "answer": 3,
+    "why": "Gauss with a cylinder of radius $r$ inside: $E(2\\pi rl) = \\rho\\pi r^2 l/\\varepsilon_0 \\Rightarrow E = \\frac{\\rho r}{2\\varepsilon_0}$. Then $|\\Delta V| = \\int_a^b \\frac{\\rho r}{2\\varepsilon_0}dr = \\frac{\\rho}{4\\varepsilon_0}(b^2 - a^2) = 1.7$ V.",
+    "solution": "Inside the rod, a coaxial Gaussian cylinder gives $$E\\,(2\\pi r l) = \\frac{\\rho\\,\\pi r^2 l}{\\varepsilon_0} \\;\\Rightarrow\\; E = \\frac{\\rho r}{2\\varepsilon_0}.$$ $$|V_A - V_B| = \\int_{0.02}^{0.04}\\frac{\\rho r}{2\\varepsilon_0}\\,dr = \\frac{\\rho}{4\\varepsilon_0}\\left(0.04^2 - 0.02^2\\right) = \\frac{50\\times10^{-9}}{4(8.85\\times10^{-12})}(1.2\\times10^{-3}) = 1.7\\ \\text{V}.$$ **[NOTE]** The official solution writes $E = \\rho r/\\varepsilon_0$ (missing the 2), but its final formula $\\rho(b^2 - a^2)/4\\varepsilon_0$ and its answer use the correct $\\rho r/2\\varepsilon_0$. **Why this method:** Gauss' law gives $E(r)$ from symmetry, then $\\Delta V = -\\int E\\,dr$.",
+    "figure": "homework/img/hw04-q19.png"
+   },
+   {
+    "n": 20,
+    "kind": "mcq",
+    "q": "A solid conducting sphere (radius 5.0 cm) has 0.25 nC on its surface. Point A is at the center and B is 15 cm from the center. What is $|V_A - V_B|$?",
+    "options": [
+     "23 V",
+     "30 V",
+     "15 V",
+     "45 V",
+     "60 V"
+    ],
+    "answer": 1,
+    "why": "Inside a conductor $V$ is constant, so $V_A = V_{\\text{surface}} = \\frac{kq}{0.05}$. Then $|V_A - V_B| = kq\\left(\\frac1{0.05} - \\frac1{0.15}\\right) = (9\\times10^9)(0.25\\times10^{-9})(13.3) = 30$ V.",
+    "solution": "Inside a conductor $V$ is constant, so $V_A = V_{\\text{surface}} = \\frac{kq}{0.05}$. Then $|V_A - V_B| = kq\\left(\\frac1{0.05} - \\frac1{0.15}\\right) = (9\\times10^9)(0.25\\times10^{-9})(13.3) = 30$ V."
+   },
+   {
+    "n": 21,
+    "kind": "problem",
+    "q": "Problem 1. A charge $q = 4.11\\times10^{-9}$ C is at the origin and $-2q$ is on the $x$ axis at $x = 1.0$ m. (a) Find the electric potential at $x = 0.50$ m. (b) The potential vanishes at some point between the charges. Find this $x$.",
+    "parts": [
+     {
+      "label": "(a)",
+      "q": "",
+      "answer": "$V = -74$ V",
+      "solution": "Superposition of scalars: $$V = k\\frac{q}{0.50} + k\\frac{-2q}{0.50} = -k\\frac{q}{0.50} = -\\frac{(9.00\\times10^9)(4.11\\times10^{-9})}{0.50} = -74\\ \\text{V}.$$ (The official solution writes −73.9 V.)",
+      "method": "Potentials add as plain numbers with signs, so no components are needed."
+     },
+     {
+      "label": "(b)",
+      "q": "",
+      "answer": "$x = 0.33$ m",
+      "solution": "$$k\\frac{q}{x} + k\\frac{-2q}{1.00 - x} = 0 \\;\\Rightarrow\\; 1.00 - x = 2x \\;\\Rightarrow\\; x = \\frac{1.00}{3} = 0.33\\ \\text{m}.$$",
+      "method": "Set the sum of potentials to zero and solve for $x$."
+     }
+    ],
+    "figure": "homework/img/hw04-p1.png"
+   },
+   {
+    "n": 22,
+    "kind": "problem",
+    "q": "Problem 2. A dust particle ($m = 5.0\\times10^{-9}$ kg, $q_0 = 2.0\\times10^{-9}$ C) starts from rest and moves in a straight line from point $a$ to point $b$ (figure: $+3.0$ nC and $-3.0$ nC charges, points 1.0 cm apart as shown). What is its speed at $b$?",
+    "parts": [
+     {
+      "label": "",
+      "q": "",
+      "answer": "$v_b = 46$ m/s",
+      "solution": "Only the conservative electric force acts, so mechanical energy is conserved: $$q_0V_a = \\tfrac12 mv_b^2 + q_0V_b \\;\\Rightarrow\\; v_b = \\sqrt{\\frac{2q_0(V_a - V_b)}{m}}.$$ $$V_a = k\\left(\\frac{3.0\\times10^{-9}}{0.010} - \\frac{3.0\\times10^{-9}}{0.020}\\right) = 1350\\ \\text{V},\\qquad V_b = -1350\\ \\text{V}.$$ $$v_b = \\sqrt{\\frac{2(2.0\\times10^{-9})(2700)}{5.0\\times10^{-9}}} = 46\\ \\text{m/s}.$$",
+      "method": "Energy conservation with $U = q_0V$: no need to track the changing force along the way."
+     }
+    ],
+    "figure": "homework/img/hw04-p2.png"
+   },
+   {
+    "n": 23,
+    "kind": "problem",
+    "q": "Problem 3. Charge $Q$ is distributed uniformly along a thin rod of length $a$. Taking $V = 0$ at infinity, find the potential at a point a distance $x$ to the right of the rod (on its axis).",
+    "parts": [
+     {
+      "label": "",
+      "q": "",
+      "answer": "$V = \\frac{Q}{4\\pi\\varepsilon_0 a}\\ln\\frac{x + a}{x}$",
+      "solution": "Slice the rod: $dQ = \\frac{Q}{a}dx'$, at distance $r = x + a - x'$ from P. $$V = \\frac{Q}{4\\pi\\varepsilon_0 a}\\int_0^a \\frac{dx'}{x + a - x'} = \\frac{Q}{4\\pi\\varepsilon_0 a}\\ln\\frac{x + a}{x}.$$ Check: as $x \\to \\infty$, $\\ln\\frac{x+a}{x} \\approx \\frac{a}{x}$, so $V \\to \\frac{Q}{4\\pi\\varepsilon_0 x}$, like a point charge.",
+      "method": "Continuous charge: integrate $dV = k\\,dq/r$, a scalar integral."
+     }
+    ],
+    "figure": "homework/img/hw04-p3.png"
+   },
+   {
+    "n": 24,
+    "kind": "problem",
+    "q": "Problem 4. In a region the potential is $V(x, y, z) = Axy - Bx^2 + Cy$, with $A$, $B$, $C$ positive constants. (a) Find the $x$, $y$ and $z$ components of $\\vec E$. (b) Where is $\\vec E = 0$?",
+    "parts": [
+     {
+      "label": "(a)",
+      "q": "",
+      "answer": "$E_x = -Ay + 2Bx,\\ E_y = -Ax - C,\\ E_z = 0$",
+      "solution": "$$E_x = -\\frac{\\partial V}{\\partial x} = -Ay + 2Bx,\\qquad E_y = -\\frac{\\partial V}{\\partial y} = -Ax - C,\\qquad E_z = -\\frac{\\partial V}{\\partial z} = 0.$$",
+      "method": "$\\vec E = -\\nabla V$, one partial derivative per component."
+     },
+     {
+      "label": "(b)",
+      "q": "",
+      "answer": "$x = -C/A,\\ y = -2BC/A^2$, any $z$",
+      "solution": "$E_y = 0 \\Rightarrow x = -C/A$. Then $E_x = 0 \\Rightarrow y = \\frac{2Bx}{A} = -\\frac{2BC}{A^2}$. $E_z = 0$ everywhere, so this holds on the whole line (any $z$).",
+      "method": "Set every component to zero and solve together."
+     }
+    ]
+   }
+  ],
+  "pdf": "homework/hw04-solutions.pdf"
+ },
+ {
+  "id": "hw05",
+  "title": "HW05 · Ch 25 Capacitance",
+  "source": "CST homework05 (Chapter 25), mxhuang@scut.edu.cn",
+  "intro": null,
+  "items": [
+   {
+    "n": 1,
+    "kind": "mcq",
+    "q": "A parallel-plate capacitor C has a charge Q. The actual charges on its plates are:",
+    "options": [
+     "$Q, Q$",
+     "$Q/2, Q/2$",
+     "$Q, -Q$",
+     "$Q/2, -Q/2$",
+     "$Q, 0$"
+    ],
+    "answer": 2,
+    "why": "A capacitor's 'charge $Q$' means $+Q$ on one plate and $-Q$ on the other; the capacitor as a whole is neutral.",
+    "solution": "A capacitor's 'charge $Q$' means $+Q$ on one plate and $-Q$ on the other; the capacitor as a whole is neutral."
+   },
+   {
+    "n": 2,
+    "kind": "mcq",
+    "q": "Each plate of a capacitor stores a charge of magnitude 1 mC when a 100 V potential difference is applied. The capacitance is:",
+    "options": [
+     "5 μF",
+     "10 μF",
+     "50 μF",
+     "100 μF",
+     "none of these"
+    ],
+    "answer": 1,
+    "why": "$C = \\frac{Q}{V} = \\frac{1\\times10^{-3}}{100} = 1\\times10^{-5}$ F $= 10$ μF.",
+    "solution": "$C = \\frac{Q}{V} = \\frac{1\\times10^{-3}}{100} = 1\\times10^{-5}$ F $= 10$ μF."
+   },
+   {
+    "n": 3,
+    "kind": "mcq",
+    "q": "A parallel-plate capacitor has plate area 0.2 m² and separation 0.1 mm. If each plate has charge $4\\times10^{-6}$ C, the potential difference is approximately:",
+    "options": [
+     "0 V",
+     "$4\\times10^{-2}$ V",
+     "$2\\times10^{2}$ V",
+     "$2\\times10^{5}$ V",
+     "$4\\times10^{8}$ V"
+    ],
+    "answer": 2,
+    "why": "$C = \\frac{\\varepsilon_0A}{d} = \\frac{(8.85\\times10^{-12})(0.2)}{1\\times10^{-4}} = 1.77\\times10^{-8}$ F, so $V = \\frac{Q}{C} = \\frac{4\\times10^{-6}}{1.77\\times10^{-8}} \\approx 2\\times10^{2}$ V.",
+    "solution": "$C = \\frac{\\varepsilon_0A}{d} = \\frac{(8.85\\times10^{-12})(0.2)}{1\\times10^{-4}} = 1.77\\times10^{-8}$ F, so $V = \\frac{Q}{C} = \\frac{4\\times10^{-6}}{1.77\\times10^{-8}} \\approx 2\\times10^{2}$ V."
+   },
+   {
+    "n": 4,
+    "kind": "mcq",
+    "q": "The capacitance of a single isolated spherical conductor with radius $R$ is proportional to:",
+    "options": [
+     "$R$",
+     "$R^2$",
+     "$1/R$",
+     "$1/R^2$",
+     "none of these"
+    ],
+    "answer": 0,
+    "why": "$V = \\frac{kQ}{R} \\Rightarrow C = \\frac{Q}{V} = 4\\pi\\varepsilon_0 R$, proportional to $R$.",
+    "solution": "$V = \\frac{kQ}{R} \\Rightarrow C = \\frac{Q}{V} = 4\\pi\\varepsilon_0 R$, proportional to $R$."
+   },
+   {
+    "n": 5,
+    "kind": "mcq",
+    "q": "A parallel-plate capacitor has plate area 0.3 m² and separation 0.1 mm. If each plate has charge $5\\times10^{-6}$ C, the force one plate exerts on the other is about:",
+    "options": [
+     "5 N",
+     "9 N",
+     "$1\\times10^{4}$ N",
+     "$9\\times10^{5}$ N",
+     "$2\\times10^{7}$ N"
+    ],
+    "answer": 0,
+    "why": "Each plate feels the field of the OTHER plate only, $\\frac{\\sigma}{2\\varepsilon_0}$: $F = Q\\frac{\\sigma}{2\\varepsilon_0} = \\frac{Q^2}{2\\varepsilon_0A} = \\frac{(5\\times10^{-6})^2}{2(8.85\\times10^{-12})(0.3)} \\approx 5$ N.",
+    "solution": "Two ways to see it. (1) The field of ONE plate is $\\sigma/2\\varepsilon_0$, so the force on the other plate is $$F = Q\\cdot\\frac{\\sigma}{2\\varepsilon_0} = \\frac{Q^2}{2\\varepsilon_0 A}.$$ (2) The official solution uses energy: $U = \\frac{Q^2}{2C} = \\frac{Q^2 d}{2\\varepsilon_0 A}$, and pulling the plates apart by $d$ takes work $F\\,d$, so $F = \\frac{Q^2}{2\\varepsilon_0 A}$. Numbers: $$F = \\frac{25\\times10^{-12}}{2(8.85\\times10^{-12})(0.3)} = 4.7 \\approx 5\\ \\text{N}.$$ **Why this method:** using the full field between the plates, $\\sigma/\\varepsilon_0$, would double-count, because a plate can't push on itself."
+   },
+   {
+    "n": 6,
+    "kind": "mcq",
+    "q": "A 2 μF and a 1 μF capacitor are connected in parallel across a potential difference. The 2 μF capacitor has:",
+    "options": [
+     "twice the charge of the 1 μF capacitor",
+     "half the charge of the 1 μF capacitor",
+     "twice the potential difference of the 1 μF capacitor",
+     "half the potential difference of the 1 μF capacitor",
+     "none of the above"
+    ],
+    "answer": 0,
+    "why": "In parallel they share the same $V$, and $Q = CV$, so double the capacitance means double the charge.",
+    "solution": "In parallel they share the same $V$, and $Q = CV$, so double the capacitance means double the charge."
+   },
+   {
+    "n": 7,
+    "kind": "mcq",
+    "q": "Each of the three 25 μF capacitors shown is initially uncharged. How many coulombs pass through the ammeter A after the switch S is closed?",
+    "options": [
+     "0.033 C",
+     "0.10 C",
+     "0.30 C",
+     "10 C",
+     "none of these"
+    ],
+    "answer": 2,
+    "why": "The three capacitors are in parallel across the 4000 V battery: $C_{eq} = 3(25\\ \\mu\\text{F}) = 75$ μF, so $Q = C_{eq}V = (75\\times10^{-6})(4000) = 0.30$ C.",
+    "solution": "The three capacitors are in parallel across the 4000 V battery: $C_{eq} = 3(25\\ \\mu\\text{F}) = 75$ μF, so $Q = C_{eq}V = (75\\times10^{-6})(4000) = 0.30$ C.",
+    "figure": "homework/img/hw05-q7.png"
+   },
+   {
+    "n": 8,
+    "kind": "mcq",
+    "q": "$C_1$ is charged alone to $4.0\\times10^{-8}$ C, removed from the battery and connected to $C_2$ and $C_3$ as shown. The charge on the positive plate of $C_1$ becomes $1.0\\times10^{-8}$ C. The charges on the positive plates of $C_2$ and $C_3$ are:",
+    "options": [
+     "$q_2 = 3.0\\times10^{-8}$, $q_3 = 3.0\\times10^{-8}$ C",
+     "$q_2 = 2.0\\times10^{-8}$, $q_3 = 2.0\\times10^{-8}$ C",
+     "$q_2 = 5.0\\times10^{-8}$, $q_3 = 1.0\\times10^{-8}$ C",
+     "$q_2 = 3.0\\times10^{-8}$, $q_3 = 1.0\\times10^{-8}$ C",
+     "$q_2 = 1.0\\times10^{-8}$, $q_3 = 3.0\\times10^{-8}$ C"
+    ],
+    "answer": 0,
+    "why": "Charge is conserved: $4.0 - 1.0 = 3.0\\times10^{-8}$ C left $C_1$ and went onto the series pair $C_2$–$C_3$. Capacitors in series carry the SAME charge, so $q_2 = q_3 = 3.0\\times10^{-8}$ C.",
+    "solution": "Charge is conserved: $4.0 - 1.0 = 3.0\\times10^{-8}$ C left $C_1$ and went onto the series pair $C_2$–$C_3$. Capacitors in series carry the SAME charge, so $q_2 = q_3 = 3.0\\times10^{-8}$ C.",
+    "figure": "homework/img/hw05-q8.png"
+   },
+   {
+    "n": 9,
+    "kind": "mcq",
+    "q": "A charged capacitor stores 10 C at 40 V. Its stored energy is:",
+    "options": [
+     "400 J",
+     "200 J",
+     "4 J",
+     "2.5 J",
+     "1.25 J"
+    ],
+    "answer": 1,
+    "why": "$U = \\tfrac12 QV = \\tfrac12(10)(40) = 200$ J. (Not $QV$: the voltage builds up from 0 to $V$ while charging.)",
+    "solution": "$U = \\tfrac12 QV = \\tfrac12(10)(40) = 200$ J. (Not $QV$: the voltage builds up from 0 to $V$ while charging.)"
+   },
+   {
+    "n": 10,
+    "kind": "mcq",
+    "q": "Capacitors A and B are identical. A stores 4 J and B is uncharged. They are then connected in parallel. The total stored energy is now:",
+    "options": [
+     "16 J",
+     "8 J",
+     "4 J",
+     "2 J",
+     "1 J"
+    ],
+    "answer": 3,
+    "why": "The charge $Q$ splits equally, $Q/2$ each. $U = 2\\cdot\\frac{(Q/2)^2}{2C} = \\frac12\\cdot\\frac{Q^2}{2C} = \\frac12(4\\ \\text{J}) = 2$ J. The other 2 J is lost (as heat or radiation) when the charge rushes between them.",
+    "solution": "The charge $Q$ splits equally, $Q/2$ each. $U = 2\\cdot\\frac{(Q/2)^2}{2C} = \\frac12\\cdot\\frac{Q^2}{2C} = \\frac12(4\\ \\text{J}) = 2$ J. The other 2 J is lost (as heat or radiation) when the charge rushes between them."
+   },
+   {
+    "n": 11,
+    "kind": "mcq",
+    "q": "A 5.0 μF capacitor is charged to 5 mC and isolated; then its plates are brought closer so its capacitance becomes 10 μF. The work done by the agent is about:",
+    "options": [
+     "0 J",
+     "$1.25\\times10^{-6}$ J",
+     "$-1.25\\times10^{-6}$ J",
+     "$8.3\\times10^{-7}$ J",
+     "$-8.3\\times10^{-7}$ J"
+    ],
+    "answer": 2,
+    "why": "Isolated, so $Q$ is fixed: $W = \\Delta U = \\frac{Q^2}{2C'} - \\frac{Q^2}{2C}$, negative because the plates attract (the agent holds them back).",
+    "solution": "With $Q$ fixed, $W_{\\text{agent}} = \\Delta U = \\frac{Q^2}{2}\\left(\\frac{1}{C'} - \\frac{1}{C}\\right)$. **[NOTE]** With $Q = 5$ mC this gives $\\frac{(5\\times10^{-3})^2}{2}\\left(\\frac{1}{10^{-5}} - \\frac{1}{5\\times10^{-6}}\\right) = -1.25$ J, not the official $-1.25\\times10^{-6}$ J. The official answer matches $Q = 5$ **μC**: $\\frac{(5\\times10^{-6})^2}{2}(10^5 - 2\\times10^5) = -1.25\\times10^{-6}$ J. The sign (negative) and the method are the same either way. **Why this method:** with the charge fixed, use $U = Q^2/2C$, the form where $Q$ stays constant.",
+    "note": "Answer key assumes 5 μC; with 5 mC the work is −1.25 J."
+   },
+   {
+    "n": 12,
+    "kind": "mcq",
+    "q": "A battery charges a parallel-plate capacitor and is then disconnected. The plates are pulled apart to twice their separation. This doubles the:",
+    "options": [
+     "capacitance",
+     "surface charge density on each plate",
+     "stored energy",
+     "electric field between the plates",
+     "charge on each plate"
+    ],
+    "answer": 2,
+    "why": "Disconnected, so $Q$ (and $\\sigma$, and $E = \\sigma/\\varepsilon_0$) stay the same. $C = \\varepsilon_0A/d$ halves, so $U = \\frac{Q^2}{2C}$ doubles.",
+    "solution": "Disconnected, so $Q$ (and $\\sigma$, and $E = \\sigma/\\varepsilon_0$) stay the same. $C = \\varepsilon_0A/d$ halves, so $U = \\frac{Q^2}{2C}$ doubles."
+   },
+   {
+    "n": 13,
+    "kind": "mcq",
+    "q": "A parallel-plate capacitor has plate area 0.30 m² and separation 0.10 mm. If each plate has charge $5.0\\times10^{-6}$ C, what is the energy density in its field?",
+    "options": [
+     "0.16 J/m³",
+     "3.5 J/m³",
+     "7.8 J/m³",
+     "16 J/m³",
+     "24 J/m³"
+    ],
+    "answer": 3,
+    "why": "$u = \\tfrac12\\varepsilon_0E^2$ with $E = \\frac{\\sigma}{\\varepsilon_0} = \\frac{Q}{\\varepsilon_0A}$: $u = \\frac{Q^2}{2\\varepsilon_0A^2} = \\frac{25\\times10^{-12}}{2(8.85\\times10^{-12})(0.09)} = 16$ J/m³.",
+    "solution": "$u = \\tfrac12\\varepsilon_0E^2$ with $E = \\frac{\\sigma}{\\varepsilon_0} = \\frac{Q}{\\varepsilon_0A}$: $u = \\frac{Q^2}{2\\varepsilon_0A^2} = \\frac{25\\times10^{-12}}{2(8.85\\times10^{-12})(0.09)} = 16$ J/m³."
+   },
+   {
+    "n": 14,
+    "kind": "mcq",
+    "q": "An air-filled parallel-plate capacitor has $C = 1$ pF. The separation is doubled and wax completely fills the gap; the capacitance becomes 2 pF. The dielectric constant of the wax is:",
+    "options": [
+     "0.25",
+     "0.50",
+     "2.0",
+     "4.0",
+     "8.0"
+    ],
+    "answer": 3,
+    "why": "$C' = \\kappa\\frac{\\varepsilon_0A}{2d} = \\frac{\\kappa}{2}(1\\ \\text{pF}) = 2$ pF $\\Rightarrow \\kappa = 4$.",
+    "solution": "$C' = \\kappa\\frac{\\varepsilon_0A}{2d} = \\frac{\\kappa}{2}(1\\ \\text{pF}) = 2$ pF $\\Rightarrow \\kappa = 4$."
+   },
+   {
+    "n": 15,
+    "kind": "mcq",
+    "q": "An air-filled capacitor is charged, then a dielectric is inserted, and an induced charge appears on the dielectric. What is the difference between induced charge and free charge?",
+    "options": [
+     "There is no difference.",
+     "Induced charge does not result in a net charge on the dielectric.",
+     "Induced charge is smaller than free charge.",
+     "Free charge creates an electric field, but induced charge does not.",
+     "Free charge creates an electric potential, but induced charge does not."
+    ],
+    "answer": 1,
+    "why": "Induced (bound) charge comes from molecules polarizing: equal + and − layers on opposite faces, so the dielectric stays neutral overall. Both kinds of charge produce fields; that's why the field inside drops.",
+    "solution": "Induced (bound) charge comes from molecules polarizing: equal + and − layers on opposite faces, so the dielectric stays neutral overall. Both kinds of charge produce fields; that's why the field inside drops."
+   },
+   {
+    "n": 16,
+    "kind": "mcq",
+    "q": "Determine the energy stored in $C_2$ when $C_1 = 15$ μF, $C_2 = 10$ μF, $C_3 = 20$ μF and $V_0 = 18$ V (circuit shown).",
+    "options": [
+     "0.72 mJ",
+     "0.32 mJ",
+     "0.50 mJ",
+     "0.18 mJ",
+     "1.60 mJ"
+    ],
+    "answer": 3,
+    "why": "$C_2 \\parallel C_3 = 30$ μF, in series with $C_1 = 15$ μF. Series pieces share $Q$, so $V$ splits inversely to $C$: $V_{23} = 18\\cdot\\frac{15}{45} = 6$ V. $U_2 = \\tfrac12(10\\times10^{-6})(6)^2 = 0.18$ mJ.",
+    "solution": "$C_2 \\parallel C_3 = 30$ μF, in series with $C_1 = 15$ μF. Series pieces share $Q$, so $V$ splits inversely to $C$: $V_{23} = 18\\cdot\\frac{15}{45} = 6$ V. $U_2 = \\tfrac12(10\\times10^{-6})(6)^2 = 0.18$ mJ.",
+    "figure": "homework/img/hw05-q16.png"
+   },
+   {
+    "n": 17,
+    "kind": "mcq",
+    "q": "A 30 μF capacitor is charged to 80 V and then connected across an uncharged capacitor $C$. The final potential difference across the 30 μF capacitor is 20 V. Determine $C$.",
+    "options": [
+     "60 μF",
+     "75 μF",
+     "45 μF",
+     "90 μF",
+     "24 μF"
+    ],
+    "answer": 3,
+    "why": "Charge is conserved and the final voltages are equal: $(30\\ \\mu\\text{F})(80\\ \\text{V}) = (30\\ \\mu\\text{F} + C)(20\\ \\text{V}) \\Rightarrow C = 90$ μF.",
+    "solution": "$$Q_0 = (30\\times10^{-6})(80) = 2.4\\times10^{-3}\\ \\text{C} = (30\\times10^{-6} + C)(20) \\;\\Rightarrow\\; C = 120 - 30 = 90\\ \\mu\\text{F}.$$ **[NOTE]** The official working ends with \"C = 9 μF\", but its chosen answer, D (90 μF), is correct. **Why this method:** connected capacitors end at the same voltage, and no charge is lost."
+   },
+   {
+    "n": 18,
+    "kind": "mcq",
+    "q": "A capacitor $C_0$ connected to a battery $V_0$ has charge $Q_0$. While still connected, its gap is filled with a dielectric of constant 3. Afterwards the charge and potential difference are:",
+    "options": [
+     "$\\frac13Q_0, \\frac13V_0$",
+     "$Q_0, \\frac13V_0$",
+     "$Q_0, V_0$",
+     "$3Q_0, V_0$",
+     "$3Q_0, 3V_0$"
+    ],
+    "answer": 3,
+    "why": "The battery holds $V = V_0$. The capacitance triples, $C = 3C_0$, so $Q = CV_0 = 3Q_0$.",
+    "solution": "The battery holds $V = V_0$. The capacitance triples, $C = 3C_0$, so $Q = CV_0 = 3Q_0$."
+   },
+   {
+    "n": 19,
+    "kind": "mcq",
+    "q": "A capacitor $C_0$ is charged to $V_0$ by a battery, then disconnected, and its gap is filled with a dielectric of constant 3. Afterwards the capacitance and potential difference are:",
+    "options": [
+     "$\\frac13C_0, \\frac13V_0$",
+     "$C_0, \\frac13V_0$",
+     "$C_0, V_0$",
+     "$3C_0, \\frac13V_0$",
+     "$3C_0, 3V_0$"
+    ],
+    "answer": 3,
+    "why": "Disconnected, so $Q = Q_0$ is fixed. $C = 3C_0$, so $V = \\frac{Q_0}{3C_0} = \\frac13V_0$.",
+    "solution": "Disconnected, so $Q = Q_0$ is fixed. $C = 3C_0$, so $V = \\frac{Q_0}{3C_0} = \\frac13V_0$."
+   },
+   {
+    "n": 20,
+    "kind": "mcq",
+    "q": "Horizontal plates, capacitance $C_0$. A dielectric slab with $\\kappa = 2$ fills the bottom half of the gap. The new capacitance is:",
+    "options": [
+     "$\\frac25C_0$",
+     "$\\frac34C_0$",
+     "$4C_0$",
+     "$\\frac52C_0$",
+     "$\\frac43C_0$"
+    ],
+    "answer": 4,
+    "why": "Two capacitors in SERIES, each with gap $d/2$: air $2C_0$ and dielectric $2\\kappa C_0 = 4C_0$. $\\frac1C = \\frac1{2C_0} + \\frac1{4C_0} = \\frac{3}{4C_0} \\Rightarrow C = \\frac43C_0$.",
+    "solution": "Two capacitors in SERIES, each with gap $d/2$: air $2C_0$ and dielectric $2\\kappa C_0 = 4C_0$. $\\frac1C = \\frac1{2C_0} + \\frac1{4C_0} = \\frac{3}{4C_0} \\Rightarrow C = \\frac43C_0$."
+   },
+   {
+    "n": 21,
+    "kind": "problem",
+    "q": "Problem 1. The plates of a parallel-plate capacitor in vacuum are $5.00\\times10^{-3}$ m apart with area 2.00 m². A $1.0\\times10^4$ V potential difference is applied. Compute (a) the capacitance, (b) the charge on each plate, (c) the magnitude of the field between the plates.",
+    "parts": [
+     {
+      "label": "(a)",
+      "q": "",
+      "answer": "$C = 3.54$ nF",
+      "solution": "$C = \\frac{\\varepsilon_0A}{d} = \\frac{(8.85\\times10^{-12})(2.00)}{5.00\\times10^{-3}} = 3.54\\times10^{-9}$ F.",
+      "method": "Parallel-plate formula."
+     },
+     {
+      "label": "(b)",
+      "q": "",
+      "answer": "$Q = 35.4$ μC",
+      "solution": "$Q = CV = (3.54\\times10^{-9})(1.0\\times10^4) = 3.54\\times10^{-5}$ C.",
+      "method": "Definition $C = Q/V$."
+     },
+     {
+      "label": "(c)",
+      "q": "",
+      "answer": "$E = 2.00\\times10^{6}$ N/C",
+      "solution": "$E = \\frac{V}{d} = \\frac{1.0\\times10^4}{5.00\\times10^{-3}} = 2.00\\times10^6$ N/C, or equally $E = \\frac{\\sigma}{\\varepsilon_0} = \\frac{Q}{\\varepsilon_0A}$.",
+      "method": "Uniform field: $V = Ed$."
+     }
+    ]
+   },
+   {
+    "n": 22,
+    "kind": "problem",
+    "q": "Problem 2. With $C_1 = 6.0$ μF, $C_2 = 3.0$ μF and $V_{ab} = 18$ V, the capacitors are connected in SERIES. Find (a) the equivalent capacitance, (b) the charge and potential difference for each capacitor.",
+    "parts": [
+     {
+      "label": "(a)",
+      "q": "",
+      "answer": "$C_{eq} = 2.0$ μF",
+      "solution": "$\\frac1{C_{eq}} = \\frac1{6.0} + \\frac1{3.0} = \\frac12 \\Rightarrow C_{eq} = 2.0$ μF.",
+      "method": "Series: reciprocals add."
+     },
+     {
+      "label": "(b)",
+      "q": "",
+      "answer": "$Q = 36$ μC each; $V_1 = 6.0$ V, $V_2 = 12.0$ V",
+      "solution": "In series every capacitor carries the same charge: $Q = C_{eq}V = (2.0)(18) = 36$ μC. Then $V_1 = Q/C_1 = 6.0$ V and $V_2 = Q/C_2 = 12.0$ V (they add to 18 V).",
+      "method": "Same $Q$ in series; the smaller capacitor takes the bigger voltage."
+     }
+    ],
+    "figure": "homework/img/hw05-p2.png"
+   },
+   {
+    "n": 23,
+    "kind": "problem",
+    "q": "Problem 3. With $C_1 = 6.0$ μF, $C_2 = 3.0$ μF and $V_{ab} = 18$ V, the capacitors are connected in PARALLEL. Find (a) the equivalent capacitance, (b) the charge and potential difference for each capacitor.",
+    "parts": [
+     {
+      "label": "(a)",
+      "q": "",
+      "answer": "$C_{eq} = 9.0$ μF",
+      "solution": "$C_{eq} = C_1 + C_2 = 9.0$ μF.",
+      "method": "Parallel: capacitances add."
+     },
+     {
+      "label": "(b)",
+      "q": "",
+      "answer": "$V = 18$ V each; $Q_1 = 108$ μC, $Q_2 = 54$ μC",
+      "solution": "Both see the full 18 V: $Q_1 = (6.0)(18) = 108$ μC, $Q_2 = (3.0)(18) = 54$ μC.",
+      "method": "Same $V$ in parallel; charge follows capacitance."
+     }
+    ],
+    "figure": "homework/img/hw05-p3.png"
+   },
+   {
+    "n": 24,
+    "kind": "problem",
+    "q": "Problem 4. In the figure, each capacitor has $C = 4.00$ μF. Calculate the equivalent capacitance (a) between $a$ and $d$, (b) between $a$ and $b$.",
+    "parts": [
+     {
+      "label": "(a)",
+      "q": "",
+      "answer": "$C_{ad} = 6.0$ μF",
+      "solution": "$C_1$ and $C_2$ in series: $C_{12} = 2.0$ μF. That is in parallel with $C_3$: $C_{ad} = 2.0 + 4.0 = 6.0$ μF.",
+      "method": "Reduce step by step, innermost group first."
+     },
+     {
+      "label": "(b)",
+      "q": "",
+      "answer": "$C_{ab} = 2.4$ μF",
+      "solution": "$C_{ad}$ is in series with $C_4$: $\\frac1{C_{ab}} = \\frac16 + \\frac14 \\Rightarrow C_{ab} = 2.4$ μF.",
+      "method": "Series combination of the result from (a) with $C_4$."
+     }
+    ],
+    "figure": "homework/img/hw05-p4.png"
+   }
+  ],
+  "pdf": "homework/hw05-solutions.pdf"
+ }
+]

@@ -60,6 +60,12 @@
   .body { white-space: pre-line; }
   pre { background: var(--code-bg); padding: 14px; border-radius: 8px; overflow-x: auto;
         font: 14px/1.45 ui-monospace, Menlo, Consolas, monospace; margin: 14px 0 0; }
+  .hwfig { display: block; max-width: min(100%, 360px); margin: 10px 0; padding: 6px; background: #fff; border-radius: 8px; }
+  .warn-box { margin-top: 10px; padding: 8px 12px; border-radius: 8px; background: var(--note-bg); font-size: .9rem; }
+  .hw-part { margin-top: 12px; padding-top: 10px; border-top: 1px dashed var(--line); }
+  .hw-part > button { margin-top: 8px; }
+  .why b.ok, .hw-part b.ok { color: var(--right); }
+  .q .rich p, .q p.rich { margin: 6px 0 0; }
   .formula { margin-top: 14px; padding: 6px 16px; border-radius: 10px; background: var(--code-bg);
              border-left: 3px solid var(--accent); overflow-x: auto; }
   .formula .katex-display { margin: 10px 0; }
@@ -208,6 +214,8 @@ const SUBJECTS = [
 
 const ICON_QUIZ = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>';
 const ICON_LECTURE = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>';
+const ICON_HW = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>';
+const ICON_PDF = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg>';
 
 // UI strings that are not part of the slide/quiz data.
 const UI = {
@@ -218,6 +226,10 @@ const UI = {
         tryIt: "▶ Try it", practised: "📝 Practised in ",
         show: "Show answer", correct: "Correct.", wrong: "Not quite.", score: (c, a, t) => `Score: ${c} / ${t}  (${a} answered)`,
         retry: "Retry", empty: "Coming soon: nothing in this folder yet.", explain: "Explain",
+        hwPractice: "Homework practice", hwSets: n => n + " homework sets", hwSolutions: "Homework solutions",
+        hwSolutionsSub: "Worked solutions (PDF)", openPdf: "📄 Full worked solutions (PDF)", officialAnswer: "Show the official answer",
+        answerIs: "Answer: ", missingFig: "Figure not available: the original homework file was missing when this was made.",
+        problem: "Problem", method: "Why this method: ", gradeable: (c, a, t) => `Score: ${c} / ${t}  (${a} answered; problems aren't scored)`,
         wrongLbl: "✗ Wrong", rightLbl: "✓ Right", quickCheck: "Quick check", toggle: "🇮🇩 Bahasa Indonesia" },
   id: { pick: "Pilih mata kuliah.", all: "← Semua mata kuliah", soon: "Segera hadir", quizzes: "Kuis kelas",
         toPractice: n => n + " untuk latihan", lectures: "Materi kuliah", chaptersOf: n => n + " bab slide",
@@ -226,6 +238,10 @@ const UI = {
         tryIt: "▶ Coba", practised: "📝 Dilatih di ",
         show: "Tampilkan jawaban", correct: "Benar.", wrong: "Belum tepat.", score: (c, a, t) => `Skor: ${c} / ${t}  (${a} dijawab)`,
         retry: "Ulangi", empty: "Segera hadir: folder ini belum berisi apa pun.", explain: "Penjelasan",
+        hwPractice: "Latihan PR", hwSets: n => n + " set PR", hwSolutions: "Pembahasan PR",
+        hwSolutionsSub: "Pembahasan lengkap (PDF)", openPdf: "📄 Pembahasan lengkap (PDF)", officialAnswer: "Tampilkan jawaban resmi",
+        answerIs: "Jawaban: ", missingFig: "Gambar tidak tersedia: file PR asli hilang saat ini dibuat.",
+        problem: "Soal", method: "Mengapa metode ini: ", gradeable: (c, a, t) => `Skor: ${c} / ${t}  (${a} dijawab; soal uraian tidak dinilai)`,
         wrongLbl: "✗ Salah", rightLbl: "✓ Benar", quickCheck: "Cek cepat", toggle: "🇬🇧 English" },
 };
 
@@ -299,10 +315,14 @@ function renderHome() {
 }
 
 async function renderSubject(subject) {
-  const [slides, quiz] = await Promise.all([load(subject.id, "slides"), load(subject.id, "quiz")]);
+  const [slides, quiz, hw] = await Promise.all([load(subject.id, "slides"), load(subject.id, "quiz"), load(subject.id, "homework")]);
   const rows = [];
   if (quiz) rows.push(row("#/" + subject.id + "/quiz", ICON_QUIZ, ui().quizzes, ui().toPractice(quiz.length)));
   if (slides) rows.push(row("#/" + subject.id + "/lectures", ICON_LECTURE, ui().lectures, ui().chaptersOf(chaptersOf(slides).length)));
+  if (hw) {
+    rows.push(row("#/" + subject.id + "/homework", ICON_HW, ui().hwPractice, ui().hwSets(hw.length)));
+    rows.push(row("#/" + subject.id + "/solutions", ICON_PDF, ui().hwSolutions, ui().hwSolutionsSub));
+  }
   app.replaceChildren(topbar("#/", ui().all), el("h1", {}, subject.name),
     ...(subject.book ? [el("p", { class: "muted" }, ui().textbook + subject.book)] : []),
     rows.length ? el("div", { class: "rows" }, ...rows) : el("p", { class: "muted" }, ui().empty));
@@ -417,6 +437,92 @@ function figure(url, caption) {
   return fig;
 }
 
+// Text with $inline$ / $$display$$ LaTeX and **bold**, typeset by KaTeX (plain text if KaTeX is missing).
+// Only used for our own homework files, so the text is trusted.
+function rich(text, tag = "span") {
+  const node = el(tag, { class: "rich" });
+  for (const piece of String(text).split(/(\$\$[^$]+\$\$|\$[^$]+\$)/)) {
+    if (!piece) continue;
+    const display = piece.startsWith("$$"), math = display || (piece.startsWith("$") && piece.endsWith("$") && piece.length > 1);
+    if (math && window.katex) {
+      const span = el("span", {});
+      katex.render(piece.slice(display ? 2 : 1, display ? -2 : -1), span, { displayMode: display, throwOnError: false });
+      node.append(span);
+    } else {
+      piece.split(/(\*\*[^*]+\*\*)/).forEach(t => node.append(t.startsWith("**") && t.endsWith("**") ? el("b", {}, t.slice(2, -2)) : t));
+    }
+  }
+  return node;
+}
+
+// List of homework sets: links to practice, or to the solution PDFs.
+async function renderHomeworkList(subject, pdfs) {
+  const hw = await load(subject.id, "homework");
+  if (!hw) return renderSubject(subject);
+  app.replaceChildren(topbar("#/" + subject.id, "← " + subject.name), el("h1", {}, pdfs ? ui().hwSolutions : ui().hwPractice),
+    el("div", { class: "rows" }, ...hw.map((s, i) => {
+      if (!pdfs) return row("#/" + subject.id + "/homework/" + (i + 1), ICON_HW, s.title, ui().questions(s.items.length));
+      const r = row(subject.id + "/" + s.pdf, ICON_PDF, s.title, "PDF");
+      r.setAttribute("target", "_blank"); r.setAttribute("rel", "noopener");
+      return r;
+    })));
+}
+
+// One homework set: multiple-choice items are graded like a quiz; problems reveal their answers.
+async function renderHomework(subject, n) {
+  const hw = await load(subject.id, "homework");
+  const set = hw && hw[n - 1];
+  if (!set) return renderHomeworkList(subject, false);
+  const graded = set.items.filter(it => it.kind === "mcq" && !it.options.every(o => o === "(see figure)")).length;
+  let answered = 0, correct = 0;
+  const scoreText = el("span", {}, ui().gradeable(0, 0, graded));
+  const reveal = (label, content) => {
+    const box = el("div", { class: "why" }, ...content); box.hidden = true;
+    const b = el("button", { onclick: () => { box.hidden = false; b.remove(); } }, label);
+    return [b, box];
+  };
+  const fig = it => [
+    it.figure ? el("img", { class: "hwfig", src: subject.id + "/" + it.figure, alt: "figure" }) : null,
+    it.missing_figure ? el("div", { class: "warn-box" }, ui().missingFig) : null,
+    it.note ? el("div", { class: "warn-box" }, rich(it.note)) : null].filter(Boolean);
+  const cards = set.items.map(it => {
+    if (it.kind === "problem") {
+      return el("div", { class: "q" },
+        el("div", { class: "src" }, ui().problem + " " + it.n),
+        rich(it.q, "p"), ...fig(it),
+        ...it.parts.map(p => el("div", { class: "hw-part" },
+          el("div", {}, p.label ? el("b", {}, p.label + " ") : null, rich(p.q)),
+          ...reveal(ui().show, [el("b", { class: "ok" }, ui().answerIs), rich(p.answer),
+            ...(p.method ? [el("div", { class: "muted" }, ui().method, rich(p.method))] : [])]))));
+    }
+    const noOpts = it.options.every(o => o === "(see figure)");
+    const why = el("div", { class: "why" }); why.hidden = true;
+    const buttons = noOpts ? [] : it.options.map((o, oi) => el("button", { onclick: () => {
+      buttons.forEach(b => b.disabled = true);
+      buttons[it.answer].classList.add("correct");
+      const ok = oi === it.answer;
+      if (!ok) buttons[oi].classList.add("chosen-wrong");
+      answered++; if (ok) correct++;
+      why.replaceChildren(el("b", { class: ok ? "ok" : "no" }, ok ? ui().correct : ui().wrong), " ", rich(it.why));
+      why.hidden = false;
+      scoreText.textContent = ui().gradeable(correct, answered, graded);
+    } }, "ABCDE"[oi] + ". ", rich(o)));
+    return el("div", { class: "q" },
+      el("div", { class: "src" }, it.n + " / " + set.items.filter(x => x.kind === "mcq").length),
+      rich(it.q, "p"), ...fig(it),
+      noOpts ? el("div", {}, ...reveal(ui().officialAnswer, [el("b", { class: "ok" }, ui().answerIs + "ABCDE"[it.answer] + ". "), rich(it.why)]))
+             : el("div", { class: "opts" }, ...buttons),
+      why);
+  });
+  app.replaceChildren(
+    topbar("#/" + subject.id + "/homework", "← " + ui().hwPractice),
+    el("h1", {}, set.title),
+    el("p", {}, el("a", { href: subject.id + "/" + set.pdf, target: "_blank", rel: "noopener" }, ui().openPdf)),
+    ...(set.intro ? [el("div", { class: "box" }, set.intro)] : []),
+    ...cards,
+    ...(graded ? [el("div", { class: "score" }, scoreText, el("button", { onclick: () => { renderHomework(subject, n); window.scrollTo(0, 0); } }, ui().retry))] : []));
+}
+
 // Key formulas (LaTeX) typeset by KaTeX; if KaTeX didn't load, show the LaTeX source instead.
 function formulaBox(lines) {
   return el("div", { class: "formula" }, ...lines.map(tex => {
@@ -460,6 +566,8 @@ async function route() {
   if (!subject) return renderHome();
   if (view === "quiz") return num ? renderQuiz(subject, parseInt(num) || 1) : renderQuizList(subject);
   if (view === "lectures") return renderLectureList(subject);
+  if (view === "homework") return num ? renderHomework(subject, parseInt(num) || 1) : renderHomeworkList(subject, false);
+  if (view === "solutions") return renderHomeworkList(subject, true);
   if (view === "slides") {
     const slides = await load(id, "slides");
     if (!slides) return renderSubject(subject);
