@@ -25,7 +25,7 @@ statistics-probability/
   slides.json, quiz.json    S01–S05, with 7 interactive demos
 digital-logic/              empty for now
 college-physics-2/
-  slides.json, quiz.json    Ch 21–23 (charge, field, Gauss' law), with 8 physics demos
+  slides.json, quiz.json    Ch 21–24 (charge, field, Gauss' law, potential), with 13 physics demos
 tools/figures.py            draws the Data Structure figures
 ```
 
@@ -248,6 +248,11 @@ A slide with `"demo": "<name>"` gets a live widget under it ("▶ Try it"). Demo
 | `flux-loop` | Ch 23 Flux | tilt a loop; Φ = EA cosθ goes +, 0, − |
 | `gauss` | Ch 23 Gauss' Law | drag a Gaussian sphere; numerically integrated ∮E·dA vs q_enc/ε₀ |
 | `spheres` | Ch 23 Spherical Symmetry | E(r) for shell, solid sphere, and sphere + conducting shell |
+| `accelerate` | Ch 24 Accelerating Through 100 V | electron vs proton race; v = √(2qΔV/m) |
+| `equipotential` | Ch 24 Equipotential Surfaces | equipotential contours + field lines; 12-electron ring even vs 120° arc |
+| `potential-sphere` | Ch 24 Potential of a Charged Sphere | E(r) and V(r): conductor (V flat inside) vs solid sphere |
+| `e-from-v` | Ch 24 Field from the Potential | tangent to V(x) gives Eₓ = −dV/dx |
+| `assemble` | Ch 24 Potential Energy of a System | bring 3 charges in from ∞; work adds to −17 mJ |
 
 To add one, write a function in `demos.js`:
 

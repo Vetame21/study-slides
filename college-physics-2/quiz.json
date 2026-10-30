@@ -1,340 +1,1143 @@
 [
   {
-    "chapter": { "en": "21. Electric Charge", "id": "21. Muatan Listrik" },
+    "chapter": {
+      "en": "21. Electric Charge",
+      "id": "21. Muatan Listrik"
+    },
     "questions": [
       {
         "source": "Ch 21 p. 4",
-        "q": { "en": "After rubbing, a neutral plastic rod is negatively charged. What happened?", "id": "Setelah digosok, batang plastik netral menjadi bermuatan negatif. Apa yang terjadi?" },
+        "q": {
+          "en": "After rubbing, a neutral plastic rod is negatively charged. What happened?",
+          "id": "Setelah digosok, batang plastik netral menjadi bermuatan negatif. Apa yang terjadi?"
+        },
         "options": [
-          { "en": "It gained positive charge", "id": "Ia mendapat muatan positif" },
-          { "en": "It lost protons", "id": "Ia kehilangan proton" },
-          { "en": "It gained electrons", "id": "Ia mendapat elektron" },
-          { "en": "Charge was created by friction", "id": "Muatan diciptakan oleh gesekan" }
+          {
+            "en": "It gained positive charge",
+            "id": "Ia mendapat muatan positif"
+          },
+          {
+            "en": "It lost protons",
+            "id": "Ia kehilangan proton"
+          },
+          {
+            "en": "It gained electrons",
+            "id": "Ia mendapat elektron"
+          },
+          {
+            "en": "Charge was created by friction",
+            "id": "Muatan diciptakan oleh gesekan"
+          }
         ],
         "answer": 2,
-        "why": { "en": "Only electrons transfer when rubbing; the positive atoms stay put. Charge is never created.", "id": "Saat menggosok, hanya elektron yang berpindah; atom positif tetap di tempat. Muatan tidak pernah diciptakan." }
+        "why": {
+          "en": "Only electrons transfer when rubbing; the positive atoms stay put. Charge is never created.",
+          "id": "Saat menggosok, hanya elektron yang berpindah; atom positif tetap di tempat. Muatan tidak pernah diciptakan."
+        }
       },
       {
         "source": "Ch 21 p. 5",
-        "q": { "en": "According to the slides, which of these is a conductor?", "id": "Menurut slide, mana yang merupakan konduktor?" },
+        "q": {
+          "en": "According to the slides, which of these is a conductor?",
+          "id": "Menurut slide, mana yang merupakan konduktor?"
+        },
         "options": [
-          { "en": "Glass", "id": "Kaca" },
-          { "en": "Pure water", "id": "Air murni" },
-          { "en": "Plastic", "id": "Plastik" },
-          { "en": "Tap water", "id": "Air keran" }
+          {
+            "en": "Glass",
+            "id": "Kaca"
+          },
+          {
+            "en": "Pure water",
+            "id": "Air murni"
+          },
+          {
+            "en": "Plastic",
+            "id": "Plastik"
+          },
+          {
+            "en": "Tap water",
+            "id": "Air keran"
+          }
         ],
         "answer": 3,
-        "why": { "en": "Metals, the human body and tap water conduct; glass, plastic and pure water insulate.", "id": "Logam, tubuh manusia, dan air keran menghantarkan; kaca, plastik, dan air murni mengisolasi." }
+        "why": {
+          "en": "Metals, the human body and tap water conduct; glass, plastic and pure water insulate.",
+          "id": "Logam, tubuh manusia, dan air keran menghantarkan; kaca, plastik, dan air murni mengisolasi."
+        }
       },
       {
         "source": "Ch 21 p. 6–7",
-        "q": { "en": "A charged rod is brought near an isolated neutral metal sphere. What happens?", "id": "Batang bermuatan didekatkan ke bola logam netral terisolasi. Apa yang terjadi?" },
+        "q": {
+          "en": "A charged rod is brought near an isolated neutral metal sphere. What happens?",
+          "id": "Batang bermuatan didekatkan ke bola logam netral terisolasi. Apa yang terjadi?"
+        },
         "options": [
-          { "en": "Attraction, whatever the rod's sign", "id": "Tarik-menarik, apa pun tanda batangnya" },
-          { "en": "Attraction only if the rod is positive", "id": "Tarik-menarik hanya jika batang positif" },
-          { "en": "Repulsion", "id": "Tolak-menolak" },
-          { "en": "No force, the sphere is neutral", "id": "Tidak ada gaya, bolanya netral" }
+          {
+            "en": "Attraction, whatever the rod's sign",
+            "id": "Tarik-menarik, apa pun tanda batangnya"
+          },
+          {
+            "en": "Attraction only if the rod is positive",
+            "id": "Tarik-menarik hanya jika batang positif"
+          },
+          {
+            "en": "Repulsion",
+            "id": "Tolak-menolak"
+          },
+          {
+            "en": "No force, the sphere is neutral",
+            "id": "Tidak ada gaya, bolanya netral"
+          }
         ],
         "answer": 0,
-        "why": { "en": "Induction puts opposite charge on the near side, which is closer, so attraction wins for either sign.", "id": "Induksi menaruh muatan berlawanan di sisi dekat, yang lebih dekat, jadi tarikan menang untuk tanda apa pun." }
+        "why": {
+          "en": "Induction puts opposite charge on the near side, which is closer, so attraction wins for either sign.",
+          "id": "Induksi menaruh muatan berlawanan di sisi dekat, yang lebih dekat, jadi tarikan menang untuk tanda apa pun."
+        }
       },
       {
         "source": "Ch 21 p. 8",
-        "q": { "en": "One charge is tripled and the distance between the charges is doubled. The force becomes…", "id": "Satu muatan dilipattigakan dan jaraknya dilipatduakan. Gayanya menjadi…" },
+        "q": {
+          "en": "One charge is tripled and the distance between the charges is doubled. The force becomes…",
+          "id": "Satu muatan dilipattigakan dan jaraknya dilipatduakan. Gayanya menjadi…"
+        },
         "options": [
-          { "en": "3F/2", "id": "3F/2" },
-          { "en": "3F/4", "id": "3F/4" },
-          { "en": "6F", "id": "6F" },
-          { "en": "F/12", "id": "F/12" }
+          {
+            "en": "3F/2",
+            "id": "3F/2"
+          },
+          {
+            "en": "3F/4",
+            "id": "3F/4"
+          },
+          {
+            "en": "6F",
+            "id": "6F"
+          },
+          {
+            "en": "F/12",
+            "id": "F/12"
+          }
         ],
         "answer": 1,
-        "why": { "en": "F ∝ q₁q₂/r²: × 3 for the charge, × 1/4 for the distance → 3F/4.", "id": "F ∝ q₁q₂/r²: × 3 untuk muatan, × 1/4 untuk jarak → 3F/4." }
+        "why": {
+          "en": "F ∝ q₁q₂/r²: × 3 for the charge, × 1/4 for the distance → 3F/4.",
+          "id": "F ∝ q₁q₂/r²: × 3 untuk muatan, × 1/4 untuk jarak → 3F/4."
+        }
       },
       {
         "source": "Ch 21 p. 8",
-        "q": { "en": "What is the correct unit of k in F = k|q₁||q₂|/r²?", "id": "Apa satuan k yang benar pada F = k|q₁||q₂|/r²?" },
+        "q": {
+          "en": "What is the correct unit of k in F = k|q₁||q₂|/r²?",
+          "id": "Apa satuan k yang benar pada F = k|q₁||q₂|/r²?"
+        },
         "options": [
-          { "en": "C²/(N·m²)", "id": "C²/(N·m²)" },
-          { "en": "C⁻²·m²/N", "id": "C⁻²·m²/N" },
-          { "en": "N·m²/C²", "id": "N·m²/C²" },
-          { "en": "N/C", "id": "N/C" }
+          {
+            "en": "C²/(N·m²)",
+            "id": "C²/(N·m²)"
+          },
+          {
+            "en": "C⁻²·m²/N",
+            "id": "C⁻²·m²/N"
+          },
+          {
+            "en": "N·m²/C²",
+            "id": "N·m²/C²"
+          },
+          {
+            "en": "N/C",
+            "id": "N/C"
+          }
         ],
         "answer": 2,
-        "why": { "en": "k = F r²/(q₁q₂) has units N·m²/C². (C²/(N·m²) is the unit of ε₀; the slide's 'C⁻² m²/N' is upside down.)", "id": "k = F r²/(q₁q₂) bersatuan N·m²/C². (C²/(N·m²) adalah satuan ε₀; 'C⁻² m²/N' di slide terbalik.)" }
+        "why": {
+          "en": "k = F r²/(q₁q₂) has units N·m²/C². (C²/(N·m²) is the unit of ε₀; the slide's 'C⁻² m²/N' is upside down.)",
+          "id": "k = F r²/(q₁q₂) bersatuan N·m²/C². (C²/(N·m²) adalah satuan ε₀; 'C⁻² m²/N' di slide terbalik.)"
+        }
       },
       {
         "source": "Ch 21 p. 12",
-        "q": { "en": "3-4-5 triangle example: F₃₁ = 1.08 × 10⁻⁸ N (at 37°), F₃₂ = 5.62 × 10⁻⁹ N (along −x). |F₃,net|?", "id": "Contoh segitiga 3-4-5: F₃₁ = 1,08 × 10⁻⁸ N (pada 37°), F₃₂ = 5,62 × 10⁻⁹ N (ke −x). |F₃,net|?" },
+        "q": {
+          "en": "3-4-5 triangle example: F₃₁ = 1.08 × 10⁻⁸ N (at 37°), F₃₂ = 5.62 × 10⁻⁹ N (along −x). |F₃,net|?",
+          "id": "Contoh segitiga 3-4-5: F₃₁ = 1,08 × 10⁻⁸ N (pada 37°), F₃₂ = 5,62 × 10⁻⁹ N (ke −x). |F₃,net|?"
+        },
         "options": [
-          { "en": "1.64 × 10⁻⁸ N", "id": "1,64 × 10⁻⁸ N" },
-          { "en": "5.18 × 10⁻⁹ N", "id": "5,18 × 10⁻⁹ N" },
-          { "en": "1.08 × 10⁻⁸ N", "id": "1,08 × 10⁻⁸ N" },
-          { "en": "7.16 × 10⁻⁹ N", "id": "7,16 × 10⁻⁹ N" }
+          {
+            "en": "1.64 × 10⁻⁸ N",
+            "id": "1,64 × 10⁻⁸ N"
+          },
+          {
+            "en": "5.18 × 10⁻⁹ N",
+            "id": "5,18 × 10⁻⁹ N"
+          },
+          {
+            "en": "1.08 × 10⁻⁸ N",
+            "id": "1,08 × 10⁻⁸ N"
+          },
+          {
+            "en": "7.16 × 10⁻⁹ N",
+            "id": "7,16 × 10⁻⁹ N"
+          }
         ],
         "answer": 3,
-        "why": { "en": "Fx = F₃₁cos37° − F₃₂ = 3.01 × 10⁻⁹, Fy = F₃₁sin37° = 6.50 × 10⁻⁹ → √(Fx² + Fy²) = 7.16 × 10⁻⁹ N. 1.64 × 10⁻⁸ wrongly adds magnitudes.", "id": "Fx = F₃₁cos37° − F₃₂ = 3,01 × 10⁻⁹, Fy = F₃₁sin37° = 6,50 × 10⁻⁹ → √(Fx² + Fy²) = 7,16 × 10⁻⁹ N. 1,64 × 10⁻⁸ salah karena menjumlahkan besar." }
+        "why": {
+          "en": "Fx = F₃₁cos37° − F₃₂ = 3.01 × 10⁻⁹, Fy = F₃₁sin37° = 6.50 × 10⁻⁹ → √(Fx² + Fy²) = 7.16 × 10⁻⁹ N. 1.64 × 10⁻⁸ wrongly adds magnitudes.",
+          "id": "Fx = F₃₁cos37° − F₃₂ = 3,01 × 10⁻⁹, Fy = F₃₁sin37° = 6,50 × 10⁻⁹ → √(Fx² + Fy²) = 7,16 × 10⁻⁹ N. 1,64 × 10⁻⁸ salah karena menjumlahkan besar."
+        }
       },
       {
         "source": "Ch 21 p. 10",
-        "q": { "en": "A point charge is inside a uniformly charged spherical shell. Net force from the shell?", "id": "Muatan titik berada di dalam kulit bola bermuatan seragam. Gaya total dari kulit?" },
+        "q": {
+          "en": "A point charge is inside a uniformly charged spherical shell. Net force from the shell?",
+          "id": "Muatan titik berada di dalam kulit bola bermuatan seragam. Gaya total dari kulit?"
+        },
         "options": [
-          { "en": "Toward the center", "id": "Ke arah pusat" },
-          { "en": "Zero", "id": "Nol" },
-          { "en": "As if all the shell's charge were at the center", "id": "Seolah seluruh muatan kulit ada di pusat" },
-          { "en": "Toward the nearest part of the shell", "id": "Ke bagian kulit terdekat" }
+          {
+            "en": "Toward the center",
+            "id": "Ke arah pusat"
+          },
+          {
+            "en": "Zero",
+            "id": "Nol"
+          },
+          {
+            "en": "As if all the shell's charge were at the center",
+            "id": "Seolah seluruh muatan kulit ada di pusat"
+          },
+          {
+            "en": "Toward the nearest part of the shell",
+            "id": "Ke bagian kulit terdekat"
+          }
         ],
         "answer": 1,
-        "why": { "en": "Shell theorem: inside a uniform shell the net force is zero. 'As if at the center' applies OUTSIDE the shell.", "id": "Teorema kulit: di dalam kulit seragam gaya totalnya nol. 'Seolah di pusat' berlaku di LUAR kulit." }
+        "why": {
+          "en": "Shell theorem: inside a uniform shell the net force is zero. 'As if at the center' applies OUTSIDE the shell.",
+          "id": "Teorema kulit: di dalam kulit seragam gaya totalnya nol. 'Seolah di pusat' berlaku di LUAR kulit."
+        }
       },
       {
         "source": "Ch 21 p. 14",
-        "q": { "en": "Which is a possible charge on an object? (e = 1.6 × 10⁻¹⁹ C)", "id": "Mana muatan yang mungkin pada suatu benda? (e = 1,6 × 10⁻¹⁹ C)" },
+        "q": {
+          "en": "Which is a possible charge on an object? (e = 1.6 × 10⁻¹⁹ C)",
+          "id": "Mana muatan yang mungkin pada suatu benda? (e = 1,6 × 10⁻¹⁹ C)"
+        },
         "options": [
-          { "en": "2.4 × 10⁻¹⁹ C", "id": "2,4 × 10⁻¹⁹ C" },
-          { "en": "1.0 × 10⁻¹⁹ C", "id": "1,0 × 10⁻¹⁹ C" },
-          { "en": "3.2 × 10⁻¹⁹ C", "id": "3,2 × 10⁻¹⁹ C" },
-          { "en": "4.0 × 10⁻¹⁹ C", "id": "4,0 × 10⁻¹⁹ C" }
+          {
+            "en": "2.4 × 10⁻¹⁹ C",
+            "id": "2,4 × 10⁻¹⁹ C"
+          },
+          {
+            "en": "1.0 × 10⁻¹⁹ C",
+            "id": "1,0 × 10⁻¹⁹ C"
+          },
+          {
+            "en": "3.2 × 10⁻¹⁹ C",
+            "id": "3,2 × 10⁻¹⁹ C"
+          },
+          {
+            "en": "4.0 × 10⁻¹⁹ C",
+            "id": "4,0 × 10⁻¹⁹ C"
+          }
         ],
         "answer": 2,
-        "why": { "en": "3.2 × 10⁻¹⁹ C = 2e. The others are 1.5e, 0.625e and 2.5e, which aren't whole multiples.", "id": "3,2 × 10⁻¹⁹ C = 2e. Yang lain 1,5e, 0,625e, dan 2,5e, bukan kelipatan bulat." }
+        "why": {
+          "en": "3.2 × 10⁻¹⁹ C = 2e. The others are 1.5e, 0.625e and 2.5e, which aren't whole multiples.",
+          "id": "3,2 × 10⁻¹⁹ C = 2e. Yang lain 1,5e, 0,625e, dan 2,5e, bukan kelipatan bulat."
+        }
       },
       {
         "source": "Ch 21 p. 14",
-        "q": { "en": "Pair production: γ → e⁻ + e⁺. What does charge conservation require?", "id": "Produksi pasangan: γ → e⁻ + e⁺. Apa yang disyaratkan kekekalan muatan?" },
+        "q": {
+          "en": "Pair production: γ → e⁻ + e⁺. What does charge conservation require?",
+          "id": "Produksi pasangan: γ → e⁻ + e⁺. Apa yang disyaratkan kekekalan muatan?"
+        },
         "options": [
-          { "en": "Total charge 0 before and after", "id": "Total muatan 0 sebelum dan sesudah" },
-          { "en": "The photon must carry charge +e", "id": "Foton harus bermuatan +e" },
-          { "en": "Only one electron can be made", "id": "Hanya satu elektron yang bisa dibuat" },
-          { "en": "Charge is created, so it isn't conserved", "id": "Muatan diciptakan, jadi tidak kekal" }
+          {
+            "en": "Total charge 0 before and after",
+            "id": "Total muatan 0 sebelum dan sesudah"
+          },
+          {
+            "en": "The photon must carry charge +e",
+            "id": "Foton harus bermuatan +e"
+          },
+          {
+            "en": "Only one electron can be made",
+            "id": "Hanya satu elektron yang bisa dibuat"
+          },
+          {
+            "en": "Charge is created, so it isn't conserved",
+            "id": "Muatan diciptakan, jadi tidak kekal"
+          }
         ],
         "answer": 0,
-        "why": { "en": "The photon has no charge, and (−e) + (+e) = 0, so the net charge stays 0.", "id": "Foton tidak bermuatan, dan (−e) + (+e) = 0, jadi muatan totalnya tetap 0." }
+        "why": {
+          "en": "The photon has no charge, and (−e) + (+e) = 0, so the net charge stays 0.",
+          "id": "Foton tidak bermuatan, dan (−e) + (+e) = 0, jadi muatan totalnya tetap 0."
+        }
       }
     ]
   },
   {
-    "chapter": { "en": "22. Electric Field", "id": "22. Medan Listrik" },
+    "chapter": {
+      "en": "22. Electric Field",
+      "id": "22. Medan Listrik"
+    },
     "questions": [
       {
         "source": "Ch 22 p. 2",
-        "q": { "en": "The electric field at point P is defined as…", "id": "Medan listrik di titik P didefinisikan sebagai…" },
+        "q": {
+          "en": "The electric field at point P is defined as…",
+          "id": "Medan listrik di titik P didefinisikan sebagai…"
+        },
         "options": [
-          { "en": "The force on any charge placed at P", "id": "Gaya pada muatan apa pun di P" },
-          { "en": "F/q₀ on a small positive test charge q₀", "id": "F/q₀ pada muatan uji positif kecil q₀" },
-          { "en": "The charge at P divided by r²", "id": "Muatan di P dibagi r²" },
-          { "en": "The energy of a test charge at P", "id": "Energi muatan uji di P" }
+          {
+            "en": "The force on any charge placed at P",
+            "id": "Gaya pada muatan apa pun di P"
+          },
+          {
+            "en": "F/q₀ on a small positive test charge q₀",
+            "id": "F/q₀ pada muatan uji positif kecil q₀"
+          },
+          {
+            "en": "The charge at P divided by r²",
+            "id": "Muatan di P dibagi r²"
+          },
+          {
+            "en": "The energy of a test charge at P",
+            "id": "Energi muatan uji di P"
+          }
         ],
         "answer": 1,
-        "why": { "en": "E = F/q₀ with a positive test charge, measured in N/C.", "id": "E = F/q₀ dengan muatan uji positif, bersatuan N/C." }
+        "why": {
+          "en": "E = F/q₀ with a positive test charge, measured in N/C.",
+          "id": "E = F/q₀ dengan muatan uji positif, bersatuan N/C."
+        }
       },
       {
         "source": "Ch 22 p. 3",
-        "q": { "en": "Electric field lines…", "id": "Garis medan listrik…" },
+        "q": {
+          "en": "Electric field lines…",
+          "id": "Garis medan listrik…"
+        },
         "options": [
-          { "en": "Point toward positive charges", "id": "Mengarah ke muatan positif" },
-          { "en": "Can cross each other", "id": "Bisa saling berpotongan" },
-          { "en": "Start on positive charges and end on negative charges", "id": "Berawal di muatan positif dan berakhir di muatan negatif" },
-          { "en": "Show the path a charge always follows", "id": "Menunjukkan lintasan yang selalu diikuti muatan" }
+          {
+            "en": "Point toward positive charges",
+            "id": "Mengarah ke muatan positif"
+          },
+          {
+            "en": "Can cross each other",
+            "id": "Bisa saling berpotongan"
+          },
+          {
+            "en": "Start on positive charges and end on negative charges",
+            "id": "Berawal di muatan positif dan berakhir di muatan negatif"
+          },
+          {
+            "en": "Show the path a charge always follows",
+            "id": "Menunjukkan lintasan yang selalu diikuti muatan"
+          }
         ],
         "answer": 2,
-        "why": { "en": "Lines go away from + and toward −; the tangent gives E's direction. They never cross.", "id": "Garis menjauhi + dan menuju −; garis singgung memberi arah E. Garis tidak pernah berpotongan." }
+        "why": {
+          "en": "Lines go away from + and toward −; the tangent gives E's direction. They never cross.",
+          "id": "Garis menjauhi + dan menuju −; garis singgung memberi arah E. Garis tidak pernah berpotongan."
+        }
       },
       {
         "source": "Ch 22 p. 4",
-        "q": { "en": "A point charge makes field E at distance r. Field at 3r?", "id": "Muatan titik membuat medan E pada jarak r. Medan pada 3r?" },
+        "q": {
+          "en": "A point charge makes field E at distance r. Field at 3r?",
+          "id": "Muatan titik membuat medan E pada jarak r. Medan pada 3r?"
+        },
         "options": [
-          { "en": "E/3", "id": "E/3" },
-          { "en": "3E", "id": "3E" },
-          { "en": "E/6", "id": "E/6" },
-          { "en": "E/9", "id": "E/9" }
+          {
+            "en": "E/3",
+            "id": "E/3"
+          },
+          {
+            "en": "3E",
+            "id": "3E"
+          },
+          {
+            "en": "E/6",
+            "id": "E/6"
+          },
+          {
+            "en": "E/9",
+            "id": "E/9"
+          }
         ],
         "answer": 3,
-        "why": { "en": "E ∝ 1/r², so tripling r divides E by 9.", "id": "E ∝ 1/r², jadi r tiga kali membagi E dengan 9." }
+        "why": {
+          "en": "E ∝ 1/r², so tripling r divides E by 9.",
+          "id": "E ∝ 1/r², jadi r tiga kali membagi E dengan 9."
+        }
       },
       {
         "source": "Ch 22 p. 8",
-        "q": { "en": "Far along its axis (z ≫ d), a dipole's field falls off as…", "id": "Jauh di sumbunya (z ≫ d), medan dipol turun sebanding…" },
+        "q": {
+          "en": "Far along its axis (z ≫ d), a dipole's field falls off as…",
+          "id": "Jauh di sumbunya (z ≫ d), medan dipol turun sebanding…"
+        },
         "options": [
-          { "en": "1/z", "id": "1/z" },
-          { "en": "1/z²", "id": "1/z²" },
-          { "en": "1/z³", "id": "1/z³" },
-          { "en": "It doesn't fall off", "id": "Tidak turun" }
+          {
+            "en": "1/z",
+            "id": "1/z"
+          },
+          {
+            "en": "1/z²",
+            "id": "1/z²"
+          },
+          {
+            "en": "1/z³",
+            "id": "1/z³"
+          },
+          {
+            "en": "It doesn't fall off",
+            "id": "Tidak turun"
+          }
         ],
         "answer": 2,
-        "why": { "en": "E ≈ 2kp/z³: the + and − fields almost cancel far away.", "id": "E ≈ 2kp/z³: medan + dan − hampir saling meniadakan di kejauhan." }
+        "why": {
+          "en": "E ≈ 2kp/z³: the + and − fields almost cancel far away.",
+          "id": "E ≈ 2kp/z³: medan + dan − hampir saling meniadakan di kejauhan."
+        }
       },
       {
         "source": "Ch 22 p. 9",
-        "q": { "en": "Field at the center of a uniformly charged ring?", "id": "Medan di pusat cincin bermuatan seragam?" },
+        "q": {
+          "en": "Field at the center of a uniformly charged ring?",
+          "id": "Medan di pusat cincin bermuatan seragam?"
+        },
         "options": [
-          { "en": "Zero", "id": "Nol" },
-          { "en": "kq/R²", "id": "kq/R²" },
-          { "en": "Maximum along the axis", "id": "Maksimum sepanjang sumbu" },
-          { "en": "kq/(2R²)", "id": "kq/(2R²)" }
+          {
+            "en": "Zero",
+            "id": "Nol"
+          },
+          {
+            "en": "kq/R²",
+            "id": "kq/R²"
+          },
+          {
+            "en": "Maximum along the axis",
+            "id": "Maksimum sepanjang sumbu"
+          },
+          {
+            "en": "kq/(2R²)",
+            "id": "kq/(2R²)"
+          }
         ],
         "answer": 0,
-        "why": { "en": "E = kqz/(R² + z²)^{3/2} = 0 at z = 0: pieces on opposite sides cancel.", "id": "E = kqz/(R² + z²)^{3/2} = 0 di z = 0: potongan di sisi berseberangan saling meniadakan." }
+        "why": {
+          "en": "E = kqz/(R² + z²)^{3/2} = 0 at z = 0: pieces on opposite sides cancel.",
+          "id": "E = kqz/(R² + z²)^{3/2} = 0 di z = 0: potongan di sisi berseberangan saling meniadakan."
+        }
       },
       {
         "source": "Ch 22 p. 12",
-        "q": { "en": "E points east. An electron in this field feels a force pointing…", "id": "E mengarah ke timur. Elektron dalam medan ini merasakan gaya ke…" },
+        "q": {
+          "en": "E points east. An electron in this field feels a force pointing…",
+          "id": "E mengarah ke timur. Elektron dalam medan ini merasakan gaya ke…"
+        },
         "options": [
-          { "en": "East", "id": "Timur" },
-          { "en": "West", "id": "Barat" },
-          { "en": "North", "id": "Utara" },
-          { "en": "No force", "id": "Tidak ada gaya" }
+          {
+            "en": "East",
+            "id": "Timur"
+          },
+          {
+            "en": "West",
+            "id": "Barat"
+          },
+          {
+            "en": "North",
+            "id": "Utara"
+          },
+          {
+            "en": "No force",
+            "id": "Tidak ada gaya"
+          }
         ],
         "answer": 1,
-        "why": { "en": "F = qE with q < 0 points opposite to E.", "id": "F = qE dengan q < 0 berlawanan arah dengan E." }
+        "why": {
+          "en": "F = qE with q < 0 points opposite to E.",
+          "id": "F = qE dengan q < 0 berlawanan arah dengan E."
+        }
       },
       {
         "source": "Ch 22 p. 14",
-        "q": { "en": "Ink-jet example (m = 1.3 × 10⁻¹⁰ kg, Q = −1.5 × 10⁻¹³ C, vₓ = 18 m/s, L = 1.6 cm, E = 1.4 × 10⁶ N/C). Deflection y?", "id": "Contoh ink-jet (m = 1,3 × 10⁻¹⁰ kg, Q = −1,5 × 10⁻¹³ C, vₓ = 18 m/s, L = 1,6 cm, E = 1,4 × 10⁶ N/C). Simpangan y?" },
+        "q": {
+          "en": "Ink-jet example (m = 1.3 × 10⁻¹⁰ kg, Q = −1.5 × 10⁻¹³ C, vₓ = 18 m/s, L = 1.6 cm, E = 1.4 × 10⁶ N/C). Deflection y?",
+          "id": "Contoh ink-jet (m = 1,3 × 10⁻¹⁰ kg, Q = −1,5 × 10⁻¹³ C, vₓ = 18 m/s, L = 1,6 cm, E = 1,4 × 10⁶ N/C). Simpangan y?"
+        },
         "options": [
-          { "en": "0.64 m", "id": "0,64 m" },
-          { "en": "6.4 cm", "id": "6,4 cm" },
-          { "en": "0.64 mm", "id": "0,64 mm" },
-          { "en": "0.064 mm", "id": "0,064 mm" }
+          {
+            "en": "0.64 m",
+            "id": "0,64 m"
+          },
+          {
+            "en": "6.4 cm",
+            "id": "6,4 cm"
+          },
+          {
+            "en": "0.64 mm",
+            "id": "0,64 mm"
+          },
+          {
+            "en": "0.064 mm",
+            "id": "0,064 mm"
+          }
         ],
         "answer": 2,
-        "why": { "en": "y = QEL²/(2mvₓ²) = 6.4 × 10⁻⁴ m = 0.64 mm. (The slide prints '0.64 m'.)", "id": "y = QEL²/(2mvₓ²) = 6,4 × 10⁻⁴ m = 0,64 mm. (Slide mencetak '0,64 m'.)" }
+        "why": {
+          "en": "y = QEL²/(2mvₓ²) = 6.4 × 10⁻⁴ m = 0.64 mm. (The slide prints '0.64 m'.)",
+          "id": "y = QEL²/(2mvₓ²) = 6,4 × 10⁻⁴ m = 0,64 mm. (Slide mencetak '0,64 m'.)"
+        }
       },
       {
         "source": "Ch 22 p. 14",
-        "q": { "en": "In the ink-jet, the drop enters twice as fast. The deflection becomes…", "id": "Pada ink-jet, tetes masuk dua kali lebih cepat. Simpangannya menjadi…" },
+        "q": {
+          "en": "In the ink-jet, the drop enters twice as fast. The deflection becomes…",
+          "id": "Pada ink-jet, tetes masuk dua kali lebih cepat. Simpangannya menjadi…"
+        },
         "options": [
-          { "en": "y/2", "id": "y/2" },
-          { "en": "2y", "id": "2y" },
-          { "en": "y (unchanged)", "id": "y (tidak berubah)" },
-          { "en": "y/4", "id": "y/4" }
+          {
+            "en": "y/2",
+            "id": "y/2"
+          },
+          {
+            "en": "2y",
+            "id": "2y"
+          },
+          {
+            "en": "y (unchanged)",
+            "id": "y (tidak berubah)"
+          },
+          {
+            "en": "y/4",
+            "id": "y/4"
+          }
         ],
         "answer": 3,
-        "why": { "en": "y ∝ 1/vₓ²: half the time between the plates, and the deflection goes with t².", "id": "y ∝ 1/vₓ²: waktu di antara pelat separuhnya, dan simpangan sebanding t²." }
+        "why": {
+          "en": "y ∝ 1/vₓ²: half the time between the plates, and the deflection goes with t².",
+          "id": "y ∝ 1/vₓ²: waktu di antara pelat separuhnya, dan simpangan sebanding t²."
+        }
       },
       {
         "source": "Ch 22 p. 15–17",
-        "q": { "en": "A dipole in a uniform field. Which statement is true?", "id": "Dipol dalam medan seragam. Pernyataan mana yang benar?" },
+        "q": {
+          "en": "A dipole in a uniform field. Which statement is true?",
+          "id": "Dipol dalam medan seragam. Pernyataan mana yang benar?"
+        },
         "options": [
-          { "en": "Net force 0; torque largest at θ = 90°", "id": "Gaya total 0; torsi terbesar di θ = 90°" },
-          { "en": "Net force qE; no torque", "id": "Gaya total qE; tanpa torsi" },
-          { "en": "θ = 180° is stable because τ = 0", "id": "θ = 180° stabil karena τ = 0" },
-          { "en": "U is largest at θ = 0°", "id": "U terbesar di θ = 0°" }
+          {
+            "en": "Net force 0; torque largest at θ = 90°",
+            "id": "Gaya total 0; torsi terbesar di θ = 90°"
+          },
+          {
+            "en": "Net force qE; no torque",
+            "id": "Gaya total qE; tanpa torsi"
+          },
+          {
+            "en": "θ = 180° is stable because τ = 0",
+            "id": "θ = 180° stabil karena τ = 0"
+          },
+          {
+            "en": "U is largest at θ = 0°",
+            "id": "U terbesar di θ = 0°"
+          }
         ],
         "answer": 0,
-        "why": { "en": "The forces ±qE cancel but form a couple: τ = pE sinθ, largest at 90°. θ = 0° has minimum U (stable); 180° is unstable.", "id": "Gaya ±qE saling meniadakan tetapi membentuk kopel: τ = pE sinθ, terbesar di 90°. θ = 0° punya U minimum (stabil); 180° labil." }
+        "why": {
+          "en": "The forces ±qE cancel but form a couple: τ = pE sinθ, largest at 90°. θ = 0° has minimum U (stable); 180° is unstable.",
+          "id": "Gaya ±qE saling meniadakan tetapi membentuk kopel: τ = pE sinθ, terbesar di 90°. θ = 0° punya U minimum (stabil); 180° labil."
+        }
       }
     ]
   },
   {
-    "chapter": { "en": "23. Gauss' Law", "id": "23. Hukum Gauss" },
+    "chapter": {
+      "en": "23. Gauss' Law",
+      "id": "23. Hukum Gauss"
+    },
     "questions": [
       {
         "source": "Ch 23 p. 3–4",
-        "q": { "en": "In Φ = EA cosθ, what is θ?", "id": "Pada Φ = EA cosθ, apa itu θ?" },
+        "q": {
+          "en": "In Φ = EA cosθ, what is θ?",
+          "id": "Pada Φ = EA cosθ, apa itu θ?"
+        },
         "options": [
-          { "en": "The angle between E and the surface", "id": "Sudut antara E dan bidang" },
-          { "en": "The angle between E and the surface's normal", "id": "Sudut antara E dan normal bidang" },
-          { "en": "The angle of the field lines with the x axis", "id": "Sudut garis medan dengan sumbu x" },
-          { "en": "Always 90°", "id": "Selalu 90°" }
+          {
+            "en": "The angle between E and the surface",
+            "id": "Sudut antara E dan bidang"
+          },
+          {
+            "en": "The angle between E and the surface's normal",
+            "id": "Sudut antara E dan normal bidang"
+          },
+          {
+            "en": "The angle of the field lines with the x axis",
+            "id": "Sudut garis medan dengan sumbu x"
+          },
+          {
+            "en": "Always 90°",
+            "id": "Selalu 90°"
+          }
         ],
         "answer": 1,
-        "why": { "en": "The area vector A is normal to the surface, so θ is measured from the normal.", "id": "Vektor luas A tegak lurus bidang, jadi θ diukur dari normal." }
+        "why": {
+          "en": "The area vector A is normal to the surface, so θ is measured from the normal.",
+          "id": "Vektor luas A tegak lurus bidang, jadi θ diukur dari normal."
+        }
       },
       {
         "source": "Ch 23 p. 6",
-        "q": { "en": "A closed cylinder sits in a uniform field parallel to its axis. Total flux?", "id": "Silinder tertutup berada di medan seragam sejajar sumbunya. Fluks totalnya?" },
+        "q": {
+          "en": "A closed cylinder sits in a uniform field parallel to its axis. Total flux?",
+          "id": "Silinder tertutup berada di medan seragam sejajar sumbunya. Fluks totalnya?"
+        },
         "options": [
-          { "en": "2EA", "id": "2EA" },
-          { "en": "EA", "id": "EA" },
-          { "en": "−EA", "id": "−EA" },
-          { "en": "0", "id": "0" }
+          {
+            "en": "2EA",
+            "id": "2EA"
+          },
+          {
+            "en": "EA",
+            "id": "EA"
+          },
+          {
+            "en": "−EA",
+            "id": "−EA"
+          },
+          {
+            "en": "0",
+            "id": "0"
+          }
         ],
         "answer": 3,
-        "why": { "en": "−EA in at one cap, +EA out at the other, 0 through the side. No charge inside, so 0 in total.", "id": "−EA masuk di satu tutup, +EA keluar di tutup lain, 0 di selimut. Tanpa muatan di dalam, totalnya 0." }
+        "why": {
+          "en": "−EA in at one cap, +EA out at the other, 0 through the side. No charge inside, so 0 in total.",
+          "id": "−EA masuk di satu tutup, +EA keluar di tutup lain, 0 di selimut. Tanpa muatan di dalam, totalnya 0."
+        }
       },
       {
         "source": "Ch 23 p. 7",
-        "q": { "en": "E = 3x î + 4 ĵ, cube face at x = 3 m, area 4 m², outward normal +î. Flux?", "id": "E = 3x î + 4 ĵ, sisi kubus di x = 3 m, luas 4 m², normal keluar +î. Fluksnya?" },
+        "q": {
+          "en": "E = 3x î + 4 ĵ, cube face at x = 3 m, area 4 m², outward normal +î. Flux?",
+          "id": "E = 3x î + 4 ĵ, sisi kubus di x = 3 m, luas 4 m², normal keluar +î. Fluksnya?"
+        },
         "options": [
-          { "en": "36 N·m²/C", "id": "36 N·m²/C" },
-          { "en": "12 N·m²/C", "id": "12 N·m²/C" },
-          { "en": "16 N·m²/C", "id": "16 N·m²/C" },
-          { "en": "52 N·m²/C", "id": "52 N·m²/C" }
+          {
+            "en": "36 N·m²/C",
+            "id": "36 N·m²/C"
+          },
+          {
+            "en": "12 N·m²/C",
+            "id": "12 N·m²/C"
+          },
+          {
+            "en": "16 N·m²/C",
+            "id": "16 N·m²/C"
+          },
+          {
+            "en": "52 N·m²/C",
+            "id": "52 N·m²/C"
+          }
         ],
         "answer": 0,
-        "why": { "en": "Only the x-part counts on this face: 3 · 3 · 4 = 36. The 4ĵ part is parallel to the face.", "id": "Hanya komponen x yang dihitung di sisi ini: 3 · 3 · 4 = 36. Bagian 4ĵ sejajar sisi." }
+        "why": {
+          "en": "Only the x-part counts on this face: 3 · 3 · 4 = 36. The 4ĵ part is parallel to the face.",
+          "id": "Hanya komponen x yang dihitung di sisi ini: 3 · 3 · 4 = 36. Bagian 4ĵ sejajar sisi."
+        }
       },
       {
         "source": "Ch 23 p. 10",
-        "q": { "en": "A spherical Gaussian surface around +q doubles in radius. The flux…", "id": "Permukaan Gauss bola di sekitar +q dilipatduakan jari-jarinya. Fluksnya…" },
+        "q": {
+          "en": "A spherical Gaussian surface around +q doubles in radius. The flux…",
+          "id": "Permukaan Gauss bola di sekitar +q dilipatduakan jari-jarinya. Fluksnya…"
+        },
         "options": [
-          { "en": "Doubles", "id": "Dua kali lipat" },
-          { "en": "Halves", "id": "Setengahnya" },
-          { "en": "Stays q/ε₀", "id": "Tetap q/ε₀" },
-          { "en": "Becomes a quarter", "id": "Menjadi seperempat" }
+          {
+            "en": "Doubles",
+            "id": "Dua kali lipat"
+          },
+          {
+            "en": "Halves",
+            "id": "Setengahnya"
+          },
+          {
+            "en": "Stays q/ε₀",
+            "id": "Tetap q/ε₀"
+          },
+          {
+            "en": "Becomes a quarter",
+            "id": "Menjadi seperempat"
+          }
         ],
         "answer": 2,
-        "why": { "en": "E falls as 1/r² while the area grows as r²: Φ = q/ε₀ for every radius.", "id": "E turun sebanding 1/r² sementara luas naik sebanding r²: Φ = q/ε₀ untuk setiap jari-jari." }
+        "why": {
+          "en": "E falls as 1/r² while the area grows as r²: Φ = q/ε₀ for every radius.",
+          "id": "E turun sebanding 1/r² sementara luas naik sebanding r²: Φ = q/ε₀ untuk setiap jari-jari."
+        }
       },
       {
         "source": "Ch 23 p. 11",
-        "q": { "en": "A closed surface encloses +2 nC and −5 nC; a +7 nC charge sits outside. Net flux?", "id": "Permukaan tertutup melingkupi +2 nC dan −5 nC; muatan +7 nC berada di luar. Fluks totalnya?" },
+        "q": {
+          "en": "A closed surface encloses +2 nC and −5 nC; a +7 nC charge sits outside. Net flux?",
+          "id": "Permukaan tertutup melingkupi +2 nC dan −5 nC; muatan +7 nC berada di luar. Fluks totalnya?"
+        },
         "options": [
-          { "en": "+4 nC/ε₀", "id": "+4 nC/ε₀" },
-          { "en": "−3 nC/ε₀", "id": "−3 nC/ε₀" },
-          { "en": "+14 nC/ε₀", "id": "+14 nC/ε₀" },
-          { "en": "0", "id": "0" }
+          {
+            "en": "+4 nC/ε₀",
+            "id": "+4 nC/ε₀"
+          },
+          {
+            "en": "−3 nC/ε₀",
+            "id": "−3 nC/ε₀"
+          },
+          {
+            "en": "+14 nC/ε₀",
+            "id": "+14 nC/ε₀"
+          },
+          {
+            "en": "0",
+            "id": "0"
+          }
         ],
         "answer": 1,
-        "why": { "en": "Only the enclosed charge counts: (+2 − 5) nC = −3 nC. Outside charges add zero net flux.", "id": "Hanya muatan terlingkupi yang dihitung: (+2 − 5) nC = −3 nC. Muatan di luar tidak menambah fluks bersih." }
+        "why": {
+          "en": "Only the enclosed charge counts: (+2 − 5) nC = −3 nC. Outside charges add zero net flux.",
+          "id": "Hanya muatan terlingkupi yang dihitung: (+2 − 5) nC = −3 nC. Muatan di luar tidak menambah fluks bersih."
+        }
       },
       {
         "source": "Ch 23 p. 13–14",
-        "q": { "en": "+q sits in the cavity of a neutral conducting shell. Charges on the inner and outer surfaces?", "id": "+q berada di rongga kulit konduktor netral. Muatan di permukaan dalam dan luar?" },
+        "q": {
+          "en": "+q sits in the cavity of a neutral conducting shell. Charges on the inner and outer surfaces?",
+          "id": "+q berada di rongga kulit konduktor netral. Muatan di permukaan dalam dan luar?"
+        },
         "options": [
-          { "en": "0 and +q", "id": "0 dan +q" },
-          { "en": "+q and −q", "id": "+q dan −q" },
-          { "en": "−q and 0", "id": "−q dan 0" },
-          { "en": "−q and +q", "id": "−q dan +q" }
+          {
+            "en": "0 and +q",
+            "id": "0 dan +q"
+          },
+          {
+            "en": "+q and −q",
+            "id": "+q dan −q"
+          },
+          {
+            "en": "−q and 0",
+            "id": "−q dan 0"
+          },
+          {
+            "en": "−q and +q",
+            "id": "−q dan +q"
+          }
         ],
         "answer": 3,
-        "why": { "en": "E = 0 in the metal, so a Gaussian surface there encloses 0: inner wall −q. The shell is neutral, so the outer surface has +q.", "id": "E = 0 di logam, jadi permukaan Gauss di sana melingkupi 0: dinding dalam −q. Kulitnya netral, jadi permukaan luar +q." }
+        "why": {
+          "en": "E = 0 in the metal, so a Gaussian surface there encloses 0: inner wall −q. The shell is neutral, so the outer surface has +q.",
+          "id": "E = 0 di logam, jadi permukaan Gauss di sana melingkupi 0: dinding dalam −q. Kulitnya netral, jadi permukaan luar +q."
+        }
       },
       {
         "source": "Ch 23 p. 19",
-        "q": { "en": "Distance from a long uniformly charged line is halved. E becomes…", "id": "Jarak dari garis bermuatan seragam panjang dibagi dua. E menjadi…" },
+        "q": {
+          "en": "Distance from a long uniformly charged line is halved. E becomes…",
+          "id": "Jarak dari garis bermuatan seragam panjang dibagi dua. E menjadi…"
+        },
         "options": [
-          { "en": "2E", "id": "2E" },
-          { "en": "4E", "id": "4E" },
-          { "en": "E/2", "id": "E/2" },
-          { "en": "E", "id": "E" }
+          {
+            "en": "2E",
+            "id": "2E"
+          },
+          {
+            "en": "4E",
+            "id": "4E"
+          },
+          {
+            "en": "E/2",
+            "id": "E/2"
+          },
+          {
+            "en": "E",
+            "id": "E"
+          }
         ],
         "answer": 0,
-        "why": { "en": "E = λ/(2πε₀r) ∝ 1/r, so halving r doubles E.", "id": "E = λ/(2πε₀r) ∝ 1/r, jadi r setengahnya membuat E dua kali." }
+        "why": {
+          "en": "E = λ/(2πε₀r) ∝ 1/r, so halving r doubles E.",
+          "id": "E = λ/(2πε₀r) ∝ 1/r, jadi r setengahnya membuat E dua kali."
+        }
       },
       {
         "source": "Ch 23 p. 25",
-        "q": { "en": "Uniform solid sphere of radius R. How does E at r = R/2 compare with E at the surface?", "id": "Bola pejal seragam berjari-jari R. Bagaimana E di r = R/2 dibanding E di permukaan?" },
+        "q": {
+          "en": "Uniform solid sphere of radius R. How does E at r = R/2 compare with E at the surface?",
+          "id": "Bola pejal seragam berjari-jari R. Bagaimana E di r = R/2 dibanding E di permukaan?"
+        },
         "options": [
-          { "en": "Four times bigger", "id": "Empat kali lebih besar" },
-          { "en": "The same", "id": "Sama" },
-          { "en": "Zero", "id": "Nol" },
-          { "en": "Half as big", "id": "Setengahnya" }
+          {
+            "en": "Four times bigger",
+            "id": "Empat kali lebih besar"
+          },
+          {
+            "en": "The same",
+            "id": "Sama"
+          },
+          {
+            "en": "Zero",
+            "id": "Nol"
+          },
+          {
+            "en": "Half as big",
+            "id": "Setengahnya"
+          }
         ],
         "answer": 3,
-        "why": { "en": "Inside, E = kqr/R³ grows linearly with r: at R/2 it is half the surface value kq/R².", "id": "Di dalam, E = kqr/R³ naik linear terhadap r: di R/2 nilainya setengah dari nilai permukaan kq/R²." }
+        "why": {
+          "en": "Inside, E = kqr/R³ grows linearly with r: at R/2 it is half the surface value kq/R².",
+          "id": "Di dalam, E = kqr/R³ naik linear terhadap r: di R/2 nilainya setengah dari nilai permukaan kq/R²."
+        }
       },
       {
         "source": "Ch 23 p. 26",
-        "q": { "en": "Sphere (R = 5 cm) inside a neutral conducting shell (10–15 cm). Rank E at A (4 cm), B (8), C (12), D (16).", "id": "Bola (R = 5 cm) di dalam kulit konduktor netral (10–15 cm). Urutkan E di A (4 cm), B (8), C (12), D (16)." },
+        "q": {
+          "en": "Sphere (R = 5 cm) inside a neutral conducting shell (10–15 cm). Rank E at A (4 cm), B (8), C (12), D (16).",
+          "id": "Bola (R = 5 cm) di dalam kulit konduktor netral (10–15 cm). Urutkan E di A (4 cm), B (8), C (12), D (16)."
+        },
         "options": [
-          { "en": "A > B > D > C", "id": "A > B > D > C" },
-          { "en": "B = D > A > C", "id": "B = D > A > C" },
-          { "en": "D > B = C > A", "id": "D > B = C > A" },
-          { "en": "C > B > A = D", "id": "C > B > A = D" }
+          {
+            "en": "A > B > D > C",
+            "id": "A > B > D > C"
+          },
+          {
+            "en": "B = D > A > C",
+            "id": "B = D > A > C"
+          },
+          {
+            "en": "D > B = C > A",
+            "id": "D > B = C > A"
+          },
+          {
+            "en": "C > B > A = D",
+            "id": "C > B > A = D"
+          }
         ],
         "answer": 0,
-        "why": { "en": "In units of kq/cm²: A = 0.032, B = 0.0156, D = 0.0039, C = 0 (inside the metal).", "id": "Dalam satuan kq/cm²: A = 0,032, B = 0,0156, D = 0,0039, C = 0 (di dalam logam)." }
+        "why": {
+          "en": "In units of kq/cm²: A = 0.032, B = 0.0156, D = 0.0039, C = 0 (inside the metal).",
+          "id": "Dalam satuan kq/cm²: A = 0,032, B = 0,0156, D = 0,0039, C = 0 (di dalam logam)."
+        }
+      }
+    ]
+  },
+  {
+    "chapter": {
+      "en": "24. Electric Potential",
+      "id": "24. Potensial Listrik"
+    },
+    "questions": [
+      {
+        "source": "Ch 24 p. 5",
+        "q": {
+          "en": "Which statement about electric potential V is true?",
+          "id": "Pernyataan mana tentang potensial listrik V yang benar?"
+        },
+        "options": [
+          {
+            "en": "V is a vector pointing along E",
+            "id": "V adalah vektor searah E"
+          },
+          {
+            "en": "V is potential energy per unit charge, a scalar",
+            "id": "V adalah energi potensial per satuan muatan, skalar"
+          },
+          {
+            "en": "V has units of N/C",
+            "id": "V bersatuan N/C"
+          },
+          {
+            "en": "V is the force on a test charge",
+            "id": "V adalah gaya pada muatan uji"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "V = U/q, measured in volts (J/C). It is a scalar; N/C is the unit of E.",
+          "id": "V = U/q, bersatuan volt (J/C). V skalar; N/C adalah satuan E."
+        }
+      },
+      {
+        "source": "Ch 24 p. 4",
+        "q": {
+          "en": "An electron is moved by the field so that the field does positive work. Its potential energy…",
+          "id": "Elektron dipindahkan medan sehingga medan melakukan usaha positif. Energi potensialnya…"
+        },
+        "options": [
+          {
+            "en": "Increases",
+            "id": "Naik"
+          },
+          {
+            "en": "Stays the same",
+            "id": "Tetap"
+          },
+          {
+            "en": "Decreases",
+            "id": "Turun"
+          },
+          {
+            "en": "Depends on the path",
+            "id": "Bergantung lintasan"
+          }
+        ],
+        "answer": 2,
+        "why": {
+          "en": "ΔU = −W. Positive work by the field means U decreases (Example 1: ΔU = −1.2 × 10⁻¹⁴ J).",
+          "id": "ΔU = −W. Usaha positif oleh medan berarti U turun (Contoh 1: ΔU = −1,2 × 10⁻¹⁴ J)."
+        }
+      },
+      {
+        "source": "Ch 24 p. 7",
+        "q": {
+          "en": "An electron and a proton are each accelerated from rest through 100 V. Which is true?",
+          "id": "Elektron dan proton masing-masing dipercepat dari diam melalui 100 V. Mana yang benar?"
+        },
+        "options": [
+          {
+            "en": "Same speed",
+            "id": "Kelajuan sama"
+          },
+          {
+            "en": "Same kinetic energy; the electron is much faster",
+            "id": "Energi kinetik sama; elektron jauh lebih cepat"
+          },
+          {
+            "en": "The proton gains more energy",
+            "id": "Proton mendapat energi lebih besar"
+          },
+          {
+            "en": "Same kinetic energy; the proton is faster",
+            "id": "Energi kinetik sama; proton lebih cepat"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "Both gain |q|ΔV = 100 eV. v = √(2qΔV/m): 5.9 × 10⁶ m/s for the electron, 1.4 × 10⁵ m/s for the proton.",
+          "id": "Keduanya mendapat |q|ΔV = 100 eV. v = √(2qΔV/m): 5,9 × 10⁶ m/s untuk elektron, 1,4 × 10⁵ m/s untuk proton."
+        }
+      },
+      {
+        "source": "Ch 24 p. 8–9",
+        "q": {
+          "en": "How are equipotential surfaces related to the electric field?",
+          "id": "Bagaimana hubungan permukaan ekuipotensial dengan medan listrik?"
+        },
+        "options": [
+          {
+            "en": "Parallel to E",
+            "id": "Sejajar E"
+          },
+          {
+            "en": "At 45° to E",
+            "id": "Membentuk 45° dengan E"
+          },
+          {
+            "en": "Perpendicular to E",
+            "id": "Tegak lurus E"
+          },
+          {
+            "en": "No fixed relation",
+            "id": "Tidak ada hubungan tetap"
+          }
+        ],
+        "answer": 2,
+        "why": {
+          "en": "Moving along an equipotential takes no work, so E has no component along it: E ⊥ surface, pointing toward lower V.",
+          "id": "Bergerak di sepanjang ekuipotensial tanpa usaha, jadi E tidak punya komponen di sepanjangnya: E ⊥ permukaan, menuju V lebih rendah."
+        }
+      },
+      {
+        "source": "Ch 24 p. 12",
+        "q": {
+          "en": "Uniform field E; points i and f are d apart along a field line. V_f − V_i via a bent path?",
+          "id": "Medan seragam E; titik i dan f berjarak d sepanjang garis medan. V_f − V_i melalui lintasan berbelok?"
+        },
+        "options": [
+          {
+            "en": "−Ed, the same as the straight path",
+            "id": "−Ed, sama dengan lintasan lurus"
+          },
+          {
+            "en": "−√2 Ed",
+            "id": "−√2 Ed"
+          },
+          {
+            "en": "0",
+            "id": "0"
+          },
+          {
+            "en": "+Ed",
+            "id": "+Ed"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "ΔV = −∫E·ds is path independent; both paths in Example 3 give −Ed.",
+          "id": "ΔV = −∫E·ds tidak bergantung lintasan; kedua lintasan di Contoh 3 memberi −Ed."
+        }
+      },
+      {
+        "source": "Ch 24 p. 13",
+        "q": {
+          "en": "Point charge q. At distance 2r, the potential compared with at r is…",
+          "id": "Muatan titik q. Pada jarak 2r, potensialnya dibanding pada r adalah…"
+        },
+        "options": [
+          {
+            "en": "A quarter",
+            "id": "Seperempat"
+          },
+          {
+            "en": "The same",
+            "id": "Sama"
+          },
+          {
+            "en": "Double",
+            "id": "Dua kali"
+          },
+          {
+            "en": "Half",
+            "id": "Setengah"
+          }
+        ],
+        "answer": 3,
+        "why": {
+          "en": "V = kq/r falls as 1/r (it's E that falls as 1/r²).",
+          "id": "V = kq/r turun sebanding 1/r (E yang turun sebanding 1/r²)."
+        }
+      },
+      {
+        "source": "Ch 24 p. 15–16",
+        "q": {
+          "en": "12 electrons on a ring are moved from evenly spaced to bunched in a 120° arc. At the center…",
+          "id": "12 elektron pada cincin dipindahkan dari merata menjadi berkumpul di busur 120°. Di pusat…"
+        },
+        "options": [
+          {
+            "en": "V and E both stay the same",
+            "id": "V dan E sama-sama tetap"
+          },
+          {
+            "en": "V changes; E stays 0",
+            "id": "V berubah; E tetap 0"
+          },
+          {
+            "en": "V stays −12ke/R; E changes from 0 to non-zero",
+            "id": "V tetap −12ke/R; E berubah dari 0 menjadi tidak nol"
+          },
+          {
+            "en": "Both become 0",
+            "id": "Keduanya menjadi 0"
+          }
+        ],
+        "answer": 2,
+        "why": {
+          "en": "V depends only on distances (all still R). E is a vector sum, which no longer cancels.",
+          "id": "V hanya bergantung pada jarak (semuanya tetap R). E adalah jumlah vektor, yang tidak lagi saling meniadakan."
+        }
+      },
+      {
+        "source": "Ch 24 p. 28",
+        "q": {
+          "en": "A charged conducting sphere (radius R, charge q). V at its center?",
+          "id": "Bola konduktor bermuatan (jari-jari R, muatan q). V di pusatnya?"
+        },
+        "options": [
+          {
+            "en": "0, because E = 0 inside",
+            "id": "0, karena E = 0 di dalam"
+          },
+          {
+            "en": "kq/R",
+            "id": "kq/R"
+          },
+          {
+            "en": "kq/r², with r = 0",
+            "id": "kq/r², dengan r = 0"
+          },
+          {
+            "en": "Infinite",
+            "id": "Tak hingga"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "E = 0 inside, so V doesn't change: it stays at the surface value kq/R. E = 0 doesn't mean V = 0.",
+          "id": "E = 0 di dalam, jadi V tidak berubah: tetap bernilai permukaan kq/R. E = 0 tidak berarti V = 0."
+        }
+      },
+      {
+        "source": "Ch 24 p. 23–24",
+        "q": {
+          "en": "In a region V(x) decreases steadily as x increases. Which way does E point?",
+          "id": "Di suatu daerah V(x) turun terus saat x bertambah. Ke mana arah E?"
+        },
+        "options": [
+          {
+            "en": "+x",
+            "id": "+x"
+          },
+          {
+            "en": "−x",
+            "id": "−x"
+          },
+          {
+            "en": "E = 0",
+            "id": "E = 0"
+          },
+          {
+            "en": "Can't tell",
+            "id": "Tidak bisa ditentukan"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "Eₓ = −dV/dx. V falling means dV/dx < 0, so Eₓ > 0: E points downhill, toward +x.",
+          "id": "Eₓ = −dV/dx. V turun berarti dV/dx < 0, jadi Eₓ > 0: E menuruni bukit, ke +x."
+        }
+      },
+      {
+        "source": "Ch 24 p. 26",
+        "q": {
+          "en": "q₁ = +q, q₂ = −4q, q₃ = +2q, each pair d = 12 cm apart, q = 150 nC. System potential energy?",
+          "id": "q₁ = +q, q₂ = −4q, q₃ = +2q, tiap pasangan berjarak d = 12 cm, q = 150 nC. Energi potensial sistem?"
+        },
+        "options": [
+          {
+            "en": "+17 mJ",
+            "id": "+17 mJ"
+          },
+          {
+            "en": "−5.1 mJ",
+            "id": "−5,1 mJ"
+          },
+          {
+            "en": "−17 mJ",
+            "id": "−17 mJ"
+          },
+          {
+            "en": "0",
+            "id": "0"
+          }
+        ],
+        "answer": 2,
+        "why": {
+          "en": "U = k(q₁q₂ + q₁q₃ + q₂q₃)/d = k(−4 + 2 − 8)q²/d = −10kq²/d = −17 mJ.",
+          "id": "U = k(q₁q₂ + q₁q₃ + q₂q₃)/d = k(−4 + 2 − 8)q²/d = −10kq²/d = −17 mJ."
+        }
       }
     ]
   }

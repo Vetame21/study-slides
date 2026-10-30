@@ -994,5 +994,419 @@
     "formula": [
       "E_A = \\frac{kq\\,(4/5)^3}{(4\\,\\mathrm{cm})^2} > E_B = \\frac{kq}{(8\\,\\mathrm{cm})^2} > E_D = \\frac{kq}{(16\\,\\mathrm{cm})^2} > E_C = 0"
     ]
+  },
+  {
+    "chapter": "24. Electric Potential",
+    "title": "Electric Potential Energy",
+    "tag": "WHAT",
+    "body": "The electric force is conservative (like gravity), so a system of charges has a potential energy U.\nThe change in U is minus the work done by the electrostatic force.\nReference: U = 0 when all particles are infinitely far apart.",
+    "formula": [
+      "\\Delta U = U_f - U_i = -W",
+      "U_\\infty = 0 \\;\\Rightarrow\\; U = -W_\\infty"
+    ],
+    "explain": "W_∞ is the work the electric force does while the charges are brought in from infinity. Because the force is conservative, that work doesn't depend on the path taken.",
+    "quick_check": {
+      "q": "The field does +5 J of work on a charge. What is ΔU?",
+      "a": "ΔU = −W = −5 J."
+    },
+    "id": {
+      "chapter": "24. Potensial Listrik",
+      "title": "Energi Potensial Listrik",
+      "body": "Gaya listrik bersifat konservatif (seperti gravitasi), jadi sistem muatan punya energi potensial U.\nPerubahan U adalah minus usaha yang dilakukan gaya elektrostatis.\nAcuan: U = 0 saat semua partikel berjauhan tak hingga.",
+      "explain": "W_∞ adalah usaha gaya listrik saat muatan dibawa dari tak hingga. Karena gayanya konservatif, usaha itu tidak bergantung pada lintasan.",
+      "quick_check": {
+        "q": "Medan melakukan usaha +5 J pada muatan. Berapa ΔU?",
+        "a": "ΔU = −W = −5 J."
+      }
+    }
+  },
+  {
+    "chapter": "24. Electric Potential",
+    "title": "Work by the Field vs Work by You",
+    "tag": "HOW",
+    "body": "Two kinds of work act on a charge: W by the field and W_app by an applied force.\nThe change in kinetic energy is their sum.\nIf the charge ends with the same speed (ΔK = 0), your work equals the change in potential energy.",
+    "formula": [
+      "\\Delta K = K_f - K_i = W_{\\mathrm{app}} + W",
+      "\\Delta K = 0 \\;\\Rightarrow\\; W_{\\mathrm{app}} = -W = \\Delta U"
+    ],
+    "quick_check": {
+      "q": "You slowly push a charge so its U rises by 3 J. How much work did you do?",
+      "a": "W_app = ΔU = 3 J."
+    },
+    "id": {
+      "chapter": "24. Potensial Listrik",
+      "title": "Usaha oleh Medan vs Usaha oleh Anda",
+      "body": "Dua jenis usaha bekerja pada muatan: W oleh medan dan W_app oleh gaya luar.\nPerubahan energi kinetik adalah jumlah keduanya.\nJika muatan berakhir dengan kelajuan sama (ΔK = 0), usaha Anda sama dengan perubahan energi potensial.",
+      "quick_check": {
+        "q": "Anda mendorong muatan perlahan sehingga U naik 3 J. Berapa usaha Anda?",
+        "a": "W_app = ΔU = 3 J."
+      }
+    }
+  },
+  {
+    "chapter": "24. Electric Potential",
+    "title": "Example: An Electron Moving Through a Field",
+    "tag": "HOW",
+    "body": "An electron in a uniform field E = 150 N/C is moved 520 m upward by the electrostatic force.\nThe force on it (−eE) points along the motion, so the field does positive work and U falls:\nΔU = −eEd = −1.2 × 10⁻¹⁴ J.",
+    "formula": [
+      "\\Delta U = -\\int_0^d (-e\\vec E)\\cdot d\\vec s = e\\int_0^d E\\,ds\\cos 180^\\circ = -eEd",
+      "\\Delta U = -(1.6\\times10^{-19})(150)(520) = -1.2\\times10^{-14}\\ \\mathrm{J}"
+    ],
+    "explain": "E points down, so the force on the negative electron points up, the same way it moves. Work by the field is positive, so the potential energy decreases. [NOTE] The source slide writes the field as '150 N/m'; the unit of E is N/C (equivalently V/m).",
+    "quick_check": {
+      "q": "Does the electron's potential energy rise or fall?",
+      "a": "It falls (ΔU < 0)."
+    },
+    "id": {
+      "chapter": "24. Potensial Listrik",
+      "title": "Contoh: Elektron Bergerak dalam Medan",
+      "body": "Elektron dalam medan seragam E = 150 N/C dipindahkan 520 m ke atas oleh gaya elektrostatis.\nGaya padanya (−eE) searah gerak, jadi medan melakukan usaha positif dan U turun:\nΔU = −eEd = −1,2 × 10⁻¹⁴ J.",
+      "explain": "E mengarah ke bawah, jadi gaya pada elektron negatif mengarah ke atas, searah geraknya. Usaha medan positif, jadi energi potensial turun. [NOTE] Slide sumber menulis medan '150 N/m'; satuan E adalah N/C (setara V/m).",
+      "quick_check": {
+        "q": "Energi potensial elektron naik atau turun?",
+        "a": "Turun (ΔU < 0)."
+      }
+    }
+  },
+  {
+    "chapter": "24. Electric Potential",
+    "title": "Electric Potential V",
+    "tag": "REMEMBER",
+    "practice": "HW04 Q1",
+    "body": "Potential is potential energy per unit charge. It is a SCALAR, not a vector.\nUnit: 1 volt = 1 joule per coulomb.\nA charge Q placed where the potential is V has energy U = QV.\n1 eV = 1.6 × 10⁻¹⁹ J.",
+    "formula": [
+      "V = \\frac{U}{q}, \\qquad \\Delta V = \\frac{\\Delta U}{q}, \\qquad V = -\\frac{W_\\infty}{q}"
+    ],
+    "explain": "V belongs to the point in space; U belongs to a charge placed there. Being a scalar is what makes potentials easy to add: no components, just plus and minus signs.",
+    "wrong_right": {
+      "wrong": "V is a vector, so add\nthe x- and y-parts",
+      "right": "V is a scalar: just add\nthe numbers (with signs)",
+      "reason": "Only E needs vector addition."
+    },
+    "quick_check": {
+      "q": "A +2 C charge sits where V = 6 V. What is its potential energy?",
+      "a": "U = qV = 12 J."
+    },
+    "id": {
+      "chapter": "24. Potensial Listrik",
+      "title": "Potensial Listrik V",
+      "body": "Potensial adalah energi potensial per satuan muatan. Ia SKALAR, bukan vektor.\nSatuan: 1 volt = 1 joule per coulomb.\nMuatan Q di tempat berpotensial V punya energi U = QV.\n1 eV = 1,6 × 10⁻¹⁹ J.",
+      "explain": "V milik titik di ruang; U milik muatan yang ditaruh di sana. Karena skalar, potensial mudah dijumlahkan: tanpa komponen, cukup tanda plus dan minus.",
+      "wrong_right_reason": "Hanya E yang perlu penjumlahan vektor.",
+      "quick_check": {
+        "q": "Muatan +2 C berada di tempat V = 6 V. Berapa energi potensialnya?",
+        "a": "U = qV = 12 J."
+      }
+    }
+  },
+  {
+    "chapter": "24. Electric Potential",
+    "title": "Energy Conservation with Potential",
+    "tag": "HOW",
+    "body": "With no applied force, mechanical energy is conserved: kinetic energy gained = potential energy lost.\nIf instead an applied force keeps the speed constant, it does work W_app = qΔV.",
+    "formula": [
+      "F_{\\mathrm{app}} = 0: \\quad \\Delta K + \\Delta U = 0",
+      "\\Delta K = 0: \\quad W_{\\mathrm{app}} = \\Delta U = q\\,\\Delta V"
+    ],
+    "quick_check": {
+      "q": "A proton moves freely from V = 50 V to V = 0. Does it speed up or slow down?",
+      "a": "Speeds up: its U = qV falls, so K rises."
+    },
+    "id": {
+      "chapter": "24. Potensial Listrik",
+      "title": "Kekekalan Energi dengan Potensial",
+      "body": "Tanpa gaya luar, energi mekanik kekal: energi kinetik yang didapat = energi potensial yang hilang.\nJika gaya luar menjaga kelajuan tetap, gaya itu melakukan usaha W_app = qΔV.",
+      "quick_check": {
+        "q": "Proton bergerak bebas dari V = 50 V ke V = 0. Ia makin cepat atau melambat?",
+        "a": "Makin cepat: U = qV turun, jadi K naik."
+      }
+    }
+  },
+  {
+    "chapter": "24. Electric Potential",
+    "title": "Example: Accelerating Through 100 V",
+    "tag": "HOW",
+    "demo": "accelerate",
+    "body": "Start from rest and cross ΔV = 100 V. All the lost potential energy becomes kinetic energy.\nElectron: v = 5.9 × 10⁶ m/s.\nProton (same charge size, about 1836× the mass): v = 1.4 × 10⁵ m/s.",
+    "formula": [
+      "\\tfrac{1}{2}mv^2 = q\\,\\Delta V \\;\\Rightarrow\\; v = \\sqrt{\\frac{2q\\,\\Delta V}{m}}"
+    ],
+    "explain": "Both particles gain the same kinetic energy, 100 eV, because |q| is the same. The proton is far heavier, so the same energy gives it a much lower speed: v ∝ 1/√m. Race them in the demo.",
+    "quick_check": {
+      "q": "Quadruple ΔV. What happens to the final speed?",
+      "a": "It doubles (v ∝ √ΔV)."
+    },
+    "id": {
+      "chapter": "24. Potensial Listrik",
+      "title": "Contoh: Dipercepat Melalui 100 V",
+      "body": "Mulai dari diam dan melewati ΔV = 100 V. Semua energi potensial yang hilang menjadi energi kinetik.\nElektron: v = 5,9 × 10⁶ m/s.\nProton (besar muatan sama, massa sekitar 1836×): v = 1,4 × 10⁵ m/s.",
+      "explain": "Kedua partikel mendapat energi kinetik yang sama, 100 eV, karena |q| sama. Proton jauh lebih berat, jadi energi yang sama memberinya kelajuan jauh lebih kecil: v ∝ 1/√m. Adu keduanya di demo.",
+      "quick_check": {
+        "q": "ΔV dikalikan empat. Apa yang terjadi pada kelajuan akhir?",
+        "a": "Menjadi dua kali (v ∝ √ΔV)."
+      }
+    }
+  },
+  {
+    "chapter": "24. Electric Potential",
+    "title": "Equipotential Surfaces",
+    "tag": "WHAT",
+    "practice": "HW04 Q2",
+    "demo": "equipotential",
+    "body": "An equipotential surface joins points with the same V.\nMoving along one costs no work; any path between two of them takes the same work.\nThey are always perpendicular to E, and E points toward LOWER potential.\nUniform field: planes. Point charge: spheres.",
+    "explain": "If E had a component along an equipotential, moving along it would take work, contradicting ΔV = 0. So E must be perpendicular. Drag charges in the demo: the coloured contour lines always cross the grey field lines at right angles.",
+    "quick_check": {
+      "q": "Which way does E point: toward higher or lower V?",
+      "a": "Toward lower V."
+    },
+    "id": {
+      "chapter": "24. Potensial Listrik",
+      "title": "Permukaan Ekuipotensial",
+      "body": "Permukaan ekuipotensial menghubungkan titik-titik dengan V sama.\nBergerak di sepanjangnya tanpa usaha; lintasan apa pun antara dua permukaan butuh usaha sama.\nSelalu tegak lurus E, dan E mengarah ke potensial LEBIH RENDAH.\nMedan seragam: bidang. Muatan titik: bola.",
+      "explain": "Jika E punya komponen sepanjang ekuipotensial, bergerak di sepanjangnya butuh usaha, bertentangan dengan ΔV = 0. Jadi E harus tegak lurus. Geser muatan di demo: garis kontur berwarna selalu memotong garis medan abu-abu tegak lurus.",
+      "quick_check": {
+        "q": "E mengarah ke V lebih tinggi atau lebih rendah?",
+        "a": "Ke V lebih rendah."
+      }
+    }
+  },
+  {
+    "chapter": "24. Electric Potential",
+    "title": "Potential from the Field",
+    "tag": "HOW",
+    "practice": "HW04 Q3, Q19",
+    "body": "The potential difference is minus the line integral of E along any path from i to f; every path gives the same answer.\nUniform field, points d apart along a field line:\nPath A (straight): ΔV = −Ed.\nPath B (90° then 45°): 0 + (−E cos45° · √2 d) = −Ed.",
+    "formula": [
+      "\\Delta V = V_f - V_i = -\\int_i^f \\vec E\\cdot d\\vec s",
+      "\\text{uniform } \\vec E: \\quad \\Delta V = -Ed"
+    ],
+    "explain": "On the part of path B perpendicular to E, E·ds = 0, so it adds nothing. The diagonal part is longer (√2 d) but only cos45° of E lies along it; the two effects cancel.",
+    "quick_check": {
+      "q": "Moving along E for 2 m in a uniform 200 N/C field: ΔV?",
+      "a": "[ADDED] −Ed = −400 V."
+    },
+    "id": {
+      "chapter": "24. Potensial Listrik",
+      "title": "Potensial dari Medan",
+      "body": "Beda potensial adalah minus integral garis E sepanjang lintasan apa pun dari i ke f; setiap lintasan memberi hasil sama.\nMedan seragam, titik berjarak d sepanjang garis medan:\nLintasan A (lurus): ΔV = −Ed.\nLintasan B (90° lalu 45°): 0 + (−E cos45° · √2 d) = −Ed.",
+      "explain": "Pada bagian lintasan B yang tegak lurus E, E·ds = 0, jadi tidak menambah apa pun. Bagian diagonal lebih panjang (√2 d) tetapi hanya cos45° dari E yang searah; kedua efek saling meniadakan.",
+      "quick_check": {
+        "q": "Bergerak searah E sejauh 2 m dalam medan seragam 200 N/C: ΔV?",
+        "a": "[ADDED] −Ed = −400 V."
+      }
+    }
+  },
+  {
+    "chapter": "24. Electric Potential",
+    "title": "Potential of Point Charges",
+    "tag": "REMEMBER",
+    "practice": "HW04 Q4, Q9",
+    "body": "Integrating E from r out to infinity (where V = 0) gives the point-charge potential.\nPositive q → positive V; negative q → negative V.\nSeveral charges: just ADD the potentials (algebraic sum, no vectors).",
+    "formula": [
+      "V = \\frac{1}{4\\pi\\varepsilon_0}\\,\\frac{q}{r} = k\\,\\frac{q}{r}",
+      "V = \\sum_{i=1}^{n} V_i = k\\sum_{i=1}^{n} \\frac{q_i}{r_i}"
+    ],
+    "wrong_right": {
+      "wrong": "V = kq/r²",
+      "right": "V = kq/r  (E = kq/r²)",
+      "reason": "Potential falls as 1/r; the field falls as 1/r²."
+    },
+    "quick_check": {
+      "q": "+q and −q are each a distance r from point P. V at P?",
+      "a": "kq/r − kq/r = 0."
+    },
+    "id": {
+      "chapter": "24. Potensial Listrik",
+      "title": "Potensial Muatan Titik",
+      "body": "Mengintegralkan E dari r ke tak hingga (tempat V = 0) memberi potensial muatan titik.\nq positif → V positif; q negatif → V negatif.\nBeberapa muatan: cukup JUMLAHKAN potensialnya (jumlah aljabar, tanpa vektor).",
+      "wrong_right_reason": "Potensial turun sebanding 1/r; medan turun sebanding 1/r².",
+      "quick_check": {
+        "q": "+q dan −q masing-masing berjarak r dari titik P. V di P?",
+        "a": "kq/r − kq/r = 0."
+      }
+    }
+  },
+  {
+    "chapter": "24. Electric Potential",
+    "title": "V Is a Scalar, E Is a Vector: 12 Electrons",
+    "tag": "WHY",
+    "body": "12 electrons on a circle of radius R, evenly spaced: at the center V = −12ke/R and E = 0 (the fields cancel).\nBunch them into a 120° arc: V is still −12ke/R (same distances), but now E ≠ 0.",
+    "formula": [
+      "V = k\\sum_{i=1}^{12} \\frac{q_i}{r_i} = -\\frac{12\\,ke}{R} \\quad \\text{(both cases)}"
+    ],
+    "explain": "V only cares about each charge's distance, not its direction, so moving the electrons around the circle doesn't change it. E adds as vectors: spread evenly they cancel, bunched they don't. Try the ring presets in the equipotential demo.",
+    "quick_check": {
+      "q": "If E = 0 at a point, must V = 0 there?",
+      "a": "No. Here E = 0 but V = −12ke/R."
+    },
+    "id": {
+      "chapter": "24. Potensial Listrik",
+      "title": "V Skalar, E Vektor: 12 Elektron",
+      "body": "12 elektron pada lingkaran berjari-jari R, berjarak sama: di pusat V = −12ke/R dan E = 0 (medannya saling meniadakan).\nKumpulkan dalam busur 120°: V tetap −12ke/R (jarak sama), tetapi sekarang E ≠ 0.",
+      "explain": "V hanya peduli jarak tiap muatan, bukan arahnya, jadi menggeser elektron di sepanjang lingkaran tidak mengubahnya. E dijumlahkan sebagai vektor: merata saling meniadakan, berkumpul tidak. Coba preset cincin di demo ekuipotensial.",
+      "quick_check": {
+        "q": "Jika E = 0 di suatu titik, apakah V harus 0 di sana?",
+        "a": "Tidak. Di sini E = 0 tetapi V = −12ke/R."
+      }
+    }
+  },
+  {
+    "chapter": "24. Electric Potential",
+    "title": "Potential of a Charged Sphere",
+    "tag": "WHAT",
+    "practice": "HW04 Q13–Q15, Q20",
+    "demo": "potential-sphere",
+    "body": "Outside a spherically symmetric charge q (radius R): V = kq/r, as for a point charge.\nInside a charged shell or conducting sphere, E = 0, so V stays at its surface value kq/R all the way in.",
+    "formula": [
+      "r > R: \\quad V = \\frac{kq}{r}",
+      "r < R \\ (\\text{shell or conductor}): \\quad E = 0,\\quad V = \\frac{kq}{R}"
+    ],
+    "explain": "V = −∫E dr: where E = 0, V doesn't change. [NOTE] The source slide says V is constant inside 'a spherically symmetric charge distribution'. That holds only when E = 0 inside (a shell or a conductor). For a uniformly charged solid sphere, E = kqr/R³ ≠ 0 inside (Ch 23), so V keeps rising toward the center. The demo shows both.",
+    "quick_check": {
+      "q": "A conducting sphere has V = 90 V at its surface. What is V at its center?",
+      "a": "[ADDED] 90 V (E = 0 inside, so V is constant)."
+    },
+    "id": {
+      "chapter": "24. Potensial Listrik",
+      "title": "Potensial Bola Bermuatan",
+      "body": "Di luar muatan q bersimetri bola (jari-jari R): V = kq/r, seperti muatan titik.\nDi dalam kulit bermuatan atau bola konduktor, E = 0, jadi V tetap bernilai kq/R seperti di permukaan.",
+      "explain": "V = −∫E dr: di tempat E = 0, V tidak berubah. [NOTE] Slide sumber menyebut V konstan di dalam 'distribusi muatan bersimetri bola'. Itu hanya berlaku jika E = 0 di dalam (kulit atau konduktor). Untuk bola pejal bermuatan seragam, E = kqr/R³ ≠ 0 di dalam (Bab 23), jadi V terus naik ke arah pusat. Demo menunjukkan keduanya.",
+      "quick_check": {
+        "q": "Bola konduktor ber-V = 90 V di permukaannya. Berapa V di pusatnya?",
+        "a": "[ADDED] 90 V (E = 0 di dalam, jadi V konstan)."
+      }
+    }
+  },
+  {
+    "chapter": "24. Electric Potential",
+    "title": "Potential of an Electric Dipole",
+    "tag": "HOW",
+    "body": "Add the potentials of +q and −q. Far away (r ≫ d), the two distances differ by about d cosθ and their product is about r².\nThe dipole potential falls as 1/r², and is zero on the perpendicular bisector (θ = 90°).",
+    "formula": [
+      "V = \\frac{q}{4\\pi\\varepsilon_0}\\left(\\frac{1}{r_+} - \\frac{1}{r_-}\\right) \\approx \\frac{q\\,d\\cos\\theta}{4\\pi\\varepsilon_0 r^2} = \\frac{p\\cos\\theta}{4\\pi\\varepsilon_0 r^2}"
+    ],
+    "quick_check": {
+      "q": "Where around a dipole is V = 0 (far away)?",
+      "a": "On the plane perpendicular to its axis, θ = 90°."
+    },
+    "id": {
+      "chapter": "24. Potensial Listrik",
+      "title": "Potensial Dipol Listrik",
+      "body": "Jumlahkan potensial +q dan −q. Di kejauhan (r ≫ d), kedua jarak berbeda sekitar d cosθ dan hasil kalinya sekitar r².\nPotensial dipol turun sebanding 1/r², dan nol pada garis bagi tegak lurus (θ = 90°).",
+      "quick_check": {
+        "q": "Di mana di sekitar dipol V = 0 (di kejauhan)?",
+        "a": "Pada bidang yang tegak lurus sumbunya, θ = 90°."
+      }
+    }
+  },
+  {
+    "chapter": "24. Electric Potential",
+    "title": "Continuous Charge: Line and Disk",
+    "tag": "HOW",
+    "practice": "HW04 Q5, Q17, Q18",
+    "body": "Split the charge into pieces dq, add up dV = k dq/r. It's a scalar integral, simpler than for E.\nRod of length L, density λ, point P a distance d from one end (perpendicular).\nDisk of radius R, density σ, on its axis at height z.",
+    "formula": [
+      "dV = \\frac{dq}{4\\pi\\varepsilon_0 r}, \\qquad V = \\int \\frac{dq}{4\\pi\\varepsilon_0 r}",
+      "\\text{rod: } V = \\frac{\\lambda}{4\\pi\\varepsilon_0}\\ln\\frac{L + \\sqrt{L^2 + d^2}}{d}",
+      "\\text{disk: } V = \\frac{\\sigma}{2\\varepsilon_0}\\left(\\sqrt{z^2 + R^2} - z\\right)"
+    ],
+    "explain": "For the rod, dq = λ dx at distance √(x² + d²); for the disk, use rings dq = σ·2πR′dR′. No components, no symmetry cancellations to track. [NOTE] The slide titles this section 'Potential Energy Due to a Continuous Charge Distribution'; its content is the potential V, not potential energy.",
+    "quick_check": {
+      "q": "Why is finding V of a charged rod easier than finding E?",
+      "a": "V is a scalar: add the dV's directly, with no vector components."
+    },
+    "id": {
+      "chapter": "24. Potensial Listrik",
+      "title": "Muatan Kontinu: Batang dan Piringan",
+      "body": "Bagi muatan menjadi potongan dq, jumlahkan dV = k dq/r. Ini integral skalar, lebih sederhana daripada untuk E.\nBatang panjang L, rapat λ, titik P berjarak d dari satu ujung (tegak lurus).\nPiringan berjari-jari R, rapat σ, pada sumbunya di ketinggian z.",
+      "explain": "Untuk batang, dq = λ dx pada jarak √(x² + d²); untuk piringan, pakai cincin dq = σ·2πR′dR′. Tanpa komponen, tanpa pembatalan simetri yang harus dilacak. [NOTE] Slide memberi judul 'Potential Energy Due to a Continuous Charge Distribution'; isinya adalah potensial V, bukan energi potensial.",
+      "quick_check": {
+        "q": "Mengapa mencari V batang bermuatan lebih mudah daripada E?",
+        "a": "V skalar: jumlahkan dV langsung, tanpa komponen vektor."
+      }
+    }
+  },
+  {
+    "chapter": "24. Electric Potential",
+    "title": "Field from the Potential",
+    "tag": "HOW",
+    "practice": "HW04 Q6–Q8, Q16",
+    "demo": "e-from-v",
+    "body": "Going the other way: the component of E in any direction is minus the rate of change of V in that direction.\nE is largest along the steepest drop of V, and zero along an equipotential.\nDisk example: differentiate V(z) to get E.",
+    "formula": [
+      "E_s = -\\frac{\\partial V}{\\partial s}, \\qquad E_x = -\\frac{\\partial V}{\\partial x},\\ E_y = -\\frac{\\partial V}{\\partial y},\\ E_z = -\\frac{\\partial V}{\\partial z}",
+      "E_z = -\\frac{\\partial}{\\partial z}\\left[\\frac{\\sigma}{2\\varepsilon_0}\\left(\\sqrt{z^2+R^2} - z\\right)\\right] = \\frac{\\sigma}{2\\varepsilon_0}\\left(1 - \\frac{z}{\\sqrt{z^2+R^2}}\\right)"
+    ],
+    "explain": "Read a V(x) graph like a hill: E is minus the slope. Where V falls, E points forward; a flat V means E = 0. The disk result matches Ch 22, found here without any vectors. Slide along the curve in the demo.",
+    "wrong_right": {
+      "wrong": "E_x = +dV/dx",
+      "right": "E_x = −dV/dx",
+      "reason": "E points downhill, toward lower V."
+    },
+    "quick_check": {
+      "q": "V(x) = 4x volts (x in m). What is Eₓ?",
+      "a": "[ADDED] −4 V/m: E points toward −x."
+    },
+    "id": {
+      "chapter": "24. Potensial Listrik",
+      "title": "Medan dari Potensial",
+      "body": "Arah sebaliknya: komponen E ke arah mana pun adalah minus laju perubahan V ke arah itu.\nE terbesar sepanjang penurunan V tercuram, dan nol sepanjang ekuipotensial.\nContoh piringan: turunkan V(z) untuk mendapat E.",
+      "explain": "Baca grafik V(x) seperti bukit: E adalah minus kemiringannya. Di tempat V turun, E mengarah maju; V datar berarti E = 0. Hasil piringan sama dengan Bab 22, kali ini tanpa vektor. Geser sepanjang kurva di demo.",
+      "wrong_right_reason": "E mengarah menuruni bukit, ke V lebih rendah.",
+      "quick_check": {
+        "q": "V(x) = 4x volt (x dalam m). Berapa Eₓ?",
+        "a": "[ADDED] −4 V/m: E mengarah ke −x."
+      }
+    }
+  },
+  {
+    "chapter": "24. Electric Potential",
+    "title": "Potential Energy of a System of Charges",
+    "tag": "HOW",
+    "demo": "assemble",
+    "body": "U of a system = the work an external agent must do to assemble it, bringing each charge in from infinity.\nAdd one term per PAIR of charges.\nThree charges d = 12 cm apart: q₁ = +q, q₂ = −4q, q₃ = +2q, q = 150 nC → U = −10kq²/d = −17 mJ.",
+    "formula": [
+      "U = \\sum_{\\text{pairs}} \\frac{1}{4\\pi\\varepsilon_0}\\,\\frac{q_i q_j}{r_{ij}}",
+      "U = k\\,\\frac{q_1q_2 + q_1q_3 + q_2q_3}{d} = -\\frac{10\\,kq^2}{d} = -17\\ \\mathrm{mJ}"
+    ],
+    "explain": "The first charge costs nothing (no field yet). Each later charge costs q × (potential made by the ones already there). Negative U means you'd do −17 mJ of work to build it, i.e. +17 mJ to pull it apart. Build it step by step in the demo.",
+    "quick_check": {
+      "q": "How many pair terms does a 4-charge system have?",
+      "a": "[ADDED] 6 (every pair once)."
+    },
+    "id": {
+      "chapter": "24. Potensial Listrik",
+      "title": "Energi Potensial Sistem Muatan",
+      "body": "U sistem = usaha yang harus dilakukan gaya luar untuk menyusunnya, membawa tiap muatan dari tak hingga.\nTambahkan satu suku per PASANG muatan.\nTiga muatan berjarak d = 12 cm: q₁ = +q, q₂ = −4q, q₃ = +2q, q = 150 nC → U = −10kq²/d = −17 mJ.",
+      "explain": "Muatan pertama tidak butuh usaha (belum ada medan). Tiap muatan berikutnya butuh q × (potensial dari muatan yang sudah ada). U negatif berarti Anda melakukan usaha −17 mJ untuk menyusunnya, yaitu +17 mJ untuk memisahkannya. Susun langkah demi langkah di demo.",
+      "quick_check": {
+        "q": "Berapa suku pasangan untuk sistem 4 muatan?",
+        "a": "[ADDED] 6 (setiap pasangan sekali)."
+      }
+    }
+  },
+  {
+    "chapter": "24. Electric Potential",
+    "title": "A Charged Conductor Is an Equipotential",
+    "tag": "REMEMBER",
+    "body": "Excess charge spreads over a conductor's surface so that EVERY point of it, inside or on the surface, has the same potential, even with a cavity holding charge.\nE = 0 inside and E ⊥ surface outside.\nA conductor placed in a uniform field distorts it.",
+    "formula": [
+      "V_f - V_i = -\\int_i^f \\vec E\\cdot d\\vec s = 0 \\;\\Rightarrow\\; V = \\text{constant}"
+    ],
+    "explain": "In a conductor's interior E = 0, so the integral between any two points is zero. Field lines meet the surface at right angles because the surface is an equipotential.",
+    "quick_check": {
+      "q": "Inside a charged conductor, is E zero? Is V zero?",
+      "a": "E = 0, but V is a constant that is generally not zero."
+    },
+    "id": {
+      "chapter": "24. Potensial Listrik",
+      "title": "Konduktor Bermuatan Adalah Ekuipotensial",
+      "body": "Muatan lebih menyebar di permukaan konduktor sehingga SETIAP titiknya, di dalam atau di permukaan, berpotensial sama, bahkan dengan rongga berisi muatan.\nE = 0 di dalam dan E ⊥ permukaan di luar.\nKonduktor dalam medan seragam mengubah bentuk medan itu.",
+      "explain": "Di bagian dalam konduktor E = 0, jadi integral antara dua titik mana pun nol. Garis medan menembus permukaan tegak lurus karena permukaannya ekuipotensial.",
+      "quick_check": {
+        "q": "Di dalam konduktor bermuatan, apakah E nol? Apakah V nol?",
+        "a": "E = 0, tetapi V adalah konstanta yang umumnya tidak nol."
+      }
+    }
   }
 ]

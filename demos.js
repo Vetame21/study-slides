@@ -53,8 +53,8 @@
     const t = (en, id) => (lang === "id" ? id : en);
     // Decimal comma in Indonesian.
     const num = (x, d = 2) => {
-      const str = (Math.round(x * 10 ** d) / 10 ** d).toFixed(d);
-      return lang === "id" ? str.replace(".", ",") : str;
+      const str = (Math.round(x * 10 ** d) / 10 ** d).toFixed(d).replace("-", "−");   // real minus sign
+      return (lang === "id" ? str.replace(".", ",") : str).replace(/^−(0[.,]?0*)$/, "$1");   // no "−0.00"
     };
     return { t, num };
   }
@@ -1025,6 +1025,281 @@
           "Geser r: lingkaran putus-putus adalah bola Gauss. E hanya bergantung pada muatan yang dilingkupinya.")));
     }
     root.append(h("div", { class: "demo-controls" }, ...modeBtns), h("div", { class: "demo-controls" }, sr.wrap), h("div", { class: "fig" }, svg), readout);
+    draw();
+  };
+
+  // ---- Ch 24: electric potential ----------------------------------------------------------------
+
+  // Potential of point charges in the plane; q in nC, positions in m → V in volts.
+  function potentialAt(charges, x, y) {
+    let v = 0;
+    for (const c of charges) v += K * c.q * 1e-9 / Math.max(0.03, Math.hypot(x - c.x, y - c.y));
+    return v;
+  }
+
+  // Contour lines of V on a grid (marching squares). Returns one SVG path string per level.
+  function contours(charges, m, levels, nx = 110, ny = 77) {
+    const dx = (m.xmax - m.xmin) / nx, dy = (m.ymax - m.ymin) / ny;
+    const V = [];
+    for (let j = 0; j <= ny; j++) { V.push([]); for (let i = 0; i <= nx; i++) V[j].push(potentialAt(charges, m.xmin + i * dx, m.ymin + j * dy)); }
+    const P = (i, j) => [m.X(m.xmin + i * dx), m.Y(m.ymin + j * dy)];
+    return levels.map(L => {
+      let d = "";
+      for (let j = 0; j < ny; j++) for (let i = 0; i < nx; i++) {
+        const v = [V[j][i], V[j][i + 1], V[j + 1][i + 1], V[j + 1][i]];
+        const corners = [[i, j], [i + 1, j], [i + 1, j + 1], [i, j + 1]];
+        const pts = [];
+        for (let e = 0; e < 4; e++) {   // edge e joins corner e and corner e+1
+          const a = v[e], b = v[(e + 1) % 4];
+          if ((a < L) !== (b < L)) {
+            const t = (L - a) / (b - a), [i1, j1] = corners[e], [i2, j2] = corners[(e + 1) % 4];
+            const [x1, y1] = P(i1, j1), [x2, y2] = P(i2, j2);
+            pts.push([x1 + t * (x2 - x1), y1 + t * (y2 - y1)]);
+          }
+        }
+        for (let k = 0; k + 1 < pts.length; k += 2) d += `M${pts[k][0].toFixed(1)},${pts[k][1].toFixed(1)}L${pts[k + 1][0].toFixed(1)},${pts[k + 1][1].toFixed(1)}`;
+      }
+      return { level: L, d };
+    });
+  }
+
+  DEMOS["equipotential"] = function (root, lang) {
+    const { t, num } = makeT(lang);
+    const W = 600, H = 420, m = worldMap(W, H, -5, 5, -3.5, 3.5);
+    const svg = svgBox(W, H, 300);
+    const readout = h("div", { class: "demo-readout" });
+    const LEVELS = [-160, -80, -40, -20, -10, -5, 0, 5, 10, 20, 40, 80, 160];
+    let charges = [], probe = { x: 0, y: 1.5 }, lines = [], iso = [], note = null;
+    const ring = arc => Array.from({ length: 12 }, (_, i) => {
+      const a = arc ? (-60 + i * (120 / 11)) * Math.PI / 180 : i * Math.PI / 6;
+      return { x: 2 * Math.cos(a), y: 2 * Math.sin(a), q: -1 };
+    });
+    const PRESETS = {
+      point: () => ({ c: [{ x: 0, y: 0, q: 2 }], p: { x: 1.5, y: 1 }, n: null }),
+      dipole: () => ({ c: [{ x: -1.2, y: 0, q: 2 }, { x: 1.2, y: 0, q: -2 }], p: { x: 0, y: 1.5 }, n: null }),
+      ringEven: () => ({ c: ring(false), p: { x: 0, y: 0 }, n: t("12 charges of −1 nC evenly spaced on a 2 m circle: at the centre E = 0 but V ≠ 0.", "12 muatan −1 nC berjarak sama pada lingkaran 2 m: di pusat E = 0 tetapi V ≠ 0.") }),
+      ringArc: () => ({ c: ring(true), p: { x: 0, y: 0 }, n: t("Same 12 charges bunched into a 120° arc: V at the centre is unchanged, but E is no longer zero.", "12 muatan yang sama dikumpulkan dalam busur 120°: V di pusat tidak berubah, tetapi E tidak lagi nol.") }),
+    };
+    const recompute = frameThrottle(() => { lines = traceLines(charges, m); iso = contours(charges, m, LEVELS); draw(); });
+    const load = key => { const p = PRESETS[key](); charges = p.c; probe = p.p; note = p.n; recompute(); };
+
+    function draw() {
+      svg.replaceChildren();
+      for (const { level, d } of iso) if (d) svg.append(s("path", { d, class: "iso " + (level > 0 ? "pos" : level < 0 ? "neg" : "zero") }));
+      svg.append(...drawCharges(m, charges, lines));
+      const [ex, ey] = fieldAt(charges, probe.x, probe.y), En = Math.hypot(ex, ey);
+      const px = m.X(probe.x), py = m.Y(probe.y);
+      if (En > 1e-6) { const L = 60; svg.append(...arrow(px, py, px + L * ex / En, py - L * ey / En, "net", 10)); }
+      svg.append(s("circle", { cx: px, cy: py, r: 7, class: "probe" }));
+      const V = potentialAt(charges, probe.x, probe.y);
+      fill(readout,
+        h("div", { class: "mono" }, `V = ${num(V, 1)} V   |E| = ${En < 0.05 ? "0" : sci(En, lang)} N/C`),
+        note ? h("div", {}, note) : null,
+        h("div", { class: "muted" }, t("Coloured lines are equipotentials (red: V > 0, blue: V < 0, dashed: V = 0) at ±5, 10, 20, 40, 80, 160 V. Grey lines are field lines. Drag the charges or the probe: equipotentials always cross field lines at 90°.",
+          "Garis berwarna adalah ekuipotensial (merah: V > 0, biru: V < 0, putus-putus: V = 0) pada ±5, 10, 20, 40, 80, 160 V. Garis abu-abu adalah garis medan. Geser muatan atau probe: ekuipotensial selalu memotong garis medan 90°.")));
+    }
+    enableDrag(svg, m,
+      (x, y) => {
+        if (Math.hypot(x - probe.x, y - probe.y) < 0.35) return "probe";
+        const i = charges.findIndex(c => Math.hypot(x - c.x, y - c.y) < 0.35);
+        return i >= 0 ? i : null;
+      },
+      (key, x, y) => {
+        if (key === "probe") { probe = { x, y }; draw(); }
+        else { charges[key] = { ...charges[key], x, y }; note = null; recompute(); }
+      });
+    root.append(h("div", { class: "demo-controls" },
+      button(t("Point charge", "Muatan titik"), () => load("point")),
+      button(t("Dipole", "Dipol"), () => load("dipole")),
+      button(t("12 electrons: even", "12 elektron: merata"), () => load("ringEven")),
+      button(t("12 electrons: 120° arc", "12 elektron: busur 120°"), () => load("ringArc"))),
+      h("div", { class: "fig" }, svg), readout);
+    load("dipole");
+  };
+
+  DEMOS["accelerate"] = function (root, lang) {
+    const { t, num } = makeT(lang);
+    const e = 1.6e-19, me = 9.11e-31, mp = 1.67e-27, GAP = 0.01;   // 1 cm gap
+    let dV = 100, anim = null, progress = 0;
+    const W = 600, H = 200;
+    const svg = svgBox(W, H);
+    const readout = h("div", { class: "demo-readout" });
+    const sv = slider("ΔV (V)", 10, 1000, 10, dV, v => { dV = v; progress = 0; draw(); });
+    const X0 = 70, X1 = 530;
+    function draw() {
+      const ve = Math.sqrt(2 * e * dV / me), vp = Math.sqrt(2 * e * dV / mp);
+      // uniform acceleration from rest: x = gap * (t/T)², with T = 2·gap/v
+      const te = 2 * GAP / ve, tp = 2 * GAP / vp, tNow = progress * te;
+      const fe = Math.min(1, (tNow / te) ** 2), fp = Math.min(1, (tNow / tp) ** 2);
+      svg.replaceChildren(
+        s("rect", { x: X0 - 10, y: 20, width: 8, height: 160, class: "plate" }),
+        s("rect", { x: X1 + 2, y: 20, width: 8, height: 160, class: "plate" }),
+        s("text", { x: X0 - 6, y: 14, class: "m", "font-size": 12, "text-anchor": "middle" }, "0 V"),
+        s("text", { x: X1 + 6, y: 14, class: "m", "font-size": 12, "text-anchor": "middle" }, `${dV} V`),
+        s("text", { x: (X0 + X1) / 2, y: 196, class: "m", "font-size": 12, "text-anchor": "middle" }, t("1 cm gap", "celah 1 cm")));
+      for (const [name, f, y, cls] of [[t("electron", "elektron"), fe, 70, "neg"], [t("proton (reversed field)", "proton (medan dibalik)"), fp, 140, "pos"]]) {
+        svg.append(s("line", { x1: X0, y1: y, x2: X1, y2: y, class: "grid" }));
+        svg.append(s("circle", { cx: X0 + f * (X1 - X0), cy: y, r: cls === "pos" ? 11 : 6, class: "charge " + cls }));
+        svg.append(s("text", { x: X0 + 4, y: y - 16, class: "t", "font-size": 12 }, name));
+      }
+      fill(readout,
+        h("div", { class: "mono" }, `K = |q|ΔV = ${dV} eV = ${sci(e * dV, lang)} J  (${t("both", "keduanya")})`),
+        h("div", { class: "mono" }, `v_e = √(2eΔV/m_e) = ${sci(ve, lang)} m/s    v_p = ${sci(vp, lang)} m/s    v_e/v_p = ${num(ve / vp, 1)}`),
+        progress >= 1 ? h("div", {}, t(`When the electron arrives, the proton has covered only ${num(fp * 100, 2)}% of the gap.`, `Saat elektron tiba, proton baru menempuh ${num(fp * 100, 2)}% celah.`)) : null,
+        h("div", { class: "muted" }, t("Same charge size → same energy gained. The proton is about 1836× heavier, so it's √1836 ≈ 43× slower. (Slow motion: the real crossing takes nanoseconds.)",
+          "Besar muatan sama → energi yang didapat sama. Proton sekitar 1836× lebih berat, jadi √1836 ≈ 43× lebih lambat. (Gerak lambat: penyeberangan sebenarnya hanya nanodetik.)")));
+    }
+    function race() {
+      cancelAnimationFrame(anim);
+      const start = performance.now();
+      const step = now => { progress = Math.min(1, (now - start) / 1500); draw(); if (progress < 1) anim = requestAnimationFrame(step); };
+      anim = requestAnimationFrame(step);
+    }
+    root.append(h("div", { class: "demo-controls" }, sv.wrap, button(t("▶ Race", "▶ Adu"), race)), h("div", { class: "fig" }, svg), readout);
+    draw();
+  };
+
+  DEMOS["potential-sphere"] = function (root, lang) {
+    const { t, num } = makeT(lang);
+    let mode = "conductor", r = 3;   // cm, R = 5 cm, kq = 1
+    const R = 5, W = 600, H = 320;
+    const svg = svgBox(W, H);
+    const readout = h("div", { class: "demo-readout" });
+    const sr = slider("r (cm)", 0, 20, 0.1, r, v => { r = v; draw(); });
+    const MODES = {
+      conductor: { label: t("Conducting sphere / shell", "Bola konduktor / kulit"),
+        E: x => (x < R ? 0 : 1 / (x * x)), V: x => (x < R ? 1 / R : 1 / x) },
+      solid: { label: t("Uniform solid sphere [ADDED]", "Bola pejal seragam [ADDED]"),
+        E: x => (x < R ? x / R ** 3 : 1 / (x * x)), V: x => (x < R ? (3 * R * R - x * x) / (2 * R ** 3) : 1 / x) },
+    };
+    const btns = Object.entries(MODES).map(([k, md]) => { const b = button(md.label, () => { mode = k; draw(); }); b.dataset.key = k; return b; });
+    function graph(y0, hgt, fn, ymax, label, cls) {
+      const L = 70, Wd = 500, X = v => L + (v / 20) * Wd, Y = v => y0 + hgt - (v / ymax) * hgt;
+      svg.append(s("line", { x1: L, y1: y0 + hgt, x2: L + Wd, y2: y0 + hgt, class: "ax" }), s("line", { x1: L, y1: y0, x2: L, y2: y0 + hgt, class: "ax" }));
+      svg.append(s("line", { x1: X(R), y1: y0, x2: X(R), y2: y0 + hgt, class: "grid" }));
+      svg.append(s("text", { x: X(R), y: y0 + hgt + 14, class: "m", "font-size": 11, "text-anchor": "middle" }, "R"));
+      svg.append(s("text", { x: L - 8, y: y0 + 12, class: "lbl " + cls, "font-size": 12, "text-anchor": "end" }, label));
+      const pts = [];
+      for (let v = 0.02; v <= 20; v += 0.05) pts.push(`${X(v).toFixed(1)},${Y(Math.min(fn(v), ymax * 1.05)).toFixed(1)}`);
+      svg.append(s("polyline", { points: pts.join(" "), class: "curve " + cls }));
+      svg.append(s("line", { x1: X(r), y1: y0, x2: X(r), y2: y0 + hgt, class: "curve c4", "stroke-dasharray": "4 4" }));
+      svg.append(s("circle", { cx: X(r), cy: Y(Math.min(fn(Math.max(r, 0.02)), ymax * 1.05)), r: 5, class: "stepdot" }));
+    }
+    function draw() {
+      const md = MODES[mode];
+      btns.forEach(b => b.classList.toggle("active", b.dataset.key === mode));
+      svg.replaceChildren();
+      graph(14, 120, md.E, 0.045, "E", "c1");
+      graph(170, 120, md.V, 0.32, "V", "c2");
+      svg.append(s("text", { x: 570, y: 315, class: "m", "font-size": 11, "text-anchor": "end" }, "r (cm)"));
+      const rr = Math.max(r, 0.001);
+      fill(readout,
+        h("div", { class: "mono" }, `r = ${num(r, 1)} cm   E = ${num(md.E(rr), 4)} kq/cm²   V = ${num(md.V(rr), 4)} kq/cm`),
+        h("div", {}, r < R
+          ? (mode === "conductor" ? t("Inside: E = 0, so V stays flat at kq/R, the surface value.", "Di dalam: E = 0, jadi V tetap datar pada kq/R, nilai permukaan.")
+                                  : t("Inside a solid sphere E ≠ 0, so V keeps rising toward the centre: V = kq(3R² − r²)/(2R³), 1.5× the surface value at r = 0.", "Di dalam bola pejal E ≠ 0, jadi V terus naik ke arah pusat: V = kq(3R² − r²)/(2R³), 1,5× nilai permukaan di r = 0."))
+          : t("Outside: E = kq/r² and V = kq/r, exactly like a point charge.", "Di luar: E = kq/r² dan V = kq/r, persis seperti muatan titik.")),
+        h("div", { class: "muted" }, t("V(r) = ∫ E dr from r out to infinity: V is the area under the E curve to the right of r. Where E = 0, V is flat.",
+          "V(r) = ∫ E dr dari r sampai tak hingga: V adalah luas di bawah kurva E di sebelah kanan r. Di tempat E = 0, V datar.")));
+    }
+    root.append(h("div", { class: "demo-controls" }, ...btns), h("div", { class: "demo-controls" }, sr.wrap), h("div", { class: "fig" }, svg), readout);
+    draw();
+  };
+
+  DEMOS["e-from-v"] = function (root, lang) {
+    const { t, num } = makeT(lang);
+    let mode = "disk", x = 0.5;
+    const W = 600, H = 300;
+    const svg = svgBox(W, H);
+    const readout = h("div", { class: "demo-readout" });
+    const MODES = {
+      disk: { label: t("Charged disk V(z)", "Piringan bermuatan V(z)"), x0: 0, x1: 3, V: z => Math.sqrt(z * z + 1) - z,
+        exact: z => 1 - z / Math.sqrt(z * z + 1), units: "σ/2ε₀, R = 1" },
+      uniform: { label: t("Uniform field", "Medan seragam"), x0: 0, x1: 3, V: z => 3 - z, exact: () => 1, units: "E = 1" },
+      point: { label: t("Point charge V = kq/x", "Muatan titik V = kq/x"), x0: 0.3, x1: 3, V: z => 1 / z, exact: z => 1 / (z * z), units: "kq = 1" },
+      hill: { label: t("A bump [ADDED]", "Gundukan [ADDED]"), x0: -3, x1: 3, V: z => Math.exp(-z * z), exact: z => 2 * z * Math.exp(-z * z), units: "" },
+    };
+    const sx = slider("x", 0, 1, 0.005, 0.2, v => { x = MODES[mode].x0 + v * (MODES[mode].x1 - MODES[mode].x0); draw(); });
+    const btns = Object.entries(MODES).map(([k, md]) => {
+      const b = button(md.label, () => { mode = k; sx.input.value = 0.2; x = md.x0 + 0.2 * (md.x1 - md.x0); draw(); });
+      b.dataset.key = k; return b;
+    });
+    x = MODES.disk.x0 + 0.2 * 3;
+    function draw() {
+      const md = MODES[mode];
+      btns.forEach(b => b.classList.toggle("active", b.dataset.key === mode));
+      const L = 60, R = 20, T = 20, Hp = 190;
+      const xs = []; for (let i = 0; i <= 300; i++) xs.push(md.x0 + (i / 300) * (md.x1 - md.x0));
+      const vs = xs.map(md.V), vmin = Math.min(0, ...vs), vmax = Math.max(...vs);
+      const X = v => L + ((v - md.x0) / (md.x1 - md.x0)) * (W - L - R), Y = v => T + Hp - ((v - vmin) / (vmax - vmin || 1)) * Hp;
+      svg.replaceChildren(
+        s("line", { x1: L, y1: Y(0), x2: W - R, y2: Y(0), class: "ax" }),
+        s("line", { x1: L, y1: T, x2: L, y2: T + Hp, class: "ax" }),
+        s("text", { x: L - 8, y: T + 10, class: "lbl c2", "font-size": 12, "text-anchor": "end" }, "V"),
+        s("polyline", { points: xs.map((v, i) => `${X(v).toFixed(1)},${Y(vs[i]).toFixed(1)}`).join(" "), class: "curve c2" }));
+      // tangent line from a numerical derivative
+      const hh = (md.x1 - md.x0) / 2000, slope = (md.V(x + hh) - md.V(x - hh)) / (2 * hh), Ex = -slope;
+      const span = (md.x1 - md.x0) * 0.18;
+      svg.append(s("line", { x1: X(x - span), y1: Y(md.V(x) - slope * span), x2: X(x + span), y2: Y(md.V(x) + slope * span), class: "curve c4", "stroke-dasharray": "6 4" }));
+      svg.append(s("circle", { cx: X(x), cy: Y(md.V(x)), r: 6, class: "stepdot" }));
+      // E arrow under the axis: length ∝ Ex
+      const ay = T + Hp + 50, len = Math.max(-200, Math.min(200, Ex * 90));
+      svg.append(s("text", { x: L - 8, y: ay + 4, class: "lbl c4", "font-size": 12, "text-anchor": "end" }, "Eₓ"));
+      if (Math.abs(len) > 2) svg.append(...arrow(X(x), ay, X(x) + len, ay, "net", 10));
+      else svg.append(s("circle", { cx: X(x), cy: ay, r: 4, class: "stepdot" }));
+      fill(readout,
+        h("div", { class: "mono" }, `x = ${num(x, 2)}   dV/dx = ${num(slope, 3)}   Eₓ = −dV/dx = ${num(Ex, 3)}` + (md.units ? `   (${md.units})` : "")),
+        mode === "disk" ? h("div", { class: "mono" }, `${t("formula", "rumus")}: σ/2ε₀ · (1 − z/√(z² + R²)) = ${num(md.exact(x), 3)}`) : null,
+        h("div", { class: "muted" }, t("The dashed line is the tangent. Where V slopes down, E points forward (+x); where V slopes up, E points back; where V is flat, E = 0.",
+          "Garis putus-putus adalah garis singgung. Di tempat V menurun, E mengarah maju (+x); di tempat V menanjak, E mengarah mundur; di tempat V datar, E = 0.")));
+    }
+    root.append(h("div", { class: "demo-controls" }, ...btns), h("div", { class: "demo-controls" }, sx.wrap), h("div", { class: "fig" }, svg), readout);
+    draw();
+  };
+
+  DEMOS["assemble"] = function (root, lang) {
+    const { t, num } = makeT(lang);
+    const q = 150e-9, d = 0.12;
+    const CH = [{ name: "q₁", mult: 1, x: 300, y: 50 }, { name: "q₂", mult: -4, x: 200, y: 223 }, { name: "q₃", mult: 2, x: 400, y: 223 }];
+    let placed = 0;
+    const W = 600, H = 270;
+    const svg = svgBox(W, H);
+    const readout = h("div", { class: "demo-readout" });
+    function workFor(i) {   // work to bring charge i in, given charges 0..i-1 already placed
+      let sum = 0;
+      for (let j = 0; j < i; j++) sum += K * CH[i].mult * CH[j].mult * q * q / d;
+      return sum;
+    }
+    function draw() {
+      svg.replaceChildren();
+      for (let i = 0; i < placed; i++) for (let j = i + 1; j < placed; j++)
+        svg.append(s("line", { x1: CH[i].x, y1: CH[i].y, x2: CH[j].x, y2: CH[j].y, class: "edge" }));
+      if (placed >= 2) svg.append(s("text", { x: 300, y: 262, class: "m", "font-size": 12, "text-anchor": "middle" }, "d = 12 cm"));
+      CH.forEach((c, i) => {
+        const here = i < placed;
+        svg.append(s("circle", { cx: here ? c.x : 560, cy: here ? c.y : 40 + i * 70, r: 16, class: "charge " + (c.mult > 0 ? "pos" : "neg") + (here ? "" : " waiting") }));
+        svg.append(s("text", { x: here ? c.x : 560, y: (here ? c.y : 40 + i * 70) + 4, class: "chg-t", "font-size": 11, "text-anchor": "middle" }, (c.mult > 0 ? "+" : "") + c.mult + "q"));
+      });
+      svg.append(s("text", { x: 560, y: 20, class: "m", "font-size": 11, "text-anchor": "middle" }, t("at ∞", "di ∞")));
+      const rows = [];
+      let total = 0;
+      for (let i = 0; i < placed; i++) {
+        const w = workFor(i); total += w;
+        const terms = i === 0 ? t("no other charges yet", "belum ada muatan lain")
+          : CH.slice(0, i).map(o => `k(${CH[i].mult}q)(${o.mult}q)/d`).join(" + ");
+        rows.push(h("div", { class: "mono" }, `${t("bring", "bawa")} ${CH[i].name}: W = ${terms} = ${num(w * 1000, 2)} mJ`));
+      }
+      fill(readout, ...rows,
+        h("div", {}, h("b", {}, `U = ${t("total work", "total usaha")} = ${num(total * 1000, 2)} mJ`)),
+        placed === 3 ? h("div", {}, t("= −10kq²/d ≈ −17 mJ. Negative: the charges 'want' to come together, so you'd have to do +17 mJ to pull them apart.",
+          "= −10kq²/d ≈ −17 mJ. Negatif: muatan-muatan 'ingin' berkumpul, jadi Anda harus melakukan +17 mJ untuk memisahkannya.")) : null,
+        h("div", { class: "muted" }, t("q = 150 nC. Each new charge costs (its charge) × (potential made by the charges already there).",
+          "q = 150 nC. Setiap muatan baru butuh (muatannya) × (potensial dari muatan yang sudah ada).")));
+    }
+    root.append(h("div", { class: "demo-controls" },
+      button(t("▶ Bring the next charge", "▶ Bawa muatan berikutnya"), () => { if (placed < 3) { placed++; draw(); } }),
+      button(t("Reset", "Ulang"), () => { placed = 0; draw(); })),
+      h("div", { class: "fig" }, svg), readout);
     draw();
   };
 
