@@ -102,6 +102,8 @@ SLIDES = [
         L("客厅面积小了点儿。", "Kètīng miànjī xiǎo le diǎnr.", "The living room is a bit small.", "Ruang tamunya agak kecil."),
       ], intro=("Compared with a standard, the degree is not right: it shows dissatisfaction (不满意，不合适).",
                 "Dibanding standar tertentu, tingkatnya kurang pas: menunjukkan rasa tidak puas (不满意，不合适)."),
+      explain=('It is a polite complaint: "a bit too … (for me)". 贵了点儿 = a bit too expensive. The adjective comes first, then 了点儿.',
+               'Ini keluhan yang sopan: "agak terlalu … (bagi saya)". 贵了点儿 = agak kemahalan. Kata sifat dulu, lalu 了点儿.'),
       check=(("Say \"a bit too expensive\".", "贵了点儿"), ("Katakan \"agak kemahalan\".", "贵了点儿"))),
 
     # New words (2) ----------------------------------------------------------------------------
@@ -203,7 +205,9 @@ SLIDES = [
         L("就：②事情发生得早、快、容易或进行得顺利 (已经发生)", "jiù: ② shìqing fāshēng de zǎo, kuài, róngyì huò jìnxíng de shùnlì (yǐjīng fāshēng)", "early, fast, easy or smooth (already happened)", "cepat, awal, mudah, atau lancar (sudah terjadi)"),
         L("才：①不久前刚刚发生 (已经发生)", "cái: ① bùjiǔ qián gānggāng fāshēng (yǐjīng fāshēng)", "has only just happened", "baru saja terjadi"),
         L("才：②事情发生得晚、慢、不容易或进行得不顺利 (已经发生)", "cái: ② shìqing fāshēng de wǎn, màn, bù róngyì huò jìnxíng de bú shùnlì (yǐjīng fāshēng)", "late, slow, hard or not smooth (already happened)", "terlambat, lambat, sulit, atau tidak lancar (sudah terjadi)"),
-      ], check=(("He arrived late. 就 or 才？", "才"), ("Dia datang terlambat. 就 atau 才？", "才"))),
+      ], explain=("Quick test: early, fast or easy → 就. Late, slow or hard → 才. 他六点就起床了 (early) / 他十点才起床 (late). 就 sentences about the past usually end in 了; 才 sentences don't.",
+               'Cara cepat: awal, cepat, atau mudah → 就. Terlambat, lambat, atau sulit → 才. 他六点就起床了 (pagi) / 他十点才起床 (siang). Kalimat 就 tentang masa lalu biasanya diakhiri 了; kalimat 才 tidak.'),
+      check=(("He arrived late. 就 or 才？", "才"), ("Dia datang terlambat. 就 atau 才？", "才"))),
     S("HOW", ("就 ①: About to Happen", "就 ①: Akan Segera Terjadi"), [
         L("你等一下儿，她就来。", "Nǐ děng yíxiàr, tā jiù lái.", "Wait a moment, she's coming.", "Tunggu sebentar, dia segera datang."),
         L("现在六点，我们六点半就出发。", "Xiànzài liù diǎn, wǒmen liù diǎn bàn jiù chūfā.", "It's six now; we leave at half past.", "Sekarang jam enam, kita berangkat jam setengah tujuh."),
@@ -240,6 +244,8 @@ SLIDES = [
         L("要是你也满意，咱们就租了。", "Yàoshi nǐ yě mǎnyì, zánmen jiù zū le.", "If you're happy with it too, we'll rent it.", "Kalau kamu juga puas, kita sewa."),
       ], intro=("要是……就…… joins two clauses: a result under a hypothetical condition (在假设情况下产生某种结果).",
                 "要是……就…… menghubungkan dua klausa: akibat dari suatu pengandaian (在假设情况下产生某种结果)."),
+      explain=('要是 = if (the condition), 就 = then (the result). 就 goes after the subject of the second part: 你要是去，我就去.',
+               '要是 = kalau (syarat), 就 = maka (akibat). 就 diletakkan sesudah subjek bagian kedua: 你要是去，我就去.'),
       check=(("Swap in 便宜一点儿 / 买了: 要是你也满意，咱们就租了。", "要是便宜一点儿，咱们就买了。"), ("Ganti dengan 便宜一点儿 / 买了: 要是你也满意，咱们就租了。", "要是便宜一点儿，咱们就买了。"))),
     S("HOW", ("要是……就……: Make a Sentence", "要是……就……: Buat Kalimat"), [
         L("场景：你觉得房租太贵，希望降价。", "Chǎngjǐng — Nǐ juéde fángzū tài guì, xīwàng jiàngjià.", "Situation — the rent is too high and you want it lowered.", "Situasi — sewanya terlalu mahal, kamu ingin harganya turun."),

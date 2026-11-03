@@ -129,6 +129,8 @@ SLIDES = [
         L("你买什么了？我买衣服了。", "Nǐ mǎi shénme le? Wǒ mǎi yīfu le.", "What did you buy? Clothes. (已经买)", "Kamu beli apa? Saya beli baju. (已经买, sudah beli)"),
       ], intro=("句子+了 shows: 事情发生 / 动作完成 / 情况出现 / 状态变化.\nSomething happened, finished, appeared or changed.",
                 "句子+了 menunjukkan: 事情发生 / 动作完成 / 情况出现 / 状态变化.\nSesuatu terjadi, selesai, muncul, atau berubah."),
+      explain=('Think of 了 at the end as "now it\'s different": something happened, finished, appeared or changed. Without 了 the sentence is a plan or a fact (我去商店 = I\'m going / I go). With 了 it has happened (我去商店了 = I went).',
+               'Anggap 了 di akhir kalimat sebagai "sekarang sudah lain": sesuatu terjadi, selesai, muncul, atau berubah. Tanpa 了 kalimatnya rencana atau fakta (我去商店 = saya mau ke toko). Dengan 了 sudah terjadi (我去商店了 = saya tadi ke toko).'),
       check=(("我去商店 or 我去商店了: which means you already went?", "我去商店了。"), ("我去商店 atau 我去商店了: mana yang berarti sudah pergi?", "我去商店了。"))),
     S("HOW", ("句子+了: Four Examples", "句子+了: Empat Contoh"), [
         L("上个月我跟朋友去北京了。", "Shàng ge yuè wǒ gēn péngyou qù Běijīng le.", "Last month I went to Beijing with a friend. (已经去北京了)", "Bulan lalu saya ke Beijing bersama teman. (已经去北京了)"),
@@ -148,7 +150,9 @@ SLIDES = [
         L("她回家了吗？她还没（有）回家呢。", "Tā huí jiā le ma? Tā hái méi(yǒu) huí jiā ne.", "Has she gone home? Not yet.", "Dia sudah pulang? Dia belum pulang."),
         L("他走了没有？他还没（有）走呢。", "Tā zǒu le méiyǒu? Tā hái méi(yǒu) zǒu ne.", "Has he left? Not yet.", "Dia sudah pergi? Dia belum pergi."),
         L("你大学毕业了没有？我还没（有）大学毕业呢。", "Nǐ dàxué bìyè le méiyǒu? Wǒ hái méi(yǒu) dàxué bìyè ne.", "Have you graduated? Not yet.", "Kamu sudah lulus kuliah? Saya belum lulus."),
-      ], check=(("Answer with 还没（有）……呢: 田芳回家了没有？", "她还没有回家呢。"), ("Jawab dengan 还没（有）……呢: 田芳回家了没有？", "她还没有回家呢。"))),
+      ], explain=('还没（有）……呢 means "not yet, but it may still happen". It is the answer to ……了吗/……了没有. Don\'t add 了: 还没回家呢, not 还没回家了.',
+               '还没（有）……呢 berarti "belum, tapi mungkin nanti". Ini jawaban untuk ……了吗/……了没有. Jangan tambah 了: 还没回家呢, bukan 还没回家了.'),
+      check=(("Answer with 还没（有）……呢: 田芳回家了没有？", "她还没有回家呢。"), ("Jawab dengan 还没（有）……呢: 田芳回家了没有？", "她还没有回家呢。"))),
     S("REMEMBER", ("Rule 1: 没（有） + Verb, No 了", "Aturan 1: 没（有） + Kata Kerja, Tanpa 了"), [], intro=(
         "When 没（有） comes before a verb to negate it, do not end the sentence with 了.",
         "Kalau 没（有） dipakai sebelum kata kerja untuk menyangkal, kalimat tidak boleh diakhiri 了."),
@@ -298,6 +302,8 @@ SLIDES = [
         L("咱们不是刚吃完晚饭吗？你又饿了？", "Zánmen bú shì gāng chīwán wǎnfàn ma? Nǐ yòu è le?", "Didn't we just finish dinner? Are you hungry again?", "Kita kan baru selesai makan malam? Kamu lapar lagi?"),
       ], intro=("反问句 (rhetorical question): it looks negative, but it strongly says yes (强调肯定).",
                 "反问句 (pertanyaan retoris): bentuknya negatif, tetapi maknanya menegaskan \"ya\" (强调肯定)."),
+      explain=('It looks like a negative question, but the speaker already believes the answer is yes and wants you to agree. 你不是要上托福班吗？ = "You ARE going to the TOEFL class, aren\'t you?" Like "kan?" in Indonesian.',
+               'Bentuknya pertanyaan negatif, tapi pembicara sudah yakin jawabannya "ya" dan ingin kamu setuju. 你不是要上托福班吗？ = "Kamu KAN mau ikut kelas TOEFL?" Mirip "kan?" dalam bahasa Indonesia.'),
       check=(("What does 你不是要上托福班吗？ really mean?", "You are going to take a TOEFL class."), ("Apa arti sebenarnya 你不是要上托福班吗？", "Kamu memang mau ikut kelas TOEFL."))),
     S("HOW", ("不是……吗？: Practice", "不是……吗？: Latihan"), [
         L("A：我的书呢？", "A: Wǒ de shū ne?", "A: Where's my book?", "A: Bukuku mana?"),
@@ -313,6 +319,8 @@ SLIDES = [
         L("句子，是不是：你们输了，是不是？", "Jùzi, shì bu shì: Nǐmen shū le, shì bu shì?", "You lost, didn't you?", "Kalian kalah, kan?"),
         L("你是不是累了？/ 你是不是喝酒了？", "Nǐ shì bu shì lèi le? / Nǐ shì bu shì hē jiǔ le?", "Are you tired? / Have you been drinking?", "Kamu capek, ya? / Kamu minum alkohol, ya?"),
       ], intro=("\"是不是\" 正反问句 (affirmative-negative question).", "\"是不是\" 正反问句 (pertanyaan bentuk positif-negatif)."),
+      explain=('是不是 asks "is it so?" when you already guess something. It can go before the verb, at the start, or at the end, and the meaning stays the same: 你是不是累了？ / 是不是你累了？ / 你累了，是不是？',
+               '是不是 bertanya "benar begitu?" waktu kamu sudah menduga sesuatu. Bisa diletakkan sebelum kata kerja, di awal, atau di akhir, artinya sama: 你是不是累了？ / 是不是你累了？ / 你累了，是不是？'),
       check=(("Ask \"Are you tired?\" with 是不是.", "你是不是累了？"), ("Tanyakan \"Kamu capek, ya?\" dengan 是不是.", "你是不是累了？"))),
     S("REMEMBER", ("没（有） and 不: Summary", "没（有） dan 不: Ringkasan"), [
         L("+n.：没（有）", "méi(yǒu) + n.", "not have", "tidak punya"),
@@ -342,6 +350,8 @@ SLIDES = [
         L("你吃早饭了吗？我没吃早饭。", "Nǐ chī zǎofàn le ma? Wǒ méi chī zǎofàn.", "Did you have breakfast? I didn't.", "Kamu sudah sarapan? Saya belum sarapan."),
         L("你去过中国吗？我没去过中国。", "Nǐ qùguo Zhōngguó ma? Wǒ méi qùguo Zhōngguó.", "Have you been to China? I haven't.", "Kamu pernah ke Tiongkok? Saya belum pernah."),
       ], intro=("没 says an action did not happen in the past.", "没 menyatakan suatu tindakan tidak terjadi di masa lalu."),
+      explain=("不 or 没？ Ask: is it about will, habit or the future → 不 (我不喝酒 = I don't drink). Is it about something that didn't happen → 没 (我没喝酒 = I didn't drink, this time).",
+               '不 atau 没？ Tanya: soal kemauan, kebiasaan, atau masa depan → 不 (我不喝酒 = saya tidak minum alkohol). Soal sesuatu yang tidak terjadi → 没 (我没喝酒 = tadi saya tidak minum).'),
       check=(("I didn't eat breakfast: 我____吃早饭。不 or 没？", "没: 我没吃早饭。"), ("Saya tadi tidak sarapan: 我____吃早饭。不 atau 没？", "没: 我没吃早饭。"))),
     S("HOW", ("不+adj. / 没+adj.", "不+adj. / 没+adj."), [
         L("这个苹果不好吃。", "Zhège píngguǒ bù hǎochī.", "This apple doesn't taste good.", "Apel ini tidak enak."),
@@ -357,6 +367,8 @@ SLIDES = [
         L("再+v.：动作或情况还没重复", "zài + v.: dòngzuò huò qíngkuàng hái méi chóngfù", "The repeat has not happened yet.", "Pengulangannya belum terjadi."),
         L("又+v.：动作或情况已经重复", "yòu + v.: dòngzuò huò qíngkuàng yǐjīng chóngfù", "The repeat has already happened.", "Pengulangannya sudah terjadi."),
       ], intro=("Both show that an action or situation repeats (动作或情况的重复).", "Keduanya menunjukkan tindakan atau keadaan yang berulang (动作或情况的重复)."),
+      explain=("Quick test: has the repeat happened yet? No → 再 (明天再去 = I'll go again tomorrow). Yes → 又, usually with 了 (今天又来了 = came again today).",
+               'Cara cepat: pengulangannya sudah terjadi belum? Belum → 再 (明天再去 = besok pergi lagi). Sudah → 又, biasanya dengan 了 (今天又来了 = hari ini datang lagi).'),
       check=(("Which one is for a repeat that has already happened?", "又"), ("Mana yang dipakai untuk pengulangan yang sudah terjadi?", "又"))),
     S("HOW", ("再 and 又: Examples", "再 dan 又: Contoh"), [
         L("今天我去看她了，明天我想再去。", "Jīntiān wǒ qù kàn tā le, míngtiān wǒ xiǎng zài qù.", "I saw her today, and I want to go again tomorrow. (明天还没去)", "Hari ini saya menjenguknya, besok saya mau pergi lagi. (明天还没去)"),

@@ -199,7 +199,9 @@ SLIDES = [
         L("她比我考得好。/ 她考得比我好。", "Tā bǐ wǒ kǎo de hǎo. / Tā kǎo de bǐ wǒ hǎo.", "With a complement of state, 比 can go before the verb or before the complement.", "Dengan pelengkap keadaan, 比 bisa sebelum kata kerja atau sebelum pelengkap."),
         L("今天我比你来得早。/ 今天我来得比你早。", "Jīntiān wǒ bǐ nǐ lái de zǎo. / Jīntiān wǒ lái de bǐ nǐ zǎo.", "Today I came earlier than you.", "Hari ini saya datang lebih awal dari kamu."),
         L("她唱歌唱得比我好。/ 她写汉字写得比我快。", "Tā chànggē chàng de bǐ wǒ hǎo. / Tā xiě Hànzì xiě de bǐ wǒ kuài.", "With an object (or a separable verb), 比 can only go before the complement: A+V.+O.+V.+得+比+B+Comp.", "Kalau ada objek (atau kata kerja terpisah), 比 hanya bisa sebelum pelengkap: A+V.+O.+V.+得+比+B+Pel."),
-      ], check=(("Two ways: \"he eats more than me\".", "他比我吃得多。/ 他吃得比我多。"), ("Dua cara: \"dia makan lebih banyak dari saya\".", "他比我吃得多。/ 他吃得比我多。"))),
+      ], explain=("With 得: 比 can go before the verb (她比我考得好) or before the result (她考得比我好). But if there's an object, only the second way works: 她唱歌唱得比我好.",
+               'Dengan 得: 比 bisa sebelum kata kerja (她比我考得好) atau sebelum hasilnya (她考得比我好). Tapi kalau ada objek, hanya cara kedua: 她唱歌唱得比我好.'),
+      check=(("Two ways: \"he eats more than me\".", "他比我吃得多。/ 他吃得比我多。"), ("Dua cara: \"dia makan lebih banyak dari saya\".", "他比我吃得多。/ 他吃得比我多。"))),
     S("REMEMBER", ("Small or Big Differences", "Selisih Kecil atau Besar"), [
         L("上海的冬天是不是比北京暖和一点儿？", "Shànghǎi de dōngtiān shì bu shì bǐ Běijīng nuǎnhuo yìdiǎnr?", "Is winter in Shanghai a bit warmer than in Beijing?", "Musim dingin di Shanghai sedikit lebih hangat dari Beijing?"),
         L("这件比那件贵多了。", "Zhè jiàn bǐ nà jiàn guì duō le.", "This one is much more expensive than that one.", "Yang ini jauh lebih mahal dari yang itu."),
@@ -213,12 +215,16 @@ SLIDES = [
         L("A：冬天，上海比北京暖和。B：我觉得上海不比北京暖和。", "A: Dōngtiān, Shànghǎi bǐ Běijīng nuǎnhuo. B: Wǒ juéde Shànghǎi bù bǐ Běijīng nuǎnhuo.", "A: In winter Shanghai is warmer than Beijing. B: I don't think it is.", "A: Musim dingin Shanghai lebih hangat dari Beijing. B: Menurutku tidak."),
       ], intro=("The negative of a 比 sentence is usually 没有: A 比 B + C → B 没有 A + C. 不比 is only for disagreeing or refuting.",
                 "Bentuk negatif kalimat 比 biasanya 没有: A 比 B + C → B 没有 A + C. 不比 hanya untuk membantah."),
+      explain=('To say "A is not as … as B", flip it: B 没有 A + adj. (火车没有飞机快). 不比 is only for arguing back: "No, I\'m not taller than him" = 我不比他高.',
+               'Untuk "A tidak se… B", balik urutannya: B 没有 A + adj. (火车没有飞机快). 不比 hanya untuk membantah: "Tidak, aku tidak lebih tinggi dari dia" = 我不比他高.'),
       check=(("Negative of 西瓜比苹果大。", "苹果没有西瓜大。"), ("Bentuk negatif dari 西瓜比苹果大。", "苹果没有西瓜大。"))),
     S("WHAT", ("比字句 ②: A 有/没有 B (这么/那么) + adj.", "比字句 ②: A 有/没有 B (这么/那么) + adj."), [
         L("A：他有你（这么）高吗？B：他没有我（这么）高。", "A: Tā yǒu nǐ (zhème) gāo ma? B: Tā méiyǒu wǒ (zhème) gāo.", "A: Is he as tall as you? B: He isn't as tall as me.", "A: Dia setinggi kamu? B: Dia tidak setinggi saya."),
         L("A：你有我考得这么好吗？B：我没有你考得那么好。", "A: Nǐ yǒu wǒ kǎo de zhème hǎo ma? B: Wǒ méiyǒu nǐ kǎo de nàme hǎo.", "A: Did you do as well as me? B: I didn't do as well as you.", "A: Nilaimu sebagus saya? B: Nilai saya tidak sebagus kamu."),
       ], intro=("有 here means reaching or estimating a level. The positive form is mostly used in questions; the negative in statements.",
                 "有 di sini berarti mencapai atau memperkirakan suatu tingkat. Bentuk positifnya biasanya untuk pertanyaan; negatifnya untuk pernyataan."),
+      explain=('有 here means "as … as". 他有你高吗？ = Is he as tall as you? 这么 (this) points to something near or the speaker, 那么 (that) to something further away.',
+               '有 di sini berarti "se…". 他有你高吗？ = Dia setinggi kamu? 这么 (begini) menunjuk yang dekat atau pembicara, 那么 (begitu) yang lebih jauh.'),
       check=(("Answer \"no\": 他有你高吗？", "他没有我高。"), ("Jawab \"tidak\": 他有你高吗？", "他没有我高。"))),
     S("HOW", ("比字句 ③: 更 and 最", "比字句 ③: 更 dan 最"), [
         L("熊猫比狗大。大象比熊猫更大。大象最大。", "Xióngmāo bǐ gǒu dà. Dàxiàng bǐ xióngmāo gèng dà. Dàxiàng zuì dà.", "A panda is bigger than a dog. An elephant is even bigger. The elephant is the biggest.", "Panda lebih besar dari anjing. Gajah lebih besar lagi. Gajah paling besar."),
@@ -237,12 +243,36 @@ SLIDES = [
         L("他写得多快啊！/ 这个公园好漂亮啊！/ 你听，这首歌的歌词写得多好啊！", "Tā xiě de duō kuài a! / Zhège gōngyuán hǎo piàoliang a! / Nǐ tīng, zhè shǒu gē de gēcí xiě de duō hǎo a!", "② 多/好 + adj. (+啊): How fast he writes! / This park is so pretty! / Listen, how well these lyrics are written!", "② 多/好 + adj. (+啊): Cepat sekali dia menulis! / Taman ini cantik sekali! / Dengar, lirik lagu ini bagus sekali!"),
       ], intro=("感叹句 expresses strong feeling. 啊 often ends type ②.", "感叹句 menyatakan perasaan kuat. Tipe ② sering diakhiri 啊."),
       wr=("他是一个真好的老师。", "他是一个很好的老师。", ("Exclamations aren't used for objective description.", "Kalimat seru tidak dipakai untuk deskripsi objektif.")),
+      explain=('太/真/多/好 + adj. show strong feeling, like "so …!". Use them for your own feelings, not to describe facts: 他是一个很好的老师 (a fact), not 真好的老师.',
+               '太/真/多/好 + adj. menunjukkan perasaan kuat, seperti "… sekali!". Pakai untuk perasaanmu sendiri, bukan menggambarkan fakta: 他是一个很好的老师 (fakta), bukan 真好的老师.'),
       check=(("Say \"this park is so pretty!\".", "这个公园好漂亮啊！"), ("Katakan \"taman ini cantik sekali!\".", "这个公园好漂亮啊！"))),
     S("REMEMBER", ("Review: 就/才, 再/又", "Ulangan: 就/才, 再/又"), [
         L("爸爸每天都很晚才下班，今天下午五点就下班了。", "Bàba měi tiān dōu hěn wǎn cái xiàbān, jīntiān xiàwǔ wǔ diǎn jiù xiàbān le.", "Dad usually finishes work late, but today he finished at five.", "Ayah biasanya pulang kerja larut, hari ini jam lima sudah pulang."),
         L("您的话我没听懂，请您再说一遍，好吗？", "Nín de huà wǒ méi tīng dǒng, qǐng nín zài shuō yí biàn, hǎo ma?", "I didn't understand; could you say it again?", "Saya tidak paham, bisa diulang sekali lagi?"),
         L("老师又说了一遍，我才听懂。", "Lǎoshī yòu shuō le yí biàn, wǒ cái tīng dǒng.", "The teacher said it again, and only then did I understand.", "Guru mengulang lagi, baru saya paham."),
-      ], check=(("上星期我已经买了一本，今天我____买了一本。", "又"), ("上星期我已经买了一本，今天我____买了一本。", "又"))),
+      ], intro=(
+        "就 jiù: early, fast, easy or soon (还没发生 / 已经发生).\n"
+        "才 cái: late, slow, hard; or it has only just happened.\n"
+        "再 zài: the repeat has NOT happened yet (future, request, plan).\n"
+        "又 yòu: the repeat HAS already happened (often with 了).",
+        "就 jiù: lebih awal, cepat, mudah, atau segera terjadi.\n"
+        "才 cái: terlambat, lambat, sulit; atau baru saja terjadi.\n"
+        "再 zài: pengulangan BELUM terjadi (nanti, permintaan, rencana).\n"
+        "又 yòu: pengulangan SUDAH terjadi (sering dengan 了)."),
+      explain=(
+        "Why each word:\n"
+        "① 很晚才下班: usually late → 才. 五点就下班了: earlier than usual → 就.\n"
+        "② 请您再说一遍: a request, the repeat hasn't happened yet → 再.\n"
+        "③ 老师又说了一遍: the teacher already said it again → 又. 我才听懂: understanding came late, only after twice → 才.\n"
+        "Quick test: 就 vs 才, ask \"early/fast, or late/slow?\". 再 vs 又, ask \"has the repeat happened yet?\"\n"
+        "One more (from p. 80): v₁,再 v₂ = first A, then B (我们吃完饭再去散步吧). v₁,才 v₂ = B only after A (你买了票才能坐地铁).",
+        "Kenapa pakai kata itu:\n"
+        "① 很晚才下班: biasanya terlambat → 才. 五点就下班了: lebih awal dari biasa → 就.\n"
+        "② 请您再说一遍: permintaan, pengulangannya belum terjadi → 再.\n"
+        "③ 老师又说了一遍: guru sudah mengulang lagi → 又. 我才听懂: pahamnya terlambat, baru setelah dua kali → 才.\n"
+        "Cara cepat: 就 vs 才, tanya \"awal/cepat, atau terlambat/lambat?\". 再 vs 又, tanya \"pengulangannya sudah terjadi belum?\"\n"
+        "Tambahan (dari hlm. 80): v₁,再 v₂ = A dulu, lalu B (我们吃完饭再去散步吧). v₁,才 v₂ = B baru bisa setelah A (你买了票才能坐地铁)."),
+      check=(("上星期我已经买了一本，今天我____买了一本。", "又"), ("上星期我已经买了一本，今天我____买了一本。", "又"))),
 
     # Reading ----------------------------------------------------------------------------------
     S("HOW", ("阅读: 逛公园 (1/2)", "阅读: 逛公园 (1/2)"), [

@@ -166,7 +166,9 @@ SLIDES = [
         L("我看见玛丽了，她在操场打太极拳呢。", "Wǒ kànjiàn Mǎlì le, tā zài cāochǎng dǎ tàijíquán ne.", "I saw Mary; she's doing tai chi on the field.", "Saya melihat Mary, dia sedang tai chi di lapangan."),
         L("今天的作业我做完了。", "Jīntiān de zuòyè wǒ zuò wán le.", "I've finished today's homework.", "PR hari ini sudah saya selesaikan."),
         L("我答错了两道题。", "Wǒ dá cuò le liǎng dào tí.", "I got two questions wrong.", "Saya salah menjawab dua soal."),
-      ], check=(("Say \"I understood the teacher\".", "我听懂了老师的话。"), ("Katakan \"saya paham perkataan guru\".", "我听懂了老师的话。"))),
+      ], explain=('The verb is the action, the complement is the result. 看 = look, 看见 = actually see. 听 = listen, 听懂 = listen and understand. 做 = do, 做完 = finish doing.',
+               'Kata kerja = tindakan, pelengkap = hasilnya. 看 = melihat, 看见 = benar-benar terlihat. 听 = mendengar, 听懂 = mendengar dan paham. 做 = mengerjakan, 做完 = selesai mengerjakan.'),
+      check=(("Say \"I understood the teacher\".", "我听懂了老师的话。"), ("Katakan \"saya paham perkataan guru\".", "我听懂了老师的话。"))),
     S("REMEMBER", ("Word Order: v.+结果补语+了+O.", "Urutan: v.+结果补语+了+O."), [
         L("我看了错题。→ 我看题错了。", "Wǒ kàn le cuò tí. → Wǒ kàn tí cuò le.", "(Only the object comes after the complement.)", "(Objek diletakkan sesudah pelengkap.)"),
         L("我没看见你的词典。≠ 我没看你的词典。", "Wǒ méi kànjiàn nǐ de cídiǎn. ≠ Wǒ méi kàn nǐ de cídiǎn.", "I didn't see your dictionary. ≠ I didn't look at your dictionary.", "Saya tidak melihat kamusmu (tidak ketemu). ≠ Saya tidak membaca kamusmu."),
@@ -174,6 +176,8 @@ SLIDES = [
         L("我只翻译对了一个句子。", "Wǒ zhǐ fānyì duì le yí ge jùzi.", "I only translated one sentence correctly.", "Saya cuma benar menerjemahkan satu kalimat."),
       ], intro=("① With both a complement and an object, the object goes after the complement. ② 了 goes after the complement and before the object.",
                 "① Kalau ada pelengkap dan objek, objek diletakkan sesudah pelengkap. ② 了 diletakkan sesudah pelengkap, sebelum objek."),
+      explain=('Keep the verb and its result together, like one word: 做错. Then 了, then the object: 我做错了两道题. Never split them: 做了错 is wrong.',
+               'Kata kerja dan hasilnya selalu berdampingan, seperti satu kata: 做错. Lalu 了, lalu objek: 我做错了两道题. Jangan dipisah: 做了错 salah.'),
       check=(("Put 了 in: 我做错两道题。", "我做错了两道题。"), ("Masukkan 了: 我做错两道题。", "我做错了两道题。"))),
     S("REMEMBER", ("Negative: 没（有）+v.+adj./v., No 了", "Negatif: 没（有）+v.+adj./v., Tanpa 了"), [
         L("你没有听见吗？安娜在叫你。", "Nǐ méiyǒu tīngjiàn ma? Ānnà zài jiào nǐ.", "Didn't you hear? Anna is calling you.", "Kamu tidak dengar? Anna memanggilmu."),
@@ -215,6 +219,8 @@ SLIDES = [
         L("星期六早上我睡到九点才起床。/ 我每天晚上都学到十一二点。", "Xīngqīliù zǎoshang wǒ shuì dào jiǔ diǎn cái qǐchuáng. / Wǒ měi tiān wǎnshang dōu xué dào shíyī-èr diǎn.", "On Saturday I slept until nine. / Every night I study until eleven or twelve.", "Sabtu pagi saya tidur sampai jam sembilan. / Setiap malam saya belajar sampai jam sebelas-dua belas."),
       ], intro=("① The goal is reached (达到了目的). ② v.+到+P.: reaching a place or a stage. ③ v.+到+时间点: the action lasts until a time.",
                 "① Tujuan tercapai (达到了目的). ② v.+到+P.: sampai di suatu tempat atau tahap. ③ v.+到+时间点: tindakan berlangsung sampai waktu tertentu."),
+      explain=('到 means "reach": reach a goal (找到 = find), a place or stage (回到家, 学到二十九课), or a time (睡到九点 = sleep until nine).',
+               '到 berarti "sampai": mencapai tujuan (找到 = menemukan), tempat atau tahap (回到家, 学到二十九课), atau waktu (睡到九点 = tidur sampai jam sembilan).'),
       check=(("Say \"slept until nine\".", "睡到九点"), ("Katakan \"tidur sampai jam sembilan\".", "睡到九点"))),
     S("WHAT", ("主谓词组+的+n.: S.+V. as an Attribute", "主谓词组+的+n.: S.+V. sebagai Keterangan"), [
         L("田芳借给你的那本书你看完了没有？", "Tián Fāng jiè gěi nǐ de nà běn shū nǐ kàn wán le méiyǒu?", "Have you finished the book Tian Fang lent you?", "Buku yang dipinjamkan Tian Fang sudah selesai kamu baca?"),
@@ -222,6 +228,8 @@ SLIDES = [
         L("你要的那本书我给你买到了。", "Nǐ yào de nà běn shū wǒ gěi nǐ mǎi dào le.", "I got you the book you wanted.", "Buku yang kamu mau sudah saya belikan."),
         L("我看电影 → 我看的电影 / 妈妈做饭 → 妈妈做的饭", "Wǒ kàn diànyǐng → wǒ kàn de diànyǐng / Māma zuò fàn → māma zuò de fàn", "I watch a film → the film I watched / Mum cooks → the food Mum made", "Saya nonton film → film yang saya tonton / Ibu masak → masakan ibu"),
       ], intro=("When a subject-predicate phrase is used as an attribute, add 的 (主谓词组作定语时要加\"的\").", "Kalau frasa subjek-predikat dipakai sebagai keterangan, tambahkan 的 (主谓词组作定语时要加\"的\")."),
+      explain=('To describe a noun with a whole little sentence, put the sentence before the noun and add 的: 妈妈做饭 → 妈妈做的饭 (the food Mum made). Indonesian puts it after: "masakan yang dibuat ibu".',
+               'Untuk menerangkan kata benda dengan kalimat kecil, taruh kalimatnya sebelum kata benda dan tambahkan 的: 妈妈做饭 → 妈妈做的饭 (masakan yang dibuat ibu). Bahasa Indonesia menaruhnya sesudah: "yang dibuat ibu".'),
       check=(("Change: 老师讲课。", "老师讲的课"), ("Ubah: 老师讲课。", "老师讲的课"))),
 
     # Reading ----------------------------------------------------------------------------------

@@ -870,6 +870,7 @@
         }
       }
     ],
+    "explain": "Think of 了 at the end as \"now it's different\": something happened, finished, appeared or changed. Without 了 the sentence is a plan or a fact (我去商店 = I'm going / I go). With 了 it has happened (我去商店了 = I went).",
     "quick_check": {
       "q": "我去商店 or 我去商店了: which means you already went?",
       "a": "我去商店了。"
@@ -878,6 +879,7 @@
       "chapter": "第1课 田芳去哪儿了 (Tian Fang pergi ke mana?)",
       "title": "句子+了: Apa Artinya",
       "body": "句子+了 menunjukkan: 事情发生 / 动作完成 / 情况出现 / 状态变化.\nSesuatu terjadi, selesai, muncul, atau berubah.",
+      "explain": "Anggap 了 di akhir kalimat sebagai \"sekarang sudah lain\": sesuatu terjadi, selesai, muncul, atau berubah. Tanpa 了 kalimatnya rencana atau fakta (我去商店 = saya mau ke toko). Dengan 了 sudah terjadi (我去商店了 = saya tadi ke toko).",
       "quick_check": {
         "q": "我去商店 atau 我去商店了: mana yang berarti sudah pergi?",
         "a": "我去商店了。"
@@ -1023,6 +1025,7 @@
         }
       }
     ],
+    "explain": "还没（有）……呢 means \"not yet, but it may still happen\". It is the answer to ……了吗/……了没有. Don't add 了: 还没回家呢, not 还没回家了.",
     "quick_check": {
       "q": "Answer with 还没（有）……呢: 田芳回家了没有？",
       "a": "她还没有回家呢。"
@@ -1031,6 +1034,7 @@
       "chapter": "第1课 田芳去哪儿了 (Tian Fang pergi ke mana?)",
       "title": "……还没（有）……呢: Belum",
       "body": "",
+      "explain": "还没（有）……呢 berarti \"belum, tapi mungkin nanti\". Ini jawaban untuk ……了吗/……了没有. Jangan tambah 了: 还没回家呢, bukan 还没回家了.",
       "quick_check": {
         "q": "Jawab dengan 还没（有）……呢: 田芳回家了没有？",
         "a": "她还没有回家呢。"
@@ -2333,6 +2337,7 @@
         }
       }
     ],
+    "explain": "It looks like a negative question, but the speaker already believes the answer is yes and wants you to agree. 你不是要上托福班吗？ = \"You ARE going to the TOEFL class, aren't you?\" Like \"kan?\" in Indonesian.",
     "quick_check": {
       "q": "What does 你不是要上托福班吗？ really mean?",
       "a": "You are going to take a TOEFL class."
@@ -2341,6 +2346,7 @@
       "chapter": "第1课 田芳去哪儿了 (Tian Fang pergi ke mana?)",
       "title": "不是……吗？: Pertanyaan Retoris",
       "body": "反问句 (pertanyaan retoris): bentuknya negatif, tetapi maknanya menegaskan \"ya\" (强调肯定).",
+      "explain": "Bentuknya pertanyaan negatif, tapi pembicara sudah yakin jawabannya \"ya\" dan ingin kamu setuju. 你不是要上托福班吗？ = \"Kamu KAN mau ikut kelas TOEFL?\" Mirip \"kan?\" dalam bahasa Indonesia.",
       "quick_check": {
         "q": "Apa arti sebenarnya 你不是要上托福班吗？",
         "a": "Kamu memang mau ikut kelas TOEFL."
@@ -2445,6 +2451,7 @@
         }
       }
     ],
+    "explain": "是不是 asks \"is it so?\" when you already guess something. It can go before the verb, at the start, or at the end, and the meaning stays the same: 你是不是累了？ / 是不是你累了？ / 你累了，是不是？",
     "quick_check": {
       "q": "Ask \"Are you tired?\" with 是不是.",
       "a": "你是不是累了？"
@@ -2453,6 +2460,7 @@
       "chapter": "第1课 田芳去哪儿了 (Tian Fang pergi ke mana?)",
       "title": "是不是: Pertanyaan Ya atau Tidak",
       "body": "\"是不是\" 正反问句 (pertanyaan bentuk positif-negatif).",
+      "explain": "是不是 bertanya \"benar begitu?\" waktu kamu sudah menduga sesuatu. Bisa diletakkan sebelum kata kerja, di awal, atau di akhir, artinya sama: 你是不是累了？ / 是不是你累了？ / 你累了，是不是？",
       "quick_check": {
         "q": "Tanyakan \"Kamu capek, ya?\" dengan 是不是.",
         "a": "你是不是累了？"
@@ -2659,6 +2667,7 @@
         }
       }
     ],
+    "explain": "不 or 没？ Ask: is it about will, habit or the future → 不 (我不喝酒 = I don't drink). Is it about something that didn't happen → 没 (我没喝酒 = I didn't drink, this time).",
     "quick_check": {
       "q": "I didn't eat breakfast: 我____吃早饭。不 or 没？",
       "a": "没: 我没吃早饭。"
@@ -2667,6 +2676,7 @@
       "chapter": "第1课 田芳去哪儿了 (Tian Fang pergi ke mana?)",
       "title": "没（有）+v.",
       "body": "没 menyatakan suatu tindakan tidak terjadi di masa lalu.",
+      "explain": "不 atau 没？ Tanya: soal kemauan, kebiasaan, atau masa depan → 不 (我不喝酒 = saya tidak minum alkohol). Soal sesuatu yang tidak terjadi → 没 (我没喝酒 = tadi saya tidak minum).",
       "quick_check": {
         "q": "Saya tadi tidak sarapan: 我____吃早饭。不 atau 没？",
         "a": "没: 我没吃早饭。"
@@ -2751,6 +2761,7 @@
         }
       }
     ],
+    "explain": "Quick test: has the repeat happened yet? No → 再 (明天再去 = I'll go again tomorrow). Yes → 又, usually with 了 (今天又来了 = came again today).",
     "quick_check": {
       "q": "Which one is for a repeat that has already happened?",
       "a": "又"
@@ -2759,6 +2770,7 @@
       "chapter": "第1课 田芳去哪儿了 (Tian Fang pergi ke mana?)",
       "title": "再 dan 又: Pengulangan",
       "body": "Keduanya menunjukkan tindakan atau keadaan yang berulang (动作或情况的重复).",
+      "explain": "Cara cepat: pengulangannya sudah terjadi belum? Belum → 再 (明天再去 = besok pergi lagi). Sudah → 又, biasanya dengan 了 (今天又来了 = hari ini datang lagi).",
       "quick_check": {
         "q": "Mana yang dipakai untuk pengulangan yang sudah terjadi?",
         "a": "又"
@@ -3992,6 +4004,7 @@
         }
       }
     ],
+    "explain": "Lesson 1's 了 sits at the END of the sentence (a change or new situation). This 了 sits right AFTER the verb and says the action is finished: 我喝了一瓶啤酒. Negative: 没喝, with no 了.",
     "quick_check": {
       "q": "他喝了吗？ Answer \"no\".",
       "a": "他没（有）喝。"
@@ -4000,6 +4013,7 @@
       "chapter": "第2课 玛丽哭了 (Mary menangis)",
       "title": "v.+了: Tindakan Sudah Selesai",
       "body": "v.+了 menunjukkan tindakan yang sudah selesai (动作的完成).",
+      "explain": "了 di Pelajaran 1 ada di AKHIR kalimat (perubahan atau situasi baru). 了 ini langsung SESUDAH kata kerja dan berarti tindakannya selesai: 我喝了一瓶啤酒. Negatif: 没喝, tanpa 了.",
       "quick_check": {
         "q": "他喝了吗？ Jawab \"belum\".",
         "a": "他没（有）喝。"
@@ -4205,6 +4219,7 @@
         }
       }
     ],
+    "explain": "Two 了: the first says \"done\", the second says \"so take note\". 我喝了药了 = I've taken it, so don't worry. Use it when the news matters to the listener.",
     "quick_check": {
       "q": "What is the message of 我喝了药了？",
       "a": "Don't worry (你放心吧): I've taken it."
@@ -4213,6 +4228,7 @@
       "chapter": "第2课 玛丽哭了 (Mary menangis)",
       "title": "v.+了+O.+了: Menarik Perhatian",
       "body": "了 yang kedua adalah 语气助词 (partikel modal). Kalimatnya menyampaikan pesan untuk menarik perhatian (传达某种信息，用来引起注意).",
+      "explain": "Dua 了: yang pertama berarti \"sudah\", yang kedua \"jadi perhatikan\". 我喝了药了 = sudah saya minum, jadi jangan khawatir. Dipakai kalau kabar itu penting bagi pendengar.",
       "quick_check": {
         "q": "Apa pesan dari 我喝了药了？",
         "a": "Jangan khawatir (你放心吧): saya sudah minum."
@@ -4327,6 +4343,7 @@
     "tag": "REMEMBER",
     "title": "Serial Verbs: 了 Goes at the End",
     "body": "In a serial verb construction (v₁+O₁+v₂+O₂+了), 了 cannot come after the first verb.",
+    "explain": "In 去上海参观 or 坐飞机去香港, the first verb only says where or how. The real action is the last one, so 了 goes after the whole thing: 他去上海参观了.",
     "wrong_right": {
       "wrong": "他去了上海参观。\n她们坐了飞机去香港。",
       "right": "他去上海参观了。\n她们坐飞机去香港了。",
@@ -4340,6 +4357,7 @@
       "chapter": "第2课 玛丽哭了 (Mary menangis)",
       "title": "Kalimat Kata Kerja Berangkai: 了 di Akhir",
       "body": "Dalam kalimat kata kerja berangkai (v₁+O₁+v₂+O₂+了), 了 tidak boleh sesudah kata kerja pertama.",
+      "explain": "Dalam 去上海参观 atau 坐飞机去香港, kata kerja pertama hanya menyatakan tujuan atau cara. Tindakan utamanya yang terakhir, jadi 了 diletakkan di akhir: 他去上海参观了.",
       "wrong_right_reason": "Kata kerja pertama (去, 坐) hanya menyatakan cara atau tujuan; 了 diletakkan di akhir kalimat.",
       "quick_check": {
         "q": "Perbaiki: 他去了上海参观。",
@@ -4898,6 +4916,7 @@
         }
       }
     ],
+    "explain": "因为 = because (the reason), 所以 = so (the result). Chinese often uses both together, unlike English. You can also use just one of them (next slides).",
     "quick_check": {
       "q": "Which part is the cause: 因为 or 所以？",
       "a": "因为"
@@ -4906,6 +4925,7 @@
       "chapter": "第2课 玛丽哭了 (Mary menangis)",
       "title": "因为……所以……: Sebab dan Akibat",
       "body": "因为……所以…… menunjukkan sebab dan akibat (事情的原因和结果).",
+      "explain": "因为 = karena (sebab), 所以 = jadi (akibat). Bahasa Mandarin sering memakai keduanya sekaligus, beda dengan bahasa Inggris. Bisa juga dipakai salah satunya saja (slide berikut).",
       "quick_check": {
         "q": "Bagian mana yang sebab: 因为 atau 所以？",
         "a": "因为"
@@ -6193,6 +6213,7 @@
         }
       }
     ],
+    "explain": "It is a polite complaint: \"a bit too … (for me)\". 贵了点儿 = a bit too expensive. The adjective comes first, then 了点儿.",
     "quick_check": {
       "q": "Say \"a bit too expensive\".",
       "a": "贵了点儿"
@@ -6201,6 +6222,7 @@
       "chapter": "第3课 我吃了早饭就来了 (Saya langsung datang habis sarapan)",
       "title": "adj.+了（一）点儿: Agak Terlalu …",
       "body": "Dibanding standar tertentu, tingkatnya kurang pas: menunjukkan rasa tidak puas (不满意，不合适).",
+      "explain": "Ini keluhan yang sopan: \"agak terlalu … (bagi saya)\". 贵了点儿 = agak kemahalan. Kata sifat dulu, lalu 了点儿.",
       "quick_check": {
         "q": "Katakan \"agak kemahalan\".",
         "a": "贵了点儿"
@@ -7137,6 +7159,7 @@
         }
       }
     ],
+    "explain": "Quick test: early, fast or easy → 就. Late, slow or hard → 才. 他六点就起床了 (early) / 他十点才起床 (late). 就 sentences about the past usually end in 了; 才 sentences don't.",
     "quick_check": {
       "q": "He arrived late. 就 or 才？",
       "a": "才"
@@ -7145,6 +7168,7 @@
       "chapter": "第3课 我吃了早饭就来了 (Saya langsung datang habis sarapan)",
       "title": "就 dan 才 + v.",
       "body": "",
+      "explain": "Cara cepat: awal, cepat, atau mudah → 就. Terlambat, lambat, atau sulit → 才. 他六点就起床了 (pagi) / 他十点才起床 (siang). Kalimat 就 tentang masa lalu biasanya diakhiri 了; kalimat 才 tidak.",
       "quick_check": {
         "q": "Dia datang terlambat. 就 atau 才？",
         "a": "才"
@@ -7391,6 +7415,7 @@
         }
       }
     ],
+    "explain": "要是 = if (the condition), 就 = then (the result). 就 goes after the subject of the second part: 你要是去，我就去.",
     "quick_check": {
       "q": "Swap in 便宜一点儿 / 买了: 要是你也满意，咱们就租了。",
       "a": "要是便宜一点儿，咱们就买了。"
@@ -7399,6 +7424,7 @@
       "chapter": "第3课 我吃了早饭就来了 (Saya langsung datang habis sarapan)",
       "title": "要是……就……: Kalau … (maka) …",
       "body": "要是……就…… menghubungkan dua klausa: akibat dari suatu pengandaian (在假设情况下产生某种结果).",
+      "explain": "要是 = kalau (syarat), 就 = maka (akibat). 就 diletakkan sesudah subjek bagian kedua: 你要是去，我就去.",
       "quick_check": {
         "q": "Ganti dengan 便宜一点儿 / 买了: 要是你也满意，咱们就租了。",
         "a": "要是便宜一点儿，咱们就买了。"
@@ -9273,6 +9299,7 @@
         }
       }
     ],
+    "explain": "The verb is the action, the complement is the result. 看 = look, 看见 = actually see. 听 = listen, 听懂 = listen and understand. 做 = do, 做完 = finish doing.",
     "quick_check": {
       "q": "Say \"I understood the teacher\".",
       "a": "我听懂了老师的话。"
@@ -9281,6 +9308,7 @@
       "chapter": "第4课 我都做对了 (Saya menjawab semuanya dengan benar)",
       "title": "结果补语: Contoh",
       "body": "",
+      "explain": "Kata kerja = tindakan, pelengkap = hasilnya. 看 = melihat, 看见 = benar-benar terlihat. 听 = mendengar, 听懂 = mendengar dan paham. 做 = mengerjakan, 做完 = selesai mengerjakan.",
       "quick_check": {
         "q": "Katakan \"saya paham perkataan guru\".",
         "a": "我听懂了老师的话。"
@@ -9326,6 +9354,7 @@
         }
       }
     ],
+    "explain": "Keep the verb and its result together, like one word: 做错. Then 了, then the object: 我做错了两道题. Never split them: 做了错 is wrong.",
     "quick_check": {
       "q": "Put 了 in: 我做错两道题。",
       "a": "我做错了两道题。"
@@ -9334,6 +9363,7 @@
       "chapter": "第4课 我都做对了 (Saya menjawab semuanya dengan benar)",
       "title": "Urutan: v.+结果补语+了+O.",
       "body": "① Kalau ada pelengkap dan objek, objek diletakkan sesudah pelengkap. ② 了 diletakkan sesudah pelengkap, sebelum objek.",
+      "explain": "Kata kerja dan hasilnya selalu berdampingan, seperti satu kata: 做错. Lalu 了, lalu objek: 我做错了两道题. Jangan dipisah: 做了错 salah.",
       "quick_check": {
         "q": "Masukkan 了: 我做错两道题。",
         "a": "我做错了两道题。"
@@ -9630,6 +9660,7 @@
         }
       }
     ],
+    "explain": "到 means \"reach\": reach a goal (找到 = find), a place or stage (回到家, 学到二十九课), or a time (睡到九点 = sleep until nine).",
     "quick_check": {
       "q": "Say \"slept until nine\".",
       "a": "睡到九点"
@@ -9638,6 +9669,7 @@
       "chapter": "第4课 我都做对了 (Saya menjawab semuanya dengan benar)",
       "title": "v.+到: Tujuan, Tempat, Waktu",
       "body": "① Tujuan tercapai (达到了目的). ② v.+到+P.: sampai di suatu tempat atau tahap. ③ v.+到+时间点: tindakan berlangsung sampai waktu tertentu.",
+      "explain": "到 berarti \"sampai\": mencapai tujuan (找到 = menemukan), tempat atau tahap (回到家, 学到二十九课), atau waktu (睡到九点 = tidur sampai jam sembilan).",
       "quick_check": {
         "q": "Katakan \"tidur sampai jam sembilan\".",
         "a": "睡到九点"
@@ -9683,6 +9715,7 @@
         }
       }
     ],
+    "explain": "To describe a noun with a whole little sentence, put the sentence before the noun and add 的: 妈妈做饭 → 妈妈做的饭 (the food Mum made). Indonesian puts it after: \"masakan yang dibuat ibu\".",
     "quick_check": {
       "q": "Change: 老师讲课。",
       "a": "老师讲的课"
@@ -9691,6 +9724,7 @@
       "chapter": "第4课 我都做对了 (Saya menjawab semuanya dengan benar)",
       "title": "主谓词组+的+n.: S.+V. sebagai Keterangan",
       "body": "Kalau frasa subjek-predikat dipakai sebagai keterangan, tambahkan 的 (主谓词组作定语时要加\"的\").",
+      "explain": "Untuk menerangkan kata benda dengan kalimat kecil, taruh kalimatnya sebelum kata benda dan tambahkan 的: 妈妈做饭 → 妈妈做的饭 (masakan yang dibuat ibu). Bahasa Indonesia menaruhnya sesudah: \"yang dibuat ibu\".",
       "quick_check": {
         "q": "Ubah: 老师讲课。",
         "a": "老师讲的课"
@@ -11774,6 +11808,7 @@
         }
       }
     ],
+    "explain": "The time must stay right after a verb. With an object, either say the verb twice (学汉语学了两年) or put the time between verb and object (学了两年汉语). Never at the very end: 学汉语两年 is wrong.",
     "quick_check": {
       "q": "Two ways to say \"I swam for 90 minutes\".",
       "a": "我游泳游了一个半钟头。/ 我游了一个半钟头（的）泳。"
@@ -11782,6 +11817,7 @@
       "chapter": "第5课 我来了两个多月了 (Saya sudah di sini lebih dari dua bulan)",
       "title": "② Dengan Objek atau Kata Kerja Terpisah",
       "body": "Kalau kata kerja punya objek (atau kata kerja terpisah: 睡觉, 考试, 洗澡, 跳舞, 见面…), ulangi kata kerjanya dan taruh waktu sesudah yang kedua, atau taruh waktu di antara kata kerja dan objek.",
+      "explain": "Waktunya harus langsung sesudah kata kerja. Kalau ada objek, ulangi kata kerjanya (学汉语学了两年) atau taruh waktu di antara kata kerja dan objek (学了两年汉语). Jangan di paling akhir: 学汉语两年 salah.",
       "quick_check": {
         "q": "Dua cara mengatakan \"saya berenang 90 menit\".",
         "a": "我游泳游了一个半钟头。/ 我游了一个半钟头（的）泳。"
@@ -11870,6 +11906,7 @@
         }
       }
     ],
+    "explain": "One 了: it lasted that long (maybe it's over). Two 了: it has lasted that long so far and is still going on. 我学了一年汉语了 = I've been learning for a year and still am.",
     "quick_check": {
       "q": "我看了一个小时书了: am I still reading?",
       "a": "Yes (现在还在看书)."
@@ -11878,6 +11915,7 @@
       "chapter": "第5课 我来了两个多月了 (Saya sudah di sini lebih dari dua bulan)",
       "title": "④ 了……了: Masih Berlangsung",
       "body": "Kalau ada 了 sesudah kata kerja dan 了 di akhir kalimat, tindakannya masih berlangsung: S + V. 了 + waktu + O. + 了.",
+      "explain": "Satu 了: berlangsung selama itu (mungkin sudah selesai). Dua 了: sudah selama itu sampai sekarang dan masih berlangsung. 我学了一年汉语了 = sudah setahun belajar dan masih belajar.",
       "quick_check": {
         "q": "我看了一个小时书了: saya masih membaca?",
         "a": "Iya (现在还在看书)."
@@ -11958,6 +11996,7 @@
         }
       }
     ],
+    "explain": "Where does 多 go? Round numbers 10 and above: after the number (二十多年). Under 10: after the measure word (两个多月, 一年多).",
     "quick_check": {
       "q": "Say \"over two months\".",
       "a": "两个多月"
@@ -11966,6 +12005,7 @@
       "chapter": "第5课 我来了两个多月了 (Saya sudah di sini lebih dari dua bulan)",
       "title": "概数: Bilangan Perkiraan",
       "body": "",
+      "explain": "多 diletakkan di mana? Bilangan bulat 10 ke atas: sesudah bilangan (二十多年). Di bawah 10: sesudah kata satuan (两个多月, 一年多).",
       "quick_check": {
         "q": "Katakan \"lebih dari dua bulan\".",
         "a": "两个多月"
@@ -12003,6 +12043,7 @@
         }
       }
     ],
+    "explain": "These words are really a verb + its own object: 睡觉 = sleep + sleep. So other words go in the middle: 睡了八个小时觉, 见了一次面, and they can't take another object (见面朋友 is wrong).",
     "quick_check": {
       "q": "Reduplicate 散步.",
       "a": "散散步"
@@ -12011,6 +12052,7 @@
       "chapter": "第5课 我来了两个多月了 (Saya sudah di sini lebih dari dua bulan)",
       "title": "离合动词: Kata Kerja Terpisah",
       "body": "Kata kerja terpisah adalah kata dua suku kata (kata kerja + objek) yang bisa dipisah.",
+      "explain": "Kata-kata ini sebenarnya kata kerja + objeknya sendiri: 睡觉 = tidur + tidur. Jadi kata lain masuk di tengah: 睡了八个小时觉, 见了一次面, dan tidak bisa diberi objek lain (见面朋友 salah).",
       "quick_check": {
         "q": "Ulangi bentuk 散步.",
         "a": "散散步"
@@ -12081,6 +12123,7 @@
         }
       }
     ],
+    "explain": "就 vs 才: early or fast → 就, late or slow → 才. 再 vs 又: the repeat hasn't happened → 再, already happened → 又. v₁,再 v₂ = A first, then B. v₁,才 v₂ = B only after A.",
     "quick_check": {
       "q": "你买了票____能坐地铁。",
       "a": "才"
@@ -12089,6 +12132,7 @@
       "chapter": "第5课 我来了两个多月了 (Saya sudah di sini lebih dari dua bulan)",
       "title": "Ulangan: 就/才 dan 再/又",
       "body": "",
+      "explain": "就 vs 才: awal atau cepat → 就, terlambat atau lambat → 才. 再 vs 又: pengulangan belum terjadi → 再, sudah terjadi → 又. v₁,再 v₂ = A dulu, lalu B. v₁,才 v₂ = B baru bisa setelah A.",
       "quick_check": {
         "q": "你买了票____能坐地铁。",
         "a": "才"
@@ -14100,6 +14144,7 @@
         }
       }
     ],
+    "explain": "With 得: 比 can go before the verb (她比我考得好) or before the result (她考得比我好). But if there's an object, only the second way works: 她唱歌唱得比我好.",
     "quick_check": {
       "q": "Two ways: \"he eats more than me\".",
       "a": "他比我吃得多。/ 他吃得比我多。"
@@ -14108,6 +14153,7 @@
       "chapter": "第6课 我比你更喜欢音乐 (Saya lebih suka musik daripada kamu)",
       "title": "比字句 ①: A 比 B + V. + O.",
       "body": "",
+      "explain": "Dengan 得: 比 bisa sebelum kata kerja (她比我考得好) atau sebelum hasilnya (她考得比我好). Tapi kalau ada objek, hanya cara kedua: 她唱歌唱得比我好.",
       "quick_check": {
         "q": "Dua cara: \"dia makan lebih banyak dari saya\".",
         "a": "他比我吃得多。/ 他吃得比我多。"
@@ -14200,6 +14246,7 @@
         }
       }
     ],
+    "explain": "To say \"A is not as … as B\", flip it: B 没有 A + adj. (火车没有飞机快). 不比 is only for arguing back: \"No, I'm not taller than him\" = 我不比他高.",
     "quick_check": {
       "q": "Negative of 西瓜比苹果大。",
       "a": "苹果没有西瓜大。"
@@ -14208,6 +14255,7 @@
       "chapter": "第6课 我比你更喜欢音乐 (Saya lebih suka musik daripada kamu)",
       "title": "Negatif: 没有, Bukan 不比",
       "body": "Bentuk negatif kalimat 比 biasanya 没有: A 比 B + C → B 没有 A + C. 不比 hanya untuk membantah.",
+      "explain": "Untuk \"A tidak se… B\", balik urutannya: B 没有 A + adj. (火车没有飞机快). 不比 hanya untuk membantah: \"Tidak, aku tidak lebih tinggi dari dia\" = 我不比他高.",
       "quick_check": {
         "q": "Bentuk negatif dari 西瓜比苹果大。",
         "a": "苹果没有西瓜大。"
@@ -14239,6 +14287,7 @@
         }
       }
     ],
+    "explain": "有 here means \"as … as\". 他有你高吗？ = Is he as tall as you? 这么 (this) points to something near or the speaker, 那么 (that) to something further away.",
     "quick_check": {
       "q": "Answer \"no\": 他有你高吗？",
       "a": "他没有我高。"
@@ -14247,6 +14296,7 @@
       "chapter": "第6课 我比你更喜欢音乐 (Saya lebih suka musik daripada kamu)",
       "title": "比字句 ②: A 有/没有 B (这么/那么) + adj.",
       "body": "有 di sini berarti mencapai atau memperkirakan suatu tingkat. Bentuk positifnya biasanya untuk pertanyaan; negatifnya untuk pernyataan.",
+      "explain": "有 di sini berarti \"se…\". 他有你高吗？ = Dia setinggi kamu? 这么 (begini) menunjuk yang dekat atau pembicara, 那么 (begitu) yang lebih jauh.",
       "quick_check": {
         "q": "Jawab \"tidak\": 他有你高吗？",
         "a": "他没有我高。"
@@ -14375,6 +14425,7 @@
         }
       }
     ],
+    "explain": "太/真/多/好 + adj. show strong feeling, like \"so …!\". Use them for your own feelings, not to describe facts: 他是一个很好的老师 (a fact), not 真好的老师.",
     "wrong_right": {
       "wrong": "他是一个真好的老师。",
       "right": "他是一个很好的老师。",
@@ -14388,6 +14439,7 @@
       "chapter": "第6课 我比你更喜欢音乐 (Saya lebih suka musik daripada kamu)",
       "title": "感叹句: Kalimat Seru",
       "body": "感叹句 menyatakan perasaan kuat. Tipe ② sering diakhiri 啊.",
+      "explain": "太/真/多/好 + adj. menunjukkan perasaan kuat, seperti \"… sekali!\". Pakai untuk perasaanmu sendiri, bukan menggambarkan fakta: 他是一个很好的老师 (fakta), bukan 真好的老师.",
       "wrong_right_reason": "Kalimat seru tidak dipakai untuk deskripsi objektif.",
       "quick_check": {
         "q": "Katakan \"taman ini cantik sekali!\".",
@@ -14399,7 +14451,7 @@
     "chapter": "第6课 我比你更喜欢音乐 (I like music even more than you)",
     "tag": "REMEMBER",
     "title": "Review: 就/才, 再/又",
-    "body": "",
+    "body": "就 jiù: early, fast, easy or soon (还没发生 / 已经发生).\n才 cái: late, slow, hard; or it has only just happened.\n再 zài: the repeat has NOT happened yet (future, request, plan).\n又 yòu: the repeat HAS already happened (often with 了).",
     "zh": [
       {
         "hz": "爸爸每天都很晚才下班，今天下午五点就下班了。",
@@ -14426,6 +14478,7 @@
         }
       }
     ],
+    "explain": "Why each word:\n① 很晚才下班: usually late → 才. 五点就下班了: earlier than usual → 就.\n② 请您再说一遍: a request, the repeat hasn't happened yet → 再.\n③ 老师又说了一遍: the teacher already said it again → 又. 我才听懂: understanding came late, only after twice → 才.\nQuick test: 就 vs 才, ask \"early/fast, or late/slow?\". 再 vs 又, ask \"has the repeat happened yet?\"\nOne more (from p. 80): v₁,再 v₂ = first A, then B (我们吃完饭再去散步吧). v₁,才 v₂ = B only after A (你买了票才能坐地铁).",
     "quick_check": {
       "q": "上星期我已经买了一本，今天我____买了一本。",
       "a": "又"
@@ -14433,7 +14486,8 @@
     "id": {
       "chapter": "第6课 我比你更喜欢音乐 (Saya lebih suka musik daripada kamu)",
       "title": "Ulangan: 就/才, 再/又",
-      "body": "",
+      "body": "就 jiù: lebih awal, cepat, mudah, atau segera terjadi.\n才 cái: terlambat, lambat, sulit; atau baru saja terjadi.\n再 zài: pengulangan BELUM terjadi (nanti, permintaan, rencana).\n又 yòu: pengulangan SUDAH terjadi (sering dengan 了).",
+      "explain": "Kenapa pakai kata itu:\n① 很晚才下班: biasanya terlambat → 才. 五点就下班了: lebih awal dari biasa → 就.\n② 请您再说一遍: permintaan, pengulangannya belum terjadi → 再.\n③ 老师又说了一遍: guru sudah mengulang lagi → 又. 我才听懂: pahamnya terlambat, baru setelah dua kali → 才.\nCara cepat: 就 vs 才, tanya \"awal/cepat, atau terlambat/lambat?\". 再 vs 又, tanya \"pengulangannya sudah terjadi belum?\"\nTambahan (dari hlm. 80): v₁,再 v₂ = A dulu, lalu B (我们吃完饭再去散步吧). v₁,才 v₂ = B baru bisa setelah A (你买了票才能坐地铁).",
       "quick_check": {
         "q": "上星期我已经买了一本，今天我____买了一本。",
         "a": "又"

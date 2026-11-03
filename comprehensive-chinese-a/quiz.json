@@ -8,6 +8,303 @@
       "en": "[NOTE] All exercises come from the teacher's slides: grammar, the 课文 stories, reading and fill-ins. For a fill-in, type the 汉字; punctuation does not matter.",
       "id": "[NOTE] Semua latihan berasal dari slide guru: grammar, cerita 课文, bacaan, dan isian. Untuk soal isian, ketik 汉字; tanda baca tidak dihitung."
     },
+    "stories": {
+      "课文1": {
+        "title": "课文（一） 田芳去哪儿了",
+        "lines": [
+          {
+            "hz": "张东打电话找田芳，田芳妈妈接电话。",
+            "py": "",
+            "tr": {
+              "en": "",
+              "id": ""
+            }
+          },
+          {
+            "sp": "张东",
+            "hz": "喂，是田芳吗？",
+            "py": "Wèi, shì Tián Fāng ma?",
+            "tr": {
+              "en": "Hello, is this Tian Fang?",
+              "id": "Halo, ini Tian Fang?"
+            }
+          },
+          {
+            "sp": "田芳妈",
+            "hz": "田芳不在。是张东吧？",
+            "py": "Tián Fāng bú zài. Shì Zhāng Dōng ba?",
+            "tr": {
+              "en": "Tian Fang isn't here. Is this Zhang Dong?",
+              "id": "Tian Fang tidak ada. Ini Zhang Dong, ya?"
+            }
+          },
+          {
+            "sp": "张东",
+            "hz": "阿姨，您好！田芳去哪儿了？",
+            "py": "Āyí, nín hǎo! Tián Fāng qù nǎr le?",
+            "tr": {
+              "en": "Hello, auntie! Where did Tian Fang go?",
+              "id": "Halo, Tante! Tian Fang pergi ke mana?"
+            }
+          },
+          {
+            "sp": "田芳妈",
+            "hz": "她四点多就去同学家了。她的一个中学同学要出国，她去看看她。",
+            "py": "Tā sì diǎn duō jiù qù tóngxué jiā le. Tā de yí ge zhōngxué tóngxué yào chūguó, tā qù kànkan tā.",
+            "tr": {
+              "en": "She left for a classmate's home just after four. A middle school classmate is going abroad, so she went to see her.",
+              "id": "Dia sudah ke rumah temannya sejak lewat jam empat. Seorang teman SMP-nya mau ke luar negeri, jadi dia pergi menjenguknya."
+            }
+          },
+          {
+            "sp": "张东",
+            "hz": "她什么时候能回来？",
+            "py": "Tā shénme shíhou néng huílai?",
+            "tr": {
+              "en": "When can she come back?",
+              "id": "Kapan dia bisa pulang?"
+            }
+          },
+          {
+            "sp": "田芳妈",
+            "hz": "她没说，你打她的手机吧。",
+            "py": "Tā méi shuō, nǐ dǎ tā de shǒujī ba.",
+            "tr": {
+              "en": "She didn't say. Try her mobile.",
+              "id": "Dia tidak bilang. Telepon saja HP-nya."
+            }
+          },
+          {
+            "sp": "张东",
+            "hz": "我打了，可是她关机了。",
+            "py": "Wǒ dǎ le, kěshì tā guānjī le.",
+            "tr": {
+              "en": "I did, but her phone is off.",
+              "id": "Sudah, tapi HP-nya mati."
+            }
+          },
+          {
+            "sp": "田芳妈",
+            "hz": "是吗？你过一会儿再打吧。",
+            "py": "Shì ma? Nǐ guò yíhuìr zài dǎ ba.",
+            "tr": {
+              "en": "Really? Call again in a little while.",
+              "id": "Oh ya? Telepon lagi sebentar lagi, ya."
+            }
+          },
+          {
+            "hz": "张东又来电话了。",
+            "py": "",
+            "tr": {
+              "en": "",
+              "id": ""
+            }
+          },
+          {
+            "sp": "张东",
+            "hz": "阿姨，田芳回来了没有？",
+            "py": "Āyí, Tián Fāng huílai le méiyǒu?",
+            "tr": {
+              "en": "Auntie, has Tian Fang come back?",
+              "id": "Tante, Tian Fang sudah pulang belum?"
+            }
+          },
+          {
+            "sp": "田芳妈",
+            "hz": "还没有呢。",
+            "py": "Hái méiyǒu ne.",
+            "tr": {
+              "en": "Not yet.",
+              "id": "Belum."
+            }
+          }
+        ]
+      },
+      "课文2": {
+        "title": "课文（二） 他又来电话了",
+        "lines": [
+          {
+            "sp": "田芳",
+            "hz": "妈，我回来了。",
+            "py": "Mā, wǒ huílai le.",
+            "tr": {
+              "en": "Mom, I'm back.",
+              "id": "Ma, aku pulang."
+            }
+          },
+          {
+            "sp": "田芳妈",
+            "hz": "饿了吧？快吃饭吧！啊，对了，张东给你打电话了。",
+            "py": "È le ba? Kuài chīfàn ba! À, duìle, Zhāng Dōng gěi nǐ dǎ diànhuà le.",
+            "tr": {
+              "en": "Hungry, right? Eat quickly! Oh, by the way, Zhang Dong called you.",
+              "id": "Lapar, kan? Ayo makan! Oh ya, tadi Zhang Dong meneleponmu."
+            }
+          },
+          {
+            "sp": "田芳",
+            "hz": "没有啊。",
+            "py": "Méiyǒu a.",
+            "tr": {
+              "en": "No, he didn't.",
+              "id": "Nggak ada, kok."
+            }
+          },
+          {
+            "sp": "田芳妈",
+            "hz": "他来电话找你，说打你的手机，你关机了。",
+            "py": "Tā lái diànhuà zhǎo nǐ, shuō dǎ nǐ de shǒujī, nǐ guānjī le.",
+            "tr": {
+              "en": "He called looking for you. He said he tried your mobile, but it was off.",
+              "id": "Dia menelepon mencarimu. Katanya dia menelepon HP-mu, tapi HP-mu mati."
+            }
+          },
+          {
+            "sp": "田芳",
+            "hz": "啊！对了，我忘开机了。",
+            "py": "À! Duìle, wǒ wàng kāijī le.",
+            "tr": {
+              "en": "Oh! Right, I forgot to turn it on.",
+              "id": "Oh! Iya, aku lupa menyalakannya."
+            }
+          },
+          {
+            "sp": "田芳妈",
+            "hz": "快！电话又响了，你去接吧。",
+            "py": "Kuài! Diànhuà yòu xiǎng le, nǐ qù jiē ba.",
+            "tr": {
+              "en": "Quick! The phone is ringing again, go and answer it.",
+              "id": "Cepat! Teleponnya bunyi lagi, sana angkat."
+            }
+          },
+          {
+            "hz": "田芳接电话。",
+            "py": "",
+            "tr": {
+              "en": "",
+              "id": ""
+            }
+          },
+          {
+            "sp": "田芳",
+            "hz": "喂，张东，下午你给我打电话了吧？",
+            "py": "Wèi, Zhāng Dōng, xiàwǔ nǐ gěi wǒ dǎ diànhuà le ba?",
+            "tr": {
+              "en": "Hello, Zhang Dong, you called me this afternoon, right?",
+              "id": "Halo, Zhang Dong, tadi sore kamu meneleponku, ya?"
+            }
+          },
+          {
+            "sp": "张东",
+            "hz": "打了，你怎么关机了？",
+            "py": "Dǎ le, nǐ zěnme guānjī le?",
+            "tr": {
+              "en": "Yes. Why was your phone off?",
+              "id": "Iya, kok HP-mu mati?"
+            }
+          },
+          {
+            "sp": "田芳",
+            "hz": "对不起，我忘开机了。下午你做什么了？",
+            "py": "Duìbuqǐ, wǒ wàng kāijī le. Xiàwǔ nǐ zuò shénme le?",
+            "tr": {
+              "en": "Sorry, I forgot to turn it on. What did you do this afternoon?",
+              "id": "Maaf, aku lupa menyalakannya. Tadi sore kamu ngapain?"
+            }
+          },
+          {
+            "sp": "张东",
+            "hz": "我去踢足球了。今天我们跟留学生代表队比赛了。",
+            "py": "Wǒ qù tī zúqiú le. Jīntiān wǒmen gēn liúxuéshēng dàibiǎo duì bǐsài le.",
+            "tr": {
+              "en": "I played football. We played the international students' team today.",
+              "id": "Aku main sepak bola. Hari ini kami bertanding melawan tim mahasiswa asing."
+            }
+          },
+          {
+            "sp": "田芳",
+            "hz": "你们队又输了吧？",
+            "py": "Nǐmen duì yòu shū le ba?",
+            "tr": {
+              "en": "Your team lost again, right?",
+              "id": "Timmu kalah lagi, ya?"
+            }
+          },
+          {
+            "sp": "张东",
+            "hz": "没有。这次我们赢了。",
+            "py": "Méiyǒu. Zhè cì wǒmen yíng le.",
+            "tr": {
+              "en": "No. This time we won.",
+              "id": "Nggak. Kali ini kami menang."
+            }
+          },
+          {
+            "sp": "田芳",
+            "hz": "几比几？",
+            "py": "Jǐ bǐ jǐ?",
+            "tr": {
+              "en": "What was the score?",
+              "id": "Skornya berapa?"
+            }
+          },
+          {
+            "sp": "张东",
+            "hz": "二比一。",
+            "py": "Èr bǐ yī.",
+            "tr": {
+              "en": "Two to one.",
+              "id": "Dua lawan satu."
+            }
+          },
+          {
+            "sp": "田芳",
+            "hz": "祝贺你们！哎，你有什么事儿吗？",
+            "py": "Zhùhè nǐmen! Āi, nǐ yǒu shénme shìr ma?",
+            "tr": {
+              "en": "Congratulations! Hey, did you want something?",
+              "id": "Selamat ya! Eh, ada perlu apa?"
+            }
+          },
+          {
+            "sp": "张东",
+            "hz": "我想问问你，你不是要上托福班吗？报名了没有？",
+            "py": "Wǒ xiǎng wènwen nǐ, nǐ bú shì yào shàng tuōfú bān ma? Bàomíng le méiyǒu?",
+            "tr": {
+              "en": "I wanted to ask: aren't you going to take a TOEFL class? Have you signed up?",
+              "id": "Aku mau tanya, kamu kan mau ikut kelas TOEFL? Sudah daftar belum?"
+            }
+          },
+          {
+            "sp": "田芳",
+            "hz": "已经报了。你是不是也想考托福？",
+            "py": "Yǐjīng bào le. Nǐ shì bu shì yě xiǎng kǎo tuōfú?",
+            "tr": {
+              "en": "Already did. Do you want to take the TOEFL too?",
+              "id": "Sudah. Kamu juga mau tes TOEFL, ya?"
+            }
+          },
+          {
+            "sp": "张东",
+            "hz": "是。我想明天去报名，你陪我一起去，好吗？",
+            "py": "Shì. Wǒ xiǎng míngtiān qù bàomíng, nǐ péi wǒ yìqǐ qù, hǎo ma?",
+            "tr": {
+              "en": "Yes. I want to sign up tomorrow. Will you come with me?",
+              "id": "Iya. Besok aku mau daftar, temani aku, ya?"
+            }
+          },
+          {
+            "sp": "田芳",
+            "hz": "好的。",
+            "py": "Hǎo de.",
+            "tr": {
+              "en": "OK.",
+              "id": "Oke."
+            }
+          }
+        ]
+      }
+    },
     "questions": [
       {
         "source": "p. 22",
@@ -485,7 +782,8 @@
         "why": {
           "en": "田芳的妈妈接的电话: Tian Fang is out.",
           "id": "田芳的妈妈接的电话: Tian Fang sedang pergi."
-        }
+        },
+        "story": "课文1"
       },
       {
         "source": "p. 14 课文",
@@ -511,7 +809,8 @@
         "why": {
           "en": "她去同学家了: a classmate is going abroad.",
           "id": "她去同学家了: temannya mau ke luar negeri."
-        }
+        },
+        "story": "课文1"
       },
       {
         "source": "p. 57 课文",
@@ -528,7 +827,8 @@
         "why": {
           "en": "Text (2): 我去踢足球了。",
           "id": "Teks (2): 我去踢足球了。"
-        }
+        },
+        "story": "课文2"
       },
       {
         "source": "p. 57 课文",
@@ -554,7 +854,8 @@
         "why": {
           "en": "张东 says 这次我们赢了.",
           "id": "张东 berkata 这次我们赢了."
-        }
+        },
+        "story": "课文2"
       },
       {
         "source": "p. 45 填空",
@@ -608,6 +909,379 @@
     "note": {
       "en": "[NOTE] All exercises come from the teacher's slides: grammar, the 课文 stories, reading and fill-ins. For a fill-in, type the 汉字; punctuation does not matter.",
       "id": "[NOTE] Semua latihan berasal dari slide guru: grammar, cerita 课文, bacaan, dan isian. Untuk soal isian, ketik 汉字; tanda baca tidak dihitung."
+    },
+    "stories": {
+      "课文1": {
+        "title": "课文（一） 你怎么了",
+        "lines": [
+          {
+            "sp": "大夫",
+            "hz": "你怎么了？",
+            "py": "Nǐ zěnme le?",
+            "tr": {
+              "en": "What's wrong?",
+              "id": "Kamu kenapa?"
+            }
+          },
+          {
+            "sp": "病人",
+            "hz": "肚子疼得厉害，在家吃了两片药，还不行。",
+            "py": "Dùzi téng de lìhai, zài jiā chī le liǎng piàn yào, hái bù xíng.",
+            "tr": {
+              "en": "My stomach hurts badly. I took two tablets at home, but it didn't help.",
+              "id": "Perut saya sakit sekali. Di rumah sudah minum dua tablet, tapi belum membaik."
+            }
+          },
+          {
+            "sp": "大夫",
+            "hz": "拉肚子了吗？",
+            "py": "Lā dùzi le ma?",
+            "tr": {
+              "en": "Do you have diarrhoea?",
+              "id": "Diare?"
+            }
+          },
+          {
+            "sp": "病人",
+            "hz": "拉了。",
+            "py": "Lā le.",
+            "tr": {
+              "en": "Yes.",
+              "id": "Iya."
+            }
+          },
+          {
+            "sp": "大夫",
+            "hz": "昨天吃什么了？",
+            "py": "Zuótiān chī shénme le?",
+            "tr": {
+              "en": "What did you eat yesterday?",
+              "id": "Kemarin makan apa?"
+            }
+          },
+          {
+            "sp": "病人",
+            "hz": "就吃了一些鱼和牛肉。",
+            "py": "Jiù chī le yìxiē yú hé niúròu.",
+            "tr": {
+              "en": "Only some fish and beef.",
+              "id": "Cuma makan sedikit ikan dan daging sapi."
+            }
+          },
+          {
+            "sp": "大夫",
+            "hz": "喝什么了？",
+            "py": "Hē shénme le?",
+            "tr": {
+              "en": "What did you drink?",
+              "id": "Minum apa?"
+            }
+          },
+          {
+            "sp": "病人",
+            "hz": "喝了一瓶啤酒。",
+            "py": "Hē le yì píng píjiǔ.",
+            "tr": {
+              "en": "A bottle of beer.",
+              "id": "Sebotol bir."
+            }
+          },
+          {
+            "sp": "大夫",
+            "hz": "发烧吗？",
+            "py": "Fāshāo ma?",
+            "tr": {
+              "en": "Do you have a fever?",
+              "id": "Demam?"
+            }
+          },
+          {
+            "sp": "病人",
+            "hz": "不发烧。",
+            "py": "Bù fāshāo.",
+            "tr": {
+              "en": "No.",
+              "id": "Tidak."
+            }
+          },
+          {
+            "sp": "大夫",
+            "hz": "你先去化验一下儿大便，然后我再给你检查检查。",
+            "py": "Nǐ xiān qù huàyàn yíxiàr dàbiàn, ránhòu wǒ zài gěi nǐ jiǎnchá jiǎnchá.",
+            "tr": {
+              "en": "First get a stool test, then I'll examine you.",
+              "id": "Tes feses dulu, nanti saya periksa."
+            }
+          },
+          {
+            "sp": "病人",
+            "hz": "好吧。",
+            "py": "Hǎo ba.",
+            "tr": {
+              "en": "OK.",
+              "id": "Baik."
+            }
+          },
+          {
+            "sp": "大夫",
+            "hz": "化验结果出来了吗？",
+            "py": "Huàyàn jiéguǒ chūlái le ma?",
+            "tr": {
+              "en": "(after the test) Are the results out?",
+              "id": "(sesudah tes) Hasilnya sudah keluar?"
+            }
+          },
+          {
+            "sp": "病人",
+            "hz": "出来了。",
+            "py": "Chūlái le.",
+            "tr": {
+              "en": "Yes.",
+              "id": "Sudah."
+            }
+          },
+          {
+            "sp": "病人",
+            "hz": "大夫，我是不是得了肠炎？",
+            "py": "Dàifu, wǒ shì bu shì dé le chángyán?",
+            "tr": {
+              "en": "Doctor, do I have enteritis?",
+              "id": "Dokter, apa saya kena radang usus?"
+            }
+          },
+          {
+            "sp": "大夫",
+            "hz": "我看了化验结果。不是肠炎，只是消化不好。先给你开一些药，再给你打一针。",
+            "py": "Wǒ kàn le huàyàn jiéguǒ. Bú shì chángyán, zhǐshì xiāohuà bù hǎo. Xiān gěi nǐ kāi yìxiē yào, zài gěi nǐ dǎ yì zhēn.",
+            "tr": {
+              "en": "I've seen the results. It's not enteritis, just poor digestion. I'll prescribe some medicine first, then give you an injection.",
+              "id": "Saya sudah lihat hasilnya. Bukan radang usus, cuma pencernaan kurang baik. Saya beri obat dulu, lalu suntik."
+            }
+          },
+          {
+            "sp": "病人",
+            "hz": "这药怎么吃？",
+            "py": "Zhè yào zěnme chī?",
+            "tr": {
+              "en": "(after getting the medicine) How do I take this?",
+              "id": "(sesudah ambil obat) Obat ini diminum bagaimana?"
+            }
+          },
+          {
+            "sp": "护士",
+            "hz": "一天三次，一次两片，饭后吃。",
+            "py": "Yì tiān sān cì, yí cì liǎng piàn, fàn hòu chī.",
+            "tr": {
+              "en": "Three times a day, two tablets each time, after meals.",
+              "id": "Sehari tiga kali, sekali dua tablet, sesudah makan."
+            }
+          }
+        ]
+      },
+      "课文2": {
+        "title": "课文（二） 玛丽哭了",
+        "lines": [
+          {
+            "sp": "罗兰",
+            "hz": "玛丽，你怎么哭了？病了吗？",
+            "py": "Mǎlì, nǐ zěnme kū le? Bìng le ma?",
+            "tr": {
+              "en": "Mary, why are you crying? Are you ill?",
+              "id": "Mary, kenapa menangis? Sakit?"
+            }
+          },
+          {
+            "sp": "玛丽",
+            "hz": "不是。想家了。因为感到寂寞，所以心情不好，很难过。",
+            "py": "Bú shì. Xiǎng jiā le. Yīnwèi gǎndào jìmò, suǒyǐ xīnqíng bù hǎo, hěn nánguò.",
+            "tr": {
+              "en": "No. I miss home. I feel lonely, so I'm in a bad mood and very sad.",
+              "id": "Bukan. Aku rindu rumah. Karena kesepian, jadi suasana hatiku buruk dan sedih sekali."
+            }
+          },
+          {
+            "sp": "罗兰",
+            "hz": "别难过了。",
+            "py": "Bié nánguò le.",
+            "tr": {
+              "en": "Don't be sad.",
+              "id": "Jangan sedih."
+            }
+          },
+          {
+            "sp": "玛丽",
+            "hz": "你不想家吗？",
+            "py": "Nǐ bù xiǎng jiā ma?",
+            "tr": {
+              "en": "Don't you miss home?",
+              "id": "Kamu tidak rindu rumah?"
+            }
+          },
+          {
+            "sp": "罗兰",
+            "hz": "我也常想家，但是不感到寂寞。",
+            "py": "Wǒ yě cháng xiǎng jiā, dànshì bù gǎndào jìmò.",
+            "tr": {
+              "en": "I often miss home too, but I don't feel lonely.",
+              "id": "Aku juga sering rindu rumah, tapi tidak merasa kesepian."
+            }
+          },
+          {
+            "sp": "玛丽",
+            "hz": "我有姐姐，还有弟弟。在家时，我们常常一起玩儿，所以感到寂寞时总想他们。",
+            "py": "Wǒ yǒu jiějie, hái yǒu dìdi. Zài jiā shí, wǒmen chángcháng yìqǐ wánr, suǒyǐ gǎndào jìmò shí zǒng xiǎng tāmen.",
+            "tr": {
+              "en": "I have an older sister and a younger brother. At home we often played together, so when I'm lonely I always think of them.",
+              "id": "Aku punya kakak perempuan dan adik laki-laki. Di rumah kami sering main bersama, jadi kalau kesepian aku selalu teringat mereka."
+            }
+          },
+          {
+            "sp": "罗兰",
+            "hz": "今天晚上礼堂有舞会，我们一起去跳跳舞吧。玩儿玩儿就好了。",
+            "py": "Jīntiān wǎnshang lǐtáng yǒu wǔhuì, wǒmen yìqǐ qù tiàotiao wǔ ba. Wánrwanr jiù hǎo le.",
+            "tr": {
+              "en": "There's a dance in the auditorium tonight. Let's go and dance. Having some fun will help.",
+              "id": "Malam ini ada pesta dansa di aula. Ayo kita berdansa. Main sebentar pasti lebih baik."
+            }
+          },
+          {
+            "sp": "玛丽",
+            "hz": "什么时候去？",
+            "py": "Shénme shíhou qù?",
+            "tr": {
+              "en": "When shall we go?",
+              "id": "Perginya kapan?"
+            }
+          },
+          {
+            "sp": "罗兰",
+            "hz": "吃了晚饭就去吧。你在宿舍等我，我来叫你。",
+            "py": "Chī le wǎnfàn jiù qù ba. Nǐ zài sùshè děng wǒ, wǒ lái jiào nǐ.",
+            "tr": {
+              "en": "Right after dinner. Wait for me in the dorm and I'll come and get you.",
+              "id": "Habis makan malam langsung pergi. Tunggu aku di asrama, nanti aku jemput."
+            }
+          },
+          {
+            "sp": "玛丽",
+            "hz": "好吧。",
+            "py": "Hǎo ba.",
+            "tr": {
+              "en": "OK.",
+              "id": "Oke."
+            }
+          },
+          {
+            "hz": "唱唱歌 / 聊聊天 / 走走路 / 帮帮忙 / 理理发 / 洗洗澡 / 跑跑步 / 扫扫地",
+            "py": "chàngchang gē / liáoliao tiān / zǒuzou lù / bāngbang máng / lǐli fà / xǐxi zǎo / pǎopao bù / sǎosao dì",
+            "tr": {
+              "en": "sing / chat / walk / help / get a haircut / shower / jog / sweep (for a little while)",
+              "id": "menyanyi / mengobrol / jalan kaki / membantu / potong rambut / mandi / lari / menyapu (sebentar)"
+            }
+          }
+        ]
+      },
+      "阅读": {
+        "title": "阅读 我病了",
+        "lines": [
+          {
+            "hz": "我病了。头疼，发烧，嗓子也疼，不想吃东西，晚上咳嗽得很厉害。",
+            "py": "Wǒ bìng le. Tóu téng, fāshāo, sǎngzi yě téng, bù xiǎng chī dōngxi, wǎnshang késou de hěn lìhai.",
+            "tr": {
+              "en": "I'm ill. I have a headache, a fever and a sore throat. I don't want to eat, and at night I cough badly.",
+              "id": "Saya sakit. Kepala pusing, demam, tenggorokan juga sakit, tidak mau makan, dan malam hari batuk parah."
+            }
+          },
+          {
+            "hz": "上午同学们都去上课了，我一个人在宿舍里，感到很寂寞，很想家。",
+            "py": "Shàngwǔ tóngxuémen dōu qù shàngkè le, wǒ yí ge rén zài sùshè lǐ, gǎndào hěn jìmò, hěn xiǎng jiā.",
+            "tr": {
+              "en": "This morning my classmates all went to class. I was alone in the dorm, very lonely and homesick.",
+              "id": "Pagi ini teman-teman semua masuk kelas. Saya sendirian di asrama, kesepian dan rindu rumah."
+            }
+          },
+          {
+            "hz": "我家里人很多，有哥哥、姐姐，还有一个弟弟。在家的时候，我们常常一起玩儿。",
+            "py": "Wǒ jiā lǐ rén hěn duō, yǒu gēge, jiějie, hái yǒu yí ge dìdi. Zài jiā de shíhou, wǒmen chángcháng yìqǐ wánr.",
+            "tr": {
+              "en": "There are many people in my family: an older brother, an older sister and a younger brother. At home we often played together.",
+              "id": "Keluarga saya banyak: ada kakak laki-laki, kakak perempuan, dan seorang adik laki-laki. Di rumah kami sering main bersama."
+            }
+          },
+          {
+            "hz": "现在，我在中国学习汉语，寂寞的时候就常常想他们。",
+            "py": "Xiànzài, wǒ zài Zhōngguó xuéxí Hànyǔ, jìmò de shíhou jiù chángcháng xiǎng tāmen.",
+            "tr": {
+              "en": "Now I'm studying Chinese in China, and when I'm lonely I often think of them.",
+              "id": "Sekarang saya belajar bahasa Mandarin di Tiongkok, dan kalau kesepian saya sering teringat mereka."
+            }
+          },
+          {
+            "hz": "因为不舒服，所以我今天起得很晚。起了床就去医院了。",
+            "py": "Yīnwèi bù shūfu, suǒyǐ wǒ jīntiān qǐ de hěn wǎn. Qǐ le chuáng jiù qù yīyuàn le.",
+            "tr": {
+              "en": "Because I felt unwell, I got up late today. As soon as I got up, I went to the hospital.",
+              "id": "Karena tidak enak badan, hari ini saya bangun siang. Begitu bangun, saya langsung ke rumah sakit."
+            }
+          },
+          {
+            "hz": "大夫给我检查了一下儿，说我感冒了。给我打了一针，还开了一些药。",
+            "py": "Dàifu gěi wǒ jiǎnchá le yíxiàr, shuō wǒ gǎnmào le. Gěi wǒ dǎ le yì zhēn, hái kāi le yìxiē yào.",
+            "tr": {
+              "en": "The doctor examined me and said I had a cold. He gave me an injection and prescribed some medicine.",
+              "id": "Dokter memeriksa saya dan bilang saya flu. Saya disuntik dan diberi obat."
+            }
+          },
+          {
+            "hz": "他说，没关系，吃了药病就好了。",
+            "py": "Tā shuō, méi guānxi, chī le yào bìng jiù hǎo le.",
+            "tr": {
+              "en": "He said it's nothing serious: once I take the medicine I'll get better.",
+              "id": "Katanya tidak apa-apa, habis minum obat pasti sembuh."
+            }
+          },
+          {
+            "hz": "老师和同学们知道我病了，都来看我。",
+            "py": "Lǎoshī hé tóngxuémen zhīdào wǒ bìng le, dōu lái kàn wǒ.",
+            "tr": {
+              "en": "When my teacher and classmates heard I was ill, they all came to see me.",
+              "id": "Guru dan teman-teman tahu saya sakit, jadi semua datang menjenguk."
+            }
+          },
+          {
+            "hz": "林老师听说我不想吃东西，还给我做了一碗面条儿。",
+            "py": "Lín lǎoshī tīngshuō wǒ bù xiǎng chī dōngxi, hái gěi wǒ zuò le yì wǎn miàntiáor.",
+            "tr": {
+              "en": "Teacher Lin heard I didn't want to eat and even made me a bowl of noodles.",
+              "id": "Guru Lin dengar saya tidak mau makan, lalu membuatkan semangkuk mi."
+            }
+          },
+          {
+            "hz": "吃了面条儿，我身上出了很多汗，老师说，出了汗可能就不发烧了。",
+            "py": "Chī le miàntiáor, wǒ shēnshang chū le hěn duō hàn, lǎoshī shuō, chū le hàn kěnéng jiù bù fāshāo le.",
+            "tr": {
+              "en": "After the noodles I sweated a lot. The teacher said that after sweating the fever might go down.",
+              "id": "Habis makan mi, badan saya berkeringat banyak. Kata guru, habis berkeringat mungkin demamnya turun."
+            }
+          },
+          {
+            "hz": "下午，我不发烧了，心情也好了。我给姐姐发了微信。",
+            "py": "Xiàwǔ, wǒ bù fāshāo le, xīnqíng yě hǎo le. Wǒ gěi jiějie fā le Wēixìn.",
+            "tr": {
+              "en": "In the afternoon my fever was gone and I felt better. I sent my sister a WeChat message.",
+              "id": "Sore harinya demam saya hilang dan suasana hati membaik. Saya kirim WeChat ke kakak perempuan."
+            }
+          },
+          {
+            "hz": "我说，我在这儿生活得很好，我们老师也很好，还有很多好朋友，和他们在一起，我感到很愉快。",
+            "py": "Wǒ shuō, wǒ zài zhèr shēnghuó de hěn hǎo, wǒmen lǎoshī yě hěn hǎo, hái yǒu hěn duō hǎo péngyou, hé tāmen zài yìqǐ, wǒ gǎndào hěn yúkuài.",
+            "tr": {
+              "en": "I said I'm living well here, our teacher is very kind, and I have many good friends. Being with them makes me happy.",
+              "id": "Saya bilang saya hidup baik di sini, guru kami juga baik, dan punya banyak teman baik. Bersama mereka saya merasa senang."
+            }
+          }
+        ]
+      }
     },
     "questions": [
       {
@@ -1125,7 +1799,8 @@
         "why": {
           "en": "Text (1): 肚子疼得厉害。",
           "id": "Teks (1): 肚子疼得厉害。"
-        }
+        },
+        "story": "课文1"
       },
       {
         "source": "p. 21 课文",
@@ -1141,7 +1816,8 @@
         "why": {
           "en": "就吃了一些鱼和牛肉 / 喝了一瓶啤酒。",
           "id": "就吃了一些鱼和牛肉 / 喝了一瓶啤酒。"
-        }
+        },
+        "story": "课文1"
       },
       {
         "source": "p. 21 课文",
@@ -1167,7 +1843,8 @@
         "why": {
           "en": "The doctor: 不是肠炎，只是消化不好。",
           "id": "Dokter: 不是肠炎，只是消化不好。"
-        }
+        },
+        "story": "课文1"
       },
       {
         "source": "p. 21 课文",
@@ -1181,7 +1858,8 @@
         "why": {
           "en": "The nurse: 一天三次，一次两片，饭后吃。",
           "id": "Perawat: 一天三次，一次两片，饭后吃。"
-        }
+        },
+        "story": "课文1"
       },
       {
         "source": "p. 50 课文",
@@ -1197,7 +1875,8 @@
         "why": {
           "en": "玛丽: 想家了。",
           "id": "玛丽: 想家了。"
-        }
+        },
+        "story": "课文2"
       },
       {
         "source": "p. 50 课文",
@@ -1223,7 +1902,8 @@
         "why": {
           "en": "罗兰: 我也常想家，但是不感到寂寞。",
           "id": "罗兰: 我也常想家，但是不感到寂寞。"
-        }
+        },
+        "story": "课文2"
       },
       {
         "source": "p. 50 课文",
@@ -1240,7 +1920,8 @@
         "why": {
           "en": "今天晚上礼堂有舞会，我们一起去跳跳舞吧。",
           "id": "今天晚上礼堂有舞会，我们一起去跳跳舞吧。"
-        }
+        },
+        "story": "课文2"
       },
       {
         "source": "p. 50 课文",
@@ -1255,7 +1936,8 @@
         "why": {
           "en": "罗兰: 吃了晚饭就去吧。",
           "id": "罗兰: 吃了晚饭就去吧。"
-        }
+        },
+        "story": "课文2"
       },
       {
         "source": "p. 65 阅读",
@@ -1281,7 +1963,8 @@
         "why": {
           "en": "The first lines of 我病了.",
           "id": "Baris pertama 我病了."
-        }
+        },
+        "story": "阅读"
       },
       {
         "source": "p. 65 阅读",
@@ -1307,7 +1990,8 @@
         "why": {
           "en": "上午同学们都去上课了，我一个人在宿舍里。",
           "id": "上午同学们都去上课了，我一个人在宿舍里。"
-        }
+        },
+        "story": "阅读"
       },
       {
         "source": "p. 65 阅读",
@@ -1329,7 +2013,8 @@
         "why": {
           "en": "因为不舒服，所以我今天起得很晚。",
           "id": "因为不舒服，所以我今天起得很晚。"
-        }
+        },
+        "story": "阅读"
       },
       {
         "source": "p. 65 阅读",
@@ -1345,7 +2030,8 @@
         "why": {
           "en": "起了床就去医院了。",
           "id": "起了床就去医院了。"
-        }
+        },
+        "story": "阅读"
       },
       {
         "source": "p. 65 阅读",
@@ -1360,7 +2046,8 @@
         "why": {
           "en": "老师和同学们知道我病了，都来看我。",
           "id": "老师和同学们知道我病了，都来看我。"
-        }
+        },
+        "story": "阅读"
       },
       {
         "source": "p. 65 阅读",
@@ -1376,7 +2063,8 @@
         "why": {
           "en": "我给姐姐发了微信。",
           "id": "我给姐姐发了微信。"
-        }
+        },
+        "story": "阅读"
       },
       {
         "source": "p. 54 填空",
@@ -1500,6 +2188,316 @@
     "note": {
       "en": "[NOTE] All exercises come from the teacher's slides: grammar, the 课文 stories, reading and fill-ins. For a fill-in, type the 汉字; punctuation does not matter.",
       "id": "[NOTE] Semua latihan berasal dari slide guru: grammar, cerita 课文, bacaan, dan isian. Untuk soal isian, ketik 汉字; tanda baca tidak dihitung."
+    },
+    "stories": {
+      "课文1": {
+        "title": "课文（一） 我吃了早饭就来了",
+        "lines": [
+          {
+            "hz": "小张住的地方离公司太远，他想租一套近点儿的房子。今天他休息，又去看房子了……",
+            "py": "",
+            "tr": {
+              "en": "",
+              "id": ""
+            }
+          },
+          {
+            "sp": "业务员",
+            "hz": "张先生，这么早！",
+            "py": "Zhāng xiānsheng, zhème zǎo!",
+            "tr": {
+              "en": "Mr Zhang, you're early!",
+              "id": "Pak Zhang, pagi sekali!"
+            }
+          },
+          {
+            "sp": "小张",
+            "hz": "是啊。我吃了早饭就来了。",
+            "py": "Shì a. Wǒ chī le zǎofàn jiù lái le.",
+            "tr": {
+              "en": "Yes. I came right after breakfast.",
+              "id": "Iya. Habis sarapan saya langsung datang."
+            }
+          },
+          {
+            "sp": "业务员",
+            "hz": "我也是。接了您的电话，八点半就到这儿了。上次您看了几套房子？",
+            "py": "Wǒ yě shì. Jiē le nín de diànhuà, bā diǎn bàn jiù dào zhèr le. Shàng cì nín kàn le jǐ tào fángzi?",
+            "tr": {
+              "en": "Me too. After your call I was here by 8:30. How many flats did you see last time?",
+              "id": "Saya juga. Habis terima telepon Bapak, jam setengah sembilan saya sudah di sini. Kemarin Bapak lihat berapa rumah?"
+            }
+          },
+          {
+            "sp": "小张",
+            "hz": "看了三套，都不太满意。有的太小，有的周围环境太乱。",
+            "py": "Kàn le sān tào, dōu bú tài mǎnyì. Yǒude tài xiǎo, yǒude zhōuwéi huánjìng tài luàn.",
+            "tr": {
+              "en": "Three, and I wasn't happy with any. Some were too small, some were in messy areas.",
+              "id": "Tiga, dan semuanya kurang memuaskan. Ada yang terlalu kecil, ada yang lingkungannya berantakan."
+            }
+          },
+          {
+            "sp": "业务员",
+            "hz": "我再带您去看几套吧。",
+            "py": "Wǒ zài dài nín qù kàn jǐ tào ba.",
+            "tr": {
+              "en": "Let me show you a few more.",
+              "id": "Mari saya antar lihat beberapa lagi."
+            }
+          },
+          {
+            "sp": "小张",
+            "hz": "这几套房子，厨房、卧室还可以，但是客厅面积小了点儿。有没有大一点儿的？",
+            "py": "Zhè jǐ tào fángzi, chúfáng, wòshì hái kěyǐ, dànshì kètīng miànjī xiǎo le diǎnr. Yǒu méiyǒu dà yìdiǎnr de?",
+            "tr": {
+              "en": "(after seeing a few) These kitchens and bedrooms are OK, but the living rooms are a bit small. Is there a bigger one?",
+              "id": "(sesudah melihat beberapa) Dapur dan kamar tidurnya lumayan, tapi ruang tamunya agak kecil. Ada yang lebih besar?"
+            }
+          },
+          {
+            "sp": "业务员",
+            "hz": "有，楼上18层有一套，客厅30多平（方）米。咱们上去看看吧……",
+            "py": "Yǒu, lóu shang shíbā céng yǒu yí tào, kètīng sānshí duō píng(fāng)mǐ. Zánmen shàngqu kànkan ba……",
+            "tr": {
+              "en": "Yes, there's one upstairs on the 18th floor with a living room of over 30 square metres. Let's go up and see.",
+              "id": "Ada, di lantai 18 ada satu, ruang tamunya lebih dari 30 meter persegi. Ayo kita naik lihat."
+            }
+          },
+          {
+            "sp": "小张",
+            "hz": "这套房子下午就没有阳光了吧？",
+            "py": "Zhè tào fángzi xiàwǔ jiù méiyǒu yángguāng le ba?",
+            "tr": {
+              "en": "This flat gets no sun in the afternoon, does it?",
+              "id": "Rumah ini sore hari tidak kena matahari, ya?"
+            }
+          },
+          {
+            "sp": "业务员",
+            "hz": "是的。",
+            "py": "Shì de.",
+            "tr": {
+              "en": "That's right.",
+              "id": "Betul."
+            }
+          },
+          {
+            "sp": "小张",
+            "hz": "我还是想要上下午都有阳光的。",
+            "py": "Wǒ háishi xiǎng yào shàng xiàwǔ dōu yǒu yángguāng de.",
+            "tr": {
+              "en": "I'd still rather have one that gets sun both morning and afternoon.",
+              "id": "Saya tetap lebih mau yang kena matahari pagi dan sore."
+            }
+          }
+        ]
+      },
+      "课文2": {
+        "title": "课文（二） 我早就下班了",
+        "lines": [
+          {
+            "hz": "小张的妻子回来了。",
+            "py": "",
+            "tr": {
+              "en": "",
+              "id": ""
+            }
+          },
+          {
+            "sp": "小张",
+            "hz": "怎么现在才下班？",
+            "py": "Zěnme xiànzài cái xiàbān?",
+            "tr": {
+              "en": "Why are you only finishing work now?",
+              "id": "Kok baru pulang kerja sekarang?"
+            }
+          },
+          {
+            "sp": "妻子",
+            "hz": "我早就下班了。路上堵车堵得厉害。我下了班就往回赶，到现在才到家。你今天看了几套房子？",
+            "py": "Wǒ zǎo jiù xiàbān le. Lùshang dǔchē dǔ de lìhai. Wǒ xià le bān jiù wǎng huí gǎn, dào xiànzài cái dào jiā. Nǐ jīntiān kàn le jǐ tào fángzi?",
+            "tr": {
+              "en": "I finished long ago. The traffic was terrible. I hurried back right after work and have only just got home. How many flats did you see today?",
+              "id": "Aku sudah lama pulang kerja. Macetnya parah. Habis kerja aku langsung bergegas pulang, baru sampai sekarang. Hari ini kamu lihat berapa rumah?"
+            }
+          },
+          {
+            "sp": "小张",
+            "hz": "看了七八套。有一套我觉得不错。等你休息的时候，再一起去看看。要是你也满意，咱们就租了。",
+            "py": "Kàn le qī-bā tào. Yǒu yí tào wǒ juéde búcuò. Děng nǐ xiūxi de shíhou, zài yìqǐ qù kànkan. Yàoshi nǐ yě mǎnyì, zánmen jiù zū le.",
+            "tr": {
+              "en": "Seven or eight. I think one is quite good. On your day off we'll go and see it together. If you like it too, we'll rent it.",
+              "id": "Tujuh delapan. Ada satu yang menurutku bagus. Nanti waktu kamu libur, kita lihat bersama. Kalau kamu juga suka, kita sewa."
+            }
+          },
+          {
+            "sp": "妻子",
+            "hz": "房租多少钱？",
+            "py": "Fángzū duōshao qián?",
+            "tr": {
+              "en": "How much is the rent?",
+              "id": "Sewanya berapa?"
+            }
+          },
+          {
+            "sp": "小张",
+            "hz": "一个月五千块。",
+            "py": "Yí ge yuè wǔqiān kuài.",
+            "tr": {
+              "en": "5,000 yuan a month.",
+              "id": "Lima ribu yuan sebulan."
+            }
+          },
+          {
+            "sp": "妻子",
+            "hz": "怎么这么贵？",
+            "py": "Zěnme zhème guì?",
+            "tr": {
+              "en": "Why so expensive?",
+              "id": "Kok mahal sekali?"
+            }
+          },
+          {
+            "sp": "小张",
+            "hz": "虽然贵了点儿，但是房子真好。",
+            "py": "Suīrán guì le diǎnr, dànshì fángzi zhēn hǎo.",
+            "tr": {
+              "en": "It's a bit expensive, but it's a really good flat.",
+              "id": "Memang agak mahal, tapi rumahnya bagus sekali."
+            }
+          },
+          {
+            "sp": "妻子",
+            "hz": "周围环境怎么样？",
+            "py": "Zhōuwéi huánjìng zěnmeyàng?",
+            "tr": {
+              "en": "What's the area like?",
+              "id": "Lingkungan sekitarnya bagaimana?"
+            }
+          },
+          {
+            "sp": "小张",
+            "hz": "环境特别好。西边是山，山下边有一条小河，河边是一个很大的公园。周围非常安静。",
+            "py": "Huánjìng tèbié hǎo. Xībian shì shān, shān xiàbian yǒu yì tiáo xiǎo hé, hé biān shì yí ge hěn dà de gōngyuán. Zhōuwéi fēicháng ānjìng.",
+            "tr": {
+              "en": "Really nice. There's a hill to the west with a little river below it, and a big park by the river. It's very quiet.",
+              "id": "Bagus sekali. Di barat ada bukit, di bawahnya ada sungai kecil, dan di tepi sungai ada taman besar. Sekitarnya sangat tenang."
+            }
+          },
+          {
+            "sp": "妻子",
+            "hz": "交通方便不方便？",
+            "py": "Jiāotōng fāngbiàn bu fāngbiàn?",
+            "tr": {
+              "en": "Is it easy to get around?",
+              "id": "Transportasinya mudah tidak?"
+            }
+          },
+          {
+            "sp": "小张",
+            "hz": "交通很方便。楼下就有公共汽车站，坐车十分钟就到公司了。汽车站旁边就是地铁站。附近有学校、医院和体育馆……",
+            "py": "Jiāotōng hěn fāngbiàn. Lóu xià jiù yǒu gōnggòng qìchē zhàn, zuò chē shí fēnzhōng jiù dào gōngsī le. Qìchē zhàn pángbiān jiù shì dìtiě zhàn. Fùjìn yǒu xuéxiào, yīyuàn hé tǐyùguǎn……",
+            "tr": {
+              "en": "Very easy. There's a bus stop right downstairs, and it's only ten minutes to the office. Next to the bus stop is the subway station. Nearby there's a school, a hospital and a gymnasium…",
+              "id": "Mudah sekali. Di bawah gedung ada halte bus, cuma sepuluh menit sampai kantor. Di sebelah halte ada stasiun kereta bawah tanah. Di dekatnya ada sekolah, rumah sakit, dan gedung olahraga…"
+            }
+          }
+        ]
+      },
+      "阅读": {
+        "title": "阅读 我在中国的家",
+        "lines": [
+          {
+            "hz": "我去年来到中国。来中国以后，认识了一个中国人，她就是我的中国妈妈。",
+            "py": "Wǒ qùnián láidào Zhōngguó. Lái Zhōngguó yǐhòu, rènshi le yí ge Zhōngguó rén, tā jiù shì wǒ de Zhōngguó māma.",
+            "tr": {
+              "en": "I came to China last year. After I arrived I got to know a Chinese woman: she is my Chinese mum.",
+              "id": "Saya datang ke Tiongkok tahun lalu. Sesudah itu saya kenal seorang wanita Tionghoa: dialah mama Tiongkok saya."
+            }
+          },
+          {
+            "hz": "她有一个十六岁的女儿，叫小丽，小丽很喜欢学英语。",
+            "py": "Tā yǒu yí ge shíliù suì de nǚ'ér, jiào Xiǎolì, Xiǎolì hěn xǐhuan xué Yīngyǔ.",
+            "tr": {
+              "en": "She has a 16-year-old daughter called Xiaoli, who loves learning English.",
+              "id": "Dia punya anak perempuan umur 16 bernama Xiaoli, yang suka sekali belajar bahasa Inggris."
+            }
+          },
+          {
+            "hz": "有一次，我去她家的时候，小丽对我说：\"爱华姐姐，你来和我一起住好吗？要是你能住在我家多好啊！我爸爸妈妈也欢迎姐姐住我家。\"",
+            "py": "Yǒu yí cì, wǒ qù tā jiā de shíhou, Xiǎolì duì wǒ shuō: \"Àihuá jiějie, nǐ lái hé wǒ yìqǐ zhù hǎo ma? Yàoshi nǐ néng zhù zài wǒ jiā duō hǎo a! Wǒ bàba māma yě huānyíng jiějie zhù wǒ jiā.\"",
+            "tr": {
+              "en": "Once when I visited, Xiaoli said: \"Aihua, will you come and live with me? It would be great if you could! My parents would welcome you too.\"",
+              "id": "Suatu kali waktu saya ke rumahnya, Xiaoli bilang: \"Kak Aihua, tinggal bersamaku, ya? Senang sekali kalau kakak bisa tinggal di rumahku! Papa mamaku juga senang.\""
+            }
+          },
+          {
+            "hz": "听了小丽的话，我心里很高兴。",
+            "py": "Tīng le Xiǎolì de huà, wǒ xīn lǐ hěn gāoxìng.",
+            "tr": {
+              "en": "Hearing this made me very happy.",
+              "id": "Mendengar itu saya senang sekali."
+            }
+          },
+          {
+            "hz": "我想，来北京以后，我还没有中国朋友。小丽的爸爸妈妈就像我的爸爸妈妈一样。",
+            "py": "Wǒ xiǎng, lái Běijīng yǐhòu, wǒ hái méiyǒu Zhōngguó péngyou. Xiǎolì de bàba māma jiù xiàng wǒ de bàba māma yíyàng.",
+            "tr": {
+              "en": "I thought: since coming to Beijing I haven't had any Chinese friends, and Xiaoli's parents are like my own parents.",
+              "id": "Saya berpikir: sejak di Beijing saya belum punya teman Tionghoa, dan orang tua Xiaoli seperti orang tua saya sendiri."
+            }
+          },
+          {
+            "hz": "我想学好汉语，但是练习会话的时间很少，住小丽家可以教小丽英语，他们也可以帮助我学习汉语。",
+            "py": "Wǒ xiǎng xuéhǎo Hànyǔ, dànshì liànxí huìhuà de shíjiān hěn shǎo, zhù Xiǎolì jiā kěyǐ jiāo Xiǎolì Yīngyǔ, tāmen yě kěyǐ bāngzhù wǒ xuéxí Hànyǔ.",
+            "tr": {
+              "en": "I want to learn Chinese well, but I have little time to practise speaking. Living with Xiaoli, I can teach her English and they can help me with Chinese.",
+              "id": "Saya ingin pintar bahasa Mandarin, tapi jarang latihan bicara. Tinggal di rumah Xiaoli, saya bisa mengajarinya bahasa Inggris dan mereka bisa membantu saya belajar bahasa Mandarin."
+            }
+          },
+          {
+            "hz": "三天后，我就去他们家住了。开始的时候，他们对我很客气，我对他们也非常客气。时间长了，我们就像一家人了。",
+            "py": "Sān tiān hòu, wǒ jiù qù tāmen jiā zhù le. Kāishǐ de shíhou, tāmen duì wǒ hěn kèqi, wǒ duì tāmen yě fēicháng kèqi. Shíjiān cháng le, wǒmen jiù xiàng yì jiā rén le.",
+            "tr": {
+              "en": "Three days later I moved in. At first we were all very polite to each other. Over time we became like one family.",
+              "id": "Tiga hari kemudian saya pindah ke sana. Awalnya kami saling sungkan. Lama-lama kami seperti satu keluarga."
+            }
+          },
+          {
+            "hz": "我觉得，这儿就是我的家。晚上我回家以后，小丽给我讲一些学校里有意思的人和事，她也想知道西方国家的情况。",
+            "py": "Wǒ juéde, zhèr jiù shì wǒ de jiā. Wǎnshang wǒ huí jiā yǐhòu, Xiǎolì gěi wǒ jiǎng yìxiē xuéxiào lǐ yǒu yìsi de rén hé shì, tā yě xiǎng zhīdào xīfāng guójiā de qíngkuàng.",
+            "tr": {
+              "en": "I feel this is my home. In the evening Xiaoli tells me about interesting people and things at school, and she wants to know about Western countries.",
+              "id": "Saya merasa inilah rumah saya. Malam hari Xiaoli bercerita tentang orang dan hal menarik di sekolah, dan dia juga ingin tahu tentang negara Barat."
+            }
+          },
+          {
+            "hz": "我给他们介绍我们国家的文化。我要是有问题就问他们，他们也会认真地给我解答。每天我们都过得很愉快。",
+            "py": "Wǒ gěi tāmen jièshào wǒmen guójiā de wénhuà. Wǒ yàoshi yǒu wèntí jiù wèn tāmen, tāmen yě huì rènzhēn de gěi wǒ jiědá. Měi tiān wǒmen dōu guò de hěn yúkuài.",
+            "tr": {
+              "en": "I tell them about my country's culture. If I have a question I ask them, and they answer carefully. Every day is happy.",
+              "id": "Saya menceritakan budaya negara saya. Kalau ada pertanyaan saya tanya mereka, dan mereka menjawab dengan sungguh-sungguh. Setiap hari kami senang."
+            }
+          },
+          {
+            "hz": "在我的中国家里，我能练习说汉语，也能了解中国的文化。",
+            "py": "Zài wǒ de Zhōngguó jiā lǐ, wǒ néng liànxí shuō Hànyǔ, yě néng liǎojiě Zhōngguó de wénhuà.",
+            "tr": {
+              "en": "In my Chinese home I can practise speaking Chinese and learn about Chinese culture.",
+              "id": "Di rumah Tiongkok saya, saya bisa latihan bahasa Mandarin dan mengenal budaya Tiongkok."
+            }
+          },
+          {
+            "hz": "一天，我爸爸妈妈来电话，问我想不想家，我说不想家。我告诉他们，现在我在中国也有了一个家。他们听了很高兴，还说，他们也想来中国，看看我在中国的家。",
+            "py": "Yì tiān, wǒ bàba māma lái diànhuà, wèn wǒ xiǎng bu xiǎng jiā, wǒ shuō bù xiǎng jiā. Wǒ gàosu tāmen, xiànzài wǒ zài Zhōngguó yě yǒu le yí ge jiā. Tāmen tīng le hěn gāoxìng, hái shuō, tāmen yě xiǎng lái Zhōngguó, kànkan wǒ zài Zhōngguó de jiā.",
+            "tr": {
+              "en": "One day my parents called and asked if I was homesick. I said no, and told them I now have a home in China too. They were very happy and said they'd like to come and see it.",
+              "id": "Suatu hari orang tua saya menelepon dan bertanya apakah saya rindu rumah. Saya bilang tidak, karena sekarang saya juga punya rumah di Tiongkok. Mereka senang sekali dan bilang ingin datang melihatnya."
+            }
+          }
+        ]
+      }
     },
     "questions": [
       {
@@ -1972,7 +2970,8 @@
         "why": {
           "en": "看了三套，都不太满意。",
           "id": "看了三套，都不太满意。"
-        }
+        },
+        "story": "课文1"
       },
       {
         "source": "p. 22 课文",
@@ -1998,7 +2997,8 @@
         "why": {
           "en": "有的太小，有的周围环境太乱。",
           "id": "有的太小，有的周围环境太乱。"
-        }
+        },
+        "story": "课文1"
       },
       {
         "source": "p. 22 课文",
@@ -2013,7 +3013,8 @@
         "why": {
           "en": "我还是想要上下午都有阳光的。",
           "id": "我还是想要上下午都有阳光的。"
-        }
+        },
+        "story": "课文1"
       },
       {
         "source": "p. 22 课文",
@@ -2039,7 +3040,8 @@
         "why": {
           "en": "有没有大一点儿的？ / 上下午都有阳光的。",
           "id": "有没有大一点儿的？ / 上下午都有阳光的。"
-        }
+        },
+        "story": "课文1"
       },
       {
         "source": "p. 43 课文",
@@ -2065,7 +3067,8 @@
         "why": {
           "en": "我早就下班了。路上堵车堵得厉害。",
           "id": "我早就下班了。路上堵车堵得厉害。"
-        }
+        },
+        "story": "课文2"
       },
       {
         "source": "p. 43 课文",
@@ -2081,7 +3084,8 @@
         "why": {
           "en": "看了七八套。",
           "id": "看了七八套。"
-        }
+        },
+        "story": "课文2"
       },
       {
         "source": "p. 43 课文",
@@ -2107,7 +3111,8 @@
         "why": {
           "en": "环境特别好……周围非常安静。",
           "id": "环境特别好……周围非常安静。"
-        }
+        },
+        "story": "课文2"
       },
       {
         "source": "p. 44 句子排序",
@@ -2466,7 +3471,8 @@
         "why": {
           "en": "小丽 is sixteen (十六岁).",
           "id": "小丽 berumur enam belas (十六岁)."
-        }
+        },
+        "story": "阅读"
       },
       {
         "source": "p. 77 阅读",
@@ -2488,7 +3494,8 @@
         "why": {
           "en": "They only want to come (他们也想来中国).",
           "id": "Mereka baru ingin datang (他们也想来中国)."
-        }
+        },
+        "story": "阅读"
       },
       {
         "source": "p. 77 阅读",
@@ -2510,7 +3517,8 @@
         "why": {
           "en": "She came to China last year to study Chinese.",
           "id": "Dia datang ke Tiongkok tahun lalu untuk belajar bahasa Mandarin."
-        }
+        },
+        "story": "阅读"
       }
     ]
   },
@@ -2522,6 +3530,305 @@
     "note": {
       "en": "[NOTE] All exercises come from the teacher's slides: grammar, the 课文 stories, reading and fill-ins. For a fill-in, type the 汉字; punctuation does not matter.",
       "id": "[NOTE] Semua latihan berasal dari slide guru: grammar, cerita 课文, bacaan, dan isian. Untuk soal isian, ketik 汉字; tanda baca tidak dihitung."
+    },
+    "stories": {
+      "课文1": {
+        "title": "课文（一） 我都做对了",
+        "lines": [
+          {
+            "hz": "考完试以后……",
+            "py": "",
+            "tr": {
+              "en": "",
+              "id": ""
+            }
+          },
+          {
+            "sp": "玛丽",
+            "hz": "你今天考得怎么样？",
+            "py": "Nǐ jīntiān kǎo de zěnmeyàng?",
+            "tr": {
+              "en": "How did your exam go today?",
+              "id": "Ujianmu hari ini bagaimana?"
+            }
+          },
+          {
+            "sp": "罗兰",
+            "hz": "这次没考好。题太多了，我没有做完。你做完了没有？",
+            "py": "Zhè cì méi kǎo hǎo. Tí tài duō le, wǒ méiyǒu zuò wán. Nǐ zuò wán le méiyǒu?",
+            "tr": {
+              "en": "Not well this time. There were too many questions and I didn't finish. Did you?",
+              "id": "Kali ini kurang bagus. Soalnya terlalu banyak, aku tidak selesai. Kamu selesai?"
+            }
+          },
+          {
+            "sp": "玛丽",
+            "hz": "我都做完了，但是没都做对，做错了两道题，所以成绩不会太好。",
+            "py": "Wǒ dōu zuò wán le, dànshì méi dōu zuò duì, zuò cuò le liǎng dào tí, suǒyǐ chéngjì bú huì tài hǎo.",
+            "tr": {
+              "en": "I finished them all, but didn't get them all right. I got two wrong, so my score won't be great.",
+              "id": "Aku selesai semua, tapi tidak semua benar. Dua soal salah, jadi nilaiku tidak akan terlalu bagus."
+            }
+          },
+          {
+            "sp": "罗兰",
+            "hz": "语法题不太难，我觉得都做对了。听力比较难，很多句子我没听懂。",
+            "py": "Yǔfǎ tí bú tài nán, wǒ juéde dōu zuò duì le. Tīnglì bǐjiào nán, hěn duō jùzi wǒ méi tīng dǒng.",
+            "tr": {
+              "en": "The grammar wasn't too hard; I think I got it all right. The listening was harder; I didn't understand many sentences.",
+              "id": "Soal tata bahasa tidak terlalu sulit, kurasa benar semua. Mendengarnya agak sulit, banyak kalimat yang tidak kupahami."
+            }
+          },
+          {
+            "sp": "玛丽",
+            "hz": "我也不知道做对了没有。我的词典呢？",
+            "py": "Wǒ yě bù zhīdào zuò duì le méiyǒu. Wǒ de cídiǎn ne?",
+            "tr": {
+              "en": "I don't know if I got them right either. Where's my dictionary?",
+              "id": "Aku juga tidak tahu benar atau tidak. Kamusku mana?"
+            }
+          },
+          {
+            "sp": "罗兰",
+            "hz": "我没看见你的词典。你找词典干什么？",
+            "py": "Wǒ méi kànjiàn nǐ de cídiǎn. Nǐ zhǎo cídiǎn gàn shénme?",
+            "tr": {
+              "en": "I haven't seen it. What do you want it for?",
+              "id": "Aku tidak lihat kamusmu. Kamu cari kamus untuk apa?"
+            }
+          },
+          {
+            "sp": "玛丽",
+            "hz": "我查一个词，看看写对了没有。……糟糕，写错了，是这个\"得\",我写成这个\"的\"了。",
+            "py": "Wǒ chá yí ge cí, kànkan xiě duì le méiyǒu. …… Zāogāo, xiě cuò le, shì zhège \"de\", wǒ xiě chéng zhège \"de\" le.",
+            "tr": {
+              "en": "I want to look up a word and see if I wrote it right. …Oh no, I got it wrong: it's this 得, and I wrote 的.",
+              "id": "Aku mau cek satu kata, benar atau tidak tulisanku. …Gawat, salah: seharusnya 得, aku tulis 的."
+            }
+          },
+          {
+            "sp": "罗兰",
+            "hz": "别查了，休息休息吧。快打开电脑，看看电视剧吧。",
+            "py": "Bié chá le, xiūxi xiūxi ba. Kuài dǎkāi diànnǎo, kànkan diànshìjù ba.",
+            "tr": {
+              "en": "Stop checking and take a rest. Turn on the computer and watch a TV series.",
+              "id": "Sudah, jangan dicek lagi, istirahat saja. Nyalakan komputer, nonton drama, yuk."
+            }
+          },
+          {
+            "sp": "玛丽",
+            "hz": "我的衣服还没有洗完呢，还得给我妹妹回信。",
+            "py": "Wǒ de yīfu hái méiyǒu xǐ wán ne, hái děi gěi wǒ mèimei huíxìn.",
+            "tr": {
+              "en": "I haven't finished washing my clothes, and I still have to reply to my sister.",
+              "id": "Bajuku belum selesai dicuci, dan aku masih harus membalas surat adikku."
+            }
+          },
+          {
+            "sp": "罗兰",
+            "hz": "看完电视剧再洗吧。",
+            "py": "Kàn wán diànshìjù zài xǐ ba.",
+            "tr": {
+              "en": "Wash them after the series.",
+              "id": "Cuci nanti saja sesudah nonton."
+            }
+          }
+        ]
+      },
+      "课文2": {
+        "title": "课文（二） 看完电影再做作业",
+        "lines": [
+          {
+            "hz": "吃完晚饭，我和玛丽回到宿舍。玛丽说，田芳借给她一本书，书里都是小故事，很有意思。",
+            "py": "Chī wán wǎnfàn, wǒ hé Mǎlì huídào sùshè. Mǎlì shuō, Tián Fāng jiè gěi tā yì běn shū, shū lǐ dōu shì xiǎo gùshi, hěn yǒu yìsi.",
+            "tr": {
+              "en": "After dinner Mary and I went back to the dorm. Mary said Tian Fang had lent her a book of short stories, very interesting.",
+              "id": "Habis makan malam aku dan Mary kembali ke asrama. Kata Mary, Tian Fang meminjaminya buku kumpulan cerita pendek yang menarik."
+            }
+          },
+          {
+            "hz": "我问她：\"你看完了没有？\"她说：\"还没看完呢，才看了三十页。\"",
+            "py": "Wǒ wèn tā: \"Nǐ kàn wán le méiyǒu?\" Tā shuō: \"Hái méi kàn wán ne, cái kàn le sānshí yè.\"",
+            "tr": {
+              "en": "I asked, \"Have you finished it?\" She said, \"Not yet, I've only read thirty pages.\"",
+              "id": "Aku tanya, \"Sudah selesai dibaca?\" Katanya, \"Belum, baru tiga puluh halaman.\""
+            }
+          },
+          {
+            "hz": "我问玛丽：\"都看懂了吗？\"她回答：\"有的看懂了，有的没看懂。\"",
+            "py": "Wǒ wèn Mǎlì: \"Dōu kàn dǒng le ma?\" Tā huídá: \"Yǒude kàn dǒng le, yǒude méi kàn dǒng.\"",
+            "tr": {
+              "en": "I asked, \"Do you understand it all?\" She answered, \"Some yes, some no.\"",
+              "id": "Aku tanya, \"Paham semua?\" Jawabnya, \"Ada yang paham, ada yang tidak.\""
+            }
+          },
+          {
+            "hz": "\"可以让我看看吗？\"\"当然可以。\"",
+            "py": "\"Kěyǐ ràng wǒ kànkan ma?\" \"Dāngrán kěyǐ.\"",
+            "tr": {
+              "en": "\"Can I have a look?\" \"Of course.\"",
+              "id": "\"Boleh aku lihat?\" \"Tentu boleh.\""
+            }
+          },
+          {
+            "hz": "我看了两个故事，也觉得很有意思。看到有意思的地方，就想笑。我对玛丽说：\"咱们可以用这些故事练习会话。\"",
+            "py": "Wǒ kàn le liǎng ge gùshi, yě juéde hěn yǒu yìsi. Kàn dào yǒu yìsi de dìfang, jiù xiǎng xiào. Wǒ duì Mǎlì shuō: \"Zánmen kěyǐ yòng zhèxiē gùshi liànxí huìhuà.\"",
+            "tr": {
+              "en": "I read two stories and found them interesting too. At the funny parts I wanted to laugh. I said to Mary: \"We can use these stories to practise conversation.\"",
+              "id": "Aku baca dua cerita, memang menarik. Di bagian lucu aku ingin tertawa. Aku bilang ke Mary: \"Kita bisa pakai cerita ini untuk latihan percakapan.\""
+            }
+          },
+          {
+            "hz": "玛丽说：\"怎么练习？\"",
+            "py": "Mǎlì shuō: \"Zěnme liànxí?\"",
+            "tr": {
+              "en": "Mary said: \"How?\"",
+              "id": "Mary bilang: \"Latihannya bagaimana?\""
+            }
+          },
+          {
+            "hz": "\"我念完一个故事，问你几个问题，看你能不能答对;你念完一个故事，也问我几个问题，看我能不能答对。\"",
+            "py": "\"Wǒ niàn wán yí ge gùshi, wèn nǐ jǐ ge wèntí, kàn nǐ néng bu néng dá duì; nǐ niàn wán yí ge gùshi, yě wèn wǒ jǐ ge wèntí, kàn wǒ néng bu néng dá duì.\"",
+            "tr": {
+              "en": "\"I read a story and ask you some questions to see if you can answer; then you read one and ask me.\"",
+              "id": "\"Aku baca satu cerita lalu tanya beberapa soal, lihat kamu bisa jawab tidak; lalu kamu baca satu cerita dan tanya aku.\""
+            }
+          },
+          {
+            "hz": "玛丽说：\"这是个好办法。\"",
+            "py": "Mǎlì shuō: \"Zhè shì ge hǎo bànfǎ.\"",
+            "tr": {
+              "en": "Mary said: \"That's a good idea.\"",
+              "id": "Mary bilang: \"Ide bagus.\""
+            }
+          },
+          {
+            "hz": "我念了一个故事，玛丽听懂了。问了她五个问题，她都答对了。",
+            "py": "Wǒ niàn le yí ge gùshi, Mǎlì tīng dǒng le. Wèn le tā wǔ ge wèntí, tā dōu dá duì le.",
+            "tr": {
+              "en": "I read a story and Mary understood it. I asked her five questions and she got them all right.",
+              "id": "Aku baca satu cerita dan Mary paham. Aku tanya lima soal, semuanya dia jawab benar."
+            }
+          },
+          {
+            "hz": "她念了一个故事，合上书，问我听懂了没有。我说，有的地方没听懂。她打开书，又念了一遍，我才听懂。她也问了五个问题，我答对了四个，答错了一个。",
+            "py": "Tā niàn le yí ge gùshi, héshang shū, wèn wǒ tīng dǒng le méiyǒu. Wǒ shuō, yǒude dìfang méi tīng dǒng. Tā dǎkāi shū, yòu niàn le yí biàn, wǒ cái tīng dǒng. Tā yě wèn le wǔ ge wèntí, wǒ dá duì le sì ge, dá cuò le yí ge.",
+            "tr": {
+              "en": "She read a story, closed the book and asked if I'd understood. I said some parts not. She opened the book and read it again; only then did I understand. She asked five questions too: I got four right and one wrong.",
+              "id": "Dia baca satu cerita, menutup buku, lalu tanya aku paham atau tidak. Kubilang ada bagian yang tidak. Dia buka buku dan baca sekali lagi, baru aku paham. Dia juga tanya lima soal: empat benar, satu salah."
+            }
+          },
+          {
+            "hz": "我们还没有练习完，就听见安娜在门外叫我们。我开开门问她：\"什么事？\"",
+            "py": "Wǒmen hái méiyǒu liànxí wán, jiù tīngjiàn Ānnà zài mén wài jiào wǒmen. Wǒ kāikai mén wèn tā: \"Shénme shì?\"",
+            "tr": {
+              "en": "Before we'd finished, we heard Anna calling us outside the door. I opened it and asked, \"What's up?\"",
+              "id": "Belum selesai latihan, kami mendengar Anna memanggil dari luar pintu. Aku buka pintu dan tanya, \"Ada apa?\""
+            }
+          },
+          {
+            "hz": "\"晚上礼堂有电影，你们看吗？\"\"什么电影？\"",
+            "py": "\"Wǎnshang lǐtáng yǒu diànyǐng, nǐmen kàn ma?\" \"Shénme diànyǐng?\"",
+            "tr": {
+              "en": "\"There's a film in the auditorium tonight. Are you going?\" \"What film?\"",
+              "id": "\"Malam ini ada film di aula, kalian nonton?\" \"Film apa?\""
+            }
+          },
+          {
+            "hz": "\"是个新电影，我不知道叫什么名字。田芳说，这个电影非常好。\"",
+            "py": "\"Shì ge xīn diànyǐng, wǒ bù zhīdào jiào shénme míngzi. Tián Fāng shuō, zhège diànyǐng fēicháng hǎo.\"",
+            "tr": {
+              "en": "\"A new one, I don't know its name. Tian Fang says it's very good.\"",
+              "id": "\"Film baru, aku tidak tahu judulnya. Kata Tian Fang filmnya bagus sekali.\""
+            }
+          },
+          {
+            "hz": "\"想看。但是我今天的作业还没有做完呢，课文也读得不太熟。\"",
+            "py": "\"Xiǎng kàn. Dànshì wǒ jīntiān de zuòyè hái méiyǒu zuò wán ne, kèwén yě dú de bú tài shú.\"",
+            "tr": {
+              "en": "\"I'd like to. But I haven't finished today's homework, and I can't read the text smoothly yet.\"",
+              "id": "\"Mau. Tapi PR-ku hari ini belum selesai, dan teks pelajaran juga belum lancar kubaca.\""
+            }
+          },
+          {
+            "hz": "安娜说：\"我也没做完呢，看完电影再做吧。\"",
+            "py": "Ānnà shuō: \"Wǒ yě méi zuò wán ne, kàn wán diànyǐng zài zuò ba.\"",
+            "tr": {
+              "en": "Anna said: \"I haven't finished either. Let's do it after the film.\"",
+              "id": "Anna bilang: \"Aku juga belum selesai, kerjakan sesudah nonton saja.\""
+            }
+          },
+          {
+            "hz": "说完，我们三个就去礼堂看电影了。我们看到九点才看完。九点半我才开始做作业。做完作业已经十点半了。",
+            "py": "Shuō wán, wǒmen sān ge jiù qù lǐtáng kàn diànyǐng le. Wǒmen kàn dào jiǔ diǎn cái kàn wán. Jiǔ diǎn bàn wǒ cái kāishǐ zuò zuòyè. Zuò wán zuòyè yǐjīng shí diǎn bàn le.",
+            "tr": {
+              "en": "With that, the three of us went to the auditorium. The film didn't finish until nine. I only started my homework at half past nine, and it was 10:30 when I finished.",
+              "id": "Lalu kami bertiga ke aula nonton film. Filmnya baru selesai jam sembilan. Jam setengah sepuluh aku baru mulai PR, dan selesai jam setengah sebelas."
+            }
+          }
+        ]
+      },
+      "阅读": {
+        "title": "阅读 玛丽病了",
+        "lines": [
+          {
+            "hz": "昨天下午，我和玛丽一起去超市买东西。回到学校的时候，玛丽觉得不舒服，我就陪她一起去医院看病。",
+            "py": "Zuótiān xiàwǔ, wǒ hé Mǎlì yìqǐ qù chāoshì mǎi dōngxi. Huí dào xuéxiào de shíhou, Mǎlì juéde bù shūfu, wǒ jiù péi tā yìqǐ qù yīyuàn kàn bìng.",
+            "tr": {
+              "en": "Yesterday afternoon Mary and I went shopping at the supermarket. When we got back to school, Mary felt unwell, so I took her to the hospital.",
+              "id": "Kemarin sore aku dan Mary belanja ke supermarket. Waktu kembali ke sekolah, Mary merasa tidak enak badan, jadi aku menemaninya berobat ke rumah sakit."
+            }
+          },
+          {
+            "hz": "到了医院，大夫问她：\"你怎么了？\"玛丽说：\"我头疼，很不舒服。\"",
+            "py": "Dào le yīyuàn, dàifu wèn tā: \"Nǐ zěnme le?\" Mǎlì shuō: \"Wǒ tóu téng, hěn bù shūfu.\"",
+            "tr": {
+              "en": "At the hospital the doctor asked, \"What's wrong?\" Mary said, \"I have a headache and feel awful.\"",
+              "id": "Di rumah sakit dokter bertanya, \"Kenapa?\" Mary bilang, \"Kepala saya sakit, tidak enak sekali.\""
+            }
+          },
+          {
+            "hz": "大夫给她检查了检查说：\"你感冒了。烧得很厉害，三十九度五。给你打一针吧。\"",
+            "py": "Dàifu gěi tā jiǎnchá le jiǎnchá shuō: \"Nǐ gǎnmào le. Shāo de hěn lìhai, sānshíjiǔ dù wǔ. Gěi nǐ dǎ yì zhēn ba.\"",
+            "tr": {
+              "en": "The doctor examined her and said, \"You have a cold. Your fever is high, 39.5. Let me give you an injection.\"",
+              "id": "Dokter memeriksanya dan bilang, \"Kamu flu. Demamnya tinggi, 39,5 derajat. Saya suntik, ya.\""
+            }
+          },
+          {
+            "hz": "玛丽说：\"不！我不打针！\"大夫说：\"打了针就不发烧了。\"玛丽说：\"不！你给我开点儿药吧。我可以吃药，但我不想打针。\"于是，大夫给她开了一些药。晚上，玛丽吃了药就睡了。",
+            "py": "Mǎlì shuō: \"Bù! Wǒ bù dǎzhēn!\" Dàifu shuō: \"Dǎ le zhēn jiù bù fāshāo le.\" Mǎlì shuō: \"Bù! Nǐ gěi wǒ kāi diǎnr yào ba. Wǒ kěyǐ chī yào, dàn wǒ bù xiǎng dǎzhēn.\" Yúshì, dàifu gěi tā kāi le yìxiē yào. Wǎnshang, Mǎlì chī le yào jiù shuì le.",
+            "tr": {
+              "en": "Mary said, \"No! No injection!\" The doctor said, \"After the injection the fever will go.\" Mary said, \"No! Just give me some medicine. I'll take pills, but I don't want an injection.\" So the doctor prescribed some. That night Mary took it and went to sleep.",
+              "id": "Mary bilang, \"Tidak! Saya tidak mau disuntik!\" Dokter bilang, \"Habis disuntik demamnya turun.\" Mary bilang, \"Tidak! Beri saya obat saja. Saya mau minum obat, tapi tidak mau disuntik.\" Jadi dokter memberinya obat. Malamnya Mary minum obat lalu tidur."
+            }
+          },
+          {
+            "hz": "今天早上，她不发烧了。吃完早饭，她要去教室上课，我说：\"你在宿舍休息吧，我给你请假。\"她说：\"我的感冒已经好了，可以上课了。\"",
+            "py": "Jīntiān zǎoshang, tā bù fāshāo le. Chī wán zǎofàn, tā yào qù jiàoshì shàngkè, wǒ shuō: \"Nǐ zài sùshè xiūxi ba, wǒ gěi nǐ qǐngjià.\" Tā shuō: \"Wǒ de gǎnmào yǐjīng hǎo le, kěyǐ shàngkè le.\"",
+            "tr": {
+              "en": "This morning her fever was gone. After breakfast she wanted to go to class. I said, \"Rest in the dorm; I'll ask for leave for you.\" She said, \"My cold is better; I can go to class.\"",
+              "id": "Pagi ini demamnya sudah turun. Habis sarapan dia mau masuk kelas. Aku bilang, \"Istirahat di asrama saja, aku mintakan izin.\" Katanya, \"Flu-ku sudah sembuh, bisa masuk kelas.\""
+            }
+          },
+          {
+            "hz": "到了教室，老师对玛丽说：\"玛丽，要是不舒服就回宿舍休息吧。\"",
+            "py": "Dào le jiàoshì, lǎoshī duì Mǎlì shuō: \"Mǎlì, yàoshi bù shūfu jiù huí sùshè xiūxi ba.\"",
+            "tr": {
+              "en": "In class the teacher said to Mary, \"Mary, if you feel unwell, go back to the dorm and rest.\"",
+              "id": "Di kelas guru bilang ke Mary, \"Mary, kalau tidak enak badan, pulang istirahat ke asrama saja.\""
+            }
+          },
+          {
+            "hz": "上午，玛丽又有点儿发烧，下了第二节课她就回宿舍了。我对她说：\"你最好再去医院看看。\"",
+            "py": "Shàngwǔ, Mǎlì yòu yǒudiǎnr fāshāo, xià le dì-èr jié kè tā jiù huí sùshè le. Wǒ duì tā shuō: \"Nǐ zuìhǎo zài qù yīyuàn kànkan.\"",
+            "tr": {
+              "en": "In the morning Mary had a slight fever again, and after the second class she went back to the dorm. I told her, \"You'd better go to the hospital again.\"",
+              "id": "Siangnya Mary agak demam lagi, dan habis jam pelajaran kedua dia pulang ke asrama. Aku bilang, \"Sebaiknya kamu periksa lagi ke rumah sakit.\""
+            }
+          }
+        ]
+      }
     },
     "questions": [
       {
@@ -3052,7 +4359,8 @@
         "why": {
           "en": "罗兰: 这次没考好。",
           "id": "罗兰: 这次没考好。"
-        }
+        },
+        "story": "课文1"
       },
       {
         "source": "p. 22 课文",
@@ -3078,7 +4386,8 @@
         "why": {
           "en": "我都做完了，但是没都做对，做错了两道题。",
           "id": "我都做完了，但是没都做对，做错了两道题。"
-        }
+        },
+        "story": "课文1"
       },
       {
         "source": "p. 22 课文",
@@ -3093,7 +4402,8 @@
         "why": {
           "en": "是这个\"得\",我写成这个\"的\"了。",
           "id": "是这个\"得\",我写成这个\"的\"了。"
-        }
+        },
+        "story": "课文1"
       },
       {
         "source": "p. 22 课文",
@@ -3119,7 +4429,8 @@
         "why": {
           "en": "我的衣服还没有洗完呢，还得给我妹妹回信。",
           "id": "我的衣服还没有洗完呢，还得给我妹妹回信。"
-        }
+        },
+        "story": "课文1"
       },
       {
         "source": "p. 23 填空",
@@ -3206,7 +4517,8 @@
         "why": {
           "en": "还没看完呢，才看了三十页。",
           "id": "还没看完呢，才看了三十页。"
-        }
+        },
+        "story": "课文2"
       },
       {
         "source": "p. 42 课文",
@@ -3232,7 +4544,8 @@
         "why": {
           "en": "我念完一个故事，问你几个问题，看你能不能答对……",
           "id": "我念完一个故事，问你几个问题，看你能不能答对……"
-        }
+        },
+        "story": "课文2"
       },
       {
         "source": "p. 42 课文",
@@ -3248,7 +4561,8 @@
         "why": {
           "en": "晚上礼堂有电影，你们看吗？",
           "id": "晚上礼堂有电影，你们看吗？"
-        }
+        },
+        "story": "课文2"
       },
       {
         "source": "p. 42 课文",
@@ -3262,7 +4576,8 @@
         "why": {
           "en": "看到九点才看完……做完作业已经十点半了。",
           "id": "看到九点才看完……做完作业已经十点半了。"
-        }
+        },
+        "story": "课文2"
       },
       {
         "source": "p. 46 填空",
@@ -3358,7 +4673,8 @@
         "why": {
           "en": "我头疼，很不舒服 / 你感冒了。",
           "id": "我头疼，很不舒服 / 你感冒了。"
-        }
+        },
+        "story": "阅读"
       },
       {
         "source": "p. 81 阅读",
@@ -3380,7 +4696,8 @@
         "why": {
           "en": "我可以吃药，但我不想打针。",
           "id": "我可以吃药，但我不想打针。"
-        }
+        },
+        "story": "阅读"
       },
       {
         "source": "p. 81 阅读",
@@ -3402,7 +4719,8 @@
         "why": {
           "en": "上午，玛丽又有点儿发烧。",
           "id": "上午，玛丽又有点儿发烧。"
-        }
+        },
+        "story": "阅读"
       },
       {
         "source": "p. 81 阅读",
@@ -3417,7 +4735,8 @@
         "why": {
           "en": "The teacher's answer: 会，因为她又发烧了。",
           "id": "Jawaban guru: 会，因为她又发烧了。"
-        }
+        },
+        "story": "阅读"
       }
     ]
   },
@@ -3429,6 +4748,312 @@
     "note": {
       "en": "[NOTE] All exercises come from the teacher's slides: grammar, the 课文 stories, reading and fill-ins. For a fill-in, type the 汉字; punctuation does not matter.",
       "id": "[NOTE] Semua latihan berasal dari slide guru: grammar, cerita 课文, bacaan, dan isian. Untuk soal isian, ketik 汉字; tanda baca tidak dihitung."
+    },
+    "stories": {
+      "课文1": {
+        "title": "课文（一） 我来了两个多月了",
+        "lines": [
+          {
+            "sp": "A",
+            "hz": "你来中国多久了？习惯这里的生活吗？",
+            "py": "Nǐ lái Zhōngguó duō jiǔ le? Xíguàn zhèlǐ de shēnghuó ma?",
+            "tr": {
+              "en": "How long have you been in China? Are you used to life here?",
+              "id": "Sudah berapa lama di Tiongkok? Sudah terbiasa hidup di sini?"
+            }
+          },
+          {
+            "sp": "B",
+            "hz": "我来了两个多月了，对这儿的生活差不多已经习惯了，不过有的地方还不太习惯。",
+            "py": "Wǒ lái le liǎng ge duō yuè le, duì zhèr de shēnghuó chàbuduō yǐjīng xíguàn le, búguò yǒude dìfang hái bú tài xíguàn.",
+            "tr": {
+              "en": "Over two months. I'm mostly used to life here, but some things I'm not used to yet.",
+              "id": "Sudah lebih dari dua bulan. Hampir terbiasa, tapi ada hal yang belum."
+            }
+          },
+          {
+            "sp": "A",
+            "hz": "哪些地方不太习惯呢？",
+            "py": "Nǎxiē dìfang bú tài xíguàn ne?",
+            "tr": {
+              "en": "What aren't you used to?",
+              "id": "Apa yang belum terbiasa?"
+            }
+          },
+          {
+            "sp": "B",
+            "hz": "总觉得这儿的气候特别干燥，宿舍周围不太干净，也不太安静，食堂里的菜太油腻。",
+            "py": "Zǒng juéde zhèr de qìhòu tèbié gānzào, sùshè zhōuwéi bú tài gānjìng, yě bú tài ānjìng, shítáng lǐ de cài tài yóunì.",
+            "tr": {
+              "en": "The climate always feels very dry, the area around the dorm isn't very clean or quiet, and the canteen food is too greasy.",
+              "id": "Iklimnya terasa sangat kering, sekitar asrama kurang bersih dan kurang tenang, dan masakan kantin terlalu berminyak."
+            }
+          },
+          {
+            "sp": "A",
+            "hz": "你每天早上几点起床？会吃早饭吗？",
+            "py": "Nǐ měi tiān zǎoshang jǐ diǎn qǐchuáng? Huì chī zǎofàn ma?",
+            "tr": {
+              "en": "What time do you get up? Do you have breakfast?",
+              "id": "Setiap pagi bangun jam berapa? Sarapan tidak?"
+            }
+          },
+          {
+            "sp": "B",
+            "hz": "我每天早上七点多才起床，所以常常没时间吃早饭，喝杯牛奶就去上课了。课间休息的时候，我可以去喝杯咖啡，吃一块点心。",
+            "py": "Wǒ měi tiān zǎoshang qī diǎn duō cái qǐchuáng, suǒyǐ chángcháng méi shíjiān chī zǎofàn, hē bēi niúnǎi jiù qù shàngkè le. Kèjiān xiūxi de shíhou, wǒ kěyǐ qù hē bēi kāfēi, chī yí kuài diǎnxin.",
+            "tr": {
+              "en": "I don't get up until after seven, so I often have no time for breakfast; I drink some milk and go to class. In the break I can have a coffee and a pastry.",
+              "id": "Saya baru bangun jam tujuh lebih, jadi sering tidak sempat sarapan; minum susu lalu ke kelas. Waktu istirahat saya bisa minum kopi dan makan kue."
+            }
+          },
+          {
+            "sp": "A",
+            "hz": "中午一般怎么安排？",
+            "py": "Zhōngwǔ yìbān zěnme ānpái?",
+            "tr": {
+              "en": "What do you usually do at noon?",
+              "id": "Siang hari biasanya bagaimana?"
+            }
+          },
+          {
+            "sp": "B",
+            "hz": "中午我去食堂吃午饭。因为吃饭的人很多，所以常常要等四五分钟才能买到饭。吃完饭，我回宿舍看书或者听一会儿音乐。我从来不睡午觉。",
+            "py": "Zhōngwǔ wǒ qù shítáng chī wǔfàn. Yīnwèi chī fàn de rén hěn duō, suǒyǐ chángcháng yào děng sì-wǔ fēnzhōng cái néng mǎi dào fàn. Chī wán fàn, wǒ huí sùshè kàn shū huòzhě tīng yíhuìr yīnyuè. Wǒ cónglái bú shuì wǔjiào.",
+            "tr": {
+              "en": "I have lunch in the canteen. There are lots of people, so I often wait four or five minutes for food. After eating I read or listen to music in the dorm. I never nap.",
+              "id": "Saya makan siang di kantin. Orangnya banyak, jadi sering menunggu empat-lima menit baru dapat makanan. Habis makan saya membaca atau dengar musik di asrama. Saya tidak pernah tidur siang."
+            }
+          },
+          {
+            "sp": "A",
+            "hz": "下午你都做什么？",
+            "py": "Xiàwǔ nǐ dōu zuò shénme?",
+            "tr": {
+              "en": "What do you do in the afternoon?",
+              "id": "Sore hari kamu ngapain?"
+            }
+          },
+          {
+            "sp": "B",
+            "hz": "下午，有时候上两节课，有时候自己学习。四点以后我去体育馆锻炼身体，跑步、游泳、打球或者跟老师学打太极拳。我很喜欢运动，每天都坚持锻炼一个小时，所以身体很好。",
+            "py": "Xiàwǔ, yǒu shíhou shàng liǎng jié kè, yǒu shíhou zìjǐ xuéxí. Sì diǎn yǐhòu wǒ qù tǐyùguǎn duànliàn shēntǐ, pǎobù, yóuyǒng, dǎ qiú huòzhě gēn lǎoshī xué dǎ tàijíquán. Wǒ hěn xǐhuan yùndòng, měi tiān dōu jiānchí duànliàn yí ge xiǎoshí, suǒyǐ shēntǐ hěn hǎo.",
+            "tr": {
+              "en": "Sometimes I have two classes, sometimes I study alone. After four I exercise at the gym: running, swimming, ball games or tai chi with a teacher. I love sport and exercise an hour every day, so I'm very fit.",
+              "id": "Kadang ada dua jam pelajaran, kadang belajar sendiri. Jam empat ke atas saya olahraga di gedung olahraga: lari, berenang, main bola, atau belajar tai chi dengan guru. Saya suka olahraga dan rutin satu jam setiap hari, jadi badan saya sehat."
+            }
+          },
+          {
+            "sp": "A",
+            "hz": "晚饭后呢？",
+            "py": "Wǎnfàn hòu ne?",
+            "tr": {
+              "en": "And after dinner?",
+              "id": "Habis makan malam?"
+            }
+          },
+          {
+            "sp": "B",
+            "hz": "晚饭后我常常散一会儿步，有时跟朋友聊聊天儿，然后就开始复习功课。听半个小时课文录音，练习会话，预习生词和课文。生词要记住，课文要念熟，所以每天晚上一般要复习、预习两三个小时，常常学到十一点多才睡觉。",
+            "py": "Wǎnfàn hòu wǒ chángcháng sàn yíhuìr bù, yǒushí gēn péngyou liáoliao tiānr, ránhòu jiù kāishǐ fùxí gōngkè. Tīng bàn ge xiǎoshí kèwén lùyīn, liànxí huìhuà, yùxí shēngcí hé kèwén. Shēngcí yào jìzhù, kèwén yào niàn shú, suǒyǐ měi tiān wǎnshang yìbān yào fùxí, yùxí liǎng-sān ge xiǎoshí, chángcháng xué dào shíyī diǎn duō cái shuìjiào.",
+            "tr": {
+              "en": "I often take a short walk, sometimes chat with friends, then start revising: half an hour of the text recording, conversation practice, previewing words and the text. Words must be remembered and texts read fluently, so I usually study two or three hours every evening, often until after eleven.",
+              "id": "Saya sering jalan sebentar, kadang ngobrol dengan teman, lalu mulai belajar: setengah jam dengar rekaman, latihan percakapan, mempelajari kosakata dan teks. Kosakata harus hafal, teks harus lancar, jadi biasanya saya belajar dua-tiga jam setiap malam, sering sampai jam sebelas lebih."
+            }
+          },
+          {
+            "sp": "A",
+            "hz": "每天这么忙，你觉得开心吗？",
+            "py": "Měi tiān zhème máng, nǐ juéde kāixīn ma?",
+            "tr": {
+              "en": "You're so busy every day. Are you happy?",
+              "id": "Setiap hari sesibuk itu, kamu senang?"
+            }
+          },
+          {
+            "sp": "B",
+            "hz": "我每天都很忙，但过得很愉快。我很感谢父母给我这个机会，让我来中国留学。",
+            "py": "Wǒ měi tiān dōu hěn máng, dàn guò de hěn yúkuài. Wǒ hěn gǎnxiè fùmǔ gěi wǒ zhège jīhuì, ràng wǒ lái Zhōngguó liúxué.",
+            "tr": {
+              "en": "I'm busy every day, but happy. I'm very grateful to my parents for this chance to study in China.",
+              "id": "Setiap hari sibuk, tapi menyenangkan. Saya sangat berterima kasih kepada orang tua atas kesempatan kuliah di Tiongkok."
+            }
+          },
+          {
+            "sp": "A",
+            "hz": "你原来计划在中国学习多久？有变化吗？",
+            "py": "Nǐ yuánlái jìhuà zài Zhōngguó xuéxí duō jiǔ? Yǒu biànhuà ma?",
+            "tr": {
+              "en": "How long did you plan to study in China? Has that changed?",
+              "id": "Semula kamu berencana belajar berapa lama di Tiongkok? Ada perubahan?"
+            }
+          },
+          {
+            "sp": "B",
+            "hz": "原来打算学一年，现在我觉得一年时间太短了，准备再延长一年。",
+            "py": "Yuánlái dǎsuàn xué yì nián, xiànzài wǒ juéde yì nián shíjiān tài duǎn le, zhǔnbèi zài yáncháng yì nián.",
+            "tr": {
+              "en": "I planned one year, but now one year seems too short, so I'm going to extend it by another year.",
+              "id": "Semula satu tahun, sekarang terasa terlalu singkat, jadi saya mau menambah satu tahun lagi."
+            }
+          }
+        ]
+      },
+      "课文2": {
+        "title": "课文（二） 我每天都练一个小时",
+        "lines": [
+          {
+            "hz": "早上，关经理和王老师在操场上……",
+            "py": "",
+            "tr": {
+              "en": "",
+              "id": ""
+            }
+          },
+          {
+            "sp": "关经理",
+            "hz": "你好，王老师。每天都起得这么早吗？",
+            "py": "Nǐ hǎo, Wáng lǎoshī. Měi tiān dōu qǐ de zhème zǎo ma?",
+            "tr": {
+              "en": "Hello, Teacher Wang. Do you get up this early every day?",
+              "id": "Halo, Guru Wang. Setiap hari bangun sepagi ini?"
+            }
+          },
+          {
+            "sp": "王老师",
+            "hz": "对，因为我练气功，所以每天五点多就起来了。",
+            "py": "Duì, yīnwèi wǒ liàn qìgōng, suǒyǐ měi tiān wǔ diǎn duō jiù qǐlai le.",
+            "tr": {
+              "en": "Yes. I do qigong, so I'm up just after five every day.",
+              "id": "Iya, karena saya latihan qigong, setiap hari jam lima lebih sudah bangun."
+            }
+          },
+          {
+            "sp": "关经理",
+            "hz": "练了多长时间了？",
+            "py": "Liàn le duō cháng shíjiān le?",
+            "tr": {
+              "en": "How long have you been doing it?",
+              "id": "Sudah berapa lama latihan?"
+            }
+          },
+          {
+            "sp": "王老师",
+            "hz": "已经练了好几年了。",
+            "py": "Yǐjīng liàn le hǎo jǐ nián le.",
+            "tr": {
+              "en": "Quite a few years now.",
+              "id": "Sudah bertahun-tahun."
+            }
+          },
+          {
+            "sp": "关经理",
+            "hz": "每天练多长时间？",
+            "py": "Měi tiān liàn duō cháng shíjiān?",
+            "tr": {
+              "en": "How long do you practise each day?",
+              "id": "Setiap hari latihan berapa lama?"
+            }
+          },
+          {
+            "sp": "王老师",
+            "hz": "不一定。有时候练一个钟头，有时候半个钟头。",
+            "py": "Bù yídìng. Yǒu shíhou liàn yí ge zhōngtóu, yǒu shíhou bàn ge zhōngtóu.",
+            "tr": {
+              "en": "It varies. Sometimes an hour, sometimes half an hour.",
+              "id": "Tidak tentu. Kadang satu jam, kadang setengah jam."
+            }
+          },
+          {
+            "sp": "关经理",
+            "hz": "效果怎么样？",
+            "py": "Xiàoguǒ zěnmeyàng?",
+            "tr": {
+              "en": "Does it work?",
+              "id": "Hasilnya bagaimana?"
+            }
+          },
+          {
+            "sp": "王老师",
+            "hz": "挺好的。练气功对身体很有好处。以前我有好几种慢性病呢，高血压、失眠，坚持练了几年，我的这些病差不多都好了。你也来练练吧。",
+            "py": "Tǐng hǎo de. Liàn qìgōng duì shēntǐ hěn yǒu hǎochù. Yǐqián wǒ yǒu hǎo jǐ zhǒng mànxìngbìng ne, gāoxuèyā, shīmián, jiānchí liàn le jǐ nián, wǒ de zhèxiē bìng chàbuduō dōu hǎo le. Nǐ yě lái liànlian ba.",
+            "tr": {
+              "en": "Very well. Qigong is really good for you. I used to have several chronic illnesses, high blood pressure and insomnia. After a few years of practice they're almost all gone. You should try it too.",
+              "id": "Bagus sekali. Qigong sangat bermanfaat. Dulu saya punya beberapa penyakit kronis, darah tinggi dan susah tidur. Sesudah rutin latihan beberapa tahun, hampir semuanya sembuh. Ayo kamu juga ikut latihan."
+            }
+          },
+          {
+            "sp": "关经理",
+            "hz": "练气功必须坚持天天练，\"三天打鱼，两天晒网\"不行。我也很想练，但是工作太忙，没有时间。",
+            "py": "Liàn qìgōng bìxū jiānchí tiāntiān liàn, \"sān tiān dǎyú, liǎng tiān shài wǎng\" bù xíng. Wǒ yě hěn xiǎng liàn, dànshì gōngzuò tài máng, méiyǒu shíjiān.",
+            "tr": {
+              "en": "With qigong you have to practise every day; doing it on and off won't work. I'd love to, but I'm too busy at work and have no time.",
+              "id": "Qigong harus rutin setiap hari, tidak bisa \"tiga hari menjaring, dua hari menjemur\". Saya juga ingin, tapi pekerjaan terlalu sibuk, tidak ada waktu."
+            }
+          }
+        ]
+      },
+      "阅读": {
+        "title": "阅读 小伙子和长椅子",
+        "lines": [
+          {
+            "hz": "一个小伙子在公园玩儿了半天，玩儿累了，想找一个座位坐下休息一会儿。",
+            "py": "Yí ge xiǎohuǒzi zài gōngyuán wánr le bàntiān, wánr lèi le, xiǎng zhǎo yí ge zuòwèi zuò xià xiūxi yíhuìr.",
+            "tr": {
+              "en": "A young man had been playing in the park for ages. Tired, he wanted to find a seat and rest a while.",
+              "id": "Seorang pemuda bermain lama di taman. Karena capek, dia ingin mencari tempat duduk untuk istirahat sebentar."
+            }
+          },
+          {
+            "hz": "正好在离他不远的地方有一个长椅子。他想过去坐一会儿。",
+            "py": "Zhènghǎo zài lí tā bù yuǎn de dìfang yǒu yí ge cháng yǐzi. Tā xiǎng guòqu zuò yíhuìr.",
+            "tr": {
+              "en": "Just then there was a bench not far away. He wanted to go and sit on it.",
+              "id": "Kebetulan tidak jauh darinya ada bangku panjang. Dia ingin ke sana duduk sebentar."
+            }
+          },
+          {
+            "hz": "这时一个老人也向椅子那儿走去。小伙子怕老人先过去坐，就很快向椅子那儿跑去。",
+            "py": "Zhè shí yí ge lǎorén yě xiàng yǐzi nàr zǒu qù. Xiǎohuǒzi pà lǎorén xiān guòqu zuò, jiù hěn kuài xiàng yǐzi nàr pǎo qù.",
+            "tr": {
+              "en": "At that moment an old man also walked towards the bench. Afraid the old man would sit first, the young man ran over quickly.",
+              "id": "Saat itu seorang kakek juga berjalan ke bangku itu. Pemuda itu takut kakek duduk duluan, jadi dia cepat-cepat berlari ke sana."
+            }
+          },
+          {
+            "hz": "老人对小伙子大声叫：\"小伙子，不要过去！\"",
+            "py": "Lǎorén duì xiǎohuǒzi dàshēng jiào: \"Xiǎohuǒzi, búyào guòqu!\"",
+            "tr": {
+              "en": "The old man shouted, \"Young man, don't go over there!\"",
+              "id": "Kakek itu berteriak, \"Anak muda, jangan ke sana!\""
+            }
+          },
+          {
+            "hz": "小伙子不听老人的话，很快跑到椅子那儿，一下子坐在椅子上。",
+            "py": "Xiǎohuǒzi bù tīng lǎorén de huà, hěn kuài pǎo dào yǐzi nàr, yíxiàzi zuò zài yǐzi shang.",
+            "tr": {
+              "en": "The young man ignored him, ran to the bench and plonked himself down.",
+              "id": "Pemuda itu tidak mendengarkan, cepat berlari ke bangku dan langsung duduk."
+            }
+          },
+          {
+            "hz": "这时，老人过来了，他走到椅子旁边，生气地对小伙子说：\"你这个小伙子，你没有看见吗？椅子刚涂上油漆，还没干呢！\"",
+            "py": "Zhè shí, lǎorén guòlai le, tā zǒu dào yǐzi pángbiān, shēngqì de duì xiǎohuǒzi shuō: \"Nǐ zhège xiǎohuǒzi, nǐ méiyǒu kànjiàn ma? Yǐzi gāng tú shang yóuqī, hái méi gān ne!\"",
+            "tr": {
+              "en": "Then the old man came up to the bench and said angrily: \"Young man, didn't you see? The bench has just been painted and isn't dry yet!\"",
+              "id": "Lalu kakek itu datang ke samping bangku dan berkata dengan marah: \"Anak muda, kamu tidak lihat? Bangkunya baru dicat, belum kering!\""
+            }
+          },
+          {
+            "hz": "\"啊！\"小伙子一听，马上站起来了。可是裤子已经坐上了很多油漆。",
+            "py": "\"À!\" Xiǎohuǒzi yì tīng, mǎshàng zhàn qǐlai le. Kěshì kùzi yǐjīng zuò shang le hěn duō yóuqī.",
+            "tr": {
+              "en": "\"Oh!\" The young man jumped up at once, but his trousers were already covered in paint.",
+              "id": "\"Ah!\" Pemuda itu langsung berdiri. Tapi celananya sudah penuh cat."
+            }
+          }
+        ]
+      }
     },
     "questions": [
       {
@@ -4156,7 +5781,8 @@
         "why": {
           "en": "我来了两个多月了。",
           "id": "我来了两个多月了。"
-        }
+        },
+        "story": "课文1"
       },
       {
         "source": "p. 30 课文",
@@ -4182,7 +5808,8 @@
         "why": {
           "en": "From text (1).",
           "id": "Dari teks (1)."
-        }
+        },
+        "story": "课文1"
       },
       {
         "source": "p. 30 课文",
@@ -4197,7 +5824,8 @@
         "why": {
           "en": "我每天早上七点多才起床……喝杯牛奶就去上课了。",
           "id": "我每天早上七点多才起床……喝杯牛奶就去上课了。"
-        }
+        },
+        "story": "课文1"
       },
       {
         "source": "p. 30 课文",
@@ -4223,7 +5851,8 @@
         "why": {
           "en": "每天都坚持锻炼一个小时。",
           "id": "每天都坚持锻炼一个小时。"
-        }
+        },
+        "story": "课文1"
       },
       {
         "source": "p. 30 课文",
@@ -4237,7 +5866,8 @@
         "why": {
           "en": "原来打算学一年……准备再延长一年。",
           "id": "原来打算学一年……准备再延长一年。"
-        }
+        },
+        "story": "课文1"
       },
       {
         "source": "p. 31 填空",
@@ -4324,7 +5954,8 @@
         "why": {
           "en": "每天五点多就起来了。",
           "id": "每天五点多就起来了。"
-        }
+        },
+        "story": "课文2"
       },
       {
         "source": "p. 49 课文",
@@ -4339,7 +5970,8 @@
         "why": {
           "en": "已经练了好几年了。",
           "id": "已经练了好几年了。"
-        }
+        },
+        "story": "课文2"
       },
       {
         "source": "p. 49 课文",
@@ -4365,7 +5997,8 @@
         "why": {
           "en": "From text (2).",
           "id": "Dari teks (2)."
-        }
+        },
+        "story": "课文2"
       },
       {
         "source": "p. 49 课文",
@@ -4387,7 +6020,8 @@
         "why": {
           "en": "我也很想练，但是工作太忙，没有时间。",
           "id": "我也很想练，但是工作太忙，没有时间。"
-        }
+        },
+        "story": "课文2"
       },
       {
         "source": "p. 50 填空",
@@ -4425,7 +6059,8 @@
         "why": {
           "en": "玩儿累了，想找一个座位坐下休息一会儿。",
           "id": "玩儿累了，想找一个座位坐下休息一会儿。"
-        }
+        },
+        "story": "阅读"
       },
       {
         "source": "p. 85 阅读",
@@ -4447,7 +6082,8 @@
         "why": {
           "en": "He went to warn the young man about the paint.",
           "id": "Kakek itu mau memperingatkan soal cat."
-        }
+        },
+        "story": "阅读"
       },
       {
         "source": "p. 85 阅读",
@@ -4469,7 +6105,8 @@
         "why": {
           "en": "The bench was wet paint (椅子刚涂上油漆).",
           "id": "Bangkunya baru dicat (椅子刚涂上油漆)."
-        }
+        },
+        "story": "阅读"
       },
       {
         "source": "p. 85 阅读",
@@ -4491,7 +6128,8 @@
         "why": {
           "en": "裤子已经坐上了很多油漆。",
           "id": "裤子已经坐上了很多油漆。"
-        }
+        },
+        "story": "阅读"
       }
     ]
   },
@@ -4503,6 +6141,275 @@
     "note": {
       "en": "[NOTE] All exercises come from the teacher's slides: grammar, the 课文 stories, reading and fill-ins. For a fill-in, type the 汉字; punctuation does not matter.",
       "id": "[NOTE] Semua latihan berasal dari slide guru: grammar, cerita 课文, bacaan, dan isian. Untuk soal isian, ketik 汉字; tanda baca tidak dihitung."
+    },
+    "stories": {
+      "课文1": {
+        "title": "课文（一） 上海比北京大吧",
+        "lines": [
+          {
+            "sp": "山本",
+            "hz": "田芳，上海怎么样？我想坐火车去上海旅行。",
+            "py": "Tián Fāng, Shànghǎi zěnmeyàng? Wǒ xiǎng zuò huǒchē qù Shànghǎi lǚxíng.",
+            "tr": {
+              "en": "Tian Fang, what's Shanghai like? I'd like to go there by train.",
+              "id": "Tian Fang, Shanghai bagaimana? Saya ingin jalan-jalan ke Shanghai naik kereta."
+            }
+          },
+          {
+            "sp": "田芳",
+            "hz": "上海很好，这几年变化很大。今年暑假我还在那儿玩儿了一个多月呢。我一个同学家就在上海。",
+            "py": "Shànghǎi hěn hǎo, zhè jǐ nián biànhuà hěn dà. Jīnnián shǔjià wǒ hái zài nàr wánr le yí ge duō yuè ne. Wǒ yí ge tóngxué jiā jiù zài Shànghǎi.",
+            "tr": {
+              "en": "It's great, and it's changed a lot in recent years. I even spent over a month there this summer. One of my classmates lives in Shanghai.",
+              "id": "Bagus, beberapa tahun ini banyak berubah. Liburan musim panas ini saya bahkan main di sana lebih dari sebulan. Rumah teman saya di Shanghai."
+            }
+          },
+          {
+            "sp": "山本",
+            "hz": "上海比北京大吧？",
+            "py": "Shànghǎi bǐ Běijīng dà ba?",
+            "tr": {
+              "en": "Shanghai is bigger than Beijing, isn't it?",
+              "id": "Shanghai lebih besar dari Beijing, kan?"
+            }
+          },
+          {
+            "sp": "田芳",
+            "hz": "不，上海没有北京大，不过人口比北京多。上海是中国人口最多的城市。这几年，增加了不少新建筑，现在比过去变得更漂亮了。",
+            "py": "Bù, Shànghǎi méiyǒu Běijīng dà, búguò rénkǒu bǐ Běijīng duō. Shànghǎi shì Zhōngguó rénkǒu zuì duō de chéngshì. Zhè jǐ nián, zēngjiā le bù shǎo xīn jiànzhù, xiànzài bǐ guòqù biàn de gèng piàoliang le.",
+            "tr": {
+              "en": "No, Shanghai isn't as big as Beijing, but it has more people. It's China's most populous city. Lots of new buildings have gone up, and it's prettier than before.",
+              "id": "Tidak, Shanghai tidak sebesar Beijing, tapi penduduknya lebih banyak. Shanghai kota berpenduduk terbanyak di Tiongkok. Beberapa tahun ini banyak bangunan baru, sekarang lebih indah dari dulu."
+            }
+          },
+          {
+            "sp": "山本",
+            "hz": "上海的公园有北京的多吗？",
+            "py": "Shànghǎi de gōngyuán yǒu Běijīng de duō ma?",
+            "tr": {
+              "en": "Does Shanghai have as many parks as Beijing?",
+              "id": "Taman di Shanghai sebanyak di Beijing?"
+            }
+          },
+          {
+            "sp": "田芳",
+            "hz": "上海的公园没有北京的多，也没有北京的公园这么大。",
+            "py": "Shànghǎi de gōngyuán méiyǒu Běijīng de duō, yě méiyǒu Běijīng de gōngyuán zhème dà.",
+            "tr": {
+              "en": "Shanghai has fewer parks than Beijing, and they aren't as big.",
+              "id": "Taman di Shanghai tidak sebanyak di Beijing, juga tidak sebesar taman di Beijing."
+            }
+          },
+          {
+            "sp": "山本",
+            "hz": "上海的冬天是不是比北京暖和一点儿？",
+            "py": "Shànghǎi de dōngtiān shì bu shì bǐ Běijīng nuǎnhuo yìdiǎnr?",
+            "tr": {
+              "en": "Is winter in Shanghai a bit warmer than in Beijing?",
+              "id": "Musim dingin di Shanghai sedikit lebih hangat dari Beijing, ya?"
+            }
+          },
+          {
+            "sp": "田芳",
+            "hz": "上海不一定比北京暖和。",
+            "py": "Shànghǎi bù yídìng bǐ Běijīng nuǎnhuo.",
+            "tr": {
+              "en": "Not necessarily.",
+              "id": "Belum tentu lebih hangat."
+            }
+          },
+          {
+            "sp": "山本",
+            "hz": "可是，我看天气预报，上海的气温比北京高得多。",
+            "py": "Kěshì, wǒ kàn tiānqì yùbào, shànghǎi de qìwēn bǐ Běijīng gāo de duō.",
+            "tr": {
+              "en": "But the forecast says Shanghai's temperature is much higher than Beijing's.",
+              "id": "Tapi menurut ramalan cuaca, suhu Shanghai jauh lebih tinggi dari Beijing."
+            }
+          },
+          {
+            "sp": "田芳",
+            "hz": "是，上海的气温比北京高好几度，不过因为屋子里没有暖气，所以感觉还没有北京暖和。",
+            "py": "Shì, Shànghǎi de qìwēn bǐ Běijīng gāo hǎo jǐ dù, búguò yīnwèi wūzi lǐ méiyǒu nuǎnqì, suǒyǐ gǎnjué hái méiyǒu Běijīng nuǎnhuo.",
+            "tr": {
+              "en": "Yes, it's several degrees higher, but because there's no heating indoors, it feels even less warm than Beijing.",
+              "id": "Iya, suhunya beberapa derajat lebih tinggi, tapi karena di dalam rumah tidak ada pemanas, terasa tidak sehangat Beijing."
+            }
+          },
+          {
+            "sp": "山本",
+            "hz": "上海人家里没有暖气？",
+            "py": "Shànghǎi rén jiā lǐ méiyǒu nuǎnqì?",
+            "tr": {
+              "en": "Shanghai homes don't have heating?",
+              "id": "Rumah orang Shanghai tidak ada pemanas?"
+            }
+          },
+          {
+            "sp": "田芳",
+            "hz": "一般的家庭没有，不过旅馆和饭店里有。",
+            "py": "Yìbān de jiātíng méiyǒu, búguò lǚguǎn hé fàndiàn lǐ yǒu.",
+            "tr": {
+              "en": "Ordinary homes don't, but hotels and restaurants do.",
+              "id": "Rumah biasa tidak ada, tapi hotel dan restoran ada."
+            }
+          }
+        ]
+      },
+      "课文2": {
+        "title": "课文（二） 我比你更喜欢音乐",
+        "lines": [
+          {
+            "hz": "林老师和王老师在谈音乐……",
+            "py": "",
+            "tr": {
+              "en": "",
+              "id": ""
+            }
+          },
+          {
+            "sp": "林老师",
+            "hz": "王老师，你喜欢音乐吗？",
+            "py": "Wáng lǎoshī, nǐ xǐhuan yīnyuè ma?",
+            "tr": {
+              "en": "Mr Wang, do you like music?",
+              "id": "Pak Wang, Anda suka musik?"
+            }
+          },
+          {
+            "sp": "王老师",
+            "hz": "喜欢啊！我是个音乐迷，我电脑里，光交响乐就下载了好几百首呢。",
+            "py": "Xǐhuan a! Wǒ shì ge yīnyuè mí, wǒ diànnǎo lǐ, guāng jiāoxiǎngyuè jiù xiàzài le hǎo jǐ bǎi shǒu ne.",
+            "tr": {
+              "en": "Of course! I'm a music fan. On my computer I've downloaded several hundred symphonies alone.",
+              "id": "Suka sekali! Saya penggemar musik. Di komputer saya, simfoni saja sudah ratusan yang saya unduh."
+            }
+          },
+          {
+            "sp": "林老师",
+            "hz": "我也很喜欢音乐，也许比你更喜欢。你喜欢古典音乐还是喜欢现代音乐？",
+            "py": "Wǒ yě hěn xǐhuan yīnyuè, yěxǔ bǐ nǐ gèng xǐhuan. Nǐ xǐhuan gǔdiǎn yīnyuè háishi xǐhuan xiàndài yīnyuè?",
+            "tr": {
+              "en": "I love music too, maybe even more than you. Do you prefer classical or modern music?",
+              "id": "Saya juga suka musik, mungkin lebih dari Anda. Anda suka musik klasik atau modern?"
+            }
+          },
+          {
+            "sp": "王老师",
+            "hz": "我喜欢古典音乐。喜欢听世界名曲，还喜欢听民歌。",
+            "py": "Wǒ xǐhuan gǔdiǎn yīnyuè. Xǐhuan tīng shìjiè míngqǔ, hái xǐhuan tīng míngē.",
+            "tr": {
+              "en": "Classical. I like world-famous pieces, and folk songs too.",
+              "id": "Saya suka musik klasik. Suka karya terkenal dunia, juga suka lagu daerah."
+            }
+          },
+          {
+            "sp": "林老师",
+            "hz": "我也喜欢古典音乐。你喜欢流行歌曲吗？",
+            "py": "Wǒ yě xǐhuan gǔdiǎn yīnyuè. Nǐ xǐhuan liúxíng gēqǔ ma?",
+            "tr": {
+              "en": "I like classical too. Do you like pop songs?",
+              "id": "Saya juga suka musik klasik. Anda suka lagu pop?"
+            }
+          },
+          {
+            "sp": "王老师",
+            "hz": "怎么说呢？可能没有你们年轻人那么喜欢。我觉得流行歌曲的歌词没有民歌写得好。",
+            "py": "Zěnme shuō ne? Kěnéng méiyǒu nǐmen niánqīng rén nàme xǐhuan. Wǒ juéde liúxíng gēqǔ de gēcí méiyǒu míngē xiě de hǎo.",
+            "tr": {
+              "en": "How can I put it? Maybe not as much as you young people. I think pop lyrics aren't as well written as folk songs.",
+              "id": "Bagaimana ya? Mungkin tidak sesuka kalian anak muda. Menurut saya lirik lagu pop tidak sebagus lagu daerah."
+            }
+          },
+          {
+            "sp": "林老师",
+            "hz": "有些流行歌曲的歌词写得还是不错的。",
+            "py": "Yǒuxiē liúxíng gēqǔ de gēcí xiě de háishi búcuò de.",
+            "tr": {
+              "en": "Some pop songs have quite good lyrics.",
+              "id": "Ada juga lagu pop yang liriknya lumayan bagus."
+            }
+          },
+          {
+            "sp": "王老师",
+            "hz": "可是，我还是觉得民歌的歌词好。你听咱们的民歌，\"在那遥远的地方……\",写得多好！",
+            "py": "Kěshì, wǒ háishi juéde míngē de gēcí hǎo. Nǐ tīng zánmen de míngē, \"Zài nà yáoyuǎn de dìfang……\", xiě de duō hǎo!",
+            "tr": {
+              "en": "Still, I think folk lyrics are better. Listen to our folk song \"In that faraway place…\": how beautifully it's written!",
+              "id": "Tapi saya tetap merasa lirik lagu daerah lebih bagus. Dengar lagu daerah kita, \"Di tempat yang jauh itu…\": indah sekali!"
+            }
+          }
+        ]
+      },
+      "阅读": {
+        "title": "阅读 逛公园",
+        "lines": [
+          {
+            "hz": "昨天晚上我对罗兰说，听说我们学校西边有个公园，那个公园很大。公园里有山有水，很漂亮。明天是星期六，我们去公园玩儿玩儿怎么样？罗兰说，她也正想去公园散散步呢。",
+            "py": "Zuótiān wǎnshang wǒ duì Luólán shuō, tīngshuō wǒmen xuéxiào xībian yǒu ge gōngyuán, nàge gōngyuán hěn dà. Gōngyuán lǐ yǒu shān yǒu shuǐ, hěn piàoliang. Míngtiān shì xīngqīliù, wǒmen qù gōngyuán wánrwanr zěnmeyàng? Luólán shuō, tā yě zhèng xiǎng qù gōngyuán sànsan bù ne.",
+            "tr": {
+              "en": "Last night I told Luo Lan I'd heard there's a big park west of our school, with hills and water, very pretty. Tomorrow's Saturday; how about going? Luo Lan said she was just thinking of a walk in the park.",
+              "id": "Tadi malam aku bilang ke Luo Lan, katanya di sebelah barat sekolah ada taman besar, ada bukit dan air, indah sekali. Besok Sabtu, bagaimana kalau kita ke sana? Luo Lan bilang dia juga sedang ingin jalan-jalan di taman."
+            }
+          },
+          {
+            "hz": "我问罗兰怎么去，罗兰说，星期六坐公共汽车的人比较多，我们最好骑自行车去，还可以锻炼身体。",
+            "py": "Wǒ wèn Luólán zěnme qù, Luólán shuō, xīngqīliù zuò gōnggòng qìchē de rén bǐjiào duō, wǒmen zuìhǎo qí zìxíngchē qù, hái kěyǐ duànliàn shēntǐ.",
+            "tr": {
+              "en": "I asked how we'd go. She said lots of people take the bus on Saturdays, so we'd better cycle; it's exercise too.",
+              "id": "Aku tanya ke sana naik apa. Katanya hari Sabtu bus ramai, sebaiknya naik sepeda, sekalian olahraga."
+            }
+          },
+          {
+            "hz": "今天早上，我们起得很早，吃了早饭就出发了，半个小时就到公园了。",
+            "py": "Jīntiān zǎoshang, wǒmen qǐ de hěn zǎo, chī le zǎofàn jiù chūfā le, bàn ge xiǎoshí jiù dào gōngyuán le.",
+            "tr": {
+              "en": "This morning we got up early, set off right after breakfast, and reached the park in half an hour.",
+              "id": "Pagi ini kami bangun pagi, habis sarapan langsung berangkat, setengah jam sudah sampai taman."
+            }
+          },
+          {
+            "hz": "今天逛公园的人真多，买票要排队，我们排了五分钟才买到票。买了票我们就进去了。",
+            "py": "Jīntiān guàng gōngyuán de rén zhēn duō, mǎi piào yào páiduì, wǒmen pái le wǔ fēnzhōng cái mǎi dào piào. Mǎi le piào wǒmen jiù jìnqu le.",
+            "tr": {
+              "en": "There were so many people today that we had to queue; it took five minutes to get tickets. Then we went in.",
+              "id": "Pengunjung hari ini banyak sekali, beli tiket harus antre; lima menit baru dapat. Habis beli tiket kami langsung masuk."
+            }
+          },
+          {
+            "hz": "我和罗兰先爬山，爬了二十多分钟就爬到了山上。因为爬得太快了，我出了一身汗。从山上往下看，非常漂亮。",
+            "py": "Wǒ hé Luólán xiān pá shān, pá le èrshí duō fēnzhōng jiù pá dào le shān shang. Yīnwèi pá de tài kuài le, wǒ chū le yì shēn hàn. Cóng shān shang wǎng xià kàn, fēicháng piàoliang.",
+            "tr": {
+              "en": "Luo Lan and I climbed the hill first and reached the top in just over twenty minutes. I climbed so fast I was covered in sweat. The view from the top was beautiful.",
+              "id": "Aku dan Luo Lan mendaki bukit dulu, dua puluh menit lebih sudah sampai puncak. Karena terlalu cepat, aku berkeringat banyak. Dari atas pemandangannya indah sekali."
+            }
+          },
+          {
+            "hz": "山上有很多树，还有很多花儿。公园里有一个很大的湖。湖上有一座白色的桥。很多人在湖边散步，还有不少人在湖上划船。罗兰说，这个公园真大，真漂亮。",
+            "py": "Shān shang yǒu hěn duō shù, hái yǒu hěn duō huār. Gōngyuán lǐ yǒu yí ge hěn dà de hú. Hú shang yǒu yí zuò báisè de qiáo. Hěn duō rén zài hú biān sànbù, hái yǒu bù shǎo rén zài hú shang huá chuán. Luólán shuō, zhège gōngyuán zhēn dà, zhēn piàoliang.",
+            "tr": {
+              "en": "There were lots of trees and flowers on the hill. The park has a big lake with a white bridge. Many people were walking by the lake, and quite a few were rowing on it. Luo Lan said the park was really big and beautiful.",
+              "id": "Di bukit banyak pohon dan bunga. Di taman ada danau besar dengan jembatan putih. Banyak orang jalan-jalan di tepi danau, dan tidak sedikit yang mendayung perahu. Luo Lan bilang taman ini besar dan indah sekali."
+            }
+          },
+          {
+            "hz": "我和罗兰在山上照了很多相。照完相我们就下山了。我们在公园里玩儿了一个上午，看了很多地方。",
+            "py": "Wǒ hé Luólán zài shān shang zhào le hěn duō xiàng. Zhào wán xiàng wǒmen jiù xià shān le. Wǒmen zài gōngyuán lǐ wánr le yí ge shàngwǔ, kàn le hěn duō dìfang.",
+            "tr": {
+              "en": "We took lots of photos on the hill, then came down. We spent the whole morning in the park and saw many places.",
+              "id": "Kami banyak berfoto di bukit, lalu turun. Kami main di taman sepanjang pagi dan melihat banyak tempat."
+            }
+          },
+          {
+            "hz": "我对罗兰说，学校离这个公园不太远，可以经常骑车到这儿来玩儿。爬爬山，划划船，或者跟朋友一起来散散步，聊聊天儿。罗兰说，以后我们可以再来。",
+            "py": "Wǒ duì Luólán shuō, xuéxiào lí zhège gōngyuán bú tài yuǎn, kěyǐ jīngcháng qí chē dào zhèr lái wánr. Pápa shān, huáhua chuán, huòzhě gēn péngyou yìqǐ lái sànsan bù, liáoliao tiānr. Luólán shuō, yǐhòu wǒmen kěyǐ zài lái.",
+            "tr": {
+              "en": "I told Luo Lan the school isn't far, so we can often cycle here to climb, row, or walk and chat with friends. She said we can come again.",
+              "id": "Aku bilang ke Luo Lan, sekolah tidak jauh dari taman ini, jadi kita bisa sering naik sepeda ke sini: mendaki, mendayung, atau jalan-jalan dan ngobrol dengan teman. Luo Lan bilang lain kali kita bisa datang lagi."
+            }
+          }
+        ]
+      }
     },
     "questions": [
       {
@@ -5310,7 +7217,8 @@
         "why": {
           "en": "今年暑假我还在那儿玩儿了一个多月呢。",
           "id": "今年暑假我还在那儿玩儿了一个多月呢。"
-        }
+        },
+        "story": "课文1"
       },
       {
         "source": "p. 23 课文",
@@ -5336,7 +7244,8 @@
         "why": {
           "en": "因为屋子里没有暖气，所以感觉还没有北京暖和。",
           "id": "因为屋子里没有暖气，所以感觉还没有北京暖和。"
-        }
+        },
+        "story": "课文1"
       },
       {
         "source": "p. 23 课文",
@@ -5358,7 +7267,8 @@
         "why": {
           "en": "上海是中国人口最多的城市。",
           "id": "上海是中国人口最多的城市。"
-        }
+        },
+        "story": "课文1"
       },
       {
         "source": "p. 23 课文",
@@ -5380,7 +7290,8 @@
         "why": {
           "en": "Beijing's parks are more numerous and bigger.",
           "id": "Taman Beijing lebih banyak dan lebih besar."
-        }
+        },
+        "story": "课文1"
       },
       {
         "source": "p. 24 填空",
@@ -5482,7 +7393,8 @@
         "why": {
           "en": "光交响乐就下载了好几百首呢。",
           "id": "光交响乐就下载了好几百首呢。"
-        }
+        },
+        "story": "课文2"
       },
       {
         "source": "p. 45 课文",
@@ -5508,7 +7420,8 @@
         "why": {
           "en": "我喜欢古典音乐。喜欢听世界名曲，还喜欢听民歌。",
           "id": "我喜欢古典音乐。喜欢听世界名曲，还喜欢听民歌。"
-        }
+        },
+        "story": "课文2"
       },
       {
         "source": "p. 45 课文",
@@ -5534,7 +7447,8 @@
         "why": {
           "en": "可能没有你们年轻人那么喜欢。",
           "id": "可能没有你们年轻人那么喜欢。"
-        }
+        },
+        "story": "课文2"
       },
       {
         "source": "p. 45 课文",
@@ -5550,7 +7464,8 @@
         "why": {
           "en": "我还是觉得民歌的歌词好。",
           "id": "我还是觉得民歌的歌词好。"
-        }
+        },
+        "story": "课文2"
       },
       {
         "source": "p. 46 填空",
@@ -5615,7 +7530,8 @@
         "why": {
           "en": "They cycled (骑自行车去).",
           "id": "Mereka naik sepeda (骑自行车去)."
-        }
+        },
+        "story": "阅读"
       },
       {
         "source": "p. 84 阅读",
@@ -5637,7 +7553,8 @@
         "why": {
           "en": "我们排了五分钟才买到票。",
           "id": "我们排了五分钟才买到票。"
-        }
+        },
+        "story": "阅读"
       },
       {
         "source": "p. 84 阅读",
@@ -5659,7 +7576,8 @@
         "why": {
           "en": "They didn't row; other people did.",
           "id": "Mereka tidak mendayung; orang lain yang mendayung."
-        }
+        },
+        "story": "阅读"
       },
       {
         "source": "p. 84 阅读",
@@ -5681,7 +7599,8 @@
         "why": {
           "en": "罗兰说，以后我们可以再来。",
           "id": "罗兰说，以后我们可以再来。"
-        }
+        },
+        "story": "阅读"
       }
     ]
   },
@@ -6546,6 +8465,77 @@
       "en": "[NOTE] The mock paper has 8 parts and no answer key. Most answers come from the same questions in the teacher's exercises; answers marked [ADDED] were written for this site. Part 五 and two reading questions are open: compare your answer with the sample, they aren't scored.",
       "id": "[NOTE] Simulasi ini punya 8 bagian dan tanpa kunci jawaban. Kebanyakan jawaban diambil dari soal yang sama di latihan guru; jawaban bertanda [ADDED] dibuat untuk situs ini. Bagian 五 dan dua soal bacaan bersifat terbuka: bandingkan jawabanmu dengan contohnya, tidak dinilai."
     },
+    "stories": {
+      "阅读": {
+        "title": "阅读 逛公园",
+        "lines": [
+          {
+            "hz": "昨天晚上我对罗兰说，听说我们学校西边有个公园，那个公园很大。公园里有山有水，很漂亮。明天是星期六，我们去公园玩儿玩儿怎么样？罗兰说，她也正想去公园散散步呢。",
+            "py": "Zuótiān wǎnshang wǒ duì Luólán shuō, tīngshuō wǒmen xuéxiào xībian yǒu ge gōngyuán, nàge gōngyuán hěn dà. Gōngyuán lǐ yǒu shān yǒu shuǐ, hěn piàoliang. Míngtiān shì xīngqīliù, wǒmen qù gōngyuán wánrwanr zěnmeyàng? Luólán shuō, tā yě zhèng xiǎng qù gōngyuán sànsan bù ne.",
+            "tr": {
+              "en": "Last night I told Luo Lan I'd heard there's a big park west of our school, with hills and water, very pretty. Tomorrow's Saturday; how about going? Luo Lan said she was just thinking of a walk in the park.",
+              "id": "Tadi malam aku bilang ke Luo Lan, katanya di sebelah barat sekolah ada taman besar, ada bukit dan air, indah sekali. Besok Sabtu, bagaimana kalau kita ke sana? Luo Lan bilang dia juga sedang ingin jalan-jalan di taman."
+            }
+          },
+          {
+            "hz": "我问罗兰怎么去，罗兰说，星期六坐公共汽车的人比较多，我们最好骑自行车去，还可以锻炼身体。",
+            "py": "Wǒ wèn Luólán zěnme qù, Luólán shuō, xīngqīliù zuò gōnggòng qìchē de rén bǐjiào duō, wǒmen zuìhǎo qí zìxíngchē qù, hái kěyǐ duànliàn shēntǐ.",
+            "tr": {
+              "en": "I asked how we'd go. She said lots of people take the bus on Saturdays, so we'd better cycle; it's exercise too.",
+              "id": "Aku tanya ke sana naik apa. Katanya hari Sabtu bus ramai, sebaiknya naik sepeda, sekalian olahraga."
+            }
+          },
+          {
+            "hz": "今天早上，我们起得很早，吃了早饭就出发了，半个小时就到公园了。",
+            "py": "Jīntiān zǎoshang, wǒmen qǐ de hěn zǎo, chī le zǎofàn jiù chūfā le, bàn ge xiǎoshí jiù dào gōngyuán le.",
+            "tr": {
+              "en": "This morning we got up early, set off right after breakfast, and reached the park in half an hour.",
+              "id": "Pagi ini kami bangun pagi, habis sarapan langsung berangkat, setengah jam sudah sampai taman."
+            }
+          },
+          {
+            "hz": "今天逛公园的人真多，买票要排队，我们排了五分钟才买到票。买了票我们就进去了。",
+            "py": "Jīntiān guàng gōngyuán de rén zhēn duō, mǎi piào yào páiduì, wǒmen pái le wǔ fēnzhōng cái mǎi dào piào. Mǎi le piào wǒmen jiù jìnqu le.",
+            "tr": {
+              "en": "There were so many people today that we had to queue; it took five minutes to get tickets. Then we went in.",
+              "id": "Pengunjung hari ini banyak sekali, beli tiket harus antre; lima menit baru dapat. Habis beli tiket kami langsung masuk."
+            }
+          },
+          {
+            "hz": "我和罗兰先爬山，爬了二十多分钟就爬到了山上。因为爬得太快了，我出了一身汗。从山上往下看，非常漂亮。",
+            "py": "Wǒ hé Luólán xiān pá shān, pá le èrshí duō fēnzhōng jiù pá dào le shān shang. Yīnwèi pá de tài kuài le, wǒ chū le yì shēn hàn. Cóng shān shang wǎng xià kàn, fēicháng piàoliang.",
+            "tr": {
+              "en": "Luo Lan and I climbed the hill first and reached the top in just over twenty minutes. I climbed so fast I was covered in sweat. The view from the top was beautiful.",
+              "id": "Aku dan Luo Lan mendaki bukit dulu, dua puluh menit lebih sudah sampai puncak. Karena terlalu cepat, aku berkeringat banyak. Dari atas pemandangannya indah sekali."
+            }
+          },
+          {
+            "hz": "山上有很多树，还有很多花儿。公园里有一个很大的湖。湖上有一座白色的桥。很多人在湖边散步，还有不少人在湖上划船。罗兰说，这个公园真大，真漂亮。",
+            "py": "Shān shang yǒu hěn duō shù, hái yǒu hěn duō huār. Gōngyuán lǐ yǒu yí ge hěn dà de hú. Hú shang yǒu yí zuò báisè de qiáo. Hěn duō rén zài hú biān sànbù, hái yǒu bù shǎo rén zài hú shang huá chuán. Luólán shuō, zhège gōngyuán zhēn dà, zhēn piàoliang.",
+            "tr": {
+              "en": "There were lots of trees and flowers on the hill. The park has a big lake with a white bridge. Many people were walking by the lake, and quite a few were rowing on it. Luo Lan said the park was really big and beautiful.",
+              "id": "Di bukit banyak pohon dan bunga. Di taman ada danau besar dengan jembatan putih. Banyak orang jalan-jalan di tepi danau, dan tidak sedikit yang mendayung perahu. Luo Lan bilang taman ini besar dan indah sekali."
+            }
+          },
+          {
+            "hz": "我和罗兰在山上照了很多相。照完相我们就下山了。我们在公园里玩儿了一个上午，看了很多地方。",
+            "py": "Wǒ hé Luólán zài shān shang zhào le hěn duō xiàng. Zhào wán xiàng wǒmen jiù xià shān le. Wǒmen zài gōngyuán lǐ wánr le yí ge shàngwǔ, kàn le hěn duō dìfang.",
+            "tr": {
+              "en": "We took lots of photos on the hill, then came down. We spent the whole morning in the park and saw many places.",
+              "id": "Kami banyak berfoto di bukit, lalu turun. Kami main di taman sepanjang pagi dan melihat banyak tempat."
+            }
+          },
+          {
+            "hz": "我对罗兰说，学校离这个公园不太远，可以经常骑车到这儿来玩儿。爬爬山，划划船，或者跟朋友一起来散散步，聊聊天儿。罗兰说，以后我们可以再来。",
+            "py": "Wǒ duì Luólán shuō, xuéxiào lí zhège gōngyuán bú tài yuǎn, kěyǐ jīngcháng qí chē dào zhèr lái wánr. Pápa shān, huáhua chuán, huòzhě gēn péngyou yìqǐ lái sànsan bù, liáoliao tiānr. Luólán shuō, yǐhòu wǒmen kěyǐ zài lái.",
+            "tr": {
+              "en": "I told Luo Lan the school isn't far, so we can often cycle here to climb, row, or walk and chat with friends. She said we can come again.",
+              "id": "Aku bilang ke Luo Lan, sekolah tidak jauh dari taman ini, jadi kita bisa sering naik sepeda ke sini: mendaki, mendayung, atau jalan-jalan dan ngobrol dengan teman. Luo Lan bilang lain kali kita bisa datang lagi."
+            }
+          }
+        ]
+      }
+    },
     "questions": [
       {
         "source": "一、看拼音写汉字 · 1",
@@ -7324,7 +9314,8 @@
         "why": {
           "en": "罗兰说……我们最好骑自行车去。",
           "id": "罗兰说……我们最好骑自行车去。"
-        }
+        },
+        "story": "阅读"
       },
       {
         "source": "八、阅读 逛公园 · 2 [ADDED]",
@@ -7335,7 +9326,8 @@
         "model": {
           "en": "半个小时就到公园了。排了五分钟才买到票。",
           "id": "半个小时就到公园了。排了五分钟才买到票。"
-        }
+        },
+        "story": "阅读"
       },
       {
         "source": "八、阅读 逛公园 · 3 [ADDED]",
@@ -7352,7 +9344,8 @@
         "why": {
           "en": "我和罗兰先爬山。",
           "id": "我和罗兰先爬山。"
-        }
+        },
+        "story": "阅读"
       },
       {
         "source": "八、阅读 逛公园 · 4 [ADDED]",
@@ -7363,7 +9356,8 @@
         "model": {
           "en": "很多人在湖边散步，还有不少人在湖上划船。",
           "id": "很多人在湖边散步，还有不少人在湖上划船。"
-        }
+        },
+        "story": "阅读"
       },
       {
         "source": "八、阅读 逛公园 · 5 [ADDED]",
@@ -7380,7 +9374,8 @@
         "why": {
           "en": "罗兰说：\"以后我们可以再来。\"",
           "id": "罗兰说：\"以后我们可以再来。\""
-        }
+        },
+        "story": "阅读"
       }
     ]
   }

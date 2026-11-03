@@ -107,6 +107,9 @@
   .hide-py .word:not(.peek) .py, .hide-tr .word:not(.peek) .pos, .hide-tr .word:not(.peek) .mean { visibility: hidden; }
   .hide-py .zl, .hide-tr .zl, .hide-py .word, .hide-tr .word { cursor: pointer; }
   .hide-py .zl .sp, .hide-tr .zl .sp { margin-top: 4px; }
+  .story { margin-top: 16px; padding: 12px 16px; border-radius: 14px; background: var(--note-bg); border: 1px solid var(--line); }
+  .story summary { cursor: pointer; font-weight: 600; }
+  .story .hint { font-size: .8rem; color: var(--muted); margin-top: 6px; }
   .reason { margin-top: 6px; font-size: .95rem; }
   .qc { margin-top: 16px; border-top: 1px dashed var(--line); padding-top: 14px; }
   .qc .answer { margin-top: 8px; }
@@ -274,7 +277,7 @@ const UI = {
         wrongLbl: "✗ Wrong", rightLbl: "✓ Right", quickCheck: "Quick check", toggle: "🇮🇩 Bahasa Indonesia",
         check: "Check", typeHere: "Type your answer", typeFirst: "Type an answer first.",
         hideHelp: "🙈 Hide pinyin and meaning", showHelp: "👀 Show pinyin and meaning",
-        tapToPeek: "Tap a line to peek.", showSample: "Show a sample answer", sampleAnswer: "Sample answer (not scored):" },
+        tapToPeek: "Tap a line to peek.", showSample: "Show a sample answer", sampleAnswer: "Sample answer (not scored):", readStory: "Read the story: " },
   id: { pick: "Pilih mata kuliah.", all: "← Semua mata kuliah", soon: "Segera hadir", quizzes: "Kuis kelas",
         toPractice: n => n + " untuk latihan", lectures: "Materi kuliah", chaptersOf: n => n + " bab slide",
         slides: n => n + " slide", questions: n => n + " soal", back: "← Kembali", next: "Lanjut →",
@@ -289,7 +292,7 @@ const UI = {
         wrongLbl: "✗ Salah", rightLbl: "✓ Benar", quickCheck: "Cek cepat", toggle: "🇬🇧 English",
         check: "Periksa", typeHere: "Ketik jawabanmu", typeFirst: "Ketik jawaban dulu.",
         hideHelp: "🙈 Sembunyikan pinyin dan arti", showHelp: "👀 Tampilkan pinyin dan arti",
-        tapToPeek: "Ketuk baris untuk mengintip.", showSample: "Tampilkan contoh jawaban", sampleAnswer: "Contoh jawaban (tidak dinilai):" },
+        tapToPeek: "Ketuk baris untuk mengintip.", showSample: "Tampilkan contoh jawaban", sampleAnswer: "Contoh jawaban (tidak dinilai):", readStory: "Baca ceritanya: " },
 };
 
 const app = document.getElementById("app");
@@ -401,7 +404,11 @@ async function renderQuiz(subject, n) {
   let answered = 0, correct = 0;
   const scoreText = el("span", {}, ui().score(0, 0, total));
 
-  const cards = chap.questions.map((q, qi) => {
+  let lastStory = null;
+  const cards = chap.questions.flatMap((q, qi) => {
+    // a 课文/阅读 question gets its story above it, once for each run of questions about that story
+    const story = q.story && q.story !== lastStory ? storyBox(chap.stories[q.story]) : null;
+    lastStory = q.story || null;
     const why = el("div", { class: "why" }); why.hidden = true;
     const mark = ok => {
       answered++; if (ok) correct++;
@@ -443,12 +450,13 @@ async function renderQuiz(subject, n) {
       } }, String.fromCharCode(65 + oi) + ". " + tr(o)));
       answerBox = el("div", { class: "opts" }, ...buttons);
     }
-    return el("div", { class: "q" },
+    const card = el("div", { class: "q" },
       el("div", { class: "src" }, (qi + 1) + " / " + count + " · " + q.source),
       el("p", { class: "stem" }, tr(q.q)),
       q.code ? el("pre", {}, q.code) : null,
       answerBox,
       why);
+    return story ? [story, card] : [card];
   });
 
   app.replaceChildren(
@@ -526,6 +534,14 @@ function zhTools() {
 }
 
 const peek = n => { n.onclick = () => n.classList.toggle("peek"); return n; };
+
+// The story a quiz question is about: 汉字 only (reading practice), tap a line for its pinyin and meaning.
+function storyBox(story) {
+  return el("details", { class: "story hide-py hide-tr" },
+    el("summary", {}, "📖 " + ui().readStory + story.title),
+    el("div", { class: "hint" }, ui().tapToPeek),
+    zhLines(story.lines));
+}
 
 function wordBoxes(words) {
   return el("div", { class: "words" }, ...words.map(w => peek(el("div", { class: "word" },

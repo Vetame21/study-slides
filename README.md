@@ -195,7 +195,8 @@ The 汉字 and pinyin of a slide are the same in both languages, so they are wri
 - `zh`: Chinese lines, `{sp?, hz, py, tr: {en, id}}`; `sp` is the speaker, split off a line like `张东：…`
 
 Only the translations follow the language switch. The midterm review (`review.py`) and the mock exam
-(`mock.py`) are quiz chapters only, without slides. Edit the lesson file, not the JSON, then run:
+(`mock.py`) are quiz chapters only, without slides. Quiz questions whose `source` mentions 课文 or 阅读 get
+that story attached automatically (`stories` in `quiz.json`), built from the lesson's own 课文/阅读 slides. Edit the lesson file, not the JSON, then run:
 
 ```bash
 python3 tools/chinese/build.py

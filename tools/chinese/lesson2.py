@@ -140,6 +140,8 @@ SLIDES = [
         L("A：你喝了吗？B：喝了。", "A: Nǐ hē le ma? B: Hē le.", "A: Have you drunk it? B: Yes. (已经喝)", "A: Kamu sudah minum? B: Sudah. (已经喝)"),
         L("A：他喝了吗？B：他没（有）喝。", "A: Tā hē le ma? B: Tā méi(yǒu) hē.", "A: Has he drunk it? B: No. (还没喝)", "A: Dia sudah minum? B: Belum. (还没喝)"),
       ], intro=("v.+了 shows the completion of an action (动作的完成).", "v.+了 menunjukkan tindakan yang sudah selesai (动作的完成)."),
+      explain=("Lesson 1's 了 sits at the END of the sentence (a change or new situation). This 了 sits right AFTER the verb and says the action is finished: 我喝了一瓶啤酒. Negative: 没喝, with no 了.",
+               '了 di Pelajaran 1 ada di AKHIR kalimat (perubahan atau situasi baru). 了 ini langsung SESUDAH kata kerja dan berarti tindakannya selesai: 我喝了一瓶啤酒. Negatif: 没喝, tanpa 了.'),
       check=(("他喝了吗？ Answer \"no\".", "他没（有）喝。"), ("他喝了吗？ Jawab \"belum\".", "他没（有）喝。"))),
     S("HOW", ("v.+了+Number/Adjective+O.", "v.+了+Bilangan/Kata Sifat+O."), [
         L("我买了一本书。", "Wǒ mǎi le yì běn shū.", "I bought a book.", "Saya membeli sebuah buku."),
@@ -170,6 +172,8 @@ SLIDES = [
         L("我喝了药了。", "Wǒ hē le yào le.", "I've taken my medicine. (你放心吧。)", "Saya sudah minum obat. (你放心吧。)"),
       ], intro=("The second 了 is the 语气助词 (modal particle). The sentence passes on a message to draw attention (传达某种信息，用来引起注意).",
                 "了 yang kedua adalah 语气助词 (partikel modal). Kalimatnya menyampaikan pesan untuk menarik perhatian (传达某种信息，用来引起注意)."),
+      explain=('Two 了: the first says "done", the second says "so take note". 我喝了药了 = I\'ve taken it, so don\'t worry. Use it when the news matters to the listener.',
+               'Dua 了: yang pertama berarti "sudah", yang kedua "jadi perhatikan". 我喝了药了 = sudah saya minum, jadi jangan khawatir. Dipakai kalau kabar itu penting bagi pendengar.'),
       check=(("What is the message of 我喝了药了？", "Don't worry (你放心吧): I've taken it."), ("Apa pesan dari 我喝了药了？", "Jangan khawatir (你放心吧): saya sudah minum."))),
     S("WHAT", ("v₁+了+O₁+就+v₂+O₂: As Soon As", "v₁+了+O₁+就+v₂+O₂: Begitu … Langsung"), [
         L("我买了书就回学校。", "Wǒ mǎi le shū jiù huí xuéxiào.", "I'll go back to school as soon as I've bought the book. (说话时书还没有买。)", "Begitu beli buku, saya langsung pulang ke sekolah. (说话时书还没有买。)"),
@@ -191,6 +195,8 @@ SLIDES = [
         "Dalam kalimat kata kerja berangkai (v₁+O₁+v₂+O₂+了), 了 tidak boleh sesudah kata kerja pertama."),
       wr=("他去了上海参观。\n她们坐了飞机去香港。", "他去上海参观了。\n她们坐飞机去香港了。",
           ("The first verb (去, 坐) only says how or where; 了 goes at the end of the whole sentence.", "Kata kerja pertama (去, 坐) hanya menyatakan cara atau tujuan; 了 diletakkan di akhir kalimat.")),
+      explain=('In 去上海参观 or 坐飞机去香港, the first verb only says where or how. The real action is the last one, so 了 goes after the whole thing: 他去上海参观了.',
+               'Dalam 去上海参观 atau 坐飞机去香港, kata kerja pertama hanya menyatakan tujuan atau cara. Tindakan utamanya yang terakhir, jadi 了 diletakkan di akhir: 他去上海参观了.'),
       check=(("Fix it: 他去了上海参观。", "他去上海参观了。"), ("Perbaiki: 他去了上海参观。", "他去上海参观了。"))),
     S("HOW", ("Questions: ……了没有？ / ……v.没v.?", "Kalimat Tanya: ……了没有？ / ……v.没v.?"), [
         L("你买A班的书了没有？/ 你买没买A班的书？", "Nǐ mǎi A bān de shū le méiyǒu? / Nǐ mǎi méi mǎi A bān de shū?", "Did you buy Class A's book?", "Kamu sudah beli buku kelas A?"),
@@ -261,6 +267,8 @@ SLIDES = [
         L("他因为要去中国工作，所以学习汉语。", "Tā yīnwèi yào qù Zhōngguó gōngzuò, suǒyǐ xuéxí Hànyǔ.", "He's going to work in China, so he studies Chinese.", "Karena mau bekerja di Tiongkok, dia belajar bahasa Mandarin."),
         L("因为她学习很努力，所以学得很好。", "Yīnwèi tā xuéxí hěn nǔlì, suǒyǐ xué de hěn hǎo.", "She studies hard, so she learns well.", "Karena belajar dengan rajin, dia pintar."),
       ], intro=("因为……所以…… shows the cause and effect of something (事情的原因和结果).", "因为……所以…… menunjukkan sebab dan akibat (事情的原因和结果)."),
+      explain=('因为 = because (the reason), 所以 = so (the result). Chinese often uses both together, unlike English. You can also use just one of them (next slides).',
+               '因为 = karena (sebab), 所以 = jadi (akibat). Bahasa Mandarin sering memakai keduanya sekaligus, beda dengan bahasa Inggris. Bisa juga dipakai salah satunya saja (slide berikut).'),
       check=(("Which part is the cause: 因为 or 所以？", "因为"), ("Bagian mana yang sebab: 因为 atau 所以？", "因为"))),
     S("HOW", ("因为……所以……: Match", "因为……所以……: Pasangkan"), [
         L("因为昨天睡得很晚，所以我今天很累。", "Yīnwèi zuótiān shuì de hěn wǎn, suǒyǐ wǒ jīntiān hěn lèi.", "I went to bed late yesterday, so I'm tired today.", "Kemarin tidur larut, jadi hari ini capek."),

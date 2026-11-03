@@ -220,6 +220,8 @@ SLIDES = [
         L("她游了一个下午（的）泳。/ 他学了两个多月（的）汉语了。/ 我写了半个小时（的）汉字。", "Tā yóu le yí ge xiàwǔ (de) yǒng. / Tā xué le liǎng ge duō yuè (de) Hànyǔ le. / Wǒ xiě le bàn ge xiǎoshí (de) Hànzì.", "Or don't repeat it: S + V.(了) + time (+的) + O.", "Atau tanpa diulang: S + V.(了) + waktu (+的) + O."),
       ], intro=("If the verb has an object (or is a separable verb: 睡觉, 考试, 洗澡, 跳舞, 见面…), you can repeat the verb and put the time after the second one, or put the time between the verb and the object.",
                 "Kalau kata kerja punya objek (atau kata kerja terpisah: 睡觉, 考试, 洗澡, 跳舞, 见面…), ulangi kata kerjanya dan taruh waktu sesudah yang kedua, atau taruh waktu di antara kata kerja dan objek."),
+      explain=('The time must stay right after a verb. With an object, either say the verb twice (学汉语学了两年) or put the time between verb and object (学了两年汉语). Never at the very end: 学汉语两年 is wrong.',
+               'Waktunya harus langsung sesudah kata kerja. Kalau ada objek, ulangi kata kerjanya (学汉语学了两年) atau taruh waktu di antara kata kerja dan objek (学了两年汉语). Jangan di paling akhir: 学汉语两年 salah.'),
       check=(("Two ways to say \"I swam for 90 minutes\".", "我游泳游了一个半钟头。/ 我游了一个半钟头（的）泳。"), ("Dua cara mengatakan \"saya berenang 90 menit\".", "我游泳游了一个半钟头。/ 我游了一个半钟头（的）泳。"))),
     S("REMEMBER", ("③ A Personal Pronoun as the Object", "③ Kata Ganti Orang sebagai Objek"), [
         L("我找了你一个小时。", "Wǒ zhǎo le nǐ yí ge xiǎoshí.", "I looked for you for an hour.", "Saya mencarimu satu jam."),
@@ -234,6 +236,8 @@ SLIDES = [
         L("他在北京住了两年。/ 他在北京住了两年了。", "Tā zài Běijīng zhù le liǎng nián. / Tā zài Běijīng zhù le liǎng nián le.", "He lived in Beijing for two years. / He has been living there for two years (still there).", "Dia tinggal di Beijing dua tahun. / Dia sudah dua tahun tinggal di sana (masih tinggal)."),
       ], intro=("With 了 after the verb and the modal 了 at the end, the action is still going on: S + V. 了 + time + O. + 了.",
                 "Kalau ada 了 sesudah kata kerja dan 了 di akhir kalimat, tindakannya masih berlangsung: S + V. 了 + waktu + O. + 了."),
+      explain=("One 了: it lasted that long (maybe it's over). Two 了: it has lasted that long so far and is still going on. 我学了一年汉语了 = I've been learning for a year and still am.",
+               'Satu 了: berlangsung selama itu (mungkin sudah selesai). Dua 了: sudah selama itu sampai sekarang dan masih berlangsung. 我学了一年汉语了 = sudah setahun belajar dan masih belajar.'),
       check=(("我看了一个小时书了: am I still reading?", "Yes (现在还在看书)."), ("我看了一个小时书了: saya masih membaca?", "Iya (现在还在看书)."))),
     S("REMEMBER", ("Negative: Time + 没 + V. + O. + 了", "Negatif: Waktu + 没 + V. + O. + 了"), [
         L("他已经三天没上课了。", "Tā yǐjīng sān tiān méi shàngkè le.", "He hasn't been to class for three days.", "Dia sudah tiga hari tidak masuk kelas."),
@@ -245,12 +249,16 @@ SLIDES = [
         L("这件衣服六百多块。/ 教室里有二十多个学生。", "Zhè jiàn yīfu liùbǎi duō kuài. / Jiàoshì lǐ yǒu èrshí duō ge xuésheng.", "② 多 after a number over 10: Num + 多 + M. + N. (600 < 六百多 < 700)", "② 多 sesudah bilangan di atas 10: Bil + 多 + Satuan + Benda (600 < 六百多 < 700)"),
         L("这些苹果一共五斤多。/ 我来中国已经两个多月了。", "Zhèxiē píngguǒ yígòng wǔ jīn duō. / Wǒ lái Zhōngguó yǐjīng liǎng ge duō yuè le.", "② 多 after the measure word when the number is under 10: Num + M. + 多 + N.", "② 多 sesudah kata satuan kalau bilangannya di bawah 10: Bil + Satuan + 多 + Benda"),
         L("昨天去了十几个人。/ 我们大学有几千个留学生呢。", "Zuótiān qù le shí jǐ ge rén. / Wǒmen dàxué yǒu jǐ qiān ge liúxuéshēng ne.", "③ 几: a dozen or so people (10 < 十几 < 20) / several thousand students", "③ 几: belasan orang (10 < 十几 < 20) / beberapa ribu mahasiswa"),
-      ], check=(("Say \"over two months\".", "两个多月"), ("Katakan \"lebih dari dua bulan\".", "两个多月"))),
+      ], explain=('Where does 多 go? Round numbers 10 and above: after the number (二十多年). Under 10: after the measure word (两个多月, 一年多).',
+               '多 diletakkan di mana? Bilangan bulat 10 ke atas: sesudah bilangan (二十多年). Di bawah 10: sesudah kata satuan (两个多月, 一年多).'),
+      check=(("Say \"over two months\".", "两个多月"), ("Katakan \"lebih dari dua bulan\".", "两个多月"))),
     S("WHAT", ("离合动词: Separable Verbs", "离合动词: Kata Kerja Terpisah"), [
         L("睡觉 / 考试 / 洗澡 / 唱歌 / 跳舞 / 毕业 / 游泳 / 见面", "shuìjiào / kǎoshì / xǐzǎo / chànggē / tiàowǔ / bìyè / yóuyǒng / jiànmiàn", "sleep / take an exam / shower / sing / dance / graduate / swim / meet", "tidur / ujian / mandi / menyanyi / berdansa / lulus / berenang / bertemu"),
         L("帮忙 / 结婚 / 散步 / 跑步 / 聊天", "bāngmáng / jiéhūn / sànbù / pǎobù / liáotiān", "help / get married / walk / run / chat", "membantu / menikah / jalan-jalan / lari / mengobrol"),
         L("睡睡觉 / 考考试 / 洗洗澡 / 唱唱歌 / 跳跳舞 / 聊聊天 (AAB)", "shuìshui jiào / kǎokao shì / xǐxi zǎo / chàngchang gē / tiàotiao wǔ / liáoliao tiān (AAB)", "Reduplication is AAB.", "Bentuk ulangnya AAB."),
       ], intro=("A separable verb is a two-syllable verb-object word that can be split.", "Kata kerja terpisah adalah kata dua suku kata (kata kerja + objek) yang bisa dipisah."),
+      explain=("These words are really a verb + its own object: 睡觉 = sleep + sleep. So other words go in the middle: 睡了八个小时觉, 见了一次面, and they can't take another object (见面朋友 is wrong).",
+               'Kata-kata ini sebenarnya kata kerja + objeknya sendiri: 睡觉 = tidur + tidur. Jadi kata lain masuk di tengah: 睡了八个小时觉, 见了一次面, dan tidak bisa diberi objek lain (见面朋友 salah).'),
       check=(("Reduplicate 散步.", "散散步"), ("Ulangi bentuk 散步.", "散散步"))),
     S("REMEMBER", ("离合动词: Notes", "离合动词: Catatan"), [], intro=(
         "① Most separable verbs cannot take an object. ② If the verb is not repeated, the duration or frequency goes in the middle: S + V.(了) + 时量补语/动量补语 + O.",
@@ -263,7 +271,9 @@ SLIDES = [
         L("博物馆离这儿很近，坐车三站就到了。", "Bówùguǎn lí zhèr hěn jìn, zuò chē sān zhàn jiù dào le.", "The museum is close: just three stops. (就)", "Museumnya dekat, tiga halte sudah sampai. (就)"),
         L("他每天回到家洗了澡再吃饭。/ 我们吃完饭再去散步吧。", "Tā měi tiān huí dào jiā xǐ le zǎo zài chī fàn. / Wǒmen chī wán fàn zài qù sànbù ba.", "v₁,再+v₂: first A, then B.", "v₁,再+v₂: A dulu, lalu B."),
         L("你先告诉我，我才会告诉你。/ 你买了票才能坐地铁。/ 到了18岁你才可以开车。", "Nǐ xiān gàosu wǒ, wǒ cái huì gàosu nǐ. / Nǐ mǎi le piào cái néng zuò dìtiě. / Dào le shíbā suì nǐ cái kěyǐ kāichē.", "v₁,才+v₂: you must do A before B.", "v₁,才+v₂: harus A dulu baru bisa B."),
-      ], check=(("你买了票____能坐地铁。", "才"), ("你买了票____能坐地铁。", "才"))),
+      ], explain=("就 vs 才: early or fast → 就, late or slow → 才. 再 vs 又: the repeat hasn't happened → 再, already happened → 又. v₁,再 v₂ = A first, then B. v₁,才 v₂ = B only after A.",
+               '就 vs 才: awal atau cepat → 就, terlambat atau lambat → 才. 再 vs 又: pengulangan belum terjadi → 再, sudah terjadi → 又. v₁,再 v₂ = A dulu, lalu B. v₁,才 v₂ = B baru bisa setelah A.'),
+      check=(("你买了票____能坐地铁。", "才"), ("你买了票____能坐地铁。", "才"))),
 
     # Reading ----------------------------------------------------------------------------------
     S("HOW", ("阅读: 小伙子和长椅子 (1/2)", "阅读: 小伙子和长椅子 (1/2)"), [
