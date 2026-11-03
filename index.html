@@ -99,6 +99,14 @@
         border-radius: 6px; font-size: .8rem; white-space: nowrap; }
   .sp0 { background: var(--sp0-bg); color: var(--sp0); } .sp1 { background: var(--sp1-bg); color: var(--sp1); }
   .sp2 { background: var(--sp2-bg); color: var(--sp2); }
+  /* Reading practice: hide pinyin and/or translations; tapping a line or word shows them again */
+  .zh-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 0 0 10px; }
+  .zh-tools button { font-size: .85rem; padding: 4px 12px; border-radius: 999px; }
+  .zh-tools .hint { font-size: .8rem; color: var(--muted); }
+  .hide-py .zl:not(.peek) .py, .hide-tr .zl:not(.peek) .tr { display: none; }
+  .hide-py .word:not(.peek) .py, .hide-tr .word:not(.peek) .pos, .hide-tr .word:not(.peek) .mean { visibility: hidden; }
+  .hide-py .zl, .hide-tr .zl, .hide-py .word, .hide-tr .word { cursor: pointer; }
+  .hide-py .zl .sp, .hide-tr .zl .sp { margin-top: 4px; }
   .reason { margin-top: 6px; font-size: .95rem; }
   .qc { margin-top: 16px; border-top: 1px dashed var(--line); padding-top: 14px; }
   .qc .answer { margin-top: 8px; }
@@ -262,7 +270,9 @@ const UI = {
         answerIs: "Answer: ", missingFig: "Figure not available: the original homework file was missing when this was made.",
         problem: "Problem", method: "Why this method: ", gradeable: (c, a, t) => `Score: ${c} / ${t}  (${a} answered; problems aren't scored)`,
         wrongLbl: "✗ Wrong", rightLbl: "✓ Right", quickCheck: "Quick check", toggle: "🇮🇩 Bahasa Indonesia",
-        check: "Check", typeHere: "Type your answer", typeFirst: "Type an answer first." },
+        check: "Check", typeHere: "Type your answer", typeFirst: "Type an answer first.",
+        hideHelp: "🙈 Hide pinyin and meaning", showHelp: "👀 Show pinyin and meaning",
+        tapToPeek: "Tap a line to peek." },
   id: { pick: "Pilih mata kuliah.", all: "← Semua mata kuliah", soon: "Segera hadir", quizzes: "Kuis kelas",
         toPractice: n => n + " untuk latihan", lectures: "Materi kuliah", chaptersOf: n => n + " bab slide",
         slides: n => n + " slide", questions: n => n + " soal", back: "← Kembali", next: "Lanjut →",
@@ -275,7 +285,9 @@ const UI = {
         answerIs: "Jawaban: ", missingFig: "Gambar tidak tersedia: file PR asli hilang saat ini dibuat.",
         problem: "Soal", method: "Mengapa metode ini: ", gradeable: (c, a, t) => `Skor: ${c} / ${t}  (${a} dijawab; soal uraian tidak dinilai)`,
         wrongLbl: "✗ Salah", rightLbl: "✓ Benar", quickCheck: "Cek cepat", toggle: "🇬🇧 English",
-        check: "Periksa", typeHere: "Ketik jawabanmu", typeFirst: "Ketik jawaban dulu." },
+        check: "Periksa", typeHere: "Ketik jawabanmu", typeFirst: "Ketik jawaban dulu.",
+        hideHelp: "🙈 Sembunyikan pinyin dan arti", showHelp: "👀 Tampilkan pinyin dan arti",
+        tapToPeek: "Ketuk baris untuk mengintip." },
 };
 
 const app = document.getElementById("app");
@@ -445,6 +457,7 @@ function renderSlide(subject, slides, i) {
     el("span", { class: "tag " + s.tag }, s.tag),
     s.practice ? el("span", { class: "practice" }, ui().practised + s.practice) : null,
     el("h2", {}, t.title),
+    s.word || s.zh ? zhTools() : null,
     s.word ? wordBoxes(s.word) : null,
     el("div", { class: "body" }, t.body),
     s.zh ? zhLines(s.zh) : null,
@@ -477,20 +490,46 @@ function renderSlide(subject, slides, i) {
 // Figures are inlined (not <img>) so the page's CSS classes can colour them for light/dark.
 // They are our own files from tools/figures.py, so inserting their markup is safe.
 // Chinese slides: a box per new word, and the "zh" lines; only the translations follow the language switch.
+// Reading practice: one switch hides pinyin and meanings together. The choice is remembered across slides.
+let hideHelp = false;
+try { hideHelp = localStorage.getItem("hideHelp") === "1"; } catch (e) {}
+
+function zhTools() {
+  const hint = el("span", { class: "hint" }, ui().tapToPeek);
+  const apply = () => {
+    const card = tools.closest(".card");
+    card.classList.toggle("hide-py", hideHelp);
+    card.classList.toggle("hide-tr", hideHelp);
+    btn.textContent = hideHelp ? ui().showHelp : ui().hideHelp;
+    hint.hidden = !hideHelp;
+  };
+  const btn = el("button", { onclick: () => {
+    hideHelp = !hideHelp;
+    try { localStorage.setItem("hideHelp", hideHelp ? "1" : "0"); } catch (e) {}
+    tools.closest(".card").querySelectorAll(".peek").forEach(n => n.classList.remove("peek"));
+    apply();
+  } });
+  const tools = el("div", { class: "zh-tools" }, btn, hint);
+  setTimeout(apply);  // runs once the toolbar is inside the card
+  return tools;
+}
+
+const peek = n => { n.onclick = () => n.classList.toggle("peek"); return n; };
+
 function wordBoxes(words) {
-  return el("div", { class: "words" }, ...words.map(w => el("div", { class: "word" },
+  return el("div", { class: "words" }, ...words.map(w => peek(el("div", { class: "word" },
     el("div", {}, el("div", { class: "py" }, w.py), el("div", { class: "hz", lang: "zh-CN" }, w.hz)),
-    el("div", {}, tr(w.pos) ? el("div", { class: "pos" }, tr(w.pos)) : null, el("div", { class: "mean" }, tr(w.mean))))));
+    el("div", {}, tr(w.pos) ? el("div", { class: "pos" }, tr(w.pos)) : null, el("div", { class: "mean" }, tr(w.mean)))))));
 }
 
 function zhLines(lines) {
   const speakers = [];  // colour each speaker by order of first appearance on the slide
   return el("div", { class: "zh" }, ...lines.map(l => {
     if (l.sp && !speakers.includes(l.sp)) speakers.push(l.sp);
-    return el("div", { class: "zl" },
+    return peek(el("div", { class: "zl" },
       l.sp ? el("span", { class: "sp sp" + (speakers.indexOf(l.sp) % 3), lang: "zh-CN" }, l.sp) : null,
       el("div", {}, el("div", { class: "py" }, l.py), el("div", { class: "hz", lang: "zh-CN" }, l.hz),
-        el("div", { class: "tr" }, tr(l.tr))));
+        el("div", { class: "tr" }, tr(l.tr)))));
   }));
 }
 
