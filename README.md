@@ -30,7 +30,10 @@ digital-logic/
 college-physics-2/
   slides.json, quiz.json    Ch 21–24 (charge, field, Gauss' law, potential), with 13 physics demos
   homework.json, homework/  HW01, HW02, HW04, HW05 practice + solution PDFs (generated)
+comprehensive-chinese-a/
+  slides.json, quiz.json    Lessons with 汉字 + pinyin on every slide (generated, see below)
 tools/figures.py            draws the Data Structure figures
+tools/chinese/              source of the Comprehensive Chinese A lessons
 ```
 
 A subject folder shows **"Coming soon"** until it has a `slides.json` or `quiz.json`.
@@ -47,6 +50,7 @@ The subject page only shows the parts whose file exists.
      book: "Title, Edition, Author" },
    ```
    Only fill in `book` if the PPT names the textbook. Never guess it.
+   Add `defaultLang: "id"` to open the subject in Indonesian until the visitor picks a language.
 3. Add `slides.json` and/or `quiz.json` to the folder (formats below).
 4. Test it locally (see [Testing](#testing-before-you-push)), then push.
 
@@ -173,7 +177,30 @@ A list of chapters, each holding its questions:
 - `why` explains the right answer, and ideally why the tempting wrong one is wrong.
 - `code` (optional) shows a code snippet under the question.
 - Questions that are not from the PPT get `[ADDED]` in `source`.
+- A **fill-in** question has `"accept": ["答案", ...]` instead of `options` and `answer`: the student types the
+  answer, and it is marked right if it matches any accepted answer (spaces and punctuation are ignored).
+  Put the best answer first; it is shown when the student is wrong.
 - Aim for about 10 questions per chapter.
+
+---
+
+## Comprehensive Chinese A
+
+The 汉字 and pinyin of a slide are the same in both languages, so they are written once in
+`tools/chinese/lessonN.py`. `cclib.py` stores them as two extra slide fields that `index.html` draws:
+
+- `word`: new-word boxes, `{hz, py, pos: {en, id}, mean: {en, id}}`
+- `zh`: Chinese lines, `{sp?, hz, py, tr: {en, id}}`; `sp` is the speaker, split off a line like `张东：…`
+
+Only the translations follow the language switch. Edit the lesson file, not the JSON, then run:
+
+```bash
+python3 tools/chinese/build.py
+```
+
+The teacher's PDFs are images, so everything is typed by hand from the pages. The vocabulary pinyin is the
+teacher's. Sentence pinyin and sentence translations are added for the site, and the first slide of each
+lesson says so. Use full-width Chinese punctuation in 汉字 lines.
 
 ---
 

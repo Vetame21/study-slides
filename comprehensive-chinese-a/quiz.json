@@ -1,0 +1,5688 @@
+[
+  {
+    "chapter": {
+      "en": "第1课 田芳去哪儿了 (Where did Tian Fang go?)",
+      "id": "第1课 田芳去哪儿了 (Tian Fang pergi ke mana?)"
+    },
+    "note": {
+      "en": "[NOTE] All exercises come from the teacher's slides: grammar, the 课文 stories, reading and fill-ins. For a fill-in, type the 汉字; punctuation does not matter.",
+      "id": "[NOTE] Semua latihan berasal dari slide guru: grammar, cerita 课文, bacaan, dan isian. Untuk soal isian, ketik 汉字; tanda baca tidak dihitung."
+    },
+    "questions": [
+      {
+        "source": "p. 22",
+        "q": {
+          "en": "你买A班的书了吗？ Answer \"no\".",
+          "id": "你买A班的书了吗？ Jawab \"belum\"."
+        },
+        "options": [
+          {
+            "en": "不买。",
+            "id": "不买。"
+          },
+          {
+            "en": "没买。",
+            "id": "没买。"
+          },
+          {
+            "en": "没买了。",
+            "id": "没买了。"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "It asks about something already done, so use 没 and no 了.",
+          "id": "Pertanyaannya tentang hal yang sudah lewat, jadi pakai 没 dan tanpa 了."
+        }
+      },
+      {
+        "source": "p. 23",
+        "q": {
+          "en": "他走了没有？ Answer \"not yet\".",
+          "id": "他走了没有？ Jawab \"belum\"."
+        },
+        "options": [
+          {
+            "en": "他还没走了。",
+            "id": "他还没走了。"
+          },
+          {
+            "en": "他不走呢。",
+            "id": "他不走呢。"
+          },
+          {
+            "en": "他还没（有）走呢。",
+            "id": "他还没（有）走呢。"
+          }
+        ],
+        "answer": 2,
+        "why": {
+          "en": "The pattern is 还没（有）……呢.",
+          "id": "Polanya 还没（有）……呢."
+        }
+      },
+      {
+        "source": "p. 47",
+        "q": {
+          "en": "田芳回家了没有？",
+          "id": "田芳回家了没有？"
+        },
+        "options": [
+          {
+            "en": "她还没有回家呢。",
+            "id": "她还没有回家呢。"
+          },
+          {
+            "en": "她还没有回家了。",
+            "id": "她还没有回家了。"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "The pattern is 还没（有）……呢, not 了.",
+          "id": "Polanya 还没（有）……呢, bukan 了."
+        }
+      },
+      {
+        "source": "p. 24",
+        "q": {
+          "en": "Which sentence is correct?",
+          "id": "Kalimat mana yang benar?"
+        },
+        "options": [
+          {
+            "en": "她觉得不舒服，今天没有上课了。",
+            "id": "她觉得不舒服，今天没有上课了。"
+          },
+          {
+            "en": "她觉得不舒服，今天没有上课。",
+            "id": "她觉得不舒服，今天没有上课。"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "With 没（有） before a verb, the sentence does not end in 了.",
+          "id": "Kalau 没（有） dipakai sebelum kata kerja, kalimat tidak diakhiri 了."
+        }
+      },
+      {
+        "source": "p. 25",
+        "q": {
+          "en": "Which sentence is correct?",
+          "id": "Kalimat mana yang benar?"
+        },
+        "options": [
+          {
+            "en": "每天早上她都去打太极拳。",
+            "id": "每天早上她都去打太极拳。"
+          },
+          {
+            "en": "每天早上她都去打太极拳了。",
+            "id": "每天早上她都去打太极拳了。"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "每天 shows a recurring action, so the sentence has no 了.",
+          "id": "每天 menunjukkan kegiatan berulang, jadi kalimatnya tanpa 了."
+        }
+      },
+      {
+        "source": "p. 49",
+        "q": {
+          "en": "Which sentence is correct?",
+          "id": "Kalimat mana yang benar?"
+        },
+        "options": [
+          {
+            "en": "我在大学时常常参加足球比赛。",
+            "id": "我在大学时常常参加足球比赛。"
+          },
+          {
+            "en": "我在大学时常常参加足球比赛了。",
+            "id": "我在大学时常常参加足球比赛了。"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "常常 shows a recurring action, so the sentence has no 了.",
+          "id": "常常 menunjukkan kegiatan berulang, jadi kalimatnya tanpa 了."
+        }
+      },
+      {
+        "source": "p. 49",
+        "q": {
+          "en": "Which sentence is correct?",
+          "id": "Kalimat mana yang benar?"
+        },
+        "options": [
+          {
+            "en": "我们八点已经开始了上课。",
+            "id": "我们八点已经开始了上课。"
+          },
+          {
+            "en": "我们八点已经开始上课了。",
+            "id": "我们八点已经开始上课了。"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "The teacher's correction moves 了 to the end of the sentence.",
+          "id": "Koreksi guru memindahkan 了 ke akhir kalimat."
+        }
+      },
+      {
+        "source": "p. 26",
+        "q": {
+          "en": "你吃午饭了没有？ Answer \"no\" in a full sentence.",
+          "id": "你吃午饭了没有？ Jawab \"belum\" dengan kalimat lengkap."
+        },
+        "options": [
+          {
+            "en": "我没吃午饭了。",
+            "id": "我没吃午饭了。"
+          },
+          {
+            "en": "我不吃午饭。",
+            "id": "我不吃午饭。"
+          },
+          {
+            "en": "我没（有）吃午饭。",
+            "id": "我没（有）吃午饭。"
+          }
+        ],
+        "answer": 2,
+        "why": {
+          "en": "没（有） with no 了 at the end.",
+          "id": "Pakai 没（有）, tanpa 了 di akhir."
+        }
+      },
+      {
+        "source": "p. 46",
+        "q": {
+          "en": "你去哪儿？",
+          "id": "你去哪儿？"
+        },
+        "options": [
+          {
+            "en": "我去图书馆了。",
+            "id": "我去图书馆了。"
+          },
+          {
+            "en": "我去图书馆。",
+            "id": "我去图书馆。"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "The question has no 了: you haven't gone yet, so the answer has no 了.",
+          "id": "Pertanyaannya tanpa 了: belum pergi, jadi jawabannya juga tanpa 了."
+        }
+      },
+      {
+        "source": "p. 46",
+        "q": {
+          "en": "你买词典了没有？",
+          "id": "你买词典了没有？"
+        },
+        "options": [
+          {
+            "en": "我不买词典。",
+            "id": "我不买词典。"
+          },
+          {
+            "en": "我没买词典。",
+            "id": "我没买词典。"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "It asks about the past, so use 没. 不 would mean you refuse to buy one.",
+          "id": "Pertanyaannya tentang masa lalu, jadi pakai 没. 不 berarti kamu tidak mau membeli."
+        }
+      },
+      {
+        "source": "p. 46",
+        "q": {
+          "en": "今天晚上谁来？",
+          "id": "今天晚上谁来？"
+        },
+        "options": [
+          {
+            "en": "张东来。",
+            "id": "张东来。"
+          },
+          {
+            "en": "张东来了。",
+            "id": "张东来了。"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "Tonight hasn't happened yet, so no 了.",
+          "id": "Malam ini belum terjadi, jadi tanpa 了."
+        }
+      },
+      {
+        "source": "p. 53",
+        "q": {
+          "en": "What does 你不是要上托福班吗？ stress?",
+          "id": "Apa yang ditegaskan 你不是要上托福班吗？"
+        },
+        "options": [
+          {
+            "en": "You are going to take the class.",
+            "id": "Kamu memang mau ikut kelas itu."
+          },
+          {
+            "en": "You are not going to take the class.",
+            "id": "Kamu tidak mau ikut kelas itu."
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "A 反问句 strongly says yes (强调肯定).",
+          "id": "反问句 menegaskan \"ya\" (强调肯定)."
+        }
+      },
+      {
+        "source": "p. 64",
+        "q": {
+          "en": "我明天____去超市，我要去书店。",
+          "id": "我明天____去超市，我要去书店。"
+        },
+        "options": [
+          {
+            "en": "不",
+            "id": "不"
+          },
+          {
+            "en": "没",
+            "id": "没"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "明天 is a future plan, so use 不.",
+          "id": "明天 adalah rencana masa depan, jadi pakai 不."
+        }
+      },
+      {
+        "source": "p. 64",
+        "q": {
+          "en": "昨天我____去商店，我去书店了。",
+          "id": "昨天我____去商店，我去书店了。"
+        },
+        "options": [
+          {
+            "en": "不",
+            "id": "不"
+          },
+          {
+            "en": "没",
+            "id": "没"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "昨天 is the past, so use 没.",
+          "id": "昨天 adalah masa lalu, jadi pakai 没."
+        }
+      },
+      {
+        "source": "p. 64",
+        "q": {
+          "en": "昨天你去____去大使馆？",
+          "id": "昨天你去____去大使馆？"
+        },
+        "options": [
+          {
+            "en": "没",
+            "id": "没"
+          },
+          {
+            "en": "不",
+            "id": "不"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "昨天 is the past, so use 没.",
+          "id": "昨天 adalah masa lalu, jadi pakai 没."
+        }
+      },
+      {
+        "source": "p. 64",
+        "q": {
+          "en": "A：你常常给你妈妈打电话吗？B：我____常给她打电话，常给她发微信。",
+          "id": "A：你常常给你妈妈打电话吗？B：我____常给她打电话，常给她发微信。"
+        },
+        "options": [
+          {
+            "en": "没",
+            "id": "没"
+          },
+          {
+            "en": "不",
+            "id": "不"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "A habit takes 不.",
+          "id": "Kebiasaan memakai 不."
+        }
+      },
+      {
+        "source": "p. 67",
+        "q": {
+          "en": "上次比赛我们赢了，这次____赢了。",
+          "id": "上次比赛我们赢了，这次____赢了。"
+        },
+        "options": [
+          {
+            "en": "又",
+            "id": "又"
+          },
+          {
+            "en": "再",
+            "id": "再"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "The second win already happened, so use 又.",
+          "id": "Kemenangan kedua sudah terjadi, jadi pakai 又."
+        }
+      },
+      {
+        "source": "p. 67",
+        "q": {
+          "en": "我昨天已经去了，今天不想____去了。",
+          "id": "我昨天已经去了，今天不想____去了。"
+        },
+        "options": [
+          {
+            "en": "又",
+            "id": "又"
+          },
+          {
+            "en": "再",
+            "id": "再"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "The repeat has not happened, so use 再.",
+          "id": "Pengulangannya belum terjadi, jadi pakai 再."
+        }
+      },
+      {
+        "source": "p. 67",
+        "q": {
+          "en": "张东刚才给你打电话了，你不在，他说过一会儿____打。",
+          "id": "张东刚才给你打电话了，你不在，他说过一会儿____打。"
+        },
+        "options": [
+          {
+            "en": "再",
+            "id": "再"
+          },
+          {
+            "en": "又",
+            "id": "又"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "The next call has not happened yet, so use 再.",
+          "id": "Telepon berikutnya belum terjadi, jadi pakai 再."
+        }
+      },
+      {
+        "source": "p. 67",
+        "q": {
+          "en": "我____买了一个手机。",
+          "id": "我____买了一个手机。"
+        },
+        "options": [
+          {
+            "en": "再",
+            "id": "再"
+          },
+          {
+            "en": "又",
+            "id": "又"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "买了 shows it already happened, so use 又.",
+          "id": "买了 menunjukkan sudah terjadi, jadi pakai 又."
+        }
+      },
+      {
+        "source": "p. 14 课文",
+        "q": {
+          "en": "谁接的电话？",
+          "id": "谁接的电话？"
+        },
+        "options": [
+          {
+            "en": "张东",
+            "id": "张东"
+          },
+          {
+            "en": "田芳",
+            "id": "田芳"
+          },
+          {
+            "en": "田芳的妈妈",
+            "id": "田芳的妈妈"
+          }
+        ],
+        "answer": 2,
+        "why": {
+          "en": "田芳的妈妈接的电话: Tian Fang is out.",
+          "id": "田芳的妈妈接的电话: Tian Fang sedang pergi."
+        }
+      },
+      {
+        "source": "p. 14 课文",
+        "q": {
+          "en": "田芳下午去哪儿了？",
+          "id": "田芳下午去哪儿了？"
+        },
+        "options": [
+          {
+            "en": "去商店了",
+            "id": "去商店了"
+          },
+          {
+            "en": "去同学家了",
+            "id": "去同学家了"
+          },
+          {
+            "en": "去踢足球了",
+            "id": "去踢足球了"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "她去同学家了: a classmate is going abroad.",
+          "id": "她去同学家了: temannya mau ke luar negeri."
+        }
+      },
+      {
+        "source": "p. 57 课文",
+        "q": {
+          "en": "张东下午做什么了？ Type the answer.",
+          "id": "张东下午做什么了？ Ketik jawabannya."
+        },
+        "accept": [
+          "他去踢足球了。",
+          "去踢足球了",
+          "踢足球了",
+          "踢足球"
+        ],
+        "why": {
+          "en": "Text (2): 我去踢足球了。",
+          "id": "Teks (2): 我去踢足球了。"
+        }
+      },
+      {
+        "source": "p. 57 课文",
+        "q": {
+          "en": "足球比赛谁输了？",
+          "id": "足球比赛谁输了？"
+        },
+        "options": [
+          {
+            "en": "张东的队",
+            "id": "张东的队"
+          },
+          {
+            "en": "田芳的队",
+            "id": "田芳的队"
+          },
+          {
+            "en": "留学生代表队",
+            "id": "留学生代表队"
+          }
+        ],
+        "answer": 2,
+        "why": {
+          "en": "张东 says 这次我们赢了.",
+          "id": "张东 berkata 这次我们赢了."
+        }
+      },
+      {
+        "source": "p. 45 填空",
+        "q": {
+          "en": "我下午去操场____足球了。",
+          "id": "我下午去操场____足球了。"
+        },
+        "accept": [
+          "踢"
+        ],
+        "why": {
+          "en": "踢足球: to play football.",
+          "id": "踢足球: main sepak bola."
+        }
+      },
+      {
+        "source": "p. 45 填空",
+        "q": {
+          "en": "他正在____电话呢。",
+          "id": "他正在____电话呢。"
+        },
+        "accept": [
+          "接"
+        ],
+        "why": {
+          "en": "接电话: to answer the phone.",
+          "id": "接电话: mengangkat telepon."
+        }
+      },
+      {
+        "source": "p. 45 填空",
+        "q": {
+          "en": "我姐姐____大学毕业了。",
+          "id": "我姐姐____大学毕业了。"
+        },
+        "accept": [
+          "已经"
+        ],
+        "why": {
+          "en": "已经……了: already.",
+          "id": "已经……了: sudah."
+        }
+      }
+    ]
+  },
+  {
+    "chapter": {
+      "en": "第2课 玛丽哭了 (Mary is crying)",
+      "id": "第2课 玛丽哭了 (Mary menangis)"
+    },
+    "note": {
+      "en": "[NOTE] All exercises come from the teacher's slides: grammar, the 课文 stories, reading and fill-ins. For a fill-in, type the 汉字; punctuation does not matter.",
+      "id": "[NOTE] Semua latihan berasal dari slide guru: grammar, cerita 课文, bacaan, dan isian. Untuk soal isian, ketik 汉字; tanda baca tidak dihitung."
+    },
+    "questions": [
+      {
+        "source": "p. 29",
+        "q": {
+          "en": "A：他喝了吗？ He hasn't. B：____",
+          "id": "A：他喝了吗？ Dia belum. B：____"
+        },
+        "options": [
+          {
+            "en": "他不喝。",
+            "id": "他不喝。"
+          },
+          {
+            "en": "他没喝了。",
+            "id": "他没喝了。"
+          },
+          {
+            "en": "他没（有）喝。",
+            "id": "他没（有）喝。"
+          }
+        ],
+        "answer": 2,
+        "why": {
+          "en": "After 没（有）, no 了. 不喝 would mean he doesn't want to.",
+          "id": "Sesudah 没（有）, tanpa 了. 不喝 berarti dia tidak mau."
+        }
+      },
+      {
+        "source": "p. 29",
+        "q": {
+          "en": "A：你喝吗？B：喝。What does B mean?",
+          "id": "A：你喝吗？B：喝。Apa maksud B?"
+        },
+        "options": [
+          {
+            "en": "I want to drink.",
+            "id": "Saya mau minum."
+          },
+          {
+            "en": "I've already drunk it.",
+            "id": "Saya sudah minum."
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "No 了: 他想喝, not done yet.",
+          "id": "Tanpa 了: 他想喝, belum terjadi."
+        }
+      },
+      {
+        "source": "p. 38",
+        "q": {
+          "en": "Which is the other form of 你看电影了没有？",
+          "id": "Mana bentuk lain dari 你看电影了没有？"
+        },
+        "options": [
+          {
+            "en": "你看没看电影？",
+            "id": "你看没看电影？"
+          },
+          {
+            "en": "你看不看电影了？",
+            "id": "你看不看电影了？"
+          },
+          {
+            "en": "你没看电影吗了？",
+            "id": "你没看电影吗了？"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "……v.+没+v.?: 看没看.",
+          "id": "……v.+没+v.?: 看没看."
+        }
+      },
+      {
+        "source": "p. 30",
+        "q": {
+          "en": "Which sentence is correct?",
+          "id": "Kalimat mana yang benar?"
+        },
+        "options": [
+          {
+            "en": "我吃好吃的了蛋糕。",
+            "id": "我吃好吃的了蛋糕。"
+          },
+          {
+            "en": "我吃了好吃的蛋糕。",
+            "id": "我吃了好吃的蛋糕。"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "了 goes right after the verb: v.+了+adj.+O.",
+          "id": "了 langsung sesudah kata kerja: v.+了+adj.+O."
+        }
+      },
+      {
+        "source": "p. 33",
+        "q": {
+          "en": "我买了书了。What does the speaker want to say?",
+          "id": "我买了书了。Apa yang mau dikatakan?"
+        },
+        "options": [
+          {
+            "en": "I haven't bought it yet.",
+            "id": "Saya belum beli."
+          },
+          {
+            "en": "Don't buy one for me (不再买了).",
+            "id": "Tidak usah belikan saya (不再买了)."
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "v.+了+O.+了 passes on a message: it's done, no need to buy another.",
+          "id": "v.+了+O.+了 menyampaikan pesan: sudah, tidak perlu beli lagi."
+        }
+      },
+      {
+        "source": "p. 34",
+        "q": {
+          "en": "我买了书就回学校。When this is said, has the book been bought?",
+          "id": "我买了书就回学校。Saat diucapkan, bukunya sudah dibeli?"
+        },
+        "options": [
+          {
+            "en": "Yes",
+            "id": "Sudah"
+          },
+          {
+            "en": "Not yet",
+            "id": "Belum"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "v₁+了+O₁+就+v₂: done only in the mind (说话时书还没有买).",
+          "id": "v₁+了+O₁+就+v₂: selesai dalam pikiran saja (说话时书还没有买)."
+        }
+      },
+      {
+        "source": "p. 36",
+        "q": {
+          "en": "明天我吃了早饭____",
+          "id": "明天我吃了早饭____"
+        },
+        "options": [
+          {
+            "en": "就去上课。",
+            "id": "就去上课。"
+          },
+          {
+            "en": "就去上课了。",
+            "id": "就去上课了。"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "明天 is the future, so no 了 at the end.",
+          "id": "明天 adalah masa depan, jadi tanpa 了 di akhir."
+        }
+      },
+      {
+        "source": "p. 36",
+        "q": {
+          "en": "昨天上午我下了课____",
+          "id": "昨天上午我下了课____"
+        },
+        "options": [
+          {
+            "en": "就去图书馆。",
+            "id": "就去图书馆。"
+          },
+          {
+            "en": "就去图书馆了。",
+            "id": "就去图书馆了。"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "昨天 already happened, so the sentence ends in 了.",
+          "id": "昨天 sudah terjadi, jadi kalimatnya diakhiri 了."
+        }
+      },
+      {
+        "source": "p. 36",
+        "q": {
+          "en": "上午我觉得有点儿发烧，下了课____",
+          "id": "上午我觉得有点儿发烧，下了课____"
+        },
+        "options": [
+          {
+            "en": "就回家了。",
+            "id": "就回家了。"
+          },
+          {
+            "en": "就回家。",
+            "id": "就回家。"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "It already happened this morning: 就回家了.",
+          "id": "Sudah terjadi tadi pagi: 就回家了."
+        }
+      },
+      {
+        "source": "p. 58",
+        "q": {
+          "en": "Which sentence is correct?",
+          "id": "Kalimat mana yang benar?"
+        },
+        "options": [
+          {
+            "en": "昨天我吃了早饭就去教室。",
+            "id": "昨天我吃了早饭就去教室。"
+          },
+          {
+            "en": "昨天我吃了早饭就去教室了。",
+            "id": "昨天我吃了早饭就去教室了。"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "The teacher's correction adds 了 at the end, because 昨天 already happened.",
+          "id": "Koreksi guru menambah 了 di akhir, karena 昨天 sudah terjadi."
+        }
+      },
+      {
+        "source": "p. 37",
+        "q": {
+          "en": "Which sentence is correct?",
+          "id": "Kalimat mana yang benar?"
+        },
+        "options": [
+          {
+            "en": "他去了上海参观。",
+            "id": "他去了上海参观。"
+          },
+          {
+            "en": "他去上海参观了。",
+            "id": "他去上海参观了。"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "Serial verbs: no 了 after the first verb; 了 goes at the end.",
+          "id": "Kata kerja berangkai: tanpa 了 sesudah kata kerja pertama; 了 di akhir."
+        }
+      },
+      {
+        "source": "p. 37",
+        "q": {
+          "en": "Which sentence is correct?",
+          "id": "Kalimat mana yang benar?"
+        },
+        "options": [
+          {
+            "en": "她们坐飞机去香港了。",
+            "id": "她们坐飞机去香港了。"
+          },
+          {
+            "en": "她们坐了飞机去香港。",
+            "id": "她们坐了飞机去香港。"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "Serial verbs: 了 goes at the end.",
+          "id": "Kata kerja berangkai: 了 di akhir."
+        }
+      },
+      {
+        "source": "p. 40 [ADDED]",
+        "q": {
+          "en": "Fix it: 她感冒了，昨天我去了看她。",
+          "id": "Perbaiki: 她感冒了，昨天我去了看她。"
+        },
+        "options": [
+          {
+            "en": "她感冒了，昨天我去看她了。",
+            "id": "她感冒了，昨天我去看她了。"
+          },
+          {
+            "en": "她感冒了，昨天我去了看了她。",
+            "id": "她感冒了，昨天我去了看了她。"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "去看她 is a serial verb phrase, so 了 goes at the end.",
+          "id": "去看她 adalah kata kerja berangkai, jadi 了 di akhir."
+        }
+      },
+      {
+        "source": "p. 40 [ADDED]",
+        "q": {
+          "en": "Fix it: 玛丽常常去了操场锻炼身体。",
+          "id": "Perbaiki: 玛丽常常去了操场锻炼身体。"
+        },
+        "options": [
+          {
+            "en": "玛丽常常去操场锻炼身体了。",
+            "id": "玛丽常常去操场锻炼身体了。"
+          },
+          {
+            "en": "玛丽常常去操场锻炼身体。",
+            "id": "玛丽常常去操场锻炼身体。"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "常常 is a habit, so no 了.",
+          "id": "常常 adalah kebiasaan, jadi tanpa 了."
+        }
+      },
+      {
+        "source": "p. 40 [ADDED]",
+        "q": {
+          "en": "Fix it: 昨天晚上我没做了作业就睡觉了。",
+          "id": "Perbaiki: 昨天晚上我没做了作业就睡觉了。"
+        },
+        "options": [
+          {
+            "en": "昨天晚上我没做作业就睡觉了。",
+            "id": "昨天晚上我没做作业就睡觉了。"
+          },
+          {
+            "en": "昨天晚上我不做了作业就睡觉了。",
+            "id": "昨天晚上我不做了作业就睡觉了。"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "After 没, no 了 on that verb.",
+          "id": "Sesudah 没, kata kerja itu tanpa 了."
+        }
+      },
+      {
+        "source": "p. 56 [ADDED]",
+        "q": {
+          "en": "Where does 了 go? 我想A下B课就去C买飞机票D。",
+          "id": "了 diletakkan di mana? 我想A下B课就去C买飞机票D。"
+        },
+        "options": [
+          {
+            "en": "A",
+            "id": "A"
+          },
+          {
+            "en": "B",
+            "id": "B"
+          },
+          {
+            "en": "C",
+            "id": "C"
+          },
+          {
+            "en": "D",
+            "id": "D"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "下了课就去……: 了 after the first verb in the 就 pattern.",
+          "id": "下了课就去……: 了 sesudah kata kerja pertama dalam pola 就."
+        }
+      },
+      {
+        "source": "p. 56 [ADDED]",
+        "q": {
+          "en": "Where does 了 go? 明天晚上我们吃A晚饭B就去C看电影D。",
+          "id": "了 diletakkan di mana? 明天晚上我们吃A晚饭B就去C看电影D。"
+        },
+        "options": [
+          {
+            "en": "A",
+            "id": "A"
+          },
+          {
+            "en": "B",
+            "id": "B"
+          },
+          {
+            "en": "C",
+            "id": "C"
+          },
+          {
+            "en": "D",
+            "id": "D"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "吃了晚饭就去: 了 right after 吃.",
+          "id": "吃了晚饭就去: 了 langsung sesudah 吃."
+        }
+      },
+      {
+        "source": "p. 56 [ADDED]",
+        "q": {
+          "en": "Where does 了 go? 昨天我给A妈妈B发C几张照片D。",
+          "id": "了 diletakkan di mana? 昨天我给A妈妈B发C几张照片D。"
+        },
+        "options": [
+          {
+            "en": "A",
+            "id": "A"
+          },
+          {
+            "en": "B",
+            "id": "B"
+          },
+          {
+            "en": "C",
+            "id": "C"
+          },
+          {
+            "en": "D",
+            "id": "D"
+          }
+        ],
+        "answer": 2,
+        "why": {
+          "en": "发了几张照片: v.+了+数量词+O.",
+          "id": "发了几张照片: v.+了+数量词+O."
+        }
+      },
+      {
+        "source": "p. 61",
+        "q": {
+          "en": "因为我不会做饭，____",
+          "id": "因为我不会做饭，____"
+        },
+        "options": [
+          {
+            "en": "所以我没有买。",
+            "id": "所以我没有买。"
+          },
+          {
+            "en": "所以常常在外面吃饭。",
+            "id": "所以常常在外面吃饭。"
+          },
+          {
+            "en": "所以我今天很累。",
+            "id": "所以我今天很累。"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "Can't cook → eat out.",
+          "id": "Tidak bisa masak → makan di luar."
+        }
+      },
+      {
+        "source": "p. 61",
+        "q": {
+          "en": "因为下周要考试，____",
+          "id": "因为下周要考试，____"
+        },
+        "options": [
+          {
+            "en": "所以大家都在认真复习。",
+            "id": "所以大家都在认真复习。"
+          },
+          {
+            "en": "所以他每天要早起。",
+            "id": "所以他每天要早起。"
+          },
+          {
+            "en": "所以常常在外面吃饭。",
+            "id": "所以常常在外面吃饭。"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "An exam → everyone revises.",
+          "id": "Ada ujian → semua belajar."
+        }
+      },
+      {
+        "source": "p. 60",
+        "q": {
+          "en": "他因为病了，所以没有来上课。Which part is the cause?",
+          "id": "他因为病了，所以没有来上课。Bagian mana yang sebab?"
+        },
+        "options": [
+          {
+            "en": "病了",
+            "id": "病了"
+          },
+          {
+            "en": "没有来上课",
+            "id": "没有来上课"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "因为 gives the cause: 病了.",
+          "id": "因为 menyatakan sebab: 病了."
+        }
+      },
+      {
+        "source": "p. 21 课文",
+        "q": {
+          "en": "这个病人哪里不舒服？",
+          "id": "这个病人哪里不舒服？"
+        },
+        "accept": [
+          "肚子不舒服。",
+          "肚子"
+        ],
+        "why": {
+          "en": "Text (1): 肚子疼得厉害。",
+          "id": "Teks (1): 肚子疼得厉害。"
+        }
+      },
+      {
+        "source": "p. 21 课文",
+        "q": {
+          "en": "病人昨天吃了什么？喝了什么？",
+          "id": "病人昨天吃了什么？喝了什么？"
+        },
+        "accept": [
+          "鱼、牛肉和啤酒。",
+          "鱼牛肉和啤酒",
+          "鱼和牛肉，啤酒"
+        ],
+        "why": {
+          "en": "就吃了一些鱼和牛肉 / 喝了一瓶啤酒。",
+          "id": "就吃了一些鱼和牛肉 / 喝了一瓶啤酒。"
+        }
+      },
+      {
+        "source": "p. 21 课文",
+        "q": {
+          "en": "病人得了肠炎吗？",
+          "id": "病人得了肠炎吗？"
+        },
+        "options": [
+          {
+            "en": "得了肠炎。",
+            "id": "得了肠炎。"
+          },
+          {
+            "en": "不是，只是消化不好。",
+            "id": "不是，只是消化不好。"
+          },
+          {
+            "en": "他发烧了。",
+            "id": "他发烧了。"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "The doctor: 不是肠炎，只是消化不好。",
+          "id": "Dokter: 不是肠炎，只是消化不好。"
+        }
+      },
+      {
+        "source": "p. 21 课文",
+        "q": {
+          "en": "大夫开的药怎么吃？",
+          "id": "大夫开的药怎么吃？"
+        },
+        "accept": [
+          "一天三次，一次两片，饭后吃。"
+        ],
+        "why": {
+          "en": "The nurse: 一天三次，一次两片，饭后吃。",
+          "id": "Perawat: 一天三次，一次两片，饭后吃。"
+        }
+      },
+      {
+        "source": "p. 50 课文",
+        "q": {
+          "en": "玛丽怎么了？",
+          "id": "玛丽怎么了？"
+        },
+        "accept": [
+          "她想家了。",
+          "想家了",
+          "想家"
+        ],
+        "why": {
+          "en": "玛丽: 想家了。",
+          "id": "玛丽: 想家了。"
+        }
+      },
+      {
+        "source": "p. 50 课文",
+        "q": {
+          "en": "罗兰想不想家？她感到寂寞吗？",
+          "id": "罗兰想不想家？她感到寂寞吗？"
+        },
+        "options": [
+          {
+            "en": "她常想家，但是不感到寂寞。",
+            "id": "她常想家，但是不感到寂寞。"
+          },
+          {
+            "en": "她不想家，也不寂寞。",
+            "id": "她不想家，也不寂寞。"
+          },
+          {
+            "en": "她常想家，也很寂寞。",
+            "id": "她常想家，也很寂寞。"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "罗兰: 我也常想家，但是不感到寂寞。",
+          "id": "罗兰: 我也常想家，但是不感到寂寞。"
+        }
+      },
+      {
+        "source": "p. 50 课文",
+        "q": {
+          "en": "罗兰让玛丽去做什么？",
+          "id": "罗兰让玛丽去做什么？"
+        },
+        "accept": [
+          "晚上一起去跳舞。",
+          "一起去跳舞",
+          "去跳舞",
+          "跳舞"
+        ],
+        "why": {
+          "en": "今天晚上礼堂有舞会，我们一起去跳跳舞吧。",
+          "id": "今天晚上礼堂有舞会，我们一起去跳跳舞吧。"
+        }
+      },
+      {
+        "source": "p. 50 课文",
+        "q": {
+          "en": "她们什么时候去？",
+          "id": "她们什么时候去？"
+        },
+        "accept": [
+          "吃了晚饭就去。",
+          "吃了晚饭就去吧"
+        ],
+        "why": {
+          "en": "罗兰: 吃了晚饭就去吧。",
+          "id": "罗兰: 吃了晚饭就去吧。"
+        }
+      },
+      {
+        "source": "p. 65 阅读",
+        "q": {
+          "en": "\"我\"怎么了？",
+          "id": "\"我\"怎么了？"
+        },
+        "options": [
+          {
+            "en": "我病了。头疼，发烧，嗓子也疼。",
+            "id": "我病了。头疼，发烧，嗓子也疼。"
+          },
+          {
+            "en": "我拉肚子了。",
+            "id": "我拉肚子了。"
+          },
+          {
+            "en": "我想家了。",
+            "id": "我想家了。"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "The first lines of 我病了.",
+          "id": "Baris pertama 我病了."
+        }
+      },
+      {
+        "source": "p. 65 阅读",
+        "q": {
+          "en": "\"我\"为什么感到很寂寞？",
+          "id": "\"我\"为什么感到很寂寞？"
+        },
+        "options": [
+          {
+            "en": "因为同学们都去上课了，我一个人在宿舍里。",
+            "id": "因为同学们都去上课了，我一个人在宿舍里。"
+          },
+          {
+            "en": "因为我没有朋友。",
+            "id": "因为我没有朋友。"
+          },
+          {
+            "en": "因为老师不来看我。",
+            "id": "因为老师不来看我。"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "上午同学们都去上课了，我一个人在宿舍里。",
+          "id": "上午同学们都去上课了，我一个人在宿舍里。"
+        }
+      },
+      {
+        "source": "p. 65 阅读",
+        "q": {
+          "en": "今天\"我\"起得早吗？为什么？",
+          "id": "今天\"我\"起得早吗？为什么？"
+        },
+        "options": [
+          {
+            "en": "我起得晚，因为不舒服。",
+            "id": "我起得晚，因为不舒服。"
+          },
+          {
+            "en": "我起得早，因为要上课。",
+            "id": "我起得早，因为要上课。"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "因为不舒服，所以我今天起得很晚。",
+          "id": "因为不舒服，所以我今天起得很晚。"
+        }
+      },
+      {
+        "source": "p. 65 阅读",
+        "q": {
+          "en": "起床后\"我\"去哪儿了？",
+          "id": "起床后\"我\"去哪儿了？"
+        },
+        "accept": [
+          "我去医院了。",
+          "去医院了",
+          "医院"
+        ],
+        "why": {
+          "en": "起了床就去医院了。",
+          "id": "起了床就去医院了。"
+        }
+      },
+      {
+        "source": "p. 65 阅读",
+        "q": {
+          "en": "谁来看\"我\"了？",
+          "id": "谁来看\"我\"了？"
+        },
+        "accept": [
+          "老师和同学们。",
+          "老师和同学们来看我了"
+        ],
+        "why": {
+          "en": "老师和同学们知道我病了，都来看我。",
+          "id": "老师和同学们知道我病了，都来看我。"
+        }
+      },
+      {
+        "source": "p. 65 阅读",
+        "q": {
+          "en": "下午\"我\"做什么了？",
+          "id": "下午\"我\"做什么了？"
+        },
+        "accept": [
+          "下午给姐姐发了微信。",
+          "给姐姐发了微信",
+          "给姐姐发微信"
+        ],
+        "why": {
+          "en": "我给姐姐发了微信。",
+          "id": "我给姐姐发了微信。"
+        }
+      },
+      {
+        "source": "p. 54 填空",
+        "q": {
+          "en": "昨天晚上我____肚子了。",
+          "id": "昨天晚上我____肚子了。"
+        },
+        "accept": [
+          "拉"
+        ],
+        "why": {
+          "en": "拉肚子.",
+          "id": "拉肚子."
+        }
+      },
+      {
+        "source": "p. 54 填空",
+        "q": {
+          "en": "我的肚子____得很厉害。",
+          "id": "我的肚子____得很厉害。"
+        },
+        "accept": [
+          "疼"
+        ],
+        "why": {
+          "en": "疼得很厉害.",
+          "id": "疼得很厉害."
+        }
+      },
+      {
+        "source": "p. 54 填空",
+        "q": {
+          "en": "刚来中国的时候，我____想家。",
+          "id": "刚来中国的时候，我____想家。"
+        },
+        "accept": [
+          "总"
+        ],
+        "why": {
+          "en": "总想家: always miss home.",
+          "id": "总想家: selalu rindu rumah."
+        }
+      },
+      {
+        "source": "p. 54 填空",
+        "q": {
+          "en": "大夫____以后说我不是得了肠炎，只是消化不好。",
+          "id": "大夫____以后说我不是得了肠炎，只是消化不好。"
+        },
+        "accept": [
+          "检查"
+        ],
+        "why": {
+          "en": "检查以后.",
+          "id": "检查以后."
+        }
+      },
+      {
+        "source": "p. 54 填空",
+        "q": {
+          "en": "她____发烧了。",
+          "id": "她____发烧了。"
+        },
+        "accept": [
+          "又"
+        ],
+        "why": {
+          "en": "又……了: again, already happened.",
+          "id": "又……了: lagi, sudah terjadi."
+        }
+      },
+      {
+        "source": "p. 54 填空",
+        "q": {
+          "en": "别____了，我们一起去跳跳舞吧。",
+          "id": "别____了，我们一起去跳跳舞吧。"
+        },
+        "accept": [
+          "难过"
+        ],
+        "why": {
+          "en": "别难过了.",
+          "id": "别难过了."
+        }
+      },
+      {
+        "source": "p. 54 填空",
+        "q": {
+          "en": "因为我爸爸在中国工作，____要我来中国留学。",
+          "id": "因为我爸爸在中国工作，____要我来中国留学。"
+        },
+        "accept": [
+          "所以"
+        ],
+        "why": {
+          "en": "因为……所以…….",
+          "id": "因为……所以……."
+        }
+      },
+      {
+        "source": "p. 54 填空",
+        "q": {
+          "en": "有时候我也____寂寞，但是过一会儿就好了。",
+          "id": "有时候我也____寂寞，但是过一会儿就好了。"
+        },
+        "accept": [
+          "感到"
+        ],
+        "why": {
+          "en": "感到寂寞.",
+          "id": "感到寂寞."
+        }
+      }
+    ]
+  },
+  {
+    "chapter": {
+      "en": "第3课 我吃了早饭就来了 (I came right after breakfast)",
+      "id": "第3课 我吃了早饭就来了 (Saya langsung datang habis sarapan)"
+    },
+    "note": {
+      "en": "[NOTE] All exercises come from the teacher's slides: grammar, the 课文 stories, reading and fill-ins. For a fill-in, type the 汉字; punctuation does not matter.",
+      "id": "[NOTE] Semua latihan berasal dari slide guru: grammar, cerita 课文, bacaan, dan isian. Untuk soal isian, ketik 汉字; tanda baca tidak dihitung."
+    },
+    "questions": [
+      {
+        "source": "p. 21",
+        "q": {
+          "en": "这种毛衣八百块一件，____",
+          "id": "这种毛衣八百块一件，____"
+        },
+        "options": [
+          {
+            "en": "贵了点儿。",
+            "id": "贵了点儿。"
+          },
+          {
+            "en": "点儿贵了。",
+            "id": "点儿贵了。"
+          },
+          {
+            "en": "了贵点儿。",
+            "id": "了贵点儿。"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "adj.+了（一）点儿: 贵了点儿.",
+          "id": "adj.+了（一）点儿: 贵了点儿."
+        }
+      },
+      {
+        "source": "p. 21",
+        "q": {
+          "en": "客厅面积小了点儿。How does Xiao Zhang feel?",
+          "id": "客厅面积小了点儿。Bagaimana perasaan Xiao Zhang?"
+        },
+        "options": [
+          {
+            "en": "Satisfied",
+            "id": "Puas"
+          },
+          {
+            "en": "Not satisfied",
+            "id": "Tidak puas"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "adj.+了（一）点儿 shows dissatisfaction (不满意).",
+          "id": "adj.+了（一）点儿 menunjukkan tidak puas (不满意)."
+        }
+      },
+      {
+        "source": "p. 62",
+        "q": {
+          "en": "她每天都六点半起床，今天六点钟____起床了。",
+          "id": "她每天都六点半起床，今天六点钟____起床了。"
+        },
+        "options": [
+          {
+            "en": "就",
+            "id": "就"
+          },
+          {
+            "en": "才",
+            "id": "才"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "Earlier than usual: 就.",
+          "id": "Lebih awal dari biasa: 就."
+        }
+      },
+      {
+        "source": "p. 62",
+        "q": {
+          "en": "八点钟上课，他八点半____来。",
+          "id": "八点钟上课，他八点半____来。"
+        },
+        "options": [
+          {
+            "en": "就",
+            "id": "就"
+          },
+          {
+            "en": "才",
+            "id": "才"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "Late: 才.",
+          "id": "Terlambat: 才."
+        }
+      },
+      {
+        "source": "p. 62",
+        "q": {
+          "en": "电影七点半____开演呢，你怎么现在____来了？",
+          "id": "电影七点半____开演呢，你怎么现在____来了？"
+        },
+        "options": [
+          {
+            "en": "才 / 就",
+            "id": "才 / 就"
+          },
+          {
+            "en": "就 / 才",
+            "id": "就 / 才"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "The film starts late (才); you came early (就).",
+          "id": "Filmnya baru mulai (才); kamu datang lebih awal (就)."
+        }
+      },
+      {
+        "source": "p. 62",
+        "q": {
+          "en": "飞机下午两点____起飞，上午十点他们____去机场了。",
+          "id": "飞机下午两点____起飞，上午十点他们____去机场了。"
+        },
+        "options": [
+          {
+            "en": "就 / 才",
+            "id": "就 / 才"
+          },
+          {
+            "en": "才 / 就",
+            "id": "才 / 就"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "The plane leaves late (才); they went early (就).",
+          "id": "Pesawat baru berangkat siang (才); mereka berangkat awal (就)."
+        }
+      },
+      {
+        "source": "p. 62",
+        "q": {
+          "en": "我觉得听力很难，同学们听一遍____懂了，我听三遍____能懂。",
+          "id": "我觉得听力很难，同学们听一遍____懂了，我听三遍____能懂。"
+        },
+        "options": [
+          {
+            "en": "才 / 就",
+            "id": "才 / 就"
+          },
+          {
+            "en": "就 / 才",
+            "id": "就 / 才"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "Once is easy (就); three times is hard (才).",
+          "id": "Sekali sudah paham itu mudah (就); tiga kali baru paham itu sulit (才)."
+        }
+      },
+      {
+        "source": "p. 62",
+        "q": {
+          "en": "昨天晚上我十二点____睡觉。",
+          "id": "昨天晚上我十二点____睡觉。"
+        },
+        "options": [
+          {
+            "en": "就",
+            "id": "就"
+          },
+          {
+            "en": "才",
+            "id": "才"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "Midnight is late: 才.",
+          "id": "Tengah malam itu larut: 才."
+        }
+      },
+      {
+        "source": "p. 62",
+        "q": {
+          "en": "他上午下了课____去医院了。",
+          "id": "他上午下了课____去医院了。"
+        },
+        "options": [
+          {
+            "en": "就",
+            "id": "就"
+          },
+          {
+            "en": "才",
+            "id": "才"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "Right after class: 就.",
+          "id": "Langsung sesudah kelas: 就."
+        }
+      },
+      {
+        "source": "p. 62",
+        "q": {
+          "en": "坐飞机去两个多小时____到了，坐火车十个小时____能到。",
+          "id": "坐飞机去两个多小时____到了，坐火车十个小时____能到。"
+        },
+        "options": [
+          {
+            "en": "就 / 才",
+            "id": "就 / 才"
+          },
+          {
+            "en": "才 / 就",
+            "id": "才 / 就"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "Plane: fast (就). Train: slow (才).",
+          "id": "Pesawat: cepat (就). Kereta: lambat (才)."
+        }
+      },
+      {
+        "source": "p. 61",
+        "q": {
+          "en": "A：你今天回来得早吗？B：不早，我八点半____回来。",
+          "id": "A：你今天回来得早吗？B：不早，我八点半____回来。"
+        },
+        "options": [
+          {
+            "en": "才",
+            "id": "才"
+          },
+          {
+            "en": "就",
+            "id": "就"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "不早 → late → 才.",
+          "id": "不早 → terlambat → 才."
+        }
+      },
+      {
+        "source": "p. 57",
+        "q": {
+          "en": "不用两个小时，一个小时____到了。",
+          "id": "不用两个小时，一个小时____到了。"
+        },
+        "options": [
+          {
+            "en": "才",
+            "id": "才"
+          },
+          {
+            "en": "就",
+            "id": "就"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "Faster than expected: 就.",
+          "id": "Lebih cepat dari dugaan: 就."
+        }
+      },
+      {
+        "source": "p. 64",
+        "q": {
+          "en": "星期日你吃了早饭去哪儿了？",
+          "id": "星期日你吃了早饭去哪儿了？"
+        },
+        "options": [
+          {
+            "en": "星期日我早上吃了饭就去……了。",
+            "id": "星期日我早上吃了饭就去……了。"
+          },
+          {
+            "en": "星期日我早上吃了饭才去……了。",
+            "id": "星期日我早上吃了饭才去……了。"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "v₁+了+O₁+就+v₂, and 了 at the end because it already happened.",
+          "id": "v₁+了+O₁+就+v₂, dan 了 di akhir karena sudah terjadi."
+        }
+      },
+      {
+        "source": "p. 63 [ADDED]",
+        "q": {
+          "en": "Fix it: 听了我的话，就玛丽很快不哭了。",
+          "id": "Perbaiki: 听了我的话，就玛丽很快不哭了。"
+        },
+        "options": [
+          {
+            "en": "听了我的话，玛丽很快就不哭了。",
+            "id": "听了我的话，玛丽很快就不哭了。"
+          },
+          {
+            "en": "听了我的话，玛丽就很快不哭。",
+            "id": "听了我的话，玛丽就很快不哭。"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "就 goes after the subject and before the verb part: 很快就不哭了.",
+          "id": "就 diletakkan sesudah subjek, sebelum kata kerja: 很快就不哭了."
+        }
+      },
+      {
+        "source": "p. 65 [ADDED]",
+        "q": {
+          "en": "Fix it: 你想想才买吧。",
+          "id": "Perbaiki: 你想想才买吧。"
+        },
+        "options": [
+          {
+            "en": "你想想再买吧。",
+            "id": "你想想再买吧。"
+          },
+          {
+            "en": "你想想就买了吧。",
+            "id": "你想想就买了吧。"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "For a future step, use 再.",
+          "id": "Untuk langkah yang akan datang, pakai 再."
+        }
+      },
+      {
+        "source": "p. 67",
+        "q": {
+          "en": "要是你来，____给我打个电话。",
+          "id": "要是你来，____给我打个电话。"
+        },
+        "options": [
+          {
+            "en": "就",
+            "id": "就"
+          },
+          {
+            "en": "才",
+            "id": "才"
+          },
+          {
+            "en": "但是",
+            "id": "但是"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "要是……就…….",
+          "id": "要是……就……."
+        }
+      },
+      {
+        "source": "p. 74",
+        "q": {
+          "en": "要是你想买，就____",
+          "id": "要是你想买，就____"
+        },
+        "options": [
+          {
+            "en": "买了吧。",
+            "id": "买了吧。"
+          },
+          {
+            "en": "但是很贵。",
+            "id": "但是很贵。"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "The teacher's answer: 买了吧.",
+          "id": "Jawaban guru: 买了吧."
+        }
+      },
+      {
+        "source": "p. 70",
+        "q": {
+          "en": "这套房子虽然旧，____周围环境很好。",
+          "id": "这套房子虽然旧，____周围环境很好。"
+        },
+        "options": [
+          {
+            "en": "所以",
+            "id": "所以"
+          },
+          {
+            "en": "但是",
+            "id": "但是"
+          },
+          {
+            "en": "就",
+            "id": "就"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "虽然……但是…….",
+          "id": "虽然……但是……."
+        }
+      },
+      {
+        "source": "p. 72",
+        "q": {
+          "en": "虽然运动很累，____",
+          "id": "虽然运动很累，____"
+        },
+        "options": [
+          {
+            "en": "但是对身体好。",
+            "id": "但是对身体好。"
+          },
+          {
+            "en": "但是我会按时写完。",
+            "id": "但是我会按时写完。"
+          },
+          {
+            "en": "但是很多人喜欢喝。",
+            "id": "但是很多人喜欢喝。"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "The match from p. 72.",
+          "id": "Pasangan dari hlm. 72."
+        }
+      },
+      {
+        "source": "p. 75",
+        "q": {
+          "en": "A：你国家城市交通怎么样？B：____",
+          "id": "A：你国家城市交通怎么样？B：____"
+        },
+        "options": [
+          {
+            "en": "交通虽然很方便，但是堵车堵得厉害。",
+            "id": "交通虽然很方便，但是堵车堵得厉害。"
+          },
+          {
+            "en": "交通虽然很方便，所以堵车堵得厉害。",
+            "id": "交通虽然很方便，所以堵车堵得厉害。"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "虽然 pairs with 但是, not 所以.",
+          "id": "虽然 dipasangkan dengan 但是, bukan 所以."
+        }
+      },
+      {
+        "source": "p. 22 课文",
+        "q": {
+          "en": "小张看了几套房子？",
+          "id": "小张看了几套房子？"
+        },
+        "accept": [
+          "三套。",
+          "三套",
+          "看了三套"
+        ],
+        "why": {
+          "en": "看了三套，都不太满意。",
+          "id": "看了三套，都不太满意。"
+        }
+      },
+      {
+        "source": "p. 22 课文",
+        "q": {
+          "en": "小张对这些房子满意不满意？什么地方不满意？",
+          "id": "小张对这些房子满意不满意？什么地方不满意？"
+        },
+        "options": [
+          {
+            "en": "不太满意。有的太小，有的周围的环境太乱。",
+            "id": "不太满意。有的太小，有的周围的环境太乱。"
+          },
+          {
+            "en": "很满意。",
+            "id": "很满意。"
+          },
+          {
+            "en": "不满意，房租太贵。",
+            "id": "不满意，房租太贵。"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "有的太小，有的周围环境太乱。",
+          "id": "有的太小，有的周围环境太乱。"
+        }
+      },
+      {
+        "source": "p. 22 课文",
+        "q": {
+          "en": "小张对这次看的房子满意吗？",
+          "id": "小张对这次看的房子满意吗？"
+        },
+        "accept": [
+          "还是不满意。",
+          "不满意"
+        ],
+        "why": {
+          "en": "我还是想要上下午都有阳光的。",
+          "id": "我还是想要上下午都有阳光的。"
+        }
+      },
+      {
+        "source": "p. 22 课文",
+        "q": {
+          "en": "小张想要什么样的房子？",
+          "id": "小张想要什么样的房子？"
+        },
+        "options": [
+          {
+            "en": "客厅大一点的，房子上午下午都有阳光的。",
+            "id": "客厅大一点的，房子上午下午都有阳光的。"
+          },
+          {
+            "en": "便宜一点的。",
+            "id": "便宜一点的。"
+          },
+          {
+            "en": "离公司远一点的。",
+            "id": "离公司远一点的。"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "有没有大一点儿的？ / 上下午都有阳光的。",
+          "id": "有没有大一点儿的？ / 上下午都有阳光的。"
+        }
+      },
+      {
+        "source": "p. 43 课文",
+        "q": {
+          "en": "小张的妻子下班早吗？她为什么到家很晚？",
+          "id": "小张的妻子下班早吗？她为什么到家很晚？"
+        },
+        "options": [
+          {
+            "en": "她早就下班了。路上堵得厉害。",
+            "id": "她早就下班了。路上堵得厉害。"
+          },
+          {
+            "en": "她下班很晚。",
+            "id": "她下班很晚。"
+          },
+          {
+            "en": "她去看房子了。",
+            "id": "她去看房子了。"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "我早就下班了。路上堵车堵得厉害。",
+          "id": "我早就下班了。路上堵车堵得厉害。"
+        }
+      },
+      {
+        "source": "p. 43 课文",
+        "q": {
+          "en": "小张今天看了几套房子？",
+          "id": "小张今天看了几套房子？"
+        },
+        "accept": [
+          "七八套。",
+          "七八套",
+          "看了七八套"
+        ],
+        "why": {
+          "en": "看了七八套。",
+          "id": "看了七八套。"
+        }
+      },
+      {
+        "source": "p. 43 课文",
+        "q": {
+          "en": "小张满意的那套房子周围的环境怎么样？",
+          "id": "小张满意的那套房子周围的环境怎么样？"
+        },
+        "options": [
+          {
+            "en": "环境特别好。周围非常安静。",
+            "id": "环境特别好。周围非常安静。"
+          },
+          {
+            "en": "周围环境太乱。",
+            "id": "周围环境太乱。"
+          },
+          {
+            "en": "附近没有公园。",
+            "id": "附近没有公园。"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "环境特别好……周围非常安静。",
+          "id": "环境特别好……周围非常安静。"
+        }
+      },
+      {
+        "source": "p. 44 句子排序",
+        "q": {
+          "en": "A 看了房子后，我们很满意，阳光特别好。B 虽然房租贵点儿，但交通实在方便，旁边就是地铁站。C 上个周末，我和妻子去看了一套房子。D 最后，我们还是决定租下来。Correct order?",
+          "id": "A 看了房子后，我们很满意，阳光特别好。B 虽然房租贵点儿，但交通实在方便，旁边就是地铁站。C 上个周末，我和妻子去看了一套房子。D 最后，我们还是决定租下来。Urutan yang benar?"
+        },
+        "options": [
+          {
+            "en": "C → A → B → D",
+            "id": "C → A → B → D"
+          },
+          {
+            "en": "A → C → B → D",
+            "id": "A → C → B → D"
+          },
+          {
+            "en": "C → B → A → D",
+            "id": "C → B → A → D"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "The teacher's order: C → A → B → D.",
+          "id": "Urutan guru: C → A → B → D."
+        }
+      },
+      {
+        "source": "p. 23 填空",
+        "q": {
+          "en": "小张：是啊。我____就来了。",
+          "id": "小张：是啊。我____就来了。"
+        },
+        "accept": [
+          "吃了早饭"
+        ],
+        "why": {
+          "en": "我吃了早饭就来了。",
+          "id": "我吃了早饭就来了。"
+        }
+      },
+      {
+        "source": "p. 23 填空",
+        "q": {
+          "en": "小张：看了三套，都____。",
+          "id": "小张：看了三套，都____。"
+        },
+        "accept": [
+          "不太满意"
+        ],
+        "why": {
+          "en": "都不太满意。",
+          "id": "都不太满意。"
+        }
+      },
+      {
+        "source": "p. 23 填空",
+        "q": {
+          "en": "业务员：我____带您去看几套吧。",
+          "id": "业务员：我____带您去看几套吧。"
+        },
+        "accept": [
+          "再"
+        ],
+        "why": {
+          "en": "我再带您去看几套吧。",
+          "id": "我再带您去看几套吧。"
+        }
+      },
+      {
+        "source": "p. 24 填空",
+        "q": {
+          "en": "小张：……但是客厅面积____。有没有大一点儿的？",
+          "id": "小张：……但是客厅面积____。有没有大一点儿的？"
+        },
+        "accept": [
+          "小了点儿",
+          "小了一点儿"
+        ],
+        "why": {
+          "en": "小了点儿.",
+          "id": "小了点儿."
+        }
+      },
+      {
+        "source": "p. 24 填空",
+        "q": {
+          "en": "小张：这套房子下午就没有____了吧？",
+          "id": "小张：这套房子下午就没有____了吧？"
+        },
+        "accept": [
+          "阳光"
+        ],
+        "why": {
+          "en": "没有阳光了吧？",
+          "id": "没有阳光了吧？"
+        }
+      },
+      {
+        "source": "p. 24 填空",
+        "q": {
+          "en": "小张：我____想要上下午都有阳光的。",
+          "id": "小张：我____想要上下午都有阳光的。"
+        },
+        "accept": [
+          "还是"
+        ],
+        "why": {
+          "en": "我还是想要……",
+          "id": "我还是想要……"
+        }
+      },
+      {
+        "source": "p. 46 填空",
+        "q": {
+          "en": "小张：怎么现在____下班？",
+          "id": "小张：怎么现在____下班？"
+        },
+        "accept": [
+          "才"
+        ],
+        "why": {
+          "en": "怎么现在才下班？",
+          "id": "怎么现在才下班？"
+        }
+      },
+      {
+        "source": "p. 46 填空",
+        "q": {
+          "en": "妻子：我____下班了。",
+          "id": "妻子：我____下班了。"
+        },
+        "accept": [
+          "早就"
+        ],
+        "why": {
+          "en": "我早就下班了。",
+          "id": "我早就下班了。"
+        }
+      },
+      {
+        "source": "p. 46 填空",
+        "q": {
+          "en": "小张：要是你也满意，咱们____租了。",
+          "id": "小张：要是你也满意，咱们____租了。"
+        },
+        "accept": [
+          "就"
+        ],
+        "why": {
+          "en": "要是……就…….",
+          "id": "要是……就……."
+        }
+      },
+      {
+        "source": "p. 47 填空",
+        "q": {
+          "en": "小张：____贵了点儿，____房子真好。(two words)",
+          "id": "小张：____贵了点儿，____房子真好。(dua kata)"
+        },
+        "accept": [
+          "虽然但是",
+          "虽然 但是",
+          "虽然，但是"
+        ],
+        "why": {
+          "en": "虽然贵了点儿，但是房子真好。",
+          "id": "虽然贵了点儿，但是房子真好。"
+        }
+      },
+      {
+        "source": "p. 52 填空",
+        "q": {
+          "en": "他昨天晚上九点____回家。",
+          "id": "他昨天晚上九点____回家。"
+        },
+        "accept": [
+          "才"
+        ],
+        "why": {
+          "en": "Late: 才.",
+          "id": "Terlambat: 才."
+        }
+      },
+      {
+        "source": "p. 52 填空",
+        "q": {
+          "en": "你们这____房子真不错。",
+          "id": "你们这____房子真不错。"
+        },
+        "accept": [
+          "套"
+        ],
+        "why": {
+          "en": "一套房子.",
+          "id": "一套房子."
+        }
+      },
+      {
+        "source": "p. 52 填空",
+        "q": {
+          "en": "我下了课____去医院看病了。",
+          "id": "我下了课____去医院看病了。"
+        },
+        "accept": [
+          "就"
+        ],
+        "why": {
+          "en": "下了课就去…….",
+          "id": "下了课就去……."
+        }
+      },
+      {
+        "source": "p. 52 填空",
+        "q": {
+          "en": "我觉得这次考得____可以。",
+          "id": "我觉得这次考得____可以。"
+        },
+        "accept": [
+          "还"
+        ],
+        "why": {
+          "en": "还可以: not bad.",
+          "id": "还可以: lumayan."
+        }
+      },
+      {
+        "source": "p. 52 填空",
+        "q": {
+          "en": "____有什么事儿，就对我说，不要客气。",
+          "id": "____有什么事儿，就对我说，不要客气。"
+        },
+        "accept": [
+          "要是"
+        ],
+        "why": {
+          "en": "要是……就…….",
+          "id": "要是……就……."
+        }
+      },
+      {
+        "source": "p. 52 填空",
+        "q": {
+          "en": "____只学了一个多月，但是她已经会说很多话了。",
+          "id": "____只学了一个多月，但是她已经会说很多话了。"
+        },
+        "accept": [
+          "虽然"
+        ],
+        "why": {
+          "en": "虽然……但是…….",
+          "id": "虽然……但是……."
+        }
+      },
+      {
+        "source": "p. 52 填空",
+        "q": {
+          "en": "我____毕业以后去中国留学。",
+          "id": "我____毕业以后去中国留学。"
+        },
+        "accept": [
+          "打算"
+        ],
+        "why": {
+          "en": "打算: to plan.",
+          "id": "打算: berencana."
+        }
+      },
+      {
+        "source": "p. 52 填空",
+        "q": {
+          "en": "这儿周围的____很好。",
+          "id": "这儿周围的____很好。"
+        },
+        "accept": [
+          "环境"
+        ],
+        "why": {
+          "en": "周围的环境.",
+          "id": "周围的环境."
+        }
+      },
+      {
+        "source": "p. 52 填空",
+        "q": {
+          "en": "我们住的地方有地铁站，交通很____。",
+          "id": "我们住的地方有地铁站，交通很____。"
+        },
+        "accept": [
+          "方便"
+        ],
+        "why": {
+          "en": "交通很方便.",
+          "id": "交通很方便."
+        }
+      },
+      {
+        "source": "p. 52 填空",
+        "q": {
+          "en": "公共汽车站就在我们学校____。",
+          "id": "公共汽车站就在我们学校____。"
+        },
+        "accept": [
+          "旁边"
+        ],
+        "why": {
+          "en": "就在……旁边: right next to.",
+          "id": "就在……旁边: persis di sebelah."
+        }
+      },
+      {
+        "source": "p. 52 填空",
+        "q": {
+          "en": "学校____有邮局、银行、商店、公园和体育馆。",
+          "id": "学校____有邮局、银行、商店、公园和体育馆。"
+        },
+        "accept": [
+          "附近"
+        ],
+        "why": {
+          "en": "学校附近.",
+          "id": "学校附近."
+        }
+      },
+      {
+        "source": "p. 52 填空",
+        "q": {
+          "en": "这____河里的水很干净。",
+          "id": "这____河里的水很干净。"
+        },
+        "accept": [
+          "条"
+        ],
+        "why": {
+          "en": "一条河.",
+          "id": "一条河."
+        }
+      },
+      {
+        "source": "p. 77 阅读",
+        "q": {
+          "en": "判断: 爱华的中国家有一个小妹妹，她今年十九岁。",
+          "id": "Benar/salah: 爱华的中国家有一个小妹妹，她今年十九岁。"
+        },
+        "options": [
+          {
+            "en": "True",
+            "id": "Benar"
+          },
+          {
+            "en": "False",
+            "id": "Salah"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "小丽 is sixteen (十六岁).",
+          "id": "小丽 berumur enam belas (十六岁)."
+        }
+      },
+      {
+        "source": "p. 77 阅读",
+        "q": {
+          "en": "判断: 爱华的爸爸妈妈也来中国了。",
+          "id": "Benar/salah: 爱华的爸爸妈妈也来中国了。"
+        },
+        "options": [
+          {
+            "en": "True",
+            "id": "Benar"
+          },
+          {
+            "en": "False",
+            "id": "Salah"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "They only want to come (他们也想来中国).",
+          "id": "Mereka baru ingin datang (他们也想来中国)."
+        }
+      },
+      {
+        "source": "p. 77 阅读",
+        "q": {
+          "en": "判断: 爱华是外国留学生。",
+          "id": "Benar/salah: 爱华是外国留学生。"
+        },
+        "options": [
+          {
+            "en": "True",
+            "id": "Benar"
+          },
+          {
+            "en": "False",
+            "id": "Salah"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "She came to China last year to study Chinese.",
+          "id": "Dia datang ke Tiongkok tahun lalu untuk belajar bahasa Mandarin."
+        }
+      }
+    ]
+  },
+  {
+    "chapter": {
+      "en": "第4课 我都做对了 (I got them all right)",
+      "id": "第4课 我都做对了 (Saya menjawab semuanya dengan benar)"
+    },
+    "note": {
+      "en": "[NOTE] All exercises come from the teacher's slides: grammar, the 课文 stories, reading and fill-ins. For a fill-in, type the 汉字; punctuation does not matter.",
+      "id": "[NOTE] Semua latihan berasal dari slide guru: grammar, cerita 课文, bacaan, dan isian. Untuk soal isian, ketik 汉字; tanda baca tidak dihitung."
+    },
+    "questions": [
+      {
+        "source": "p. 3 复习",
+        "q": {
+          "en": "电影还有40分钟才开场，小林____已经坐在电影院里面了。(就/才)",
+          "id": "电影还有40分钟才开场，小林____已经坐在电影院里面了。(就/才)"
+        },
+        "accept": [
+          "就"
+        ],
+        "why": {
+          "en": "Early: 就.",
+          "id": "Awal: 就."
+        }
+      },
+      {
+        "source": "p. 3 复习",
+        "q": {
+          "en": "雨变大以后，走了四十分钟____回到宿舍。(就/才)",
+          "id": "雨变大以后，走了四十分钟____回到宿舍。(就/才)"
+        },
+        "accept": [
+          "才"
+        ],
+        "why": {
+          "en": "Slow: 才.",
+          "id": "Lambat: 才."
+        }
+      },
+      {
+        "source": "p. 3 复习",
+        "q": {
+          "en": "这本书一共108页，我____看到20页。(就/才)",
+          "id": "这本书一共108页，我____看到20页。(就/才)"
+        },
+        "accept": [
+          "才"
+        ],
+        "why": {
+          "en": "Only 20 of 108: 才.",
+          "id": "Baru 20 dari 108: 才."
+        }
+      },
+      {
+        "source": "p. 52 结果补语",
+        "q": {
+          "en": "三十分钟后，饭____了。",
+          "id": "三十分钟后，饭____了。"
+        },
+        "accept": [
+          "做好"
+        ],
+        "why": {
+          "en": "做好: the cooking is done.",
+          "id": "做好: masakan sudah jadi."
+        }
+      },
+      {
+        "source": "p. 51 结果补语",
+        "q": {
+          "en": "不是，你____了。这里没有麦克。",
+          "id": "不是，你____了。这里没有麦克。"
+        },
+        "accept": [
+          "打错"
+        ],
+        "why": {
+          "en": "打错: wrong number.",
+          "id": "打错: salah sambung."
+        }
+      },
+      {
+        "source": "p. 55 结果补语",
+        "q": {
+          "en": "我的笔呢？……我找____了！",
+          "id": "我的笔呢？……我找____了！"
+        },
+        "accept": [
+          "到"
+        ],
+        "why": {
+          "en": "找到: found it.",
+          "id": "找到: ketemu."
+        }
+      },
+      {
+        "source": "p. 56 结果补语",
+        "q": {
+          "en": "他写____了，所以在玩玩具。",
+          "id": "他写____了，所以在玩玩具。"
+        },
+        "accept": [
+          "完"
+        ],
+        "why": {
+          "en": "写完: finished writing.",
+          "id": "写完: selesai menulis."
+        }
+      },
+      {
+        "source": "p. 57 结果补语",
+        "q": {
+          "en": "他把作业交____了老师。",
+          "id": "他把作业交____了老师。"
+        },
+        "accept": [
+          "给"
+        ],
+        "why": {
+          "en": "交给: hand to someone.",
+          "id": "交给: menyerahkan kepada."
+        }
+      },
+      {
+        "source": "p. 63",
+        "q": {
+          "en": "Which sentence is correct?",
+          "id": "Kalimat mana yang benar?"
+        },
+        "options": [
+          {
+            "en": "我做了错两道题。",
+            "id": "我做了错两道题。"
+          },
+          {
+            "en": "我做错了两道题。",
+            "id": "我做错了两道题。"
+          },
+          {
+            "en": "我做错两道题了了。",
+            "id": "我做错两道题了了。"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "了 goes after the complement, before the object.",
+          "id": "了 sesudah pelengkap, sebelum objek."
+        }
+      },
+      {
+        "source": "p. 65",
+        "q": {
+          "en": "Make it negative: 这道题我做对了。",
+          "id": "Jadikan negatif: 这道题我做对了。"
+        },
+        "options": [
+          {
+            "en": "这道题我没做对。",
+            "id": "这道题我没做对。"
+          },
+          {
+            "en": "这道题我没做对了。",
+            "id": "这道题我没做对了。"
+          },
+          {
+            "en": "这道题我不做对。",
+            "id": "这道题我不做对。"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "Negative: 没 + v. + result, no 了.",
+          "id": "Negatif: 没 + v. + hasil, tanpa 了."
+        }
+      },
+      {
+        "source": "p. 63",
+        "q": {
+          "en": "我没看见你的词典 means…",
+          "id": "我没看见你的词典 artinya…"
+        },
+        "options": [
+          {
+            "en": "I didn't see (find) your dictionary.",
+            "id": "Saya tidak melihat (menemukan) kamusmu."
+          },
+          {
+            "en": "I didn't read your dictionary.",
+            "id": "Saya tidak membaca kamusmu."
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "看见 is the result: seeing it. 没看 would only mean not looking.",
+          "id": "看见 adalah hasilnya: terlihat. 没看 hanya berarti tidak membaca/melihat."
+        }
+      },
+      {
+        "source": "p. 64 改错",
+        "q": {
+          "en": "Fix it: 我学这本书完了。",
+          "id": "Perbaiki: 我学这本书完了。"
+        },
+        "accept": [
+          "我学完了这本书。"
+        ],
+        "why": {
+          "en": "v.+完+了+O.",
+          "id": "v.+完+了+O."
+        }
+      },
+      {
+        "source": "p. 64 改错",
+        "q": {
+          "en": "Fix it: 我已经做了完今天的作业。",
+          "id": "Perbaiki: 我已经做了完今天的作业。"
+        },
+        "accept": [
+          "我已经做完了今天的作业。"
+        ],
+        "why": {
+          "en": "了 after the complement 完.",
+          "id": "了 sesudah pelengkap 完."
+        }
+      },
+      {
+        "source": "p. 64 改错",
+        "q": {
+          "en": "Fix it: 这个问题我错了回答。",
+          "id": "Perbaiki: 这个问题我错了回答。"
+        },
+        "accept": [
+          "这个问题我回答错了。",
+          "我回答错了这个问题。"
+        ],
+        "why": {
+          "en": "Verb first, then the result: 回答错.",
+          "id": "Kata kerja dulu, lalu hasilnya: 回答错."
+        }
+      },
+      {
+        "source": "p. 64 改错",
+        "q": {
+          "en": "Fix it: 昨天在书店我看了我们班的同学玛丽。",
+          "id": "Perbaiki: 昨天在书店我看了我们班的同学玛丽。"
+        },
+        "accept": [
+          "昨天在书店我看见了我们班的同学玛丽。"
+        ],
+        "why": {
+          "en": "You saw her: 看见.",
+          "id": "Kamu melihatnya: 看见."
+        }
+      },
+      {
+        "source": "p. 64 改错",
+        "q": {
+          "en": "Fix it: 我现在能听老师的话懂了。",
+          "id": "Perbaiki: 我现在能听老师的话懂了。"
+        },
+        "accept": [
+          "我现在能听懂了老师的话。",
+          "我现在能听懂老师的话。"
+        ],
+        "why": {
+          "en": "听懂 + object.",
+          "id": "听懂 + objek."
+        }
+      },
+      {
+        "source": "p. 64 改错",
+        "q": {
+          "en": "Fix it: 明天我吃早饭就去买票。(two answers)",
+          "id": "Perbaiki: 明天我吃早饭就去买票。(dua jawaban)"
+        },
+        "accept": [
+          "明天我吃完早饭就去买票。",
+          "明天我吃了早饭就去买票。"
+        ],
+        "why": {
+          "en": "吃完 / 吃了 + 就.",
+          "id": "吃完 / 吃了 + 就."
+        }
+      },
+      {
+        "source": "p. 76 上成到",
+        "q": {
+          "en": "你忘记写名字了，请在试卷上写____你的名字。",
+          "id": "你忘记写名字了，请在试卷上写____你的名字。"
+        },
+        "accept": [
+          "上"
+        ],
+        "why": {
+          "en": "写上: write it on.",
+          "id": "写上: tulis di atasnya."
+        }
+      },
+      {
+        "source": "p. 76 上成到",
+        "q": {
+          "en": "这个会议要开____几点？",
+          "id": "这个会议要开____几点？"
+        },
+        "accept": [
+          "到"
+        ],
+        "why": {
+          "en": "开到 + time.",
+          "id": "开到 + waktu."
+        }
+      },
+      {
+        "source": "p. 76 上成到",
+        "q": {
+          "en": "我们五点半才能回____宿舍。",
+          "id": "我们五点半才能回____宿舍。"
+        },
+        "accept": [
+          "到"
+        ],
+        "why": {
+          "en": "回到 + place.",
+          "id": "回到 + tempat."
+        }
+      },
+      {
+        "source": "p. 76 上成到",
+        "q": {
+          "en": "好冷啊，你可以帮我关____窗户吗？",
+          "id": "好冷啊，你可以帮我关____窗户吗？"
+        },
+        "accept": [
+          "上"
+        ],
+        "why": {
+          "en": "关上窗户.",
+          "id": "关上窗户."
+        }
+      },
+      {
+        "source": "p. 76 上成到",
+        "q": {
+          "en": "知道，考____第六课。",
+          "id": "知道，考____第六课。"
+        },
+        "accept": [
+          "到"
+        ],
+        "why": {
+          "en": "考到 + stage.",
+          "id": "考到 + tahap."
+        }
+      },
+      {
+        "source": "p. 76 上成到",
+        "q": {
+          "en": "你可以把这个句子翻译____英文吗？",
+          "id": "你可以把这个句子翻译____英文吗？"
+        },
+        "accept": [
+          "成"
+        ],
+        "why": {
+          "en": "翻译成: translate into.",
+          "id": "翻译成: menerjemahkan menjadi."
+        }
+      },
+      {
+        "source": "p. 77 结果补语",
+        "q": {
+          "en": "A：老师，这个字我写____了吗？B：没有写对，你写____了。(two blanks)",
+          "id": "A：老师，这个字我写____了吗？B：没有写对，你写____了。(dua titik)"
+        },
+        "accept": [
+          "对错",
+          "对 错",
+          "对，错"
+        ],
+        "why": {
+          "en": "写对 / 写错.",
+          "id": "写对 / 写错."
+        }
+      },
+      {
+        "source": "p. 77 结果补语",
+        "q": {
+          "en": "A：现在，老师说的话你能听____吗？B：能听____。",
+          "id": "A：现在，老师说的话你能听____吗？B：能听____。"
+        },
+        "accept": [
+          "见",
+          "见见",
+          "见 见"
+        ],
+        "why": {
+          "en": "听见 (the teacher's answer).",
+          "id": "听见 (jawaban guru)."
+        }
+      },
+      {
+        "source": "p. 77 结果补语",
+        "q": {
+          "en": "A：对不起，我打____了。",
+          "id": "A：对不起，我打____了。"
+        },
+        "accept": [
+          "错"
+        ],
+        "why": {
+          "en": "打错: dialled wrong.",
+          "id": "打错: salah sambung."
+        }
+      },
+      {
+        "source": "p. 77 结果补语",
+        "q": {
+          "en": "我看____一半儿，肚子疼得很厉害，就去医院了。",
+          "id": "我看____一半儿，肚子疼得很厉害，就去医院了。"
+        },
+        "accept": [
+          "到"
+        ],
+        "why": {
+          "en": "看到 + stage.",
+          "id": "看到 + tahap."
+        }
+      },
+      {
+        "source": "p. 79 定语",
+        "q": {
+          "en": "Change to 主谓词组+的+n.: 我们学习汉语。",
+          "id": "Ubah ke 主谓词组+的+n.: 我们学习汉语。"
+        },
+        "accept": [
+          "我们学习的汉语"
+        ],
+        "why": {
+          "en": "Add 的 before the noun.",
+          "id": "Tambahkan 的 sebelum kata benda."
+        }
+      },
+      {
+        "source": "p. 79 定语",
+        "q": {
+          "en": "Change to 主谓词组+的+n.: 妈妈做饭。",
+          "id": "Ubah ke 主谓词组+的+n.: 妈妈做饭。"
+        },
+        "accept": [
+          "妈妈做的饭"
+        ],
+        "why": {
+          "en": "Add 的 before the noun.",
+          "id": "Tambahkan 的 sebelum kata benda."
+        }
+      },
+      {
+        "source": "p. 37 填空",
+        "q": {
+          "en": "这几____题比较难，我虽然做完了，但是不知道做对没做对。",
+          "id": "这几____题比较难，我虽然做完了，但是不知道做对没做对。"
+        },
+        "accept": [
+          "道"
+        ],
+        "why": {
+          "en": "一道题.",
+          "id": "一道题."
+        }
+      },
+      {
+        "source": "p. 37 填空",
+        "q": {
+          "en": "外边风很大，____上窗户吧。",
+          "id": "外边风很大，____上窗户吧。"
+        },
+        "accept": [
+          "关"
+        ],
+        "why": {
+          "en": "关上窗户.",
+          "id": "关上窗户."
+        }
+      },
+      {
+        "source": "p. 37 填空",
+        "q": {
+          "en": "对不起，我看____时间了，所以来晚了。",
+          "id": "对不起，我看____时间了，所以来晚了。"
+        },
+        "accept": [
+          "错"
+        ],
+        "why": {
+          "en": "看错: misread.",
+          "id": "看错: salah lihat."
+        }
+      },
+      {
+        "source": "p. 37 填空",
+        "q": {
+          "en": "你说得太快，我没听____，请你再说一遍，好吗？",
+          "id": "你说得太快，我没听____，请你再说一遍，好吗？"
+        },
+        "accept": [
+          "懂"
+        ],
+        "why": {
+          "en": "听懂.",
+          "id": "听懂."
+        }
+      },
+      {
+        "source": "p. 37 填空",
+        "q": {
+          "en": "我作业已经做完了，课文还没有念____呢。",
+          "id": "我作业已经做完了，课文还没有念____呢。"
+        },
+        "accept": [
+          "完"
+        ],
+        "why": {
+          "en": "念完.",
+          "id": "念完."
+        }
+      },
+      {
+        "source": "p. 22 课文",
+        "q": {
+          "en": "罗兰考得怎么样？",
+          "id": "罗兰考得怎么样？"
+        },
+        "accept": [
+          "这次没考好。",
+          "没考好"
+        ],
+        "why": {
+          "en": "罗兰: 这次没考好。",
+          "id": "罗兰: 这次没考好。"
+        }
+      },
+      {
+        "source": "p. 22 课文",
+        "q": {
+          "en": "玛丽做完题了吗？都做对了吗？",
+          "id": "玛丽做完题了吗？都做对了吗？"
+        },
+        "options": [
+          {
+            "en": "她都做完了。没有都做对，错了两道题。",
+            "id": "她都做完了。没有都做对，错了两道题。"
+          },
+          {
+            "en": "她没做完。",
+            "id": "她没做完。"
+          },
+          {
+            "en": "她都做完了，也都做对了。",
+            "id": "她都做完了，也都做对了。"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "我都做完了，但是没都做对，做错了两道题。",
+          "id": "我都做完了，但是没都做对，做错了两道题。"
+        }
+      },
+      {
+        "source": "p. 22 课文",
+        "q": {
+          "en": "玛丽把什么词写成什么了？",
+          "id": "玛丽把什么词写成什么了？"
+        },
+        "accept": [
+          "把得写成的了。",
+          "把得写成了的"
+        ],
+        "why": {
+          "en": "是这个\"得\",我写成这个\"的\"了。",
+          "id": "是这个\"得\",我写成这个\"的\"了。"
+        }
+      },
+      {
+        "source": "p. 22 课文",
+        "q": {
+          "en": "玛丽为什么不马上看电视剧？",
+          "id": "玛丽为什么不马上看电视剧？"
+        },
+        "options": [
+          {
+            "en": "因为她的衣服还没洗完，还得给她妹妹回信。",
+            "id": "因为她的衣服还没洗完，还得给她妹妹回信。"
+          },
+          {
+            "en": "因为她不喜欢看电视剧。",
+            "id": "因为她不喜欢看电视剧。"
+          },
+          {
+            "en": "因为她要去考试。",
+            "id": "因为她要去考试。"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "我的衣服还没有洗完呢，还得给我妹妹回信。",
+          "id": "我的衣服还没有洗完呢，还得给我妹妹回信。"
+        }
+      },
+      {
+        "source": "p. 23 填空",
+        "q": {
+          "en": "罗兰：这次没考好。题太多了，我没有____。",
+          "id": "罗兰：这次没考好。题太多了，我没有____。"
+        },
+        "accept": [
+          "做完"
+        ],
+        "why": {
+          "en": "没有做完.",
+          "id": "没有做完."
+        }
+      },
+      {
+        "source": "p. 23 填空",
+        "q": {
+          "en": "玛丽：我都做完了，但是没都做对，____了两道题。",
+          "id": "玛丽：我都做完了，但是没都做对，____了两道题。"
+        },
+        "accept": [
+          "做错"
+        ],
+        "why": {
+          "en": "做错了两道题.",
+          "id": "做错了两道题."
+        }
+      },
+      {
+        "source": "p. 23 填空",
+        "q": {
+          "en": "罗兰：听力比较难，很多句子我没____。",
+          "id": "罗兰：听力比较难，很多句子我没____。"
+        },
+        "accept": [
+          "听懂"
+        ],
+        "why": {
+          "en": "没听懂.",
+          "id": "没听懂."
+        }
+      },
+      {
+        "source": "p. 24 填空",
+        "q": {
+          "en": "罗兰：我没看见你的词典。你找词典____？",
+          "id": "罗兰：我没看见你的词典。你找词典____？"
+        },
+        "accept": [
+          "干什么"
+        ],
+        "why": {
+          "en": "找词典干什么？",
+          "id": "找词典干什么？"
+        }
+      },
+      {
+        "source": "p. 24 填空",
+        "q": {
+          "en": "玛丽：我的衣服还没有____呢，还得给我妹妹____。(two blanks)",
+          "id": "玛丽：我的衣服还没有____呢，还得给我妹妹____。(dua titik)"
+        },
+        "accept": [
+          "洗完回信",
+          "洗完 回信",
+          "洗完，回信"
+        ],
+        "why": {
+          "en": "洗完 / 回信.",
+          "id": "洗完 / 回信."
+        }
+      },
+      {
+        "source": "p. 42 课文",
+        "q": {
+          "en": "玛丽看完田芳借给她的那本书没有？",
+          "id": "玛丽看完田芳借给她的那本书没有？"
+        },
+        "accept": [
+          "还没有，才看了三十页。",
+          "还没有才看了三十页"
+        ],
+        "why": {
+          "en": "还没看完呢，才看了三十页。",
+          "id": "还没看完呢，才看了三十页。"
+        }
+      },
+      {
+        "source": "p. 42 课文",
+        "q": {
+          "en": "我和玛丽怎么练习会话？",
+          "id": "我和玛丽怎么练习会话？"
+        },
+        "options": [
+          {
+            "en": "一个人念故事、问问题，另一个人回答。",
+            "id": "一个人念故事、问问题，另一个人回答。"
+          },
+          {
+            "en": "一起看电影。",
+            "id": "一起看电影。"
+          },
+          {
+            "en": "一起写作业。",
+            "id": "一起写作业。"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "我念完一个故事，问你几个问题，看你能不能答对……",
+          "id": "我念完一个故事，问你几个问题，看你能不能答对……"
+        }
+      },
+      {
+        "source": "p. 42 课文",
+        "q": {
+          "en": "安娜来叫他们干什么？",
+          "id": "安娜来叫他们干什么？"
+        },
+        "accept": [
+          "去礼堂看新电影。",
+          "去礼堂看电影",
+          "看电影"
+        ],
+        "why": {
+          "en": "晚上礼堂有电影，你们看吗？",
+          "id": "晚上礼堂有电影，你们看吗？"
+        }
+      },
+      {
+        "source": "p. 42 课文",
+        "q": {
+          "en": "他们几点看完电影？几点做完作业？",
+          "id": "他们几点看完电影？几点做完作业？"
+        },
+        "accept": [
+          "九点看完电影，十点半做完作业。"
+        ],
+        "why": {
+          "en": "看到九点才看完……做完作业已经十点半了。",
+          "id": "看到九点才看完……做完作业已经十点半了。"
+        }
+      },
+      {
+        "source": "p. 46 填空",
+        "q": {
+          "en": "我问玛丽：\"都____了吗？\"",
+          "id": "我问玛丽：\"都____了吗？\""
+        },
+        "accept": [
+          "看懂"
+        ],
+        "why": {
+          "en": "看懂.",
+          "id": "看懂."
+        }
+      },
+      {
+        "source": "p. 47 填空",
+        "q": {
+          "en": "我____一个故事，问你几个问题，看你能不能____。(two blanks)",
+          "id": "我____一个故事，问你几个问题，看你能不能____。(dua titik)"
+        },
+        "accept": [
+          "念完答对",
+          "念完 答对",
+          "念完，答对"
+        ],
+        "why": {
+          "en": "念完 / 答对.",
+          "id": "念完 / 答对."
+        }
+      },
+      {
+        "source": "p. 48 填空",
+        "q": {
+          "en": "我们看到九点____看完。",
+          "id": "我们看到九点____看完。"
+        },
+        "accept": [
+          "才"
+        ],
+        "why": {
+          "en": "Late: 才.",
+          "id": "Terlambat: 才."
+        }
+      },
+      {
+        "source": "p. 49 句子排序",
+        "q": {
+          "en": "A 吃完晚饭以后，罗兰和玛丽回到宿舍，开始练习会话。B 看完电影之后，她们才开始做今天的作业。C 这时安娜来叫她们，邀请大家去礼堂看电影。D 虽然作业还没有做完，但是她们还是决定去看电影。Correct order?",
+          "id": "A 吃完晚饭以后，罗兰和玛丽回到宿舍，开始练习会话。B 看完电影之后，她们才开始做今天的作业。C 这时安娜来叫她们，邀请大家去礼堂看电影。D 虽然作业还没有做完，但是她们还是决定去看电影。Urutan yang benar?"
+        },
+        "options": [
+          {
+            "en": "A → C → D → B",
+            "id": "A → C → D → B"
+          },
+          {
+            "en": "C → A → D → B",
+            "id": "C → A → D → B"
+          },
+          {
+            "en": "A → D → C → B",
+            "id": "A → D → C → B"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "The teacher's order: A → C → D → B.",
+          "id": "Urutan guru: A → C → D → B."
+        }
+      },
+      {
+        "source": "p. 81 阅读",
+        "q": {
+          "en": "玛丽怎么了？",
+          "id": "玛丽怎么了？"
+        },
+        "options": [
+          {
+            "en": "玛丽不舒服，头疼。她感冒发烧了。",
+            "id": "玛丽不舒服，头疼。她感冒发烧了。"
+          },
+          {
+            "en": "玛丽拉肚子了。",
+            "id": "玛丽拉肚子了。"
+          },
+          {
+            "en": "玛丽考试没考好。",
+            "id": "玛丽考试没考好。"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "我头疼，很不舒服 / 你感冒了。",
+          "id": "我头疼，很不舒服 / 你感冒了。"
+        }
+      },
+      {
+        "source": "p. 81 阅读",
+        "q": {
+          "en": "玛丽打针了吗？为什么？",
+          "id": "玛丽打针了吗？为什么？"
+        },
+        "options": [
+          {
+            "en": "没有，因为她不想打针。",
+            "id": "没有，因为她不想打针。"
+          },
+          {
+            "en": "打了，因为她发烧了。",
+            "id": "打了，因为她发烧了。"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "我可以吃药，但我不想打针。",
+          "id": "我可以吃药，但我不想打针。"
+        }
+      },
+      {
+        "source": "p. 81 阅读",
+        "q": {
+          "en": "玛丽吃药后病好了吗？",
+          "id": "玛丽吃药后病好了吗？"
+        },
+        "options": [
+          {
+            "en": "Yes",
+            "id": "Sudah"
+          },
+          {
+            "en": "No",
+            "id": "Belum"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "上午，玛丽又有点儿发烧。",
+          "id": "上午，玛丽又有点儿发烧。"
+        }
+      },
+      {
+        "source": "p. 81 阅读",
+        "q": {
+          "en": "你觉得玛丽会再去医院吗？",
+          "id": "你觉得玛丽会再去医院吗？"
+        },
+        "accept": [
+          "会，因为她又发烧了。",
+          "会"
+        ],
+        "why": {
+          "en": "The teacher's answer: 会，因为她又发烧了。",
+          "id": "Jawaban guru: 会，因为她又发烧了。"
+        }
+      }
+    ]
+  },
+  {
+    "chapter": {
+      "en": "第5课 我来了两个多月了 (I've been here for over two months)",
+      "id": "第5课 我来了两个多月了 (Saya sudah di sini lebih dari dua bulan)"
+    },
+    "note": {
+      "en": "[NOTE] All exercises come from the teacher's slides: grammar, the 课文 stories, reading and fill-ins. For a fill-in, type the 汉字; punctuation does not matter.",
+      "id": "[NOTE] Semua latihan berasal dari slide guru: grammar, cerita 课文, bacaan, dan isian. Untuk soal isian, ketik 汉字; tanda baca tidak dihitung."
+    },
+    "questions": [
+      {
+        "source": "p. 5 复习",
+        "q": {
+          "en": "A：昨天的数学作业你做____了吗？",
+          "id": "A：昨天的数学作业你做____了吗？"
+        },
+        "accept": [
+          "完"
+        ],
+        "why": {
+          "en": "做完.",
+          "id": "做完."
+        }
+      },
+      {
+        "source": "p. 5 复习",
+        "q": {
+          "en": "B：做完了，但是有一道题我做____了。",
+          "id": "B：做完了，但是有一道题我做____了。"
+        },
+        "accept": [
+          "错"
+        ],
+        "why": {
+          "en": "做错.",
+          "id": "做错."
+        }
+      },
+      {
+        "source": "p. 5 复习",
+        "q": {
+          "en": "这道题老师上课的时候讲过，你听____了吗？",
+          "id": "这道题老师上课的时候讲过，你听____了吗？"
+        },
+        "accept": [
+          "懂"
+        ],
+        "why": {
+          "en": "听懂.",
+          "id": "听懂."
+        }
+      },
+      {
+        "source": "p. 6 复习",
+        "q": {
+          "en": "对不起，昨天太忙了，我没看____。",
+          "id": "对不起，昨天太忙了，我没看____。"
+        },
+        "accept": [
+          "见"
+        ],
+        "why": {
+          "en": "没看见.",
+          "id": "没看见."
+        }
+      },
+      {
+        "source": "p. 6 复习",
+        "q": {
+          "en": "我把咱们俩的照片修____了海报，我发____你邮箱了。(two blanks)",
+          "id": "我把咱们俩的照片修____了海报，我发____你邮箱了。(dua titik)"
+        },
+        "accept": [
+          "成到",
+          "成 到",
+          "成，到"
+        ],
+        "why": {
+          "en": "修成 / 发到.",
+          "id": "修成 / 发到."
+        }
+      },
+      {
+        "source": "p. 6 复习",
+        "q": {
+          "en": "太棒了，我马上打____电脑看看！",
+          "id": "太棒了，我马上打____电脑看看！"
+        },
+        "accept": [
+          "开"
+        ],
+        "why": {
+          "en": "打开电脑.",
+          "id": "打开电脑."
+        }
+      },
+      {
+        "source": "p. 56",
+        "q": {
+          "en": "Which sentence is correct?",
+          "id": "Kalimat mana yang benar?"
+        },
+        "options": [
+          {
+            "en": "她在大学学了两年。",
+            "id": "她在大学学了两年。"
+          },
+          {
+            "en": "她在大学两年学了。",
+            "id": "她在大学两年学了。"
+          },
+          {
+            "en": "她两年在大学学了了。",
+            "id": "她两年在大学学了了。"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "No object: S + V.(了) + time.",
+          "id": "Tanpa objek: S + V.(了) + waktu."
+        }
+      },
+      {
+        "source": "p. 58",
+        "q": {
+          "en": "Which sentence is correct?",
+          "id": "Kalimat mana yang benar?"
+        },
+        "options": [
+          {
+            "en": "她游泳了一个下午。",
+            "id": "她游泳了一个下午。"
+          },
+          {
+            "en": "她游了一个下午（的）泳。",
+            "id": "她游了一个下午（的）泳。"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "Separable verb: the time goes inside (游了一个下午泳), or repeat the verb (游泳游了一个下午).",
+          "id": "Kata kerja terpisah: waktunya di tengah (游了一个下午泳), atau ulangi kata kerjanya (游泳游了一个下午)."
+        }
+      },
+      {
+        "source": "p. 60",
+        "q": {
+          "en": "Which sentence is correct?",
+          "id": "Kalimat mana yang benar?"
+        },
+        "options": [
+          {
+            "en": "我找了一个小时你。",
+            "id": "我找了一个小时你。"
+          },
+          {
+            "en": "我找了你一个小时。",
+            "id": "我找了你一个小时。"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "Personal pronoun object: time after the object.",
+          "id": "Objek kata ganti orang: waktu sesudah objek."
+        }
+      },
+      {
+        "source": "p. 62",
+        "q": {
+          "en": "我学了一年汉语了。What does it mean?",
+          "id": "我学了一年汉语了。Apa artinya?"
+        },
+        "options": [
+          {
+            "en": "I'm still studying Chinese.",
+            "id": "Saya masih belajar bahasa Mandarin."
+          },
+          {
+            "en": "I've stopped studying Chinese.",
+            "id": "Saya sudah berhenti belajar bahasa Mandarin."
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "了……了: still in progress (现在还在学汉语).",
+          "id": "了……了: masih berlangsung (现在还在学汉语)."
+        }
+      },
+      {
+        "source": "p. 57 替换",
+        "q": {
+          "en": "A：你跳舞了吗？B：跳了。A：跳了多长时间？B：____",
+          "id": "A：你跳舞了吗？B：跳了。A：跳了多长时间？B：____"
+        },
+        "accept": [
+          "跳了一个小时。",
+          "跳了一个小时"
+        ],
+        "why": {
+          "en": "跳了一个小时 (from the table).",
+          "id": "跳了一个小时 (dari tabel)."
+        }
+      },
+      {
+        "source": "p. 59 替换",
+        "q": {
+          "en": "A：你游泳游了多长时间？B：我游泳游了一个半钟头。Say it another way.",
+          "id": "A：你游泳游了多长时间？B：我游泳游了一个半钟头。Katakan dengan cara lain."
+        },
+        "accept": [
+          "我游了一个半钟头的泳。",
+          "我游了一个半钟头泳。"
+        ],
+        "why": {
+          "en": "S + V.(了) + time (+的) + O.",
+          "id": "S + V.(了) + waktu (+的) + O."
+        }
+      },
+      {
+        "source": "p. 61 替换",
+        "q": {
+          "en": "A：你看了两个小时比赛吗？B：没有，我只看了____比赛。(a while)",
+          "id": "A：你看了两个小时比赛吗？B：没有，我只看了____比赛。(sebentar)"
+        },
+        "accept": [
+          "一会儿"
+        ],
+        "why": {
+          "en": "看了一会儿比赛.",
+          "id": "看了一会儿比赛."
+        }
+      },
+      {
+        "source": "p. 65 改错",
+        "q": {
+          "en": "Fix it: 昨天我看了电视一个小时多。",
+          "id": "Perbaiki: 昨天我看了电视一个小时多。"
+        },
+        "accept": [
+          "昨天我看了一个多小时电视。"
+        ],
+        "why": {
+          "en": "一个多小时 goes before the object.",
+          "id": "一个多小时 diletakkan sebelum objek."
+        }
+      },
+      {
+        "source": "p. 65 改错",
+        "q": {
+          "en": "Fix it: 我哥哥毕业大学已经两年了。",
+          "id": "Perbaiki: 我哥哥毕业大学已经两年了。"
+        },
+        "accept": [
+          "我哥哥大学毕业已经两年了。"
+        ],
+        "why": {
+          "en": "毕业 can't take an object.",
+          "id": "毕业 tidak bisa diberi objek."
+        }
+      },
+      {
+        "source": "p. 65 改错",
+        "q": {
+          "en": "Fix it: 吃完晚饭，我常常跟朋友聊天儿一会儿。",
+          "id": "Perbaiki: 吃完晚饭，我常常跟朋友聊天儿一会儿。"
+        },
+        "accept": [
+          "吃完晚饭，我常常跟朋友聊一会儿天。",
+          "吃完晚饭，我常常跟朋友聊一会儿天儿。"
+        ],
+        "why": {
+          "en": "Separable verb: 聊一会儿天.",
+          "id": "Kata kerja terpisah: 聊一会儿天."
+        }
+      },
+      {
+        "source": "p. 65 改错",
+        "q": {
+          "en": "Fix it: 他已经没上课三天了。",
+          "id": "Perbaiki: 他已经没上课三天了。"
+        },
+        "accept": [
+          "他已经三天没上课了。"
+        ],
+        "why": {
+          "en": "Negative: time + 没 + V. + O. + 了.",
+          "id": "Negatif: waktu + 没 + V. + O. + 了."
+        }
+      },
+      {
+        "source": "p. 65 改错",
+        "q": {
+          "en": "Fix it: 我昨天晚上睡觉了八个小时。",
+          "id": "Perbaiki: 我昨天晚上睡觉了八个小时。"
+        },
+        "accept": [
+          "我昨天晚上睡了八个小时觉。"
+        ],
+        "why": {
+          "en": "Separable verb: 睡了八个小时觉.",
+          "id": "Kata kerja terpisah: 睡了八个小时觉."
+        }
+      },
+      {
+        "source": "p. 65 改错",
+        "q": {
+          "en": "Fix it: 我学习汉语一个年了。",
+          "id": "Perbaiki: 我学习汉语一个年了。"
+        },
+        "accept": [
+          "我学习汉语一年了。"
+        ],
+        "why": {
+          "en": "年 takes no measure word: 一年.",
+          "id": "年 tanpa kata satuan: 一年."
+        }
+      },
+      {
+        "source": "p. 66 时量",
+        "q": {
+          "en": "A：你每天上几个小时课？(8:00–11:30) B：____",
+          "id": "A：你每天上几个小时课？(8:00–11:30) B：____"
+        },
+        "accept": [
+          "我每天上三个半小时课。",
+          "三个半小时"
+        ],
+        "why": {
+          "en": "8:00–11:30 is three and a half hours.",
+          "id": "8:00–11:30 adalah tiga setengah jam."
+        }
+      },
+      {
+        "source": "p. 67 时量",
+        "q": {
+          "en": "A：你晚上看多长时间电视？(10:00–10:30) B：____",
+          "id": "A：你晚上看多长时间电视？(10:00–10:30) B：____"
+        },
+        "accept": [
+          "我晚上看半个小时电视。",
+          "半个小时"
+        ],
+        "why": {
+          "en": "Half an hour.",
+          "id": "Setengah jam."
+        }
+      },
+      {
+        "source": "p. 68 时量",
+        "q": {
+          "en": "A：你打算在中国学习几年？(2025年–2029年) B：____",
+          "id": "A：你打算在中国学习几年？(2025年–2029年) B：____"
+        },
+        "accept": [
+          "我打算在中国学习四年。",
+          "四年"
+        ],
+        "why": {
+          "en": "2025–2029: four years.",
+          "id": "2025–2029: empat tahun."
+        }
+      },
+      {
+        "source": "p. 72 概数",
+        "q": {
+          "en": "我来中国已经(  )了。",
+          "id": "我来中国已经(  )了。"
+        },
+        "options": [
+          {
+            "en": "二十年多",
+            "id": "二十年多"
+          },
+          {
+            "en": "二十多年",
+            "id": "二十多年"
+          },
+          {
+            "en": "多二十年",
+            "id": "多二十年"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "Over 10: 多 after the number: 二十多年.",
+          "id": "Di atas 10: 多 sesudah bilangan: 二十多年."
+        }
+      },
+      {
+        "source": "p. 72 概数",
+        "q": {
+          "en": "我已经学了(  )汉语了。",
+          "id": "我已经学了(  )汉语了。"
+        },
+        "options": [
+          {
+            "en": "一年多",
+            "id": "一年多"
+          },
+          {
+            "en": "一多年",
+            "id": "一多年"
+          },
+          {
+            "en": "多一年",
+            "id": "多一年"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "Under 10: 多 after the measure word: 一年多.",
+          "id": "Di bawah 10: 多 sesudah satuan: 一年多."
+        }
+      },
+      {
+        "source": "p. 72 概数",
+        "q": {
+          "en": "我的手机(  )。",
+          "id": "我的手机(  )。"
+        },
+        "options": [
+          {
+            "en": "多四千块",
+            "id": "多四千块"
+          },
+          {
+            "en": "四千块多",
+            "id": "四千块多"
+          },
+          {
+            "en": "四千多块",
+            "id": "四千多块"
+          }
+        ],
+        "answer": 2,
+        "why": {
+          "en": "The teacher's answer: 四千多块.",
+          "id": "Jawaban guru: 四千多块."
+        }
+      },
+      {
+        "source": "p. 74 离合词",
+        "q": {
+          "en": "Which sentence is correct?",
+          "id": "Kalimat mana yang benar?"
+        },
+        "options": [
+          {
+            "en": "我去大使馆见面朋友。",
+            "id": "我去大使馆见面朋友。"
+          },
+          {
+            "en": "我去大使馆跟朋友见面。",
+            "id": "我去大使馆跟朋友见面。"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "见面 can't take an object.",
+          "id": "见面 tidak bisa diberi objek."
+        }
+      },
+      {
+        "source": "p. 76 离合词",
+        "q": {
+          "en": "Which sentence is correct?",
+          "id": "Kalimat mana yang benar?"
+        },
+        "options": [
+          {
+            "en": "他上星期游泳了两次。",
+            "id": "他上星期游泳了两次。"
+          },
+          {
+            "en": "他上星期游了两次泳。",
+            "id": "他上星期游了两次泳。"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "The count goes inside the separable verb.",
+          "id": "Jumlahnya masuk di tengah kata kerja terpisah."
+        }
+      },
+      {
+        "source": "p. 79 就才",
+        "q": {
+          "en": "飞机已经起飞了，她____到机场。",
+          "id": "飞机已经起飞了，她____到机场。"
+        },
+        "accept": [
+          "才"
+        ],
+        "why": {
+          "en": "Late: 才.",
+          "id": "Terlambat: 才."
+        }
+      },
+      {
+        "source": "p. 79 就才",
+        "q": {
+          "en": "今天的作业我只用了一个小时____做完了。",
+          "id": "今天的作业我只用了一个小时____做完了。"
+        },
+        "accept": [
+          "就"
+        ],
+        "why": {
+          "en": "Fast: 就.",
+          "id": "Cepat: 就."
+        }
+      },
+      {
+        "source": "p. 79 就才",
+        "q": {
+          "en": "这儿离北京很远，坐火车要十多个小时____能到。",
+          "id": "这儿离北京很远，坐火车要十多个小时____能到。"
+        },
+        "accept": [
+          "才"
+        ],
+        "why": {
+          "en": "Slow: 才.",
+          "id": "Lambat: 才."
+        }
+      },
+      {
+        "source": "p. 79 就才",
+        "q": {
+          "en": "八点上课，他九点____来。",
+          "id": "八点上课，他九点____来。"
+        },
+        "accept": [
+          "才"
+        ],
+        "why": {
+          "en": "Late: 才.",
+          "id": "Terlambat: 才."
+        }
+      },
+      {
+        "source": "p. 79 就才",
+        "q": {
+          "en": "他早上六点____出发了。",
+          "id": "他早上六点____出发了。"
+        },
+        "accept": [
+          "就"
+        ],
+        "why": {
+          "en": "Early: 就.",
+          "id": "Awal: 就."
+        }
+      },
+      {
+        "source": "p. 83 改错",
+        "q": {
+          "en": "Fix it: 到中国以后，这个电影我再看了一遍。",
+          "id": "Perbaiki: 到中国以后，这个电影我再看了一遍。"
+        },
+        "accept": [
+          "到了中国以后，这个电影我又看了一遍。",
+          "到中国以后，这个电影我又看了一遍。"
+        ],
+        "why": {
+          "en": "It already happened: 又.",
+          "id": "Sudah terjadi: 又."
+        }
+      },
+      {
+        "source": "p. 83 改错",
+        "q": {
+          "en": "Fix it: 今年九月，他再来中国了。",
+          "id": "Perbaiki: 今年九月，他再来中国了。"
+        },
+        "accept": [
+          "今年九月，他又来中国了。"
+        ],
+        "why": {
+          "en": "It already happened: 又.",
+          "id": "Sudah terjadi: 又."
+        }
+      },
+      {
+        "source": "p. 44 填空",
+        "q": {
+          "en": "我____打算学一年，现在想再延长一年。",
+          "id": "我____打算学一年，现在想再延长一年。"
+        },
+        "accept": [
+          "原来"
+        ],
+        "why": {
+          "en": "原来……现在…….",
+          "id": "原来……现在……."
+        }
+      },
+      {
+        "source": "p. 44 填空",
+        "q": {
+          "en": "玛丽每天晚上____要学三个多小时。",
+          "id": "玛丽每天晚上____要学三个多小时。"
+        },
+        "accept": [
+          "差不多"
+        ],
+        "why": {
+          "en": "差不多 + v.",
+          "id": "差不多 + v."
+        }
+      },
+      {
+        "source": "p. 44 填空",
+        "q": {
+          "en": "学习汉语____坚持，\"三天打鱼，两天晒网\"是不行的。",
+          "id": "学习汉语____坚持，\"三天打鱼，两天晒网\"是不行的。"
+        },
+        "accept": [
+          "必须"
+        ],
+        "why": {
+          "en": "必须坚持.",
+          "id": "必须坚持."
+        }
+      },
+      {
+        "source": "p. 44 填空",
+        "q": {
+          "en": "我____不喝酒。",
+          "id": "我____不喝酒。"
+        },
+        "accept": [
+          "从来"
+        ],
+        "why": {
+          "en": "从来不.",
+          "id": "从来不."
+        }
+      },
+      {
+        "source": "p. 44 填空",
+        "q": {
+          "en": "她练太极拳已经____了好几个月了。",
+          "id": "她练太极拳已经____了好几个月了。"
+        },
+        "accept": [
+          "练"
+        ],
+        "why": {
+          "en": "练了好几个月.",
+          "id": "练了好几个月."
+        }
+      },
+      {
+        "source": "p. 44 填空",
+        "q": {
+          "en": "A：这种药的____怎么样？B：____好的。(two blanks)",
+          "id": "A：这种药的____怎么样？B：____好的。(dua titik)"
+        },
+        "accept": [
+          "效果挺",
+          "效果 挺",
+          "效果，挺"
+        ],
+        "why": {
+          "en": "效果 / 挺好的.",
+          "id": "效果 / 挺好的."
+        }
+      },
+      {
+        "source": "p. 44 填空",
+        "q": {
+          "en": "她今天晚上____能来。",
+          "id": "她今天晚上____能来。"
+        },
+        "accept": [
+          "不一定"
+        ],
+        "why": {
+          "en": "不一定: not sure.",
+          "id": "不一定: belum tentu."
+        }
+      },
+      {
+        "source": "p. 44 填空",
+        "q": {
+          "en": "打太极拳比较难，____很有意思。",
+          "id": "打太极拳比较难，____很有意思。"
+        },
+        "accept": [
+          "不过"
+        ],
+        "why": {
+          "en": "……,不过…….",
+          "id": "……,不过……."
+        }
+      },
+      {
+        "source": "p. 44 填空",
+        "q": {
+          "en": "我觉得这本书对留学生很有____，但是这样的书太少了。",
+          "id": "我觉得这本书对留学生很有____，但是这样的书太少了。"
+        },
+        "accept": [
+          "好处"
+        ],
+        "why": {
+          "en": "对……有好处.",
+          "id": "对……有好处."
+        }
+      },
+      {
+        "source": "p. 30 课文",
+        "q": {
+          "en": "留学生来了中国多长时间？",
+          "id": "留学生来了中国多长时间？"
+        },
+        "options": [
+          {
+            "en": "两个多月了。",
+            "id": "两个多月了。"
+          },
+          {
+            "en": "两年多了。",
+            "id": "两年多了。"
+          },
+          {
+            "en": "一年了。",
+            "id": "一年了。"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "我来了两个多月了。",
+          "id": "我来了两个多月了。"
+        }
+      },
+      {
+        "source": "p. 30 课文",
+        "q": {
+          "en": "哪些地方他还不太习惯？",
+          "id": "哪些地方他还不太习惯？"
+        },
+        "options": [
+          {
+            "en": "气候特别干燥，宿舍周围不太干净，也不太安静，食堂里的菜太油腻。",
+            "id": "气候特别干燥，宿舍周围不太干净，也不太安静，食堂里的菜太油腻。"
+          },
+          {
+            "en": "交通不方便。",
+            "id": "交通不方便。"
+          },
+          {
+            "en": "老师太严格。",
+            "id": "老师太严格。"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "From text (1).",
+          "id": "Dari teks (1)."
+        }
+      },
+      {
+        "source": "p. 30 课文",
+        "q": {
+          "en": "他早上一般几点起床？早饭吃什么？",
+          "id": "他早上一般几点起床？早饭吃什么？"
+        },
+        "accept": [
+          "早上七点多起床，早上就喝杯牛奶。",
+          "七点多起床，喝杯牛奶"
+        ],
+        "why": {
+          "en": "我每天早上七点多才起床……喝杯牛奶就去上课了。",
+          "id": "我每天早上七点多才起床……喝杯牛奶就去上课了。"
+        }
+      },
+      {
+        "source": "p. 30 课文",
+        "q": {
+          "en": "他每天锻炼多久？",
+          "id": "他每天锻炼多久？"
+        },
+        "options": [
+          {
+            "en": "一个小时",
+            "id": "一个小时"
+          },
+          {
+            "en": "半个小时",
+            "id": "半个小时"
+          },
+          {
+            "en": "两三个小时",
+            "id": "两三个小时"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "每天都坚持锻炼一个小时。",
+          "id": "每天都坚持锻炼一个小时。"
+        }
+      },
+      {
+        "source": "p. 30 课文",
+        "q": {
+          "en": "他原来打算学多久？现在打算怎么样？",
+          "id": "他原来打算学多久？现在打算怎么样？"
+        },
+        "accept": [
+          "原来打算学一年，现在打算再延长一年。"
+        ],
+        "why": {
+          "en": "原来打算学一年……准备再延长一年。",
+          "id": "原来打算学一年……准备再延长一年。"
+        }
+      },
+      {
+        "source": "p. 31 填空",
+        "q": {
+          "en": "我来了两个多月了，对这儿的生活____已经习惯了。",
+          "id": "我来了两个多月了，对这儿的生活____已经习惯了。"
+        },
+        "accept": [
+          "差不多"
+        ],
+        "why": {
+          "en": "差不多已经习惯了.",
+          "id": "差不多已经习惯了."
+        }
+      },
+      {
+        "source": "p. 31 填空",
+        "q": {
+          "en": "总觉得这儿的气候特别____。",
+          "id": "总觉得这儿的气候特别____。"
+        },
+        "accept": [
+          "干燥"
+        ],
+        "why": {
+          "en": "气候干燥.",
+          "id": "气候干燥."
+        }
+      },
+      {
+        "source": "p. 31 填空",
+        "q": {
+          "en": "中午我____。(never nap)",
+          "id": "中午我____。(tidak pernah tidur siang)"
+        },
+        "accept": [
+          "从来不睡午觉"
+        ],
+        "why": {
+          "en": "我从来不睡午觉。",
+          "id": "我从来不睡午觉。"
+        }
+      },
+      {
+        "source": "p. 32 填空",
+        "q": {
+          "en": "晚饭后我常常____，有时跟朋友聊聊天儿。(take a short walk)",
+          "id": "晚饭后我常常____，有时跟朋友聊聊天儿。(jalan sebentar)"
+        },
+        "accept": [
+          "散一会儿步"
+        ],
+        "why": {
+          "en": "散一会儿步.",
+          "id": "散一会儿步."
+        }
+      },
+      {
+        "source": "p. 32 填空",
+        "q": {
+          "en": "我很____给我这个____，让我来中国留学。(two blanks)",
+          "id": "我很____给我这个____，让我来中国留学。(dua titik)"
+        },
+        "accept": [
+          "感谢父母机会",
+          "感谢父母 机会",
+          "感谢父母，机会"
+        ],
+        "why": {
+          "en": "感谢父母 / 机会.",
+          "id": "感谢父母 / 机会."
+        }
+      },
+      {
+        "source": "p. 49 课文",
+        "q": {
+          "en": "王老师每天什么时候起来？",
+          "id": "王老师每天什么时候起来？"
+        },
+        "accept": [
+          "他每天五点多就起来了。",
+          "五点多"
+        ],
+        "why": {
+          "en": "每天五点多就起来了。",
+          "id": "每天五点多就起来了。"
+        }
+      },
+      {
+        "source": "p. 49 课文",
+        "q": {
+          "en": "他气功练了多长时间了？",
+          "id": "他气功练了多长时间了？"
+        },
+        "accept": [
+          "练了好几年了。",
+          "好几年"
+        ],
+        "why": {
+          "en": "已经练了好几年了。",
+          "id": "已经练了好几年了。"
+        }
+      },
+      {
+        "source": "p. 49 课文",
+        "q": {
+          "en": "他每天练多长时间？",
+          "id": "他每天练多长时间？"
+        },
+        "options": [
+          {
+            "en": "不一定，有时练一个钟头，有时候半个钟头。",
+            "id": "不一定，有时练一个钟头，有时候半个钟头。"
+          },
+          {
+            "en": "每天两个钟头。",
+            "id": "每天两个钟头。"
+          },
+          {
+            "en": "每天十分钟。",
+            "id": "每天十分钟。"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "From text (2).",
+          "id": "Dari teks (2)."
+        }
+      },
+      {
+        "source": "p. 49 课文",
+        "q": {
+          "en": "关经理练了气功吗？为什么？",
+          "id": "关经理练了气功吗？为什么？"
+        },
+        "options": [
+          {
+            "en": "没练。因为他工作太忙了，没有时间。",
+            "id": "没练。因为他工作太忙了，没有时间。"
+          },
+          {
+            "en": "练了，因为对身体有好处。",
+            "id": "练了，因为对身体有好处。"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "我也很想练，但是工作太忙，没有时间。",
+          "id": "我也很想练，但是工作太忙，没有时间。"
+        }
+      },
+      {
+        "source": "p. 50 填空",
+        "q": {
+          "en": "练气功必须坚持天天练，\"三天____，两天____网\"不行。(two blanks)",
+          "id": "练气功必须坚持天天练，\"三天____，两天____网\"不行。(dua titik)"
+        },
+        "accept": [
+          "打鱼晒",
+          "打鱼 晒",
+          "打鱼，晒"
+        ],
+        "why": {
+          "en": "三天打鱼，两天晒网.",
+          "id": "三天打鱼，两天晒网."
+        }
+      },
+      {
+        "source": "p. 85 阅读",
+        "q": {
+          "en": "判断: 小伙子玩儿累了，想去那个长椅子上休息一会儿。",
+          "id": "Benar/salah: 小伙子玩儿累了，想去那个长椅子上休息一会儿。"
+        },
+        "options": [
+          {
+            "en": "True",
+            "id": "Benar"
+          },
+          {
+            "en": "False",
+            "id": "Salah"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "玩儿累了，想找一个座位坐下休息一会儿。",
+          "id": "玩儿累了，想找一个座位坐下休息一会儿。"
+        }
+      },
+      {
+        "source": "p. 85 阅读",
+        "q": {
+          "en": "判断: 老人也想去那个长椅子上休息。",
+          "id": "Benar/salah: 老人也想去那个长椅子上休息。"
+        },
+        "options": [
+          {
+            "en": "True",
+            "id": "Benar"
+          },
+          {
+            "en": "False",
+            "id": "Salah"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "He went to warn the young man about the paint.",
+          "id": "Kakek itu mau memperingatkan soal cat."
+        }
+      },
+      {
+        "source": "p. 85 阅读",
+        "q": {
+          "en": "判断: 老人对小伙子大声叫是怕小伙子先过去坐。",
+          "id": "Benar/salah: 老人对小伙子大声叫是怕小伙子先过去坐。"
+        },
+        "options": [
+          {
+            "en": "True",
+            "id": "Benar"
+          },
+          {
+            "en": "False",
+            "id": "Salah"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "The bench was wet paint (椅子刚涂上油漆).",
+          "id": "Bangkunya baru dicat (椅子刚涂上油漆)."
+        }
+      },
+      {
+        "source": "p. 85 阅读",
+        "q": {
+          "en": "判断: 小伙子裤子上坐了很多油漆。",
+          "id": "Benar/salah: 小伙子裤子上坐了很多油漆。"
+        },
+        "options": [
+          {
+            "en": "True",
+            "id": "Benar"
+          },
+          {
+            "en": "False",
+            "id": "Salah"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "裤子已经坐上了很多油漆。",
+          "id": "裤子已经坐上了很多油漆。"
+        }
+      }
+    ]
+  },
+  {
+    "chapter": {
+      "en": "第6课 我比你更喜欢音乐 (I like music even more than you)",
+      "id": "第6课 我比你更喜欢音乐 (Saya lebih suka musik daripada kamu)"
+    },
+    "note": {
+      "en": "[NOTE] All exercises come from the teacher's slides: grammar, the 课文 stories, reading and fill-ins. For a fill-in, type the 汉字; punctuation does not matter.",
+      "id": "[NOTE] Semua latihan berasal dari slide guru: grammar, cerita 课文, bacaan, dan isian. Untuk soal isian, ketik 汉字; tanda baca tidak dihitung."
+    },
+    "questions": [
+      {
+        "source": "p. 53 比字句",
+        "q": {
+          "en": "Which sentence is correct?",
+          "id": "Kalimat mana yang benar?"
+        },
+        "options": [
+          {
+            "en": "飞机比汽车很快。",
+            "id": "飞机比汽车很快。"
+          },
+          {
+            "en": "飞机比汽车快。",
+            "id": "飞机比汽车快。"
+          },
+          {
+            "en": "飞机比汽车真快。",
+            "id": "飞机比汽车真快。"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "No 很/真/非常 before the adjective in a 比 sentence.",
+          "id": "Tidak boleh 很/真/非常 sebelum kata sifat dalam kalimat 比."
+        }
+      },
+      {
+        "source": "p. 57 比字句",
+        "q": {
+          "en": "Which sentence is correct?",
+          "id": "Kalimat mana yang benar?"
+        },
+        "options": [
+          {
+            "en": "她比我唱歌唱得好。",
+            "id": "她比我唱歌唱得好。"
+          },
+          {
+            "en": "她唱歌唱得比我好。",
+            "id": "她唱歌唱得比我好。"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "With an object, 比 only goes before the complement.",
+          "id": "Kalau ada objek, 比 hanya sebelum pelengkap."
+        }
+      },
+      {
+        "source": "p. 60 比字句",
+        "q": {
+          "en": "Negative of 西瓜比苹果大。",
+          "id": "Bentuk negatif dari 西瓜比苹果大。"
+        },
+        "options": [
+          {
+            "en": "苹果没有西瓜大。",
+            "id": "苹果没有西瓜大。"
+          },
+          {
+            "en": "苹果不比西瓜大。",
+            "id": "苹果不比西瓜大。"
+          },
+          {
+            "en": "西瓜不比苹果大。",
+            "id": "西瓜不比苹果大。"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "The negative uses 没有: B 没有 A + C.",
+          "id": "Negatif memakai 没有: B 没有 A + C."
+        }
+      },
+      {
+        "source": "p. 60 比字句",
+        "q": {
+          "en": "A：我觉得你比麦克高。B：____ (you disagree)",
+          "id": "A：我觉得你比麦克高。B：____ (kamu membantah)"
+        },
+        "options": [
+          {
+            "en": "我不比他高。",
+            "id": "我不比他高。"
+          },
+          {
+            "en": "我没有他高。",
+            "id": "我没有他高。"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "不比 is only for disagreeing or refuting.",
+          "id": "不比 hanya untuk membantah."
+        }
+      },
+      {
+        "source": "p. 59 替换",
+        "q": {
+          "en": "A：那儿的气温有北京高吗？B：比北京____得多。",
+          "id": "A：那儿的气温有北京高吗？B：比北京____得多。"
+        },
+        "accept": [
+          "高"
+        ],
+        "why": {
+          "en": "比北京高得多.",
+          "id": "比北京高得多."
+        }
+      },
+      {
+        "source": "p. 61 替换",
+        "q": {
+          "en": "A：这件大衣比那件贵吗？B：这件没有那件____。",
+          "id": "A：这件大衣比那件贵吗？B：这件没有那件____。"
+        },
+        "accept": [
+          "贵"
+        ],
+        "why": {
+          "en": "B 没有 A + adj.",
+          "id": "B 没有 A + adj."
+        }
+      },
+      {
+        "source": "p. 64 练习",
+        "q": {
+          "en": "小张20岁，小李19岁，小王18岁。A：小张比小李大几岁？B：____",
+          "id": "小张20岁，小李19岁，小王18岁。A：小张比小李大几岁？B：____"
+        },
+        "accept": [
+          "大一岁。",
+          "大一岁",
+          "一岁"
+        ],
+        "why": {
+          "en": "20 − 19 = 1.",
+          "id": "20 − 19 = 1."
+        }
+      },
+      {
+        "source": "p. 64 练习",
+        "q": {
+          "en": "小张20岁，小李19岁，小王18岁。A：谁最大？B：____",
+          "id": "小张20岁，小李19岁，小王18岁。A：谁最大？B：____"
+        },
+        "accept": [
+          "小张最大。",
+          "小张"
+        ],
+        "why": {
+          "en": "小张 is 20.",
+          "id": "小张 berumur 20."
+        }
+      },
+      {
+        "source": "p. 66 替换",
+        "q": {
+          "en": "A：你比你妹妹大多少？B：____(two years)",
+          "id": "A：你比你妹妹大多少？B：____(dua tahun)"
+        },
+        "accept": [
+          "大两岁。",
+          "大两岁"
+        ],
+        "why": {
+          "en": "adj. + 数量词.",
+          "id": "adj. + 数量词."
+        }
+      },
+      {
+        "source": "p. 67 填空",
+        "q": {
+          "en": "北京比我们那儿____。(a bit colder)",
+          "id": "北京比我们那儿____。(sedikit lebih dingin)"
+        },
+        "accept": [
+          "冷一点儿"
+        ],
+        "why": {
+          "en": "冷一点儿.",
+          "id": "冷一点儿."
+        }
+      },
+      {
+        "source": "p. 67 填空",
+        "q": {
+          "en": "我姐姐比我____。(two years older)",
+          "id": "我姐姐比我____。(dua tahun lebih tua)"
+        },
+        "accept": [
+          "大两岁"
+        ],
+        "why": {
+          "en": "大两岁.",
+          "id": "大两岁."
+        }
+      },
+      {
+        "source": "p. 67 填空",
+        "q": {
+          "en": "每天早上她都比我起得____。(much earlier)",
+          "id": "每天早上她都比我起得____。(jauh lebih pagi)"
+        },
+        "accept": [
+          "早得多"
+        ],
+        "why": {
+          "en": "早得多.",
+          "id": "早得多."
+        }
+      },
+      {
+        "source": "p. 67 填空",
+        "q": {
+          "en": "他比我跑得____。(much faster)",
+          "id": "他比我跑得____。(jauh lebih cepat)"
+        },
+        "accept": [
+          "快得多"
+        ],
+        "why": {
+          "en": "快得多.",
+          "id": "快得多."
+        }
+      },
+      {
+        "source": "p. 67 填空",
+        "q": {
+          "en": "这件羽绒服比那件____。(much more expensive)",
+          "id": "这件羽绒服比那件____。(jauh lebih mahal)"
+        },
+        "accept": [
+          "贵得多"
+        ],
+        "why": {
+          "en": "贵得多.",
+          "id": "贵得多."
+        }
+      },
+      {
+        "source": "p. 67 填空",
+        "q": {
+          "en": "这件大衣的颜色比那件____。(a bit darker)",
+          "id": "这件大衣的颜色比那件____。(sedikit lebih gelap)"
+        },
+        "accept": [
+          "深一点儿"
+        ],
+        "why": {
+          "en": "深一点儿.",
+          "id": "深一点儿."
+        }
+      },
+      {
+        "source": "p. 67 填空",
+        "q": {
+          "en": "明天上海的气温比北京____。(three degrees higher)",
+          "id": "明天上海的气温比北京____。(tiga derajat lebih tinggi)"
+        },
+        "accept": [
+          "高三度"
+        ],
+        "why": {
+          "en": "高三度.",
+          "id": "高三度."
+        }
+      },
+      {
+        "source": "p. 67 填空",
+        "q": {
+          "en": "今天的气温比昨天____。(much higher)",
+          "id": "今天的气温比昨天____。(jauh lebih tinggi)"
+        },
+        "accept": [
+          "高得多"
+        ],
+        "why": {
+          "en": "高得多.",
+          "id": "高得多."
+        }
+      },
+      {
+        "source": "p. 68 改错",
+        "q": {
+          "en": "Fix it: 他们的生活比以前很好。",
+          "id": "Perbaiki: 他们的生活比以前很好。"
+        },
+        "accept": [
+          "他们的生活比以前好。"
+        ],
+        "why": {
+          "en": "No 很 in a 比 sentence.",
+          "id": "Tanpa 很 dalam kalimat 比."
+        }
+      },
+      {
+        "source": "p. 68 改错",
+        "q": {
+          "en": "Fix it: 玛丽考了成绩比我考了成绩好。",
+          "id": "Perbaiki: 玛丽考了成绩比我考了成绩好。"
+        },
+        "accept": [
+          "玛丽考得比我好。"
+        ],
+        "why": {
+          "en": "A + V. + 得 + 比 + B + adj.",
+          "id": "A + V. + 得 + 比 + B + adj."
+        }
+      },
+      {
+        "source": "p. 68 改错",
+        "q": {
+          "en": "Fix it: 她说比我好得多。",
+          "id": "Perbaiki: 她说比我好得多。"
+        },
+        "accept": [
+          "她说得比我好得多。"
+        ],
+        "why": {
+          "en": "A complement of state needs 得.",
+          "id": "Pelengkap keadaan perlu 得."
+        }
+      },
+      {
+        "source": "p. 68 改错",
+        "q": {
+          "en": "Fix it: 弟弟比我不高。",
+          "id": "Perbaiki: 弟弟比我不高。"
+        },
+        "accept": [
+          "弟弟没有我高。"
+        ],
+        "why": {
+          "en": "Negative: 没有.",
+          "id": "Negatif: 没有."
+        }
+      },
+      {
+        "source": "p. 68 改错",
+        "q": {
+          "en": "Fix it: 他们比我们不来得早。",
+          "id": "Perbaiki: 他们比我们不来得早。"
+        },
+        "accept": [
+          "他们没有我们来得早。"
+        ],
+        "why": {
+          "en": "Negative: 没有.",
+          "id": "Negatif: 没有."
+        }
+      },
+      {
+        "source": "p. 68 改错",
+        "q": {
+          "en": "Fix it: 麦克比我一点儿高。",
+          "id": "Perbaiki: 麦克比我一点儿高。"
+        },
+        "accept": [
+          "麦克比我高一点儿。"
+        ],
+        "why": {
+          "en": "一点儿 goes after the adjective.",
+          "id": "一点儿 diletakkan sesudah kata sifat."
+        }
+      },
+      {
+        "source": "p. 69 练习",
+        "q": {
+          "en": "宿舍楼40米，教学楼60米。A：哪座楼高？B：____",
+          "id": "宿舍楼40米，教学楼60米。A：哪座楼高？B：____"
+        },
+        "accept": [
+          "教学楼高。",
+          "教学楼"
+        ],
+        "why": {
+          "en": "60 > 40.",
+          "id": "60 > 40."
+        }
+      },
+      {
+        "source": "p. 69 练习",
+        "q": {
+          "en": "宿舍楼40米，教学楼60米。A：____？B：教学楼比宿舍楼高20米。",
+          "id": "宿舍楼40米，教学楼60米。A：____？B：教学楼比宿舍楼高20米。"
+        },
+        "accept": [
+          "教学楼比宿舍楼高多少米"
+        ],
+        "why": {
+          "en": "Ask with 多少米.",
+          "id": "Tanyakan dengan 多少米."
+        }
+      },
+      {
+        "source": "p. 70 练习",
+        "q": {
+          "en": "长江6300公里，黄河5464公里。A：黄河有长江长吗？B：____",
+          "id": "长江6300公里，黄河5464公里。A：黄河有长江长吗？B：____"
+        },
+        "accept": [
+          "黄河没有长江长。",
+          "黄河没有长江长"
+        ],
+        "why": {
+          "en": "没有 + B + adj.",
+          "id": "没有 + B + adj."
+        }
+      },
+      {
+        "source": "p. 70 练习",
+        "q": {
+          "en": "长江6300公里，黄河5464公里。A：长江比黄河长多少公里？B：长江比黄河长____。",
+          "id": "长江6300公里，黄河5464公里。A：长江比黄河长多少公里？B：长江比黄河长____。"
+        },
+        "accept": [
+          "836公里",
+          "八百三十六公里"
+        ],
+        "why": {
+          "en": "6300 − 5464 = 836.",
+          "id": "6300 − 5464 = 836."
+        }
+      },
+      {
+        "source": "p. 71 练习",
+        "q": {
+          "en": "这台电脑4000元，那台6000元。A：那台电脑有这台贵吗？B：____",
+          "id": "这台电脑4000元，那台6000元。A：那台电脑有这台贵吗？B：____"
+        },
+        "accept": [
+          "那台电脑比这台电脑贵。",
+          "那台电脑比这台贵"
+        ],
+        "why": {
+          "en": "6000 > 4000, so 比.",
+          "id": "6000 > 4000, jadi 比."
+        }
+      },
+      {
+        "source": "p. 72 练习",
+        "q": {
+          "en": "大箱子20公斤，小箱子15公斤。A：小箱子有大箱子重吗？B：____",
+          "id": "大箱子20公斤，小箱子15公斤。A：小箱子有大箱子重吗？B：____"
+        },
+        "accept": [
+          "小箱子没有大箱子重。",
+          "小箱子没有大箱子重"
+        ],
+        "why": {
+          "en": "没有 + B + adj.",
+          "id": "没有 + B + adj."
+        }
+      },
+      {
+        "source": "p. 73 练习",
+        "q": {
+          "en": "麦克八点起床，玛丽六点起床。A：麦克比玛丽起得早吗？B：____",
+          "id": "麦克八点起床，玛丽六点起床。A：麦克比玛丽起得早吗？B：____"
+        },
+        "accept": [
+          "麦克没有玛丽起得早。",
+          "麦克没有玛丽起得早"
+        ],
+        "why": {
+          "en": "没有 + B + V. + 得 + adj.",
+          "id": "没有 + B + V. + 得 + adj."
+        }
+      },
+      {
+        "source": "p. 73 练习",
+        "q": {
+          "en": "麦克八点起床，玛丽六点起床。A：麦克比玛丽晚起几个小时？B：____",
+          "id": "麦克八点起床，玛丽六点起床。A：麦克比玛丽晚起几个小时？B：____"
+        },
+        "accept": [
+          "麦克比玛丽晚起两个小时。",
+          "两个小时"
+        ],
+        "why": {
+          "en": "8 − 6 = 2.",
+          "id": "8 − 6 = 2."
+        }
+      },
+      {
+        "source": "p. 77 感叹句",
+        "q": {
+          "en": "Which sentence is correct?",
+          "id": "Kalimat mana yang benar?"
+        },
+        "options": [
+          {
+            "en": "他是一个真好的老师。",
+            "id": "他是一个真好的老师。"
+          },
+          {
+            "en": "他是一个很好的老师。",
+            "id": "他是一个很好的老师。"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "Exclamations (真好) aren't used for objective description.",
+          "id": "Kalimat seru (真好) tidak untuk deskripsi objektif."
+        }
+      },
+      {
+        "source": "p. 81 填空",
+        "q": {
+          "en": "爸爸每天都很晚____下班，今天下午五点____下班了。(two blanks)",
+          "id": "爸爸每天都很晚____下班，今天下午五点____下班了。(dua titik)"
+        },
+        "accept": [
+          "才就",
+          "才 就",
+          "才，就"
+        ],
+        "why": {
+          "en": "Late: 才. Early: 就.",
+          "id": "Terlambat: 才. Awal: 就."
+        }
+      },
+      {
+        "source": "p. 81 填空",
+        "q": {
+          "en": "明天我下了课____去看她。",
+          "id": "明天我下了课____去看她。"
+        },
+        "accept": [
+          "就"
+        ],
+        "why": {
+          "en": "v₁了……就 v₂.",
+          "id": "v₁了……就 v₂."
+        }
+      },
+      {
+        "source": "p. 81 填空",
+        "q": {
+          "en": "您的话我没听懂，请您____说一遍，好吗？",
+          "id": "您的话我没听懂，请您____说一遍，好吗？"
+        },
+        "accept": [
+          "再"
+        ],
+        "why": {
+          "en": "Not repeated yet: 再.",
+          "id": "Belum diulang: 再."
+        }
+      },
+      {
+        "source": "p. 81 填空",
+        "q": {
+          "en": "老师____说了一遍，我____听懂。(two blanks)",
+          "id": "老师____说了一遍，我____听懂。(dua titik)"
+        },
+        "accept": [
+          "又才",
+          "又 才",
+          "又，才"
+        ],
+        "why": {
+          "en": "Repeated already: 又. Only then: 才.",
+          "id": "Sudah diulang: 又. Baru: 才."
+        }
+      },
+      {
+        "source": "p. 81 填空",
+        "q": {
+          "en": "上星期我已经买了一本，今天我____买了一本。",
+          "id": "上星期我已经买了一本，今天我____买了一本。"
+        },
+        "accept": [
+          "又"
+        ],
+        "why": {
+          "en": "Already happened: 又.",
+          "id": "Sudah terjadi: 又."
+        }
+      },
+      {
+        "source": "p. 81 填空",
+        "q": {
+          "en": "要是你不想看，我们____回学校吧。",
+          "id": "要是你不想看，我们____回学校吧。"
+        },
+        "accept": [
+          "就"
+        ],
+        "why": {
+          "en": "要是……就…….",
+          "id": "要是……就……."
+        }
+      },
+      {
+        "source": "p. 81 填空",
+        "q": {
+          "en": "你怎么现在____来？晚会早____开始了。(two blanks)",
+          "id": "你怎么现在____来？晚会早____开始了。(dua titik)"
+        },
+        "accept": [
+          "才就",
+          "才 就",
+          "才，就"
+        ],
+        "why": {
+          "en": "Late: 才. Long ago: 早就.",
+          "id": "Terlambat: 才. Sudah lama: 早就."
+        }
+      },
+      {
+        "source": "p. 82 填空",
+        "q": {
+          "en": "这课的语法你听____了没有？",
+          "id": "这课的语法你听____了没有？"
+        },
+        "accept": [
+          "懂"
+        ],
+        "why": {
+          "en": "听懂.",
+          "id": "听懂."
+        }
+      },
+      {
+        "source": "p. 82 填空",
+        "q": {
+          "en": "对不起，我正听录音呢，没听____。",
+          "id": "对不起，我正听录音呢，没听____。"
+        },
+        "accept": [
+          "见"
+        ],
+        "why": {
+          "en": "听见.",
+          "id": "听见."
+        }
+      },
+      {
+        "source": "p. 82 填空",
+        "q": {
+          "en": "快开____窗户吧，屋子里太热了。",
+          "id": "快开____窗户吧，屋子里太热了。"
+        },
+        "accept": [
+          "开"
+        ],
+        "why": {
+          "en": "开开窗户.",
+          "id": "开开窗户."
+        }
+      },
+      {
+        "source": "p. 82 填空",
+        "q": {
+          "en": "关____电视吧，已经十二点了。",
+          "id": "关____电视吧，已经十二点了。"
+        },
+        "accept": [
+          "上"
+        ],
+        "why": {
+          "en": "关上.",
+          "id": "关上."
+        }
+      },
+      {
+        "source": "p. 82 填空",
+        "q": {
+          "en": "我给你的书你看____了没有？",
+          "id": "我给你的书你看____了没有？"
+        },
+        "accept": [
+          "完"
+        ],
+        "why": {
+          "en": "看完.",
+          "id": "看完."
+        }
+      },
+      {
+        "source": "p. 40 填空",
+        "q": {
+          "en": "他____喜欢看足球比赛。",
+          "id": "他____喜欢看足球比赛。"
+        },
+        "accept": [
+          "最"
+        ],
+        "why": {
+          "en": "最 + 心理动词.",
+          "id": "最 + 心理动词."
+        }
+      },
+      {
+        "source": "p. 40 填空",
+        "q": {
+          "en": "我们国家的冬天比这儿____。",
+          "id": "我们国家的冬天比这儿____。"
+        },
+        "accept": [
+          "暖和"
+        ],
+        "why": {
+          "en": "比这儿暖和.",
+          "id": "比这儿暖和."
+        }
+      },
+      {
+        "source": "p. 40 填空",
+        "q": {
+          "en": "我们班又____了两个新同学。",
+          "id": "我们班又____了两个新同学。"
+        },
+        "accept": [
+          "增加"
+        ],
+        "why": {
+          "en": "增加.",
+          "id": "增加."
+        }
+      },
+      {
+        "source": "p. 40 填空",
+        "q": {
+          "en": "他是一个足球____，要是晚上电视里有足球比赛，他可以不睡觉。",
+          "id": "他是一个足球____，要是晚上电视里有足球比赛，他可以不睡觉。"
+        },
+        "accept": [
+          "迷"
+        ],
+        "why": {
+          "en": "足球迷.",
+          "id": "足球迷."
+        }
+      },
+      {
+        "source": "p. 40 填空",
+        "q": {
+          "en": "我没有你那么喜欢民歌，我喜欢____歌曲。",
+          "id": "我没有你那么喜欢民歌，我喜欢____歌曲。"
+        },
+        "accept": [
+          "流行"
+        ],
+        "why": {
+          "en": "流行歌曲.",
+          "id": "流行歌曲."
+        }
+      },
+      {
+        "source": "p. 40 填空",
+        "q": {
+          "en": "这是一首世界____。",
+          "id": "这是一首世界____。"
+        },
+        "accept": [
+          "名曲"
+        ],
+        "why": {
+          "en": "世界名曲.",
+          "id": "世界名曲."
+        }
+      },
+      {
+        "source": "p. 40 填空",
+        "q": {
+          "en": "天气预报说，今天最高____是零下一度。",
+          "id": "天气预报说，今天最高____是零下一度。"
+        },
+        "accept": [
+          "气温"
+        ],
+        "why": {
+          "en": "最高气温.",
+          "id": "最高气温."
+        }
+      },
+      {
+        "source": "p. 40 填空",
+        "q": {
+          "en": "天气____说得不一定对。",
+          "id": "天气____说得不一定对。"
+        },
+        "accept": [
+          "预报"
+        ],
+        "why": {
+          "en": "天气预报.",
+          "id": "天气预报."
+        }
+      },
+      {
+        "source": "p. 23 课文",
+        "q": {
+          "en": "田芳暑假去哪儿了？玩儿了多久？",
+          "id": "田芳暑假去哪儿了？玩儿了多久？"
+        },
+        "accept": [
+          "她去了上海。在那儿玩儿了一个多月。"
+        ],
+        "why": {
+          "en": "今年暑假我还在那儿玩儿了一个多月呢。",
+          "id": "今年暑假我还在那儿玩儿了一个多月呢。"
+        }
+      },
+      {
+        "source": "p. 23 课文",
+        "q": {
+          "en": "为什么田芳说上海的冬天没有北京暖和？",
+          "id": "为什么田芳说上海的冬天没有北京暖和？"
+        },
+        "options": [
+          {
+            "en": "因为上海的屋子里没有暖气。",
+            "id": "因为上海的屋子里没有暖气。"
+          },
+          {
+            "en": "因为上海的气温比北京低。",
+            "id": "因为上海的气温比北京低。"
+          },
+          {
+            "en": "因为上海人口多。",
+            "id": "因为上海人口多。"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "因为屋子里没有暖气，所以感觉还没有北京暖和。",
+          "id": "因为屋子里没有暖气，所以感觉还没有北京暖和。"
+        }
+      },
+      {
+        "source": "p. 23 课文",
+        "q": {
+          "en": "判断: 北京的人口比上海多。",
+          "id": "Benar/salah: 北京的人口比上海多。"
+        },
+        "options": [
+          {
+            "en": "True",
+            "id": "Benar"
+          },
+          {
+            "en": "False",
+            "id": "Salah"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "上海是中国人口最多的城市。",
+          "id": "上海是中国人口最多的城市。"
+        }
+      },
+      {
+        "source": "p. 23 课文",
+        "q": {
+          "en": "判断: 北京的公园比上海的多，但是比上海的小。",
+          "id": "Benar/salah: 北京的公园比上海的多，但是比上海的小。"
+        },
+        "options": [
+          {
+            "en": "True",
+            "id": "Benar"
+          },
+          {
+            "en": "False",
+            "id": "Salah"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "Beijing's parks are more numerous and bigger.",
+          "id": "Taman Beijing lebih banyak dan lebih besar."
+        }
+      },
+      {
+        "source": "p. 24 填空",
+        "q": {
+          "en": "田芳：上海很好，这几年____很大。",
+          "id": "田芳：上海很好，这几年____很大。"
+        },
+        "accept": [
+          "变化"
+        ],
+        "why": {
+          "en": "变化很大.",
+          "id": "变化很大."
+        }
+      },
+      {
+        "source": "p. 24 填空",
+        "q": {
+          "en": "山本：上海____北京大吧？",
+          "id": "山本：上海____北京大吧？"
+        },
+        "accept": [
+          "比"
+        ],
+        "why": {
+          "en": "A 比 B + adj.",
+          "id": "A 比 B + adj."
+        }
+      },
+      {
+        "source": "p. 24 填空",
+        "q": {
+          "en": "上海是中国人口____多的城市。",
+          "id": "上海是中国人口____多的城市。"
+        },
+        "accept": [
+          "最"
+        ],
+        "why": {
+          "en": "最多.",
+          "id": "最多."
+        }
+      },
+      {
+        "source": "p. 24 填空",
+        "q": {
+          "en": "这几年，____了不少新____，现在比____变得____了。(four blanks)",
+          "id": "这几年，____了不少新____，现在比____变得____了。(empat titik)"
+        },
+        "accept": [
+          "增加建筑过去更漂亮",
+          "增加 建筑 过去 更漂亮"
+        ],
+        "why": {
+          "en": "增加 / 建筑 / 过去 / 更漂亮.",
+          "id": "增加 / 建筑 / 过去 / 更漂亮."
+        }
+      },
+      {
+        "source": "p. 25 填空",
+        "q": {
+          "en": "山本：____，我看____，上海的____比北京高得多。(three blanks)",
+          "id": "山本：____，我看____，上海的____比北京高得多。(tiga titik)"
+        },
+        "accept": [
+          "可是天气预报气温",
+          "可是 天气预报 气温"
+        ],
+        "why": {
+          "en": "可是 / 天气预报 / 气温.",
+          "id": "可是 / 天气预报 / 气温."
+        }
+      },
+      {
+        "source": "p. 25 填空",
+        "q": {
+          "en": "田芳：____的家庭没有，不过____和____里有。(three blanks)",
+          "id": "田芳：____的家庭没有，不过____和____里有。(tiga titik)"
+        },
+        "accept": [
+          "一般旅馆饭店",
+          "一般 旅馆 饭店"
+        ],
+        "why": {
+          "en": "一般 / 旅馆 / 饭店.",
+          "id": "一般 / 旅馆 / 饭店."
+        }
+      },
+      {
+        "source": "p. 45 课文",
+        "q": {
+          "en": "王老师下载了多少交响乐？",
+          "id": "王老师下载了多少交响乐？"
+        },
+        "accept": [
+          "好几百首。",
+          "好几百首"
+        ],
+        "why": {
+          "en": "光交响乐就下载了好几百首呢。",
+          "id": "光交响乐就下载了好几百首呢。"
+        }
+      },
+      {
+        "source": "p. 45 课文",
+        "q": {
+          "en": "王老师喜欢听什么音乐？",
+          "id": "王老师喜欢听什么音乐？"
+        },
+        "options": [
+          {
+            "en": "喜欢听古典音乐，比如世界名曲和民歌。",
+            "id": "喜欢听古典音乐，比如世界名曲和民歌。"
+          },
+          {
+            "en": "喜欢听流行歌曲。",
+            "id": "喜欢听流行歌曲。"
+          },
+          {
+            "en": "喜欢听现代音乐。",
+            "id": "喜欢听现代音乐。"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "我喜欢古典音乐。喜欢听世界名曲，还喜欢听民歌。",
+          "id": "我喜欢古典音乐。喜欢听世界名曲，还喜欢听民歌。"
+        }
+      },
+      {
+        "source": "p. 45 课文",
+        "q": {
+          "en": "王老师喜欢不喜欢流行歌曲？",
+          "id": "王老师喜欢不喜欢流行歌曲？"
+        },
+        "options": [
+          {
+            "en": "喜欢，但是没有年轻人那么喜欢。",
+            "id": "喜欢，但是没有年轻人那么喜欢。"
+          },
+          {
+            "en": "非常喜欢。",
+            "id": "非常喜欢。"
+          },
+          {
+            "en": "完全不喜欢。",
+            "id": "完全不喜欢。"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "可能没有你们年轻人那么喜欢。",
+          "id": "可能没有你们年轻人那么喜欢。"
+        }
+      },
+      {
+        "source": "p. 45 课文",
+        "q": {
+          "en": "王老师觉得流行歌曲歌词和民歌歌词哪个写得好？",
+          "id": "王老师觉得流行歌曲歌词和民歌歌词哪个写得好？"
+        },
+        "accept": [
+          "他觉得民歌歌词写得更好。",
+          "民歌歌词写得更好",
+          "民歌"
+        ],
+        "why": {
+          "en": "我还是觉得民歌的歌词好。",
+          "id": "我还是觉得民歌的歌词好。"
+        }
+      },
+      {
+        "source": "p. 46 填空",
+        "q": {
+          "en": "王老师：我是个音乐____，我电脑里，____交响乐就____了好几百____呢。(four blanks)",
+          "id": "王老师：我是个音乐____，我电脑里，____交响乐就____了好几百____呢。(empat titik)"
+        },
+        "accept": [
+          "迷光下载首",
+          "迷 光 下载 首"
+        ],
+        "why": {
+          "en": "迷 / 光 / 下载 / 首.",
+          "id": "迷 / 光 / 下载 / 首."
+        }
+      },
+      {
+        "source": "p. 46 填空",
+        "q": {
+          "en": "林老师：我也很喜欢音乐，____比你更喜欢。",
+          "id": "林老师：我也很喜欢音乐，____比你更喜欢。"
+        },
+        "accept": [
+          "也许"
+        ],
+        "why": {
+          "en": "也许: maybe.",
+          "id": "也许: mungkin."
+        }
+      },
+      {
+        "source": "p. 46 填空",
+        "q": {
+          "en": "你听咱们的民歌，\"在那____的地方……\",写得多好！",
+          "id": "你听咱们的民歌，\"在那____的地方……\",写得多好！"
+        },
+        "accept": [
+          "遥远"
+        ],
+        "why": {
+          "en": "遥远的地方.",
+          "id": "遥远的地方."
+        }
+      },
+      {
+        "source": "p. 84 阅读",
+        "q": {
+          "en": "判断: \"我\"和罗兰坐公共汽车去公园玩儿了。",
+          "id": "Benar/salah: \"我\"和罗兰坐公共汽车去公园玩儿了。"
+        },
+        "options": [
+          {
+            "en": "True",
+            "id": "Benar"
+          },
+          {
+            "en": "False",
+            "id": "Salah"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "They cycled (骑自行车去).",
+          "id": "Mereka naik sepeda (骑自行车去)."
+        }
+      },
+      {
+        "source": "p. 84 阅读",
+        "q": {
+          "en": "判断: \"我们\"排了五分钟才买到票。",
+          "id": "Benar/salah: \"我们\"排了五分钟才买到票。"
+        },
+        "options": [
+          {
+            "en": "True",
+            "id": "Benar"
+          },
+          {
+            "en": "False",
+            "id": "Salah"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "我们排了五分钟才买到票。",
+          "id": "我们排了五分钟才买到票。"
+        }
+      },
+      {
+        "source": "p. 84 阅读",
+        "q": {
+          "en": "判断: \"我们\"先爬山了，然后又划船了，还照了很多相。",
+          "id": "Benar/salah: \"我们\"先爬山了，然后又划船了，还照了很多相。"
+        },
+        "options": [
+          {
+            "en": "True",
+            "id": "Benar"
+          },
+          {
+            "en": "False",
+            "id": "Salah"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "They didn't row; other people did.",
+          "id": "Mereka tidak mendayung; orang lain yang mendayung."
+        }
+      },
+      {
+        "source": "p. 84 阅读",
+        "q": {
+          "en": "判断: \"我们\"以后还会再去那个公园。",
+          "id": "Benar/salah: \"我们\"以后还会再去那个公园。"
+        },
+        "options": [
+          {
+            "en": "True",
+            "id": "Benar"
+          },
+          {
+            "en": "False",
+            "id": "Salah"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "罗兰说，以后我们可以再来。",
+          "id": "罗兰说，以后我们可以再来。"
+        }
+      }
+    ]
+  }
+]

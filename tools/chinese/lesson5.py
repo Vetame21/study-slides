@@ -1,0 +1,378 @@
+"""Lesson 5 第5课 我来了两个多月了. Source: Compre Chapter 5.pdf (87 pages)."""
+from cclib import L, S, Q, W, F
+
+CHAPTER = {"en": "第5课 我来了两个多月了 (I've been here for over two months)",
+           "id": "第5课 我来了两个多月了 (Saya sudah di sini lebih dari dua bulan)"}
+
+NONE = ("", "")
+
+SLIDES = [
+    S("WHAT", ("[ADDED] How to Read This Lesson", "[ADDED] Cara Membaca Pelajaran Ini"), [], intro=(
+        "As before: the 汉字, word pinyin and English word meanings come from the teacher's slides.\n"
+        "[ADDED] for this site: sentence pinyin and all sentence translations. Check them with your teacher.",
+        "Sama seperti sebelumnya: 汉字, pinyin kosakata, dan arti kata bahasa Inggris berasal dari slide guru.\n"
+        "[ADDED] untuk situs ini: pinyin kalimat dan semua terjemahan kalimat. Cek lagi dengan gurumu."),
+      check=(("Which pinyin comes from the teacher's slides?", "The vocabulary pinyin."),
+             ("Pinyin mana yang berasal dari slide guru?", "Pinyin kosakata."))),
+    S("WHY", ("Warm-up: Your Day", "Pemanasan: Harimu"), [
+        L("假期你的一天是怎样的？", "Jiàqī nǐ de yì tiān shì zěnyàng de?", "What is your day like in the holidays?", "Seperti apa harimu waktu libur?"),
+        L("上学的时候你的一天是怎样的？", "Shàngxué de shíhou nǐ de yì tiān shì zěnyàng de?", "What is your day like during term?", "Seperti apa harimu waktu sekolah?"),
+      ], check=(("Answer in Chinese: 你一般几点起床？", "Your own answer, e.g. 我一般七点起床。"), ("Jawab dalam bahasa Mandarin: 你一般几点起床？", "Jawabanmu sendiri, misalnya 我一般七点起床。"))),
+
+    # New words (1) ----------------------------------------------------------------------------
+    S("WHAT", ("生活 shēnghuó and 差不多 chàbuduō", "生活 shēnghuó dan 差不多 chàbuduō"), [
+        L("生活得不错 / 在广东生活", "shēnghuó de búcuò / zài Guǎngdōng shēnghuó", "live well / live in Guangdong", "hidup dengan baik / tinggal di Guangdong"),
+        L("我在广东生活一年了。", "Wǒ zài Guǎngdōng shēnghuó yì nián le.", "I've lived in Guangdong for a year.", "Saya sudah setahun tinggal di Guangdong."),
+        L("广东的生活很幸福。", "Guǎngdōng de shēnghuó hěn xìngfú.", "Life in Guangdong is very happy.", "Hidup di Guangdong sangat bahagia."),
+        L("差不多高 / 差不多写完了 / 差不多十二点了", "chàbuduō gāo / chàbuduō xiě wán le / chàbuduō shí'èr diǎn le", "about the same height / nearly finished writing / nearly twelve", "kira-kira sama tinggi / hampir selesai menulis / hampir jam dua belas"),
+        L("作业差不多要一个多小时才能做完。", "Zuòyè chàbuduō yào yí ge duō xiǎoshí cái néng zuò wán.", "The homework takes about an hour or more to finish.", "PR-nya butuh kira-kira satu jam lebih baru selesai."),
+      ], word=[W("生活", "shēnghuó", NONE, ("to live; life", "hidup; kehidupan")), W("差不多", "chàbuduō", NONE, ("nearly; almost", "hampir; kira-kira"))],
+      intro=("差不多 + adj. / + v. / + time.", "差不多 + adj. / + v. / + waktu."),
+      check=(("Say \"nearly twelve o'clock\".", "差不多十二点了"), ("Katakan \"hampir jam dua belas\".", "差不多十二点了"))),
+    S("WHAT", ("习惯 xíguàn and 不过 búguò", "习惯 xíguàn dan 不过 búguò"), [
+        L("他的习惯是每天早上喝一杯热水。", "Tā de xíguàn shì měi tiān zǎoshang hē yì bēi rè shuǐ.", "His habit is to drink a cup of hot water every morning.", "Kebiasaannya minum segelas air hangat setiap pagi."),
+        L("习惯了广州的生活 / 不太习惯用筷子吃饭", "xíguàn le Guǎngzhōu de shēnghuó / bú tài xíguàn yòng kuàizi chī fàn", "used to life in Guangzhou / not used to eating with chopsticks", "sudah terbiasa hidup di Guangzhou / belum terbiasa makan pakai sumpit"),
+        L("这套房子很好，不过贵了点儿。", "Zhè tào fángzi hěn hǎo, búguò guì le diǎnr.", "This flat is very nice, but a bit expensive.", "Rumah ini bagus, hanya saja agak mahal."),
+        L("宿舍很干净，不过做饭不方便。", "Sùshè hěn gānjìng, búguò zuò fàn bù fāngbiàn.", "The dorm is clean, but cooking is inconvenient.", "Asramanya bersih, tapi masak tidak praktis."),
+      ], word=[W("习惯", "xíguàn", NONE, ("used to; habit", "terbiasa; kebiasaan")), W("不过", "búguò", NONE, ("but; however", "tetapi; hanya saja"))],
+      intro=("习惯 + sth. / 习惯 + do sth. / ……,不过…….", "习惯 + sesuatu / 习惯 + melakukan sesuatu / ……,不过……."),
+      check=(("Say \"used to life in Guangzhou\".", "习惯了广州的生活"), ("Katakan \"sudah terbiasa hidup di Guangzhou\".", "习惯了广州的生活"))),
+    S("WHAT", ("气候 qìhòu and 干燥 gānzào", "气候 qìhòu dan 干燥 gānzào"), [
+        L("今天天气怎么样？——今天天气很好，是晴天。", "Jīntiān tiānqì zěnmeyàng? —— Jīntiān tiānqì hěn hǎo, shì qíngtiān.", "What's the weather like today? —It's lovely, sunny.", "Cuaca hari ini bagaimana? —Bagus, cerah."),
+        L("你的家乡在哪？气候怎么样？——我的家乡在北方，气候很干燥。", "Nǐ de jiāxiāng zài nǎ? Qìhòu zěnmeyàng? —— Wǒ de jiāxiāng zài běifāng, qìhòu hěn gānzào.", "Where's your hometown? What's the climate like? —In the north; it's very dry.", "Kampung halamanmu di mana? Iklimnya bagaimana? —Di utara, iklimnya sangat kering."),
+        L("沙漠的气候很干燥。", "Shāmò de qìhòu hěn gānzào.", "The desert climate is very dry.", "Iklim gurun sangat kering."),
+      ], word=[W("气候", "qìhòu", NONE, ("climate", "iklim")), W("干燥", "gānzào", NONE, ("dry; arid", "kering"))],
+      intro=("天气: the weather at a short, specific time. 气候: the general pattern over many years.", "天气: cuaca dalam waktu singkat. 气候: pola umum selama bertahun-tahun."),
+      check=(("天气 or 气候: which is about many years?", "气候"), ("天气 atau 气候: mana yang tentang bertahun-tahun?", "气候"))),
+    S("WHAT", ("干净 gānjìng and 牛奶 niúnǎi", "干净 gānjìng dan 牛奶 niúnǎi"), [
+        L("不干净/脏。你的手太不干净了，快去洗洗。", "Bù gānjìng / zāng. Nǐ de shǒu tài bù gānjìng le, kuài qù xǐxi.", "Not clean / dirty. Your hands are too dirty, go and wash them.", "Tidak bersih / kotor. Tanganmu kotor sekali, cepat cuci."),
+        L("我洗干净了。", "Wǒ xǐ gānjìng le.", "I've washed them clean.", "Sudah saya cuci bersih."),
+        L("我每天早上喝一杯牛奶。/ 睡觉之前可以喝杯热牛奶。", "Wǒ měi tiān zǎoshang hē yì bēi niúnǎi. / Shuìjiào zhīqián kěyǐ hē bēi rè niúnǎi.", "I drink a glass of milk every morning. / You can drink hot milk before bed.", "Saya minum segelas susu setiap pagi. / Sebelum tidur boleh minum susu hangat."),
+      ], word=[W("干净", "gānjìng", NONE, ("clean; tidy", "bersih")), W("牛奶", "niúnǎi", NONE, ("milk", "susu"))],
+      check=(("Opposite of 干净？", "脏 / 不干净"), ("Lawan dari 干净？", "脏 / 不干净"))),
+    S("WHAT", ("菜 cài and 油腻 yóunì", "菜 cài dan 油腻 yóunì"), [
+        L("中国菜 / 粤菜 / 妈妈做的菜最好吃。", "Zhōngguó cài / Yuècài / Māma zuò de cài zuì hǎochī.", "Chinese food / Cantonese food / Mum's cooking is the best.", "masakan Tiongkok / masakan Kanton / Masakan ibu paling enak."),
+        L("少吃油腻的东西，对身体好。", "Shǎo chī yóunì de dōngxi, duì shēntǐ hǎo.", "Eating less greasy food is good for you.", "Kurangi makanan berminyak, baik untuk tubuh."),
+        L("食堂的这道菜太油腻了，我喜欢吃清淡的菜。", "Shítáng de zhè dào cài tài yóunì le, wǒ xǐhuan chī qīngdàn de cài.", "This canteen dish is too greasy; I like light food.", "Masakan kantin ini terlalu berminyak; saya suka yang ringan."),
+      ], word=[W("菜", "cài", NONE, ("food; dish", "masakan; lauk")), W("油腻", "yóunì", NONE, ("oily; greasy", "berminyak"))],
+      check=(("Say \"too greasy\".", "太油腻了"), ("Katakan \"terlalu berminyak\".", "太油腻了"))),
+    S("WHAT", ("课间 kèjiān and 功课 gōngkè", "课间 kèjiān dan 功课 gōngkè"), [
+        L("课间休息有五分钟。/ 课间操", "Kèjiān xiūxi yǒu wǔ fēnzhōng. / kèjiān cāo", "The break between classes is five minutes. / exercises during the break", "Istirahat antar pelajaran lima menit. / senam waktu istirahat"),
+        L("他经常在课间的时候看书。", "Tā jīngcháng zài kèjiān de shíhou kàn shū.", "He often reads during the break.", "Dia sering membaca waktu istirahat."),
+        L("做功课 / 他做完功课以后去打篮球。", "zuò gōngkè / Tā zuò wán gōngkè yǐhòu qù dǎ lánqiú.", "do homework / He plays basketball after finishing his homework.", "mengerjakan PR / Habis PR dia main basket."),
+        L("我每天晚上复习功课。", "Wǒ měi tiān wǎnshang fùxí gōngkè.", "I revise my lessons every evening.", "Setiap malam saya mengulang pelajaran."),
+      ], word=[W("课间", "kèjiān", NONE, ("class break", "istirahat antar pelajaran")), W("功课", "gōngkè", NONE, ("homework", "PR; pelajaran"))],
+      check=(("Say \"revise lessons\".", "复习功课"), ("Katakan \"mengulang pelajaran\".", "复习功课"))),
+    S("WHAT", ("块 kuài and 点心 diǎnxin", "块 kuài dan 点心 diǎnxin"), [
+        L("十块钱 / 妈妈给了我十块钱。", "shí kuài qián / Māma gěi le wǒ shí kuài qián.", "ten yuan / Mum gave me ten yuan.", "sepuluh yuan / Ibu memberi saya sepuluh yuan."),
+        L("这块蛋糕很大，我们分着吃吧。", "Zhè kuài dàngāo hěn dà, wǒmen fēn zhe chī ba.", "This piece of cake is big; let's share it.", "Potongan kue ini besar, kita bagi saja."),
+        L("一块点心", "yí kuài diǎnxin", "a piece of pastry", "sepotong kue"),
+      ], word=[W("块", "kuài", NONE, ("piece; lump", "potong; yuan")), W("点心", "diǎnxin", NONE, ("pastry; snack", "kue; camilan"))],
+      check=(("Say \"a piece of cake\".", "一块蛋糕"), ("Katakan \"sepotong kue\".", "一块蛋糕"))),
+    S("WHAT", ("从来 cónglái and 午觉 wǔjiào", "从来 cónglái dan 午觉 wǔjiào"), [
+        L("她晚上从来不喝咖啡。", "Tā wǎnshang cónglái bù hē kāfēi.", "She never drinks coffee in the evening.", "Dia tidak pernah minum kopi malam hari."),
+        L("他上课从来没有迟到过。/ 我从来没去过西安。", "Tā shàngkè cónglái méiyǒu chídào guo. / Wǒ cónglái méi qù guo Xī'ān.", "He has never been late for class. / I've never been to Xi'an.", "Dia tidak pernah terlambat. / Saya belum pernah ke Xi'an."),
+        L("睡午觉 / 我每天中午睡半个小时午觉。", "shuì wǔjiào / Wǒ měi tiān zhōngwǔ shuì bàn ge xiǎoshí wǔjiào.", "take a nap / I nap for half an hour every noon.", "tidur siang / Setiap siang saya tidur setengah jam."),
+        L("他不习惯睡午觉。", "Tā bù xíguàn shuì wǔjiào.", "He's not used to napping.", "Dia tidak terbiasa tidur siang."),
+      ], word=[W("从来", "cónglái", NONE, ("always; from the past to the present", "selalu; dari dulu")), W("午觉", "wǔjiào", NONE, ("afternoon nap", "tidur siang"))],
+      intro=("从来 + 不 + v. + O. / 从来 + 没有 + v. + 过 + O.", "从来 + 不 + v. + O. / 从来 + 没有 + v. + 过 + O."),
+      check=(("Say \"I've never been to Xi'an\".", "我从来没去过西安。"), ("Katakan \"saya belum pernah ke Xi'an\".", "我从来没去过西安。"))),
+    S("WHAT", ("游泳 yóuyǒng and 散步 sànbù", "游泳 yóuyǒng dan 散步 sànbù"), [
+        L("我每个星期都去游泳。/ 学了两年，我已经会游泳了。", "Wǒ měi ge xīngqī dōu qù yóuyǒng. / Xué le liǎng nián, wǒ yǐjīng huì yóuyǒng le.", "I swim every week. / After two years I can swim.", "Saya berenang setiap minggu. / Belajar dua tahun, saya sudah bisa berenang."),
+        L("晚饭以后，我常常去散步。/ 饭后散步有利于消化。", "Wǎnfàn yǐhòu, wǒ chángcháng qù sànbù. / Fàn hòu sànbù yǒu lì yú xiāohuà.", "After dinner I often go for a walk. / A walk after meals helps digestion.", "Habis makan malam saya sering jalan-jalan. / Jalan kaki sesudah makan baik untuk pencernaan."),
+        L("游游泳 / 散散步 (AAB)", "yóuyou yǒng / sànsan bù (AAB)", "have a swim / take a stroll (AAB)", "berenang sebentar / jalan-jalan sebentar (AAB)"),
+        L("游了一个小时泳，散了半个小时步", "yóu le yí ge xiǎoshí yǒng, sàn le bàn ge xiǎoshí bù", "swam for an hour, walked for half an hour (V+了+time+O)", "berenang satu jam, jalan-jalan setengah jam (V+了+waktu+O)"),
+        L("跑了半个小时步 / 打了两小时球 / 打一个小时太极拳", "pǎo le bàn ge xiǎoshí bù / dǎ le liǎng xiǎoshí qiú / dǎ yí ge xiǎoshí tàijíquán", "ran for half an hour / played ball for two hours / do tai chi for an hour", "lari setengah jam / main bola dua jam / tai chi satu jam"),
+      ], word=[W("游泳", "yóu yǒng", NONE, ("to swim", "berenang")), W("散步", "sàn bù", NONE, ("to take a walk", "jalan-jalan"))],
+      check=(("Say \"swam for an hour\".", "游了一个小时泳"), ("Katakan \"berenang satu jam\".", "游了一个小时泳"))),
+    S("WHAT", ("记 jì and 住 zhù", "记 jì dan 住 zhù"), [
+        L("记生词 / 生词要每天记，才不会忘。", "jì shēngcí / Shēngcí yào měi tiān jì, cái bú huì wàng.", "memorise new words / Learn new words every day so you won't forget.", "menghafal kosakata / Kosakata harus dihafal setiap hari supaya tidak lupa."),
+        L("记住 —— 生词太多，我记不住。", "jìzhù — Shēngcí tài duō, wǒ jì bu zhù.", "remember — Too many new words, I can't remember them.", "ingat — Kosakatanya terlalu banyak, saya tidak bisa ingat."),
+        L("站住 —— 小偷给我站住！", "zhànzhù — Xiǎotōu gěi wǒ zhànzhù!", "stop — Thief, stop right there!", "berhenti — Pencuri, berhenti!"),
+        L("停住 —— 汽车突然停住了。", "tíngzhù — Qìchē tūrán tíngzhù le.", "come to a stop — The car suddenly stopped.", "berhenti — Mobilnya tiba-tiba berhenti."),
+      ], word=[W("记", "jì", NONE, ("to remember", "mengingat, menghafal")), W("住", "zhù", NONE, ("complement: fastness or steadiness", "pelengkap: kuat, tetap"))],
+      check=(("Say \"I can't remember them\".", "我记不住。"), ("Katakan \"saya tidak bisa ingat\".", "我记不住。"))),
+    S("WHAT", ("一般 yìbān and 感谢 gǎnxiè", "一般 yìbān dan 感谢 gǎnxiè"), [
+        L("我一般晚上十一点睡觉。/ 我们班同学一般坐公交车来学校。", "Wǒ yìbān wǎnshang shíyī diǎn shuìjiào. / Wǒmen bān tóngxué yìbān zuò gōngjiāochē lái xuéxiào.", "I usually go to bed at eleven. / My classmates usually come by bus. (usual)", "Saya biasanya tidur jam sebelas. / Teman sekelas biasanya naik bus ke sekolah. (biasanya)"),
+        L("他的汉语水平一般，但是很努力。/ 这个面包味道很一般。", "Tā de Hànyǔ shuǐpíng yìbān, dànshì hěn nǔlì. / Zhège miànbāo wèidào hěn yìbān.", "His Chinese is average, but he works hard. / This bread tastes ordinary. (average)", "Bahasa Mandarinnya biasa saja, tapi dia rajin. / Rasa roti ini biasa saja. (biasa saja)"),
+        L("我很感谢你对我的帮助。/ 非常感谢你借给我这本书。", "Wǒ hěn gǎnxiè nǐ duì wǒ de bāngzhù. / Fēicháng gǎnxiè nǐ jiè gěi wǒ zhè běn shū.", "Thank you for your help. / Thank you so much for lending me this book.", "Terima kasih atas bantuanmu. / Terima kasih banyak sudah meminjamkan buku ini."),
+      ], word=[W("一般", "yìbān", NONE, ("usual; general; common", "biasanya; biasa saja")), W("感谢", "gǎnxiè", NONE, ("to thank", "berterima kasih"))],
+      check=(("这个面包味道很一般: is the bread good?", "It's only average."), ("这个面包味道很一般: rotinya enak?", "Biasa saja."))),
+    S("WHAT", ("父母 fùmǔ and 机会 jīhuì", "父母 fùmǔ dan 机会 jīhuì"), [
+        L("母亲 + 父亲 = 父母", "mǔqīn + fùqīn = fùmǔ", "mother + father = parents", "ibu + ayah = orang tua"),
+        L("我很爱我的父母。", "Wǒ hěn ài wǒ de fùmǔ.", "I love my parents very much.", "Saya sangat sayang orang tua saya."),
+        L("一次机会 / 谢谢你给我这个学习的机会。", "yí cì jīhuì / Xièxie nǐ gěi wǒ zhège xuéxí de jīhuì.", "a chance / Thank you for this chance to learn.", "satu kesempatan / Terima kasih atas kesempatan belajar ini."),
+        L("有机会我想去北京看长城。", "Yǒu jīhuì wǒ xiǎng qù Běijīng kàn Chángchéng.", "If I get the chance I'd like to see the Great Wall in Beijing.", "Kalau ada kesempatan saya ingin ke Beijing melihat Tembok Besar."),
+      ], word=[W("父母", "fùmǔ", NONE, ("parents", "orang tua")), W("机会", "jīhuì", NONE, ("opportunity", "kesempatan"))],
+      check=(("Say \"a chance to learn\".", "学习的机会"), ("Katakan \"kesempatan belajar\".", "学习的机会"))),
+    S("WHAT", ("原来 yuánlái and 延长 yáncháng", "原来 yuánlái dan 延长 yáncháng"), [
+        L("我原来住十层，现在住二层。", "Wǒ yuánlái zhù shí céng, xiànzài zhù èr céng.", "I used to live on the 10th floor; now I live on the 2nd.", "Dulu saya tinggal di lantai 10, sekarang di lantai 2."),
+        L("她原来是医生，现在是老师。", "Tā yuánlái shì yīshēng, xiànzài shì lǎoshī.", "She used to be a doctor; now she's a teacher.", "Dulu dia dokter, sekarang guru."),
+        L("延长时间 / 延长两个小时 / 延长三天", "yáncháng shíjiān / yáncháng liǎng ge xiǎoshí / yáncháng sān tiān", "extend the time / by two hours / by three days", "memperpanjang waktu / dua jam / tiga hari"),
+        L("我打算把在中国学习的时间再延长一年。", "Wǒ dǎsuàn bǎ zài Zhōngguó xuéxí de shíjiān zài yáncháng yì nián.", "I plan to extend my study in China by another year.", "Saya berencana memperpanjang masa belajar di Tiongkok satu tahun lagi."),
+      ], word=[W("原来", "yuánlái", NONE, ("original; first", "dulu; semula")), W("延长", "yáncháng", NONE, ("to extend", "memperpanjang"))],
+      intro=("原来……,(现在……).", "原来……,(现在……)."),
+      check=(("Say \"she used to be a doctor\".", "她原来是医生。"), ("Katakan \"dulu dia dokter\".", "她原来是医生。"))),
+
+    # Text (1) ---------------------------------------------------------------------------------
+    S("HOW", ("课文（一） 我来了两个多月了 (1/3)", "课文（一） 我来了两个多月了 (1/3)"), [
+        L("A：你来中国多久了？习惯这里的生活吗？", "A: Nǐ lái Zhōngguó duō jiǔ le? Xíguàn zhèlǐ de shēnghuó ma?", "A: How long have you been in China? Are you used to life here?", "A: Sudah berapa lama di Tiongkok? Sudah terbiasa hidup di sini?"),
+        L("B：我来了两个多月了，对这儿的生活差不多已经习惯了，不过有的地方还不太习惯。", "B: Wǒ lái le liǎng ge duō yuè le, duì zhèr de shēnghuó chàbuduō yǐjīng xíguàn le, búguò yǒude dìfang hái bú tài xíguàn.", "B: Over two months. I'm mostly used to life here, but some things I'm not used to yet.", "B: Sudah lebih dari dua bulan. Hampir terbiasa, tapi ada hal yang belum."),
+        L("A：哪些地方不太习惯呢？", "A: Nǎxiē dìfang bú tài xíguàn ne?", "A: What aren't you used to?", "A: Apa yang belum terbiasa?"),
+        L("B：总觉得这儿的气候特别干燥，宿舍周围不太干净，也不太安静，食堂里的菜太油腻。", "B: Zǒng juéde zhèr de qìhòu tèbié gānzào, sùshè zhōuwéi bú tài gānjìng, yě bú tài ānjìng, shítáng lǐ de cài tài yóunì.", "B: The climate always feels very dry, the area around the dorm isn't very clean or quiet, and the canteen food is too greasy.", "B: Iklimnya terasa sangat kering, sekitar asrama kurang bersih dan kurang tenang, dan masakan kantin terlalu berminyak."),
+        L("A：你每天早上几点起床？会吃早饭吗？", "A: Nǐ měi tiān zǎoshang jǐ diǎn qǐchuáng? Huì chī zǎofàn ma?", "A: What time do you get up? Do you have breakfast?", "A: Setiap pagi bangun jam berapa? Sarapan tidak?"),
+        L("B：我每天早上七点多才起床，所以常常没时间吃早饭，喝杯牛奶就去上课了。课间休息的时候，我可以去喝杯咖啡，吃一块点心。", "B: Wǒ měi tiān zǎoshang qī diǎn duō cái qǐchuáng, suǒyǐ chángcháng méi shíjiān chī zǎofàn, hē bēi niúnǎi jiù qù shàngkè le. Kèjiān xiūxi de shíhou, wǒ kěyǐ qù hē bēi kāfēi, chī yí kuài diǎnxin.", "B: I don't get up until after seven, so I often have no time for breakfast; I drink some milk and go to class. In the break I can have a coffee and a pastry.", "B: Saya baru bangun jam tujuh lebih, jadi sering tidak sempat sarapan; minum susu lalu ke kelas. Waktu istirahat saya bisa minum kopi dan makan kue."),
+      ], check=(("他来中国多长时间了？", "两个多月了。"), ("他来中国多长时间了？", "两个多月了。"))),
+    S("HOW", ("课文（一） 我来了两个多月了 (2/3)", "课文（一） 我来了两个多月了 (2/3)"), [
+        L("A：中午一般怎么安排？", "A: Zhōngwǔ yìbān zěnme ānpái?", "A: What do you usually do at noon?", "A: Siang hari biasanya bagaimana?"),
+        L("B：中午我去食堂吃午饭。因为吃饭的人很多，所以常常要等四五分钟才能买到饭。吃完饭，我回宿舍看书或者听一会儿音乐。我从来不睡午觉。", "B: Zhōngwǔ wǒ qù shítáng chī wǔfàn. Yīnwèi chī fàn de rén hěn duō, suǒyǐ chángcháng yào děng sì-wǔ fēnzhōng cái néng mǎi dào fàn. Chī wán fàn, wǒ huí sùshè kàn shū huòzhě tīng yíhuìr yīnyuè. Wǒ cónglái bú shuì wǔjiào.", "B: I have lunch in the canteen. There are lots of people, so I often wait four or five minutes for food. After eating I read or listen to music in the dorm. I never nap.", "B: Saya makan siang di kantin. Orangnya banyak, jadi sering menunggu empat-lima menit baru dapat makanan. Habis makan saya membaca atau dengar musik di asrama. Saya tidak pernah tidur siang."),
+        L("A：下午你都做什么？", "A: Xiàwǔ nǐ dōu zuò shénme?", "A: What do you do in the afternoon?", "A: Sore hari kamu ngapain?"),
+        L("B：下午，有时候上两节课，有时候自己学习。四点以后我去体育馆锻炼身体，跑步、游泳、打球或者跟老师学打太极拳。我很喜欢运动，每天都坚持锻炼一个小时，所以身体很好。", "B: Xiàwǔ, yǒu shíhou shàng liǎng jié kè, yǒu shíhou zìjǐ xuéxí. Sì diǎn yǐhòu wǒ qù tǐyùguǎn duànliàn shēntǐ, pǎobù, yóuyǒng, dǎ qiú huòzhě gēn lǎoshī xué dǎ tàijíquán. Wǒ hěn xǐhuan yùndòng, měi tiān dōu jiānchí duànliàn yí ge xiǎoshí, suǒyǐ shēntǐ hěn hǎo.", "B: Sometimes I have two classes, sometimes I study alone. After four I exercise at the gym: running, swimming, ball games or tai chi with a teacher. I love sport and exercise an hour every day, so I'm very fit.", "B: Kadang ada dua jam pelajaran, kadang belajar sendiri. Jam empat ke atas saya olahraga di gedung olahraga: lari, berenang, main bola, atau belajar tai chi dengan guru. Saya suka olahraga dan rutin satu jam setiap hari, jadi badan saya sehat."),
+      ], check=(("下午四点以后他常常做什么运动？", "跑步、游泳、打球、跟老师学打太极拳。"), ("下午四点以后他常常做什么运动？", "跑步、游泳、打球、跟老师学打太极拳。"))),
+    S("HOW", ("课文（一） 我来了两个多月了 (3/3)", "课文（一） 我来了两个多月了 (3/3)"), [
+        L("A：晚饭后呢？", "A: Wǎnfàn hòu ne?", "A: And after dinner?", "A: Habis makan malam?"),
+        L("B：晚饭后我常常散一会儿步，有时跟朋友聊聊天儿，然后就开始复习功课。听半个小时课文录音，练习会话，预习生词和课文。生词要记住，课文要念熟，所以每天晚上一般要复习、预习两三个小时，常常学到十一点多才睡觉。", "B: Wǎnfàn hòu wǒ chángcháng sàn yíhuìr bù, yǒushí gēn péngyou liáoliao tiānr, ránhòu jiù kāishǐ fùxí gōngkè. Tīng bàn ge xiǎoshí kèwén lùyīn, liànxí huìhuà, yùxí shēngcí hé kèwén. Shēngcí yào jìzhù, kèwén yào niàn shú, suǒyǐ měi tiān wǎnshang yìbān yào fùxí, yùxí liǎng-sān ge xiǎoshí, chángcháng xué dào shíyī diǎn duō cái shuìjiào.", "B: I often take a short walk, sometimes chat with friends, then start revising: half an hour of the text recording, conversation practice, previewing words and the text. Words must be remembered and texts read fluently, so I usually study two or three hours every evening, often until after eleven.", "B: Saya sering jalan sebentar, kadang ngobrol dengan teman, lalu mulai belajar: setengah jam dengar rekaman, latihan percakapan, mempelajari kosakata dan teks. Kosakata harus hafal, teks harus lancar, jadi biasanya saya belajar dua-tiga jam setiap malam, sering sampai jam sebelas lebih."),
+        L("A：每天这么忙，你觉得开心吗？", "A: Měi tiān zhème máng, nǐ juéde kāixīn ma?", "A: You're so busy every day. Are you happy?", "A: Setiap hari sesibuk itu, kamu senang?"),
+        L("B：我每天都很忙，但过得很愉快。我很感谢父母给我这个机会，让我来中国留学。", "B: Wǒ měi tiān dōu hěn máng, dàn guò de hěn yúkuài. Wǒ hěn gǎnxiè fùmǔ gěi wǒ zhège jīhuì, ràng wǒ lái Zhōngguó liúxué.", "B: I'm busy every day, but happy. I'm very grateful to my parents for this chance to study in China.", "B: Setiap hari sibuk, tapi menyenangkan. Saya sangat berterima kasih kepada orang tua atas kesempatan kuliah di Tiongkok."),
+        L("A：你原来计划在中国学习多久？有变化吗？", "A: Nǐ yuánlái jìhuà zài Zhōngguó xuéxí duō jiǔ? Yǒu biànhuà ma?", "A: How long did you plan to study in China? Has that changed?", "A: Semula kamu berencana belajar berapa lama di Tiongkok? Ada perubahan?"),
+        L("B：原来打算学一年，现在我觉得一年时间太短了，准备再延长一年。", "B: Yuánlái dǎsuàn xué yì nián, xiànzài wǒ juéde yì nián shíjiān tài duǎn le, zhǔnbèi zài yáncháng yì nián.", "B: I planned one year, but now one year seems too short, so I'm going to extend it by another year.", "B: Semula satu tahun, sekarang terasa terlalu singkat, jadi saya mau menambah satu tahun lagi."),
+      ], check=(("他原来打算学多久？现在打算怎么样？", "原来打算学一年，现在打算再延长一年。"), ("他原来打算学多久？现在打算怎么样？", "原来打算学一年，现在打算再延长一年。"))),
+
+    # New words (2) ----------------------------------------------------------------------------
+    S("WHAT", ("练 liàn, 气功 qìgōng, 不一定 bù yídìng", "练 liàn, 气功 qìgōng, 不一定 bù yídìng"), [
+        L("练字 / 练书法 / 练口语 / 练气功", "liàn zì / liàn shūfǎ / liàn kǒuyǔ / liàn qìgōng", "practise writing / calligraphy / speaking / qigong", "latihan menulis / kaligrafi / bicara / qigong"),
+        L("早上不一定练气功。/ 不一定早上练气功。", "Zǎoshang bù yídìng liàn qìgōng. / Bù yídìng zǎoshang liàn qìgōng.", "I don't necessarily do qigong in the morning. / It's not always in the morning.", "Pagi belum tentu latihan qigong. / Belum tentu paginya."),
+        L("这个蛋糕看起来很漂亮，但是不一定好吃。", "Zhège dàngāo kàn qǐlai hěn piàoliang, dànshì bù yídìng hǎochī.", "This cake looks pretty, but it may not taste good.", "Kue ini kelihatan cantik, tapi belum tentu enak."),
+      ], word=[W("练", "liàn", NONE, ("to practice", "berlatih")), W("气功", "qìgōng", NONE, ("a system of exercise", "qigong (latihan pernapasan)")), W("不一定", "bù yídìng", NONE, ("not sure", "belum tentu"))],
+      explain=("[NOTE] p. 37 writes \"systerm\"; it should be \"system\".", "[NOTE] Hlm. 37 menulis \"systerm\"; seharusnya \"system\"."),
+      check=(("Translate: 不一定好吃", "may not taste good"), ("Terjemahkan: 不一定好吃", "belum tentu enak"))),
+    S("WHAT", ("钟头 zhōngtóu and 效果 xiàoguǒ", "钟头 zhōngtóu dan 效果 xiàoguǒ"), [
+        L("半个钟头 / 一个钟头", "bàn ge zhōngtóu / yí ge zhōngtóu", "half an hour / an hour", "setengah jam / satu jam"),
+        L("他每天写半个钟头的汉语作业。", "Tā měi tiān xiě bàn ge zhōngtóu de Hànyǔ zuòyè.", "He does half an hour of Chinese homework every day.", "Setiap hari dia mengerjakan PR bahasa Mandarin setengah jam."),
+        L("药的效果 / 练习的效果 / 学习效果", "yào de xiàoguǒ / liànxí de xiàoguǒ / xuéxí xiàoguǒ", "the effect of the medicine / of practice / learning results", "khasiat obat / hasil latihan / hasil belajar"),
+        L("我吃了这个药，病还没好，这个药没（有）效果。", "Wǒ chī le zhège yào, bìng hái méi hǎo, zhège yào méi(yǒu) xiàoguǒ.", "I took this medicine and I'm not better: it has no effect.", "Saya minum obat ini tapi belum sembuh: obatnya tidak manjur."),
+        L("这个药效果不好，我不会再买了。", "Zhège yào xiàoguǒ bù hǎo, wǒ bú huì zài mǎi le.", "This medicine doesn't work well; I won't buy it again.", "Obat ini kurang manjur, saya tidak akan beli lagi."),
+      ], word=[W("钟头", "zhōngtóu", NONE, ("hour", "jam")), W("效果", "xiàoguǒ", NONE, ("effect; result", "hasil; khasiat"))],
+      check=(("Say \"half an hour\" with 钟头.", "半个钟头"), ("Katakan \"setengah jam\" dengan 钟头.", "半个钟头"))),
+    S("WHAT", ("挺 tǐng: Quite, Rather", "挺 tǐng: Cukup, Lumayan"), [
+        L("挺干净的 / 挺油腻的 / 广州的气候挺热的。", "tǐng gānjìng de / tǐng yóunì de / Guǎngzhōu de qìhòu tǐng rè de.", "quite clean / quite greasy / Guangzhou's climate is quite hot.", "cukup bersih / cukup berminyak / Iklim Guangzhou cukup panas."),
+        L("这件衣服我挺喜欢的。", "Zhè jiàn yīfu wǒ tǐng xǐhuan de.", "I quite like these clothes.", "Saya cukup suka baju ini."),
+        L("我挺担心我的期中考试。", "Wǒ tǐng dānxīn wǒ de qīzhōng kǎoshì.", "I'm rather worried about my midterm.", "Saya cukup khawatir dengan ujian tengah semester."),
+      ], word=[W("挺", "tǐng", NONE, ("quite; rather", "cukup; lumayan"))],
+      intro=("挺 + adj. + 的 / 挺 + 心理动词 (psychological verb: 喜欢, 爱, 怕, 想, 担心…) + (的).", "挺 + adj. + 的 / 挺 + 心理动词 (kata kerja perasaan: 喜欢, 爱, 怕, 想, 担心…) + (的)."),
+      check=(("Say \"quite clean\".", "挺干净的"), ("Katakan \"cukup bersih\".", "挺干净的"))),
+    S("WHAT", ("好处 hǎochù, 坏处 huàichù, 必须 bìxū", "好处 hǎochù, 坏处 huàichù, 必须 bìxū"), [
+        L("练气功对身体有好处。", "Liàn qìgōng duì shēntǐ yǒu hǎochù.", "Qigong is good for your health.", "Latihan qigong bermanfaat untuk tubuh."),
+        L("抽烟对身体有坏处。", "Chōuyān duì shēntǐ yǒu huàichù.", "Smoking is bad for your health.", "Merokok merugikan tubuh."),
+        L("生病了必须吃药。/ 你必须去参加考试。", "Shēngbìng le bìxū chī yào. / Nǐ bìxū qù cānjiā kǎoshì.", "When you're ill you must take medicine. / You must take the exam.", "Kalau sakit harus minum obat. / Kamu harus ikut ujian."),
+      ], word=[W("好处", "hǎochù", NONE, ("benefit", "manfaat")), W("坏处", "huàichù", NONE, ("harm", "kerugian")), W("必须", "bìxū", NONE, ("must; have to", "harus"))],
+      intro=("对……有好处/坏处 / 必须 do sth.", "对……有好处/坏处 / 必须 melakukan sesuatu."),
+      check=(("Say \"smoking is bad for your health\".", "抽烟对身体有坏处。"), ("Katakan \"merokok merugikan tubuh\".", "抽烟对身体有坏处。"))),
+    S("WHAT", ("慢性病, 高血压, 失眠", "慢性病, 高血压, 失眠"), [
+        L("以前我有好几种慢性病呢，高血压、失眠。", "Yǐqián wǒ yǒu hǎo jǐ zhǒng mànxìngbìng ne, gāoxuèyā, shīmián.", "I used to have several chronic illnesses: high blood pressure and insomnia.", "Dulu saya punya beberapa penyakit kronis: darah tinggi dan susah tidur."),
+      ], word=[W("慢性病", "mànxìngbìng", NONE, ("chronic (disease)", "penyakit kronis")), W("高血压", "gāoxuèyā", ("n.", "n."), ("hypertension", "darah tinggi")), W("失眠", "shīmián", ("n.", "n."), ("suffer from insomnia", "susah tidur"))],
+      check=(("What is 高血压？", "High blood pressure."), ("Apa itu 高血压？", "Darah tinggi."))),
+    S("WHAT", ("打鱼 dǎyú and 晒 shài", "打鱼 dǎyú dan 晒 shài"), [
+        L("打鱼 / 钓鱼", "dǎyú / diàoyú", "go fishing (with a net) / fish (with a rod)", "menjaring ikan / memancing"),
+        L("晒衣服 / 晒太阳", "shài yīfu / shài tàiyáng", "dry clothes in the sun / sunbathe", "menjemur baju / berjemur"),
+        L("三天打鱼，两天晒网", "sān tiān dǎyú, liǎng tiān shài wǎng", "fish for three days, dry the nets for two (an idiom: no perseverance)", "tiga hari menjaring, dua hari menjemur jaring (pepatah: tidak tekun)"),
+      ], word=[W("打鱼", "dǎ yú", NONE, ("to go fishing", "menjaring ikan")), W("晒", "shài", NONE, ("to dry (in the sun)", "menjemur"))],
+      explain=("三天打鱼，两天晒网 is a 谚语 (proverb) for someone who keeps stopping and starting (做事时断时续，不能坚持).",
+               "三天打鱼，两天晒网 adalah 谚语 (pepatah) untuk orang yang suka berhenti di tengah jalan (做事时断时续，不能坚持)."),
+      check=(("What does 三天打鱼，两天晒网 mean?", "Doing something on and off, without perseverance."), ("Apa arti 三天打鱼，两天晒网？", "Melakukan sesuatu tidak tekun, suka berhenti."))),
+
+    # Text (2) ---------------------------------------------------------------------------------
+    S("HOW", ("课文（二） 我每天都练一个小时 (1/2)", "课文（二） 我每天都练一个小时 (1/2)"), [
+        L("关经理：你好，王老师。每天都起得这么早吗？", "Guān jīnglǐ: Nǐ hǎo, Wáng lǎoshī. Měi tiān dōu qǐ de zhème zǎo ma?", "Manager Guan: Hello, Teacher Wang. Do you get up this early every day?", "Manajer Guan: Halo, Guru Wang. Setiap hari bangun sepagi ini?"),
+        L("王老师：对，因为我练气功，所以每天五点多就起来了。", "Wáng lǎoshī: Duì, yīnwèi wǒ liàn qìgōng, suǒyǐ měi tiān wǔ diǎn duō jiù qǐlai le.", "Teacher Wang: Yes. I do qigong, so I'm up just after five every day.", "Guru Wang: Iya, karena saya latihan qigong, setiap hari jam lima lebih sudah bangun."),
+        L("关经理：练了多长时间了？", "Guān jīnglǐ: Liàn le duō cháng shíjiān le?", "Manager Guan: How long have you been doing it?", "Manajer Guan: Sudah berapa lama latihan?"),
+        L("王老师：已经练了好几年了。", "Wáng lǎoshī: Yǐjīng liàn le hǎo jǐ nián le.", "Teacher Wang: Quite a few years now.", "Guru Wang: Sudah bertahun-tahun."),
+        L("关经理：每天练多长时间？", "Guān jīnglǐ: Měi tiān liàn duō cháng shíjiān?", "Manager Guan: How long do you practise each day?", "Manajer Guan: Setiap hari latihan berapa lama?"),
+        L("王老师：不一定。有时候练一个钟头，有时候半个钟头。", "Wáng lǎoshī: Bù yídìng. Yǒu shíhou liàn yí ge zhōngtóu, yǒu shíhou bàn ge zhōngtóu.", "Teacher Wang: It varies. Sometimes an hour, sometimes half an hour.", "Guru Wang: Tidak tentu. Kadang satu jam, kadang setengah jam."),
+      ], intro=("早上，关经理和王老师在操场上……", "早上，关经理和王老师在操场上……"),
+      check=(("王老师每天什么时候起来？", "他每天五点多就起来了。"), ("王老师每天什么时候起来？", "他每天五点多就起来了。"))),
+    S("HOW", ("课文（二） 我每天都练一个小时 (2/2)", "课文（二） 我每天都练一个小时 (2/2)"), [
+        L("关经理：效果怎么样？", "Guān jīnglǐ: Xiàoguǒ zěnmeyàng?", "Manager Guan: Does it work?", "Manajer Guan: Hasilnya bagaimana?"),
+        L("王老师：挺好的。练气功对身体很有好处。以前我有好几种慢性病呢，高血压、失眠，坚持练了几年，我的这些病差不多都好了。你也来练练吧。", "Wáng lǎoshī: Tǐng hǎo de. Liàn qìgōng duì shēntǐ hěn yǒu hǎochù. Yǐqián wǒ yǒu hǎo jǐ zhǒng mànxìngbìng ne, gāoxuèyā, shīmián, jiānchí liàn le jǐ nián, wǒ de zhèxiē bìng chàbuduō dōu hǎo le. Nǐ yě lái liànlian ba.", "Teacher Wang: Very well. Qigong is really good for you. I used to have several chronic illnesses, high blood pressure and insomnia. After a few years of practice they're almost all gone. You should try it too.", "Guru Wang: Bagus sekali. Qigong sangat bermanfaat. Dulu saya punya beberapa penyakit kronis, darah tinggi dan susah tidur. Sesudah rutin latihan beberapa tahun, hampir semuanya sembuh. Ayo kamu juga ikut latihan."),
+        L("关经理：练气功必须坚持天天练，\"三天打鱼，两天晒网\"不行。我也很想练，但是工作太忙，没有时间。", "Guān jīnglǐ: Liàn qìgōng bìxū jiānchí tiāntiān liàn, \"sān tiān dǎyú, liǎng tiān shài wǎng\" bù xíng. Wǒ yě hěn xiǎng liàn, dànshì gōngzuò tài máng, méiyǒu shíjiān.", "Manager Guan: With qigong you have to practise every day; doing it on and off won't work. I'd love to, but I'm too busy at work and have no time.", "Manajer Guan: Qigong harus rutin setiap hari, tidak bisa \"tiga hari menjaring, dua hari menjemur\". Saya juga ingin, tapi pekerjaan terlalu sibuk, tidak ada waktu."),
+      ], explain=("好 before 一, 几, 多, 久 stresses a large number or a long time: 我等了你好一会儿了 / 他学了好几年了 / 我们学了好多生词了 / 好久不见.",
+                  "好 sebelum 一, 几, 多, 久 menekankan jumlah banyak atau waktu lama: 我等了你好一会儿了 / 他学了好几年了 / 我们学了好多生词了 / 好久不见."),
+      check=(("关经理练了气功吗？为什么？", "没练。因为他工作太忙了，没有时间。"), ("关经理练了气功吗？为什么？", "没练。因为他工作太忙了，没有时间。"))),
+
+    # Grammar ----------------------------------------------------------------------------------
+    S("WHAT", ("时量补语: Complements of Duration", "时量补语: Pelengkap Durasi"), [
+        L("听一会儿音乐。/ 每天都坚持锻炼一小时。", "Tīng yíhuìr yīnyuè. / Měi tiān dōu jiānchí duànliàn yì xiǎoshí.", "listen to music for a while / exercise for an hour every day", "dengar musik sebentar / olahraga satu jam setiap hari"),
+        L("一会儿 / 一分钟 / 一刻钟 / 半个小时 / 一个小时 / 半天", "yíhuìr / yì fēnzhōng / yí kè zhōng / bàn ge xiǎoshí / yí ge xiǎoshí / bàntiān", "a while / a minute / a quarter of an hour / half an hour / an hour / half a day", "sebentar / semenit / seperempat jam / setengah jam / satu jam / setengah hari"),
+        L("一天 / 一个星期 / 半个月 / 一个月 / 半年 / 一年", "yì tiān / yí ge xīngqī / bàn ge yuè / yí ge yuè / bàn nián / yì nián", "a day / a week / half a month / a month / half a year / a year", "sehari / seminggu / setengah bulan / sebulan / setengah tahun / setahun"),
+        L("从北京到广州坐飞机要多长时间？——两个半钟头。", "Cóng Běijīng dào Guǎngzhōu zuò fēijī yào duō cháng shíjiān? —— Liǎng ge bàn zhōngtóu.", "How long is the flight from Beijing to Guangzhou? —Two and a half hours.", "Berapa lama naik pesawat dari Beijing ke Guangzhou? —Dua setengah jam."),
+      ], intro=("S + V. + 时间段. Ask with 多长时间（了）. A word for a period of time goes after the verb to say how long.",
+                "S + V. + 时间段. Tanyakan dengan 多长时间（了）. Kata periode waktu diletakkan sesudah kata kerja untuk menyatakan berapa lama."),
+      explain=("[NOTE] p. 54 writes \"Indicating he duration\"; it should be \"the duration\".", "[NOTE] Hlm. 54 menulis \"Indicating he duration\"; seharusnya \"the duration\"."),
+      check=(("Ask \"how long?\".", "多长时间？"), ("Tanyakan \"berapa lama?\".", "多长时间？"))),
+    S("REMEMBER", ("① No Object: S + V.(了) + Time", "① Tanpa Objek: S + V.(了) + Waktu"), [
+        L("她在大学学了两年。", "Tā zài dàxué xué le liǎng nián.", "She studied at university for two years.", "Dia kuliah dua tahun."),
+        L("他在中国生活了一年。", "Tā zài Zhōngguó shēnghuó le yì nián.", "He lived in China for a year.", "Dia tinggal di Tiongkok satu tahun."),
+        L("我每天锻炼一个小时。", "Wǒ měi tiān duànliàn yí ge xiǎoshí.", "I exercise for an hour every day.", "Setiap hari saya olahraga satu jam."),
+        L("A：你睡觉了吗？B：睡了。A：睡了多长时间？B：睡了两个小时。", "A: Nǐ shuìjiào le ma? B: Shuì le. A: Shuì le duō cháng shíjiān? B: Shuì le liǎng ge xiǎoshí.", "A: Did you sleep? B: Yes. A: For how long? B: Two hours.", "A: Kamu tidur? B: Iya. A: Berapa lama? B: Dua jam."),
+      ], check=(("Say \"I exercise for an hour every day\".", "我每天锻炼一个小时。"), ("Katakan \"setiap hari saya olahraga satu jam\".", "我每天锻炼一个小时。"))),
+    S("REMEMBER", ("② With an Object or a Separable Verb", "② Dengan Objek atau Kata Kerja Terpisah"), [
+        L("他学汉语学了两个多月了。/ 我写汉字写了半个小时。/ 她游泳游了一个下午。", "Tā xué Hànyǔ xué le liǎng ge duō yuè le. / Wǒ xiě Hànzì xiě le bàn ge xiǎoshí. / Tā yóuyǒng yóu le yí ge xiàwǔ.", "Repeat the verb: S + V. + O. + V.(了) + time.", "Ulangi kata kerja: S + V. + O. + V.(了) + waktu."),
+        L("她游了一个下午（的）泳。/ 他学了两个多月（的）汉语了。/ 我写了半个小时（的）汉字。", "Tā yóu le yí ge xiàwǔ (de) yǒng. / Tā xué le liǎng ge duō yuè (de) Hànyǔ le. / Wǒ xiě le bàn ge xiǎoshí (de) Hànzì.", "Or don't repeat it: S + V.(了) + time (+的) + O.", "Atau tanpa diulang: S + V.(了) + waktu (+的) + O."),
+      ], intro=("If the verb has an object (or is a separable verb: 睡觉, 考试, 洗澡, 跳舞, 见面…), you can repeat the verb and put the time after the second one, or put the time between the verb and the object.",
+                "Kalau kata kerja punya objek (atau kata kerja terpisah: 睡觉, 考试, 洗澡, 跳舞, 见面…), ulangi kata kerjanya dan taruh waktu sesudah yang kedua, atau taruh waktu di antara kata kerja dan objek."),
+      check=(("Two ways to say \"I swam for 90 minutes\".", "我游泳游了一个半钟头。/ 我游了一个半钟头（的）泳。"), ("Dua cara mengatakan \"saya berenang 90 menit\".", "我游泳游了一个半钟头。/ 我游了一个半钟头（的）泳。"))),
+    S("REMEMBER", ("③ A Personal Pronoun as the Object", "③ Kata Ganti Orang sebagai Objek"), [
+        L("我找了你一个小时。", "Wǒ zhǎo le nǐ yí ge xiǎoshí.", "I looked for you for an hour.", "Saya mencarimu satu jam."),
+        L("我们在这儿等她一会儿吧。", "Wǒmen zài zhèr děng tā yíhuìr ba.", "Let's wait for her here for a bit.", "Kita tunggu dia sebentar di sini."),
+        L("我看了两个小时（的）电视。/ 我学了两年（的）汉语。", "Wǒ kàn le liǎng ge xiǎoshí (de) diànshì. / Wǒ xué le liǎng nián (de) Hànyǔ.", "Not a pronoun: time between verb and object, 的 optional.", "Bukan kata ganti: waktu di antara kata kerja dan objek, 的 boleh ada."),
+      ], intro=("With a personal pronoun object, the time goes after the object: S + V.(了) + O. + time.", "Kalau objeknya kata ganti orang, waktu diletakkan sesudah objek: S + V.(了) + O. + waktu."),
+      wr=("我找了一个小时你。", "我找了你一个小时。", ("你 is a personal pronoun, so the time comes after it.", "你 adalah kata ganti orang, jadi waktunya sesudahnya.")),
+      check=(("Fix it: 我等了一会儿她。", "我等了她一会儿。"), ("Perbaiki: 我等了一会儿她。", "我等了她一会儿。"))),
+    S("REMEMBER", ("④ 了……了: Still Going On", "④ 了……了: Masih Berlangsung"), [
+        L("我学了一年汉语。→ 现在可能已经不学汉语", "Wǒ xué le yì nián Hànyǔ. → xiànzài kěnéng yǐjīng bù xué Hànyǔ", "I studied Chinese for a year. (maybe not any more)", "Saya belajar bahasa Mandarin setahun. (mungkin sudah berhenti)"),
+        L("我学了一年汉语了。→ 现在还在学汉语", "Wǒ xué le yì nián Hànyǔ le. → xiànzài hái zài xué Hànyǔ", "I've been studying Chinese for a year. (still studying)", "Saya sudah setahun belajar bahasa Mandarin. (masih belajar)"),
+        L("他在北京住了两年。/ 他在北京住了两年了。", "Tā zài Běijīng zhù le liǎng nián. / Tā zài Běijīng zhù le liǎng nián le.", "He lived in Beijing for two years. / He has been living there for two years (still there).", "Dia tinggal di Beijing dua tahun. / Dia sudah dua tahun tinggal di sana (masih tinggal)."),
+      ], intro=("With 了 after the verb and the modal 了 at the end, the action is still going on: S + V. 了 + time + O. + 了.",
+                "Kalau ada 了 sesudah kata kerja dan 了 di akhir kalimat, tindakannya masih berlangsung: S + V. 了 + waktu + O. + 了."),
+      check=(("我看了一个小时书了: am I still reading?", "Yes (现在还在看书)."), ("我看了一个小时书了: saya masih membaca?", "Iya (现在还在看书)."))),
+    S("REMEMBER", ("Negative: Time + 没 + V. + O. + 了", "Negatif: Waktu + 没 + V. + O. + 了"), [
+        L("他已经三天没上课了。", "Tā yǐjīng sān tiān méi shàngkè le.", "He hasn't been to class for three days.", "Dia sudah tiga hari tidak masuk kelas."),
+      ], intro=("In the negative, the time goes before 没 (from p. 65).", "Dalam bentuk negatif, waktu diletakkan sebelum 没 (dari hlm. 65)."),
+      wr=("他已经没上课三天了。", "他已经三天没上课了。", ("Negative form: 时量补语 + 没 + V. + O. + 了.", "Bentuk negatif: 时量补语 + 没 + V. + O. + 了.")),
+      check=(("Say \"I haven't eaten for two days\".", "我两天没吃饭了。"), ("Katakan \"saya sudah dua hari tidak makan\".", "我两天没吃饭了。"))),
+    S("WHAT", ("概数: Approximate Numbers", "概数: Bilangan Perkiraan"), [
+        L("我每天晚上学习两三个小时。/ 一件裙子要八九百块钱。", "Wǒ měi tiān wǎnshang xuéxí liǎng-sān ge xiǎoshí. / Yí jiàn qúnzi yào bā-jiǔbǎi kuài qián.", "① Two neighbouring numbers: two or three hours / eight or nine hundred yuan.", "① Dua bilangan berurutan: dua-tiga jam / delapan-sembilan ratus yuan."),
+        L("这件衣服六百多块。/ 教室里有二十多个学生。", "Zhè jiàn yīfu liùbǎi duō kuài. / Jiàoshì lǐ yǒu èrshí duō ge xuésheng.", "② 多 after a number over 10: Num + 多 + M. + N. (600 < 六百多 < 700)", "② 多 sesudah bilangan di atas 10: Bil + 多 + Satuan + Benda (600 < 六百多 < 700)"),
+        L("这些苹果一共五斤多。/ 我来中国已经两个多月了。", "Zhèxiē píngguǒ yígòng wǔ jīn duō. / Wǒ lái Zhōngguó yǐjīng liǎng ge duō yuè le.", "② 多 after the measure word when the number is under 10: Num + M. + 多 + N.", "② 多 sesudah kata satuan kalau bilangannya di bawah 10: Bil + Satuan + 多 + Benda"),
+        L("昨天去了十几个人。/ 我们大学有几千个留学生呢。", "Zuótiān qù le shí jǐ ge rén. / Wǒmen dàxué yǒu jǐ qiān ge liúxuéshēng ne.", "③ 几: a dozen or so people (10 < 十几 < 20) / several thousand students", "③ 几: belasan orang (10 < 十几 < 20) / beberapa ribu mahasiswa"),
+      ], check=(("Say \"over two months\".", "两个多月"), ("Katakan \"lebih dari dua bulan\".", "两个多月"))),
+    S("WHAT", ("离合动词: Separable Verbs", "离合动词: Kata Kerja Terpisah"), [
+        L("睡觉 / 考试 / 洗澡 / 唱歌 / 跳舞 / 毕业 / 游泳 / 见面", "shuìjiào / kǎoshì / xǐzǎo / chànggē / tiàowǔ / bìyè / yóuyǒng / jiànmiàn", "sleep / take an exam / shower / sing / dance / graduate / swim / meet", "tidur / ujian / mandi / menyanyi / berdansa / lulus / berenang / bertemu"),
+        L("帮忙 / 结婚 / 散步 / 跑步 / 聊天", "bāngmáng / jiéhūn / sànbù / pǎobù / liáotiān", "help / get married / walk / run / chat", "membantu / menikah / jalan-jalan / lari / mengobrol"),
+        L("睡睡觉 / 考考试 / 洗洗澡 / 唱唱歌 / 跳跳舞 / 聊聊天 (AAB)", "shuìshui jiào / kǎokao shì / xǐxi zǎo / chàngchang gē / tiàotiao wǔ / liáoliao tiān (AAB)", "Reduplication is AAB.", "Bentuk ulangnya AAB."),
+      ], intro=("A separable verb is a two-syllable verb-object word that can be split.", "Kata kerja terpisah adalah kata dua suku kata (kata kerja + objek) yang bisa dipisah."),
+      check=(("Reduplicate 散步.", "散散步"), ("Ulangi bentuk 散步.", "散散步"))),
+    S("REMEMBER", ("离合动词: Notes", "离合动词: Catatan"), [], intro=(
+        "① Most separable verbs cannot take an object. ② If the verb is not repeated, the duration or frequency goes in the middle: S + V.(了) + 时量补语/动量补语 + O.",
+        "① Kebanyakan kata kerja terpisah tidak bisa diberi objek. ② Kalau kata kerjanya tidak diulang, durasi atau frekuensinya diletakkan di tengah: S + V.(了) + 时量补语/动量补语 + O."),
+      wr=("我去大使馆见面朋友。\n我毕业大学。\n我睡觉了七个小时。\n他上星期游泳了两次。", "我去大使馆跟朋友见面。\n我从大学毕业。\n我睡了七个小时觉。\n他上星期游了两次泳。",
+          ("见面 and 毕业 can't take an object; the time or count goes inside the separable verb.", "见面 dan 毕业 tidak bisa diberi objek; waktu atau jumlahnya masuk di tengah kata kerja terpisah.")),
+      check=(("Fix it: 我毕业大学。", "我从大学毕业。"), ("Perbaiki: 我毕业大学。", "我从大学毕业。"))),
+    S("REMEMBER", ("Review: 就/才 and 再/又", "Ulangan: 就/才 dan 再/又"), [
+        L("飞机已经起飞了，她才到机场。", "Fēijī yǐjīng qǐfēi le, tā cái dào jīchǎng.", "The plane had taken off when she finally reached the airport. (才)", "Pesawat sudah berangkat, dia baru sampai bandara. (才)"),
+        L("博物馆离这儿很近，坐车三站就到了。", "Bówùguǎn lí zhèr hěn jìn, zuò chē sān zhàn jiù dào le.", "The museum is close: just three stops. (就)", "Museumnya dekat, tiga halte sudah sampai. (就)"),
+        L("他每天回到家洗了澡再吃饭。/ 我们吃完饭再去散步吧。", "Tā měi tiān huí dào jiā xǐ le zǎo zài chī fàn. / Wǒmen chī wán fàn zài qù sànbù ba.", "v₁,再+v₂: first A, then B.", "v₁,再+v₂: A dulu, lalu B."),
+        L("你先告诉我，我才会告诉你。/ 你买了票才能坐地铁。/ 到了18岁你才可以开车。", "Nǐ xiān gàosu wǒ, wǒ cái huì gàosu nǐ. / Nǐ mǎi le piào cái néng zuò dìtiě. / Dào le shíbā suì nǐ cái kěyǐ kāichē.", "v₁,才+v₂: you must do A before B.", "v₁,才+v₂: harus A dulu baru bisa B."),
+      ], check=(("你买了票____能坐地铁。", "才"), ("你买了票____能坐地铁。", "才"))),
+
+    # Reading ----------------------------------------------------------------------------------
+    S("HOW", ("阅读: 小伙子和长椅子 (1/2)", "阅读: 小伙子和长椅子 (1/2)"), [
+        L("一个小伙子在公园玩儿了半天，玩儿累了，想找一个座位坐下休息一会儿。", "Yí ge xiǎohuǒzi zài gōngyuán wánr le bàntiān, wánr lèi le, xiǎng zhǎo yí ge zuòwèi zuò xià xiūxi yíhuìr.", "A young man had been playing in the park for ages. Tired, he wanted to find a seat and rest a while.", "Seorang pemuda bermain lama di taman. Karena capek, dia ingin mencari tempat duduk untuk istirahat sebentar."),
+        L("正好在离他不远的地方有一个长椅子。他想过去坐一会儿。", "Zhènghǎo zài lí tā bù yuǎn de dìfang yǒu yí ge cháng yǐzi. Tā xiǎng guòqu zuò yíhuìr.", "Just then there was a bench not far away. He wanted to go and sit on it.", "Kebetulan tidak jauh darinya ada bangku panjang. Dia ingin ke sana duduk sebentar."),
+        L("这时一个老人也向椅子那儿走去。小伙子怕老人先过去坐，就很快向椅子那儿跑去。", "Zhè shí yí ge lǎorén yě xiàng yǐzi nàr zǒu qù. Xiǎohuǒzi pà lǎorén xiān guòqu zuò, jiù hěn kuài xiàng yǐzi nàr pǎo qù.", "At that moment an old man also walked towards the bench. Afraid the old man would sit first, the young man ran over quickly.", "Saat itu seorang kakek juga berjalan ke bangku itu. Pemuda itu takut kakek duduk duluan, jadi dia cepat-cepat berlari ke sana."),
+      ], check=(("小伙子为什么想坐下？", "他玩儿累了，想休息一会儿。"), ("小伙子为什么想坐下？", "他玩儿累了，想休息一会儿。"))),
+    S("HOW", ("阅读: 小伙子和长椅子 (2/2)", "阅读: 小伙子和长椅子 (2/2)"), [
+        L("老人对小伙子大声叫：\"小伙子，不要过去！\"", "Lǎorén duì xiǎohuǒzi dàshēng jiào: \"Xiǎohuǒzi, búyào guòqu!\"", "The old man shouted, \"Young man, don't go over there!\"", "Kakek itu berteriak, \"Anak muda, jangan ke sana!\""),
+        L("小伙子不听老人的话，很快跑到椅子那儿，一下子坐在椅子上。", "Xiǎohuǒzi bù tīng lǎorén de huà, hěn kuài pǎo dào yǐzi nàr, yíxiàzi zuò zài yǐzi shang.", "The young man ignored him, ran to the bench and plonked himself down.", "Pemuda itu tidak mendengarkan, cepat berlari ke bangku dan langsung duduk."),
+        L("这时，老人过来了，他走到椅子旁边，生气地对小伙子说：\"你这个小伙子，你没有看见吗？椅子刚涂上油漆，还没干呢！\"", "Zhè shí, lǎorén guòlai le, tā zǒu dào yǐzi pángbiān, shēngqì de duì xiǎohuǒzi shuō: \"Nǐ zhège xiǎohuǒzi, nǐ méiyǒu kànjiàn ma? Yǐzi gāng tú shang yóuqī, hái méi gān ne!\"", "Then the old man came up to the bench and said angrily: \"Young man, didn't you see? The bench has just been painted and isn't dry yet!\"", "Lalu kakek itu datang ke samping bangku dan berkata dengan marah: \"Anak muda, kamu tidak lihat? Bangkunya baru dicat, belum kering!\""),
+        L("\"啊！\"小伙子一听，马上站起来了。可是裤子已经坐上了很多油漆。", "\"À!\" Xiǎohuǒzi yì tīng, mǎshàng zhàn qǐlai le. Kěshì kùzi yǐjīng zuò shang le hěn duō yóuqī.", "\"Oh!\" The young man jumped up at once, but his trousers were already covered in paint.", "\"Ah!\" Pemuda itu langsung berdiri. Tapi celananya sudah penuh cat."),
+      ], explain=("True or false (p. 85): 小伙子玩儿累了，想去那个长椅子上休息一会儿。✓ / 老人也想去那个长椅子上休息。✗ / 老人对小伙子大声叫是怕小伙子先过去坐。✗ / 小伙子裤子上坐了很多油漆。✓",
+                  "Benar atau salah (hlm. 85): 小伙子玩儿累了，想去那个长椅子上休息一会儿。✓ / 老人也想去那个长椅子上休息。✗ / 老人对小伙子大声叫是怕小伙子先过去坐。✗ / 小伙子裤子上坐了很多油漆。✓"),
+      check=(("老人为什么大声叫？", "因为椅子刚涂上油漆，还没干。"), ("老人为什么大声叫？", "因为椅子刚涂上油漆，还没干。"))),
+]
+
+QUIZ_NOTE = {
+    "en": "[NOTE] All exercises come from the teacher's slides: grammar, the 课文 stories, reading and fill-ins. For a fill-in, type the 汉字; punctuation does not matter.",
+    "id": "[NOTE] Semua latihan berasal dari slide guru: grammar, cerita 课文, bacaan, dan isian. Untuk soal isian, ketik 汉字; tanda baca tidak dihitung.",
+}
+
+QUIZ = [
+    # Review of 结果补语 (p. 5–6)
+    F("p. 5 复习", ("A：昨天的数学作业你做____了吗？", "A：昨天的数学作业你做____了吗？"), ["完"], ("做完.", "做完.")),
+    F("p. 5 复习", ("B：做完了，但是有一道题我做____了。", "B：做完了，但是有一道题我做____了。"), ["错"], ("做错.", "做错.")),
+    F("p. 5 复习", ("这道题老师上课的时候讲过，你听____了吗？", "这道题老师上课的时候讲过，你听____了吗？"), ["懂"], ("听懂.", "听懂.")),
+    F("p. 6 复习", ("对不起，昨天太忙了，我没看____。", "对不起，昨天太忙了，我没看____。"), ["见"], ("没看见.", "没看见.")),
+    F("p. 6 复习", ("我把咱们俩的照片修____了海报，我发____你邮箱了。(two blanks)", "我把咱们俩的照片修____了海报，我发____你邮箱了。(dua titik)"), ["成到", "成 到", "成，到"], ("修成 / 发到.", "修成 / 发到.")),
+    F("p. 6 复习", ("太棒了，我马上打____电脑看看！", "太棒了，我马上打____电脑看看！"), ["开"], ("打开电脑.", "打开电脑.")),
+    # 时量补语
+    Q("p. 56", ("Which sentence is correct?", "Kalimat mana yang benar?"), ["她在大学学了两年。", "她在大学两年学了。", "她两年在大学学了了。"], 0,
+      ("No object: S + V.(了) + time.", "Tanpa objek: S + V.(了) + waktu.")),
+    Q("p. 58", ("Which sentence is correct?", "Kalimat mana yang benar?"), ["她游泳了一个下午。", "她游了一个下午（的）泳。"], 1,
+      ("Separable verb: the time goes inside (游了一个下午泳), or repeat the verb (游泳游了一个下午).", "Kata kerja terpisah: waktunya di tengah (游了一个下午泳), atau ulangi kata kerjanya (游泳游了一个下午).")),
+    Q("p. 60", ("Which sentence is correct?", "Kalimat mana yang benar?"), ["我找了一个小时你。", "我找了你一个小时。"], 1,
+      ("Personal pronoun object: time after the object.", "Objek kata ganti orang: waktu sesudah objek.")),
+    Q("p. 62", ("我学了一年汉语了。What does it mean?", "我学了一年汉语了。Apa artinya?"), [("I'm still studying Chinese.", "Saya masih belajar bahasa Mandarin."), ("I've stopped studying Chinese.", "Saya sudah berhenti belajar bahasa Mandarin.")], 0,
+      ("了……了: still in progress (现在还在学汉语).", "了……了: masih berlangsung (现在还在学汉语).")),
+    F("p. 57 替换", ("A：你跳舞了吗？B：跳了。A：跳了多长时间？B：____", "A：你跳舞了吗？B：跳了。A：跳了多长时间？B：____"), ["跳了一个小时。", "跳了一个小时"], ("跳了一个小时 (from the table).", "跳了一个小时 (dari tabel).")),
+    F("p. 59 替换", ("A：你游泳游了多长时间？B：我游泳游了一个半钟头。Say it another way.", "A：你游泳游了多长时间？B：我游泳游了一个半钟头。Katakan dengan cara lain."), ["我游了一个半钟头的泳。", "我游了一个半钟头泳。"],
+      ("S + V.(了) + time (+的) + O.", "S + V.(了) + waktu (+的) + O.")),
+    F("p. 61 替换", ("A：你看了两个小时比赛吗？B：没有，我只看了____比赛。(a while)", "A：你看了两个小时比赛吗？B：没有，我只看了____比赛。(sebentar)"), ["一会儿"], ("看了一会儿比赛.", "看了一会儿比赛.")),
+    F("p. 65 改错", ("Fix it: 昨天我看了电视一个小时多。", "Perbaiki: 昨天我看了电视一个小时多。"), ["昨天我看了一个多小时电视。"], ("一个多小时 goes before the object.", "一个多小时 diletakkan sebelum objek.")),
+    F("p. 65 改错", ("Fix it: 我哥哥毕业大学已经两年了。", "Perbaiki: 我哥哥毕业大学已经两年了。"), ["我哥哥大学毕业已经两年了。"], ("毕业 can't take an object.", "毕业 tidak bisa diberi objek.")),
+    F("p. 65 改错", ("Fix it: 吃完晚饭，我常常跟朋友聊天儿一会儿。", "Perbaiki: 吃完晚饭，我常常跟朋友聊天儿一会儿。"), ["吃完晚饭，我常常跟朋友聊一会儿天。", "吃完晚饭，我常常跟朋友聊一会儿天儿。"], ("Separable verb: 聊一会儿天.", "Kata kerja terpisah: 聊一会儿天.")),
+    F("p. 65 改错", ("Fix it: 他已经没上课三天了。", "Perbaiki: 他已经没上课三天了。"), ["他已经三天没上课了。"], ("Negative: time + 没 + V. + O. + 了.", "Negatif: waktu + 没 + V. + O. + 了.")),
+    F("p. 65 改错", ("Fix it: 我昨天晚上睡觉了八个小时。", "Perbaiki: 我昨天晚上睡觉了八个小时。"), ["我昨天晚上睡了八个小时觉。"], ("Separable verb: 睡了八个小时觉.", "Kata kerja terpisah: 睡了八个小时觉.")),
+    F("p. 65 改错", ("Fix it: 我学习汉语一个年了。", "Perbaiki: 我学习汉语一个年了。"), ["我学习汉语一年了。"], ("年 takes no measure word: 一年.", "年 tanpa kata satuan: 一年.")),
+    F("p. 66 时量", ("A：你每天上几个小时课？(8:00–11:30) B：____", "A：你每天上几个小时课？(8:00–11:30) B：____"), ["我每天上三个半小时课。", "三个半小时"], ("8:00–11:30 is three and a half hours.", "8:00–11:30 adalah tiga setengah jam.")),
+    F("p. 67 时量", ("A：你晚上看多长时间电视？(10:00–10:30) B：____", "A：你晚上看多长时间电视？(10:00–10:30) B：____"), ["我晚上看半个小时电视。", "半个小时"], ("Half an hour.", "Setengah jam.")),
+    F("p. 68 时量", ("A：你打算在中国学习几年？(2025年–2029年) B：____", "A：你打算在中国学习几年？(2025年–2029年) B：____"), ["我打算在中国学习四年。", "四年"], ("2025–2029: four years.", "2025–2029: empat tahun.")),
+    # 概数
+    Q("p. 72 概数", ("我来中国已经(  )了。", "我来中国已经(  )了。"), ["二十年多", "二十多年", "多二十年"], 1,
+      ("Over 10: 多 after the number: 二十多年.", "Di atas 10: 多 sesudah bilangan: 二十多年.")),
+    Q("p. 72 概数", ("我已经学了(  )汉语了。", "我已经学了(  )汉语了。"), ["一年多", "一多年", "多一年"], 0,
+      ("Under 10: 多 after the measure word: 一年多.", "Di bawah 10: 多 sesudah satuan: 一年多.")),
+    Q("p. 72 概数", ("我的手机(  )。", "我的手机(  )。"), ["多四千块", "四千块多", "四千多块"], 2,
+      ("The teacher's answer: 四千多块.", "Jawaban guru: 四千多块.")),
+    Q("p. 74 离合词", ("Which sentence is correct?", "Kalimat mana yang benar?"), ["我去大使馆见面朋友。", "我去大使馆跟朋友见面。"], 1,
+      ("见面 can't take an object.", "见面 tidak bisa diberi objek.")),
+    Q("p. 76 离合词", ("Which sentence is correct?", "Kalimat mana yang benar?"), ["他上星期游泳了两次。", "他上星期游了两次泳。"], 1,
+      ("The count goes inside the separable verb.", "Jumlahnya masuk di tengah kata kerja terpisah.")),
+    # 就/才, 再/又
+    F("p. 79 就才", ("飞机已经起飞了，她____到机场。", "飞机已经起飞了，她____到机场。"), ["才"], ("Late: 才.", "Terlambat: 才.")),
+    F("p. 79 就才", ("今天的作业我只用了一个小时____做完了。", "今天的作业我只用了一个小时____做完了。"), ["就"], ("Fast: 就.", "Cepat: 就.")),
+    F("p. 79 就才", ("这儿离北京很远，坐火车要十多个小时____能到。", "这儿离北京很远，坐火车要十多个小时____能到。"), ["才"], ("Slow: 才.", "Lambat: 才.")),
+    F("p. 79 就才", ("八点上课，他九点____来。", "八点上课，他九点____来。"), ["才"], ("Late: 才.", "Terlambat: 才.")),
+    F("p. 79 就才", ("他早上六点____出发了。", "他早上六点____出发了。"), ["就"], ("Early: 就.", "Awal: 就.")),
+    F("p. 83 改错", ("Fix it: 到中国以后，这个电影我再看了一遍。", "Perbaiki: 到中国以后，这个电影我再看了一遍。"), ["到了中国以后，这个电影我又看了一遍。", "到中国以后，这个电影我又看了一遍。"], ("It already happened: 又.", "Sudah terjadi: 又.")),
+    F("p. 83 改错", ("Fix it: 今年九月，他再来中国了。", "Perbaiki: 今年九月，他再来中国了。"), ["今年九月，他又来中国了。"], ("It already happened: 又.", "Sudah terjadi: 又.")),
+    # Vocabulary fill-in (p. 44)
+    F("p. 44 填空", ("我____打算学一年，现在想再延长一年。", "我____打算学一年，现在想再延长一年。"), ["原来"], ("原来……现在…….", "原来……现在…….")),
+    F("p. 44 填空", ("玛丽每天晚上____要学三个多小时。", "玛丽每天晚上____要学三个多小时。"), ["差不多"], ("差不多 + v.", "差不多 + v.")),
+    F("p. 44 填空", ("学习汉语____坚持，\"三天打鱼，两天晒网\"是不行的。", "学习汉语____坚持，\"三天打鱼，两天晒网\"是不行的。"), ["必须"], ("必须坚持.", "必须坚持.")),
+    F("p. 44 填空", ("我____不喝酒。", "我____不喝酒。"), ["从来"], ("从来不.", "从来不.")),
+    F("p. 44 填空", ("她练太极拳已经____了好几个月了。", "她练太极拳已经____了好几个月了。"), ["练"], ("练了好几个月.", "练了好几个月.")),
+    F("p. 44 填空", ("A：这种药的____怎么样？B：____好的。(two blanks)", "A：这种药的____怎么样？B：____好的。(dua titik)"), ["效果挺", "效果 挺", "效果，挺"], ("效果 / 挺好的.", "效果 / 挺好的.")),
+    F("p. 44 填空", ("她今天晚上____能来。", "她今天晚上____能来。"), ["不一定"], ("不一定: not sure.", "不一定: belum tentu.")),
+    F("p. 44 填空", ("打太极拳比较难，____很有意思。", "打太极拳比较难，____很有意思。"), ["不过"], ("……,不过…….", "……,不过…….")),
+    F("p. 44 填空", ("我觉得这本书对留学生很有____，但是这样的书太少了。", "我觉得这本书对留学生很有____，但是这样的书太少了。"), ["好处"], ("对……有好处.", "对……有好处.")),
+    # 课文 (story)
+    Q("p. 30 课文", ("留学生来了中国多长时间？", "留学生来了中国多长时间？"), ["两个多月了。", "两年多了。", "一年了。"], 0,
+      ("我来了两个多月了。", "我来了两个多月了。")),
+    Q("p. 30 课文", ("哪些地方他还不太习惯？", "哪些地方他还不太习惯？"), ["气候特别干燥，宿舍周围不太干净，也不太安静，食堂里的菜太油腻。", "交通不方便。", "老师太严格。"], 0,
+      ("From text (1).", "Dari teks (1).")),
+    F("p. 30 课文", ("他早上一般几点起床？早饭吃什么？", "他早上一般几点起床？早饭吃什么？"), ["早上七点多起床，早上就喝杯牛奶。", "七点多起床，喝杯牛奶"], ("我每天早上七点多才起床……喝杯牛奶就去上课了。", "我每天早上七点多才起床……喝杯牛奶就去上课了。")),
+    Q("p. 30 课文", ("他每天锻炼多久？", "他每天锻炼多久？"), ["一个小时", "半个小时", "两三个小时"], 0,
+      ("每天都坚持锻炼一个小时。", "每天都坚持锻炼一个小时。")),
+    F("p. 30 课文", ("他原来打算学多久？现在打算怎么样？", "他原来打算学多久？现在打算怎么样？"), ["原来打算学一年，现在打算再延长一年。"], ("原来打算学一年……准备再延长一年。", "原来打算学一年……准备再延长一年。")),
+    F("p. 31 填空", ("我来了两个多月了，对这儿的生活____已经习惯了。", "我来了两个多月了，对这儿的生活____已经习惯了。"), ["差不多"], ("差不多已经习惯了.", "差不多已经习惯了.")),
+    F("p. 31 填空", ("总觉得这儿的气候特别____。", "总觉得这儿的气候特别____。"), ["干燥"], ("气候干燥.", "气候干燥.")),
+    F("p. 31 填空", ("中午我____。(never nap)", "中午我____。(tidak pernah tidur siang)"), ["从来不睡午觉"], ("我从来不睡午觉。", "我从来不睡午觉。")),
+    F("p. 32 填空", ("晚饭后我常常____，有时跟朋友聊聊天儿。(take a short walk)", "晚饭后我常常____，有时跟朋友聊聊天儿。(jalan sebentar)"), ["散一会儿步"], ("散一会儿步.", "散一会儿步.")),
+    F("p. 32 填空", ("我很____给我这个____，让我来中国留学。(two blanks)", "我很____给我这个____，让我来中国留学。(dua titik)"), ["感谢父母机会", "感谢父母 机会", "感谢父母，机会"], ("感谢父母 / 机会.", "感谢父母 / 机会.")),
+    F("p. 49 课文", ("王老师每天什么时候起来？", "王老师每天什么时候起来？"), ["他每天五点多就起来了。", "五点多"], ("每天五点多就起来了。", "每天五点多就起来了。")),
+    F("p. 49 课文", ("他气功练了多长时间了？", "他气功练了多长时间了？"), ["练了好几年了。", "好几年"], ("已经练了好几年了。", "已经练了好几年了。")),
+    Q("p. 49 课文", ("他每天练多长时间？", "他每天练多长时间？"), ["不一定，有时练一个钟头，有时候半个钟头。", "每天两个钟头。", "每天十分钟。"], 0,
+      ("From text (2).", "Dari teks (2).")),
+    Q("p. 49 课文", ("关经理练了气功吗？为什么？", "关经理练了气功吗？为什么？"), ["没练。因为他工作太忙了，没有时间。", "练了，因为对身体有好处。"], 0,
+      ("我也很想练，但是工作太忙，没有时间。", "我也很想练，但是工作太忙，没有时间。")),
+    F("p. 50 填空", ("练气功必须坚持天天练，\"三天____，两天____网\"不行。(two blanks)", "练气功必须坚持天天练，\"三天____，两天____网\"不行。(dua titik)"), ["打鱼晒", "打鱼 晒", "打鱼，晒"], ("三天打鱼，两天晒网.", "三天打鱼，两天晒网.")),
+    # 阅读 (reading)
+    Q("p. 85 阅读", ("判断: 小伙子玩儿累了，想去那个长椅子上休息一会儿。", "Benar/salah: 小伙子玩儿累了，想去那个长椅子上休息一会儿。"), [("True", "Benar"), ("False", "Salah")], 0,
+      ("玩儿累了，想找一个座位坐下休息一会儿。", "玩儿累了，想找一个座位坐下休息一会儿。")),
+    Q("p. 85 阅读", ("判断: 老人也想去那个长椅子上休息。", "Benar/salah: 老人也想去那个长椅子上休息。"), [("True", "Benar"), ("False", "Salah")], 1,
+      ("He went to warn the young man about the paint.", "Kakek itu mau memperingatkan soal cat.")),
+    Q("p. 85 阅读", ("判断: 老人对小伙子大声叫是怕小伙子先过去坐。", "Benar/salah: 老人对小伙子大声叫是怕小伙子先过去坐。"), [("True", "Benar"), ("False", "Salah")], 1,
+      ("The bench was wet paint (椅子刚涂上油漆).", "Bangkunya baru dicat (椅子刚涂上油漆).")),
+    Q("p. 85 阅读", ("判断: 小伙子裤子上坐了很多油漆。", "Benar/salah: 小伙子裤子上坐了很多油漆。"), [("True", "Benar"), ("False", "Salah")], 0,
+      ("裤子已经坐上了很多油漆。", "裤子已经坐上了很多油漆。")),
+]

@@ -1,0 +1,363 @@
+"""Lesson 6 第6课 我比你更喜欢音乐. Source: Compre Chapter 6.pdf (86 pages)."""
+from cclib import L, S, Q, W, F
+
+CHAPTER = {"en": "第6课 我比你更喜欢音乐 (I like music even more than you)",
+           "id": "第6课 我比你更喜欢音乐 (Saya lebih suka musik daripada kamu)"}
+
+NONE = ("", "")
+
+SLIDES = [
+    S("WHAT", ("[ADDED] How to Read This Lesson", "[ADDED] Cara Membaca Pelajaran Ini"), [], intro=(
+        "As before: the 汉字, word pinyin and English word meanings come from the teacher's slides.\n"
+        "[ADDED] for this site: sentence pinyin and all sentence translations. Check them with your teacher.",
+        "Sama seperti sebelumnya: 汉字, pinyin kosakata, dan arti kata bahasa Inggris berasal dari slide guru.\n"
+        "[ADDED] untuk situs ini: pinyin kalimat dan semua terjemahan kalimat. Cek lagi dengan gurumu."),
+      check=(("Which pinyin comes from the teacher's slides?", "The vocabulary pinyin."),
+             ("Pinyin mana yang berasal dari slide guru?", "Pinyin kosakata."))),
+    S("WHY", ("Warm-up: Cities You've Been To", "Pemanasan: Kota yang Pernah Dikunjungi"), [
+        L("你去过中国哪些城市？", "Nǐ qù guo Zhōngguó nǎxiē chéngshì?", "Which Chinese cities have you been to?", "Kamu pernah ke kota mana saja di Tiongkok?"),
+        L("感觉怎么样？", "Gǎnjué zěnmeyàng?", "How did you find them?", "Bagaimana kesannya?"),
+      ], check=(("Answer: 你去过中国哪些城市？", "Your own answer, e.g. 我去过广州和上海。"), ("Jawab: 你去过中国哪些城市？", "Jawabanmu sendiri, misalnya 我去过广州和上海。"))),
+
+    # New words (1) ----------------------------------------------------------------------------
+    S("WHAT", ("变化 biànhuà: Change", "变化 biànhuà: Perubahan"), [
+        L("变化很大 / 变化不大 / 西安这些年变化很大。", "biànhuà hěn dà / biànhuà bú dà / Xī'ān zhèxiē nián biànhuà hěn dà.", "change a lot / not change much / Xi'an has changed a lot in recent years.", "banyak berubah / tidak banyak berubah / Xi'an banyak berubah beberapa tahun ini."),
+        L("天气的变化 / 西安的变化 / 中国的变化", "tiānqì de biànhuà / Xī'ān de biànhuà / Zhōngguó de biànhuà", "changes in the weather / in Xi'an / in China", "perubahan cuaca / Xi'an / Tiongkok"),
+        L("变多、变少、变高、变胖、变瘦、变冷、变热、变漂亮", "biàn duō, biàn shǎo, biàn gāo, biàn pàng, biàn shòu, biàn lěng, biàn rè, biàn piàoliang", "变+adj.: become more, less, taller, fatter, thinner, colder, hotter, prettier", "变+adj.: jadi banyak, sedikit, tinggi, gemuk, kurus, dingin, panas, cantik"),
+        L("她变瘦了。/ 天气变热了。", "Tā biàn shòu le. / Tiānqì biàn rè le.", "She's got thinner. / It's got hotter.", "Dia jadi kurus. / Cuacanya jadi panas."),
+      ], word=[W("变化", "biànhuà", ("v. / n.", "v. / n."), ("to change; change", "berubah; perubahan"))],
+      check=(("Say \"it's got hotter\".", "天气变热了。"), ("Katakan \"cuacanya jadi panas\".", "天气变热了。"))),
+    S("WHAT", ("暑假 shǔjià and 城市 chéngshì", "暑假 shǔjià dan 城市 chéngshì"), [
+        L("放寒假 / 放暑假", "fàng hánjià / fàng shǔjià", "have winter / summer vacation", "libur musim dingin / libur musim panas"),
+        L("今年暑假我去上海玩儿了一个多月，没做完暑假作业。", "Jīnnián shǔjià wǒ qù Shànghǎi wánr le yí ge duō yuè, méi zuò wán shǔjià zuòyè.", "This summer I spent over a month in Shanghai and didn't finish my holiday homework.", "Libur musim panas tahun ini saya main ke Shanghai lebih dari sebulan, PR liburan tidak selesai."),
+        L("一个城市 / 我想在广州这个城市生活。", "yí ge chéngshì / Wǒ xiǎng zài Guǎngzhōu zhège chéngshì shēnghuó.", "a city / I'd like to live in Guangzhou.", "sebuah kota / Saya ingin tinggal di kota Guangzhou."),
+      ], word=[W("暑假", "shǔjià", NONE, ("summer vacation", "libur musim panas")), W("城市", "chéngshì", NONE, ("city", "kota"))],
+      check=(("Say \"winter vacation\".", "寒假"), ("Katakan \"libur musim dingin\".", "寒假"))),
+    S("WHAT", ("还 hái and 人口 rénkǒu", "还 hái dan 人口 rénkǒu"), [
+        L("她会唱歌还会跳舞。", "Tā huì chànggē hái huì tiàowǔ.", "She can sing, and dance too.", "Dia bisa menyanyi, juga bisa berdansa."),
+        L("我昨天还不认识她。/ 去年我还没有来中国。", "Wǒ zuótiān hái bú rènshi tā. / Qùnián wǒ hái méiyǒu lái Zhōngguó.", "Yesterday I didn't even know her. / Last year I hadn't come to China yet.", "Kemarin saya bahkan belum kenal dia. / Tahun lalu saya belum ke Tiongkok."),
+        L("中国的人口很多。", "Zhōngguó de rénkǒu hěn duō.", "China has a large population.", "Penduduk Tiongkok sangat banyak."),
+      ], word=[W("还", "hái", NONE, ("for emphasis", "masih; juga (penekanan)")), W("人口", "rénkǒu", NONE, ("population", "penduduk"))],
+      check=(("Say \"China has a large population\".", "中国的人口很多。"), ("Katakan \"penduduk Tiongkok banyak\".", "中国的人口很多。"))),
+    S("WHAT", ("最 zuì and 更 gèng", "最 zuì dan 更 gèng"), [
+        L("最多、最少、最高、最冷、最热、最漂亮", "zuì duō, zuì shǎo, zuì gāo, zuì lěng, zuì rè, zuì piàoliang", "最+adj.: the most …", "最+adj.: paling …"),
+        L("我最爱吃芒果。/ 我最怕小狗。/ 我最担心我的考试。/ 他最喜欢看书。", "Wǒ zuì ài chī mángguǒ. / Wǒ zuì pà xiǎo gǒu. / Wǒ zuì dānxīn wǒ de kǎoshì. / Tā zuì xǐhuan kàn shū.", "最+心理动词: I love mangoes most. / I'm most afraid of puppies. / I'm most worried about my exam. / He likes reading most.", "最+kata kerja perasaan: Saya paling suka mangga. / Saya paling takut anjing kecil. / Saya paling khawatir ujian. / Dia paling suka membaca."),
+        L("更多、更少、更高、更冷、更热、更漂亮", "gèng duō, gèng shǎo, gèng gāo, gèng lěng, gèng rè, gèng piàoliang", "更+adj.: even more …", "更+adj.: lebih …"),
+        L("我更喜欢汉语。/ 我不想吃饭，更想吃菜。/ 我更爱喝冷水。", "Wǒ gèng xǐhuan Hànyǔ. / Wǒ bù xiǎng chī fàn, gèng xiǎng chī cài. / Wǒ gèng ài hē lěng shuǐ.", "更+心理动词: I like Chinese more. / I don't want rice; I'd rather have dishes. / I prefer cold water.", "更+kata kerja perasaan: Saya lebih suka bahasa Mandarin. / Saya tidak mau nasi, lebih mau lauk. / Saya lebih suka air dingin."),
+      ], word=[W("最", "zuì", NONE, ("most", "paling")), W("更", "gèng", NONE, ("more", "lebih"))],
+      explain=("心理动词 (psychological verbs) describe inner thoughts or preferences: 喜欢, 爱, 怕, 想, 担心…", "心理动词 (kata kerja perasaan) menyatakan pikiran atau kesukaan: 喜欢, 爱, 怕, 想, 担心…"),
+      check=(("Say \"I like mangoes most\".", "我最爱吃芒果。"), ("Katakan \"saya paling suka mangga\".", "我最爱吃芒果。"))),
+    S("WHAT", ("增加 zēngjiā and 建筑 jiànzhù", "增加 zēngjiā dan 建筑 jiànzhù"), [
+        L("增加人口 / 增加时间 / 增加知识", "zēngjiā rénkǒu / zēngjiā shíjiān / zēngjiā zhīshi", "增加+sth.: increase the population / time / knowledge", "增加+sesuatu: menambah penduduk / waktu / pengetahuan"),
+        L("我要增加学习汉语的时间。", "Wǒ yào zēngjiā xuéxí Hànyǔ de shíjiān.", "I want to spend more time studying Chinese.", "Saya ingin menambah waktu belajar bahasa Mandarin."),
+        L("城市里有很多建筑。/ 这里在建筑一个体育馆。", "Chéngshì lǐ yǒu hěn duō jiànzhù. / Zhèlǐ zài jiànzhù yí ge tǐyùguǎn.", "There are many buildings in the city. / A gym is being built here.", "Di kota banyak bangunan. / Di sini sedang dibangun gedung olahraga."),
+      ], word=[W("增加", "zēngjiā", NONE, ("to increase", "menambah")), W("建筑", "jiànzhù", NONE, ("architecture", "bangunan; membangun"))],
+      check=(("Say \"increase study time\".", "增加学习时间"), ("Katakan \"menambah waktu belajar\".", "增加学习时间"))),
+    S("WHAT", ("过去 guòqù and 漂亮 piàoliang", "过去 guòqù dan 漂亮 piàoliang"), [
+        L("过去 / 现在 / 未来", "guòqù / xiànzài / wèilái", "past / present / future", "masa lalu / sekarang / masa depan"),
+        L("过去的上海 / 现在的上海", "guòqù de Shànghǎi / xiànzài de Shànghǎi", "Shanghai in the past / Shanghai today", "Shanghai dulu / Shanghai sekarang"),
+        L("漂亮的地方 / 她长得很漂亮。", "piàoliang de dìfang / Tā zhǎng de hěn piàoliang.", "a beautiful place / She's very pretty.", "tempat yang indah / Dia sangat cantik."),
+      ], word=[W("过去", "guòqù", NONE, ("the past", "masa lalu")), W("漂亮", "piàoliang", NONE, ("beautiful", "cantik, indah"))],
+      check=(("Say \"Shanghai in the past\".", "过去的上海"), ("Katakan \"Shanghai dulu\".", "过去的上海"))),
+    S("WHAT", ("冬（天） dōng(tiān) and 暖和 nuǎnhuo", "冬（天） dōng(tiān) dan 暖和 nuǎnhuo"), [
+        L("季节 —— 春天 / 夏天 / 秋天 / 冬天", "jìjié — chūntiān / xiàtiān / qiūtiān / dōngtiān", "seasons — spring / summer / autumn / winter", "musim — semi / panas / gugur / dingin"),
+        L("A：四个季节，你最喜欢哪个季节？B：我最喜欢____。", "A: Sì ge jìjié, nǐ zuì xǐhuan nǎ ge jìjié? B: Wǒ zuì xǐhuan ____.", "A: Which of the four seasons do you like best? B: I like ____ best.", "A: Dari empat musim, kamu paling suka yang mana? B: Saya paling suka ____."),
+        L("这件衣服很暖和。/ 外面太冷了，还是房间里暖和。", "Zhè jiàn yīfu hěn nuǎnhuo. / Wàimiàn tài lěng le, háishi fángjiān lǐ nuǎnhuo.", "These clothes are warm. / It's too cold outside; it's warmer in the room.", "Baju ini hangat. / Di luar terlalu dingin, lebih hangat di kamar."),
+      ], word=[W("冬（天）", "dōng(tiān)", NONE, ("winter", "musim dingin")), W("季节", "jìjié", NONE, ("season", "musim")), W("暖和", "nuǎnhuo", NONE, ("warm", "hangat"))],
+      check=(("Answer: 你最喜欢哪个季节？", "Your own answer, e.g. 我最喜欢秋天。"), ("Jawab: 你最喜欢哪个季节？", "Jawabanmu sendiri, misalnya 我最喜欢秋天。"))),
+    S("WHAT", ("可是 kěshì and 家庭 jiātíng", "可是 kěshì dan 家庭 jiātíng"), [
+        L("我很想看这本书，可是太贵了。", "Wǒ hěn xiǎng kàn zhè běn shū, kěshì tài guì le.", "I'd love to read this book, but it's too expensive.", "Saya ingin sekali membaca buku ini, tapi terlalu mahal."),
+        L("我喜欢听音乐，可是我不会唱歌。", "Wǒ xǐhuan tīng yīnyuè, kěshì wǒ bú huì chànggē.", "I like listening to music, but I can't sing.", "Saya suka dengar musik, tapi tidak bisa menyanyi."),
+        L("一个家庭 / 家庭生活 / 我的家庭有四口人。", "yí ge jiātíng / jiātíng shēnghuó / Wǒ de jiātíng yǒu sì kǒu rén.", "a family / family life / There are four people in my family.", "sebuah keluarga / kehidupan keluarga / Keluarga saya ada empat orang."),
+      ], word=[W("可是", "kěshì", NONE, ("but", "tetapi")), W("家庭", "jiātíng", NONE, ("family", "keluarga"))],
+      intro=("……,可是…….", "……,可是……."),
+      check=(("Say \"I like music, but I can't sing\".", "我喜欢听音乐，可是我不会唱歌。"), ("Katakan \"saya suka musik, tapi tidak bisa menyanyi\".", "我喜欢听音乐，可是我不会唱歌。"))),
+    S("WHAT", ("天气 tiānqì and 预报 yùbào", "天气 tiānqì dan 预报 yùbào"), [
+        L("A：今天天气怎么样？B：好 / 不好 / 还不错 / 还可以……", "A: Jīntiān tiānqì zěnmeyàng? B: Hǎo / bù hǎo / hái búcuò / hái kěyǐ……", "A: What's the weather like today? B: Good / bad / not bad / OK…", "A: Cuaca hari ini bagaimana? B: Bagus / jelek / lumayan / biasa…"),
+        L("A：今天是什么天气？B：是晴天 / 雨天……在下雨 / 下雪 / 打雷……", "A: Jīntiān shì shénme tiānqì? B: Shì qíngtiān / yǔtiān…… zài xià yǔ / xià xuě / dǎléi……", "A: What kind of weather is it? B: Sunny / rainy… It's raining / snowing / thundering…", "A: Cuacanya seperti apa? B: Cerah / hujan… Sedang hujan / bersalju / petir…"),
+        L("天气预报 / 这是广州一周的天气预报。/ 天气预报说下周一要下雨。", "tiānqì yùbào / Zhè shì Guǎngzhōu yì zhōu de tiānqì yùbào. / Tiānqì yùbào shuō xià zhōuyī yào xià yǔ.", "weather forecast / This is Guangzhou's forecast for the week. / The forecast says it will rain next Monday.", "ramalan cuaca / Ini ramalan cuaca Guangzhou seminggu. / Ramalan cuaca bilang Senin depan hujan."),
+      ], word=[W("天气", "tiānqì", NONE, ("weather", "cuaca")), W("预报", "yùbào", NONE, ("forecast", "ramalan"))],
+      check=(("Say \"weather forecast\".", "天气预报"), ("Katakan \"ramalan cuaca\".", "天气预报"))),
+    S("WHAT", ("气温 qìwēn and 度 dù", "气温 qìwēn dan 度 dù"), [
+        L("最低气温 / 最高气温", "zuì dī qìwēn / zuì gāo qìwēn", "lowest / highest temperature", "suhu terendah / tertinggi"),
+        L("周二的气温是34度。", "Zhōu'èr de qìwēn shì sānshísì dù.", "Tuesday's temperature is 34 degrees.", "Suhu hari Selasa 34 derajat."),
+        L("℃ 摄氏度 / 这周最低气温是7摄氏度。", "℃ shèshìdù / Zhè zhōu zuì dī qìwēn shì qī shèshìdù.", "°C Celsius / This week's lowest temperature is 7°C.", "°C Celsius / Suhu terendah minggu ini 7°C."),
+      ], word=[W("气温", "qìwēn", NONE, ("temperature", "suhu")), W("度", "dù", NONE, ("degree", "derajat"))],
+      check=(("Say \"the highest temperature\".", "最高气温"), ("Katakan \"suhu tertinggi\".", "最高气温"))),
+    S("WHAT", ("屋子 wūzi, 暖气 nuǎnqì, 感觉 gǎnjué", "屋子 wūzi, 暖气 nuǎnqì, 感觉 gǎnjué"), [
+        L("一间屋子 / 暖气片", "yì jiān wūzi / nuǎnqì piàn", "a room / radiator", "satu kamar / radiator"),
+        L("因为有暖气，屋子里特别暖和。", "Yīnwèi yǒu nuǎnqì, wūzi lǐ tèbié nuǎnhuo.", "The room is very warm because of the heating.", "Karena ada pemanas, kamarnya hangat sekali."),
+        L("A：你感觉怎么样？B：我感觉很好 / 不好 / 一般 / 还不错 / 还可以……", "A: Nǐ gǎnjué zěnmeyàng? B: Wǒ gǎnjué hěn hǎo / bù hǎo / yìbān / hái búcuò / hái kěyǐ……", "A: How do you feel? B: Very good / not good / so-so / not bad / OK…", "A: Kamu merasa bagaimana? B: Baik / tidak baik / biasa / lumayan / oke…"),
+        L("感觉暖和 / 有点冷 / 很热……", "gǎnjué nuǎnhuo / yǒudiǎn lěng / hěn rè……", "feel warm / a bit cold / very hot…", "terasa hangat / agak dingin / sangat panas…"),
+      ], word=[W("屋子", "wūzi", NONE, ("room", "kamar")), W("暖气", "nuǎnqì", NONE, ("heating", "pemanas ruangan")), W("感觉", "gǎnjué", NONE, ("to feel", "merasa"))],
+      check=(("Say \"I feel a bit cold\".", "我感觉有点冷。"), ("Katakan \"saya merasa agak dingin\".", "我感觉有点冷。"))),
+    S("WHAT", ("旅馆 lǚguǎn and 饭店 fàndiàn", "旅馆 lǚguǎn dan 饭店 fàndiàn"), [
+        L("一家旅馆 / 住旅馆 / 订旅馆", "yì jiā lǚguǎn / zhù lǚguǎn / dìng lǚguǎn", "a hotel / stay in a hotel / book a hotel", "sebuah hotel / menginap di hotel / memesan hotel"),
+        L("一家饭店", "yì jiā fàndiàn", "a restaurant", "sebuah restoran"),
+      ], word=[W("旅馆", "lǚguǎn", NONE, ("hotel", "hotel")), W("饭店", "fàndiàn", NONE, ("restaurant", "restoran"))],
+      check=(("Which measure word goes with 旅馆 and 饭店？", "家"), ("Kata satuan apa yang dipakai untuk 旅馆 dan 饭店？", "家"))),
+
+    # Text (1) ---------------------------------------------------------------------------------
+    S("HOW", ("课文（一） 上海比北京大吧 (1/2)", "课文（一） 上海比北京大吧 (1/2)"), [
+        L("山本：田芳，上海怎么样？我想坐火车去上海旅行。", "Shānběn: Tián Fāng, Shànghǎi zěnmeyàng? Wǒ xiǎng zuò huǒchē qù Shànghǎi lǚxíng.", "Yamamoto: Tian Fang, what's Shanghai like? I'd like to go there by train.", "Yamamoto: Tian Fang, Shanghai bagaimana? Saya ingin jalan-jalan ke Shanghai naik kereta."),
+        L("田芳：上海很好，这几年变化很大。今年暑假我还在那儿玩儿了一个多月呢。我一个同学家就在上海。", "Tián Fāng: Shànghǎi hěn hǎo, zhè jǐ nián biànhuà hěn dà. Jīnnián shǔjià wǒ hái zài nàr wánr le yí ge duō yuè ne. Wǒ yí ge tóngxué jiā jiù zài Shànghǎi.", "Tian Fang: It's great, and it's changed a lot in recent years. I even spent over a month there this summer. One of my classmates lives in Shanghai.", "Tian Fang: Bagus, beberapa tahun ini banyak berubah. Liburan musim panas ini saya bahkan main di sana lebih dari sebulan. Rumah teman saya di Shanghai."),
+        L("山本：上海比北京大吧？", "Shānběn: Shànghǎi bǐ Běijīng dà ba?", "Yamamoto: Shanghai is bigger than Beijing, isn't it?", "Yamamoto: Shanghai lebih besar dari Beijing, kan?"),
+        L("田芳：不，上海没有北京大，不过人口比北京多。上海是中国人口最多的城市。这几年，增加了不少新建筑，现在比过去变得更漂亮了。", "Tián Fāng: Bù, Shànghǎi méiyǒu Běijīng dà, búguò rénkǒu bǐ Běijīng duō. Shànghǎi shì Zhōngguó rénkǒu zuì duō de chéngshì. Zhè jǐ nián, zēngjiā le bù shǎo xīn jiànzhù, xiànzài bǐ guòqù biàn de gèng piàoliang le.", "Tian Fang: No, Shanghai isn't as big as Beijing, but it has more people. It's China's most populous city. Lots of new buildings have gone up, and it's prettier than before.", "Tian Fang: Tidak, Shanghai tidak sebesar Beijing, tapi penduduknya lebih banyak. Shanghai kota berpenduduk terbanyak di Tiongkok. Beberapa tahun ini banyak bangunan baru, sekarang lebih indah dari dulu."),
+        L("山本：上海的公园有北京的多吗？", "Shānběn: Shànghǎi de gōngyuán yǒu Běijīng de duō ma?", "Yamamoto: Does Shanghai have as many parks as Beijing?", "Yamamoto: Taman di Shanghai sebanyak di Beijing?"),
+        L("田芳：上海的公园没有北京的多，也没有北京的公园这么大。", "Tián Fāng: Shànghǎi de gōngyuán méiyǒu Běijīng de duō, yě méiyǒu Běijīng de gōngyuán zhème dà.", "Tian Fang: Shanghai has fewer parks than Beijing, and they aren't as big.", "Tian Fang: Taman di Shanghai tidak sebanyak di Beijing, juga tidak sebesar taman di Beijing."),
+      ], explain=("[NOTE] 山本 (Shānběn) is the Japanese name Yamamoto.", "[NOTE] 山本 (Shānběn) adalah nama Jepang Yamamoto."),
+      check=(("田芳暑假去哪儿了？玩儿了多久？", "她去了上海。在那儿玩儿了一个多月。"), ("田芳暑假去哪儿了？玩儿了多久？", "她去了上海。在那儿玩儿了一个多月。"))),
+    S("HOW", ("课文（一） 上海比北京大吧 (2/2)", "课文（一） 上海比北京大吧 (2/2)"), [
+        L("山本：上海的冬天是不是比北京暖和一点儿？", "Shānběn: Shànghǎi de dōngtiān shì bu shì bǐ Běijīng nuǎnhuo yìdiǎnr?", "Yamamoto: Is winter in Shanghai a bit warmer than in Beijing?", "Yamamoto: Musim dingin di Shanghai sedikit lebih hangat dari Beijing, ya?"),
+        L("田芳：上海不一定比北京暖和。", "Tián Fāng: Shànghǎi bù yídìng bǐ Běijīng nuǎnhuo.", "Tian Fang: Not necessarily.", "Tian Fang: Belum tentu lebih hangat."),
+        L("山本：可是，我看天气预报，上海的气温比北京高得多。", "Shānběn: Kěshì, wǒ kàn tiānqì yùbào, shànghǎi de qìwēn bǐ Běijīng gāo de duō.", "Yamamoto: But the forecast says Shanghai's temperature is much higher than Beijing's.", "Yamamoto: Tapi menurut ramalan cuaca, suhu Shanghai jauh lebih tinggi dari Beijing."),
+        L("田芳：是，上海的气温比北京高好几度，不过因为屋子里没有暖气，所以感觉还没有北京暖和。", "Tián Fāng: Shì, Shànghǎi de qìwēn bǐ Běijīng gāo hǎo jǐ dù, búguò yīnwèi wūzi lǐ méiyǒu nuǎnqì, suǒyǐ gǎnjué hái méiyǒu Běijīng nuǎnhuo.", "Tian Fang: Yes, it's several degrees higher, but because there's no heating indoors, it feels even less warm than Beijing.", "Tian Fang: Iya, suhunya beberapa derajat lebih tinggi, tapi karena di dalam rumah tidak ada pemanas, terasa tidak sehangat Beijing."),
+        L("山本：上海人家里没有暖气？", "Shānběn: Shànghǎi rén jiā lǐ méiyǒu nuǎnqì?", "Yamamoto: Shanghai homes don't have heating?", "Yamamoto: Rumah orang Shanghai tidak ada pemanas?"),
+        L("田芳：一般的家庭没有，不过旅馆和饭店里有。", "Tián Fāng: Yìbān de jiātíng méiyǒu, búguò lǚguǎn hé fàndiàn lǐ yǒu.", "Tian Fang: Ordinary homes don't, but hotels and restaurants do.", "Tian Fang: Rumah biasa tidak ada, tapi hotel dan restoran ada."),
+      ], check=(("为什么田芳说上海的冬天没有北京暖和？", "因为上海的屋子里没有暖气。"), ("为什么田芳说上海的冬天没有北京暖和？", "因为上海的屋子里没有暖气。"))),
+
+    # New words (2) ----------------------------------------------------------------------------
+    S("WHAT", ("迷 mí: Fan, Crazy About", "迷 mí: Penggemar, Tergila-gila"), [
+        L("电影迷 / 球迷 / 音乐迷 / 书迷 / 京剧迷", "diànyǐng mí / qiúmí / yīnyuè mí / shūmí / jīngjù mí", "n.+迷: film fan / sports fan / music fan / bookworm / Peking opera fan", "n.+迷: penggemar film / bola / musik / buku / opera Beijing"),
+        L("我最近迷上了踢足球。", "Wǒ zuìjìn mí shang le tī zúqiú.", "迷上 do sth.: I've recently got hooked on football.", "迷上 melakukan sesuatu: Akhir-akhir ini saya tergila-gila main sepak bola."),
+        L("这个故事把我迷住了。/ 那个女孩把他迷住了。", "Zhège gùshi bǎ wǒ mízhù le. / Nàge nǚhái bǎ tā mízhù le.", "A把B迷住了: This story captivated me. / That girl has him captivated.", "A把B迷住了: Cerita ini memikat saya. / Gadis itu memikat dia."),
+      ], word=[W("迷", "mí", NONE, ("fan; to indulge in; to be crazy about", "penggemar; tergila-gila"))],
+      check=(("Say \"football fan\".", "球迷"), ("Katakan \"penggemar bola\".", "球迷"))),
+    S("WHAT", ("光 guāng: Only", "光 guāng: Cuma, Saja"), [
+        L("他光吃肉不吃蔬菜。", "Tā guāng chī ròu bù chī shūcài.", "光 do sth.: He eats only meat, no vegetables.", "光 melakukan sesuatu: Dia cuma makan daging, tidak makan sayur."),
+        L("光中国电影就看了几十个。/ 光啤酒就喝了10多瓶。", "Guāng Zhōngguó diànyǐng jiù kàn le jǐshí ge. / Guāng píjiǔ jiù hē le shí duō píng.", "光n.就v.: He's watched dozens of Chinese films alone. / He drank over 10 bottles of beer alone.", "光n.就v.: Film Tiongkok saja sudah ditonton puluhan. / Bir saja sudah diminum lebih dari 10 botol."),
+        L("光盘行动", "guāngpán xíngdòng", "the \"clean plate\" campaign", "gerakan habiskan makanan"),
+      ], word=[W("光", "guāng", NONE, ("only", "cuma, saja"))],
+      check=(("Say \"he eats only meat\".", "他光吃肉。"), ("Katakan \"dia cuma makan daging\".", "他光吃肉。"))),
+    S("WHAT", ("交响乐 jiāoxiǎngyuè and 下载 xiàzài", "交响乐 jiāoxiǎngyuè dan 下载 xiàzài"), [
+        L("交响乐团 / 他是个音乐迷，经常跟朋友一起去听交响乐。", "jiāoxiǎng yuètuán / Tā shì ge yīnyuè mí, jīngcháng gēn péngyou yìqǐ qù tīng jiāoxiǎngyuè.", "philharmonic / He's a music fan and often goes to symphony concerts with friends.", "orkestra simfoni / Dia penggemar musik dan sering menonton simfoni dengan teman."),
+        L("下载音乐 / 下载电影 / 下载文件", "xiàzài yīnyuè / xiàzài diànyǐng / xiàzài wénjiàn", "下载 sth.: download music / films / files", "下载 sesuatu: mengunduh musik / film / file"),
+      ], word=[W("交响乐", "jiāoxiǎngyuè", NONE, ("symphony", "simfoni")), W("下载", "xiàzài", NONE, ("to download", "mengunduh"))],
+      check=(("Say \"download music\".", "下载音乐"), ("Katakan \"mengunduh musik\".", "下载音乐"))),
+    S("WHAT", ("首 shǒu and 也许 yěxǔ", "首 shǒu dan 也许 yěxǔ"), [
+        L("一首歌 / 一首音乐 / 一首交响乐 / 一首诗", "yì shǒu gē / yì shǒu yīnyuè / yì shǒu jiāoxiǎngyuè / yì shǒu shī", "a song / a piece of music / a symphony / a poem", "sebuah lagu / musik / simfoni / puisi"),
+        L("也许会 / 也许能 / 也许喜欢 / 也许在……", "yěxǔ huì / yěxǔ néng / yěxǔ xǐhuan / yěxǔ zài……", "maybe will / maybe can / maybe likes / maybe is (at)…", "mungkin akan / mungkin bisa / mungkin suka / mungkin sedang…"),
+        L("他也许会说汉语，也许不会说汉语。/ 明天也许下雨。", "Tā yěxǔ huì shuō Hànyǔ, yěxǔ bú huì shuō Hànyǔ. / Míngtiān yěxǔ xià yǔ.", "Maybe he speaks Chinese, maybe not. / It may rain tomorrow.", "Mungkin dia bisa bahasa Mandarin, mungkin tidak. / Besok mungkin hujan."),
+      ], word=[W("首", "shǒu", NONE, ("MW for songs or poems", "kata satuan untuk lagu atau puisi")), W("也许", "yěxǔ", NONE, ("maybe", "mungkin"))],
+      check=(("Which measure word goes with 歌？", "首: 一首歌"), ("Kata satuan apa yang dipakai untuk 歌？", "首: 一首歌"))),
+    S("WHAT", ("古典 gǔdiǎn and 现代 xiàndài", "古典 gǔdiǎn dan 现代 xiàndài"), [
+        L("古典音乐 / 古典建筑 / 古典小说", "gǔdiǎn yīnyuè / gǔdiǎn jiànzhù / gǔdiǎn xiǎoshuō", "classical music / architecture / novels", "musik / bangunan / novel klasik"),
+        L("现代音乐 / 现代建筑 / 现代小说", "xiàndài yīnyuè / xiàndài jiànzhù / xiàndài xiǎoshuō", "modern music / architecture / novels", "musik / bangunan / novel modern"),
+      ], word=[W("古典", "gǔdiǎn", NONE, ("classical", "klasik")), W("现代", "xiàndài", NONE, ("modern", "modern"))],
+      check=(("Opposite of 古典音乐？", "现代音乐"), ("Lawan dari 古典音乐？", "现代音乐"))),
+    S("WHAT", ("世界 shìjiè and 名曲 míngqǔ", "世界 shìjiè dan 名曲 míngqǔ"), [
+        L("一张世界地图", "yì zhāng shìjiè dìtú", "a world map", "sebuah peta dunia"),
+        L("贝多芬的音乐都是世界名曲。", "Bèiduōfēn de yīnyuè dōu shì shìjiè míngqǔ.", "Beethoven's works are all world-famous pieces.", "Musik Beethoven semuanya karya terkenal dunia."),
+      ], word=[W("世界", "shìjiè", NONE, ("world", "dunia")), W("名曲", "míngqǔ", NONE, ("famous song", "lagu terkenal"))],
+      check=(("Say \"a world-famous piece\".", "世界名曲"), ("Katakan \"karya terkenal dunia\".", "世界名曲"))),
+    S("WHAT", ("民歌 míngē and 流行 liúxíng", "民歌 míngē dan 流行 liúxíng"), [
+        L("一首民歌 / 他们在唱民歌。", "yì shǒu míngē / Tāmen zài chàng míngē.", "a folk song / They're singing folk songs.", "sebuah lagu daerah / Mereka sedang menyanyikan lagu daerah."),
+        L("很/非常/特别/太 流行", "hěn / fēicháng / tèbié / tài liúxíng", "very / extremely / especially / too popular", "sangat / amat / sangat / terlalu populer"),
+        L("周杰伦的歌曲很流行。/ 年轻人爱听流行音乐。", "Zhōu Jiélún de gēqǔ hěn liúxíng. / Niánqīng rén ài tīng liúxíng yīnyuè.", "Jay Chou's songs are very popular. / Young people love pop music.", "Lagu Jay Chou sangat populer. / Anak muda suka musik pop."),
+        L("最近流行什么歌？/ 最近流行玩什么游戏？", "Zuìjìn liúxíng shénme gē? / Zuìjìn liúxíng wán shénme yóuxì?", "What songs are popular lately? / What games are popular now?", "Lagu apa yang sedang populer? / Game apa yang sedang populer?"),
+      ], word=[W("民歌", "míngē", NONE, ("folk song", "lagu daerah")), W("流行", "liúxíng", NONE, ("popular", "populer"))],
+      check=(("Say \"pop music\".", "流行音乐"), ("Katakan \"musik pop\".", "流行音乐"))),
+    S("WHAT", ("歌曲 gēqǔ, 歌词 gēcí, 年轻 niánqīng", "歌曲 gēqǔ, 歌词 gēcí, 年轻 niánqīng"), [
+        L("一首流行歌曲 / 儿童歌曲 / 中文/英文歌曲", "yì shǒu liúxíng gēqǔ / értóng gēqǔ / Zhōngwén / Yīngwén gēqǔ", "a pop song / children's songs / Chinese / English songs", "sebuah lagu pop / lagu anak / lagu Mandarin / Inggris"),
+        L("年轻人 ↔ 老年人", "niánqīng rén ↔ lǎonián rén", "young people ↔ old people", "anak muda ↔ orang tua"),
+      ], word=[W("歌曲", "gēqǔ", NONE, ("song", "lagu")), W("歌词", "gēcí", NONE, ("lyrics", "lirik")), W("年轻", "niánqīng", NONE, ("young", "muda"))],
+      check=(("Opposite of 年轻人？", "老年人"), ("Lawan dari 年轻人？", "老年人"))),
+    S("WHAT", ("有些 yǒuxiē and 遥远 yáoyuǎn", "有些 yǒuxiē dan 遥远 yáoyuǎn"), [
+        L("有些人 / 有些事 / 有些时候……", "yǒuxiē rén / yǒuxiē shì / yǒuxiē shíhou……", "有些+n.: some people / things / times…", "有些+n.: sebagian orang / hal / waktu…"),
+        L("有些同学喜欢喝茶，有些同学喜欢和咖啡。/ 有些汉字我不会写。", "Yǒuxiē tóngxué xǐhuan hē chá, yǒuxiē tóngxué xǐhuan hé kāfēi. / Yǒuxiē Hànzì wǒ bú huì xiě.", "Some classmates like tea, some like coffee. / I can't write some characters.", "Sebagian teman suka teh, sebagian suka kopi. / Ada 汉字 yang tidak bisa saya tulis."),
+        L("遥远的地方 / 我的家乡很遥远。", "yáoyuǎn de dìfang / Wǒ de jiāxiāng hěn yáoyuǎn.", "a faraway place / My hometown is very far away.", "tempat yang jauh / Kampung halaman saya sangat jauh."),
+      ], word=[W("有些", "yǒuxiē", NONE, ("some", "sebagian")), W("遥远", "yáoyuǎn", NONE, ("distant", "jauh"))],
+      explain=("[NOTE] p. 39 writes 有些同学喜欢和咖啡. It should be 喜欢喝咖啡.", "[NOTE] Hlm. 39 menulis 有些同学喜欢和咖啡. Seharusnya 喜欢喝咖啡."),
+      check=(("Say \"a faraway place\".", "遥远的地方"), ("Katakan \"tempat yang jauh\".", "遥远的地方"))),
+
+    # Text (2) ---------------------------------------------------------------------------------
+    S("HOW", ("课文（二） 我比你更喜欢音乐 (1/2)", "课文（二） 我比你更喜欢音乐 (1/2)"), [
+        L("林老师：王老师，你喜欢音乐吗？", "Lín lǎoshī: Wáng lǎoshī, nǐ xǐhuan yīnyuè ma?", "Ms Lin: Mr Wang, do you like music?", "Bu Lin: Pak Wang, Anda suka musik?"),
+        L("王老师：喜欢啊！我是个音乐迷，我电脑里，光交响乐就下载了好几百首呢。", "Wáng lǎoshī: Xǐhuan a! Wǒ shì ge yīnyuè mí, wǒ diànnǎo lǐ, guāng jiāoxiǎngyuè jiù xiàzài le hǎo jǐ bǎi shǒu ne.", "Mr Wang: Of course! I'm a music fan. On my computer I've downloaded several hundred symphonies alone.", "Pak Wang: Suka sekali! Saya penggemar musik. Di komputer saya, simfoni saja sudah ratusan yang saya unduh."),
+        L("林老师：我也很喜欢音乐，也许比你更喜欢。你喜欢古典音乐还是喜欢现代音乐？", "Lín lǎoshī: Wǒ yě hěn xǐhuan yīnyuè, yěxǔ bǐ nǐ gèng xǐhuan. Nǐ xǐhuan gǔdiǎn yīnyuè háishi xǐhuan xiàndài yīnyuè?", "Ms Lin: I love music too, maybe even more than you. Do you prefer classical or modern music?", "Bu Lin: Saya juga suka musik, mungkin lebih dari Anda. Anda suka musik klasik atau modern?"),
+        L("王老师：我喜欢古典音乐。喜欢听世界名曲，还喜欢听民歌。", "Wáng lǎoshī: Wǒ xǐhuan gǔdiǎn yīnyuè. Xǐhuan tīng shìjiè míngqǔ, hái xǐhuan tīng míngē.", "Mr Wang: Classical. I like world-famous pieces, and folk songs too.", "Pak Wang: Saya suka musik klasik. Suka karya terkenal dunia, juga suka lagu daerah."),
+      ], intro=("林老师和王老师在谈音乐……", "林老师和王老师在谈音乐……"),
+      check=(("王老师下载了多少交响乐？", "好几百首。"), ("王老师下载了多少交响乐？", "好几百首。"))),
+    S("HOW", ("课文（二） 我比你更喜欢音乐 (2/2)", "课文（二） 我比你更喜欢音乐 (2/2)"), [
+        L("林老师：我也喜欢古典音乐。你喜欢流行歌曲吗？", "Lín lǎoshī: Wǒ yě xǐhuan gǔdiǎn yīnyuè. Nǐ xǐhuan liúxíng gēqǔ ma?", "Ms Lin: I like classical too. Do you like pop songs?", "Bu Lin: Saya juga suka musik klasik. Anda suka lagu pop?"),
+        L("王老师：怎么说呢？可能没有你们年轻人那么喜欢。我觉得流行歌曲的歌词没有民歌写得好。", "Wáng lǎoshī: Zěnme shuō ne? Kěnéng méiyǒu nǐmen niánqīng rén nàme xǐhuan. Wǒ juéde liúxíng gēqǔ de gēcí méiyǒu míngē xiě de hǎo.", "Mr Wang: How can I put it? Maybe not as much as you young people. I think pop lyrics aren't as well written as folk songs.", "Pak Wang: Bagaimana ya? Mungkin tidak sesuka kalian anak muda. Menurut saya lirik lagu pop tidak sebagus lagu daerah."),
+        L("林老师：有些流行歌曲的歌词写得还是不错的。", "Lín lǎoshī: Yǒuxiē liúxíng gēqǔ de gēcí xiě de háishi búcuò de.", "Ms Lin: Some pop songs have quite good lyrics.", "Bu Lin: Ada juga lagu pop yang liriknya lumayan bagus."),
+        L("王老师：可是，我还是觉得民歌的歌词好。你听咱们的民歌，\"在那遥远的地方……\",写得多好！", "Wáng lǎoshī: Kěshì, wǒ háishi juéde míngē de gēcí hǎo. Nǐ tīng zánmen de míngē, \"Zài nà yáoyuǎn de dìfang……\", xiě de duō hǎo!", "Mr Wang: Still, I think folk lyrics are better. Listen to our folk song \"In that faraway place…\": how beautifully it's written!", "Pak Wang: Tapi saya tetap merasa lirik lagu daerah lebih bagus. Dengar lagu daerah kita, \"Di tempat yang jauh itu…\": indah sekali!"),
+      ], explain=("怎么说呢？ means \"it's not easy to say\"; what the speaker really thinks follows it.", "怎么说呢？ berarti \"bagaimana ya mengatakannya\"; pendapat sebenarnya menyusul sesudahnya."),
+      check=(("王老师觉得流行歌曲歌词和民歌歌词哪个写得好？", "他觉得民歌歌词写得更好。"), ("王老师觉得流行歌曲歌词和民歌歌词哪个写得好？", "他觉得民歌歌词写得更好。"))),
+
+    # Grammar ----------------------------------------------------------------------------------
+    S("WHAT", ("比字句 ①: A 比 B + adj.", "比字句 ①: A 比 B + adj."), [
+        L("西瓜比苹果大。/ 苹果比西瓜小。", "Xīguā bǐ píngguǒ dà. / Píngguǒ bǐ xīguā xiǎo.", "The watermelon is bigger than the apple. / The apple is smaller.", "Semangka lebih besar dari apel. / Apel lebih kecil dari semangka."),
+        L("熊猫比小猫重。/ 今天比明天热。", "Xióngmāo bǐ xiǎomāo zhòng. / Jīntiān bǐ míngtiān rè.", "The panda is heavier than the kitten. / Today is hotter than tomorrow.", "Panda lebih berat dari anak kucing. / Hari ini lebih panas dari besok."),
+        L("飞机比汽车快。/ 大象比熊猫重。", "Fēijī bǐ qìchē kuài. / Dàxiàng bǐ xióngmāo zhòng.", "A plane is faster than a car. / An elephant is heavier than a panda.", "Pesawat lebih cepat dari mobil. / Gajah lebih berat dari panda."),
+      ], intro=("Use 比 to show the difference between two people or things (比较两个事物之间的差别).", "Pakai 比 untuk menunjukkan perbedaan dua orang atau benda (比较两个事物之间的差别)."),
+      wr=("飞机比汽车很快。\n西瓜比苹果真大。", "飞机比汽车快。\n西瓜比苹果大。", ("In a 比 sentence the adjective can't take 很, 真, 非常.", "Dalam kalimat 比, kata sifat tidak boleh memakai 很, 真, 非常.")),
+      check=(("Fix it: 飞机比汽车很快。", "飞机比汽车快。"), ("Perbaiki: 飞机比汽车很快。", "飞机比汽车快。"))),
+    S("HOW", ("比字句 ①: A 比 B + V. + O.", "比字句 ①: A 比 B + V. + O."), [
+        L("她比我喜欢音乐。/ 我比她喜欢学习。", "Tā bǐ wǒ xǐhuan yīnyuè. / Wǒ bǐ tā xǐhuan xuéxí.", "She likes music more than I do. / I like studying more than she does.", "Dia lebih suka musik daripada saya. / Saya lebih suka belajar daripada dia."),
+        L("她比我考得好。/ 她考得比我好。", "Tā bǐ wǒ kǎo de hǎo. / Tā kǎo de bǐ wǒ hǎo.", "With a complement of state, 比 can go before the verb or before the complement.", "Dengan pelengkap keadaan, 比 bisa sebelum kata kerja atau sebelum pelengkap."),
+        L("今天我比你来得早。/ 今天我来得比你早。", "Jīntiān wǒ bǐ nǐ lái de zǎo. / Jīntiān wǒ lái de bǐ nǐ zǎo.", "Today I came earlier than you.", "Hari ini saya datang lebih awal dari kamu."),
+        L("她唱歌唱得比我好。/ 她写汉字写得比我快。", "Tā chànggē chàng de bǐ wǒ hǎo. / Tā xiě Hànzì xiě de bǐ wǒ kuài.", "With an object (or a separable verb), 比 can only go before the complement: A+V.+O.+V.+得+比+B+Comp.", "Kalau ada objek (atau kata kerja terpisah), 比 hanya bisa sebelum pelengkap: A+V.+O.+V.+得+比+B+Pel."),
+      ], check=(("Two ways: \"he eats more than me\".", "他比我吃得多。/ 他吃得比我多。"), ("Dua cara: \"dia makan lebih banyak dari saya\".", "他比我吃得多。/ 他吃得比我多。"))),
+    S("REMEMBER", ("Small or Big Differences", "Selisih Kecil atau Besar"), [
+        L("上海的冬天是不是比北京暖和一点儿？", "Shànghǎi de dōngtiān shì bu shì bǐ Běijīng nuǎnhuo yìdiǎnr?", "Is winter in Shanghai a bit warmer than in Beijing?", "Musim dingin di Shanghai sedikit lebih hangat dari Beijing?"),
+        L("这件比那件贵多了。", "Zhè jiàn bǐ nà jiàn guì duō le.", "This one is much more expensive than that one.", "Yang ini jauh lebih mahal dari yang itu."),
+        L("她跑得比我快得多。", "Tā pǎo de bǐ wǒ kuài de duō.", "She runs much faster than me.", "Dia lari jauh lebih cepat dari saya."),
+      ], intro=("A small difference: 一点儿, 一些. A big difference: 很多, 得多, 多了.", "Selisih kecil: 一点儿, 一些. Selisih besar: 很多, 得多, 多了."),
+      check=(("Say \"much more expensive\".", "贵多了 / 贵得多"), ("Katakan \"jauh lebih mahal\".", "贵多了 / 贵得多"))),
+    S("REMEMBER", ("Negative: 没有, Not 不比", "Negatif: 没有, Bukan 不比"), [
+        L("飞机比火车快。→ 火车没有飞机快。", "Fēijī bǐ huǒchē kuài. → Huǒchē méiyǒu fēijī kuài.", "A plane is faster than a train. → A train isn't as fast as a plane.", "Pesawat lebih cepat dari kereta. → Kereta tidak secepat pesawat."),
+        L("她比我跑得快。→ 我没有她跑得快。", "Tā bǐ wǒ pǎo de kuài. → Wǒ méiyǒu tā pǎo de kuài.", "She runs faster than me. → I don't run as fast as her.", "Dia lari lebih cepat dari saya. → Saya tidak secepat dia."),
+        L("A：我觉得你比麦克高。B：我不比他高。我们俩差不多高。", "A: Wǒ juéde nǐ bǐ Màikè gāo. B: Wǒ bù bǐ tā gāo. Wǒmen liǎ chàbuduō gāo.", "A: I think you're taller than Mike. B: I'm not. We're about the same height.", "A: Menurutku kamu lebih tinggi dari Mike. B: Tidak. Kami kira-kira sama tinggi."),
+        L("A：冬天，上海比北京暖和。B：我觉得上海不比北京暖和。", "A: Dōngtiān, Shànghǎi bǐ Běijīng nuǎnhuo. B: Wǒ juéde Shànghǎi bù bǐ Běijīng nuǎnhuo.", "A: In winter Shanghai is warmer than Beijing. B: I don't think it is.", "A: Musim dingin Shanghai lebih hangat dari Beijing. B: Menurutku tidak."),
+      ], intro=("The negative of a 比 sentence is usually 没有: A 比 B + C → B 没有 A + C. 不比 is only for disagreeing or refuting.",
+                "Bentuk negatif kalimat 比 biasanya 没有: A 比 B + C → B 没有 A + C. 不比 hanya untuk membantah."),
+      check=(("Negative of 西瓜比苹果大。", "苹果没有西瓜大。"), ("Bentuk negatif dari 西瓜比苹果大。", "苹果没有西瓜大。"))),
+    S("WHAT", ("比字句 ②: A 有/没有 B (这么/那么) + adj.", "比字句 ②: A 有/没有 B (这么/那么) + adj."), [
+        L("A：他有你（这么）高吗？B：他没有我（这么）高。", "A: Tā yǒu nǐ (zhème) gāo ma? B: Tā méiyǒu wǒ (zhème) gāo.", "A: Is he as tall as you? B: He isn't as tall as me.", "A: Dia setinggi kamu? B: Dia tidak setinggi saya."),
+        L("A：你有我考得这么好吗？B：我没有你考得那么好。", "A: Nǐ yǒu wǒ kǎo de zhème hǎo ma? B: Wǒ méiyǒu nǐ kǎo de nàme hǎo.", "A: Did you do as well as me? B: I didn't do as well as you.", "A: Nilaimu sebagus saya? B: Nilai saya tidak sebagus kamu."),
+      ], intro=("有 here means reaching or estimating a level. The positive form is mostly used in questions; the negative in statements.",
+                "有 di sini berarti mencapai atau memperkirakan suatu tingkat. Bentuk positifnya biasanya untuk pertanyaan; negatifnya untuk pernyataan."),
+      check=(("Answer \"no\": 他有你高吗？", "他没有我高。"), ("Jawab \"tidak\": 他有你高吗？", "他没有我高。"))),
+    S("HOW", ("比字句 ③: 更 and 最", "比字句 ③: 更 dan 最"), [
+        L("熊猫比狗大。大象比熊猫更大。大象最大。", "Xióngmāo bǐ gǒu dà. Dàxiàng bǐ xióngmāo gèng dà. Dàxiàng zuì dà.", "A panda is bigger than a dog. An elephant is even bigger. The elephant is the biggest.", "Panda lebih besar dari anjing. Gajah lebih besar lagi. Gajah paling besar."),
+        L("苹果比葡萄重。西瓜比苹果更重。西瓜最重。", "Píngguǒ bǐ pútao zhòng. Xīguā bǐ píngguǒ gèng zhòng. Xīguā zuì zhòng.", "An apple is heavier than a grape. A watermelon is even heavier. The watermelon is the heaviest.", "Apel lebih berat dari anggur. Semangka lebih berat lagi. Semangka paling berat."),
+        L("汽车比自行车快。飞机比汽车更快，飞机最快。", "Qìchē bǐ zìxíngchē kuài. Fēijī bǐ qìchē gèng kuài, fēijī zuì kuài.", "A car is faster than a bike. A plane is even faster; the plane is fastest.", "Mobil lebih cepat dari sepeda. Pesawat lebih cepat lagi; pesawat paling cepat."),
+      ], check=(("小张20岁，小李19岁，小王18岁。谁最大？", "小张最大。"), ("小张20岁，小李19岁，小王18岁。谁最大？", "小张最大。"))),
+    S("HOW", ("比字句 ④: An Exact Difference", "比字句 ④: Selisih yang Pasti"), [
+        L("罗兰比我快五分钟。", "Luólán bǐ wǒ kuài wǔ fēnzhōng.", "Luo Lan is five minutes faster than me.", "Luo Lan lima menit lebih cepat dari saya."),
+        L("他比弟弟大两岁。", "Tā bǐ dìdi dà liǎng suì.", "He's two years older than his younger brother.", "Dia dua tahun lebih tua dari adiknya."),
+        L("今天的气温比昨天高三度。", "Jīntiān de qìwēn bǐ zuótiān gāo sān dù.", "Today is three degrees warmer than yesterday.", "Suhu hari ini tiga derajat lebih tinggi dari kemarin."),
+        L("A：你比你妹妹大多少？B：大两岁。", "A: Nǐ bǐ nǐ mèimei dà duōshao? B: Dà liǎng suì.", "A: How much older are you than your sister? B: Two years.", "A: Kamu lebih tua berapa dari adikmu? B: Dua tahun."),
+      ], intro=("The exact amount goes after the adjective: A 比 B + adj. + 数量词.", "Jumlah pastinya diletakkan sesudah kata sifat: A 比 B + adj. + 数量词."),
+      check=(("Say \"three degrees warmer than yesterday\".", "比昨天高三度"), ("Katakan \"tiga derajat lebih tinggi dari kemarin\".", "比昨天高三度"))),
+    S("WHAT", ("感叹句: Exclamations", "感叹句: Kalimat Seru"), [
+        L("太好了！/ 真好！/ 这儿的风景真美！", "Tài hǎo le! / Zhēn hǎo! / Zhèr de fēngjǐng zhēn měi!", "① 太/真 + adj.: Great! / So good! / The scenery here is so beautiful!", "① 太/真 + adj.: Bagus sekali! / Bagus! / Pemandangan di sini indah sekali!"),
+        L("他写得多快啊！/ 这个公园好漂亮啊！/ 你听，这首歌的歌词写得多好啊！", "Tā xiě de duō kuài a! / Zhège gōngyuán hǎo piàoliang a! / Nǐ tīng, zhè shǒu gē de gēcí xiě de duō hǎo a!", "② 多/好 + adj. (+啊): How fast he writes! / This park is so pretty! / Listen, how well these lyrics are written!", "② 多/好 + adj. (+啊): Cepat sekali dia menulis! / Taman ini cantik sekali! / Dengar, lirik lagu ini bagus sekali!"),
+      ], intro=("感叹句 expresses strong feeling. 啊 often ends type ②.", "感叹句 menyatakan perasaan kuat. Tipe ② sering diakhiri 啊."),
+      wr=("他是一个真好的老师。", "他是一个很好的老师。", ("Exclamations aren't used for objective description.", "Kalimat seru tidak dipakai untuk deskripsi objektif.")),
+      check=(("Say \"this park is so pretty!\".", "这个公园好漂亮啊！"), ("Katakan \"taman ini cantik sekali!\".", "这个公园好漂亮啊！"))),
+    S("REMEMBER", ("Review: 就/才, 再/又", "Ulangan: 就/才, 再/又"), [
+        L("爸爸每天都很晚才下班，今天下午五点就下班了。", "Bàba měi tiān dōu hěn wǎn cái xiàbān, jīntiān xiàwǔ wǔ diǎn jiù xiàbān le.", "Dad usually finishes work late, but today he finished at five.", "Ayah biasanya pulang kerja larut, hari ini jam lima sudah pulang."),
+        L("您的话我没听懂，请您再说一遍，好吗？", "Nín de huà wǒ méi tīng dǒng, qǐng nín zài shuō yí biàn, hǎo ma?", "I didn't understand; could you say it again?", "Saya tidak paham, bisa diulang sekali lagi?"),
+        L("老师又说了一遍，我才听懂。", "Lǎoshī yòu shuō le yí biàn, wǒ cái tīng dǒng.", "The teacher said it again, and only then did I understand.", "Guru mengulang lagi, baru saya paham."),
+      ], check=(("上星期我已经买了一本，今天我____买了一本。", "又"), ("上星期我已经买了一本，今天我____买了一本。", "又"))),
+
+    # Reading ----------------------------------------------------------------------------------
+    S("HOW", ("阅读: 逛公园 (1/2)", "阅读: 逛公园 (1/2)"), [
+        L("昨天晚上我对罗兰说，听说我们学校西边有个公园，那个公园很大。公园里有山有水，很漂亮。明天是星期六，我们去公园玩儿玩儿怎么样？罗兰说，她也正想去公园散散步呢。", "Zuótiān wǎnshang wǒ duì Luólán shuō, tīngshuō wǒmen xuéxiào xībian yǒu ge gōngyuán, nàge gōngyuán hěn dà. Gōngyuán lǐ yǒu shān yǒu shuǐ, hěn piàoliang. Míngtiān shì xīngqīliù, wǒmen qù gōngyuán wánrwanr zěnmeyàng? Luólán shuō, tā yě zhèng xiǎng qù gōngyuán sànsan bù ne.", "Last night I told Luo Lan I'd heard there's a big park west of our school, with hills and water, very pretty. Tomorrow's Saturday; how about going? Luo Lan said she was just thinking of a walk in the park.", "Tadi malam aku bilang ke Luo Lan, katanya di sebelah barat sekolah ada taman besar, ada bukit dan air, indah sekali. Besok Sabtu, bagaimana kalau kita ke sana? Luo Lan bilang dia juga sedang ingin jalan-jalan di taman."),
+        L("我问罗兰怎么去，罗兰说，星期六坐公共汽车的人比较多，我们最好骑自行车去，还可以锻炼身体。", "Wǒ wèn Luólán zěnme qù, Luólán shuō, xīngqīliù zuò gōnggòng qìchē de rén bǐjiào duō, wǒmen zuìhǎo qí zìxíngchē qù, hái kěyǐ duànliàn shēntǐ.", "I asked how we'd go. She said lots of people take the bus on Saturdays, so we'd better cycle; it's exercise too.", "Aku tanya ke sana naik apa. Katanya hari Sabtu bus ramai, sebaiknya naik sepeda, sekalian olahraga."),
+        L("今天早上，我们起得很早，吃了早饭就出发了，半个小时就到公园了。", "Jīntiān zǎoshang, wǒmen qǐ de hěn zǎo, chī le zǎofàn jiù chūfā le, bàn ge xiǎoshí jiù dào gōngyuán le.", "This morning we got up early, set off right after breakfast, and reached the park in half an hour.", "Pagi ini kami bangun pagi, habis sarapan langsung berangkat, setengah jam sudah sampai taman."),
+        L("今天逛公园的人真多，买票要排队，我们排了五分钟才买到票。买了票我们就进去了。", "Jīntiān guàng gōngyuán de rén zhēn duō, mǎi piào yào páiduì, wǒmen pái le wǔ fēnzhōng cái mǎi dào piào. Mǎi le piào wǒmen jiù jìnqu le.", "There were so many people today that we had to queue; it took five minutes to get tickets. Then we went in.", "Pengunjung hari ini banyak sekali, beli tiket harus antre; lima menit baru dapat. Habis beli tiket kami langsung masuk."),
+      ], check=(("他们怎么去公园？", "骑自行车去。"), ("他们怎么去公园？", "骑自行车去。"))),
+    S("HOW", ("阅读: 逛公园 (2/2)", "阅读: 逛公园 (2/2)"), [
+        L("我和罗兰先爬山，爬了二十多分钟就爬到了山上。因为爬得太快了，我出了一身汗。从山上往下看，非常漂亮。", "Wǒ hé Luólán xiān pá shān, pá le èrshí duō fēnzhōng jiù pá dào le shān shang. Yīnwèi pá de tài kuài le, wǒ chū le yì shēn hàn. Cóng shān shang wǎng xià kàn, fēicháng piàoliang.", "Luo Lan and I climbed the hill first and reached the top in just over twenty minutes. I climbed so fast I was covered in sweat. The view from the top was beautiful.", "Aku dan Luo Lan mendaki bukit dulu, dua puluh menit lebih sudah sampai puncak. Karena terlalu cepat, aku berkeringat banyak. Dari atas pemandangannya indah sekali."),
+        L("山上有很多树，还有很多花儿。公园里有一个很大的湖。湖上有一座白色的桥。很多人在湖边散步，还有不少人在湖上划船。罗兰说，这个公园真大，真漂亮。", "Shān shang yǒu hěn duō shù, hái yǒu hěn duō huār. Gōngyuán lǐ yǒu yí ge hěn dà de hú. Hú shang yǒu yí zuò báisè de qiáo. Hěn duō rén zài hú biān sànbù, hái yǒu bù shǎo rén zài hú shang huá chuán. Luólán shuō, zhège gōngyuán zhēn dà, zhēn piàoliang.", "There were lots of trees and flowers on the hill. The park has a big lake with a white bridge. Many people were walking by the lake, and quite a few were rowing on it. Luo Lan said the park was really big and beautiful.", "Di bukit banyak pohon dan bunga. Di taman ada danau besar dengan jembatan putih. Banyak orang jalan-jalan di tepi danau, dan tidak sedikit yang mendayung perahu. Luo Lan bilang taman ini besar dan indah sekali."),
+        L("我和罗兰在山上照了很多相。照完相我们就下山了。我们在公园里玩儿了一个上午，看了很多地方。", "Wǒ hé Luólán zài shān shang zhào le hěn duō xiàng. Zhào wán xiàng wǒmen jiù xià shān le. Wǒmen zài gōngyuán lǐ wánr le yí ge shàngwǔ, kàn le hěn duō dìfang.", "We took lots of photos on the hill, then came down. We spent the whole morning in the park and saw many places.", "Kami banyak berfoto di bukit, lalu turun. Kami main di taman sepanjang pagi dan melihat banyak tempat."),
+        L("我对罗兰说，学校离这个公园不太远，可以经常骑车到这儿来玩儿。爬爬山，划划船，或者跟朋友一起来散散步，聊聊天儿。罗兰说，以后我们可以再来。", "Wǒ duì Luólán shuō, xuéxiào lí zhège gōngyuán bú tài yuǎn, kěyǐ jīngcháng qí chē dào zhèr lái wánr. Pápa shān, huáhua chuán, huòzhě gēn péngyou yìqǐ lái sànsan bù, liáoliao tiānr. Luólán shuō, yǐhòu wǒmen kěyǐ zài lái.", "I told Luo Lan the school isn't far, so we can often cycle here to climb, row, or walk and chat with friends. She said we can come again.", "Aku bilang ke Luo Lan, sekolah tidak jauh dari taman ini, jadi kita bisa sering naik sepeda ke sini: mendaki, mendayung, atau jalan-jalan dan ngobrol dengan teman. Luo Lan bilang lain kali kita bisa datang lagi."),
+      ], explain=("True or false (p. 84): \"我\"和罗兰坐公共汽车去公园玩儿了。✗ / \"我们\"排了五分钟才买到票。✓ / \"我们\"先爬山了，然后又划船了，还照了很多相。✗ / \"我们\"以后还会再去那个公园。✓",
+                  "Benar atau salah (hlm. 84): \"我\"和罗兰坐公共汽车去公园玩儿了。✗ / \"我们\"排了五分钟才买到票。✓ / \"我们\"先爬山了，然后又划船了，还照了很多相。✗ / \"我们\"以后还会再去那个公园。✓"),
+      check=(("他们在公园里玩儿了多长时间？", "一个上午。"), ("他们在公园里玩儿了多长时间？", "一个上午。"))),
+]
+
+QUIZ_NOTE = {
+    "en": "[NOTE] All exercises come from the teacher's slides: grammar, the 课文 stories, reading and fill-ins. For a fill-in, type the 汉字; punctuation does not matter.",
+    "id": "[NOTE] Semua latihan berasal dari slide guru: grammar, cerita 课文, bacaan, dan isian. Untuk soal isian, ketik 汉字; tanda baca tidak dihitung.",
+}
+
+QUIZ = [
+    # 比字句
+    Q("p. 53 比字句", ("Which sentence is correct?", "Kalimat mana yang benar?"), ["飞机比汽车很快。", "飞机比汽车快。", "飞机比汽车真快。"], 1,
+      ("No 很/真/非常 before the adjective in a 比 sentence.", "Tidak boleh 很/真/非常 sebelum kata sifat dalam kalimat 比.")),
+    Q("p. 57 比字句", ("Which sentence is correct?", "Kalimat mana yang benar?"), ["她比我唱歌唱得好。", "她唱歌唱得比我好。"], 1,
+      ("With an object, 比 only goes before the complement.", "Kalau ada objek, 比 hanya sebelum pelengkap.")),
+    Q("p. 60 比字句", ("Negative of 西瓜比苹果大。", "Bentuk negatif dari 西瓜比苹果大。"), ["苹果没有西瓜大。", "苹果不比西瓜大。", "西瓜不比苹果大。"], 0,
+      ("The negative uses 没有: B 没有 A + C.", "Negatif memakai 没有: B 没有 A + C.")),
+    Q("p. 60 比字句", ("A：我觉得你比麦克高。B：____ (you disagree)", "A：我觉得你比麦克高。B：____ (kamu membantah)"), ["我不比他高。", "我没有他高。"], 0,
+      ("不比 is only for disagreeing or refuting.", "不比 hanya untuk membantah.")),
+    F("p. 59 替换", ("A：那儿的气温有北京高吗？B：比北京____得多。", "A：那儿的气温有北京高吗？B：比北京____得多。"), ["高"], ("比北京高得多.", "比北京高得多.")),
+    F("p. 61 替换", ("A：这件大衣比那件贵吗？B：这件没有那件____。", "A：这件大衣比那件贵吗？B：这件没有那件____。"), ["贵"], ("B 没有 A + adj.", "B 没有 A + adj.")),
+    F("p. 64 练习", ("小张20岁，小李19岁，小王18岁。A：小张比小李大几岁？B：____", "小张20岁，小李19岁，小王18岁。A：小张比小李大几岁？B：____"), ["大一岁。", "大一岁", "一岁"], ("20 − 19 = 1.", "20 − 19 = 1.")),
+    F("p. 64 练习", ("小张20岁，小李19岁，小王18岁。A：谁最大？B：____", "小张20岁，小李19岁，小王18岁。A：谁最大？B：____"), ["小张最大。", "小张"], ("小张 is 20.", "小张 berumur 20.")),
+    F("p. 66 替换", ("A：你比你妹妹大多少？B：____(two years)", "A：你比你妹妹大多少？B：____(dua tahun)"), ["大两岁。", "大两岁"], ("adj. + 数量词.", "adj. + 数量词.")),
+    F("p. 67 填空", ("北京比我们那儿____。(a bit colder)", "北京比我们那儿____。(sedikit lebih dingin)"), ["冷一点儿"], ("冷一点儿.", "冷一点儿.")),
+    F("p. 67 填空", ("我姐姐比我____。(two years older)", "我姐姐比我____。(dua tahun lebih tua)"), ["大两岁"], ("大两岁.", "大两岁.")),
+    F("p. 67 填空", ("每天早上她都比我起得____。(much earlier)", "每天早上她都比我起得____。(jauh lebih pagi)"), ["早得多"], ("早得多.", "早得多.")),
+    F("p. 67 填空", ("他比我跑得____。(much faster)", "他比我跑得____。(jauh lebih cepat)"), ["快得多"], ("快得多.", "快得多.")),
+    F("p. 67 填空", ("这件羽绒服比那件____。(much more expensive)", "这件羽绒服比那件____。(jauh lebih mahal)"), ["贵得多"], ("贵得多.", "贵得多.")),
+    F("p. 67 填空", ("这件大衣的颜色比那件____。(a bit darker)", "这件大衣的颜色比那件____。(sedikit lebih gelap)"), ["深一点儿"], ("深一点儿.", "深一点儿.")),
+    F("p. 67 填空", ("明天上海的气温比北京____。(three degrees higher)", "明天上海的气温比北京____。(tiga derajat lebih tinggi)"), ["高三度"], ("高三度.", "高三度.")),
+    F("p. 67 填空", ("今天的气温比昨天____。(much higher)", "今天的气温比昨天____。(jauh lebih tinggi)"), ["高得多"], ("高得多.", "高得多.")),
+    F("p. 68 改错", ("Fix it: 他们的生活比以前很好。", "Perbaiki: 他们的生活比以前很好。"), ["他们的生活比以前好。"], ("No 很 in a 比 sentence.", "Tanpa 很 dalam kalimat 比.")),
+    F("p. 68 改错", ("Fix it: 玛丽考了成绩比我考了成绩好。", "Perbaiki: 玛丽考了成绩比我考了成绩好。"), ["玛丽考得比我好。"], ("A + V. + 得 + 比 + B + adj.", "A + V. + 得 + 比 + B + adj.")),
+    F("p. 68 改错", ("Fix it: 她说比我好得多。", "Perbaiki: 她说比我好得多。"), ["她说得比我好得多。"], ("A complement of state needs 得.", "Pelengkap keadaan perlu 得.")),
+    F("p. 68 改错", ("Fix it: 弟弟比我不高。", "Perbaiki: 弟弟比我不高。"), ["弟弟没有我高。"], ("Negative: 没有.", "Negatif: 没有.")),
+    F("p. 68 改错", ("Fix it: 他们比我们不来得早。", "Perbaiki: 他们比我们不来得早。"), ["他们没有我们来得早。"], ("Negative: 没有.", "Negatif: 没有.")),
+    F("p. 68 改错", ("Fix it: 麦克比我一点儿高。", "Perbaiki: 麦克比我一点儿高。"), ["麦克比我高一点儿。"], ("一点儿 goes after the adjective.", "一点儿 diletakkan sesudah kata sifat.")),
+    F("p. 69 练习", ("宿舍楼40米，教学楼60米。A：哪座楼高？B：____", "宿舍楼40米，教学楼60米。A：哪座楼高？B：____"), ["教学楼高。", "教学楼"], ("60 > 40.", "60 > 40.")),
+    F("p. 69 练习", ("宿舍楼40米，教学楼60米。A：____？B：教学楼比宿舍楼高20米。", "宿舍楼40米，教学楼60米。A：____？B：教学楼比宿舍楼高20米。"), ["教学楼比宿舍楼高多少米"], ("Ask with 多少米.", "Tanyakan dengan 多少米.")),
+    F("p. 70 练习", ("长江6300公里，黄河5464公里。A：黄河有长江长吗？B：____", "长江6300公里，黄河5464公里。A：黄河有长江长吗？B：____"), ["黄河没有长江长。", "黄河没有长江长"], ("没有 + B + adj.", "没有 + B + adj.")),
+    F("p. 70 练习", ("长江6300公里，黄河5464公里。A：长江比黄河长多少公里？B：长江比黄河长____。", "长江6300公里，黄河5464公里。A：长江比黄河长多少公里？B：长江比黄河长____。"), ["836公里", "八百三十六公里"], ("6300 − 5464 = 836.", "6300 − 5464 = 836.")),
+    F("p. 71 练习", ("这台电脑4000元，那台6000元。A：那台电脑有这台贵吗？B：____", "这台电脑4000元，那台6000元。A：那台电脑有这台贵吗？B：____"), ["那台电脑比这台电脑贵。", "那台电脑比这台贵"], ("6000 > 4000, so 比.", "6000 > 4000, jadi 比.")),
+    F("p. 72 练习", ("大箱子20公斤，小箱子15公斤。A：小箱子有大箱子重吗？B：____", "大箱子20公斤，小箱子15公斤。A：小箱子有大箱子重吗？B：____"), ["小箱子没有大箱子重。", "小箱子没有大箱子重"], ("没有 + B + adj.", "没有 + B + adj.")),
+    F("p. 73 练习", ("麦克八点起床，玛丽六点起床。A：麦克比玛丽起得早吗？B：____", "麦克八点起床，玛丽六点起床。A：麦克比玛丽起得早吗？B：____"), ["麦克没有玛丽起得早。", "麦克没有玛丽起得早"], ("没有 + B + V. + 得 + adj.", "没有 + B + V. + 得 + adj.")),
+    F("p. 73 练习", ("麦克八点起床，玛丽六点起床。A：麦克比玛丽晚起几个小时？B：____", "麦克八点起床，玛丽六点起床。A：麦克比玛丽晚起几个小时？B：____"), ["麦克比玛丽晚起两个小时。", "两个小时"], ("8 − 6 = 2.", "8 − 6 = 2.")),
+    Q("p. 77 感叹句", ("Which sentence is correct?", "Kalimat mana yang benar?"), ["他是一个真好的老师。", "他是一个很好的老师。"], 1,
+      ("Exclamations (真好) aren't used for objective description.", "Kalimat seru (真好) tidak untuk deskripsi objektif.")),
+    # 就/才/再/又 (p. 81)
+    F("p. 81 填空", ("爸爸每天都很晚____下班，今天下午五点____下班了。(two blanks)", "爸爸每天都很晚____下班，今天下午五点____下班了。(dua titik)"), ["才就", "才 就", "才，就"], ("Late: 才. Early: 就.", "Terlambat: 才. Awal: 就.")),
+    F("p. 81 填空", ("明天我下了课____去看她。", "明天我下了课____去看她。"), ["就"], ("v₁了……就 v₂.", "v₁了……就 v₂.")),
+    F("p. 81 填空", ("您的话我没听懂，请您____说一遍，好吗？", "您的话我没听懂，请您____说一遍，好吗？"), ["再"], ("Not repeated yet: 再.", "Belum diulang: 再.")),
+    F("p. 81 填空", ("老师____说了一遍，我____听懂。(two blanks)", "老师____说了一遍，我____听懂。(dua titik)"), ["又才", "又 才", "又，才"], ("Repeated already: 又. Only then: 才.", "Sudah diulang: 又. Baru: 才.")),
+    F("p. 81 填空", ("上星期我已经买了一本，今天我____买了一本。", "上星期我已经买了一本，今天我____买了一本。"), ["又"], ("Already happened: 又.", "Sudah terjadi: 又.")),
+    F("p. 81 填空", ("要是你不想看，我们____回学校吧。", "要是你不想看，我们____回学校吧。"), ["就"], ("要是……就…….", "要是……就…….")),
+    F("p. 81 填空", ("你怎么现在____来？晚会早____开始了。(two blanks)", "你怎么现在____来？晚会早____开始了。(dua titik)"), ["才就", "才 就", "才，就"], ("Late: 才. Long ago: 早就.", "Terlambat: 才. Sudah lama: 早就.")),
+    # 结果补语 review (p. 82)
+    F("p. 82 填空", ("这课的语法你听____了没有？", "这课的语法你听____了没有？"), ["懂"], ("听懂.", "听懂.")),
+    F("p. 82 填空", ("对不起，我正听录音呢，没听____。", "对不起，我正听录音呢，没听____。"), ["见"], ("听见.", "听见.")),
+    F("p. 82 填空", ("快开____窗户吧，屋子里太热了。", "快开____窗户吧，屋子里太热了。"), ["开"], ("开开窗户.", "开开窗户.")),
+    F("p. 82 填空", ("关____电视吧，已经十二点了。", "关____电视吧，已经十二点了。"), ["上"], ("关上.", "关上.")),
+    F("p. 82 填空", ("我给你的书你看____了没有？", "我给你的书你看____了没有？"), ["完"], ("看完.", "看完.")),
+    # Vocabulary fill-in (p. 40)
+    F("p. 40 填空", ("他____喜欢看足球比赛。", "他____喜欢看足球比赛。"), ["最"], ("最 + 心理动词.", "最 + 心理动词.")),
+    F("p. 40 填空", ("我们国家的冬天比这儿____。", "我们国家的冬天比这儿____。"), ["暖和"], ("比这儿暖和.", "比这儿暖和.")),
+    F("p. 40 填空", ("我们班又____了两个新同学。", "我们班又____了两个新同学。"), ["增加"], ("增加.", "增加.")),
+    F("p. 40 填空", ("他是一个足球____，要是晚上电视里有足球比赛，他可以不睡觉。", "他是一个足球____，要是晚上电视里有足球比赛，他可以不睡觉。"), ["迷"], ("足球迷.", "足球迷.")),
+    F("p. 40 填空", ("我没有你那么喜欢民歌，我喜欢____歌曲。", "我没有你那么喜欢民歌，我喜欢____歌曲。"), ["流行"], ("流行歌曲.", "流行歌曲.")),
+    F("p. 40 填空", ("这是一首世界____。", "这是一首世界____。"), ["名曲"], ("世界名曲.", "世界名曲.")),
+    F("p. 40 填空", ("天气预报说，今天最高____是零下一度。", "天气预报说，今天最高____是零下一度。"), ["气温"], ("最高气温.", "最高气温.")),
+    F("p. 40 填空", ("天气____说得不一定对。", "天气____说得不一定对。"), ["预报"], ("天气预报.", "天气预报.")),
+    # 课文 (story)
+    F("p. 23 课文", ("田芳暑假去哪儿了？玩儿了多久？", "田芳暑假去哪儿了？玩儿了多久？"), ["她去了上海。在那儿玩儿了一个多月。"], ("今年暑假我还在那儿玩儿了一个多月呢。", "今年暑假我还在那儿玩儿了一个多月呢。")),
+    Q("p. 23 课文", ("为什么田芳说上海的冬天没有北京暖和？", "为什么田芳说上海的冬天没有北京暖和？"), ["因为上海的屋子里没有暖气。", "因为上海的气温比北京低。", "因为上海人口多。"], 0,
+      ("因为屋子里没有暖气，所以感觉还没有北京暖和。", "因为屋子里没有暖气，所以感觉还没有北京暖和。")),
+    Q("p. 23 课文", ("判断: 北京的人口比上海多。", "Benar/salah: 北京的人口比上海多。"), [("True", "Benar"), ("False", "Salah")], 1,
+      ("上海是中国人口最多的城市。", "上海是中国人口最多的城市。")),
+    Q("p. 23 课文", ("判断: 北京的公园比上海的多，但是比上海的小。", "Benar/salah: 北京的公园比上海的多，但是比上海的小。"), [("True", "Benar"), ("False", "Salah")], 1,
+      ("Beijing's parks are more numerous and bigger.", "Taman Beijing lebih banyak dan lebih besar.")),
+    F("p. 24 填空", ("田芳：上海很好，这几年____很大。", "田芳：上海很好，这几年____很大。"), ["变化"], ("变化很大.", "变化很大.")),
+    F("p. 24 填空", ("山本：上海____北京大吧？", "山本：上海____北京大吧？"), ["比"], ("A 比 B + adj.", "A 比 B + adj.")),
+    F("p. 24 填空", ("上海是中国人口____多的城市。", "上海是中国人口____多的城市。"), ["最"], ("最多.", "最多.")),
+    F("p. 24 填空", ("这几年，____了不少新____，现在比____变得____了。(four blanks)", "这几年，____了不少新____，现在比____变得____了。(empat titik)"), ["增加建筑过去更漂亮", "增加 建筑 过去 更漂亮"], ("增加 / 建筑 / 过去 / 更漂亮.", "增加 / 建筑 / 过去 / 更漂亮.")),
+    F("p. 25 填空", ("山本：____，我看____，上海的____比北京高得多。(three blanks)", "山本：____，我看____，上海的____比北京高得多。(tiga titik)"), ["可是天气预报气温", "可是 天气预报 气温"], ("可是 / 天气预报 / 气温.", "可是 / 天气预报 / 气温.")),
+    F("p. 25 填空", ("田芳：____的家庭没有，不过____和____里有。(three blanks)", "田芳：____的家庭没有，不过____和____里有。(tiga titik)"), ["一般旅馆饭店", "一般 旅馆 饭店"], ("一般 / 旅馆 / 饭店.", "一般 / 旅馆 / 饭店.")),
+    F("p. 45 课文", ("王老师下载了多少交响乐？", "王老师下载了多少交响乐？"), ["好几百首。", "好几百首"], ("光交响乐就下载了好几百首呢。", "光交响乐就下载了好几百首呢。")),
+    Q("p. 45 课文", ("王老师喜欢听什么音乐？", "王老师喜欢听什么音乐？"), ["喜欢听古典音乐，比如世界名曲和民歌。", "喜欢听流行歌曲。", "喜欢听现代音乐。"], 0,
+      ("我喜欢古典音乐。喜欢听世界名曲，还喜欢听民歌。", "我喜欢古典音乐。喜欢听世界名曲，还喜欢听民歌。")),
+    Q("p. 45 课文", ("王老师喜欢不喜欢流行歌曲？", "王老师喜欢不喜欢流行歌曲？"), ["喜欢，但是没有年轻人那么喜欢。", "非常喜欢。", "完全不喜欢。"], 0,
+      ("可能没有你们年轻人那么喜欢。", "可能没有你们年轻人那么喜欢。")),
+    F("p. 45 课文", ("王老师觉得流行歌曲歌词和民歌歌词哪个写得好？", "王老师觉得流行歌曲歌词和民歌歌词哪个写得好？"), ["他觉得民歌歌词写得更好。", "民歌歌词写得更好", "民歌"], ("我还是觉得民歌的歌词好。", "我还是觉得民歌的歌词好。")),
+    F("p. 46 填空", ("王老师：我是个音乐____，我电脑里，____交响乐就____了好几百____呢。(four blanks)", "王老师：我是个音乐____，我电脑里，____交响乐就____了好几百____呢。(empat titik)"), ["迷光下载首", "迷 光 下载 首"], ("迷 / 光 / 下载 / 首.", "迷 / 光 / 下载 / 首.")),
+    F("p. 46 填空", ("林老师：我也很喜欢音乐，____比你更喜欢。", "林老师：我也很喜欢音乐，____比你更喜欢。"), ["也许"], ("也许: maybe.", "也许: mungkin.")),
+    F("p. 46 填空", ("你听咱们的民歌，\"在那____的地方……\",写得多好！", "你听咱们的民歌，\"在那____的地方……\",写得多好！"), ["遥远"], ("遥远的地方.", "遥远的地方.")),
+    # 阅读 (reading)
+    Q("p. 84 阅读", ("判断: \"我\"和罗兰坐公共汽车去公园玩儿了。", "Benar/salah: \"我\"和罗兰坐公共汽车去公园玩儿了。"), [("True", "Benar"), ("False", "Salah")], 1,
+      ("They cycled (骑自行车去).", "Mereka naik sepeda (骑自行车去).")),
+    Q("p. 84 阅读", ("判断: \"我们\"排了五分钟才买到票。", "Benar/salah: \"我们\"排了五分钟才买到票。"), [("True", "Benar"), ("False", "Salah")], 0,
+      ("我们排了五分钟才买到票。", "我们排了五分钟才买到票。")),
+    Q("p. 84 阅读", ("判断: \"我们\"先爬山了，然后又划船了，还照了很多相。", "Benar/salah: \"我们\"先爬山了，然后又划船了，还照了很多相。"), [("True", "Benar"), ("False", "Salah")], 1,
+      ("They didn't row; other people did.", "Mereka tidak mendayung; orang lain yang mendayung.")),
+    Q("p. 84 阅读", ("判断: \"我们\"以后还会再去那个公园。", "Benar/salah: \"我们\"以后还会再去那个公园。"), [("True", "Benar"), ("False", "Salah")], 0,
+      ("罗兰说，以后我们可以再来。", "罗兰说，以后我们可以再来。")),
+]

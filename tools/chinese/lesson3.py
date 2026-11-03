@@ -1,0 +1,403 @@
+"""Lesson 3 第3课 我吃了早饭就来了. Source: Compre Chapter 3.pdf (83 pages)."""
+from cclib import L, S, Q, W, F
+
+CHAPTER = {"en": "第3课 我吃了早饭就来了 (I came right after breakfast)",
+           "id": "第3课 我吃了早饭就来了 (Saya langsung datang habis sarapan)"}
+
+NONE = ("", "")
+V, N = ("v. · verb", "v. · kata kerja"), ("n. · noun", "n. · kata benda")
+
+SLIDES = [
+    S("WHAT", ("[ADDED] How to Read This Lesson", "[ADDED] Cara Membaca Pelajaran Ini"), [], intro=(
+        "As before: the 汉字, word pinyin and English word meanings come from the teacher's slides.\n"
+        "[ADDED] for this site: sentence pinyin and all sentence translations. Check them with your teacher.",
+        "Sama seperti sebelumnya: 汉字, pinyin kosakata, dan arti kata bahasa Inggris berasal dari slide guru.\n"
+        "[ADDED] untuk situs ini: pinyin kalimat dan semua terjemahan kalimat. Cek lagi dengan gurumu."),
+      check=(("Which pinyin comes from the teacher's slides?", "The vocabulary pinyin."),
+             ("Pinyin mana yang berasal dari slide guru?", "Pinyin kosakata."))),
+    S("WHY", ("Warm-up: Where Do You Live?", "Pemanasan: Kamu Tinggal di Mana?"), [
+        L("你现在住哪？学校还是学校外面？", "Nǐ xiànzài zhù nǎ? Xuéxiào háishi xuéxiào wàimiàn?", "Where do you live now? On campus or off campus?", "Sekarang kamu tinggal di mana? Di kampus atau di luar kampus?"),
+        L("离学校远吗？", "Lí xuéxiào yuǎn ma?", "Is it far from school?", "Jauh dari kampus?"),
+        L("你喜欢现在的房子吗？", "Nǐ xǐhuan xiànzài de fángzi ma?", "Do you like where you live now?", "Kamu suka rumahmu yang sekarang?"),
+        L("如果你以后要搬家/租房子/买房子，你喜欢哪一个？为什么？", "Rúguǒ nǐ yǐhòu yào bānjiā / zū fángzi / mǎi fángzi, nǐ xǐhuan nǎ yí ge? Wèi shénme?", "If you move / rent / buy a home later, which would you like? Why?", "Kalau nanti kamu pindah / sewa / beli rumah, kamu suka yang mana? Kenapa?"),
+      ], check=(("Answer: 离学校远吗？", "Your own answer, e.g. 不远。/ 很远。"), ("Jawab: 离学校远吗？", "Jawabanmu sendiri, misalnya 不远。/ 很远。"))),
+
+    # New words (1) ----------------------------------------------------------------------------
+    S("WHAT", ("套 tào and 房子 fángzi", "套 tào dan 房子 fángzi"), [
+        L("三套衣服 / 一套试卷 / 一套家具", "sān tào yīfu / yí tào shìjuàn / yí tào jiājù", "three sets of clothes / a set of test papers / a set of furniture", "tiga setel baju / satu set soal ujian / satu set perabot"),
+        L("一套房子", "yí tào fángzi", "a flat", "sebuah rumah/apartemen"),
+        L("很多来中国留学的同学都需要租房子。", "Hěn duō lái Zhōngguó liúxué de tóngxué dōu xūyào zū fángzi.", "Many students who come to study in China need to rent a place.", "Banyak mahasiswa yang kuliah di Tiongkok perlu menyewa tempat tinggal."),
+      ], word=[W("套", "tào", NONE, ("set; suite", "set; setel (kata satuan)")), W("房子", "fángzi", NONE, ("house; flat", "rumah; apartemen"))],
+      check=(("Which measure word goes with 房子？", "套: 一套房子"), ("Kata satuan apa yang dipakai untuk 房子？", "套: 一套房子"))),
+    S("WHAT", ("满意 mǎnyì: Satisfied", "满意 mǎnyì: Puas"), [
+        L("对考试结果很满意", "duì kǎoshì jiéguǒ hěn mǎnyì", "very satisfied with the exam result", "sangat puas dengan hasil ujian"),
+        L("对这套房子不太满意", "duì zhè tào fángzi bú tài mǎnyì", "not very satisfied with this flat", "kurang puas dengan rumah ini"),
+      ], word=[W("满意", "mǎnyì", NONE, ("satisfied", "puas"))],
+      intro=("Pattern: 对……满意.", "Pola: 对……满意."),
+      check=(("Say \"satisfied with this flat\".", "对这套房子很满意"), ("Katakan \"puas dengan rumah ini\".", "对这套房子很满意"))),
+    S("WHAT", ("有的 yǒude: Some", "有的 yǒude: Ada yang"), [
+        L("下课了，有的同学在看书，有的同学在写字。", "Xiàkè le, yǒude tóngxué zài kàn shū, yǒude tóngxué zài xiě zì.", "Class is over: some students are reading, some are writing.", "Kelas selesai: ada yang membaca, ada yang menulis."),
+        L("操场上有的同学在跑步，有的同学在踢足球。", "Cāochǎng shang yǒude tóngxué zài pǎobù, yǒude tóngxué zài tī zúqiú.", "On the field some students are running and some are playing football.", "Di lapangan ada yang lari, ada yang main sepak bola."),
+      ], word=[W("有的", "yǒude", NONE, ("some", "sebagian, ada yang"))],
+      intro=("Pattern: 有的……有的…….", "Pola: 有的……有的……."),
+      check=(("Say \"some are reading, some are writing\".", "有的在看书，有的在写字。"), ("Katakan \"ada yang membaca, ada yang menulis\".", "有的在看书，有的在写字。"))),
+    S("WHAT", ("周围 zhōuwéi, 环境 huánjìng, 乱 luàn", "周围 zhōuwéi, 环境 huánjìng, 乱 luàn"), [
+        L("我家周围有书店。", "Wǒ jiā zhōuwéi yǒu shūdiàn.", "There's a bookshop near my home.", "Di sekitar rumah saya ada toko buku."),
+        L("学校周围有很多好吃的。", "Xuéxiào zhōuwéi yǒu hěn duō hǎochī de.", "There's lots of good food around the school.", "Di sekitar sekolah banyak makanan enak."),
+        L("这周围环境太乱了，我不喜欢。", "Zhè zhōuwéi huánjìng tài luàn le, wǒ bù xǐhuan.", "The area around here is too messy. I don't like it.", "Lingkungan sekitar sini terlalu berantakan. Saya tidak suka."),
+      ], word=[W("周围", "zhōuwéi", NONE, ("around", "sekitar")), W("环境", "huánjìng", NONE, ("environment", "lingkungan")), W("乱", "luàn", NONE, ("messy", "berantakan"))],
+      check=(("Translate: 环境太乱了。", "The environment is too messy."), ("Terjemahkan: 环境太乱了。", "Lingkungannya terlalu berantakan."))),
+    S("WHAT", ("厨房, 卧室, 客厅", "厨房, 卧室, 客厅"), [
+        L("我在厨房做饭。", "Wǒ zài chúfáng zuò fàn.", "I cook in the kitchen.", "Saya masak di dapur."),
+        L("卧室里有一张床。", "Wòshì lǐ yǒu yì zhāng chuáng.", "There's a bed in the bedroom.", "Di kamar tidur ada sebuah ranjang."),
+        L("我们在客厅聊天。", "Wǒmen zài kètīng liáotiān.", "We chat in the living room.", "Kami mengobrol di ruang tamu."),
+      ], word=[W("厨房", "chúfáng", NONE, ("kitchen", "dapur")), W("卧室", "wòshì", NONE, ("bedroom", "kamar tidur")), W("客厅", "kètīng", NONE, ("living room", "ruang tamu"))],
+      check=(("Where do you cook?", "在厨房。"), ("Di mana kamu memasak?", "在厨房。"))),
+    S("WHAT", ("面积, 平（方）米, 层", "面积, 平（方）米, 层"), [
+        L("卧室面积很大。", "Wòshì miànjī hěn dà.", "The bedroom is very big.", "Kamar tidurnya luas sekali."),
+        L("厨房面积太小了。", "Chúfáng miànjī tài xiǎo le.", "The kitchen is too small.", "Dapurnya terlalu sempit."),
+        L("卧室A面积有15.4平方米。", "Wòshì A miànjī yǒu shíwǔ diǎn sì píngfāngmǐ.", "Bedroom A is 15.4 square metres.", "Luas kamar tidur A 15,4 meter persegi."),
+        L("第4层的客厅面积是30平方米。", "Dì-sì céng de kètīng miànjī shì sānshí píngfāngmǐ.", "The living room on the 4th floor is 30 square metres.", "Ruang tamu di lantai 4 luasnya 30 meter persegi."),
+      ], word=[W("面积", "miànjī", NONE, ("area", "luas")), W("平（方）米", "píng(fāng)mǐ", NONE, ("sq.m.", "meter persegi")), W("层", "céng", NONE, ("floor; storey", "lantai, tingkat"))],
+      check=(("Say \"30 square metres\".", "三十平方米"), ("Katakan \"30 meter persegi\".", "三十平方米"))),
+    S("WHAT", ("上去 shàngqu and 阳光 yángguāng", "上去 shàngqu dan 阳光 yángguāng"), [
+        L("A5的电梯坏了，我们只能走上去。", "A5 de diàntī huài le, wǒmen zhǐ néng zǒu shàngqu.", "The lift in A5 is broken, so we have to walk up.", "Lift di A5 rusak, jadi kita harus jalan naik."),
+        L("植物的生长需要阳光。", "Zhíwù de shēngzhǎng xūyào yángguāng.", "Plants need sunlight to grow.", "Tumbuhan butuh sinar matahari untuk tumbuh."),
+      ], word=[W("上去", "shàngqu", NONE, ("go up", "naik (ke atas)")), W("阳光", "yángguāng", NONE, ("sunshine", "sinar matahari"))],
+      check=(("Say \"walk up\".", "走上去"), ("Katakan \"jalan naik\".", "走上去"))),
+    S("WHAT", ("还是 háishi: Had Better", "还是 háishi: Lebih Baik"), [
+        L("他还是喜欢客厅面积大的。", "Tā háishi xǐhuan kètīng miànjī dà de.", "In the end he still prefers one with a big living room.", "Akhirnya dia tetap lebih suka yang ruang tamunya luas."),
+        L("我还是想一个人住一个房间，不愿意跟别人一起住。", "Wǒ háishi xiǎng yí ge rén zhù yí ge fángjiān, bú yuànyì gēn biérén yìqǐ zhù.", "I'd still rather have a room of my own than share.", "Saya tetap lebih mau tinggal sendiri satu kamar, tidak mau berbagi."),
+      ], word=[W("还是", "háishi", NONE, ("had better", "lebih baik; tetap"))],
+      intro=("还是: a choice made after comparison (比较之后做出选择).", "还是: pilihan sesudah membandingkan (比较之后做出选择)."),
+      check=(("When do you use this 还是？", "After comparing, to give your choice."), ("Kapan 还是 ini dipakai?", "Sesudah membandingkan, untuk menyatakan pilihan."))),
+
+    # Text (1) ---------------------------------------------------------------------------------
+    S("HOW", ("课文（一） 我吃了早饭就来了 (1/3)", "课文（一） 我吃了早饭就来了 (1/3)"), [
+        L("业务员：张先生，这么早！", "Yèwùyuán: Zhāng xiānsheng, zhème zǎo!", "Agent: Mr Zhang, you're early!", "Agen: Pak Zhang, pagi sekali!"),
+        L("小张：是啊。我吃了早饭就来了。", "Xiǎo Zhāng: Shì a. Wǒ chī le zǎofàn jiù lái le.", "Xiao Zhang: Yes. I came right after breakfast.", "Xiao Zhang: Iya. Habis sarapan saya langsung datang."),
+        L("业务员：我也是。接了您的电话，八点半就到这儿了。上次您看了几套房子？", "Yèwùyuán: Wǒ yě shì. Jiē le nín de diànhuà, bā diǎn bàn jiù dào zhèr le. Shàng cì nín kàn le jǐ tào fángzi?", "Agent: Me too. After your call I was here by 8:30. How many flats did you see last time?", "Agen: Saya juga. Habis terima telepon Bapak, jam setengah sembilan saya sudah di sini. Kemarin Bapak lihat berapa rumah?"),
+        L("小张：看了三套，都不太满意。有的太小，有的周围环境太乱。", "Xiǎo Zhāng: Kàn le sān tào, dōu bú tài mǎnyì. Yǒude tài xiǎo, yǒude zhōuwéi huánjìng tài luàn.", "Xiao Zhang: Three, and I wasn't happy with any. Some were too small, some were in messy areas.", "Xiao Zhang: Tiga, dan semuanya kurang memuaskan. Ada yang terlalu kecil, ada yang lingkungannya berantakan."),
+        L("业务员：我再带您去看几套吧。", "Yèwùyuán: Wǒ zài dài nín qù kàn jǐ tào ba.", "Agent: Let me show you a few more.", "Agen: Mari saya antar lihat beberapa lagi."),
+      ], intro=("小张住的地方离公司太远，他想租一套近点儿的房子。今天他休息，又去看房子了……",
+                "小张住的地方离公司太远，他想租一套近点儿的房子。今天他休息，又去看房子了……"),
+      explain=("Xiao Zhang lives too far from his company, so he wants to rent somewhere closer. Today is his day off, and he goes flat-hunting again.",
+               "Tempat tinggal Xiao Zhang terlalu jauh dari kantor, jadi dia mau menyewa yang lebih dekat. Hari ini dia libur dan pergi melihat rumah lagi."),
+      check=(("小张上次看了几套房子？", "三套。"), ("小张上次看了几套房子？", "三套。"))),
+    S("HOW", ("课文（一） 我吃了早饭就来了 (2/3)", "课文（一） 我吃了早饭就来了 (2/3)"), [
+        L("小张：这几套房子，厨房、卧室还可以，但是客厅面积小了点儿。有没有大一点儿的？", "Xiǎo Zhāng: Zhè jǐ tào fángzi, chúfáng, wòshì hái kěyǐ, dànshì kètīng miànjī xiǎo le diǎnr. Yǒu méiyǒu dà yìdiǎnr de?", "Xiao Zhang: (after seeing a few) These kitchens and bedrooms are OK, but the living rooms are a bit small. Is there a bigger one?", "Xiao Zhang: (sesudah melihat beberapa) Dapur dan kamar tidurnya lumayan, tapi ruang tamunya agak kecil. Ada yang lebih besar?"),
+        L("业务员：有，楼上18层有一套，客厅30多平（方）米。咱们上去看看吧……", "Yèwùyuán: Yǒu, lóu shang shíbā céng yǒu yí tào, kètīng sānshí duō píng(fāng)mǐ. Zánmen shàngqu kànkan ba……", "Agent: Yes, there's one upstairs on the 18th floor with a living room of over 30 square metres. Let's go up and see.", "Agen: Ada, di lantai 18 ada satu, ruang tamunya lebih dari 30 meter persegi. Ayo kita naik lihat."),
+      ], check=(("小张对哪里不满意？", "客厅面积小了点儿。"), ("小张对哪里不满意？", "客厅面积小了点儿。"))),
+    S("HOW", ("课文（一） 我吃了早饭就来了 (3/3)", "课文（一） 我吃了早饭就来了 (3/3)"), [
+        L("小张：这套房子下午就没有阳光了吧？", "Xiǎo Zhāng: Zhè tào fángzi xiàwǔ jiù méiyǒu yángguāng le ba?", "Xiao Zhang: This flat gets no sun in the afternoon, does it?", "Xiao Zhang: Rumah ini sore hari tidak kena matahari, ya?"),
+        L("业务员：是的。", "Yèwùyuán: Shì de.", "Agent: That's right.", "Agen: Betul."),
+        L("小张：我还是想要上下午都有阳光的。", "Xiǎo Zhāng: Wǒ háishi xiǎng yào shàng xiàwǔ dōu yǒu yángguāng de.", "Xiao Zhang: I'd still rather have one that gets sun both morning and afternoon.", "Xiao Zhang: Saya tetap lebih mau yang kena matahari pagi dan sore."),
+      ], explain=("Answers from p. 22: 三套。/ 不太满意。有的太小，有的周围的环境太乱。/ 还是不满意。/ 客厅大一点的，房子上午下午都有阳光的。",
+                  "Jawaban dari hlm. 22: 三套。/ 不太满意。有的太小，有的周围的环境太乱。/ 还是不满意。/ 客厅大一点的，房子上午下午都有阳光的。"),
+      check=(("小张想要什么样的房子？", "客厅大一点的，上午下午都有阳光的。"), ("小张想要什么样的房子？", "客厅大一点的，上午下午都有阳光的。"))),
+    S("WHAT", ("adj.+了（一）点儿: A Bit Too …", "adj.+了（一）点儿: Agak Terlalu …"), [
+        L("这种毛衣八百块一件，贵了点儿。", "Zhè zhǒng máoyī bābǎi kuài yí jiàn, guì le diǎnr.", "This sweater is 800 yuan: a bit too expensive.", "Sweter ini 800 yuan sepotong, agak kemahalan."),
+        L("这个语法难了点儿。", "Zhège yǔfǎ nán le diǎnr.", "This grammar is a bit too hard.", "Tata bahasa ini agak terlalu sulit."),
+        L("房间里黑了点儿，可以开灯吗？", "Fángjiān lǐ hēi le diǎnr, kěyǐ kāi dēng ma?", "It's a bit too dark in the room. Can I turn on the light?", "Kamarnya agak gelap, boleh nyalakan lampu?"),
+        L("客厅面积小了点儿。", "Kètīng miànjī xiǎo le diǎnr.", "The living room is a bit small.", "Ruang tamunya agak kecil."),
+      ], intro=("Compared with a standard, the degree is not right: it shows dissatisfaction (不满意，不合适).",
+                "Dibanding standar tertentu, tingkatnya kurang pas: menunjukkan rasa tidak puas (不满意，不合适)."),
+      check=(("Say \"a bit too expensive\".", "贵了点儿"), ("Katakan \"agak kemahalan\".", "贵了点儿"))),
+
+    # New words (2) ----------------------------------------------------------------------------
+    S("WHAT", ("妻子 qīzi and 堵车 dǔchē", "妻子 qīzi dan 堵车 dǔchē"), [
+        L("妻子 + 丈夫 = 夫妻", "qīzi + zhàngfu = fūqī", "wife + husband = married couple", "istri + suami = pasangan suami istri"),
+        L("堵车堵得厉害。", "Dǔchē dǔ de lìhai.", "The traffic is terrible.", "Macetnya parah."),
+        L("堵了2个小时车。", "Dǔ le liǎng ge xiǎoshí chē.", "We were stuck in traffic for 2 hours.", "Terjebak macet 2 jam."),
+        L("路上堵了很多车。", "Lùshang dǔ le hěn duō chē.", "Lots of cars are stuck on the road.", "Banyak mobil terjebak macet di jalan."),
+      ], word=[W("妻子", "qīzi", NONE, ("wife", "istri")), W("堵车", "dǔchē", NONE, ("traffic jam", "macet"))],
+      explain=("堵车 is a separable word: other words can go between 堵 and 车 (堵了2个小时车).", "堵车 adalah kata yang bisa dipisah: kata lain bisa masuk di antara 堵 dan 车 (堵了2个小时车)."),
+      check=(("Say \"the traffic is terrible\".", "堵车堵得厉害。"), ("Katakan \"macetnya parah\".", "堵车堵得厉害。"))),
+    S("WHAT", ("赶 gǎn: To Hurry", "赶 gǎn: Bergegas"), [
+        L("往回赶 / 往家赶 / 往公司赶", "wǎng huí gǎn / wǎng jiā gǎn / wǎng gōngsī gǎn", "hurry back / hurry home / hurry to the office", "bergegas pulang / bergegas ke rumah / bergegas ke kantor"),
+        L("赶去报名 / 赶去检查身体", "gǎn qù bàomíng / gǎn qù jiǎnchá shēntǐ", "hurry to sign up / hurry to a check-up", "bergegas mendaftar / bergegas periksa kesehatan"),
+        L("赶地铁 / 赶公交 / 赶飞机", "gǎn dìtiě / gǎn gōngjiāo / gǎn fēijī", "rush to catch the subway / bus / plane", "mengejar kereta bawah tanah / bus / pesawat"),
+      ], word=[W("赶", "gǎn", NONE, ("to hurry", "bergegas, mengejar"))],
+      intro=("Patterns: 往……赶 and 赶（着）去 do sth.", "Pola: 往……赶 dan 赶（着）去 melakukan sesuatu."),
+      check=(("Say \"hurry home\".", "往家赶"), ("Katakan \"bergegas pulang ke rumah\".", "往家赶"))),
+    S("WHAT", ("才 cái: Just, Only Then", "才 cái: Baru"), [
+        L("怎么现在才下班？", "Zěnme xiànzài cái xiàbān?", "Why are you only finishing work now?", "Kok baru pulang kerja sekarang?"),
+        L("现在才到家。", "Xiànzài cái dào jiā.", "I've only just got home.", "Baru sampai rumah sekarang."),
+      ], word=[W("才", "cái", NONE, ("just", "baru"))],
+      intro=("Pattern: 才+V.", "Pola: 才+V."),
+      check=(("Translate: 现在才到家。", "I've only just got home."), ("Terjemahkan: 现在才到家。", "Baru sampai rumah sekarang."))),
+    S("WHAT", ("要是 yàoshi and 虽然 suīrán", "要是 yàoshi dan 虽然 suīrán"), [
+        L("要是你来了，我就去接你。", "Yàoshi nǐ lái le, wǒ jiù qù jiē nǐ.", "If you come, I'll pick you up.", "Kalau kamu datang, saya jemput."),
+        L("要是下雨，我们就不出去了。", "Yàoshi xià yǔ, wǒmen jiù bù chūqu le.", "If it rains, we won't go out.", "Kalau hujan, kita tidak jadi keluar."),
+        L("这件衣服要是贵，就不买了。", "Zhè jiàn yīfu yàoshi guì, jiù bù mǎi le.", "If these clothes are expensive, I won't buy them.", "Kalau baju ini mahal, tidak usah beli."),
+        L("这个房子虽然贵，但是环境好。", "Zhège fángzi suīrán guì, dànshì huánjìng hǎo.", "This flat is expensive, but the area is nice.", "Rumah ini memang mahal, tapi lingkungannya bagus."),
+        L("今天虽然累，但是玩的很开心。", "Jīntiān suīrán lèi, dànshì wán de hěn kāixīn.", "I was tired today, but I had a lot of fun.", "Hari ini memang capek, tapi mainnya seru."),
+      ], word=[W("要是", "yàoshi", NONE, ("if; in case", "kalau; seandainya")), W("虽然", "suīrán", NONE, ("although", "walaupun, meskipun"))],
+      intro=("Patterns: 要是……,就…… and 虽然……但（是）…….", "Pola: 要是……,就…… dan 虽然……但（是）……."),
+      explain=("[NOTE] p. 33 writes 玩的很开心. In standard writing a complement takes 得: 玩得很开心.", "[NOTE] Hlm. 33 menulis 玩的很开心. Dalam tulisan baku, pelengkap memakai 得: 玩得很开心."),
+      check=(("Say \"if it rains, we won't go out\".", "要是下雨，我们就不出去了。"), ("Katakan \"kalau hujan, kita tidak jadi keluar\".", "要是下雨，我们就不出去了。"))),
+    S("WHAT", ("租 zū, 房租 fángzū, 真 zhēn", "租 zū, 房租 fángzū, 真 zhēn"), [
+        L("租一套房子 / 租一辆车", "zū yí tào fángzi / zū yí liàng chē", "rent a flat / rent a car", "menyewa rumah / menyewa mobil"),
+        L("交房租 / 这儿房租很贵。", "jiāo fángzū / Zhèr fángzū hěn guì.", "pay the rent / The rent here is high.", "bayar sewa / Sewa di sini mahal."),
+        L("房租包括水费吗？", "Fángzū bāokuò shuǐfèi ma?", "Does the rent include water?", "Sewanya sudah termasuk air?"),
+        L("真的吗？/ 这套房子真好。/ 时间过得真快。", "Zhēn de ma? / Zhè tào fángzi zhēn hǎo. / Shíjiān guò de zhēn kuài.", "Really? / This flat is really nice. / Time really flies.", "Masa? / Rumah ini bagus sekali. / Waktu cepat sekali berlalu."),
+        L("你长得真帅/美/漂亮。", "Nǐ zhǎng de zhēn shuài / měi / piàoliang.", "You're really handsome / beautiful / pretty.", "Kamu ganteng / cantik / cantik sekali."),
+      ], word=[W("租", "zū", V, ("to rent", "menyewa")), W("房租", "fángzū", N, ("rent; rental", "uang sewa")), W("真", "zhēn", NONE, ("really; true", "sungguh; benar"))],
+      intro=("Pattern: 真+adj.", "Pola: 真+adj."),
+      check=(("Say \"the rent here is high\".", "这儿房租很贵。"), ("Katakan \"sewa di sini mahal\".", "这儿房租很贵。"))),
+    S("WHAT", ("条 tiáo and 河 hé", "条 tiáo dan 河 hé"), [
+        L("这条路 / 一条腿 / 一条鱼 / 那条裤子", "zhè tiáo lù / yì tiáo tuǐ / yì tiáo yú / nà tiáo kùzi", "this road / a leg / a fish / those trousers", "jalan ini / satu kaki / seekor ikan / celana itu"),
+        L("一条河", "yì tiáo hé", "a river", "sebuah sungai"),
+        L("这条河很干净。", "Zhè tiáo hé hěn gānjìng.", "This river is very clean.", "Sungai ini bersih sekali."),
+        L("我们去河边走走。", "Wǒmen qù hé biān zǒuzou.", "Let's take a walk by the river.", "Ayo jalan-jalan di tepi sungai."),
+      ], word=[W("条", "tiáo", NONE, ("a measure word", "kata satuan (untuk benda panjang)")), W("河", "hé", NONE, ("river", "sungai"))],
+      check=(("Which measure word goes with 河？", "条: 一条河"), ("Kata satuan apa yang dipakai untuk 河？", "条: 一条河"))),
+    S("WHAT", ("方便 fāngbiàn and 交通 jiāotōng", "方便 fāngbiàn dan 交通 jiāotōng"), [
+        L("坐车特别方便。", "Zuò chē tèbié fāngbiàn.", "Taking the bus is really convenient.", "Naik kendaraan sangat praktis."),
+        L("用手机付钱很方便。", "Yòng shǒujī fù qián hěn fāngbiàn.", "Paying by phone is convenient.", "Bayar pakai HP praktis sekali."),
+        L("交通事故", "jiāotōng shìgù", "traffic accident", "kecelakaan lalu lintas"),
+        L("广州交通很方便。", "Guǎngzhōu jiāotōng hěn fāngbiàn.", "Getting around Guangzhou is easy.", "Transportasi di Guangzhou sangat mudah."),
+      ], word=[W("方便", "fāngbiàn", NONE, ("convenient", "praktis, mudah")), W("交通", "jiāotōng", NONE, ("traffic", "lalu lintas, transportasi"))],
+      check=(("Say \"transport here is convenient\".", "这儿交通很方便。"), ("Katakan \"transportasi di sini mudah\".", "这儿交通很方便。"))),
+    S("WHAT", ("公共汽车, 地铁, 车站", "公共汽车, 地铁, 车站"), [
+        L("我坐公共汽车去学校。", "Wǒ zuò gōnggòng qìchē qù xuéxiào.", "I take the bus to school.", "Saya naik bus ke sekolah."),
+        L("公交车 / 巴士", "gōngjiāochē / bāshì", "bus (other words)", "bus (kata lain)"),
+        L("我每天坐地铁去上班。", "Wǒ měi tiān zuò dìtiě qù shàngbān.", "I take the subway to work every day.", "Setiap hari saya naik kereta bawah tanah ke kantor."),
+        L("车站离学校很近。", "Chēzhàn lí xuéxiào hěn jìn.", "The station is close to the school.", "Stasiunnya dekat dari sekolah."),
+        L("我去火车站接人。", "Wǒ qù huǒchēzhàn jiē rén.", "I'm going to the railway station to meet someone.", "Saya ke stasiun kereta menjemput orang."),
+      ], word=[W("公共汽车", "gōnggòng qìchē", NONE, ("bus", "bus")), W("地铁", "dìtiě", NONE, ("subway", "kereta bawah tanah")), W("车站", "chēzhàn", NONE, ("station", "stasiun, halte"))],
+      check=(("Say \"I take the subway to work\".", "我坐地铁去上班。"), ("Katakan \"saya naik kereta bawah tanah ke kantor\".", "我坐地铁去上班。"))),
+    S("WHAT", ("体育馆, 旁边, 附近", "体育馆, 旁边, 附近"), [
+        L("这个体育馆又大又新。", "Zhège tǐyùguǎn yòu dà yòu xīn.", "This gymnasium is big and new.", "Gedung olahraga ini besar dan baru."),
+        L("公共汽车站旁边就是地铁站。", "Gōnggòng qìchē zhàn pángbiān jiù shì dìtiě zhàn.", "Right next to the bus stop is the subway station.", "Persis di sebelah halte bus ada stasiun kereta bawah tanah."),
+        L("附近还有体育馆。", "Fùjìn hái yǒu tǐyùguǎn.", "There's also a gymnasium nearby.", "Di dekat situ juga ada gedung olahraga."),
+        L("体育馆周围有很多树。", "Tǐyùguǎn zhōuwéi yǒu hěn duō shù.", "There are lots of trees around the gymnasium.", "Di sekitar gedung olahraga banyak pohon."),
+      ], word=[W("体育馆", "tǐyùguǎn", NONE, ("gymnasium", "gedung olahraga")), W("旁边", "pángbiān", NONE, ("beside", "sebelah")), W("附近", "fùjìn", NONE, ("nearby", "dekat, sekitar"))],
+      check=(("旁边, 附近 or 周围: which means \"right next to\"?", "旁边"), ("旁边, 附近 atau 周围: mana yang berarti \"persis di sebelah\"?", "旁边"))),
+
+    # Text (2) ---------------------------------------------------------------------------------
+    S("HOW", ("课文（二） 我早就下班了 (1/3)", "课文（二） 我早就下班了 (1/3)"), [
+        L("小张：怎么现在才下班？", "Xiǎo Zhāng: Zěnme xiànzài cái xiàbān?", "Xiao Zhang: Why are you only finishing work now?", "Xiao Zhang: Kok baru pulang kerja sekarang?"),
+        L("妻子：我早就下班了。路上堵车堵得厉害。我下了班就往回赶，到现在才到家。你今天看了几套房子？", "Qīzi: Wǒ zǎo jiù xiàbān le. Lùshang dǔchē dǔ de lìhai. Wǒ xià le bān jiù wǎng huí gǎn, dào xiànzài cái dào jiā. Nǐ jīntiān kàn le jǐ tào fángzi?", "Wife: I finished long ago. The traffic was terrible. I hurried back right after work and have only just got home. How many flats did you see today?", "Istri: Aku sudah lama pulang kerja. Macetnya parah. Habis kerja aku langsung bergegas pulang, baru sampai sekarang. Hari ini kamu lihat berapa rumah?"),
+        L("小张：看了七八套。有一套我觉得不错。等你休息的时候，再一起去看看。要是你也满意，咱们就租了。", "Xiǎo Zhāng: Kàn le qī-bā tào. Yǒu yí tào wǒ juéde búcuò. Děng nǐ xiūxi de shíhou, zài yìqǐ qù kànkan. Yàoshi nǐ yě mǎnyì, zánmen jiù zū le.", "Xiao Zhang: Seven or eight. I think one is quite good. On your day off we'll go and see it together. If you like it too, we'll rent it.", "Xiao Zhang: Tujuh delapan. Ada satu yang menurutku bagus. Nanti waktu kamu libur, kita lihat bersama. Kalau kamu juga suka, kita sewa."),
+      ], intro=("小张的妻子回来了。", "小张的妻子回来了。"),
+      check=(("小张的妻子为什么到家很晚？", "路上堵车堵得厉害。"), ("小张的妻子为什么到家很晚？", "路上堵车堵得厉害。"))),
+    S("HOW", ("课文（二） 我早就下班了 (2/3)", "课文（二） 我早就下班了 (2/3)"), [
+        L("妻子：房租多少钱？", "Qīzi: Fángzū duōshao qián?", "Wife: How much is the rent?", "Istri: Sewanya berapa?"),
+        L("小张：一个月五千块。", "Xiǎo Zhāng: Yí ge yuè wǔqiān kuài.", "Xiao Zhang: 5,000 yuan a month.", "Xiao Zhang: Lima ribu yuan sebulan."),
+        L("妻子：怎么这么贵？", "Qīzi: Zěnme zhème guì?", "Wife: Why so expensive?", "Istri: Kok mahal sekali?"),
+        L("小张：虽然贵了点儿，但是房子真好。", "Xiǎo Zhāng: Suīrán guì le diǎnr, dànshì fángzi zhēn hǎo.", "Xiao Zhang: It's a bit expensive, but it's a really good flat.", "Xiao Zhang: Memang agak mahal, tapi rumahnya bagus sekali."),
+        L("妻子：周围环境怎么样？", "Qīzi: Zhōuwéi huánjìng zěnmeyàng?", "Wife: What's the area like?", "Istri: Lingkungan sekitarnya bagaimana?"),
+        L("小张：环境特别好。西边是山，山下边有一条小河，河边是一个很大的公园。周围非常安静。", "Xiǎo Zhāng: Huánjìng tèbié hǎo. Xībian shì shān, shān xiàbian yǒu yì tiáo xiǎo hé, hé biān shì yí ge hěn dà de gōngyuán. Zhōuwéi fēicháng ānjìng.", "Xiao Zhang: Really nice. There's a hill to the west with a little river below it, and a big park by the river. It's very quiet.", "Xiao Zhang: Bagus sekali. Di barat ada bukit, di bawahnya ada sungai kecil, dan di tepi sungai ada taman besar. Sekitarnya sangat tenang."),
+      ], check=(("房租多少钱？", "一个月五千块。"), ("房租多少钱？", "一个月五千块。"))),
+    S("HOW", ("课文（二） 我早就下班了 (3/3)", "课文（二） 我早就下班了 (3/3)"), [
+        L("妻子：交通方便不方便？", "Qīzi: Jiāotōng fāngbiàn bu fāngbiàn?", "Wife: Is it easy to get around?", "Istri: Transportasinya mudah tidak?"),
+        L("小张：交通很方便。楼下就有公共汽车站，坐车十分钟就到公司了。汽车站旁边就是地铁站。附近有学校、医院和体育馆……", "Xiǎo Zhāng: Jiāotōng hěn fāngbiàn. Lóu xià jiù yǒu gōnggòng qìchē zhàn, zuò chē shí fēnzhōng jiù dào gōngsī le. Qìchē zhàn pángbiān jiù shì dìtiě zhàn. Fùjìn yǒu xuéxiào, yīyuàn hé tǐyùguǎn……", "Xiao Zhang: Very easy. There's a bus stop right downstairs, and it's only ten minutes to the office. Next to the bus stop is the subway station. Nearby there's a school, a hospital and a gymnasium…", "Xiao Zhang: Mudah sekali. Di bawah gedung ada halte bus, cuma sepuluh menit sampai kantor. Di sebelah halte ada stasiun kereta bawah tanah. Di dekatnya ada sekolah, rumah sakit, dan gedung olahraga…"),
+      ], explain=("Answers from p. 43: 她早就下班了。路上堵得厉害。/ 七八套。/ 环境特别好。周围非常安静。/ 方便。楼下有公共汽车站，汽车站旁边是地铁站，附近还有学校，医院和体育馆。",
+                  "Jawaban dari hlm. 43: 她早就下班了。路上堵得厉害。/ 七八套。/ 环境特别好。周围非常安静。/ 方便。楼下有公共汽车站，汽车站旁边是地铁站，附近还有学校，医院和体育馆。"),
+      check=(("那里的交通方便不方便？", "方便。楼下就有公共汽车站。"), ("那里的交通方便不方便？", "方便。楼下就有公共汽车站。"))),
+
+    # Grammar (1) ------------------------------------------------------------------------------
+    S("REMEMBER", ("就 and 才 + v.", "就 dan 才 + v."), [
+        L("就：①不久即将发生 (还没发生)", "jiù: ① bùjiǔ jíjiāng fāshēng (hái méi fāshēng)", "about to happen (not yet)", "akan segera terjadi (belum terjadi)"),
+        L("就：②事情发生得早、快、容易或进行得顺利 (已经发生)", "jiù: ② shìqing fāshēng de zǎo, kuài, róngyì huò jìnxíng de shùnlì (yǐjīng fāshēng)", "early, fast, easy or smooth (already happened)", "cepat, awal, mudah, atau lancar (sudah terjadi)"),
+        L("才：①不久前刚刚发生 (已经发生)", "cái: ① bùjiǔ qián gānggāng fāshēng (yǐjīng fāshēng)", "has only just happened", "baru saja terjadi"),
+        L("才：②事情发生得晚、慢、不容易或进行得不顺利 (已经发生)", "cái: ② shìqing fāshēng de wǎn, màn, bù róngyì huò jìnxíng de bú shùnlì (yǐjīng fāshēng)", "late, slow, hard or not smooth (already happened)", "terlambat, lambat, sulit, atau tidak lancar (sudah terjadi)"),
+      ], check=(("He arrived late. 就 or 才？", "才"), ("Dia datang terlambat. 就 atau 才？", "才"))),
+    S("HOW", ("就 ①: About to Happen", "就 ①: Akan Segera Terjadi"), [
+        L("你等一下儿，她就来。", "Nǐ děng yíxiàr, tā jiù lái.", "Wait a moment, she's coming.", "Tunggu sebentar, dia segera datang."),
+        L("现在六点，我们六点半就出发。", "Xiànzài liù diǎn, wǒmen liù diǎn bàn jiù chūfā.", "It's six now; we leave at half past.", "Sekarang jam enam, kita berangkat jam setengah tujuh."),
+        L("我吃了药就去睡觉。", "Wǒ chī le yào jiù qù shuìjiào.", "I'll go to sleep after taking the medicine. (v₁+了+O₁+就+v₂+O₂)", "Habis minum obat saya langsung tidur. (v₁+了+O₁+就+v₂+O₂)"),
+        L("A：你什么时候出发？B：吃了早饭就出发。", "A: Nǐ shénme shíhou chūfā? B: Chī le zǎofàn jiù chūfā.", "A: When are you leaving? B: Right after breakfast.", "A: Kamu berangkat kapan? B: Habis sarapan langsung berangkat."),
+      ], check=(("Swap in 去医院 / 下了课: 吃了早饭就出发。", "下了课就去医院。"), ("Ganti dengan 去医院 / 下了课: 吃了早饭就出发。", "下了课就去医院。"))),
+    S("HOW", ("就 ②: Early, Fast, Easy", "就 ②: Awal, Cepat, Mudah"), [
+        L("她来中国以前就学过汉语了。", "Tā lái Zhōngguó yǐqián jiù xué guo Hànyǔ le.", "She had already studied Chinese before coming to China. (学得早)", "Dia sudah belajar bahasa Mandarin sebelum datang ke Tiongkok. (学得早)"),
+        L("不用两个小时，一个小时就到了。", "Bú yòng liǎng ge xiǎoshí, yí ge xiǎoshí jiù dào le.", "It didn't take two hours, we got there in one. (到得快)", "Tidak sampai dua jam, satu jam sudah sampai. (到得快)"),
+        L("她吃了两片药就好了。", "Tā chī le liǎng piàn yào jiù hǎo le.", "She got better after just two tablets. (好得快)", "Cuma dua tablet obat, dia sudah sembuh. (好得快)"),
+        L("我早就下班了。", "Wǒ zǎo jiù xiàbān le.", "I finished work long ago. (下班早)", "Aku sudah lama pulang kerja. (下班早)"),
+      ], check=(("一个小时就到了: was it fast or slow?", "Fast."), ("一个小时就到了: cepat atau lambat?", "Cepat."))),
+    S("HOW", ("才: Just Happened / Late, Slow", "才: Baru Terjadi / Terlambat, Lambat"), [
+        L("我才到家。", "Wǒ cái dào jiā.", "I've only just got home.", "Saya baru sampai rumah."),
+        L("她才来半年汉语就已经说得不错了。", "Tā cái lái bàn nián Hànyǔ jiù yǐjīng shuō de búcuò le.", "She's only been here half a year, but her Chinese is already good.", "Dia baru datang setengah tahun, tapi bahasa Mandarinnya sudah bagus."),
+        L("他十点钟才起床。", "Tā shí diǎn zhōng cái qǐchuáng.", "He didn't get up until ten. (起得晚)", "Dia baru bangun jam sepuluh. (起得晚)"),
+        L("八点上课，她八点半才来。", "Bā diǎn shàngkè, tā bā diǎn bàn cái lái.", "Class starts at eight, but she didn't come until half past. (来得晚)", "Kelas mulai jam delapan, dia baru datang setengah sembilan. (来得晚)"),
+        L("你怎么现在才来？", "Nǐ zěnme xiànzài cái lái?", "Why are you only coming now? (来得晚)", "Kok baru datang sekarang? (来得晚)"),
+        L("我20岁才会骑自行车。", "Wǒ èrshí suì cái huì qí zìxíngchē.", "I couldn't ride a bike until I was 20. (学得晚)", "Saya baru bisa naik sepeda umur 20. (学得晚)"),
+      ], check=(("八点上课，她八点半____来。", "才"), ("八点上课，她八点半____来。", "才"))),
+    S("REMEMBER", ("就……了 but 才 without 了", "就……了 tetapi 才 tanpa 了"), [], intro=(
+        "[ADDED] p. 63 and p. 65 give these to fix but no answers. 才 already shows lateness, so the sentence does not end in 了; 就 sentences about the past usually do.",
+        "[ADDED] Hlm. 63 dan 65 memberi kalimat ini untuk diperbaiki tanpa jawaban. 才 sudah menunjukkan terlambat, jadi kalimatnya tanpa 了 di akhir; kalimat 就 tentang masa lalu biasanya memakai 了."),
+      wr=("昨天我很不舒服，八点才睡觉。\n听了我的话，就玛丽很快不哭了。\n你想想才买吧。\n你的病还没有好，病好了以后才上课吧。",
+          "昨天我很不舒服，八点就睡觉了。\n听了我的话，玛丽很快就不哭了。\n你想想再买吧。\n你的病还没有好，病好了以后再上课吧。",
+          ("Not feeling well → slept early (就). 就 goes after the subject. For something still to do later, use 再, not 才.", "Tidak enak badan → tidur awal (就). 就 diletakkan sesudah subjek. Untuk hal yang baru akan dilakukan, pakai 再, bukan 才.")),
+      check=(("Fix it: 你想想才买吧。", "你想想再买吧。"), ("Perbaiki: 你想想才买吧。", "你想想再买吧。"))),
+
+    # Grammar (2) ------------------------------------------------------------------------------
+    S("WHAT", ("要是……就……: If … (then) …", "要是……就……: Kalau … (maka) …"), [
+        L("要是你来，就给我打个电话，我去车站接你。", "Yàoshi nǐ lái, jiù gěi wǒ dǎ ge diànhuà, wǒ qù chēzhàn jiē nǐ.", "If you come, give me a call and I'll meet you at the station.", "Kalau kamu datang, telepon saya, nanti saya jemput di stasiun."),
+        L("要是想家，就常回家看看。", "Yàoshi xiǎng jiā, jiù cháng huí jiā kànkan.", "If you miss home, go back and visit often.", "Kalau rindu rumah, seringlah pulang menjenguk."),
+        L("你要是去，我就去。", "Nǐ yàoshi qù, wǒ jiù qù.", "If you go, I'll go.", "Kalau kamu pergi, saya ikut."),
+        L("要是你也满意，咱们就租了。", "Yàoshi nǐ yě mǎnyì, zánmen jiù zū le.", "If you're happy with it too, we'll rent it.", "Kalau kamu juga puas, kita sewa."),
+      ], intro=("要是……就…… joins two clauses: a result under a hypothetical condition (在假设情况下产生某种结果).",
+                "要是……就…… menghubungkan dua klausa: akibat dari suatu pengandaian (在假设情况下产生某种结果)."),
+      check=(("Swap in 便宜一点儿 / 买了: 要是你也满意，咱们就租了。", "要是便宜一点儿，咱们就买了。"), ("Ganti dengan 便宜一点儿 / 买了: 要是你也满意，咱们就租了。", "要是便宜一点儿，咱们就买了。"))),
+    S("HOW", ("要是……就……: Make a Sentence", "要是……就……: Buat Kalimat"), [
+        L("场景：你觉得房租太贵，希望降价。", "Chǎngjǐng — Nǐ juéde fángzū tài guì, xīwàng jiàngjià.", "Situation — the rent is too high and you want it lowered.", "Situasi — sewanya terlalu mahal, kamu ingin harganya turun."),
+        L("要是房租能便宜一点，我就租下来了。", "Yàoshi fángzū néng piányi yìdiǎn, wǒ jiù zū xiàlai le.", "If the rent were a bit cheaper, I'd take it.", "Kalau sewanya bisa lebih murah, saya langsung ambil."),
+        L("场景：你觉得这件衣服颜色太丑，不满意。", "Chǎngjǐng — Nǐ juéde zhè jiàn yīfu yánsè tài chǒu, bù mǎnyì.", "Situation — you think the colour of these clothes is ugly.", "Situasi — menurutmu warna baju ini jelek."),
+        L("[ADDED] 要是有别的颜色，我就买了。", "Yàoshi yǒu bié de yánsè, wǒ jiù mǎi le.", "If there were another colour, I'd buy it.", "Kalau ada warna lain, saya beli."),
+      ], check=(("要是你来，就……", "e.g. 要是你来，就一起吃饭吧。"), ("要是你来，就……", "misalnya 要是你来，就一起吃饭吧。"))),
+    S("WHAT", ("虽然……但是……: Although … But …", "虽然……但是……: Walaupun … Tetapi …"), [
+        L("他虽然学的时间不长，但是说得很不错。", "Tā suīrán xué de shíjiān bù cháng, dànshì shuō de hěn búcuò.", "He hasn't studied long, but he speaks very well.", "Walaupun belum lama belajar, dia bicaranya sudah bagus."),
+        L("这套房子虽然旧，但是周围环境很好。", "Zhè tào fángzi suīrán jiù, dànshì zhōuwéi huánjìng hěn hǎo.", "This flat is old, but the area is very nice.", "Rumah ini memang tua, tapi lingkungannya bagus."),
+        L("A：怎么这么贵？B：虽然贵了点儿，但是房子很好。", "A: Zěnme zhème guì? B: Suīrán guì le diǎnr, dànshì fángzi hěn hǎo.", "A: Why so expensive? B: It's a bit pricey, but the flat is very good.", "A: Kok mahal sekali? B: Memang agak mahal, tapi rumahnya bagus."),
+      ], intro=("虽然……但是…… shows a contrast (转折关系): first admit the fact after 虽然, then stress what follows 但是.",
+                "虽然……但是…… menunjukkan pertentangan (转折关系): akui dulu fakta sesudah 虽然, lalu tekankan bagian sesudah 但是."),
+      explain=("[NOTE] p. 70 writes \"athough\"; it should be \"although\".", "[NOTE] Hlm. 70 menulis \"athough\"; seharusnya \"although\"."),
+      check=(("Which part does the speaker stress: 虽然 or 但是？", "The part after 但是."), ("Bagian mana yang ditekankan: 虽然 atau 但是？", "Bagian sesudah 但是."))),
+    S("HOW", ("虽然……但是……: Match", "虽然……但是……: Pasangkan"), [
+        L("虽然运动很累，但是对身体好。", "Suīrán yùndòng hěn lèi, dànshì duì shēntǐ hǎo.", "Exercise is tiring, but it's good for you.", "Olahraga memang capek, tapi baik untuk badan."),
+        L("虽然今天下雨，但是我还是想出去玩。", "Suīrán jīntiān xià yǔ, dànshì wǒ háishi xiǎng chūqu wán.", "It's raining today, but I still want to go out.", "Walaupun hari ini hujan, saya tetap mau keluar main."),
+        L("虽然作业很多，但是我会按时写完。", "Suīrán zuòyè hěn duō, dànshì wǒ huì ànshí xiěwán.", "There's a lot of homework, but I'll finish it on time.", "Walaupun PR-nya banyak, saya akan menyelesaikannya tepat waktu."),
+        L("虽然手机很旧了，但是还可以用。", "Suīrán shǒujī hěn jiù le, dànshì hái kěyǐ yòng.", "The phone is old, but it still works.", "Walaupun HP-nya sudah tua, masih bisa dipakai."),
+        L("虽然咖啡很苦，但是很多人喜欢喝。", "Suīrán kāfēi hěn kǔ, dànshì hěn duō rén xǐhuan hē.", "Coffee is bitter, but many people like it.", "Walaupun kopi pahit, banyak orang suka minum."),
+      ], intro=("The pairs from p. 72.", "Pasangan dari hlm. 72."),
+      check=(("虽然手机很旧了，……", "但是还可以用。"), ("虽然手机很旧了，……", "但是还可以用。"))),
+    S("HOW", ("但是 Alone, and Practice", "但是 Saja, dan Latihan"), [
+        L("我也想家，但是不感到寂寞。", "Wǒ yě xiǎng jiā, dànshì bù gǎndào jìmò.", "I miss home too, but I don't feel lonely.", "Saya juga rindu rumah, tapi tidak merasa kesepian."),
+        L("要是你来，就一起吃饭吧。", "Yàoshi nǐ lái, jiù yìqǐ chī fàn ba.", "If you come, let's eat together.", "Kalau kamu datang, ayo makan bersama."),
+        L("虽然有点儿贵，但是我很喜欢。", "Suīrán yǒudiǎnr guì, dànshì wǒ hěn xǐhuan.", "It's a bit expensive, but I really like it.", "Memang agak mahal, tapi saya suka sekali."),
+        L("要是你觉得不舒服，就先回去休息。", "Yàoshi nǐ juéde bù shūfu, jiù xiān huíqu xiūxi.", "If you feel unwell, go back and rest first.", "Kalau kamu merasa tidak enak badan, pulang istirahat dulu."),
+        L("她虽然学的时间不长，但是汉语说得很好。", "Tā suīrán xué de shíjiān bù cháng, dànshì Hànyǔ shuō de hěn hǎo.", "She hasn't studied long, but her Chinese is very good.", "Walaupun belum lama belajar, bahasa Mandarinnya sangat bagus."),
+      ], intro=("但是 can be used alone (可以单用). Sentences from p. 74.", "但是 bisa dipakai sendiri (可以单用). Kalimat dari hlm. 74."),
+      check=(("屋子虽然不大，但是……", "很干净。"), ("屋子虽然不大，但是……", "很干净。"))),
+
+    # Reading ----------------------------------------------------------------------------------
+    S("HOW", ("阅读: 我在中国的家 (1/3)", "阅读: 我在中国的家 (1/3)"), [
+        L("我去年来到中国。来中国以后，认识了一个中国人，她就是我的中国妈妈。", "Wǒ qùnián láidào Zhōngguó. Lái Zhōngguó yǐhòu, rènshi le yí ge Zhōngguó rén, tā jiù shì wǒ de Zhōngguó māma.", "I came to China last year. After I arrived I got to know a Chinese woman: she is my Chinese mum.", "Saya datang ke Tiongkok tahun lalu. Sesudah itu saya kenal seorang wanita Tionghoa: dialah mama Tiongkok saya."),
+        L("她有一个十六岁的女儿，叫小丽，小丽很喜欢学英语。", "Tā yǒu yí ge shíliù suì de nǚ'ér, jiào Xiǎolì, Xiǎolì hěn xǐhuan xué Yīngyǔ.", "She has a 16-year-old daughter called Xiaoli, who loves learning English.", "Dia punya anak perempuan umur 16 bernama Xiaoli, yang suka sekali belajar bahasa Inggris."),
+        L("有一次，我去她家的时候，小丽对我说：\"爱华姐姐，你来和我一起住好吗？要是你能住在我家多好啊！我爸爸妈妈也欢迎姐姐住我家。\"", "Yǒu yí cì, wǒ qù tā jiā de shíhou, Xiǎolì duì wǒ shuō: \"Àihuá jiějie, nǐ lái hé wǒ yìqǐ zhù hǎo ma? Yàoshi nǐ néng zhù zài wǒ jiā duō hǎo a! Wǒ bàba māma yě huānyíng jiějie zhù wǒ jiā.\"", "Once when I visited, Xiaoli said: \"Aihua, will you come and live with me? It would be great if you could! My parents would welcome you too.\"", "Suatu kali waktu saya ke rumahnya, Xiaoli bilang: \"Kak Aihua, tinggal bersamaku, ya? Senang sekali kalau kakak bisa tinggal di rumahku! Papa mamaku juga senang.\""),
+        L("听了小丽的话，我心里很高兴。", "Tīng le Xiǎolì de huà, wǒ xīn lǐ hěn gāoxìng.", "Hearing this made me very happy.", "Mendengar itu saya senang sekali."),
+      ], intro=("补充生词: 会话 huìhuà (dialogue), 解答 jiědá (to answer).", "补充生词: 会话 huìhuà (percakapan), 解答 jiědá (menjawab)."),
+      check=(("小丽多大了？", "十六岁。"), ("小丽多大了？", "十六岁。"))),
+    S("HOW", ("阅读: 我在中国的家 (2/3)", "阅读: 我在中国的家 (2/3)"), [
+        L("我想，来北京以后，我还没有中国朋友。小丽的爸爸妈妈就像我的爸爸妈妈一样。", "Wǒ xiǎng, lái Běijīng yǐhòu, wǒ hái méiyǒu Zhōngguó péngyou. Xiǎolì de bàba māma jiù xiàng wǒ de bàba māma yíyàng.", "I thought: since coming to Beijing I haven't had any Chinese friends, and Xiaoli's parents are like my own parents.", "Saya berpikir: sejak di Beijing saya belum punya teman Tionghoa, dan orang tua Xiaoli seperti orang tua saya sendiri."),
+        L("我想学好汉语，但是练习会话的时间很少，住小丽家可以教小丽英语，他们也可以帮助我学习汉语。", "Wǒ xiǎng xuéhǎo Hànyǔ, dànshì liànxí huìhuà de shíjiān hěn shǎo, zhù Xiǎolì jiā kěyǐ jiāo Xiǎolì Yīngyǔ, tāmen yě kěyǐ bāngzhù wǒ xuéxí Hànyǔ.", "I want to learn Chinese well, but I have little time to practise speaking. Living with Xiaoli, I can teach her English and they can help me with Chinese.", "Saya ingin pintar bahasa Mandarin, tapi jarang latihan bicara. Tinggal di rumah Xiaoli, saya bisa mengajarinya bahasa Inggris dan mereka bisa membantu saya belajar bahasa Mandarin."),
+        L("三天后，我就去他们家住了。开始的时候，他们对我很客气，我对他们也非常客气。时间长了，我们就像一家人了。", "Sān tiān hòu, wǒ jiù qù tāmen jiā zhù le. Kāishǐ de shíhou, tāmen duì wǒ hěn kèqi, wǒ duì tāmen yě fēicháng kèqi. Shíjiān cháng le, wǒmen jiù xiàng yì jiā rén le.", "Three days later I moved in. At first we were all very polite to each other. Over time we became like one family.", "Tiga hari kemudian saya pindah ke sana. Awalnya kami saling sungkan. Lama-lama kami seperti satu keluarga."),
+      ], check=(("爱华几天后去小丽家住了？", "三天后。"), ("爱华几天后去小丽家住了？", "三天后。"))),
+    S("HOW", ("阅读: 我在中国的家 (3/3)", "阅读: 我在中国的家 (3/3)"), [
+        L("我觉得，这儿就是我的家。晚上我回家以后，小丽给我讲一些学校里有意思的人和事，她也想知道西方国家的情况。", "Wǒ juéde, zhèr jiù shì wǒ de jiā. Wǎnshang wǒ huí jiā yǐhòu, Xiǎolì gěi wǒ jiǎng yìxiē xuéxiào lǐ yǒu yìsi de rén hé shì, tā yě xiǎng zhīdào xīfāng guójiā de qíngkuàng.", "I feel this is my home. In the evening Xiaoli tells me about interesting people and things at school, and she wants to know about Western countries.", "Saya merasa inilah rumah saya. Malam hari Xiaoli bercerita tentang orang dan hal menarik di sekolah, dan dia juga ingin tahu tentang negara Barat."),
+        L("我给他们介绍我们国家的文化。我要是有问题就问他们，他们也会认真地给我解答。每天我们都过得很愉快。", "Wǒ gěi tāmen jièshào wǒmen guójiā de wénhuà. Wǒ yàoshi yǒu wèntí jiù wèn tāmen, tāmen yě huì rènzhēn de gěi wǒ jiědá. Měi tiān wǒmen dōu guò de hěn yúkuài.", "I tell them about my country's culture. If I have a question I ask them, and they answer carefully. Every day is happy.", "Saya menceritakan budaya negara saya. Kalau ada pertanyaan saya tanya mereka, dan mereka menjawab dengan sungguh-sungguh. Setiap hari kami senang."),
+        L("在我的中国家里，我能练习说汉语，也能了解中国的文化。", "Zài wǒ de Zhōngguó jiā lǐ, wǒ néng liànxí shuō Hànyǔ, yě néng liǎojiě Zhōngguó de wénhuà.", "In my Chinese home I can practise speaking Chinese and learn about Chinese culture.", "Di rumah Tiongkok saya, saya bisa latihan bahasa Mandarin dan mengenal budaya Tiongkok."),
+        L("一天，我爸爸妈妈来电话，问我想不想家，我说不想家。我告诉他们，现在我在中国也有了一个家。他们听了很高兴，还说，他们也想来中国，看看我在中国的家。", "Yì tiān, wǒ bàba māma lái diànhuà, wèn wǒ xiǎng bu xiǎng jiā, wǒ shuō bù xiǎng jiā. Wǒ gàosu tāmen, xiànzài wǒ zài Zhōngguó yě yǒu le yí ge jiā. Tāmen tīng le hěn gāoxìng, hái shuō, tāmen yě xiǎng lái Zhōngguó, kànkan wǒ zài Zhōngguó de jiā.", "One day my parents called and asked if I was homesick. I said no, and told them I now have a home in China too. They were very happy and said they'd like to come and see it.", "Suatu hari orang tua saya menelepon dan bertanya apakah saya rindu rumah. Saya bilang tidak, karena sekarang saya juga punya rumah di Tiongkok. Mereka senang sekali dan bilang ingin datang melihatnya."),
+      ], explain=("True or false (p. 77): 爱华的中国家有一个小妹妹，她今年十九岁。✗ / 爱华的爸爸妈妈也来中国了。✗ / 爱华是外国留学生。✓",
+                  "Benar atau salah (hlm. 77): 爱华的中国家有一个小妹妹，她今年十九岁。✗ / 爱华的爸爸妈妈也来中国了。✗ / 爱华是外国留学生。✓"),
+      check=(("爱华的爸爸妈妈来中国了吗？", "没有，他们只是想来。"), ("爱华的爸爸妈妈来中国了吗？", "没有，他们只是想来。"))),
+    S("HOW", ("情景交际: 这套房子怎么样？", "情景交际: 这套房子怎么样？"), [
+        L("交通很方便。", "Jiāotōng hěn fāngbiàn.", "It's easy to get around.", "Transportasinya mudah."),
+        L("小了点儿。", "Xiǎo le diǎnr.", "It's a bit small.", "Agak kecil."),
+        L("太贵了。", "Tài guì le.", "It's too expensive.", "Terlalu mahal."),
+        L("周围环境特别乱。", "Zhōuwéi huánjìng tèbié luàn.", "The area is really messy.", "Lingkungan sekitarnya berantakan sekali."),
+      ], intro=("Describe a flat (from p. 78–81).", "Jelaskan sebuah rumah (dari hlm. 78–81)."),
+      check=(("Say a flat is a bit small, with 了点儿.", "小了点儿。"), ("Katakan rumahnya agak kecil, dengan 了点儿.", "小了点儿。"))),
+]
+
+QUIZ_NOTE = {
+    "en": "[NOTE] All exercises come from the teacher's slides: grammar, the 课文 stories, reading and fill-ins. For a fill-in, type the 汉字; punctuation does not matter.",
+    "id": "[NOTE] Semua latihan berasal dari slide guru: grammar, cerita 课文, bacaan, dan isian. Untuk soal isian, ketik 汉字; tanda baca tidak dihitung.",
+}
+
+QUIZ = [
+    Q("p. 21", ("这种毛衣八百块一件，____", "这种毛衣八百块一件，____"), ["贵了点儿。", "点儿贵了。", "了贵点儿。"], 0,
+      ("adj.+了（一）点儿: 贵了点儿.", "adj.+了（一）点儿: 贵了点儿.")),
+    Q("p. 21", ("客厅面积小了点儿。How does Xiao Zhang feel?", "客厅面积小了点儿。Bagaimana perasaan Xiao Zhang?"), [("Satisfied", "Puas"), ("Not satisfied", "Tidak puas")], 1,
+      ("adj.+了（一）点儿 shows dissatisfaction (不满意).", "adj.+了（一）点儿 menunjukkan tidak puas (不满意).")),
+    Q("p. 62", ("她每天都六点半起床，今天六点钟____起床了。", "她每天都六点半起床，今天六点钟____起床了。"), ["就", "才"], 0,
+      ("Earlier than usual: 就.", "Lebih awal dari biasa: 就.")),
+    Q("p. 62", ("八点钟上课，他八点半____来。", "八点钟上课，他八点半____来。"), ["就", "才"], 1,
+      ("Late: 才.", "Terlambat: 才.")),
+    Q("p. 62", ("电影七点半____开演呢，你怎么现在____来了？", "电影七点半____开演呢，你怎么现在____来了？"), ["才 / 就", "就 / 才"], 0,
+      ("The film starts late (才); you came early (就).", "Filmnya baru mulai (才); kamu datang lebih awal (就).")),
+    Q("p. 62", ("飞机下午两点____起飞，上午十点他们____去机场了。", "飞机下午两点____起飞，上午十点他们____去机场了。"), ["就 / 才", "才 / 就"], 1,
+      ("The plane leaves late (才); they went early (就).", "Pesawat baru berangkat siang (才); mereka berangkat awal (就).")),
+    Q("p. 62", ("我觉得听力很难，同学们听一遍____懂了，我听三遍____能懂。", "我觉得听力很难，同学们听一遍____懂了，我听三遍____能懂。"), ["才 / 就", "就 / 才"], 1,
+      ("Once is easy (就); three times is hard (才).", "Sekali sudah paham itu mudah (就); tiga kali baru paham itu sulit (才).")),
+    Q("p. 62", ("昨天晚上我十二点____睡觉。", "昨天晚上我十二点____睡觉。"), ["就", "才"], 1,
+      ("Midnight is late: 才.", "Tengah malam itu larut: 才.")),
+    Q("p. 62", ("他上午下了课____去医院了。", "他上午下了课____去医院了。"), ["就", "才"], 0,
+      ("Right after class: 就.", "Langsung sesudah kelas: 就.")),
+    Q("p. 62", ("坐飞机去两个多小时____到了，坐火车十个小时____能到。", "坐飞机去两个多小时____到了，坐火车十个小时____能到。"), ["就 / 才", "才 / 就"], 0,
+      ("Plane: fast (就). Train: slow (才).", "Pesawat: cepat (就). Kereta: lambat (才).")),
+    Q("p. 61", ("A：你今天回来得早吗？B：不早，我八点半____回来。", "A：你今天回来得早吗？B：不早，我八点半____回来。"), ["才", "就"], 0,
+      ("不早 → late → 才.", "不早 → terlambat → 才.")),
+    Q("p. 57", ("不用两个小时，一个小时____到了。", "不用两个小时，一个小时____到了。"), ["才", "就"], 1,
+      ("Faster than expected: 就.", "Lebih cepat dari dugaan: 就.")),
+    Q("p. 64", ("星期日你吃了早饭去哪儿了？", "星期日你吃了早饭去哪儿了？"), ["星期日我早上吃了饭就去……了。", "星期日我早上吃了饭才去……了。"], 0,
+      ("v₁+了+O₁+就+v₂, and 了 at the end because it already happened.", "v₁+了+O₁+就+v₂, dan 了 di akhir karena sudah terjadi.")),
+    Q("p. 63 [ADDED]", ("Fix it: 听了我的话，就玛丽很快不哭了。", "Perbaiki: 听了我的话，就玛丽很快不哭了。"), ["听了我的话，玛丽很快就不哭了。", "听了我的话，玛丽就很快不哭。"], 0,
+      ("就 goes after the subject and before the verb part: 很快就不哭了.", "就 diletakkan sesudah subjek, sebelum kata kerja: 很快就不哭了.")),
+    Q("p. 65 [ADDED]", ("Fix it: 你想想才买吧。", "Perbaiki: 你想想才买吧。"), ["你想想再买吧。", "你想想就买了吧。"], 0,
+      ("For a future step, use 再.", "Untuk langkah yang akan datang, pakai 再.")),
+    Q("p. 67", ("要是你来，____给我打个电话。", "要是你来，____给我打个电话。"), ["就", "才", "但是"], 0,
+      ("要是……就…….", "要是……就…….")),
+    Q("p. 74", ("要是你想买，就____", "要是你想买，就____"), ["买了吧。", "但是很贵。"], 0,
+      ("The teacher's answer: 买了吧.", "Jawaban guru: 买了吧.")),
+    Q("p. 70", ("这套房子虽然旧，____周围环境很好。", "这套房子虽然旧，____周围环境很好。"), ["所以", "但是", "就"], 1,
+      ("虽然……但是…….", "虽然……但是…….")),
+    Q("p. 72", ("虽然运动很累，____", "虽然运动很累，____"), ["但是对身体好。", "但是我会按时写完。", "但是很多人喜欢喝。"], 0,
+      ("The match from p. 72.", "Pasangan dari hlm. 72.")),
+    Q("p. 75", ("A：你国家城市交通怎么样？B：____", "A：你国家城市交通怎么样？B：____"), ["交通虽然很方便，但是堵车堵得厉害。", "交通虽然很方便，所以堵车堵得厉害。"], 0,
+      ("虽然 pairs with 但是, not 所以.", "虽然 dipasangkan dengan 但是, bukan 所以.")),
+]
+
+QUIZ += [
+    # 课文 (story)
+    F("p. 22 课文", ("小张看了几套房子？", "小张看了几套房子？"), ["三套。", "三套", "看了三套"],
+      ("看了三套，都不太满意。", "看了三套，都不太满意。")),
+    Q("p. 22 课文", ("小张对这些房子满意不满意？什么地方不满意？", "小张对这些房子满意不满意？什么地方不满意？"), ["不太满意。有的太小，有的周围的环境太乱。", "很满意。", "不满意，房租太贵。"], 0,
+      ("有的太小，有的周围环境太乱。", "有的太小，有的周围环境太乱。")),
+    F("p. 22 课文", ("小张对这次看的房子满意吗？", "小张对这次看的房子满意吗？"), ["还是不满意。", "不满意"],
+      ("我还是想要上下午都有阳光的。", "我还是想要上下午都有阳光的。")),
+    Q("p. 22 课文", ("小张想要什么样的房子？", "小张想要什么样的房子？"), ["客厅大一点的，房子上午下午都有阳光的。", "便宜一点的。", "离公司远一点的。"], 0,
+      ("有没有大一点儿的？ / 上下午都有阳光的。", "有没有大一点儿的？ / 上下午都有阳光的。")),
+    Q("p. 43 课文", ("小张的妻子下班早吗？她为什么到家很晚？", "小张的妻子下班早吗？她为什么到家很晚？"), ["她早就下班了。路上堵得厉害。", "她下班很晚。", "她去看房子了。"], 0,
+      ("我早就下班了。路上堵车堵得厉害。", "我早就下班了。路上堵车堵得厉害。")),
+    F("p. 43 课文", ("小张今天看了几套房子？", "小张今天看了几套房子？"), ["七八套。", "七八套", "看了七八套"],
+      ("看了七八套。", "看了七八套。")),
+    Q("p. 43 课文", ("小张满意的那套房子周围的环境怎么样？", "小张满意的那套房子周围的环境怎么样？"), ["环境特别好。周围非常安静。", "周围环境太乱。", "附近没有公园。"], 0,
+      ("环境特别好……周围非常安静。", "环境特别好……周围非常安静。")),
+    Q("p. 44 句子排序", ("A 看了房子后，我们很满意，阳光特别好。B 虽然房租贵点儿，但交通实在方便，旁边就是地铁站。C 上个周末，我和妻子去看了一套房子。D 最后，我们还是决定租下来。Correct order?", "A 看了房子后，我们很满意，阳光特别好。B 虽然房租贵点儿，但交通实在方便，旁边就是地铁站。C 上个周末，我和妻子去看了一套房子。D 最后，我们还是决定租下来。Urutan yang benar?"),
+      ["C → A → B → D", "A → C → B → D", "C → B → A → D"], 0,
+      ("The teacher's order: C → A → B → D.", "Urutan guru: C → A → B → D.")),
+    # 填空 the dialogues (p. 23–24, 46–47)
+    F("p. 23 填空", ("小张：是啊。我____就来了。", "小张：是啊。我____就来了。"), ["吃了早饭"], ("我吃了早饭就来了。", "我吃了早饭就来了。")),
+    F("p. 23 填空", ("小张：看了三套，都____。", "小张：看了三套，都____。"), ["不太满意"], ("都不太满意。", "都不太满意。")),
+    F("p. 23 填空", ("业务员：我____带您去看几套吧。", "业务员：我____带您去看几套吧。"), ["再"], ("我再带您去看几套吧。", "我再带您去看几套吧。")),
+    F("p. 24 填空", ("小张：……但是客厅面积____。有没有大一点儿的？", "小张：……但是客厅面积____。有没有大一点儿的？"), ["小了点儿", "小了一点儿"], ("小了点儿.", "小了点儿.")),
+    F("p. 24 填空", ("小张：这套房子下午就没有____了吧？", "小张：这套房子下午就没有____了吧？"), ["阳光"], ("没有阳光了吧？", "没有阳光了吧？")),
+    F("p. 24 填空", ("小张：我____想要上下午都有阳光的。", "小张：我____想要上下午都有阳光的。"), ["还是"], ("我还是想要……", "我还是想要……")),
+    F("p. 46 填空", ("小张：怎么现在____下班？", "小张：怎么现在____下班？"), ["才"], ("怎么现在才下班？", "怎么现在才下班？")),
+    F("p. 46 填空", ("妻子：我____下班了。", "妻子：我____下班了。"), ["早就"], ("我早就下班了。", "我早就下班了。")),
+    F("p. 46 填空", ("小张：要是你也满意，咱们____租了。", "小张：要是你也满意，咱们____租了。"), ["就"], ("要是……就…….", "要是……就…….")),
+    F("p. 47 填空", ("小张：____贵了点儿，____房子真好。(two words)", "小张：____贵了点儿，____房子真好。(dua kata)"), ["虽然但是", "虽然 但是", "虽然，但是"], ("虽然贵了点儿，但是房子真好。", "虽然贵了点儿，但是房子真好。")),
+    # 填空 words (p. 52, word bank: 环境 条 附近 旁边 方便 打算 就 要是 才 还 套 虽然)
+    F("p. 52 填空", ("他昨天晚上九点____回家。", "他昨天晚上九点____回家。"), ["才"], ("Late: 才.", "Terlambat: 才.")),
+    F("p. 52 填空", ("你们这____房子真不错。", "你们这____房子真不错。"), ["套"], ("一套房子.", "一套房子.")),
+    F("p. 52 填空", ("我下了课____去医院看病了。", "我下了课____去医院看病了。"), ["就"], ("下了课就去…….", "下了课就去…….")),
+    F("p. 52 填空", ("我觉得这次考得____可以。", "我觉得这次考得____可以。"), ["还"], ("还可以: not bad.", "还可以: lumayan.")),
+    F("p. 52 填空", ("____有什么事儿，就对我说，不要客气。", "____有什么事儿，就对我说，不要客气。"), ["要是"], ("要是……就…….", "要是……就…….")),
+    F("p. 52 填空", ("____只学了一个多月，但是她已经会说很多话了。", "____只学了一个多月，但是她已经会说很多话了。"), ["虽然"], ("虽然……但是…….", "虽然……但是…….")),
+    F("p. 52 填空", ("我____毕业以后去中国留学。", "我____毕业以后去中国留学。"), ["打算"], ("打算: to plan.", "打算: berencana.")),
+    F("p. 52 填空", ("这儿周围的____很好。", "这儿周围的____很好。"), ["环境"], ("周围的环境.", "周围的环境.")),
+    F("p. 52 填空", ("我们住的地方有地铁站，交通很____。", "我们住的地方有地铁站，交通很____。"), ["方便"], ("交通很方便.", "交通很方便.")),
+    F("p. 52 填空", ("公共汽车站就在我们学校____。", "公共汽车站就在我们学校____。"), ["旁边"], ("就在……旁边: right next to.", "就在……旁边: persis di sebelah.")),
+    F("p. 52 填空", ("学校____有邮局、银行、商店、公园和体育馆。", "学校____有邮局、银行、商店、公园和体育馆。"), ["附近"], ("学校附近.", "学校附近.")),
+    F("p. 52 填空", ("这____河里的水很干净。", "这____河里的水很干净。"), ["条"], ("一条河.", "一条河.")),
+    # 阅读 (reading: 我在中国的家) true or false
+    Q("p. 77 阅读", ("判断: 爱华的中国家有一个小妹妹，她今年十九岁。", "Benar/salah: 爱华的中国家有一个小妹妹，她今年十九岁。"), [("True", "Benar"), ("False", "Salah")], 1,
+      ("小丽 is sixteen (十六岁).", "小丽 berumur enam belas (十六岁).")),
+    Q("p. 77 阅读", ("判断: 爱华的爸爸妈妈也来中国了。", "Benar/salah: 爱华的爸爸妈妈也来中国了。"), [("True", "Benar"), ("False", "Salah")], 1,
+      ("They only want to come (他们也想来中国).", "Mereka baru ingin datang (他们也想来中国).")),
+    Q("p. 77 阅读", ("判断: 爱华是外国留学生。", "Benar/salah: 爱华是外国留学生。"), [("True", "Benar"), ("False", "Salah")], 0,
+      ("She came to China last year to study Chinese.", "Dia datang ke Tiongkok tahun lalu untuk belajar bahasa Mandarin.")),
+]

@@ -14,6 +14,7 @@
     --what: #2f5bd3; --how: #1f8a5b; --why: #b5651d; --remember: #8a3fb5;
     --wrong: #c0392b; --right: #1f8a5b; --wrong-bg: #fbe9e7; --right-bg: #e5f5ec; --note-bg: #fff8e6;
     --c1: #2f5bd3; --c2: #0f8b8d; --c3: #7a5af5; --c4: #d0661c; --c5: #b8336a; --c6: #c0392b;
+    --sp0-bg: #e1f5ee; --sp0: #085041; --sp1-bg: #faece7; --sp1: #712b13; --sp2-bg: #eeedfe; --sp2: #3c3489;
   }
   @media (prefers-color-scheme: dark) {
     :root {
@@ -22,6 +23,7 @@
       --what: #8fa8ff; --how: #5cc493; --why: #e3a15c; --remember: #c48ae6;
       --wrong: #ef7a6d; --right: #5cc493; --wrong-bg: #3a2220; --right-bg: #1c3328; --note-bg: #2a2618;
       --c1: #8fa8ff; --c2: #4fd1c5; --c3: #b9a3ff; --c4: #f0a35e; --c5: #f07fb0; --c6: #ef7a6d;
+      --sp0-bg: #085041; --sp0: #9fe1cb; --sp1-bg: #712b13; --sp1: #f5c4b3; --sp2-bg: #3c3489; --sp2: #cecbf6;
     }
   }
   * { box-sizing: border-box; }
@@ -78,6 +80,25 @@
   .wr .wrong .label { color: var(--wrong); } .wr .right .label { color: var(--right); }
   .wr pre { margin-top: 0; }
   .wr .wrong pre { border-left: 3px solid var(--wrong); } .wr .right pre { border-left: 3px solid var(--right); }
+
+  /* Chinese slides: new-word boxes, then one row per line (pinyin above 汉字, translation below) */
+  .words { display: flex; flex-wrap: wrap; gap: 10px; margin: 4px 0 14px; }
+  .word { display: flex; align-items: flex-end; gap: 16px; padding: 12px 16px; border-radius: 10px; background: var(--code-bg); }
+  .word .hz { font-size: 2.1rem; line-height: 1.15; font-weight: 600; }
+  .word .py { font-size: 1rem; }
+  .word .pos { font-size: .8rem; color: var(--muted); }
+  .word .mean { padding-bottom: 4px; }
+  .zh { margin-top: 10px; }
+  .zl { display: flex; gap: 12px; padding: 12px 0; border-top: 1px solid var(--line); }
+  .zl:first-child { border-top: 0; }
+  .zl > div { min-width: 0; }
+  .zl .hz { font-size: 1.3rem; line-height: 1.45; }
+  .py { font-size: .85rem; color: var(--muted); }
+  .zl .tr { font-size: .95rem; color: var(--muted); margin-top: 2px; }
+  .sp { flex: none; min-width: 4.4em; text-align: center; height: fit-content; margin-top: 22px; padding: 2px 8px;
+        border-radius: 6px; font-size: .8rem; white-space: nowrap; }
+  .sp0 { background: var(--sp0-bg); color: var(--sp0); } .sp1 { background: var(--sp1-bg); color: var(--sp1); }
+  .sp2 { background: var(--sp2-bg); color: var(--sp2); }
   .reason { margin-top: 6px; font-size: .95rem; }
   .qc { margin-top: 16px; border-top: 1px dashed var(--line); padding-top: 14px; }
   .qc .answer { margin-top: 8px; }
@@ -187,6 +208,12 @@
   .opts button.correct { border-color: var(--right); background: var(--right-bg); }
   .opts button.chosen-wrong { border-color: var(--wrong); background: var(--wrong-bg); }
   .opts button:disabled { opacity: 1; cursor: default; }
+  .fill-row { display: flex; gap: 8px; }
+  .fill { flex: 1; min-width: 0; font: inherit; padding: 8px 12px; border: 1px solid var(--line); border-radius: 8px;
+          background: var(--card); color: var(--text); }
+  .fill.correct { border-color: var(--right); background: var(--right-bg); }
+  .fill.chosen-wrong { border-color: var(--wrong); background: var(--wrong-bg); }
+  .fill-err { font-size: .85rem; color: var(--wrong); }
   .why { margin-top: 12px; font-size: .95rem; }
   .why b.ok { color: var(--right); } .why b.no { color: var(--wrong); }
   .score { position: sticky; bottom: 0; margin-top: 20px; padding: 12px 16px; border-radius: 12px;
@@ -213,6 +240,7 @@ const SUBJECTS = [
     book: "Digital Design: Principles and Practices, 4th ed., John F. Wakerly · lecture slides © Dr. HeWei Yu (hwyu@scut.edu.cn)" },
   { id: "college-physics-2",      name: "College Physics 2",         icon: "⚛️",
     book: "Fundamentals of Physics (Halliday, Resnick & Walker) · lecture slides © mxhuang@scut.edu.cn" },
+  { id: "comprehensive-chinese-a", name: "Comprehensive Chinese A",  icon: "🀄", defaultLang: "id" },
 ];
 
 const ICON_QUIZ = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>';
@@ -233,7 +261,8 @@ const UI = {
         hwSolutionsSub: "Worked solutions (PDF)", openPdf: "📄 Full worked solutions (PDF)", officialAnswer: "Show the official answer",
         answerIs: "Answer: ", missingFig: "Figure not available: the original homework file was missing when this was made.",
         problem: "Problem", method: "Why this method: ", gradeable: (c, a, t) => `Score: ${c} / ${t}  (${a} answered; problems aren't scored)`,
-        wrongLbl: "✗ Wrong", rightLbl: "✓ Right", quickCheck: "Quick check", toggle: "🇮🇩 Bahasa Indonesia" },
+        wrongLbl: "✗ Wrong", rightLbl: "✓ Right", quickCheck: "Quick check", toggle: "🇮🇩 Bahasa Indonesia",
+        check: "Check", typeHere: "Type your answer", typeFirst: "Type an answer first." },
   id: { pick: "Pilih mata kuliah.", all: "← Semua mata kuliah", soon: "Segera hadir", quizzes: "Kuis kelas",
         toPractice: n => n + " untuk latihan", lectures: "Materi kuliah", chaptersOf: n => n + " bab slide",
         slides: n => n + " slide", questions: n => n + " soal", back: "← Kembali", next: "Lanjut →",
@@ -245,13 +274,14 @@ const UI = {
         hwSolutionsSub: "Pembahasan lengkap (PDF)", openPdf: "📄 Pembahasan lengkap (PDF)", officialAnswer: "Tampilkan jawaban resmi",
         answerIs: "Jawaban: ", missingFig: "Gambar tidak tersedia: file PR asli hilang saat ini dibuat.",
         problem: "Soal", method: "Mengapa metode ini: ", gradeable: (c, a, t) => `Skor: ${c} / ${t}  (${a} dijawab; soal uraian tidak dinilai)`,
-        wrongLbl: "✗ Salah", rightLbl: "✓ Benar", quickCheck: "Cek cepat", toggle: "🇬🇧 English" },
+        wrongLbl: "✗ Salah", rightLbl: "✓ Benar", quickCheck: "Cek cepat", toggle: "🇬🇧 English",
+        check: "Periksa", typeHere: "Ketik jawabanmu", typeFirst: "Ketik jawaban dulu." },
 };
 
 const app = document.getElementById("app");
 const cache = {};
-let lang = "en";
-try { lang = localStorage.getItem("lang") || "en"; } catch (e) {}
+let lang = "en", langPicked = false;  // until the visitor picks, a subject can set its own defaultLang
+try { const saved = localStorage.getItem("lang"); if (saved) { lang = saved; langPicked = true; } } catch (e) {}
 const ui = () => UI[lang];
 const tr = o => (o && typeof o === "object" ? o[lang] || o.en : o);  // pick {en, id} text
 
@@ -299,6 +329,7 @@ function topbar(backHref, backText) {
     el("a", { href: backHref }, backText),
     el("button", { onclick: () => {
       lang = lang === "en" ? "id" : "en";
+      langPicked = true;
       try { localStorage.setItem("lang", lang); } catch (e) {}
       route();
     } }, ui().toggle));
@@ -308,7 +339,7 @@ function renderHome() {
   const rows = SUBJECTS.map(s => row("#/" + s.id, s.icon, s.name, "…"));
   app.replaceChildren(
     el("div", { class: "topbar" }, el("h1", {}, "Study Slides"),
-      el("button", { onclick: () => { lang = lang === "en" ? "id" : "en";
+      el("button", { onclick: () => { lang = lang === "en" ? "id" : "en"; langPicked = true;
         try { localStorage.setItem("lang", lang); } catch (e) {} route(); } }, ui().toggle)),
     el("p", { class: "muted" }, ui().pick),
     el("div", { class: "rows" }, ...rows));
@@ -357,21 +388,43 @@ async function renderQuiz(subject, n) {
 
   const cards = chap.questions.map((q, qi) => {
     const why = el("div", { class: "why" }); why.hidden = true;
-    const buttons = q.options.map((o, oi) => el("button", { onclick: () => {
-      buttons.forEach(b => b.disabled = true);
-      buttons[q.answer].classList.add("correct");
-      const ok = oi === q.answer;
-      if (!ok) buttons[oi].classList.add("chosen-wrong");
+    const mark = ok => {
       answered++; if (ok) correct++;
       why.replaceChildren(el("b", { class: ok ? "ok" : "no" }, ok ? ui().correct : ui().wrong), " ", tr(q.why));
       why.hidden = false;
       scoreText.textContent = ui().score(correct, answered, total);
-    } }, String.fromCharCode(65 + oi) + ". " + tr(o)));
+    };
+    let answerBox;
+    if (q.accept) {  // fill-in question: typed answer, checked against the accepted answers
+      const norm = s => s.replace(/[\s\p{P}]/gu, "").toLowerCase();
+      const input = el("input", { type: "text", class: "fill", placeholder: ui().typeHere, lang: "zh-CN" });
+      const err = el("div", { class: "fill-err" }); err.hidden = true;
+      const btn = el("button", { onclick: () => {
+        if (!norm(input.value)) { err.textContent = ui().typeFirst; err.hidden = false; return; }
+        input.disabled = btn.disabled = true;
+        const ok = q.accept.some(a => norm(a) === norm(input.value));
+        input.classList.add(ok ? "correct" : "chosen-wrong");
+        mark(ok);
+        if (!ok) why.append(el("div", {}, ui().answerIs + q.accept[0]));
+      } }, ui().check);
+      input.oninput = () => { err.hidden = true; };
+      input.onkeydown = e => { if (e.key === "Enter") btn.click(); };
+      answerBox = el("div", { class: "opts" }, el("div", { class: "fill-row" }, input, btn), err);
+    } else {
+      const buttons = q.options.map((o, oi) => el("button", { onclick: () => {
+        buttons.forEach(b => b.disabled = true);
+        buttons[q.answer].classList.add("correct");
+        const ok = oi === q.answer;
+        if (!ok) buttons[oi].classList.add("chosen-wrong");
+        mark(ok);
+      } }, String.fromCharCode(65 + oi) + ". " + tr(o)));
+      answerBox = el("div", { class: "opts" }, ...buttons);
+    }
     return el("div", { class: "q" },
       el("div", { class: "src" }, (qi + 1) + " / " + total + " · " + q.source),
       el("p", { class: "stem" }, tr(q.q)),
       q.code ? el("pre", {}, q.code) : null,
-      el("div", { class: "opts" }, ...buttons),
+      answerBox,
       why);
   });
 
@@ -392,7 +445,9 @@ function renderSlide(subject, slides, i) {
     el("span", { class: "tag " + s.tag }, s.tag),
     s.practice ? el("span", { class: "practice" }, ui().practised + s.practice) : null,
     el("h2", {}, t.title),
+    s.word ? wordBoxes(s.word) : null,
     el("div", { class: "body" }, t.body),
+    s.zh ? zhLines(s.zh) : null,
     s.formula ? formulaBox(s.formula) : null,
     s.code ? el("pre", {}, s.code) : null,
     s.images ? el("div", { class: "figs" }, ...s.images.map(im => figure(subject.id + "/" + im.src, tr(im.caption)))) : null,
@@ -421,6 +476,24 @@ function renderSlide(subject, slides, i) {
 
 // Figures are inlined (not <img>) so the page's CSS classes can colour them for light/dark.
 // They are our own files from tools/figures.py, so inserting their markup is safe.
+// Chinese slides: a box per new word, and the "zh" lines; only the translations follow the language switch.
+function wordBoxes(words) {
+  return el("div", { class: "words" }, ...words.map(w => el("div", { class: "word" },
+    el("div", {}, el("div", { class: "py" }, w.py), el("div", { class: "hz", lang: "zh-CN" }, w.hz)),
+    el("div", {}, tr(w.pos) ? el("div", { class: "pos" }, tr(w.pos)) : null, el("div", { class: "mean" }, tr(w.mean))))));
+}
+
+function zhLines(lines) {
+  const speakers = [];  // colour each speaker by order of first appearance on the slide
+  return el("div", { class: "zh" }, ...lines.map(l => {
+    if (l.sp && !speakers.includes(l.sp)) speakers.push(l.sp);
+    return el("div", { class: "zl" },
+      l.sp ? el("span", { class: "sp sp" + (speakers.indexOf(l.sp) % 3), lang: "zh-CN" }, l.sp) : null,
+      el("div", {}, el("div", { class: "py" }, l.py), el("div", { class: "hz", lang: "zh-CN" }, l.hz),
+        el("div", { class: "tr" }, tr(l.tr))));
+  }));
+}
+
 function figure(url, caption) {
   const fig = el("figure", { class: "fig" }, el("figcaption", {}, caption));
   const text = cache[url] ? Promise.resolve(cache[url])
@@ -567,6 +640,7 @@ async function route() {
   document.onkeydown = null;
   const [, id, view, num] = location.hash.split("/");
   const subject = SUBJECTS.find(s => s.id === id);
+  if (!langPicked) lang = (subject && subject.defaultLang) || "en";
   if (!subject) return renderHome();
   if (view === "quiz") return num ? renderQuiz(subject, parseInt(num) || 1) : renderQuizList(subject);
   if (view === "lectures") return renderLectureList(subject);

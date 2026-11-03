@@ -1,0 +1,439 @@
+"""Lesson 1 第1课 田芳去哪儿了. Source: Compre Chapter 1.pdf (69 pages)."""
+from cclib import L, S, Q, W, F
+
+CHAPTER = {"en": "第1课 田芳去哪儿了 (Where did Tian Fang go?)",
+           "id": "第1课 田芳去哪儿了 (Tian Fang pergi ke mana?)"}
+
+SLIDES = [
+    # Start ------------------------------------------------------------------------------------
+    S("WHAT", ("[ADDED] How to Read This Lesson", "[ADDED] Cara Membaca Pelajaran Ini"), [], intro=(
+        "Every slide keeps the 汉字 and pinyin, so you always read Putonghua.\n"
+        "From the teacher's slides: 汉字, word pinyin, and the English word meanings.\n"
+        "[ADDED] for this site: sentence pinyin and all sentence translations. Check them with your teacher.",
+        "Setiap slide tetap memakai 汉字 dan pinyin, jadi kamu selalu membaca Putonghua.\n"
+        "Dari slide guru: 汉字, pinyin kosakata, dan arti kata dalam bahasa Inggris.\n"
+        "[ADDED] untuk situs ini: pinyin kalimat dan semua terjemahan kalimat. Cek lagi dengan gurumu."),
+      check=(("Which pinyin comes from the teacher's slides?", "The vocabulary pinyin. Sentence pinyin was added for this site."),
+             ("Pinyin mana yang berasal dari slide guru?", "Pinyin kosakata. Pinyin kalimat ditambahkan untuk situs ini."))),
+    S("WHY", ("Warm-up: A Phone Call", "Pemanasan: Telepon"), [
+        L("女：喂，是小明吗？", "Nǚ: Wèi, shì Xiǎomíng ma?", "Woman: Hello, is this Xiaoming?", "Perempuan: Halo, ini Xiaoming?"),
+        L("男：不是，小明去商店了。", "Nán: Bú shì, Xiǎomíng qù shāngdiàn le.", "Man: No, Xiaoming went to the shop.", "Laki-laki: Bukan, Xiaoming sudah pergi ke toko."),
+        L("女：他去商店做什么？", "Nǚ: Tā qù shāngdiàn zuò shénme?", "Woman: What is he doing at the shop?", "Perempuan: Dia ke toko untuk apa?"),
+        L("男：他去商店买衣服。", "Nán: Tā qù shāngdiàn mǎi yīfu.", "Man: He went to buy clothes.", "Laki-laki: Dia ke toko untuk beli baju."),
+      ], check=(("小明去哪儿了？", "他去商店了。(He went to the shop.)"),
+                ("小明去哪儿了？", "他去商店了。(Dia sudah pergi ke toko.)"))),
+
+    # New words (1) ----------------------------------------------------------------------------
+    S("WHAT", ("喂 wèi: Hello", "喂 wèi: Halo"), [
+        L("喂，是田芳吗？", "Wèi, shì Tián Fāng ma?", "Hello, is this Tian Fang?", "Halo, ini Tian Fang?"),
+        L("喂，你找谁？", "Wèi, nǐ zhǎo shéi?", "Hello, who are you looking for?", "Halo, kamu cari siapa?"),
+        L("我找文老师。", "Wǒ zhǎo Wén lǎoshī.", "I'm looking for Teacher Wen.", "Saya cari Guru Wen."),
+      ], word=[W("喂", "wèi", ('叹 · interjection', '叹 · kata seru'), ("hello", "halo"))],
+      check=(("How do you start a phone call in Chinese?", "喂 wèi, like 喂，是田芳吗？"),
+             ("Bagaimana cara memulai telepon dalam bahasa Mandarin?", "喂 wèi, seperti 喂，是田芳吗？"))),
+    S("WHAT", ("了 le: A New Situation", "了 le: Situasi Baru"), [
+        L("我的手机关机了。", "Wǒ de shǒujī guānjī le.", "My phone is off now.", "HP saya sekarang mati."),
+        L("饭好了，我们去吃饭吧。", "Fàn hǎo le, wǒmen qù chīfàn ba.", "The food is ready, let's go and eat.", "Makanannya sudah siap, ayo kita makan."),
+      ], word=[W("了", "le", ('助 · particle', '助 · partikel'), ("at the end of a sentence: a change or a new situation", "di akhir kalimat: perubahan atau situasi baru"))],
+      explain=("[NOTE] The slide writes the word class as \"anx.\". 助 means particle, so this looks like a typo.",
+               "[NOTE] Slide menulis jenis katanya \"anx.\". 助 berarti partikel, jadi ini tampaknya salah ketik."),
+      check=(("Where does this 了 go?", "At the end of the sentence."),
+             ("了 ini diletakkan di mana?", "Di akhir kalimat."))),
+    S("WHAT", ("阿姨 āyí: Aunt", "阿姨 āyí: Tante"), [
+        L("阿姨您好，我找田芳。", "Āyí nín hǎo, wǒ zhǎo Tián Fāng.", "Hello auntie, I'm looking for Tian Fang.", "Halo Tante, saya cari Tian Fang."),
+      ], word=[W("阿姨", "āyí", ('名 · noun', '名 · kata benda'), ("aunt", "tante, bibi"))],
+      check=(("Translate: 阿姨您好", "Hello, auntie."), ("Terjemahkan: 阿姨您好", "Halo, Tante."))),
+    S("WHAT", ("中学 zhōngxué: Middle School", "中学 zhōngxué: Sekolah Menengah"), [
+        L("中学同学", "zhōngxué tóngxué", "middle school classmate", "teman sekolah menengah"),
+        L("一个中学同学", "yí ge zhōngxué tóngxué", "a middle school classmate", "seorang teman sekolah menengah"),
+        L("上中学", "shàng zhōngxué", "attend middle school", "masuk sekolah menengah"),
+        L("弟弟明年上中学。", "Dìdi míngnián shàng zhōngxué.", "My younger brother starts middle school next year.", "Adik laki-laki saya masuk sekolah menengah tahun depan."),
+      ], word=[W("中学", "zhōngxué", ('名 · noun', '名 · kata benda'), ("middle school", "sekolah menengah"))],
+      check=(("How do you say \"a middle school classmate\"?", "一个中学同学"),
+             ("Bagaimana mengatakan \"seorang teman sekolah menengah\"?", "一个中学同学"))),
+    S("WHAT", ("出国 chūguó: To Go Abroad", "出国 chūguó: Pergi ke Luar Negeri"), [
+        L("我明年想出国玩。", "Wǒ míngnián xiǎng chūguó wán.", "I want to travel abroad next year.", "Tahun depan saya mau jalan-jalan ke luar negeri."),
+        L("田芳出国上大学了。", "Tián Fāng chūguó shàng dàxué le.", "Tian Fang went abroad for university.", "Tian Fang sudah kuliah di luar negeri."),
+        L("出去 / 出口", "chūqù / chūkǒu", "go out / exit", "keluar / pintu keluar"),
+        L("我们走安全出口出去吧。", "Wǒmen zǒu ānquán chūkǒu chūqù ba.", "Let's leave by the safety exit.", "Ayo kita keluar lewat pintu darurat."),
+      ], word=[W("出国", "chūguó", ('动 · verb', '动 · kata kerja'), ("to go abroad", "pergi ke luar negeri"))],
+      intro=('出 means to move from inside to outside.', '出 berarti bergerak dari dalam ke luar.'),
+      check=(("What does 出 mean in 出国, 出去 and 出口？", "Moving from inside to outside."),
+             ("Apa arti 出 dalam 出国, 出去, dan 出口？", "Bergerak dari dalam ke luar."))),
+    S("WHAT", ("关机 guānjī: To Turn Off a Phone", "关机 guānjī: Mematikan HP"), [
+        L("手机没电关机了。", "Shǒujī méi diàn guānjī le.", "The phone ran out of battery and turned off.", "HP-nya kehabisan baterai dan mati."),
+        L("考试前要把手机静音或关机。", "Kǎoshì qián yào bǎ shǒujī jìngyīn huò guānjī.", "Before an exam, mute or turn off your phone.", "Sebelum ujian, HP harus disenyapkan atau dimatikan."),
+      ], word=[W("关机", "guānjī", ('动 · verb', '动 · kata kerja'), ("to turn off one's mobile phone", "mematikan HP"))],
+      intro=('关 means to turn off, to switch off, to close.', '关 berarti mematikan atau menutup.'),
+      check=(("Translate: 我的手机关机了。", "My phone is off now."), ("Terjemahkan: 我的手机关机了。", "HP saya sekarang mati."))),
+    S("WHAT", ("Words with 关", "Kata dengan 关"), [
+        L("关门 / 关灯 / 关电脑", "guān mén / guān dēng / guān diànnǎo", "close the door / turn off the light / turn off the computer", "menutup pintu / mematikan lampu / mematikan komputer"),
+        L("教室好热啊。我们关门然后开空调吧。", "Jiàoshì hǎo rè a. Wǒmen guān mén ránhòu kāi kōngtiáo ba.", "The classroom is so hot. Let's close the door and turn on the AC.", "Kelasnya panas sekali. Ayo tutup pintu lalu nyalakan AC."),
+        L("离开教室之前我们要记得关灯和关电脑。", "Líkāi jiàoshì zhīqián wǒmen yào jìde guān dēng hé guān diànnǎo.", "Before leaving the classroom, remember to turn off the lights and computers.", "Sebelum keluar kelas, kita harus ingat mematikan lampu dan komputer."),
+      ], check=(("How do you say \"turn off the light\"?", "关灯 guān dēng"), ("Bagaimana mengatakan \"mematikan lampu\"?", "关灯 guān dēng"))),
+    S("WHAT", ("打（电话） dǎ (diànhuà): To Make a Call", "打（电话） dǎ (diànhuà): Menelepon"), [
+        L("他打电话问我作业是什么。", "Tā dǎ diànhuà wèn wǒ zuòyè shì shénme.", "He called to ask me what the homework was.", "Dia menelepon untuk bertanya PR-nya apa."),
+      ], word=[W("打（电话）", "dǎ (diànhuà)", ('动 · verb', '动 · kata kerja'), ("to make (a phone call)", "menelepon"))],
+      check=(("Which verb goes with 电话 when you make a call?", "打: 打电话"), ("Kata kerja apa yang dipakai dengan 电话 saat menelepon?", "打: 打电话"))),
+    S("REMEMBER", ("Many Meanings of 打", "Banyak Arti 打"), [
+        L("打人 / 打架", "dǎ rén / dǎjià", "hit someone / fight", "memukul orang / berkelahi"),
+        L("打字 / 打招呼", "dǎzì / dǎ zhāohu", "type / say hello", "mengetik / menyapa"),
+        L("打车 / 打扫 / 打雷", "dǎchē / dǎsǎo / dǎléi", "take a taxi / clean / thunder", "naik taksi / membersihkan / petir"),
+        L("打篮球 / 打网球 / 打羽毛球", "dǎ lánqiú / dǎ wǎngqiú / dǎ yǔmáoqiú", "play basketball / tennis / badminton", "main basket / tenis / bulu tangkis"),
+      ], intro=("打 + ball sport = to play that sport.", "打 + olahraga bola = bermain olahraga itu."),
+      explain=("[NOTE] The slide says 打 + ball sport, but football uses 踢: 踢足球. See the 踢 slide.",
+               "[NOTE] Slide menulis 打 + olahraga bola, tetapi sepak bola memakai 踢: 踢足球. Lihat slide 踢."),
+      check=(("How do you say \"play badminton\"?", "打羽毛球 dǎ yǔmáoqiú"), ("Bagaimana mengatakan \"main bulu tangkis\"?", "打羽毛球 dǎ yǔmáoqiú"))),
+
+    # Text (1) ---------------------------------------------------------------------------------
+    S("HOW", ("课文（一） 田芳去哪儿了 (1/3)", "课文（一） 田芳去哪儿了 (1/3)"), [
+        L("张东：喂，是田芳吗？", "Zhāng Dōng: Wèi, shì Tián Fāng ma?", "Zhang Dong: Hello, is this Tian Fang?", "Zhang Dong: Halo, ini Tian Fang?"),
+        L("田芳妈：田芳不在。是张东吧？", "Tián Fāng mā: Tián Fāng bú zài. Shì Zhāng Dōng ba?", "Tian Fang's mother: Tian Fang isn't here. Is this Zhang Dong?", "Ibu Tian Fang: Tian Fang tidak ada. Ini Zhang Dong, ya?"),
+        L("张东：阿姨，您好！田芳去哪儿了？", "Zhāng Dōng: Āyí, nín hǎo! Tián Fāng qù nǎr le?", "Zhang Dong: Hello, auntie! Where did Tian Fang go?", "Zhang Dong: Halo, Tante! Tian Fang pergi ke mana?"),
+        L("田芳妈：她四点多就去同学家了。她的一个中学同学要出国，她去看看她。", "Tián Fāng mā: Tā sì diǎn duō jiù qù tóngxué jiā le. Tā de yí ge zhōngxué tóngxué yào chūguó, tā qù kànkan tā.", "Tian Fang's mother: She left for a classmate's home just after four. A middle school classmate is going abroad, so she went to see her.", "Ibu Tian Fang: Dia sudah ke rumah temannya sejak lewat jam empat. Seorang teman SMP-nya mau ke luar negeri, jadi dia pergi menjenguknya."),
+      ], intro=("张东打电话找田芳，田芳妈妈接电话。", "张东打电话找田芳，田芳妈妈接电话。"),
+      check=(("田芳在家吗？", "田芳不在家。(Tian Fang isn't home.)"), ("田芳在家吗？", "田芳不在家。(Tian Fang tidak di rumah.)"))),
+    S("HOW", ("课文（一） 田芳去哪儿了 (2/3)", "课文（一） 田芳去哪儿了 (2/3)"), [
+        L("张东：她什么时候能回来？", "Zhāng Dōng: Tā shénme shíhou néng huílai?", "Zhang Dong: When can she come back?", "Zhang Dong: Kapan dia bisa pulang?"),
+        L("田芳妈：她没说，你打她的手机吧。", "Tián Fāng mā: Tā méi shuō, nǐ dǎ tā de shǒujī ba.", "Tian Fang's mother: She didn't say. Try her mobile.", "Ibu Tian Fang: Dia tidak bilang. Telepon saja HP-nya."),
+        L("张东：我打了，可是她关机了。", "Zhāng Dōng: Wǒ dǎ le, kěshì tā guānjī le.", "Zhang Dong: I did, but her phone is off.", "Zhang Dong: Sudah, tapi HP-nya mati."),
+        L("田芳妈：是吗？你过一会儿再打吧。", "Tián Fāng mā: Shì ma? Nǐ guò yíhuìr zài dǎ ba.", "Tian Fang's mother: Really? Call again in a little while.", "Ibu Tian Fang: Oh ya? Telepon lagi sebentar lagi, ya."),
+      ], check=(("Why can't Zhang Dong reach Tian Fang's mobile?", "她关机了: her phone is off."), ("Mengapa Zhang Dong tidak bisa menghubungi HP Tian Fang?", "她关机了: HP-nya mati."))),
+    S("HOW", ("课文（一） 田芳去哪儿了 (3/3)", "课文（一） 田芳去哪儿了 (3/3)"), [
+        L("张东：阿姨，田芳回来了没有？", "Zhāng Dōng: Āyí, Tián Fāng huílai le méiyǒu?", "Zhang Dong: Auntie, has Tian Fang come back?", "Zhang Dong: Tante, Tian Fang sudah pulang belum?"),
+        L("田芳妈：还没有呢。", "Tián Fāng mā: Hái méiyǒu ne.", "Tian Fang's mother: Not yet.", "Ibu Tian Fang: Belum."),
+      ], intro=("张东又来电话了。", "张东又来电话了。"),
+      check=(("How do you answer \"not yet\" in this dialogue?", "还没有呢。"), ("Bagaimana menjawab \"belum\" dalam dialog ini?", "还没有呢。"))),
+    S("HOW", ("Role-play: Looking for Someone", "Bermain Peran: Mencari Seseorang"), [
+        L("A：____在吗？", "A: ____ zài ma?", "A: Is ____ here?", "A: ____ ada?"),
+        L("B：____不在。我是____。", "B: ____ bú zài. Wǒ shì ____.", "B: ____ isn't here. I'm ____.", "B: ____ tidak ada. Saya ____."),
+        L("A：____，您好！____去哪儿了？", "A: ____, nín hǎo! ____ qù nǎr le?", "A: Hello ____！ Where did ____ go?", "A: Halo ____！ ____ pergi ke mana?"),
+        L("B：她/他____了。", "B: Tā ____ le.", "B: She/he went to ____.", "B: Dia sudah ____."),
+        L("玛丽 去超市买东西", "Mǎlì qù chāoshì mǎi dōngxi", "Mary went to the supermarket to shop.", "Mary pergi ke supermarket untuk belanja."),
+        L("张老师 大学城开会", "Zhāng lǎoshī dàxuéchéng kāihuì", "Teacher Zhang has a meeting at University Town.", "Guru Zhang rapat di University Town."),
+      ], intro=("Go to a classroom or office and look for someone (from p. 15).", "Pergi ke kelas atau kantor dan cari seseorang (dari hlm. 15)."),
+      check=(("Fill in: 玛丽____了。", "玛丽去超市买东西了。"), ("Isi: 玛丽____了。", "玛丽去超市买东西了。"))),
+
+    # Grammar (1) ------------------------------------------------------------------------------
+    S("REMEMBER", ("语气助词\"了\"(1): Three Sentence Types", "语气助词\"了\"(1): Tiga Jenis Kalimat"), [
+        L("肯定句：……+了", "Kěndìngjù: …… + le", "Declarative", "Kalimat positif"),
+        L("疑问句：……+了+吗？/……+了+没有？", "Yíwènjù: …… + le + ma? / …… + le + méiyǒu?", "Question", "Kalimat tanya"),
+        L("否定句：……还没……呢 / ……没……", "Fǒudìngjù: …… hái méi …… ne / …… méi ……", "Negative (no 了 at the end)", "Kalimat negatif (tanpa 了 di akhir)"),
+      ], explain=("[NOTE] The slide titles say \"model particle\". 语气助词 means modal particle.",
+                  "[NOTE] Judul slide menulis \"model particle\". 语气助词 artinya modal particle (partikel modal)."),
+      check=(("Do you keep 了 in a 没 sentence?", "No. 没 sentences do not end in 了."), ("Apakah 了 tetap dipakai dalam kalimat 没？", "Tidak. Kalimat 没 tidak diakhiri 了."))),
+    S("WHAT", ("句子+了: What It Shows", "句子+了: Apa Artinya"), [
+        L("你去哪儿？我去商店。", "Nǐ qù nǎr? Wǒ qù shāngdiàn.", "Where are you going? I'm going to the shop. (还没有去)", "Kamu mau ke mana? Saya mau ke toko. (还没有去, belum pergi)"),
+        L("你去哪儿了？我去商店了。", "Nǐ qù nǎr le? Wǒ qù shāngdiàn le.", "Where did you go? I went to the shop. (已经去)", "Kamu tadi ke mana? Saya tadi ke toko. (已经去, sudah pergi)"),
+        L("你买什么？我买衣服。", "Nǐ mǎi shénme? Wǒ mǎi yīfu.", "What are you buying? Clothes. (还没有买)", "Kamu mau beli apa? Beli baju. (还没有买, belum beli)"),
+        L("你买什么了？我买衣服了。", "Nǐ mǎi shénme le? Wǒ mǎi yīfu le.", "What did you buy? Clothes. (已经买)", "Kamu beli apa? Saya beli baju. (已经买, sudah beli)"),
+      ], intro=("句子+了 shows: 事情发生 / 动作完成 / 情况出现 / 状态变化.\nSomething happened, finished, appeared or changed.",
+                "句子+了 menunjukkan: 事情发生 / 动作完成 / 情况出现 / 状态变化.\nSesuatu terjadi, selesai, muncul, atau berubah."),
+      check=(("我去商店 or 我去商店了: which means you already went?", "我去商店了。"), ("我去商店 atau 我去商店了: mana yang berarti sudah pergi?", "我去商店了。"))),
+    S("HOW", ("句子+了: Four Examples", "句子+了: Empat Contoh"), [
+        L("上个月我跟朋友去北京了。", "Shàng ge yuè wǒ gēn péngyou qù Běijīng le.", "Last month I went to Beijing with a friend. (已经去北京了)", "Bulan lalu saya ke Beijing bersama teman. (已经去北京了)"),
+        L("我的手机关机了。", "Wǒ de shǒujī guānjī le.", "My phone is off. (状态：开→关)", "HP saya mati. (状态：开→关)"),
+        L("玛丽今年20岁了。", "Mǎlì jīnnián èrshí suì le.", "Mary is 20 this year. (情况：19岁→20岁)", "Mary tahun ini sudah 20 tahun. (情况：19岁→20岁)"),
+        L("饭做好了，我们吃饭吧。", "Fàn zuòhǎo le, wǒmen chīfàn ba.", "The food is ready, let's eat. (饭已经做好)", "Makanan sudah siap, ayo makan. (饭已经做好)"),
+      ], check=(("What changed in 玛丽今年20岁了？", "Her age: 19 → 20."), ("Apa yang berubah dalam 玛丽今年20岁了？", "Umurnya: 19 → 20."))),
+    S("HOW", ("Questions: ……了吗？ / ……了没有？", "Kalimat Tanya: ……了吗？ / ……了没有？"), [
+        L("你买A班的书了吗？/ 你买A班的书了没有？", "Nǐ mǎi A bān de shū le ma? / Nǐ mǎi A bān de shū le méiyǒu?", "Did you buy Class A's book?", "Kamu sudah beli buku kelas A?"),
+        L("买了。/ 没买。", "Mǎi le. / Méi mǎi.", "Yes. / No.", "Sudah. / Belum."),
+        L("昨天你给朋友打电话了没有？", "Zuótiān nǐ gěi péngyou dǎ diànhuà le méiyǒu?", "Did you call your friend yesterday?", "Kemarin kamu sudah menelepon temanmu?"),
+        L("打了。/ 没有。", "Dǎ le. / Méiyǒu.", "Yes. / No.", "Sudah. / Belum."),
+      ], explain=("[NOTE] On p. 22 the two versions of the phone question are written the same. The first was probably meant to end in 了吗.",
+                  "[NOTE] Di hlm. 22 kedua versi pertanyaan telepon ditulis sama. Versi pertama mungkin seharusnya berakhir dengan 了吗."),
+      check=(("Answer in Chinese (p. 22): 今年7月你去旅行了没有？", "Your own answer, e.g. 去了。/ 没有。"), ("Jawab dalam bahasa Mandarin (hlm. 22): 今年7月你去旅行了没有？", "Jawabanmu sendiri, misalnya 去了。/ 没有。"))),
+    S("HOW", ("……还没（有）……呢: Not Yet", "……还没（有）……呢: Belum"), [
+        L("她回家了吗？她还没（有）回家呢。", "Tā huí jiā le ma? Tā hái méi(yǒu) huí jiā ne.", "Has she gone home? Not yet.", "Dia sudah pulang? Dia belum pulang."),
+        L("他走了没有？他还没（有）走呢。", "Tā zǒu le méiyǒu? Tā hái méi(yǒu) zǒu ne.", "Has he left? Not yet.", "Dia sudah pergi? Dia belum pergi."),
+        L("你大学毕业了没有？我还没（有）大学毕业呢。", "Nǐ dàxué bìyè le méiyǒu? Wǒ hái méi(yǒu) dàxué bìyè ne.", "Have you graduated? Not yet.", "Kamu sudah lulus kuliah? Saya belum lulus."),
+      ], check=(("Answer with 还没（有）……呢: 田芳回家了没有？", "她还没有回家呢。"), ("Jawab dengan 还没（有）……呢: 田芳回家了没有？", "她还没有回家呢。"))),
+    S("REMEMBER", ("Rule 1: 没（有） + Verb, No 了", "Aturan 1: 没（有） + Kata Kerja, Tanpa 了"), [], intro=(
+        "When 没（有） comes before a verb to negate it, do not end the sentence with 了.",
+        "Kalau 没（有） dipakai sebelum kata kerja untuk menyangkal, kalimat tidak boleh diakhiri 了."),
+      wr=("我昨天没去商店了。\n她觉得不舒服，今天没有上课了。", "我昨天没去商店。\n她觉得不舒服，今天没有上课。",
+          ("没（有） already says it did not happen, so no 了 at the end.", "没（有） sudah berarti tidak terjadi, jadi tidak perlu 了 di akhir.")),
+      check=(("Fix it: 我昨天没去商店了。", "我昨天没去商店。"), ("Perbaiki: 我昨天没去商店了。", "我昨天没去商店。"))),
+    S("REMEMBER", ("Rule 2: Recurring Actions, No 了", "Aturan 2: Kegiatan Rutin, Tanpa 了"), [
+        L("常常、经常、总是、往往、天天、每周……", "chángcháng, jīngcháng, zǒngshì, wǎngwǎng, tiāntiān, měi zhōu……", "often, always, every day, every week…", "sering, selalu, setiap hari, setiap minggu…"),
+      ], intro=("When a sentence shows a recurring action, do not end it with 了.", "Kalau kalimat menunjukkan kegiatan yang berulang, jangan diakhiri 了."),
+      wr=("每天早上她都去打太极拳了。\n她经常来我家玩儿了。\n我在大学时常常参加足球比赛了。", "每天早上她都去打太极拳。\n她经常来我家玩儿。\n我在大学时常常参加足球比赛。",
+          ("常常, 经常 and 每天 show a habit, so the sentence does not take 了.", "常常, 经常, dan 每天 menunjukkan kebiasaan, jadi kalimatnya tidak memakai 了.")),
+      check=(("Fix it: 她经常来我家玩儿了。", "她经常来我家玩儿。"), ("Perbaiki: 她经常来我家玩儿了。", "她经常来我家玩儿。"))),
+    S("HOW", ("对话: Yes or No with 了", "对话: Jawab Ya atau Tidak dengan 了"), [
+        L("你吃午饭了没有？", "Nǐ chī wǔfàn le méiyǒu?", "Have you had lunch?", "Kamu sudah makan siang?"),
+        L("吃了。/ 我没（有）吃午饭。", "Chī le. / Wǒ méi(yǒu) chī wǔfàn.", "Yes. / I haven't had lunch.", "Sudah. / Saya belum makan siang."),
+        L("你们上口语课了没有？", "Nǐmen shàng kǒuyǔ kè le méiyǒu?", "Did you have speaking class?", "Kalian sudah ada kelas percakapan?"),
+        L("上了。/ 我们没（有）上口语课。", "Shàng le. / Wǒmen méi(yǒu) shàng kǒuyǔ kè.", "Yes. / We didn't have speaking class.", "Sudah. / Kami belum ada kelas percakapan."),
+      ], check=(("Answer \"no\" in a full sentence: 你吃午饭了没有？", "我没（有）吃午饭。"), ("Jawab \"belum\" dengan kalimat lengkap: 你吃午饭了没有？", "我没（有）吃午饭。"))),
+    S("HOW", ("替换: Substitution Practice", "替换: Latihan Substitusi"), [
+        L("A：昨天你看比赛了吗？B：没有。", "A: Zuótiān nǐ kàn bǐsài le ma? B: Méiyǒu.", "A: Did you watch the match yesterday? B: No.", "A: Kemarin kamu nonton pertandingan? B: Tidak."),
+        L("A：你去哪儿了？B：我去同学家了。", "A: Nǐ qù nǎr le? B: Wǒ qù tóngxué jiā le.", "A: Where did you go? B: To a classmate's home.", "A: Kamu ke mana? B: Saya ke rumah teman."),
+        L("图书馆 / 银行 / 公园 / 商店", "túshūguǎn / yínháng / gōngyuán / shāngdiàn", "library / bank / park / shop", "perpustakaan / bank / taman / toko"),
+        L("A：你预习课文了没有？B：还没有呢。", "A: Nǐ yùxí kèwén le méiyǒu? B: Hái méiyǒu ne.", "A: Have you previewed the text? B: Not yet.", "A: Kamu sudah mempelajari teks? B: Belum."),
+        L("预习生词 / 听录音 / 写汉字 / 做练习", "yùxí shēngcí / tīng lùyīn / xiě Hànzì / zuò liànxí", "preview new words / listen to the recording / write characters / do exercises", "mempelajari kosakata / mendengar rekaman / menulis 汉字 / mengerjakan latihan"),
+      ], check=(("Swap in 图书馆: 我去同学家了。", "我去图书馆了。"), ("Ganti dengan 图书馆: 我去同学家了。", "我去图书馆了。"))),
+
+    # New words (2) ----------------------------------------------------------------------------
+    S("WHAT", ("饿 è: Hungry", "饿 è: Lapar"), [
+        L("肚子饿", "dùzi è", "hungry stomach", "perut lapar"),
+        L("我饿了，我想吃饭。", "Wǒ è le, wǒ xiǎng chīfàn.", "I'm hungry, I want to eat.", "Saya lapar, saya mau makan."),
+      ], word=[W("饿", "è", ('形 · adjective', '形 · kata sifat'), ("hungry", "lapar"))],
+      explain=("[NOTE] The slide spells it \"hungery\". The correct spelling is \"hungry\".", "[NOTE] Slide menulis \"hungery\". Ejaan yang benar adalah \"hungry\"."),
+      check=(("Translate: 我饿了。", "I'm hungry."), ("Terjemahkan: 我饿了。", "Saya lapar."))),
+    S("WHAT", ("对了 duìle: By the Way", "对了 duìle: Oh ya"), [
+        L("对了，你记得明天把书带给我。", "Duìle, nǐ jìde míngtiān bǎ shū dài gěi wǒ.", "By the way, remember to bring me the book tomorrow.", "Oh ya, ingat bawakan buku itu besok."),
+        L("我在办公室。对了，你今天想看比赛吗？", "Wǒ zài bàngōngshì. Duìle, nǐ jīntiān xiǎng kàn bǐsài ma?", "I'm in the office. By the way, do you want to watch the match today?", "Saya di kantor. Oh ya, kamu mau nonton pertandingan hari ini?"),
+      ], word=[W("对了", "duìle", ('', ''), ("by the way; and", "oh ya; ngomong-ngomong"))],
+      check=(("When do you say 对了？", "When you suddenly think of something else to say."), ("Kapan kita memakai 对了？", "Saat tiba-tiba teringat hal lain untuk dikatakan."))),
+    S("WHAT", ("忘 wàng: To Forget", "忘 wàng: Lupa"), [
+        L("我忘写作业了。", "Wǒ wàng xiě zuòyè le.", "I forgot to do my homework.", "Saya lupa mengerjakan PR."),
+        L("我忘带书包了。", "Wǒ wàng dài shūbāo le.", "I forgot to bring my schoolbag.", "Saya lupa membawa tas sekolah."),
+        L("明天是妈妈的生日，不要忘记给妈妈打电话。", "Míngtiān shì māma de shēngrì, búyào wàngjì gěi māma dǎ diànhuà.", "Tomorrow is Mom's birthday, don't forget to call her.", "Besok ulang tahun Mama, jangan lupa meneleponnya."),
+      ], word=[W("忘", "wàng", ('动 · verb', '动 · kata kerja'), ("to forget", "lupa"))],
+      check=(("Say \"I forgot to bring my schoolbag\".", "我忘带书包了。"), ("Katakan \"Saya lupa membawa tas sekolah\".", "我忘带书包了。"))),
+    S("WHAT", ("又 yòu: Again", "又 yòu: Lagi"), [
+        L("又+v.+了：他又迟到了。", "yòu + v. + le: Tā yòu chídào le.", "He is late again.", "Dia terlambat lagi."),
+        L("又+adj.+又+adj.：又饿又累", "yòu + adj. + yòu + adj.: yòu è yòu lèi", "hungry and tired", "lapar dan lelah"),
+        L("又高又大", "yòu gāo yòu dà", "tall and big", "tinggi dan besar"),
+      ], word=[W("又", "yòu", ('', ''), ("again", "lagi"))],
+      check=(("Say \"hungry and tired\" with 又.", "又饿又累"), ("Katakan \"lapar dan lelah\" dengan 又.", "又饿又累"))),
+    S("WHAT", ("开机 kāijī: To Turn On a Phone", "开机 kāijī: Menyalakan HP"), [
+        L("要上课了，请先将电脑开机。", "Yào shàngkè le, qǐng xiān jiāng diànnǎo kāijī.", "Class is about to start, please turn on your computer first.", "Kelas mau mulai, tolong nyalakan komputer dulu."),
+        L("开门 / 开车 / 开会", "kāi mén / kāichē / kāihuì", "open the door / drive a car / hold a meeting", "membuka pintu / menyetir mobil / rapat"),
+      ], word=[W("开机", "kāijī", ('动 · verb', '动 · kata kerja'), ("to turn on one's mobile phone", "menyalakan HP"))],
+      intro=('开 means to turn on, to switch on, to open, to start.', '开 berarti menyalakan, membuka, atau memulai.'),
+      check=(("What is the opposite of 关机？", "开机"), ("Apa lawan kata 关机？", "开机"))),
+    S("WHAT", ("响 xiǎng and 接 jiē", "响 xiǎng dan 接 jiē"), [
+        L("电话响了，快接电话。", "Diànhuà xiǎng le, kuài jiē diànhuà.", "The phone is ringing, answer it quickly.", "Teleponnya berbunyi, cepat angkat."),
+        L("接电话 ↔ 打电话", "jiē diànhuà ↔ dǎ diànhuà", "answer a call ↔ make a call", "mengangkat telepon ↔ menelepon"),
+      ], word=[W("响", "xiǎng", ('动 · verb', '动 · kata kerja'), ("to ring", "berbunyi")), W("接", "jiē", ('动 · verb', '动 · kata kerja'), ("to get", "menerima"))],
+      intro=('With a phone, 接 means to answer it.', 'Untuk telepon, 接 berarti mengangkat.'),
+      check=(("打电话 or 接电话: which one does the person receiving the call do?", "接电话"), ("打电话 atau 接电话: mana yang dilakukan penerima telepon?", "接电话"))),
+    S("WHAT", ("踢 tī: To Kick", "踢 tī: Menendang"), [
+        L("踢人是不对的。", "Tī rén shì bú duì de.", "Kicking people is wrong.", "Menendang orang itu tidak benar."),
+        L("我们喜欢踢足球。", "Wǒmen xǐhuan tī zúqiú.", "We like playing football.", "Kami suka main sepak bola."),
+      ], word=[W("踢", "tī", ('动 · verb', '动 · kata kerja'), ("to kick; to play (football)", "menendang; bermain (sepak bola)"))],
+      check=(("打足球 or 踢足球？", "踢足球"), ("打足球 atau 踢足球？", "踢足球"))),
+    S("WHAT", ("比赛 bǐsài: Match", "比赛 bǐsài: Pertandingan"), [
+        L("他们在看足球比赛。", "Tāmen zài kàn zúqiú bǐsài.", "They are watching a football match.", "Mereka sedang menonton pertandingan sepak bola."),
+        L("他们在进行足球比赛。", "Tāmen zài jìnxíng zúqiú bǐsài.", "They are playing a football match.", "Mereka sedang bertanding sepak bola."),
+      ], word=[W("比赛", "bǐsài", ('动 / 名 · verb / noun', '动 / 名 · kata kerja / benda'), ("to contest; match", "bertanding; pertandingan"))],
+      check=(("Is 比赛 a verb or a noun?", "Both."), ("比赛 kata kerja atau kata benda?", "Keduanya."))),
+    S("WHAT", ("队 duì: Team", "队 duì: Tim"), [
+        L("一支足球队", "yì zhī zúqiú duì", "a football team", "satu tim sepak bola"),
+        L("国家队", "guójiā duì", "national team", "tim nasional"),
+        L("留学生代表队", "liúxuéshēng dàibiǎo duì", "international students' team", "tim perwakilan mahasiswa asing"),
+        L("你喜欢/支持哪一队？", "Nǐ xǐhuan / zhīchí nǎ yí duì?", "Which team do you like / support?", "Kamu suka / mendukung tim yang mana?"),
+      ], word=[W("队", "duì", ('名 · noun', '名 · kata benda'), ("team", "tim"))],
+      check=(("Say \"national team\".", "国家队"), ("Katakan \"tim nasional\".", "国家队"))),
+    S("WHAT", ("输 shū, 赢 yíng, 比 bǐ", "输 shū, 赢 yíng, 比 bǐ"), [
+        L("阿根廷和西班牙比赛。", "Āgēntíng hé Xībānyá bǐsài.", "Argentina plays Spain.", "Argentina bertanding melawan Spanyol."),
+        L("谁赢了？/ 谁输了？", "Shéi yíng le? / Shéi shū le?", "Who won? / Who lost?", "Siapa yang menang? / Siapa yang kalah?"),
+        L("西班牙赢了。/ 阿根廷输了。", "Xībānyá yíng le. / Āgēntíng shū le.", "Spain won. / Argentina lost.", "Spanyol menang. / Argentina kalah."),
+        L("阿根廷比西班牙是几比几？0比1。", "Āgēntíng bǐ Xībānyá shì jǐ bǐ jǐ? Líng bǐ yī.", "What's the score? 0 to 1.", "Skornya berapa? 0 lawan 1."),
+      ], word=[W("输", "shū", ('动 · verb', '动 · kata kerja'), ("to lose", "kalah")), W("赢", "yíng", ('动 · verb', '动 · kata kerja'), ("to win", "menang")), W("比", "bǐ", ('动 · verb', '动 · kata kerja'), ("to (in a score)", "lawan (dalam skor)"))],
+      check=(("How do you read 2:1 as a score?", "二比一 èr bǐ yī"), ("Bagaimana membaca skor 2:1?", "二比一 èr bǐ yī"))),
+    S("WHAT", ("祝贺 zhùhè and 哎 āi", "祝贺 zhùhè dan 哎 āi"), [
+        L("祝贺你们比赛赢了。", "Zhùhè nǐmen bǐsài yíng le.", "Congratulations on winning the match.", "Selamat atas kemenangan kalian."),
+        L("哎，你的书包在这里！", "Āi, nǐ de shūbāo zài zhèlǐ!", "Hey, your schoolbag is here!", "Eh, tas sekolahmu ada di sini!"),
+        L("（听到了咳嗽声）哎，你该吃药了。", "(Tīngdào le késou shēng) Āi, nǐ gāi chī yào le.", "(Hearing a cough) Hey, you should take your medicine.", "(Mendengar batuk) Eh, kamu harus minum obat."),
+      ], word=[W("祝贺", "zhùhè", ('动 · verb', '动 · kata kerja'), ("to congratulate", "memberi selamat")), W("哎", "āi", ('叹 · interjection', '叹 · kata seru'), ("used as a reminder", "untuk mengingatkan"))],
+      check=(("Say \"Congratulations!\" to a team.", "祝贺你们！"), ("Ucapkan \"Selamat!\" kepada sebuah tim.", "祝贺你们！"))),
+    S("WHAT", ("上 shàng, 托福 tuōfú, 考 kǎo", "上 shàng, 托福 tuōfú, 考 kǎo"), [
+        L("上课 / 上学 / 上班", "shàngkè / shàngxué / shàngbān", "attend class / go to school / go to work", "ikut kelas / bersekolah / bekerja"),
+        L("考试 / 考第一 / 考托福", "kǎoshì / kǎo dì-yī / kǎo tuōfú", "take an exam / come first in an exam / take the TOEFL", "ujian / juara satu ujian / ikut tes TOEFL"),
+      ], word=[W("上", "shàng", ('动 · verb', '动 · kata kerja'), ("to attend", "mengikuti")), W("托福", "tuōfú", ('名 · noun', '名 · kata benda'), ("TOEFL", "TOEFL")), W("考", "kǎo", ('动 · verb', '动 · kata kerja'), ("to take a test", "mengikuti tes"))],
+      intro=('上学 covers 小学, 初中, 高中, 大学.', '上学 mencakup 小学, 初中, 高中, 大学.'),
+      check=(("Say \"take the TOEFL\".", "考托福"), ("Katakan \"ikut tes TOEFL\".", "考托福"))),
+    S("WHAT", ("已经 yǐjīng: Already", "已经 yǐjīng: Sudah"), [
+        L("已经报名了 ↔ 还没报名呢", "yǐjīng bàomíng le ↔ hái méi bàomíng ne", "already signed up ↔ not signed up yet", "sudah mendaftar ↔ belum mendaftar"),
+        L("已经上托福班了 ↔ 还没上托福班呢", "yǐjīng shàng tuōfú bān le ↔ hái méi shàng tuōfú bān ne", "already in TOEFL class ↔ not in it yet", "sudah ikut kelas TOEFL ↔ belum ikut"),
+        L("已经考托福了 ↔ 还没考托福呢", "yǐjīng kǎo tuōfú le ↔ hái méi kǎo tuōfú ne", "already took the TOEFL ↔ not yet", "sudah tes TOEFL ↔ belum"),
+      ], word=[W("已经", "yǐjīng", ('副 · adverb', '副 · kata keterangan'), ("already", "sudah"))],
+      intro=('已经……了 is the opposite of 还没……呢.', '已经……了 adalah lawan dari 还没……呢.'),
+      check=(("Opposite of 已经报名了？", "还没报名呢"), ("Lawan dari 已经报名了？", "还没报名呢"))),
+    S("WHAT", ("陪 péi: To Accompany", "陪 péi: Menemani"), [
+        L("陪张东去报名", "péi Zhāng Dōng qù bàomíng", "go with Zhang Dong to sign up", "menemani Zhang Dong mendaftar"),
+        L("陪同学踢足球", "péi tóngxué tī zúqiú", "play football with a classmate", "menemani teman main sepak bola"),
+        L("陪朋友看比赛", "péi péngyou kàn bǐsài", "watch a match with a friend", "menemani teman nonton pertandingan"),
+      ], word=[W("陪", "péi", ('动 · verb', '动 · kata kerja'), ("to accompany", "menemani"))],
+      intro=('Pattern: 陪 + sb. (do sth.)', 'Pola: 陪 + orang (melakukan sesuatu).'),
+      check=(("Say \"accompany a friend to watch a match\".", "陪朋友看比赛"), ("Katakan \"menemani teman nonton pertandingan\".", "陪朋友看比赛"))),
+
+    # Text (2) ---------------------------------------------------------------------------------
+    S("HOW", ("课文（二） 他又来电话了 (1/3)", "课文（二） 他又来电话了 (1/3)"), [
+        L("田芳：妈，我回来了。", "Tián Fāng: Mā, wǒ huílai le.", "Tian Fang: Mom, I'm back.", "Tian Fang: Ma, aku pulang."),
+        L("田芳妈：饿了吧？快吃饭吧！啊，对了，张东给你打电话了。", "Tián Fāng mā: È le ba? Kuài chīfàn ba! À, duìle, Zhāng Dōng gěi nǐ dǎ diànhuà le.", "Mother: Hungry, right? Eat quickly! Oh, by the way, Zhang Dong called you.", "Ibu: Lapar, kan? Ayo makan! Oh ya, tadi Zhang Dong meneleponmu."),
+        L("田芳：没有啊。", "Tián Fāng: Méiyǒu a.", "Tian Fang: No, he didn't.", "Tian Fang: Nggak ada, kok."),
+        L("田芳妈：他来电话找你，说打你的手机，你关机了。", "Tián Fāng mā: Tā lái diànhuà zhǎo nǐ, shuō dǎ nǐ de shǒujī, nǐ guānjī le.", "Mother: He called looking for you. He said he tried your mobile, but it was off.", "Ibu: Dia menelepon mencarimu. Katanya dia menelepon HP-mu, tapi HP-mu mati."),
+        L("田芳：啊！对了，我忘开机了。", "Tián Fāng: À! Duìle, wǒ wàng kāijī le.", "Tian Fang: Oh! Right, I forgot to turn it on.", "Tian Fang: Oh! Iya, aku lupa menyalakannya."),
+        L("田芳妈：快！电话又响了，你去接吧。", "Tián Fāng mā: Kuài! Diànhuà yòu xiǎng le, nǐ qù jiē ba.", "Mother: Quick! The phone is ringing again, go and answer it.", "Ibu: Cepat! Teleponnya bunyi lagi, sana angkat."),
+      ], check=(("Why was Tian Fang's phone off?", "她忘开机了: she forgot to turn it on."), ("Mengapa HP Tian Fang mati?", "她忘开机了: dia lupa menyalakannya."))),
+    S("HOW", ("课文（二） 他又来电话了 (2/3)", "课文（二） 他又来电话了 (2/3)"), [
+        L("田芳：喂，张东，下午你给我打电话了吧？", "Tián Fāng: Wèi, Zhāng Dōng, xiàwǔ nǐ gěi wǒ dǎ diànhuà le ba?", "Tian Fang: Hello, Zhang Dong, you called me this afternoon, right?", "Tian Fang: Halo, Zhang Dong, tadi sore kamu meneleponku, ya?"),
+        L("张东：打了，你怎么关机了？", "Zhāng Dōng: Dǎ le, nǐ zěnme guānjī le?", "Zhang Dong: Yes. Why was your phone off?", "Zhang Dong: Iya, kok HP-mu mati?"),
+        L("田芳：对不起，我忘开机了。下午你做什么了？", "Tián Fāng: Duìbuqǐ, wǒ wàng kāijī le. Xiàwǔ nǐ zuò shénme le?", "Tian Fang: Sorry, I forgot to turn it on. What did you do this afternoon?", "Tian Fang: Maaf, aku lupa menyalakannya. Tadi sore kamu ngapain?"),
+        L("张东：我去踢足球了。今天我们跟留学生代表队比赛了。", "Zhāng Dōng: Wǒ qù tī zúqiú le. Jīntiān wǒmen gēn liúxuéshēng dàibiǎo duì bǐsài le.", "Zhang Dong: I played football. We played the international students' team today.", "Zhang Dong: Aku main sepak bola. Hari ini kami bertanding melawan tim mahasiswa asing."),
+        L("田芳：你们队又输了吧？", "Tián Fāng: Nǐmen duì yòu shū le ba?", "Tian Fang: Your team lost again, right?", "Tian Fang: Timmu kalah lagi, ya?"),
+        L("张东：没有。这次我们赢了。", "Zhāng Dōng: Méiyǒu. Zhè cì wǒmen yíng le.", "Zhang Dong: No. This time we won.", "Zhang Dong: Nggak. Kali ini kami menang."),
+        L("田芳：几比几？", "Tián Fāng: Jǐ bǐ jǐ?", "Tian Fang: What was the score?", "Tian Fang: Skornya berapa?"),
+        L("张东：二比一。", "Zhāng Dōng: Èr bǐ yī.", "Zhang Dong: Two to one.", "Zhang Dong: Dua lawan satu."),
+      ], intro=("田芳接电话。", "田芳接电话。"),
+      check=(("足球比赛谁输了？", "留学生代表队输了。"), ("足球比赛谁输了？", "留学生代表队输了。"))),
+    S("HOW", ("课文（二） 他又来电话了 (3/3)", "课文（二） 他又来电话了 (3/3)"), [
+        L("田芳：祝贺你们！哎，你有什么事儿吗？", "Tián Fāng: Zhùhè nǐmen! Āi, nǐ yǒu shénme shìr ma?", "Tian Fang: Congratulations! Hey, did you want something?", "Tian Fang: Selamat ya! Eh, ada perlu apa?"),
+        L("张东：我想问问你，你不是要上托福班吗？报名了没有？", "Zhāng Dōng: Wǒ xiǎng wènwen nǐ, nǐ bú shì yào shàng tuōfú bān ma? Bàomíng le méiyǒu?", "Zhang Dong: I wanted to ask: aren't you going to take a TOEFL class? Have you signed up?", "Zhang Dong: Aku mau tanya, kamu kan mau ikut kelas TOEFL? Sudah daftar belum?"),
+        L("田芳：已经报了。你是不是也想考托福？", "Tián Fāng: Yǐjīng bào le. Nǐ shì bu shì yě xiǎng kǎo tuōfú?", "Tian Fang: Already did. Do you want to take the TOEFL too?", "Tian Fang: Sudah. Kamu juga mau tes TOEFL, ya?"),
+        L("张东：是。我想明天去报名，你陪我一起去，好吗？", "Zhāng Dōng: Shì. Wǒ xiǎng míngtiān qù bàomíng, nǐ péi wǒ yìqǐ qù, hǎo ma?", "Zhang Dong: Yes. I want to sign up tomorrow. Will you come with me?", "Zhang Dong: Iya. Besok aku mau daftar, temani aku, ya?"),
+        L("田芳：好的。", "Tián Fāng: Hǎo de.", "Tian Fang: OK.", "Tian Fang: Oke."),
+      ], explain=("[NOTE] On p. 57 the teacher asks 张东又给田芳来电话了没有？ and writes 没有. But the phone rings again and it is 张东 on the line, so the answer seems to be yes. Ask your teacher.",
+                  "[NOTE] Di hlm. 57 guru bertanya 张东又给田芳来电话了没有？ dan menulis 没有. Padahal telepon berbunyi lagi dan yang menelepon 张东, jadi jawabannya tampaknya sudah. Tanyakan pada gurumu."),
+      check=(("田芳报名了托福班没有？", "报名了。"), ("田芳报名了托福班没有？", "报名了。"))),
+
+    # Grammar (2) ------------------------------------------------------------------------------
+    S("WHAT", ("不是……吗？: Rhetorical Question", "不是……吗？: Pertanyaan Retoris"), [
+        L("你不是要上托福班吗？", "Nǐ bú shì yào shàng tuōfú bān ma?", "Aren't you going to take a TOEFL class? (你要去上托福班。)", "Kamu kan mau ikut kelas TOEFL? (你要去上托福班。)"),
+        L("咱们不是刚吃完晚饭吗？你又饿了？", "Zánmen bú shì gāng chīwán wǎnfàn ma? Nǐ yòu è le?", "Didn't we just finish dinner? Are you hungry again?", "Kita kan baru selesai makan malam? Kamu lapar lagi?"),
+      ], intro=("反问句 (rhetorical question): it looks negative, but it strongly says yes (强调肯定).",
+                "反问句 (pertanyaan retoris): bentuknya negatif, tetapi maknanya menegaskan \"ya\" (强调肯定)."),
+      check=(("What does 你不是要上托福班吗？ really mean?", "You are going to take a TOEFL class."), ("Apa arti sebenarnya 你不是要上托福班吗？", "Kamu memang mau ikut kelas TOEFL."))),
+    S("HOW", ("不是……吗？: Practice", "不是……吗？: Latihan"), [
+        L("A：我的书呢？", "A: Wǒ de shū ne?", "A: Where's my book?", "A: Bukuku mana?"),
+        L("B：不是在这里吗？", "B: Bú shì zài zhèlǐ ma?", "B: Isn't it right here?", "B: Bukannya ada di sini?"),
+        L("A：我们星期五下午去逛商场吧？", "A: Wǒmen xīngqīwǔ xiàwǔ qù guàng shāngchǎng ba?", "A: Shall we go to the mall on Friday afternoon?", "A: Jumat sore kita ke mal, yuk?"),
+        L("B：星期五下午不是有考试吗？", "B: Xīngqīwǔ xiàwǔ bú shì yǒu kǎoshì ma?", "B: Don't we have an exam on Friday afternoon?", "B: Bukannya Jumat sore ada ujian?"),
+      ], explain=("[ADDED] p. 55 gives two choices for each reply but does not mark the answer. These are the choices that fit best.",
+                  "[ADDED] Hlm. 55 memberi dua pilihan jawaban tanpa menandai yang benar. Ini pilihan yang paling cocok."),
+      check=(("Reply with 不是……吗？: 我的书呢？", "不是在这里吗？"), ("Jawab dengan 不是……吗？: 我的书呢？", "不是在这里吗？"))),
+    S("HOW", ("是不是: Yes-No Question", "是不是: Pertanyaan Ya atau Tidak"), [
+        L("是不是+V.：你是不是想家了？", "Shì bu shì + V.: Nǐ shì bu shì xiǎng jiā le?", "Do you miss home?", "Kamu kangen rumah, ya?"),
+        L("是不是+句子：是不是你们输了？", "Shì bu shì + jùzi: Shì bu shì nǐmen shū le?", "Did you lose?", "Kalian kalah, ya?"),
+        L("句子，是不是：你们输了，是不是？", "Jùzi, shì bu shì: Nǐmen shū le, shì bu shì?", "You lost, didn't you?", "Kalian kalah, kan?"),
+        L("你是不是累了？/ 你是不是喝酒了？", "Nǐ shì bu shì lèi le? / Nǐ shì bu shì hē jiǔ le?", "Are you tired? / Have you been drinking?", "Kamu capek, ya? / Kamu minum alkohol, ya?"),
+      ], intro=("\"是不是\" 正反问句 (affirmative-negative question).", "\"是不是\" 正反问句 (pertanyaan bentuk positif-negatif)."),
+      check=(("Ask \"Are you tired?\" with 是不是.", "你是不是累了？"), ("Tanyakan \"Kamu capek, ya?\" dengan 是不是.", "你是不是累了？"))),
+    S("REMEMBER", ("没（有） and 不: Summary", "没（有） dan 不: Ringkasan"), [
+        L("+n.：没（有）", "méi(yǒu) + n.", "not have", "tidak punya"),
+        L("+v.：不", "bù + v.", "personal will, habit, ability, the future", "kemauan, kebiasaan, kemampuan, masa depan"),
+        L("+v.：没（有）", "méi(yǒu) + v.", "something didn't happen", "sesuatu tidak terjadi"),
+        L("+adj.：不", "bù + adj.", "personal judgement; lacks an attribute", "penilaian pribadi; tidak punya sifat itu"),
+        L("+adj.：没（有）", "méi(yǒu) + adj.", "the state hasn't changed", "keadaannya belum berubah"),
+      ], explain=("[NOTE] p. 58 writes \"State hasn's change\"; it should be \"hasn't changed\".", "[NOTE] Hlm. 58 menulis \"State hasn's change\"; seharusnya \"hasn't changed\"."),
+      check=(("Which one goes before a noun: 不 or 没（有）?", "没（有）"), ("Mana yang dipakai sebelum kata benda: 不 atau 没（有）?", "没（有）"))),
+    S("HOW", ("没（有）+n.", "没（有）+n."), [
+        L("我没（有）汉语书。", "Wǒ méi(yǒu) Hànyǔ shū.", "I don't have a Chinese book.", "Saya tidak punya buku bahasa Mandarin."),
+        L("我没（有）自行车。", "Wǒ méi(yǒu) zìxíngchē.", "I don't have a bicycle.", "Saya tidak punya sepeda."),
+        L("我没（有）钱。", "Wǒ méi(yǒu) qián.", "I don't have money.", "Saya tidak punya uang."),
+        L("你有姐姐吗？", "Nǐ yǒu jiějie ma?", "Do you have an older sister?", "Kamu punya kakak perempuan?"),
+      ], intro=("Something isn't there or doesn't exist. Not have.", "Sesuatu tidak ada atau tidak dimiliki."),
+      check=(("Say \"I don't have a hat\".", "我没有帽子。"), ("Katakan \"Saya tidak punya topi\".", "我没有帽子。"))),
+    S("HOW", ("不+v.", "不+v."), [
+        L("你喜欢运动吗？我不喜欢运动。", "Nǐ xǐhuan yùndòng ma? Wǒ bù xǐhuan yùndòng.", "Do you like sports? I don't.", "Kamu suka olahraga? Saya tidak suka."),
+        L("你喝酒吗？我不喝酒。", "Nǐ hē jiǔ ma? Wǒ bù hē jiǔ.", "Do you drink alcohol? I don't.", "Kamu minum alkohol? Saya tidak minum."),
+        L("你会每天打篮球吗？我不会每天打篮球。", "Nǐ huì měi tiān dǎ lánqiú ma? Wǒ bú huì měi tiān dǎ lánqiú.", "Will you play basketball every day? I won't.", "Kamu akan main basket setiap hari? Tidak."),
+      ], intro=("不 shows personal will, and negates frequent or habitual actions, ability and future plans.",
+                "不 menunjukkan kemauan pribadi, dan menyangkal kebiasaan, kemampuan, serta rencana masa depan."),
+      check=(("I never drink: 我____喝酒。不 or 没？", "不: 我不喝酒。"), ("Saya tidak pernah minum: 我____喝酒。不 atau 没？", "不: 我不喝酒。"))),
+    S("HOW", ("没（有）+v.", "没（有）+v."), [
+        L("今天你运动了吗？今天我没运动。", "Jīntiān nǐ yùndòng le ma? Jīntiān wǒ méi yùndòng.", "Did you exercise today? I didn't.", "Hari ini kamu olahraga? Hari ini saya tidak olahraga."),
+        L("你喝酒了吗？我没喝酒。", "Nǐ hē jiǔ le ma? Wǒ méi hē jiǔ.", "Did you drink? I didn't.", "Kamu tadi minum alkohol? Saya tidak minum."),
+        L("你吃早饭了吗？我没吃早饭。", "Nǐ chī zǎofàn le ma? Wǒ méi chī zǎofàn.", "Did you have breakfast? I didn't.", "Kamu sudah sarapan? Saya belum sarapan."),
+        L("你去过中国吗？我没去过中国。", "Nǐ qùguo Zhōngguó ma? Wǒ méi qùguo Zhōngguó.", "Have you been to China? I haven't.", "Kamu pernah ke Tiongkok? Saya belum pernah."),
+      ], intro=("没 says an action did not happen in the past.", "没 menyatakan suatu tindakan tidak terjadi di masa lalu."),
+      check=(("I didn't eat breakfast: 我____吃早饭。不 or 没？", "没: 我没吃早饭。"), ("Saya tadi tidak sarapan: 我____吃早饭。不 atau 没？", "没: 我没吃早饭。"))),
+    S("HOW", ("不+adj. / 没+adj.", "不+adj. / 没+adj."), [
+        L("这个苹果不好吃。", "Zhège píngguǒ bù hǎochī.", "This apple doesn't taste good.", "Apel ini tidak enak."),
+        L("水不热。/ 水没热。", "Shuǐ bú rè. / Shuǐ méi rè.", "The water isn't hot. / The water hasn't heated up.", "Airnya tidak panas. / Airnya belum panas."),
+        L("你不胖。/ 你没胖。", "Nǐ bú pàng. / Nǐ méi pàng.", "You aren't fat. / You haven't gained weight.", "Kamu tidak gemuk. / Kamu tidak jadi gemuk."),
+        L("我的病没好。", "Wǒ de bìng méi hǎo.", "I haven't recovered.", "Penyakit saya belum sembuh."),
+      ], intro=("不 gives a personal judgement, or says someone or something lacks an attribute. 没 negates a change of state.",
+                "不 memberi penilaian pribadi, atau menyatakan seseorang atau sesuatu tidak punya sifat itu. 没 menyangkal perubahan keadaan."),
+      explain=("[NOTE] p. 63's English says Use \"了\", but the Chinese is about 不. It should say Use \"不\".",
+               "[NOTE] Bahasa Inggris di hlm. 63 menulis Use \"了\", padahal bahasa Mandarinnya membahas 不. Seharusnya Use \"不\"."),
+      check=(("What is the difference between 水不热 and 水没热？", "水不热: it isn't hot. 水没热: it hasn't become hot."), ("Apa bedanya 水不热 dan 水没热？", "水不热: airnya tidak panas. 水没热: airnya belum menjadi panas."))),
+    S("REMEMBER", ("再 and 又: Repeating", "再 dan 又: Pengulangan"), [
+        L("再+v.：动作或情况还没重复", "zài + v.: dòngzuò huò qíngkuàng hái méi chóngfù", "The repeat has not happened yet.", "Pengulangannya belum terjadi."),
+        L("又+v.：动作或情况已经重复", "yòu + v.: dòngzuò huò qíngkuàng yǐjīng chóngfù", "The repeat has already happened.", "Pengulangannya sudah terjadi."),
+      ], intro=("Both show that an action or situation repeats (动作或情况的重复).", "Keduanya menunjukkan tindakan atau keadaan yang berulang (动作或情况的重复)."),
+      check=(("Which one is for a repeat that has already happened?", "又"), ("Mana yang dipakai untuk pengulangan yang sudah terjadi?", "又"))),
+    S("HOW", ("再 and 又: Examples", "再 dan 又: Contoh"), [
+        L("今天我去看她了，明天我想再去。", "Jīntiān wǒ qù kàn tā le, míngtiān wǒ xiǎng zài qù.", "I saw her today, and I want to go again tomorrow. (明天还没去)", "Hari ini saya menjenguknya, besok saya mau pergi lagi. (明天还没去)"),
+        L("他上午来了，下午没有再来。", "Tā shàngwǔ lái le, xiàwǔ méiyǒu zài lái.", "He came this morning but not again this afternoon. (下午没来)", "Dia datang pagi tadi, sorenya tidak datang lagi. (下午没来)"),
+        L("他昨天来看我了，今天又来了。", "Tā zuótiān lái kàn wǒ le, jīntiān yòu lái le.", "He visited me yesterday and came again today. (今天来了)", "Kemarin dia menjenguk saya, hari ini datang lagi. (今天来了)"),
+        L("他昨天没来上课，今天又没来。", "Tā zuótiān méi lái shàngkè, jīntiān yòu méi lái.", "He missed class yesterday and missed it again today. (今天没来)", "Kemarin dia tidak masuk kelas, hari ini tidak masuk lagi. (今天没来)"),
+      ], check=(("他昨天来了，今天____来了。再 or 又？", "又: it has already happened."), ("他昨天来了，今天____来了。再 atau 又？", "又: sudah terjadi."))),
+]
+
+QUIZ_NOTE = {
+    "en": "[NOTE] All exercises come from the teacher's slides: grammar, the 课文 stories, reading and fill-ins. For a fill-in, type the 汉字; punctuation does not matter.",
+    "id": "[NOTE] Semua latihan berasal dari slide guru: grammar, cerita 课文, bacaan, dan isian. Untuk soal isian, ketik 汉字; tanda baca tidak dihitung.",
+}
+
+QUIZ = [
+    # 语气助词"了"(1)
+    Q("p. 22", ("你买A班的书了吗？ Answer \"no\".", "你买A班的书了吗？ Jawab \"belum\"."), ["不买。", "没买。", "没买了。"], 1,
+      ("It asks about something already done, so use 没 and no 了.", "Pertanyaannya tentang hal yang sudah lewat, jadi pakai 没 dan tanpa 了.")),
+    Q("p. 23", ("他走了没有？ Answer \"not yet\".", "他走了没有？ Jawab \"belum\"."), ["他还没走了。", "他不走呢。", "他还没（有）走呢。"], 2,
+      ("The pattern is 还没（有）……呢.", "Polanya 还没（有）……呢.")),
+    Q("p. 47", ("田芳回家了没有？", "田芳回家了没有？"), ["她还没有回家呢。", "她还没有回家了。"], 0,
+      ("The pattern is 还没（有）……呢, not 了.", "Polanya 还没（有）……呢, bukan 了.")),
+    Q("p. 24", ("Which sentence is correct?", "Kalimat mana yang benar?"), ["她觉得不舒服，今天没有上课了。", "她觉得不舒服，今天没有上课。"], 1,
+      ("With 没（有） before a verb, the sentence does not end in 了.", "Kalau 没（有） dipakai sebelum kata kerja, kalimat tidak diakhiri 了.")),
+    Q("p. 25", ("Which sentence is correct?", "Kalimat mana yang benar?"), ["每天早上她都去打太极拳。", "每天早上她都去打太极拳了。"], 0,
+      ("每天 shows a recurring action, so the sentence has no 了.", "每天 menunjukkan kegiatan berulang, jadi kalimatnya tanpa 了.")),
+    Q("p. 49", ("Which sentence is correct?", "Kalimat mana yang benar?"), ["我在大学时常常参加足球比赛。", "我在大学时常常参加足球比赛了。"], 0,
+      ("常常 shows a recurring action, so the sentence has no 了.", "常常 menunjukkan kegiatan berulang, jadi kalimatnya tanpa 了.")),
+    Q("p. 49", ("Which sentence is correct?", "Kalimat mana yang benar?"), ["我们八点已经开始了上课。", "我们八点已经开始上课了。"], 1,
+      ("The teacher's correction moves 了 to the end of the sentence.", "Koreksi guru memindahkan 了 ke akhir kalimat.")),
+    Q("p. 26", ("你吃午饭了没有？ Answer \"no\" in a full sentence.", "你吃午饭了没有？ Jawab \"belum\" dengan kalimat lengkap."), ["我没吃午饭了。", "我不吃午饭。", "我没（有）吃午饭。"], 2,
+      ("没（有） with no 了 at the end.", "Pakai 没（有）, tanpa 了 di akhir.")),
+    Q("p. 46", ("你去哪儿？", "你去哪儿？"), ["我去图书馆了。", "我去图书馆。"], 1,
+      ("The question has no 了: you haven't gone yet, so the answer has no 了.", "Pertanyaannya tanpa 了: belum pergi, jadi jawabannya juga tanpa 了.")),
+    Q("p. 46", ("你买词典了没有？", "你买词典了没有？"), ["我不买词典。", "我没买词典。"], 1,
+      ("It asks about the past, so use 没. 不 would mean you refuse to buy one.", "Pertanyaannya tentang masa lalu, jadi pakai 没. 不 berarti kamu tidak mau membeli.")),
+    Q("p. 46", ("今天晚上谁来？", "今天晚上谁来？"), ["张东来。", "张东来了。"], 0,
+      ("Tonight hasn't happened yet, so no 了.", "Malam ini belum terjadi, jadi tanpa 了.")),
+    # 不是……吗？ and 是不是
+    Q("p. 53", ("What does 你不是要上托福班吗？ stress?", "Apa yang ditegaskan 你不是要上托福班吗？"),
+      [("You are going to take the class.", "Kamu memang mau ikut kelas itu."), ("You are not going to take the class.", "Kamu tidak mau ikut kelas itu.")], 0,
+      ("A 反问句 strongly says yes (强调肯定).", "反问句 menegaskan \"ya\" (强调肯定).")),
+    # 没（有） and 不
+    Q("p. 64", ("我明天____去超市，我要去书店。", "我明天____去超市，我要去书店。"), ["不", "没"], 0,
+      ("明天 is a future plan, so use 不.", "明天 adalah rencana masa depan, jadi pakai 不.")),
+    Q("p. 64", ("昨天我____去商店，我去书店了。", "昨天我____去商店，我去书店了。"), ["不", "没"], 1,
+      ("昨天 is the past, so use 没.", "昨天 adalah masa lalu, jadi pakai 没.")),
+    Q("p. 64", ("昨天你去____去大使馆？", "昨天你去____去大使馆？"), ["没", "不"], 0,
+      ("昨天 is the past, so use 没.", "昨天 adalah masa lalu, jadi pakai 没.")),
+    Q("p. 64", ("A：你常常给你妈妈打电话吗？B：我____常给她打电话，常给她发微信。", "A：你常常给你妈妈打电话吗？B：我____常给她打电话，常给她发微信。"), ["没", "不"], 1,
+      ("A habit takes 不.", "Kebiasaan memakai 不.")),
+    # 再 and 又
+    Q("p. 67", ("上次比赛我们赢了，这次____赢了。", "上次比赛我们赢了，这次____赢了。"), ["又", "再"], 0,
+      ("The second win already happened, so use 又.", "Kemenangan kedua sudah terjadi, jadi pakai 又.")),
+    Q("p. 67", ("我昨天已经去了，今天不想____去了。", "我昨天已经去了，今天不想____去了。"), ["又", "再"], 1,
+      ("The repeat has not happened, so use 再.", "Pengulangannya belum terjadi, jadi pakai 再.")),
+    Q("p. 67", ("张东刚才给你打电话了，你不在，他说过一会儿____打。", "张东刚才给你打电话了，你不在，他说过一会儿____打。"), ["再", "又"], 0,
+      ("The next call has not happened yet, so use 再.", "Telepon berikutnya belum terjadi, jadi pakai 再.")),
+    Q("p. 67", ("我____买了一个手机。", "我____买了一个手机。"), ["再", "又"], 1,
+      ("买了 shows it already happened, so use 又.", "买了 menunjukkan sudah terjadi, jadi pakai 又.")),
+]
+
+QUIZ += [
+    # 课文 (story)
+    Q("p. 14 课文", ("谁接的电话？", "谁接的电话？"), ["张东", "田芳", "田芳的妈妈"], 2,
+      ("田芳的妈妈接的电话: Tian Fang is out.", "田芳的妈妈接的电话: Tian Fang sedang pergi.")),
+    Q("p. 14 课文", ("田芳下午去哪儿了？", "田芳下午去哪儿了？"), ["去商店了", "去同学家了", "去踢足球了"], 1,
+      ("她去同学家了: a classmate is going abroad.", "她去同学家了: temannya mau ke luar negeri.")),
+    F("p. 57 课文", ("张东下午做什么了？ Type the answer.", "张东下午做什么了？ Ketik jawabannya."), ["他去踢足球了。", "去踢足球了", "踢足球了", "踢足球"],
+      ("Text (2): 我去踢足球了。", "Teks (2): 我去踢足球了。")),
+    Q("p. 57 课文", ("足球比赛谁输了？", "足球比赛谁输了？"), ["张东的队", "田芳的队", "留学生代表队"], 2,
+      ("张东 says 这次我们赢了.", "张东 berkata 这次我们赢了.")),
+    # 填空 (fill-in)
+    F("p. 45 填空", ("我下午去操场____足球了。", "我下午去操场____足球了。"), ["踢"],
+      ("踢足球: to play football.", "踢足球: main sepak bola.")),
+    F("p. 45 填空", ("他正在____电话呢。", "他正在____电话呢。"), ["接"],
+      ("接电话: to answer the phone.", "接电话: mengangkat telepon.")),
+    F("p. 45 填空", ("我姐姐____大学毕业了。", "我姐姐____大学毕业了。"), ["已经"],
+      ("已经……了: already.", "已经……了: sudah.")),
+]
