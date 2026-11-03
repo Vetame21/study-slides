@@ -210,13 +210,15 @@
   /* Quiz */
   .q { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 20px; margin-top: 16px; }
   .q .src { font-size: .8rem; color: var(--muted); }
-  .q .stem { font-weight: 600; margin: 4px 0 0; }
+  .q .stem { font-weight: 600; margin: 4px 0 0; white-space: pre-line; }
   .opts { display: grid; gap: 8px; margin-top: 12px; }
   .opts button { text-align: left; padding: 10px 14px; }
   .opts button.correct { border-color: var(--right); background: var(--right-bg); }
   .opts button.chosen-wrong { border-color: var(--wrong); background: var(--wrong-bg); }
   .opts button:disabled { opacity: 1; cursor: default; }
   .fill-row { display: flex; gap: 8px; }
+  .fill-row.open { flex-wrap: wrap; }
+  .fill-row.open .fill { flex-basis: 100%; }
   .fill { flex: 1; min-width: 0; font: inherit; padding: 8px 12px; border: 1px solid var(--line); border-radius: 8px;
           background: var(--card); color: var(--text); }
   .fill.correct { border-color: var(--right); background: var(--right-bg); }
@@ -272,7 +274,7 @@ const UI = {
         wrongLbl: "✗ Wrong", rightLbl: "✓ Right", quickCheck: "Quick check", toggle: "🇮🇩 Bahasa Indonesia",
         check: "Check", typeHere: "Type your answer", typeFirst: "Type an answer first.",
         hideHelp: "🙈 Hide pinyin and meaning", showHelp: "👀 Show pinyin and meaning",
-        tapToPeek: "Tap a line to peek." },
+        tapToPeek: "Tap a line to peek.", showSample: "Show a sample answer", sampleAnswer: "Sample answer (not scored):" },
   id: { pick: "Pilih mata kuliah.", all: "← Semua mata kuliah", soon: "Segera hadir", quizzes: "Kuis kelas",
         toPractice: n => n + " untuk latihan", lectures: "Materi kuliah", chaptersOf: n => n + " bab slide",
         slides: n => n + " slide", questions: n => n + " soal", back: "← Kembali", next: "Lanjut →",
@@ -287,7 +289,7 @@ const UI = {
         wrongLbl: "✗ Salah", rightLbl: "✓ Benar", quickCheck: "Cek cepat", toggle: "🇬🇧 English",
         check: "Periksa", typeHere: "Ketik jawabanmu", typeFirst: "Ketik jawaban dulu.",
         hideHelp: "🙈 Sembunyikan pinyin dan arti", showHelp: "👀 Tampilkan pinyin dan arti",
-        tapToPeek: "Ketuk baris untuk mengintip." },
+        tapToPeek: "Ketuk baris untuk mengintip.", showSample: "Tampilkan contoh jawaban", sampleAnswer: "Contoh jawaban (tidak dinilai):" },
 };
 
 const app = document.getElementById("app");
@@ -394,7 +396,8 @@ async function renderQuiz(subject, n) {
   const quiz = await load(subject.id, "quiz");
   const chap = quiz && quiz[n - 1];
   if (!chap) return renderQuizList(subject);
-  const total = chap.questions.length;
+  const count = chap.questions.length;
+  const total = chap.questions.filter(q => !q.model).length;  // open questions aren't scored
   let answered = 0, correct = 0;
   const scoreText = el("span", {}, ui().score(0, 0, total));
 
@@ -407,7 +410,15 @@ async function renderQuiz(subject, n) {
       scoreText.textContent = ui().score(correct, answered, total);
     };
     let answerBox;
-    if (q.accept) {  // fill-in question: typed answer, checked against the accepted answers
+    if (q.model) {  // open question: many answers are right, so show a sample answer to compare with
+      const input = el("input", { type: "text", class: "fill", placeholder: ui().typeHere, lang: "zh-CN" });
+      const btn = el("button", { onclick: () => {
+        btn.disabled = true;
+        why.replaceChildren(el("b", {}, ui().sampleAnswer), " ", tr(q.model));
+        why.hidden = false;
+      } }, ui().showSample);
+      answerBox = el("div", { class: "opts" }, el("div", { class: "fill-row open" }, input, btn));
+    } else if (q.accept) {  // fill-in question: typed answer, checked against the accepted answers
       const norm = s => s.replace(/[\s\p{P}]/gu, "").toLowerCase();
       const input = el("input", { type: "text", class: "fill", placeholder: ui().typeHere, lang: "zh-CN" });
       const err = el("div", { class: "fill-err" }); err.hidden = true;
@@ -433,7 +444,7 @@ async function renderQuiz(subject, n) {
       answerBox = el("div", { class: "opts" }, ...buttons);
     }
     return el("div", { class: "q" },
-      el("div", { class: "src" }, (qi + 1) + " / " + total + " · " + q.source),
+      el("div", { class: "src" }, (qi + 1) + " / " + count + " · " + q.source),
       el("p", { class: "stem" }, tr(q.q)),
       q.code ? el("pre", {}, q.code) : null,
       answerBox,

@@ -4420,11 +4420,11 @@
     "chapter": "第2课 玛丽哭了 (Mary is crying)",
     "tag": "HOW",
     "title": "改错: Fix the 了",
-    "body": "[ADDED] p. 40 gives these four sentences to fix but no answers. These are the corrections that follow the rules above.",
+    "body": "p. 40 gives these four sentences to fix; the answers are from the review PPT (p. 37).",
     "wrong_right": {
       "wrong": "她感冒了，昨天我去了看她。\n昨天的作业我还没有做了。\n玛丽常常去了操场锻炼身体。\n昨天晚上我没做了作业就睡觉了。",
-      "right": "她感冒了，昨天我去看她了。\n昨天的作业我还没有做呢。\n玛丽常常去操场锻炼身体。\n昨天晚上我没做作业就睡觉了。",
-      "reason": "Serial verb: 了 at the end. 还没有……呢, not 了. A habit (常常) has no 了. After 没, no 了."
+      "right": "她感冒了，昨天我去看了她。\n昨天的作业我还没有做。\n玛丽常常去操场锻炼身体。\n昨天晚上我没做作业就睡觉了。",
+      "reason": "Serial verb: no 了 after the first verb (去). After 还没有, no 了. A habit (常常) has no 了. After 没, no 了."
     },
     "quick_check": {
       "q": "Fix it: 昨天的作业我还没有做了。",
@@ -4433,8 +4433,8 @@
     "id": {
       "chapter": "第2课 玛丽哭了 (Mary menangis)",
       "title": "改错: Perbaiki 了",
-      "body": "[ADDED] Hlm. 40 memberi empat kalimat untuk diperbaiki tanpa jawaban. Ini perbaikan yang sesuai aturan di atas.",
-      "wrong_right_reason": "Kata kerja berangkai: 了 di akhir. 还没有……呢, bukan 了. Kebiasaan (常常) tanpa 了. Sesudah 没, tanpa 了.",
+      "body": "Hlm. 40 memberi empat kalimat untuk diperbaiki; jawabannya dari PPT review (hlm. 37).",
+      "wrong_right_reason": "Kata kerja berangkai: tanpa 了 sesudah kata kerja pertama (去). Sesudah 还没有, tanpa 了. Kebiasaan (常常) tanpa 了. Sesudah 没, tanpa 了.",
       "quick_check": {
         "q": "Perbaiki: 昨天的作业我还没有做了。",
         "a": "昨天的作业我还没有做呢。"

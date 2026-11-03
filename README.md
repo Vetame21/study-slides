@@ -180,6 +180,8 @@ A list of chapters, each holding its questions:
 - A **fill-in** question has `"accept": ["答案", ...]` instead of `options` and `answer`: the student types the
   answer, and it is marked right if it matches any accepted answer (spaces and punctuation are ignored).
   Put the best answer first; it is shown when the student is wrong.
+- An **open** question has `"model": {"en", "id"}` instead: the student types freely, then sees the sample
+  answer. It is not scored.
 - Aim for about 10 questions per chapter.
 
 ---
@@ -192,7 +194,8 @@ The 汉字 and pinyin of a slide are the same in both languages, so they are wri
 - `word`: new-word boxes, `{hz, py, pos: {en, id}, mean: {en, id}}`
 - `zh`: Chinese lines, `{sp?, hz, py, tr: {en, id}}`; `sp` is the speaker, split off a line like `张东：…`
 
-Only the translations follow the language switch. Edit the lesson file, not the JSON, then run:
+Only the translations follow the language switch. The midterm review (`review.py`) and the mock exam
+(`mock.py`) are quiz chapters only, without slides. Edit the lesson file, not the JSON, then run:
 
 ```bash
 python3 tools/chinese/build.py

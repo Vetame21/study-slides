@@ -883,15 +883,15 @@
         }
       },
       {
-        "source": "p. 40 [ADDED]",
+        "source": "p. 40 (review p. 37)",
         "q": {
           "en": "Fix it: 她感冒了，昨天我去了看她。",
           "id": "Perbaiki: 她感冒了，昨天我去了看她。"
         },
         "options": [
           {
-            "en": "她感冒了，昨天我去看她了。",
-            "id": "她感冒了，昨天我去看她了。"
+            "en": "她感冒了，昨天我去看了她。",
+            "id": "她感冒了，昨天我去看了她。"
           },
           {
             "en": "她感冒了，昨天我去了看了她。",
@@ -900,12 +900,12 @@
         ],
         "answer": 0,
         "why": {
-          "en": "去看她 is a serial verb phrase, so 了 goes at the end.",
-          "id": "去看她 adalah kata kerja berangkai, jadi 了 di akhir."
+          "en": "Serial verb: no 了 after the first verb 去. The review PPT's answer is 去看了她.",
+          "id": "Kata kerja berangkai: tanpa 了 sesudah 去. Jawaban PPT review: 去看了她."
         }
       },
       {
-        "source": "p. 40 [ADDED]",
+        "source": "p. 40 (review p. 37)",
         "q": {
           "en": "Fix it: 玛丽常常去了操场锻炼身体。",
           "id": "Perbaiki: 玛丽常常去了操场锻炼身体。"
@@ -927,7 +927,7 @@
         }
       },
       {
-        "source": "p. 40 [ADDED]",
+        "source": "p. 40 (review p. 37)",
         "q": {
           "en": "Fix it: 昨天晚上我没做了作业就睡觉了。",
           "id": "Perbaiki: 昨天晚上我没做了作业就睡觉了。"
@@ -5681,6 +5681,1705 @@
         "why": {
           "en": "罗兰说，以后我们可以再来。",
           "id": "罗兰说，以后我们可以再来。"
+        }
+      }
+    ]
+  },
+  {
+    "chapter": {
+      "en": "期中复习 · 看拼音写汉字 (Midterm review: pinyin → 汉字)",
+      "id": "期中复习 · 看拼音写汉字 (Persiapan UTS: pinyin → 汉字)"
+    },
+    "note": {
+      "en": "[NOTE] From the review PPT for lessons 1–6, with the teacher's answers. Type the missing 汉字; when a sentence has two blanks, type both in order. The PPT skips some numbers, so the numbering here does too.",
+      "id": "[NOTE] Dari PPT review pelajaran 1–6, dengan jawaban guru. Ketik 汉字 yang hilang; kalau ada dua titik, ketik keduanya berurutan. PPT melompati beberapa nomor, jadi nomor di sini juga begitu."
+    },
+    "questions": [
+      {
+        "source": "p. 3 · 1",
+        "q": {
+          "en": "Write the 汉字: 我很____（è），想早点吃饭。",
+          "id": "Tulis 汉字: 我很____（è），想早点吃饭。"
+        },
+        "accept": [
+          "饿"
+        ],
+        "why": {
+          "en": "饿",
+          "id": "饿"
+        }
+      },
+      {
+        "source": "p. 3 · 2",
+        "q": {
+          "en": "Write the 汉字: 我____（wàng）了带作业。",
+          "id": "Tulis 汉字: 我____（wàng）了带作业。"
+        },
+        "accept": [
+          "忘"
+        ],
+        "why": {
+          "en": "忘",
+          "id": "忘"
+        }
+      },
+      {
+        "source": "p. 3 · 3",
+        "q": {
+          "en": "Write the 汉字 (2 blanks): 电话____（xiǎng）了，你快____（jiē）电话。",
+          "id": "Tulis 汉字 (2 titik): 电话____（xiǎng）了，你快____（jiē）电话。"
+        },
+        "accept": [
+          "响接"
+        ],
+        "why": {
+          "en": "响 / 接",
+          "id": "响 / 接"
+        }
+      },
+      {
+        "source": "p. 3 · 4",
+        "q": {
+          "en": "Write the 汉字: 下星期我要____（kǎo）托福。",
+          "id": "Tulis 汉字: 下星期我要____（kǎo）托福。"
+        },
+        "accept": [
+          "考"
+        ],
+        "why": {
+          "en": "考",
+          "id": "考"
+        }
+      },
+      {
+        "source": "p. 3 · 5",
+        "q": {
+          "en": "Write the 汉字: 明天____（péi）我一起去图书馆吗？",
+          "id": "Tulis 汉字: 明天____（péi）我一起去图书馆吗？"
+        },
+        "accept": [
+          "陪"
+        ],
+        "why": {
+          "en": "陪",
+          "id": "陪"
+        }
+      },
+      {
+        "source": "p. 3 · 6",
+        "q": {
+          "en": "Write the 汉字 (3 blanks): 昨天足球____（bǐ sài），我们____（duì）____（shū）了。",
+          "id": "Tulis 汉字 (3 titik): 昨天足球____（bǐ sài），我们____（duì）____（shū）了。"
+        },
+        "accept": [
+          "比赛队输"
+        ],
+        "why": {
+          "en": "比赛 / 队 / 输",
+          "id": "比赛 / 队 / 输"
+        }
+      },
+      {
+        "source": "p. 3 · 7",
+        "q": {
+          "en": "Write the 汉字: 今天我们____（yíng）了，大家都很高兴。",
+          "id": "Tulis 汉字: 今天我们____（yíng）了，大家都很高兴。"
+        },
+        "accept": [
+          "赢"
+        ],
+        "why": {
+          "en": "赢",
+          "id": "赢"
+        }
+      },
+      {
+        "source": "p. 3 · 8",
+        "q": {
+          "en": "Write the 汉字: 男生喜欢____（tī）足球。",
+          "id": "Tulis 汉字: 男生喜欢____（tī）足球。"
+        },
+        "accept": [
+          "踢"
+        ],
+        "why": {
+          "en": "踢",
+          "id": "踢"
+        }
+      },
+      {
+        "source": "p. 3 · 9",
+        "q": {
+          "en": "Write the 汉字: 祝____（hè）你们取得胜利！",
+          "id": "Tulis 汉字: 祝____（hè）你们取得胜利！"
+        },
+        "accept": [
+          "贺"
+        ],
+        "why": {
+          "en": "贺",
+          "id": "贺"
+        }
+      },
+      {
+        "source": "p. 25 · 1",
+        "q": {
+          "en": "Write the 汉字: 昨天我____（lā dùzi），不舒服。",
+          "id": "Tulis 汉字: 昨天我____（lā dùzi），不舒服。"
+        },
+        "accept": [
+          "拉肚子"
+        ],
+        "why": {
+          "en": "拉肚子",
+          "id": "拉肚子"
+        }
+      },
+      {
+        "source": "p. 25 · 2",
+        "q": {
+          "en": "Write the 汉字: 他肚子疼得很____（lìhai）。",
+          "id": "Tulis 汉字: 他肚子疼得很____（lìhai）。"
+        },
+        "accept": [
+          "厉害"
+        ],
+        "why": {
+          "en": "厉害",
+          "id": "厉害"
+        }
+      },
+      {
+        "source": "p. 25 · 3",
+        "q": {
+          "en": "Write the 汉字: 这条河里有很多____（yú）。",
+          "id": "Tulis 汉字: 这条河里有很多____（yú）。"
+        },
+        "accept": [
+          "鱼"
+        ],
+        "why": {
+          "en": "鱼",
+          "id": "鱼"
+        }
+      },
+      {
+        "source": "p. 25 · 4",
+        "q": {
+          "en": "Write the 汉字: ____（niúròu）的味道很不错。",
+          "id": "Tulis 汉字: ____（niúròu）的味道很不错。"
+        },
+        "accept": [
+          "牛肉"
+        ],
+        "why": {
+          "en": "牛肉",
+          "id": "牛肉"
+        }
+      },
+      {
+        "source": "p. 25 · 5",
+        "q": {
+          "en": "Write the 汉字 (2 blanks): 大夫给我____（jiǎn）查身体，然后给我开____（yào）。",
+          "id": "Tulis 汉字 (2 titik): 大夫给我____（jiǎn）查身体，然后给我开____（yào）。"
+        },
+        "accept": [
+          "检药"
+        ],
+        "why": {
+          "en": "检 / 药",
+          "id": "检 / 药"
+        }
+      },
+      {
+        "source": "p. 25 · 6",
+        "q": {
+          "en": "Write the 汉字 (2 blanks): 不是肠____（yán），只是____（xiāo）化不太好。",
+          "id": "Tulis 汉字 (2 titik): 不是肠____（yán），只是____（xiāo）化不太好。"
+        },
+        "accept": [
+          "炎消"
+        ],
+        "why": {
+          "en": "炎 / 消",
+          "id": "炎 / 消"
+        }
+      },
+      {
+        "source": "p. 25 · 7",
+        "q": {
+          "en": "Write the 汉字: 玛丽难过得____（kū）了。",
+          "id": "Tulis 汉字: 玛丽难过得____（kū）了。"
+        },
+        "accept": [
+          "哭"
+        ],
+        "why": {
+          "en": "哭",
+          "id": "哭"
+        }
+      },
+      {
+        "source": "p. 25 · 8",
+        "q": {
+          "en": "Write the 汉字: 化验____（jié）果已经出来了。",
+          "id": "Tulis 汉字: 化验____（jié）果已经出来了。"
+        },
+        "accept": [
+          "结"
+        ],
+        "why": {
+          "en": "结",
+          "id": "结"
+        }
+      },
+      {
+        "source": "p. 25 · 9",
+        "q": {
+          "en": "Write the 汉字: 周末我们去礼堂____（tiào）舞吧。",
+          "id": "Tulis 汉字: 周末我们去礼堂____（tiào）舞吧。"
+        },
+        "accept": [
+          "跳"
+        ],
+        "why": {
+          "en": "跳",
+          "id": "跳"
+        }
+      },
+      {
+        "source": "p. 48 · 1",
+        "q": {
+          "en": "Write the 汉字: 这套房子阳____（guāng）很好。",
+          "id": "Tulis 汉字: 这套房子阳____（guāng）很好。"
+        },
+        "accept": [
+          "光"
+        ],
+        "why": {
+          "en": "光",
+          "id": "光"
+        }
+      },
+      {
+        "source": "p. 48 · 3",
+        "q": {
+          "en": "Write the 汉字: 这个地方____（jiāotōng）很方便。",
+          "id": "Tulis 汉字: 这个地方____（jiāotōng）很方便。"
+        },
+        "accept": [
+          "交通"
+        ],
+        "why": {
+          "en": "交通",
+          "id": "交通"
+        }
+      },
+      {
+        "source": "p. 48 · 4",
+        "q": {
+          "en": "Write the 汉字: 小区旁边有一条小____（hé）。",
+          "id": "Tulis 汉字: 小区旁边有一条小____（hé）。"
+        },
+        "accept": [
+          "河"
+        ],
+        "why": {
+          "en": "河",
+          "id": "河"
+        }
+      },
+      {
+        "source": "p. 48 · 5",
+        "q": {
+          "en": "Write the 汉字: 大学城的____（fángzū）太贵了。",
+          "id": "Tulis 汉字: 大学城的____（fángzū）太贵了。"
+        },
+        "accept": [
+          "房租"
+        ],
+        "why": {
+          "en": "房租",
+          "id": "房租"
+        }
+      },
+      {
+        "source": "p. 48 · 6",
+        "q": {
+          "en": "Write the 汉字: 时间快到了，我要____（gǎn）公共汽车。",
+          "id": "Tulis 汉字: 时间快到了，我要____（gǎn）公共汽车。"
+        },
+        "accept": [
+          "赶"
+        ],
+        "why": {
+          "en": "赶",
+          "id": "赶"
+        }
+      },
+      {
+        "source": "p. 48 · 7",
+        "q": {
+          "en": "Write the 汉字: 公园____（zhōuwéi）有很多树。",
+          "id": "Tulis 汉字: 公园____（zhōuwéi）有很多树。"
+        },
+        "accept": [
+          "周围"
+        ],
+        "why": {
+          "en": "周围",
+          "id": "周围"
+        }
+      },
+      {
+        "source": "p. 48 · 9",
+        "q": {
+          "en": "Write the 汉字: 房间太____（luàn）了，我要打扫一下。",
+          "id": "Tulis 汉字: 房间太____（luàn）了，我要打扫一下。"
+        },
+        "accept": [
+          "乱"
+        ],
+        "why": {
+          "en": "乱",
+          "id": "乱"
+        }
+      },
+      {
+        "source": "p. 48 · 10",
+        "q": {
+          "en": "Write the 汉字: 这栋楼一共六____（céng）。",
+          "id": "Tulis 汉字: 这栋楼一共六____（céng）。"
+        },
+        "accept": [
+          "层"
+        ],
+        "why": {
+          "en": "层",
+          "id": "层"
+        }
+      },
+      {
+        "source": "p. 48 · 11",
+        "q": {
+          "en": "Write the 汉字 (2 blanks): 我家____（lóuxià）就是地铁____（zhàn）。",
+          "id": "Tulis 汉字 (2 titik): 我家____（lóuxià）就是地铁____（zhàn）。"
+        },
+        "accept": [
+          "楼下站"
+        ],
+        "why": {
+          "en": "楼下 / 站",
+          "id": "楼下 / 站"
+        }
+      },
+      {
+        "source": "p. 48 · 12",
+        "q": {
+          "en": "Write the 汉字 (2 blanks): 这套房子____（suī）然小了点儿，但是____（huánjìng）很好，很安静。",
+          "id": "Tulis 汉字 (2 titik): 这套房子____（suī）然小了点儿，但是____（huánjìng）很好，很安静。"
+        },
+        "accept": [
+          "虽环境"
+        ],
+        "why": {
+          "en": "虽 / 环境",
+          "id": "虽 / 环境"
+        }
+      },
+      {
+        "source": "p. 79 · 1",
+        "q": {
+          "en": "Write the 汉字: 周末你想____（gàn）什么？",
+          "id": "Tulis 汉字: 周末你想____（gàn）什么？"
+        },
+        "accept": [
+          "干"
+        ],
+        "why": {
+          "en": "干",
+          "id": "干"
+        }
+      },
+      {
+        "source": "p. 79 · 2",
+        "q": {
+          "en": "Write the 汉字: 我的作业还没有____（xiěwán）。",
+          "id": "Tulis 汉字: 我的作业还没有____（xiěwán）。"
+        },
+        "accept": [
+          "写完"
+        ],
+        "why": {
+          "en": "写完",
+          "id": "写完"
+        }
+      },
+      {
+        "source": "p. 79 · 3",
+        "q": {
+          "en": "Write the 汉字: 这本书一共三十多____（yè）。",
+          "id": "Tulis 汉字: 这本书一共三十多____（yè）。"
+        },
+        "accept": [
+          "页"
+        ],
+        "why": {
+          "en": "页",
+          "id": "页"
+        }
+      },
+      {
+        "source": "p. 79 · 4",
+        "q": {
+          "en": "Write the 汉字 (2 blanks): 听了这个有趣的____（gùshi），大家都____（xiào）了。",
+          "id": "Tulis 汉字 (2 titik): 听了这个有趣的____（gùshi），大家都____（xiào）了。"
+        },
+        "accept": [
+          "故事笑"
+        ],
+        "why": {
+          "en": "故事 / 笑",
+          "id": "故事 / 笑"
+        }
+      },
+      {
+        "source": "p. 79 · 5",
+        "q": {
+          "en": "Write the 汉字: 这个____（jùzi）我没看懂。",
+          "id": "Tulis 汉字: 这个____（jùzi）我没看懂。"
+        },
+        "accept": [
+          "句子"
+        ],
+        "why": {
+          "en": "句子",
+          "id": "句子"
+        }
+      },
+      {
+        "source": "p. 79 · 6",
+        "q": {
+          "en": "Write the 汉字: 考试的____（tí）不太难。",
+          "id": "Tulis 汉字: 考试的____（tí）不太难。"
+        },
+        "accept": [
+          "题"
+        ],
+        "why": {
+          "en": "题",
+          "id": "题"
+        }
+      },
+      {
+        "source": "p. 79 · 7",
+        "q": {
+          "en": "Write the 汉字: 真____（zāogāo）！我忘带课本了。",
+          "id": "Tulis 汉字: 真____（zāogāo）！我忘带课本了。"
+        },
+        "accept": [
+          "糟糕"
+        ],
+        "why": {
+          "en": "糟糕",
+          "id": "糟糕"
+        }
+      },
+      {
+        "source": "p. 79 · 8",
+        "q": {
+          "en": "Write the 汉字: 老师提问，我来____（huídá）。",
+          "id": "Tulis 汉字: 老师提问，我来____（huídá）。"
+        },
+        "accept": [
+          "回答"
+        ],
+        "why": {
+          "en": "回答",
+          "id": "回答"
+        }
+      },
+      {
+        "source": "p. 79 · 9",
+        "q": {
+          "en": "Write the 汉字: 这次考试____（chéngjì）还可以。",
+          "id": "Tulis 汉字: 这次考试____（chéngjì）还可以。"
+        },
+        "accept": [
+          "成绩"
+        ],
+        "why": {
+          "en": "成绩",
+          "id": "成绩"
+        }
+      },
+      {
+        "source": "p. 79 · 10",
+        "q": {
+          "en": "Write the 汉字 (2 blanks): 这篇课文我____（niàn）得不____（shú）。",
+          "id": "Tulis 汉字 (2 titik): 这篇课文我____（niàn）得不____（shú）。"
+        },
+        "accept": [
+          "念熟"
+        ],
+        "why": {
+          "en": "念 / 熟",
+          "id": "念 / 熟"
+        }
+      },
+      {
+        "source": "p. 110 · 1",
+        "q": {
+          "en": "Write the 汉字: ____（yuánlái）我住十楼，现在我住六楼。",
+          "id": "Tulis 汉字: ____（yuánlái）我住十楼，现在我住六楼。"
+        },
+        "accept": [
+          "原来"
+        ],
+        "why": {
+          "en": "原来",
+          "id": "原来"
+        }
+      },
+      {
+        "source": "p. 110 · 2",
+        "q": {
+          "en": "Write the 汉字: 学校要____（yáncháng）放假的时间。",
+          "id": "Tulis 汉字: 学校要____（yáncháng）放假的时间。"
+        },
+        "accept": [
+          "延长"
+        ],
+        "why": {
+          "en": "延长",
+          "id": "延长"
+        }
+      },
+      {
+        "source": "p. 110 · 3",
+        "q": {
+          "en": "Write the 汉字: 每天练____（qìgōng），对身体很好。",
+          "id": "Tulis 汉字: 每天练____（qìgōng），对身体很好。"
+        },
+        "accept": [
+          "气功"
+        ],
+        "why": {
+          "en": "气功",
+          "id": "气功"
+        }
+      },
+      {
+        "source": "p. 110 · 4",
+        "q": {
+          "en": "Write the 汉字: 夏天我喜欢去____（yóuyǒng）。",
+          "id": "Tulis 汉字: 夏天我喜欢去____（yóuyǒng）。"
+        },
+        "accept": [
+          "游泳"
+        ],
+        "why": {
+          "en": "游泳",
+          "id": "游泳"
+        }
+      },
+      {
+        "source": "p. 110 · 5",
+        "q": {
+          "en": "Write the 汉字 (2 blanks): 我已经____（xíguàn）这里的____（shēnghuó）。",
+          "id": "Tulis 汉字 (2 titik): 我已经____（xíguàn）这里的____（shēnghuó）。"
+        },
+        "accept": [
+          "习惯生活"
+        ],
+        "why": {
+          "en": "习惯 / 生活",
+          "id": "习惯 / 生活"
+        }
+      },
+      {
+        "source": "p. 110 · 6",
+        "q": {
+          "en": "Write the 汉字: 这个药的____（xiàoguǒ）很不错。",
+          "id": "Tulis 汉字: 这个药的____（xiàoguǒ）很不错。"
+        },
+        "accept": [
+          "效果"
+        ],
+        "why": {
+          "en": "效果",
+          "id": "效果"
+        }
+      },
+      {
+        "source": "p. 110 · 7",
+        "q": {
+          "en": "Write the 汉字: 多运动对身体有____（hǎochù）。",
+          "id": "Tulis 汉字: 多运动对身体有____（hǎochù）。"
+        },
+        "accept": [
+          "好处"
+        ],
+        "why": {
+          "en": "好处",
+          "id": "好处"
+        }
+      },
+      {
+        "source": "p. 110 · 8",
+        "q": {
+          "en": "Write the 汉字: 昨天我____（shī）眠，睡得不好。",
+          "id": "Tulis 汉字: 昨天我____（shī）眠，睡得不好。"
+        },
+        "accept": [
+          "失"
+        ],
+        "why": {
+          "en": "失",
+          "id": "失"
+        }
+      },
+      {
+        "source": "p. 110 · 9",
+        "q": {
+          "en": "Write the 汉字: 学好汉语____（bìxū）多练习。",
+          "id": "Tulis 汉字: 学好汉语____（bìxū）多练习。"
+        },
+        "accept": [
+          "必须"
+        ],
+        "why": {
+          "en": "必须",
+          "id": "必须"
+        }
+      },
+      {
+        "source": "p. 110 · 10",
+        "q": {
+          "en": "Write the 汉字: 晚饭以后我们去____（sàn）步。",
+          "id": "Tulis 汉字: 晚饭以后我们去____（sàn）步。"
+        },
+        "accept": [
+          "散"
+        ],
+        "why": {
+          "en": "散",
+          "id": "散"
+        }
+      },
+      {
+        "source": "p. 110 · 11",
+        "q": {
+          "en": "Write the 汉字: 我看书看了一个____（zhōngtóu）。",
+          "id": "Tulis 汉字: 我看书看了一个____（zhōngtóu）。"
+        },
+        "accept": [
+          "钟头"
+        ],
+        "why": {
+          "en": "钟头",
+          "id": "钟头"
+        }
+      },
+      {
+        "source": "p. 110 · 12",
+        "q": {
+          "en": "Write the 汉字: 这家饭店的菜____（tǐng）好吃。",
+          "id": "Tulis 汉字: 这家饭店的菜____（tǐng）好吃。"
+        },
+        "accept": [
+          "挺"
+        ],
+        "why": {
+          "en": "挺",
+          "id": "挺"
+        }
+      },
+      {
+        "source": "p. 143 · 1",
+        "q": {
+          "en": "Write the 汉字: 这几年家乡的____（biàn）化很大。",
+          "id": "Tulis 汉字: 这几年家乡的____（biàn）化很大。"
+        },
+        "accept": [
+          "变"
+        ],
+        "why": {
+          "en": "变",
+          "id": "变"
+        }
+      },
+      {
+        "source": "p. 143 · 2",
+        "q": {
+          "en": "Write the 汉字 (2 blanks): 他是一个音乐____（mí），很喜欢听____（gǔ）典音乐。",
+          "id": "Tulis 汉字 (2 titik): 他是一个音乐____（mí），很喜欢听____（gǔ）典音乐。"
+        },
+        "accept": [
+          "迷古"
+        ],
+        "why": {
+          "en": "迷 / 古",
+          "id": "迷 / 古"
+        }
+      },
+      {
+        "source": "p. 143 · 4",
+        "q": {
+          "en": "Write the 汉字: 夏天这里____（qìwēn）很高。",
+          "id": "Tulis 汉字: 夏天这里____（qìwēn）很高。"
+        },
+        "accept": [
+          "气温"
+        ],
+        "why": {
+          "en": "气温",
+          "id": "气温"
+        }
+      },
+      {
+        "source": "p. 143 · 5",
+        "q": {
+          "en": "Write the 汉字: 这是我____（zuì）喜欢的民歌。",
+          "id": "Tulis 汉字: 这是我____（zuì）喜欢的民歌。"
+        },
+        "accept": [
+          "最"
+        ],
+        "why": {
+          "en": "最",
+          "id": "最"
+        }
+      },
+      {
+        "source": "p. 143 · 7",
+        "q": {
+          "en": "Write the 汉字 (2 blanks): 这个____（chéng）市越来越____（piàoliang）。",
+          "id": "Tulis 汉字 (2 titik): 这个____（chéng）市越来越____（piàoliang）。"
+        },
+        "accept": [
+          "城漂亮"
+        ],
+        "why": {
+          "en": "城 / 漂亮",
+          "id": "城 / 漂亮"
+        }
+      },
+      {
+        "source": "p. 143 · 9",
+        "q": {
+          "en": "Write the 汉字: 周杰伦的音乐很____（liú）行，大家都喜欢听。",
+          "id": "Tulis 汉字: 周杰伦的音乐很____（liú）行，大家都喜欢听。"
+        },
+        "accept": [
+          "流"
+        ],
+        "why": {
+          "en": "流",
+          "id": "流"
+        }
+      },
+      {
+        "source": "p. 143 · 10",
+        "q": {
+          "en": "Write the 汉字: 这里____（zēng）加了很多建筑。",
+          "id": "Tulis 汉字: 这里____（zēng）加了很多建筑。"
+        },
+        "accept": [
+          "增"
+        ],
+        "why": {
+          "en": "增",
+          "id": "增"
+        }
+      },
+      {
+        "source": "p. 143 · 11",
+        "q": {
+          "en": "Write the 汉字: 冬天北方比南方____（gèng）冷。",
+          "id": "Tulis 汉字: 冬天北方比南方____（gèng）冷。"
+        },
+        "accept": [
+          "更"
+        ],
+        "why": {
+          "en": "更",
+          "id": "更"
+        }
+      },
+      {
+        "source": "p. 143 · 12",
+        "q": {
+          "en": "Write the 汉字: 屋子里面很____（nuǎnhuo）。",
+          "id": "Tulis 汉字: 屋子里面很____（nuǎnhuo）。"
+        },
+        "accept": [
+          "暖和"
+        ],
+        "why": {
+          "en": "暖和",
+          "id": "暖和"
+        }
+      },
+      {
+        "source": "p. 143 · 13",
+        "q": {
+          "en": "Write the 汉字: 这是一____（shǒu）很好听的老歌。",
+          "id": "Tulis 汉字: 这是一____（shǒu）很好听的老歌。"
+        },
+        "accept": [
+          "首"
+        ],
+        "why": {
+          "en": "首",
+          "id": "首"
+        }
+      }
+    ]
+  },
+  {
+    "chapter": {
+      "en": "期中模拟试卷 A (Mock midterm A)",
+      "id": "期中模拟试卷 A (Simulasi UTS A)"
+    },
+    "note": {
+      "en": "[NOTE] The mock paper has 8 parts and no answer key. Most answers come from the same questions in the teacher's exercises; answers marked [ADDED] were written for this site. Part 五 and two reading questions are open: compare your answer with the sample, they aren't scored.",
+      "id": "[NOTE] Simulasi ini punya 8 bagian dan tanpa kunci jawaban. Kebanyakan jawaban diambil dari soal yang sama di latihan guru; jawaban bertanda [ADDED] dibuat untuk situs ini. Bagian 五 dan dua soal bacaan bersifat terbuka: bandingkan jawabanmu dengan contohnya, tidak dinilai."
+    },
+    "questions": [
+      {
+        "source": "一、看拼音写汉字 · 1",
+        "q": {
+          "en": "Write the 汉字 (3 blanks): 昨天足球____（bǐ sài），我们____（duì）____（shū）了。",
+          "id": "Tulis 汉字 (3 titik): 昨天足球____（bǐ sài），我们____（duì）____（shū）了。"
+        },
+        "accept": [
+          "比赛队输"
+        ],
+        "why": {
+          "en": "比赛 / 队 / 输",
+          "id": "比赛 / 队 / 输"
+        }
+      },
+      {
+        "source": "一、看拼音写汉字 · 2",
+        "q": {
+          "en": "Write the 汉字 (2 blanks): 不是肠____（yán），只是____（xiāo）化不太好。",
+          "id": "Tulis 汉字 (2 titik): 不是肠____（yán），只是____（xiāo）化不太好。"
+        },
+        "accept": [
+          "炎消"
+        ],
+        "why": {
+          "en": "炎 / 消",
+          "id": "炎 / 消"
+        }
+      },
+      {
+        "source": "一、看拼音写汉字 · 3",
+        "q": {
+          "en": "Write the 汉字: 食堂里的____（cài）太油腻。",
+          "id": "Tulis 汉字: 食堂里的____（cài）太油腻。"
+        },
+        "accept": [
+          "菜"
+        ],
+        "why": {
+          "en": "菜",
+          "id": "菜"
+        }
+      },
+      {
+        "source": "一、看拼音写汉字 · 4",
+        "q": {
+          "en": "Write the 汉字: 公园____（zhōuwéi）有很多树。",
+          "id": "Tulis 汉字: 公园____（zhōuwéi）有很多树。"
+        },
+        "accept": [
+          "周围"
+        ],
+        "why": {
+          "en": "周围",
+          "id": "周围"
+        }
+      },
+      {
+        "source": "一、看拼音写汉字 · 5",
+        "q": {
+          "en": "Write the 汉字 (2 blanks): 这篇课文我____（niàn）得不____（shú）。",
+          "id": "Tulis 汉字 (2 titik): 这篇课文我____（niàn）得不____（shú）。"
+        },
+        "accept": [
+          "念熟"
+        ],
+        "why": {
+          "en": "念 / 熟",
+          "id": "念 / 熟"
+        }
+      },
+      {
+        "source": "一、看拼音写汉字 · 6",
+        "q": {
+          "en": "Write the 汉字: 这个药的____（xiàoguǒ）很不错。",
+          "id": "Tulis 汉字: 这个药的____（xiàoguǒ）很不错。"
+        },
+        "accept": [
+          "效果"
+        ],
+        "why": {
+          "en": "效果",
+          "id": "效果"
+        }
+      },
+      {
+        "source": "二、选词填空 · 1",
+        "q": {
+          "en": "我____不喝酒。\n(A.暖和 B.好 C.难过 D.打算 E.从来 F.操场 G.疼 H.考 I.预报 J.环境 K.附近 L.方便)",
+          "id": "我____不喝酒。\n(A.暖和 B.好 C.难过 D.打算 E.从来 F.操场 G.疼 H.考 I.预报 J.环境 K.附近 L.方便)"
+        },
+        "accept": [
+          "从来",
+          "E"
+        ],
+        "why": {
+          "en": "E. 从来",
+          "id": "E. 从来"
+        }
+      },
+      {
+        "source": "二、选词填空 · 2",
+        "q": {
+          "en": "玛丽在____打太极拳呢。\n(A.暖和 B.好 C.难过 D.打算 E.从来 F.操场 G.疼 H.考 I.预报 J.环境 K.附近 L.方便)",
+          "id": "玛丽在____打太极拳呢。\n(A.暖和 B.好 C.难过 D.打算 E.从来 F.操场 G.疼 H.考 I.预报 J.环境 K.附近 L.方便)"
+        },
+        "accept": [
+          "操场",
+          "F"
+        ],
+        "why": {
+          "en": "F. 操场",
+          "id": "F. 操场"
+        }
+      },
+      {
+        "source": "二、选词填空 · 3",
+        "q": {
+          "en": "这儿周围的____很好。\n(A.暖和 B.好 C.难过 D.打算 E.从来 F.操场 G.疼 H.考 I.预报 J.环境 K.附近 L.方便)",
+          "id": "这儿周围的____很好。\n(A.暖和 B.好 C.难过 D.打算 E.从来 F.操场 G.疼 H.考 I.预报 J.环境 K.附近 L.方便)"
+        },
+        "accept": [
+          "环境",
+          "J"
+        ],
+        "why": {
+          "en": "J. 环境",
+          "id": "J. 环境"
+        }
+      },
+      {
+        "source": "二、选词填空 · 4",
+        "q": {
+          "en": "我们住的地方有地铁站，交通很____。\n(A.暖和 B.好 C.难过 D.打算 E.从来 F.操场 G.疼 H.考 I.预报 J.环境 K.附近 L.方便)",
+          "id": "我们住的地方有地铁站，交通很____。\n(A.暖和 B.好 C.难过 D.打算 E.从来 F.操场 G.疼 H.考 I.预报 J.环境 K.附近 L.方便)"
+        },
+        "accept": [
+          "方便",
+          "L"
+        ],
+        "why": {
+          "en": "L. 方便",
+          "id": "L. 方便"
+        }
+      },
+      {
+        "source": "二、选词填空 · 5",
+        "q": {
+          "en": "天气____说得不一定对。\n(A.暖和 B.好 C.难过 D.打算 E.从来 F.操场 G.疼 H.考 I.预报 J.环境 K.附近 L.方便)",
+          "id": "天气____说得不一定对。\n(A.暖和 B.好 C.难过 D.打算 E.从来 F.操场 G.疼 H.考 I.预报 J.环境 K.附近 L.方便)"
+        },
+        "accept": [
+          "预报",
+          "I"
+        ],
+        "why": {
+          "en": "I. 预报",
+          "id": "I. 预报"
+        }
+      },
+      {
+        "source": "二、选词填空 · 6",
+        "q": {
+          "en": "我们国家的冬天比这儿____。\n(A.暖和 B.好 C.难过 D.打算 E.从来 F.操场 G.疼 H.考 I.预报 J.环境 K.附近 L.方便)",
+          "id": "我们国家的冬天比这儿____。\n(A.暖和 B.好 C.难过 D.打算 E.从来 F.操场 G.疼 H.考 I.预报 J.环境 K.附近 L.方便)"
+        },
+        "accept": [
+          "暖和",
+          "A"
+        ],
+        "why": {
+          "en": "A. 暖和",
+          "id": "A. 暖和"
+        }
+      },
+      {
+        "source": "二、选词填空 · 7",
+        "q": {
+          "en": "我____毕业以后去中国留学。\n(A.暖和 B.好 C.难过 D.打算 E.从来 F.操场 G.疼 H.考 I.预报 J.环境 K.附近 L.方便)",
+          "id": "我____毕业以后去中国留学。\n(A.暖和 B.好 C.难过 D.打算 E.从来 F.操场 G.疼 H.考 I.预报 J.环境 K.附近 L.方便)"
+        },
+        "accept": [
+          "打算",
+          "D"
+        ],
+        "why": {
+          "en": "D. 打算",
+          "id": "D. 打算"
+        }
+      },
+      {
+        "source": "二、选词填空 · 8",
+        "q": {
+          "en": "学校____有邮局、银行、商店、公园和体育馆。\n(A.暖和 B.好 C.难过 D.打算 E.从来 F.操场 G.疼 H.考 I.预报 J.环境 K.附近 L.方便)",
+          "id": "学校____有邮局、银行、商店、公园和体育馆。\n(A.暖和 B.好 C.难过 D.打算 E.从来 F.操场 G.疼 H.考 I.预报 J.环境 K.附近 L.方便)"
+        },
+        "accept": [
+          "附近",
+          "K"
+        ],
+        "why": {
+          "en": "K. 附近",
+          "id": "K. 附近"
+        }
+      },
+      {
+        "source": "二、选词填空 · 9",
+        "q": {
+          "en": "我的肚子____得很厉害。\n(A.暖和 B.好 C.难过 D.打算 E.从来 F.操场 G.疼 H.考 I.预报 J.环境 K.附近 L.方便)",
+          "id": "我的肚子____得很厉害。\n(A.暖和 B.好 C.难过 D.打算 E.从来 F.操场 G.疼 H.考 I.预报 J.环境 K.附近 L.方便)"
+        },
+        "accept": [
+          "疼",
+          "G"
+        ],
+        "why": {
+          "en": "G. 疼",
+          "id": "G. 疼"
+        }
+      },
+      {
+        "source": "二、选词填空 · 10",
+        "q": {
+          "en": "这次我没考____，因为考试前我病了。\n(A.暖和 B.好 C.难过 D.打算 E.从来 F.操场 G.疼 H.考 I.预报 J.环境 K.附近 L.方便)",
+          "id": "这次我没考____，因为考试前我病了。\n(A.暖和 B.好 C.难过 D.打算 E.从来 F.操场 G.疼 H.考 I.预报 J.环境 K.附近 L.方便)"
+        },
+        "accept": [
+          "好",
+          "B"
+        ],
+        "why": {
+          "en": "B. 好",
+          "id": "B. 好"
+        }
+      },
+      {
+        "source": "二、选词填空 · 11",
+        "q": {
+          "en": "别____了，我们一起去跳跳舞吧。\n(A.暖和 B.好 C.难过 D.打算 E.从来 F.操场 G.疼 H.考 I.预报 J.环境 K.附近 L.方便)",
+          "id": "别____了，我们一起去跳跳舞吧。\n(A.暖和 B.好 C.难过 D.打算 E.从来 F.操场 G.疼 H.考 I.预报 J.环境 K.附近 L.方便)"
+        },
+        "accept": [
+          "难过",
+          "C"
+        ],
+        "why": {
+          "en": "C. 难过",
+          "id": "C. 难过"
+        }
+      },
+      {
+        "source": "二、选词填空 · 12",
+        "q": {
+          "en": "很多留学生都想____HSK。\n(A.暖和 B.好 C.难过 D.打算 E.从来 F.操场 G.疼 H.考 I.预报 J.环境 K.附近 L.方便)",
+          "id": "很多留学生都想____HSK。\n(A.暖和 B.好 C.难过 D.打算 E.从来 F.操场 G.疼 H.考 I.预报 J.环境 K.附近 L.方便)"
+        },
+        "accept": [
+          "考",
+          "H"
+        ],
+        "why": {
+          "en": "H. 考",
+          "id": "H. 考"
+        }
+      },
+      {
+        "source": "三、就/再/又/才 · 1",
+        "q": {
+          "en": "Fill in 就, 再, 又 or 才 (2 blanks): 我觉得听力很难，同学们听一遍____懂了，我听两三遍____能懂。",
+          "id": "Isi 就, 再, 又, atau 才 (2 titik): 我觉得听力很难，同学们听一遍____懂了，我听两三遍____能懂。"
+        },
+        "accept": [
+          "就才"
+        ],
+        "why": {
+          "en": "就 / 才: once is easy, two or three times is hard.",
+          "id": "就 / 才: sekali sudah paham itu mudah, dua-tiga kali baru paham itu sulit."
+        }
+      },
+      {
+        "source": "三、就/再/又/才 · 2",
+        "q": {
+          "en": "Fill in 就, 再, 又 or 才: 八点上课，他八点半____来。",
+          "id": "Isi 就, 再, 又, atau 才: 八点上课，他八点半____来。"
+        },
+        "accept": [
+          "才"
+        ],
+        "why": {
+          "en": "才: late.",
+          "id": "才: terlambat."
+        }
+      },
+      {
+        "source": "三、就/再/又/才 · 3",
+        "q": {
+          "en": "Fill in 就, 再, 又 or 才: 电影七点半开演呢，你怎么现在____来了？",
+          "id": "Isi 就, 再, 又, atau 才: 电影七点半开演呢，你怎么现在____来了？"
+        },
+        "accept": [
+          "就"
+        ],
+        "why": {
+          "en": "就: earlier than needed.",
+          "id": "就: lebih awal dari perlu."
+        }
+      },
+      {
+        "source": "三、就/再/又/才 · 4",
+        "q": {
+          "en": "Fill in 就, 再, 又 or 才: 昨天已经去过公园了，今天不想____去。",
+          "id": "Isi 就, 再, 又, atau 才: 昨天已经去过公园了，今天不想____去。"
+        },
+        "accept": [
+          "再"
+        ],
+        "why": {
+          "en": "再: the repeat hasn't happened.",
+          "id": "再: pengulangannya belum terjadi."
+        }
+      },
+      {
+        "source": "三、就/再/又/才 · 5",
+        "q": {
+          "en": "Fill in 就, 再, 又 or 才 (2 blanks): 老师____说了一遍，我____听懂。",
+          "id": "Isi 就, 再, 又, atau 才 (2 titik): 老师____说了一遍，我____听懂。"
+        },
+        "accept": [
+          "又才"
+        ],
+        "why": {
+          "en": "又 / 才: said again, and only then understood.",
+          "id": "又 / 才: diulang lagi, baru paham."
+        }
+      },
+      {
+        "source": "三、就/再/又/才 · 6",
+        "q": {
+          "en": "Fill in 就, 再, 又 or 才: 上星期我已经买了一本，今天我____买了一本。",
+          "id": "Isi 就, 再, 又, atau 才: 上星期我已经买了一本，今天我____买了一本。"
+        },
+        "accept": [
+          "又"
+        ],
+        "why": {
+          "en": "又: the repeat already happened.",
+          "id": "又: pengulangannya sudah terjadi."
+        }
+      },
+      {
+        "source": "三、就/再/又/才 · 7",
+        "q": {
+          "en": "Fill in 就, 再, 又 or 才: 这本书一共108页，我____看到20页。",
+          "id": "Isi 就, 再, 又, atau 才: 这本书一共108页，我____看到20页。"
+        },
+        "accept": [
+          "才"
+        ],
+        "why": {
+          "en": "才: only 20 of 108.",
+          "id": "才: baru 20 dari 108."
+        }
+      },
+      {
+        "source": "三、就/再/又/才 · 8",
+        "q": {
+          "en": "Fill in 就, 再, 又 or 才: 你买了票____能坐地铁。",
+          "id": "Isi 就, 再, 又, atau 才: 你买了票____能坐地铁。"
+        },
+        "accept": [
+          "才"
+        ],
+        "why": {
+          "en": "v₁,才+v₂: you must buy a ticket first.",
+          "id": "v₁,才+v₂: harus beli tiket dulu."
+        }
+      },
+      {
+        "source": "四、选词填空 · 1",
+        "q": {
+          "en": "老师讲得很慢，我听____了。\n(懂、完、见、错、上、开、成、熟、到)",
+          "id": "老师讲得很慢，我听____了。\n(懂、完、见、错、上、开、成、熟、到)"
+        },
+        "accept": [
+          "懂"
+        ],
+        "why": {
+          "en": "懂",
+          "id": "懂"
+        }
+      },
+      {
+        "source": "四、选词填空 · 2",
+        "q": {
+          "en": "A：我叫你，你怎么不回答？ B：对不起，我正听录音呢，没听____。\n(懂、完、见、错、上、开、成、熟、到)",
+          "id": "A：我叫你，你怎么不回答？ B：对不起，我正听录音呢，没听____。\n(懂、完、见、错、上、开、成、熟、到)"
+        },
+        "accept": [
+          "见"
+        ],
+        "why": {
+          "en": "见",
+          "id": "见"
+        }
+      },
+      {
+        "source": "四、选词填空 · 3",
+        "q": {
+          "en": "我们五点半才能回____宿舍。\n(懂、完、见、错、上、开、成、熟、到)",
+          "id": "我们五点半才能回____宿舍。\n(懂、完、见、错、上、开、成、熟、到)"
+        },
+        "accept": [
+          "到"
+        ],
+        "why": {
+          "en": "到",
+          "id": "到"
+        }
+      },
+      {
+        "source": "四、选词填空 · 4",
+        "q": {
+          "en": "对不起，我看____时间了，所以来晚了。\n(懂、完、见、错、上、开、成、熟、到)",
+          "id": "对不起，我看____时间了，所以来晚了。\n(懂、完、见、错、上、开、成、熟、到)"
+        },
+        "accept": [
+          "错"
+        ],
+        "why": {
+          "en": "错",
+          "id": "错"
+        }
+      },
+      {
+        "source": "四、选词填空 · 5",
+        "q": {
+          "en": "快开____窗户吧，屋子里太热了。\n(懂、完、见、错、上、开、成、熟、到)",
+          "id": "快开____窗户吧，屋子里太热了。\n(懂、完、见、错、上、开、成、熟、到)"
+        },
+        "accept": [
+          "开"
+        ],
+        "why": {
+          "en": "开",
+          "id": "开"
+        }
+      },
+      {
+        "source": "四、选词填空 · 6",
+        "q": {
+          "en": "合____书吧，现在开始听写。\n(懂、完、见、错、上、开、成、熟、到)",
+          "id": "合____书吧，现在开始听写。\n(懂、完、见、错、上、开、成、熟、到)"
+        },
+        "accept": [
+          "上"
+        ],
+        "why": {
+          "en": "上",
+          "id": "上"
+        }
+      },
+      {
+        "source": "四、选词填空 · 7",
+        "q": {
+          "en": "A：我给你的书你看____了没有？ B：还没有看____呢。 (2 blanks)\n(懂、完、见、错、上、开、成、熟、到)",
+          "id": "A：我给你的书你看____了没有？ B：还没有看____呢。 (2 titik)\n(懂、完、见、错、上、开、成、熟、到)"
+        },
+        "accept": [
+          "完完"
+        ],
+        "why": {
+          "en": "完 / 完",
+          "id": "完 / 完"
+        }
+      },
+      {
+        "source": "四、选词填空 · 8",
+        "q": {
+          "en": "你可以把句子翻译____中文吗？\n(懂、完、见、错、上、开、成、熟、到)",
+          "id": "你可以把句子翻译____中文吗？\n(懂、完、见、错、上、开、成、熟、到)"
+        },
+        "accept": [
+          "成"
+        ],
+        "why": {
+          "en": "成",
+          "id": "成"
+        }
+      },
+      {
+        "source": "四、选词填空 · 9",
+        "q": {
+          "en": "这篇课文我读得不____。\n(懂、完、见、错、上、开、成、熟、到)",
+          "id": "这篇课文我读得不____。\n(懂、完、见、错、上、开、成、熟、到)"
+        },
+        "accept": [
+          "熟"
+        ],
+        "why": {
+          "en": "熟",
+          "id": "熟"
+        }
+      },
+      {
+        "source": "四、选词填空 · 10",
+        "q": {
+          "en": "A：我们马上要期中考试了，你知道考____第几课吗？B：知道，考____第六课。 (2 blanks)\n(懂、完、见、错、上、开、成、熟、到)",
+          "id": "A：我们马上要期中考试了，你知道考____第几课吗？B：知道，考____第六课。 (2 titik)\n(懂、完、见、错、上、开、成、熟、到)"
+        },
+        "accept": [
+          "到到"
+        ],
+        "why": {
+          "en": "到 / 到",
+          "id": "到 / 到"
+        }
+      },
+      {
+        "source": "五、完成对话 · 1 [ADDED]",
+        "q": {
+          "en": "A：你为什么没有来上课？B：____。(因为……所以……)",
+          "id": "A：你为什么没有来上课？B：____。(因为……所以……)"
+        },
+        "model": {
+          "en": "因为我病了，所以没有来上课。",
+          "id": "因为我病了，所以没有来上课。"
+        }
+      },
+      {
+        "source": "五、完成对话 · 2 [ADDED]",
+        "q": {
+          "en": "A：明天你可以陪我去买衣服吗？B：____。(要是……就……)",
+          "id": "A：明天你可以陪我去买衣服吗？B：____。(要是……就……)"
+        },
+        "model": {
+          "en": "要是明天我有时间，我就陪你去。",
+          "id": "要是明天我有时间，我就陪你去。"
+        }
+      },
+      {
+        "source": "五、完成对话 · 3 [ADDED]",
+        "q": {
+          "en": "A：这个房子房租贵吗？B：____。(虽然……但是……)",
+          "id": "A：这个房子房租贵吗？B：____。(虽然……但是……)"
+        },
+        "model": {
+          "en": "虽然房租有点儿贵，但是房子很好。",
+          "id": "虽然房租有点儿贵，但是房子很好。"
+        }
+      },
+      {
+        "source": "六、选择 · 1",
+        "q": {
+          "en": "你去没去医院？",
+          "id": "你去没去医院？"
+        },
+        "options": [
+          {
+            "en": "不去",
+            "id": "不去"
+          },
+          {
+            "en": "去了",
+            "id": "去了"
+          },
+          {
+            "en": "去",
+            "id": "去"
+          },
+          {
+            "en": "再去",
+            "id": "再去"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "v.没v.? asks about the past: answer 去了 or 没去.",
+          "id": "v.没v.? menanyakan masa lalu: jawab 去了 atau 没去."
+        }
+      },
+      {
+        "source": "六、选择 · 2",
+        "q": {
+          "en": "我来中国已经____了。",
+          "id": "我来中国已经____了。"
+        },
+        "options": [
+          {
+            "en": "二十年多",
+            "id": "二十年多"
+          },
+          {
+            "en": "二十多年",
+            "id": "二十多年"
+          },
+          {
+            "en": "多二十年",
+            "id": "多二十年"
+          }
+        ],
+        "answer": 1,
+        "why": {
+          "en": "Over 10: 多 after the number.",
+          "id": "Di atas 10: 多 sesudah bilangan."
+        }
+      },
+      {
+        "source": "六、选择 · 3",
+        "q": {
+          "en": "昨天晚上我一直学习到很晚才睡，只____。",
+          "id": "昨天晚上我一直学习到很晚才睡，只____。"
+        },
+        "options": [
+          {
+            "en": "睡觉了四五个小时",
+            "id": "睡觉了四五个小时"
+          },
+          {
+            "en": "四五个小时睡觉",
+            "id": "四五个小时睡觉"
+          },
+          {
+            "en": "睡了四五个小时觉",
+            "id": "睡了四五个小时觉"
+          },
+          {
+            "en": "睡四个五个小时觉",
+            "id": "睡四个五个小时觉"
+          }
+        ],
+        "answer": 2,
+        "why": {
+          "en": "睡觉 is a separable verb: the time goes inside.",
+          "id": "睡觉 adalah kata kerja terpisah: waktunya di tengah."
+        }
+      },
+      {
+        "source": "六、选择 · 4",
+        "q": {
+          "en": "我已经学了____汉语了。",
+          "id": "我已经学了____汉语了。"
+        },
+        "options": [
+          {
+            "en": "一年多",
+            "id": "一年多"
+          },
+          {
+            "en": "一多年",
+            "id": "一多年"
+          },
+          {
+            "en": "多一年",
+            "id": "多一年"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "Under 10: 多 after the measure word.",
+          "id": "Di bawah 10: 多 sesudah kata satuan."
+        }
+      },
+      {
+        "source": "六、选择 · 5",
+        "q": {
+          "en": "我姐姐比我____。",
+          "id": "我姐姐比我____。"
+        },
+        "options": [
+          {
+            "en": "胖一点儿",
+            "id": "胖一点儿"
+          },
+          {
+            "en": "很胖",
+            "id": "很胖"
+          },
+          {
+            "en": "胖得很",
+            "id": "胖得很"
+          },
+          {
+            "en": "三斤胖",
+            "id": "三斤胖"
+          }
+        ],
+        "answer": 0,
+        "why": {
+          "en": "No 很 in a 比 sentence; the amount goes after the adjective.",
+          "id": "Tanpa 很 dalam kalimat 比; jumlahnya sesudah kata sifat."
+        }
+      },
+      {
+        "source": "七、改错句 · 1",
+        "q": {
+          "en": "Correct the sentence: 玛丽常常去了操场锻炼身体。",
+          "id": "Perbaiki kalimat: 玛丽常常去了操场锻炼身体。"
+        },
+        "accept": [
+          "玛丽常常去操场锻炼身体。"
+        ],
+        "why": {
+          "en": "常常 is a habit: no 了.",
+          "id": "常常 adalah kebiasaan: tanpa 了."
+        }
+      },
+      {
+        "source": "七、改错句 · 2",
+        "q": {
+          "en": "Correct the sentence: 她感冒了，昨天我去了看她。",
+          "id": "Perbaiki kalimat: 她感冒了，昨天我去了看她。"
+        },
+        "accept": [
+          "她感冒了，昨天我去看了她。",
+          "她感冒了，昨天我去看她了。"
+        ],
+        "why": {
+          "en": "Serial verb: no 了 after 去. The review PPT's answer is 去看了她.",
+          "id": "Kata kerja berangkai: tanpa 了 sesudah 去. Jawaban PPT review: 去看了她."
+        }
+      },
+      {
+        "source": "七、改错句 · 3",
+        "q": {
+          "en": "Correct the sentence: 我已经做了完今天的作业。",
+          "id": "Perbaiki kalimat: 我已经做了完今天的作业。"
+        },
+        "accept": [
+          "我已经做完了今天的作业。"
+        ],
+        "why": {
+          "en": "了 after the complement 完.",
+          "id": "了 sesudah pelengkap 完."
+        }
+      },
+      {
+        "source": "七、改错句 · 4",
+        "q": {
+          "en": "Correct the sentence: 吃完晚饭，我常常跟朋友聊天一会儿。",
+          "id": "Perbaiki kalimat: 吃完晚饭，我常常跟朋友聊天一会儿。"
+        },
+        "accept": [
+          "吃完晚饭，我常常跟朋友聊一会儿天。"
+        ],
+        "why": {
+          "en": "Separable verb: 聊一会儿天.",
+          "id": "Kata kerja terpisah: 聊一会儿天."
+        }
+      },
+      {
+        "source": "七、改错句 · 5",
+        "q": {
+          "en": "Correct the sentence: 麦克比我一点儿高。",
+          "id": "Perbaiki kalimat: 麦克比我一点儿高。"
+        },
+        "accept": [
+          "麦克比我高一点儿。"
+        ],
+        "why": {
+          "en": "一点儿 goes after the adjective.",
+          "id": "一点儿 sesudah kata sifat."
+        }
+      },
+      {
+        "source": "八、阅读 逛公园 · 1 [ADDED]",
+        "q": {
+          "en": "Read 逛公园 (lesson 6 reading). 她们怎么去的公园？",
+          "id": "Baca 逛公园 (bacaan pelajaran 6). 她们怎么去的公园？"
+        },
+        "accept": [
+          "骑自行车去的。",
+          "骑自行车去",
+          "骑自行车",
+          "她们骑自行车去的"
+        ],
+        "why": {
+          "en": "罗兰说……我们最好骑自行车去。",
+          "id": "罗兰说……我们最好骑自行车去。"
+        }
+      },
+      {
+        "source": "八、阅读 逛公园 · 2 [ADDED]",
+        "q": {
+          "en": "她们多久到的公园？排了多久的队买到票？",
+          "id": "她们多久到的公园？排了多久的队买到票？"
+        },
+        "model": {
+          "en": "半个小时就到公园了。排了五分钟才买到票。",
+          "id": "半个小时就到公园了。排了五分钟才买到票。"
+        }
+      },
+      {
+        "source": "八、阅读 逛公园 · 3 [ADDED]",
+        "q": {
+          "en": "她们到公园以后先做什么了？",
+          "id": "她们到公园以后先做什么了？"
+        },
+        "accept": [
+          "先爬山了。",
+          "先爬山",
+          "爬山",
+          "她们先爬山了"
+        ],
+        "why": {
+          "en": "我和罗兰先爬山。",
+          "id": "我和罗兰先爬山。"
+        }
+      },
+      {
+        "source": "八、阅读 逛公园 · 4 [ADDED]",
+        "q": {
+          "en": "很多人在公园里做什么？",
+          "id": "很多人在公园里做什么？"
+        },
+        "model": {
+          "en": "很多人在湖边散步，还有不少人在湖上划船。",
+          "id": "很多人在湖边散步，还有不少人在湖上划船。"
+        }
+      },
+      {
+        "source": "八、阅读 逛公园 · 5 [ADDED]",
+        "q": {
+          "en": "她们还会再来这个公园吗？",
+          "id": "她们还会再来这个公园吗？"
+        },
+        "accept": [
+          "会。",
+          "会",
+          "会再来",
+          "会，以后可以再来"
+        ],
+        "why": {
+          "en": "罗兰说：\"以后我们可以再来。\"",
+          "id": "罗兰说：\"以后我们可以再来。\""
         }
       }
     ]

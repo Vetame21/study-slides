@@ -55,6 +55,12 @@ def F(source, q, accept, why):
     return {"source": source, "q": {"en": q[0], "id": q[1]}, "accept": accept, "why": {"en": why[0], "id": why[1]}}
 
 
+def O(source, q, model):
+    """An open question: many answers are right, so the site shows a sample answer and does not score it.
+    q, model = (en, id)."""
+    return {"source": source, "q": {"en": q[0], "id": q[1]}, "model": {"en": model[0], "id": model[1]}}
+
+
 def Q(source, q, options, answer, why):
     """One quiz question. q, why = (en, id); an option is 汉字 (both languages) or (en, id)."""
     opts = [{"en": o, "id": o} if isinstance(o, str) else {"en": o[0], "id": o[1]} for o in options]
