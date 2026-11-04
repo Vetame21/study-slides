@@ -97,7 +97,8 @@ SLIDES = [
         L("他的汉语水平一般，但是很努力。/ 这个面包味道很一般。", "Tā de Hànyǔ shuǐpíng yìbān, dànshì hěn nǔlì. / Zhège miànbāo wèidào hěn yìbān.", "His Chinese is average, but he works hard. / This bread tastes ordinary. (average)", "Bahasa Mandarinnya biasa saja, tapi dia rajin. / Rasa roti ini biasa saja. (biasa saja)"),
         L("我很感谢你对我的帮助。/ 非常感谢你借给我这本书。", "Wǒ hěn gǎnxiè nǐ duì wǒ de bāngzhù. / Fēicháng gǎnxiè nǐ jiè gěi wǒ zhè běn shū.", "Thank you for your help. / Thank you so much for lending me this book.", "Terima kasih atas bantuanmu. / Terima kasih banyak sudah meminjamkan buku ini."),
       ], word=[W("一般", "yìbān", NONE, ("usual; general; common", "biasanya; biasa saja")), W("感谢", "gǎnxiè", NONE, ("to thank", "berterima kasih"))],
-      check=(("这个面包味道很一般: is the bread good?", "It's only average."), ("这个面包味道很一般: rotinya enak?", "Biasa saja."))),
+      check=(("The bread tastes just average. 这个面包味道很____。", "一般 yìbān: 这个面包味道很一般。"),
+             ("Rasa rotinya biasa saja. 这个面包味道很____。", "一般 yìbān: 这个面包味道很一般。"))),
     S("WHAT", ("父母 fùmǔ and 机会 jīhuì", "父母 fùmǔ dan 机会 jīhuì"), [
         L("母亲 + 父亲 = 父母", "mǔqīn + fùqīn = fùmǔ", "mother + father = parents", "ibu + ayah = orang tua"),
         L("我很爱我的父母。", "Wǒ hěn ài wǒ de fùmǔ.", "I love my parents very much.", "Saya sangat sayang orang tua saya."),

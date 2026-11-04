@@ -104,7 +104,7 @@
   .zh-tools button { font-size: .85rem; padding: 4px 12px; border-radius: 999px; }
   .zh-tools .hint { font-size: .8rem; color: var(--muted); }
   .hide-py .zl:not(.peek) .py, .hide-tr .zl:not(.peek) .tr { display: none; }
-  .hide-py .word:not(.peek) .py, .hide-tr .word:not(.peek) .pos, .hide-tr .word:not(.peek) .mean { visibility: hidden; }
+  .hide-py .word:not(.peek) .py, .hide-tr .word:not(.peek) .pos, .hide-tr .word:not(.peek) .mean { display: none; }
   .hide-py .zl, .hide-tr .zl, .hide-py .word, .hide-tr .word { cursor: pointer; }
   .hide-py .zl .sp, .hide-tr .zl .sp { margin-top: 4px; }
   .story { margin-top: 16px; padding: 12px 16px; border-radius: 14px; background: var(--note-bg); border: 1px solid var(--line); }
@@ -519,6 +519,12 @@ function zhTools() {
     const card = tools.closest(".card");
     card.classList.toggle("hide-py", hideHelp);
     card.classList.toggle("hide-tr", hideHelp);
+    // a word slide's title ("一般 yìbān and 感谢 gǎnxiè") gives the answer away, so show only the 汉字
+    const h2 = card.querySelector("h2"), words = [...card.querySelectorAll(".word .hz")];
+    if (words.length) {
+      h2.dataset.full = h2.dataset.full || h2.textContent;
+      h2.textContent = hideHelp ? words.map(w => w.textContent).join(" · ") : h2.dataset.full;
+    }
     btn.textContent = hideHelp ? ui().showHelp : ui().hideHelp;
     hint.hidden = !hideHelp;
   };

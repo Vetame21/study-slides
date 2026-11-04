@@ -10719,16 +10719,16 @@
       }
     ],
     "quick_check": {
-      "q": "这个面包味道很一般: is the bread good?",
-      "a": "It's only average."
+      "q": "The bread tastes just average. 这个面包味道很____。",
+      "a": "一般 yìbān: 这个面包味道很一般。"
     },
     "id": {
       "chapter": "第5课 我来了两个多月了 (Saya sudah di sini lebih dari dua bulan)",
       "title": "一般 yìbān dan 感谢 gǎnxiè",
       "body": "",
       "quick_check": {
-        "q": "这个面包味道很一般: rotinya enak?",
-        "a": "Biasa saja."
+        "q": "Rasa rotinya biasa saja. 这个面包味道很____。",
+        "a": "一般 yìbān: 这个面包味道很一般。"
       }
     }
   },
