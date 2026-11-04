@@ -60,59 +60,31 @@ def attach(questions, found, fixed=None):
     return {k: found[k] for k in sorted(used)}
 
 
-PUNCT = re.compile(r"[\s，。？！、：；,.?!:;\"“”]+")
-# a stem that already says what to do: a word list in brackets, a task, or a pinyin hint
-TOLD = re.compile(r"[（(][^）)]*[、/][^）)]*[）)]|\n\(|Write the|Fix it|Correct|Change|Answer|Fill in|Say|Isi|Tulis|Type|"
-                  r"\((two|three|four) blanks\)|（[a-zāáǎàēéěèīíǐìōóǒòūúǔùü ]+）|\([a-z ]+\)")
-REPLY = re.compile(r"B：____\s*$|A：____？")  # the blank is a whole reply or question
-FAMILIES = [["就", "才", "再", "又"], ["懂", "完", "见", "对", "错", "好", "上", "开", "成", "到", "给"]]
+# The word banks printed on the teacher's exercise pages, in the PPT's order: (lesson, page) → words.
+# Only these exercises get a "Choose: …" line; an exercise without a bank in the PPT gets nothing.
+BANKS = {
+    (lesson1, 45): "已经 考 接 踢 比赛 操场 又 出国",
+    (lesson2, 54): "感到 难过 所以 又 疼 总 拉 检查",
+    (lesson3, 52): "环境 条 附近 旁边 方便 打算 就 要是 才 还 套 虽然",
+    (lesson4, 37): "懂 开 成 好 熟 错 关 道 上",
+    (lesson4, 76): "上 成 到",
+    (lesson5, 44): "练 差不多 好处 不一定 原来 必须 不过 从来 效果 挺",
+    (lesson5, 79): "才 就",
+    (lesson6, 40): "气温 预报 最 名曲 流行 迷 增加 暖和",
+    (lesson6, 81): "就 才 再 又",
+    (lesson6, 82): "懂 完 见 对 上 开",
+}
 
 
-def page(q):
-    m = re.search(r"p\. (\d+)", q["source"])
-    return int(m.group(1)) if m else 0
-
-
-def words(q):
-    """The answer of each blank, from the accepted answer written with spaces or commas (对 错 / 对,错)."""
-    if re.search(r"\((two|three|four) (blanks|words)\)", q["q"]["en"]):
-        split = next((a for a in q["accept"] if re.search(r"[ ,，]", a)), None)
-        return PUNCT.split(split.strip()) if split else []
-    return [PUNCT.sub("", q["accept"][0])]
-
-
-def add_banks(questions):
-    """Give each typed question without an instruction a word bank from its exercise, like the PPT does.
-
-    An exercise is a run of questions with the same label (结果补语…) on nearby pages; a 填空 exercise is one
-    page. A run of short answers gets "Choose: …" with all its answers; a run where any answer is a whole
-    sentence gets "Answer in a full sentence"."""
-    runs, cur = [], []
+def add_banks(lesson, questions):
+    """Add the PPT's word bank to each typed question of an exercise that has one."""
     for q in questions:
-        label = re.sub(r"p\. \d+\s*", "", q["source"])
-        gap = 0 if label == "填空" else 3
-        if cur and (not q.get("accept") or label != cur[-1][1] or abs(page(q) - page(cur[-1][0])) > gap):
-            runs.append(cur); cur = []
-        if q.get("accept"):
-            cur.append((q, label))
-    runs.append(cur)
-    for run in runs:
-        qs = [q for q, _ in run]
-        # the bank holds words and short phrases; a whole reply (B：____) is never offered
-        bank = list(dict.fromkeys(w for q in qs if not REPLY.search(q["q"]["en"]) for w in words(q) if w and len(w) <= 4))
-        if len(bank) == 1:  # one blank alone: offer the family it belongs to (就/才/再/又 or the result words)
-            bank = next((f for f in FAMILIES if bank[0] in f), bank)
-        for q in qs:
-            if "____" not in q["q"]["en"] or TOLD.search(q["q"]["en"]):
-                continue
-            if REPLY.search(q["q"]["en"]) or len(PUNCT.sub("", q["accept"][0])) > 4:
-                add = ("\n(Answer in a full sentence.)", "\n(Jawab dengan kalimat lengkap.)")
-            elif len(bank) > 1:
-                pick = " / ".join(sorted(bank))
-                add = (f"\n(Choose: {pick})", f"\n(Pilih: {pick})")
-            else:
-                continue
-            q["q"] = {"en": q["q"]["en"] + add[0], "id": q["q"]["id"] + add[1]}
+        m = re.search(r"p\. (\d+)", q["source"])
+        bank = m and BANKS.get((lesson, int(m.group(1))))
+        if not (bank and q.get("accept") and "____" in q["q"]["en"]):
+            continue
+        pick = " / ".join(bank.split())
+        q["q"] = {"en": q["q"]["en"] + f"\n(Choose: {pick})", "id": q["q"]["id"] + f"\n(Pilih: {pick})"}
 
 
 slides = []
@@ -125,7 +97,7 @@ write("slides.json", slides)
 chapters = []
 for l in LESSONS + EXTRA_QUIZZES:
     qs = [dict(q) for q in l.QUIZ]
-    add_banks(qs)
+    add_banks(l, qs)
     if l is mock:
         found = {"阅读": stories(MOCK_STORY[0])[MOCK_STORY[1]]}
         used = attach(qs, found, fixed="阅读")
