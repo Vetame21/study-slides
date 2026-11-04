@@ -202,6 +202,23 @@ that story attached automatically (`stories` in `quiz.json`), built from the les
 python3 tools/chinese/build.py
 ```
 
+**Exercises follow the PPT exactly.** Each quiz question keeps the format of the exercise it comes from,
+and nothing is added that the PPT doesn't have:
+
+| In the PPT | On the site |
+|---|---|
+| 选词填空 with a word box (e.g. `A.不 没(有)`, `B.再 又`) | typed fill-in **with** that word box, words in the PPT's order |
+| 用"就"或"才"填空, 用"上、成、到"填空 (the words are in the instruction) | typed fill-in with those words |
+| a blank with no word box (课文 dialogue blanks, 用结果补语填空, picture blanks) | typed fill-in, **no** word box |
+| 选择正确答案 with A/B/C options, 判断正误 ✓/✗ | multiple choice with the same options |
+| 改错, 完成句子, 回答问题 | typed answer (改错, short answers) or open answer with a sample (free sentences) |
+| a 课文/阅读 question with the answer written under it | typed answer for a short answer, open answer (the PPT's answer as the sample) for a long one; the story is shown above |
+| an example or rule on a grammar page (not an exercise) | no quiz question |
+
+Don't turn an exercise into another format (for example a 填空 into multiple choice), don't invent
+options or word boxes, and don't write extra instructions. If an exercise can't work the same way on a
+page, keep it as close as possible and say so in a `[NOTE]`.
+
 The teacher's PDFs are images, so everything is typed by hand from the pages. The vocabulary pinyin is the
 teacher's. Sentence pinyin and sentence translations are added for the site, and the first slide of each
 lesson says so. Use full-width Chinese punctuation in 汉字 lines.

@@ -64,6 +64,10 @@ def attach(questions, found, fixed=None):
 # Only these exercises get a "Choose: …" line; an exercise without a bank in the PPT gets nothing.
 BANKS = {
     (lesson1, 45): "已经 考 接 踢 比赛 操场 又 出国",
+    (lesson1, 64): "不 没(有)",
+    (lesson1, 67): "再 又",
+    (lesson3, 62): "就 才",
+    (lesson6, 67): "冷一点儿 深一点儿 高三度 大两岁 贵得多 早得多 高得多 快得多",
     (lesson2, 54): "感到 难过 所以 又 疼 总 拉 检查",
     (lesson3, 52): "环境 条 附近 旁边 方便 打算 就 要是 才 还 套 虽然",
     (lesson4, 37): "懂 开 成 好 熟 错 关 道 上",
