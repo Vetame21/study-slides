@@ -1,0 +1,2652 @@
+[
+  {
+    "chapter": {
+      "en": "1. Android Architecture",
+      "id": "1. Arsitektur Android"
+    },
+    "questions": [
+      {
+        "source": "Mobile Architecture p. 33",
+        "q": {
+          "en": "Which layer provides Activity Manager and Notification Manager?",
+          "id": "Layer mana yang menyediakan Activity Manager dan Notification Manager?"
+        },
+        "why": {
+          "en": "Slide p. 11: Activity Manager, Notification Manager and others are Application Framework services.",
+          "id": "Slide hlm. 11: Activity Manager, Notification Manager dan lainnya adalah layanan Application Framework."
+        },
+        "options": [
+          {
+            "en": "Application Framework",
+            "id": "Application Framework"
+          },
+          {
+            "en": "Platform Libraries",
+            "id": "Platform Libraries"
+          },
+          {
+            "en": "Linux Kernel",
+            "id": "Linux Kernel"
+          },
+          {
+            "en": "Android Runtime",
+            "id": "Android Runtime"
+          }
+        ],
+        "answer": 0
+      },
+      {
+        "source": "Mobile Architecture p. 33",
+        "q": {
+          "en": "Which layer executes DEX bytecode?",
+          "id": "Layer mana yang menjalankan DEX bytecode?"
+        },
+        "why": {
+          "en": "Slide p. 14: ART executes application bytecode.",
+          "id": "Slide hlm. 14: ART menjalankan bytecode aplikasi."
+        },
+        "options": [
+          {
+            "en": "Android Runtime (ART)",
+            "id": "Android Runtime (ART)"
+          },
+          {
+            "en": "Application Framework",
+            "id": "Application Framework"
+          },
+          {
+            "en": "Linux Kernel",
+            "id": "Linux Kernel"
+          },
+          {
+            "en": "Platform Libraries",
+            "id": "Platform Libraries"
+          }
+        ],
+        "answer": 0
+      },
+      {
+        "source": "Mobile Architecture p. 33",
+        "q": {
+          "en": "Where are the native graphics and media libraries located?",
+          "id": "Di mana library native grafik dan media berada?"
+        },
+        "why": {
+          "en": "Slide p. 18: native C/C++ libraries (OpenGL, Media, SQLite) are Platform Libraries.",
+          "id": "Slide hlm. 18: library native C/C++ (OpenGL, Media, SQLite) adalah Platform Libraries."
+        },
+        "options": [
+          {
+            "en": "Platform Libraries",
+            "id": "Platform Libraries"
+          },
+          {
+            "en": "Applications",
+            "id": "Applications"
+          },
+          {
+            "en": "Android Runtime",
+            "id": "Android Runtime"
+          },
+          {
+            "en": "Application Framework",
+            "id": "Application Framework"
+          }
+        ],
+        "answer": 0
+      },
+      {
+        "source": "Mobile Architecture p. 33",
+        "q": {
+          "en": "Which layer contains the low-level device drivers?",
+          "id": "Layer mana yang berisi driver perangkat tingkat rendah?"
+        },
+        "why": {
+          "en": "Slide p. 21: the kernel handles drivers such as camera, display, audio, Bluetooth.",
+          "id": "Slide hlm. 21: kernel mengurus driver seperti kamera, layar, audio, Bluetooth."
+        },
+        "options": [
+          {
+            "en": "Applications",
+            "id": "Applications"
+          },
+          {
+            "en": "Application Framework",
+            "id": "Application Framework"
+          },
+          {
+            "en": "Linux Kernel",
+            "id": "Linux Kernel"
+          },
+          {
+            "en": "Android Runtime",
+            "id": "Android Runtime"
+          }
+        ],
+        "answer": 2
+      },
+      {
+        "source": "Mobile Architecture p. 31",
+        "q": {
+          "en": "Which statement about the Android layers is correct?",
+          "id": "Pernyataan mana tentang layer Android yang benar?"
+        },
+        "why": {
+          "en": "Slide p. 31 lists \"apps talk directly to hardware\" and \"ART is the Linux kernel\" as misunderstandings; platform libraries are largely C/C++.",
+          "id": "Slide hlm. 31 menyebut \"app bicara langsung ke hardware\" dan \"ART adalah Linux kernel\" sebagai salah paham; platform libraries sebagian besar C/C++."
+        },
+        "options": [
+          {
+            "en": "ART and the Linux Kernel are the same thing.",
+            "id": "ART dan Linux Kernel itu sama."
+          },
+          {
+            "en": "Platform Libraries are written only in Java.",
+            "id": "Platform Libraries hanya ditulis dengan Java."
+          },
+          {
+            "en": "Apps normally control the camera hardware directly.",
+            "id": "App biasanya mengontrol hardware kamera secara langsung."
+          },
+          {
+            "en": "The Linux Kernel contains the device drivers.",
+            "id": "Linux Kernel berisi driver perangkat."
+          }
+        ],
+        "answer": 3
+      },
+      {
+        "source": "Mobile Architecture p. 33",
+        "q": {
+          "en": "Why should an app use framework APIs instead of accessing hardware directly?",
+          "id": "Kenapa app sebaiknya memakai API framework, bukan hardware langsung?"
+        },
+        "why": {
+          "en": "Quiz answer on slide p. 33.",
+          "id": "Jawaban kuis di slide hlm. 33."
+        },
+        "options": [
+          {
+            "en": "Abstraction, security and portability.",
+            "id": "Abstraksi, keamanan, dan portabilitas."
+          },
+          {
+            "en": "The Manifest requires it.",
+            "id": "Manifest mewajibkannya."
+          },
+          {
+            "en": "Hardware cannot be reached at all.",
+            "id": "Hardware sama sekali tidak bisa dijangkau."
+          },
+          {
+            "en": "It is faster to type.",
+            "id": "Lebih cepat diketik."
+          }
+        ],
+        "answer": 0
+      },
+      {
+        "source": "Android Architecture p. 6",
+        "q": {
+          "en": "Which platform library provides local database support?",
+          "id": "Platform library mana yang menyediakan dukungan database lokal?"
+        },
+        "why": {
+          "en": "Slide p. 6: SQLite provides database support; FreeType fonts; WebKit web content.",
+          "id": "Slide hlm. 6: SQLite untuk database; FreeType untuk font; WebKit untuk konten web."
+        },
+        "options": [
+          {
+            "en": "FreeType",
+            "id": "FreeType"
+          },
+          {
+            "en": "WebKit",
+            "id": "WebKit"
+          },
+          {
+            "en": "SQLite",
+            "id": "SQLite"
+          },
+          {
+            "en": "OpenGL",
+            "id": "OpenGL"
+          }
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  {
+    "chapter": {
+      "en": "2. App Components",
+      "id": "2. Komponen Aplikasi"
+    },
+    "questions": [
+      {
+        "source": "Mobile Architecture p. 8",
+        "q": {
+          "en": "Which component normally represents a screen the user interacts with?",
+          "id": "Komponen mana yang biasanya mewakili layar yang berinteraksi dengan user?"
+        },
+        "why": {
+          "en": "Mobile Architecture slide 8-9: Activity = screens and user interaction.",
+          "id": "Slide Mobile Architecture 8-9: Activity = layar dan interaksi user."
+        },
+        "options": [
+          {
+            "en": "Activity",
+            "id": "Activity"
+          },
+          {
+            "en": "ContentProvider",
+            "id": "ContentProvider"
+          },
+          {
+            "en": "BroadcastReceiver",
+            "id": "BroadcastReceiver"
+          },
+          {
+            "en": "Service",
+            "id": "Service"
+          }
+        ],
+        "answer": 0
+      },
+      {
+        "source": "Mobile Architecture p. 8",
+        "q": {
+          "en": "Which component does background or long-running work without a visible screen?",
+          "id": "Komponen mana yang melakukan pekerjaan latar belakang tanpa layar terlihat?"
+        },
+        "why": {
+          "en": "Slide p. 8: Services = background or long-running work.",
+          "id": "Slide hlm. 8: Services = pekerjaan latar belakang atau lama."
+        },
+        "options": [
+          {
+            "en": "TextView",
+            "id": "TextView"
+          },
+          {
+            "en": "ContentProvider",
+            "id": "ContentProvider"
+          },
+          {
+            "en": "Activity",
+            "id": "Activity"
+          },
+          {
+            "en": "Service",
+            "id": "Service"
+          }
+        ],
+        "answer": 3
+      },
+      {
+        "source": "Mobile Architecture p. 8",
+        "q": {
+          "en": "Which component responds to system or app events?",
+          "id": "Komponen mana yang merespons event sistem atau app?"
+        },
+        "why": {
+          "en": "Slide p. 8: Broadcast Receivers respond to system/app events.",
+          "id": "Slide hlm. 8: Broadcast Receivers merespons event sistem/app."
+        },
+        "options": [
+          {
+            "en": "BroadcastReceiver",
+            "id": "BroadcastReceiver"
+          },
+          {
+            "en": "SQLite",
+            "id": "SQLite"
+          },
+          {
+            "en": "Activity",
+            "id": "Activity"
+          },
+          {
+            "en": "Service",
+            "id": "Service"
+          }
+        ],
+        "answer": 0
+      },
+      {
+        "source": "Mobile Architecture p. 8",
+        "q": {
+          "en": "Which component shares structured data between apps?",
+          "id": "Komponen mana yang berbagi data terstruktur antar app?"
+        },
+        "why": {
+          "en": "Slide p. 8: Content Providers = structured data sharing.",
+          "id": "Slide hlm. 8: Content Providers = berbagi data terstruktur."
+        },
+        "options": [
+          {
+            "en": "Toast",
+            "id": "Toast"
+          },
+          {
+            "en": "BroadcastReceiver",
+            "id": "BroadcastReceiver"
+          },
+          {
+            "en": "ContentProvider",
+            "id": "ContentProvider"
+          },
+          {
+            "en": "Activity",
+            "id": "Activity"
+          }
+        ],
+        "answer": 2
+      },
+      {
+        "source": "SCUT lecture p. 7",
+        "q": {
+          "en": "Which file declares the app's entry point and required permissions?",
+          "id": "File mana yang mendeklarasikan titik masuk app dan permission yang dibutuhkan?"
+        },
+        "why": {
+          "en": "Slide p. 7: AndroidManifest.xml = app entry point and required permissions.",
+          "id": "Slide hlm. 7: AndroidManifest.xml = titik masuk app dan permission."
+        },
+        "options": [
+          {
+            "en": "MainActivity.java",
+            "id": "MainActivity.java"
+          },
+          {
+            "en": "activity_main.xml",
+            "id": "activity_main.xml"
+          },
+          {
+            "en": "res/ folder",
+            "id": "res/ folder"
+          },
+          {
+            "en": "AndroidManifest.xml",
+            "id": "AndroidManifest.xml"
+          }
+        ],
+        "answer": 3
+      },
+      {
+        "source": "SCUT lecture p. 8",
+        "q": {
+          "en": "What does setContentView() do?",
+          "id": "Apa fungsi setContentView()?"
+        },
+        "why": {
+          "en": "Slide p. 8: onCreate() initializes the screen; setContentView() connects Java to XML.",
+          "id": "Slide hlm. 8: onCreate() menyiapkan layar; setContentView() menghubungkan Java ke XML."
+        },
+        "options": [
+          {
+            "en": "Starts a Service.",
+            "id": "Memulai Service."
+          },
+          {
+            "en": "Connects the Java Activity to the XML layout.",
+            "id": "Menghubungkan Activity Java ke layout XML."
+          },
+          {
+            "en": "Saves data in SQLite.",
+            "id": "Menyimpan data di SQLite."
+          },
+          {
+            "en": "Shows a Toast message.",
+            "id": "Menampilkan pesan Toast."
+          }
+        ],
+        "answer": 1
+      },
+      {
+        "source": "[ADDED]",
+        "q": {
+          "en": "Which component is used to request opening another Activity?",
+          "id": "Komponen mana yang dipakai untuk meminta membuka Activity lain?"
+        },
+        "why": {
+          "en": "An Intent is a request to Android, e.g. startActivity(new Intent(this, SummaryActivity.class)).",
+          "id": "Intent adalah permintaan ke Android, misalnya startActivity(new Intent(this, SummaryActivity.class))."
+        },
+        "options": [
+          {
+            "en": "Toast",
+            "id": "Toast"
+          },
+          {
+            "en": "TextView",
+            "id": "TextView"
+          },
+          {
+            "en": "SQLite",
+            "id": "SQLite"
+          },
+          {
+            "en": "Intent",
+            "id": "Intent"
+          }
+        ],
+        "answer": 3
+      }
+    ]
+  },
+  {
+    "chapter": {
+      "en": "3. Activity Lifecycle",
+      "id": "3. Lifecycle Activity"
+    },
+    "questions": [
+      {
+        "source": "SCUT lecture p. 9",
+        "q": {
+          "en": "Which is the correct order when an Activity starts?",
+          "id": "Manakah urutan yang benar saat Activity mulai?"
+        },
+        "why": {
+          "en": "Slide p. 9: onCreate() → onStart() → onResume() → user interacts.",
+          "id": "Slide hlm. 9: onCreate() → onStart() → onResume() → user berinteraksi."
+        },
+        "options": [
+          {
+            "en": "onResume → onStart → onCreate",
+            "id": "onResume → onStart → onCreate"
+          },
+          {
+            "en": "onStart → onCreate → onResume",
+            "id": "onStart → onCreate → onResume"
+          },
+          {
+            "en": "onCreate → onResume → onStart",
+            "id": "onCreate → onResume → onStart"
+          },
+          {
+            "en": "onCreate → onStart → onResume",
+            "id": "onCreate → onStart → onResume"
+          }
+        ],
+        "answer": 3
+      },
+      {
+        "source": "SCUT lecture p. 9",
+        "q": {
+          "en": "Which method is called when the Activity may be removed?",
+          "id": "Method mana yang dipanggil saat Activity mungkin dihapus?"
+        },
+        "why": {
+          "en": "Slide p. 9: onDestroy(): the Activity may be removed.",
+          "id": "Slide hlm. 9: onDestroy(): Activity mungkin dihapus."
+        },
+        "options": [
+          {
+            "en": "onDestroy()",
+            "id": "onDestroy()"
+          },
+          {
+            "en": "onStart()",
+            "id": "onStart()"
+          },
+          {
+            "en": "onResume()",
+            "id": "onResume()"
+          },
+          {
+            "en": "onCreate()",
+            "id": "onCreate()"
+          }
+        ],
+        "answer": 0
+      },
+      {
+        "source": "SCUT lecture p. 9",
+        "q": {
+          "en": "When may onPause() / onStop() be called?",
+          "id": "Kapan onPause() / onStop() bisa dipanggil?"
+        },
+        "why": {
+          "en": "Slide p. 9: onPause()/onStop(): the app may move to the background.",
+          "id": "Slide hlm. 9: onPause()/onStop(): app mungkin pindah ke latar belakang."
+        },
+        "options": [
+          {
+            "en": "Only when the phone is switched off.",
+            "id": "Hanya saat ponsel dimatikan."
+          },
+          {
+            "en": "When the app is first installed.",
+            "id": "Saat app pertama kali dipasang."
+          },
+          {
+            "en": "When the app moves to the background.",
+            "id": "Saat app pindah ke latar belakang."
+          },
+          {
+            "en": "When a button is created.",
+            "id": "Saat tombol dibuat."
+          }
+        ],
+        "answer": 2
+      },
+      {
+        "source": "Mobile Architecture p. 9",
+        "q": {
+          "en": "The user rotates the phone. What may Android do?",
+          "id": "User memutar ponsel. Apa yang mungkin dilakukan Android?"
+        },
+        "why": {
+          "en": "Slide p. 9: the framework may recreate an Activity after rotation or memory pressure.",
+          "id": "Slide hlm. 9: framework bisa membuat ulang Activity setelah rotasi atau memori penuh."
+        },
+        "options": [
+          {
+            "en": "Delete the app.",
+            "id": "Menghapus app."
+          },
+          {
+            "en": "Nothing; the Activity is never recreated.",
+            "id": "Tidak ada; Activity tidak pernah dibuat ulang."
+          },
+          {
+            "en": "Close all other apps.",
+            "id": "Menutup semua app lain."
+          },
+          {
+            "en": "Recreate the Activity, so important data must be saved.",
+            "id": "Membuat ulang Activity, jadi data penting harus disimpan."
+          }
+        ],
+        "answer": 3
+      },
+      {
+        "source": "SCUT lecture p. 8",
+        "q": {
+          "en": "Which method initializes the screen?",
+          "id": "Method mana yang menyiapkan layar?"
+        },
+        "why": {
+          "en": "Slide p. 8: onCreate() initializes the screen.",
+          "id": "Slide hlm. 8: onCreate() menyiapkan layar."
+        },
+        "options": [
+          {
+            "en": "onPause()",
+            "id": "onPause()"
+          },
+          {
+            "en": "onStop()",
+            "id": "onStop()"
+          },
+          {
+            "en": "onDestroy()",
+            "id": "onDestroy()"
+          },
+          {
+            "en": "onCreate()",
+            "id": "onCreate()"
+          }
+        ],
+        "answer": 3
+      }
+    ]
+  },
+  {
+    "chapter": {
+      "en": "4. Screens: XML, Layouts, Widgets",
+      "id": "4. Layar: XML, Layout, Widget"
+    },
+    "questions": [
+      {
+        "source": "SCUT lecture p. 7",
+        "q": {
+          "en": "Which file holds the UI components and their arrangement?",
+          "id": "File mana yang berisi komponen UI dan susunannya?"
+        },
+        "why": {
+          "en": "Slide p. 7: activity_main.xml = UI components and their arrangement.",
+          "id": "Slide hlm. 7: activity_main.xml = komponen UI dan susunannya."
+        },
+        "options": [
+          {
+            "en": "AndroidManifest.xml",
+            "id": "AndroidManifest.xml"
+          },
+          {
+            "en": "Gradle configuration",
+            "id": "Gradle configuration"
+          },
+          {
+            "en": "MainActivity.java",
+            "id": "MainActivity.java"
+          },
+          {
+            "en": "activity_main.xml",
+            "id": "activity_main.xml"
+          }
+        ],
+        "answer": 3
+      },
+      {
+        "source": "SCUT lecture p. 5",
+        "q": {
+          "en": "Where do you change the text shown on a button?",
+          "id": "Di mana kamu mengubah teks yang tampil pada tombol?"
+        },
+        "why": {
+          "en": "Slide p. 5: XML describes what the screen looks like.",
+          "id": "Slide hlm. 5: XML menjelaskan seperti apa tampilan layar."
+        },
+        "options": [
+          {
+            "en": "In the XML layout (android:text).",
+            "id": "Di layout XML (android:text)."
+          },
+          {
+            "en": "In the Gradle file.",
+            "id": "Di file Gradle."
+          },
+          {
+            "en": "In the SQLite database.",
+            "id": "Di database SQLite."
+          },
+          {
+            "en": "In AndroidManifest.xml.",
+            "id": "Di AndroidManifest.xml."
+          }
+        ],
+        "answer": 0
+      },
+      {
+        "source": "SCUT lecture p. 10",
+        "q": {
+          "en": "Which layout arranges elements vertically or horizontally?",
+          "id": "Layout mana yang menyusun elemen vertikal atau horizontal?"
+        },
+        "why": {
+          "en": "Slide p. 10: LinearLayout arranges elements vertically or horizontally.",
+          "id": "Slide hlm. 10: LinearLayout menyusun elemen vertikal atau horizontal."
+        },
+        "options": [
+          {
+            "en": "ProgressBar",
+            "id": "ProgressBar"
+          },
+          {
+            "en": "ListView",
+            "id": "ListView"
+          },
+          {
+            "en": "EditText",
+            "id": "EditText"
+          },
+          {
+            "en": "LinearLayout",
+            "id": "LinearLayout"
+          }
+        ],
+        "answer": 3
+      },
+      {
+        "source": "SCUT lecture p. 12",
+        "q": {
+          "en": "Which widget shows a loading indicator?",
+          "id": "Widget mana yang menampilkan indikator loading?"
+        },
+        "why": {
+          "en": "Slide p. 12: ProgressBar = show loading during weather requests.",
+          "id": "Slide hlm. 12: ProgressBar = menampilkan loading saat request cuaca."
+        },
+        "options": [
+          {
+            "en": "ListView",
+            "id": "ListView"
+          },
+          {
+            "en": "ProgressBar",
+            "id": "ProgressBar"
+          },
+          {
+            "en": "TextView",
+            "id": "TextView"
+          },
+          {
+            "en": "EditText",
+            "id": "EditText"
+          }
+        ],
+        "answer": 1
+      },
+      {
+        "source": "SCUT lecture p. 12",
+        "q": {
+          "en": "Which widget is used to choose a medicine reminder time?",
+          "id": "Widget mana yang dipakai untuk memilih jam pengingat obat?"
+        },
+        "why": {
+          "en": "Slide p. 12: TimePickerDialog = choose a medicine reminder time.",
+          "id": "Slide hlm. 12: TimePickerDialog = memilih jam pengingat obat."
+        },
+        "options": [
+          {
+            "en": "ListView",
+            "id": "ListView"
+          },
+          {
+            "en": "TextView",
+            "id": "TextView"
+          },
+          {
+            "en": "ProgressBar",
+            "id": "ProgressBar"
+          },
+          {
+            "en": "TimePickerDialog",
+            "id": "TimePickerDialog"
+          }
+        ],
+        "answer": 3
+      },
+      {
+        "source": "[ADDED]",
+        "q": {
+          "en": "Which widget displays non-editable text on the screen?",
+          "id": "Widget mana yang menampilkan teks yang tidak bisa diedit?"
+        },
+        "why": {
+          "en": "TextView shows text; EditText lets the user type.",
+          "id": "TextView menampilkan teks; EditText memungkinkan user mengetik."
+        },
+        "options": [
+          {
+            "en": "CheckBox",
+            "id": "CheckBox"
+          },
+          {
+            "en": "TextView",
+            "id": "TextView"
+          },
+          {
+            "en": "EditText",
+            "id": "EditText"
+          },
+          {
+            "en": "Button",
+            "id": "Button"
+          }
+        ],
+        "answer": 1
+      },
+      {
+        "source": "SCUT lecture p. 37",
+        "q": {
+          "en": "In XML the id is etHours but Java says findViewById(R.id.etHour). What happens?",
+          "id": "Di XML id-nya etHours tetapi Java menulis findViewById(R.id.etHour). Apa yang terjadi?"
+        },
+        "why": {
+          "en": "Slide p. 37: check that XML ids and findViewById() names match.",
+          "id": "Slide hlm. 37: cek bahwa id XML dan nama di findViewById() sama."
+        },
+        "options": [
+          {
+            "en": "It works normally.",
+            "id": "Berjalan normal."
+          },
+          {
+            "en": "The text is shown in a Toast.",
+            "id": "Teksnya tampil di Toast."
+          },
+          {
+            "en": "The view is not found: a red error or a crash.",
+            "id": "View tidak ketemu: error merah atau crash."
+          },
+          {
+            "en": "Android guesses the closest id.",
+            "id": "Android menebak id yang paling mirip."
+          }
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  {
+    "chapter": {
+      "en": "5. Events and Validation",
+      "id": "5. Event dan Validasi"
+    },
+    "questions": [
+      {
+        "source": "SCUT lecture p. 14",
+        "q": {
+          "en": "In \"find view → listen for click → ? → process → update UI\", what is the missing step?",
+          "id": "Pada \"find view → listen for click → ? → process → update UI\", langkah apa yang hilang?"
+        },
+        "why": {
+          "en": "Slide p. 14 pattern: find view → listen for click → validate → process → update UI.",
+          "id": "Pola slide hlm. 14: find view → listen for click → validate → process → update UI."
+        },
+        "options": [
+          {
+            "en": "update UI",
+            "id": "update UI"
+          },
+          {
+            "en": "validate",
+            "id": "validate"
+          },
+          {
+            "en": "find view",
+            "id": "find view"
+          },
+          {
+            "en": "process",
+            "id": "process"
+          }
+        ],
+        "answer": 1
+      },
+      {
+        "source": "SCUT lecture p. 14",
+        "q": {
+          "en": "Which method responds when a Button is tapped?",
+          "id": "Method mana yang merespons saat Button ditekan?"
+        },
+        "why": {
+          "en": "Slide p. 14: addButton.setOnClickListener(...).",
+          "id": "Slide hlm. 14: addButton.setOnClickListener(...)."
+        },
+        "options": [
+          {
+            "en": "getString()",
+            "id": "getString()"
+          },
+          {
+            "en": "putString()",
+            "id": "putString()"
+          },
+          {
+            "en": "setOnClickListener()",
+            "id": "setOnClickListener()"
+          },
+          {
+            "en": "setText()",
+            "id": "setText()"
+          }
+        ],
+        "answer": 2
+      },
+      {
+        "source": "[ADDED]",
+        "q": {
+          "en": "Which comparison rejects both 0 and negative hours?",
+          "id": "Perbandingan mana yang menolak jam 0 sekaligus negatif?"
+        },
+        "why": {
+          "en": "<= 0 catches 0 and negatives. < 0 would let 0 through.",
+          "id": "<= 0 menangkap 0 dan negatif. < 0 akan meloloskan 0."
+        },
+        "options": [
+          {
+            "en": "hours <= 0",
+            "id": "hours <= 0"
+          },
+          {
+            "en": "hours < 0",
+            "id": "hours < 0"
+          },
+          {
+            "en": "hours == 1",
+            "id": "hours == 1"
+          },
+          {
+            "en": "hours >= 0",
+            "id": "hours >= 0"
+          }
+        ],
+        "answer": 0
+      },
+      {
+        "source": "SCUT lecture p. 14",
+        "q": {
+          "en": "What does findViewById return?",
+          "id": "Apa yang dikembalikan findViewById?"
+        },
+        "why": {
+          "en": "Use getText().toString() to read what is typed (slide p. 14).",
+          "id": "Pakai getText().toString() untuk membaca yang diketik (slide hlm. 14)."
+        },
+        "options": [
+          {
+            "en": "The text typed by the user.",
+            "id": "Teks yang diketik user."
+          },
+          {
+            "en": "The Activity lifecycle state.",
+            "id": "Status lifecycle Activity."
+          },
+          {
+            "en": "The view itself (the box), not its content.",
+            "id": "View-nya (kotaknya), bukan isinya."
+          },
+          {
+            "en": "The saved database record.",
+            "id": "Data yang tersimpan di database."
+          }
+        ],
+        "answer": 2
+      },
+      {
+        "source": "SCUT lecture p. 14",
+        "q": {
+          "en": "The name field is empty and the user taps Add. What does this code do?",
+          "id": "Kolom nama kosong dan user menekan Add. Apa yang dilakukan kode ini?"
+        },
+        "why": {
+          "en": "setError() shows the message; return stops the click handler.",
+          "id": "setError() menampilkan pesan; return menghentikan handler klik."
+        },
+        "code": "String name = nameInput.getText().toString().trim();\nif (name.isEmpty()) {\n    nameInput.setError(\"Enter student name\");\n    return;\n}",
+        "options": [
+          {
+            "en": "Saves an empty name.",
+            "id": "Saves an empty name."
+          },
+          {
+            "en": "Opens another Activity.",
+            "id": "Opens another Activity."
+          },
+          {
+            "en": "Closes the app.",
+            "id": "Closes the app."
+          },
+          {
+            "en": "Shows the error \"Enter student name\" and stops.",
+            "id": "Menampilkan error \"Enter student name\" lalu berhenti."
+          }
+        ],
+        "answer": 3
+      },
+      {
+        "source": "[ADDED]",
+        "q": {
+          "en": "Parking costs Rs. 100 per hour. What is displayed for 3 hours?",
+          "id": "Parkir Rs. 100 per jam. Apa yang tampil untuk 3 jam?"
+        },
+        "why": {
+          "en": "3 × 100 = 300.",
+          "id": "3 × 100 = 300."
+        },
+        "options": [
+          {
+            "en": "Total Fee: Rs. 300",
+            "id": "Total Fee: Rs. 300"
+          },
+          {
+            "en": "Total Fee: Rs. 103",
+            "id": "Total Fee: Rs. 103"
+          },
+          {
+            "en": "Total Fee: Rs. 3",
+            "id": "Total Fee: Rs. 3"
+          },
+          {
+            "en": "Total Fee: Rs. 100",
+            "id": "Total Fee: Rs. 100"
+          }
+        ],
+        "answer": 0
+      },
+      {
+        "source": "[ADDED]",
+        "q": {
+          "en": "Which Android feature shows a brief confirmation message that disappears by itself?",
+          "id": "Fitur Android mana yang menampilkan pesan konfirmasi singkat yang hilang sendiri?"
+        },
+        "why": {
+          "en": "Toast.makeText(this, \"Saved\", Toast.LENGTH_SHORT).show();",
+          "id": "Toast.makeText(this, \"Saved\", Toast.LENGTH_SHORT).show();"
+        },
+        "options": [
+          {
+            "en": "Service",
+            "id": "Service"
+          },
+          {
+            "en": "Toast",
+            "id": "Toast"
+          },
+          {
+            "en": "ContentProvider",
+            "id": "ContentProvider"
+          },
+          {
+            "en": "Intent",
+            "id": "Intent"
+          }
+        ],
+        "answer": 1
+      },
+      {
+        "source": "SCUT lecture p. 14",
+        "q": {
+          "en": "Which method reads the text typed in an EditText? (name it)",
+          "id": "Method mana yang membaca teks yang diketik di EditText? (sebutkan)"
+        },
+        "why": {
+          "en": "getText().toString() returns what the user typed.",
+          "id": "getText().toString() mengembalikan yang diketik user."
+        },
+        "accept": [
+          "getText",
+          "getText().toString()",
+          "getText.toString"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": {
+      "en": "6. Data Storage",
+      "id": "6. Penyimpanan Data"
+    },
+    "questions": [
+      {
+        "source": "SCUT lecture p. 16",
+        "q": {
+          "en": "An app must remember one simple value (the last food order) after it is closed. Best choice?",
+          "id": "App harus mengingat satu nilai sederhana (pesanan terakhir) setelah ditutup. Pilihan terbaik?"
+        },
+        "why": {
+          "en": "Slide p. 16: simple key-value → SharedPreferences.",
+          "id": "Slide hlm. 16: key-value sederhana → SharedPreferences."
+        },
+        "options": [
+          {
+            "en": "SQLite with several related tables",
+            "id": "SQLite with several related tables"
+          },
+          {
+            "en": "ContentProvider",
+            "id": "ContentProvider"
+          },
+          {
+            "en": "SharedPreferences",
+            "id": "SharedPreferences"
+          },
+          {
+            "en": "Web API",
+            "id": "Web API"
+          }
+        ],
+        "answer": 2
+      },
+      {
+        "source": "SCUT lecture p. 16",
+        "q": {
+          "en": "Student records and daily attendance dates are best stored in:",
+          "id": "Data siswa dan tanggal absensi harian paling baik disimpan di:"
+        },
+        "why": {
+          "en": "Slide p. 16: related records with several fields → SQLite.",
+          "id": "Slide hlm. 16: data berkaitan dengan banyak field → SQLite."
+        },
+        "options": [
+          {
+            "en": "A TextView",
+            "id": "A TextView"
+          },
+          {
+            "en": "SQLite",
+            "id": "SQLite"
+          },
+          {
+            "en": "SharedPreferences",
+            "id": "SharedPreferences"
+          },
+          {
+            "en": "A Toast",
+            "id": "A Toast"
+          }
+        ],
+        "answer": 1
+      },
+      {
+        "source": "SCUT lecture p. 18",
+        "q": {
+          "en": "What does CRUD stand for?",
+          "id": "CRUD singkatan dari apa?"
+        },
+        "why": {
+          "en": "Slide p. 18: the four basic database operations.",
+          "id": "Slide hlm. 18: empat operasi dasar database."
+        },
+        "options": [
+          {
+            "en": "Create, Read, Update, Delete",
+            "id": "Create, Read, Update, Delete"
+          },
+          {
+            "en": "Create, Run, Update, Debug",
+            "id": "Create, Run, Update, Debug"
+          },
+          {
+            "en": "Copy, Run, Undo, Draw",
+            "id": "Copy, Run, Undo, Draw"
+          },
+          {
+            "en": "Connect, Read, Upload, Download",
+            "id": "Connect, Read, Upload, Download"
+          }
+        ],
+        "answer": 0
+      },
+      {
+        "source": "SCUT lecture p. 24",
+        "q": {
+          "en": "Why does the Expense Tracker store money as integer cents?",
+          "id": "Kenapa Expense Tracker menyimpan uang sebagai integer cents?"
+        },
+        "why": {
+          "en": "Slide p. 24 asks this; Practice 1 p. 2: 12.50 is stored as 1250 to prevent rounding errors.",
+          "id": "Slide hlm. 24 menanyakan ini; Practice 1 hlm. 2: 12.50 disimpan sebagai 1250 untuk mencegah galat pembulatan."
+        },
+        "options": [
+          {
+            "en": "Floating point can cause rounding errors.",
+            "id": "Floating point bisa menimbulkan galat pembulatan."
+          },
+          {
+            "en": "SQLite cannot store decimals.",
+            "id": "SQLite tidak bisa menyimpan desimal."
+          },
+          {
+            "en": "The Manifest requires it.",
+            "id": "Manifest mewajibkannya."
+          },
+          {
+            "en": "It is faster to type.",
+            "id": "Lebih cepat diketik."
+          }
+        ],
+        "answer": 0
+      },
+      {
+        "source": "SCUT lecture p. 28",
+        "q": {
+          "en": "A student has 8 present days out of 10 recorded days. Attendance?",
+          "id": "Seorang siswa hadir 8 dari 10 hari tercatat. Persentase kehadiran?"
+        },
+        "why": {
+          "en": "8 ÷ 10 × 100 = 80%.",
+          "id": "8 ÷ 10 × 100 = 80%."
+        },
+        "options": [
+          {
+            "en": "20%",
+            "id": "20%"
+          },
+          {
+            "en": "8%",
+            "id": "8%"
+          },
+          {
+            "en": "80%",
+            "id": "80%"
+          },
+          {
+            "en": "125%",
+            "id": "125%"
+          }
+        ],
+        "answer": 2
+      },
+      {
+        "source": "SCUT lecture p. 32",
+        "q": {
+          "en": "Cart: 2 burgers at 500, 1 fries at 250, 1 juice at 200. Total?",
+          "id": "Keranjang: 2 burger @500, 1 fries @250, 1 juice @200. Total?"
+        },
+        "why": {
+          "en": "1000 + 250 + 200 = 1450.",
+          "id": "1000 + 250 + 200 = 1450."
+        },
+        "options": [
+          {
+            "en": "1250",
+            "id": "1250"
+          },
+          {
+            "en": "1450",
+            "id": "1450"
+          },
+          {
+            "en": "950",
+            "id": "950"
+          },
+          {
+            "en": "1000",
+            "id": "1000"
+          }
+        ],
+        "answer": 1
+      },
+      {
+        "source": "[ADDED]",
+        "q": {
+          "en": "Why keep the study subject in SharedPreferences instead of a normal variable?",
+          "id": "Kenapa subjek belajar disimpan di SharedPreferences, bukan variabel biasa?"
+        },
+        "why": {
+          "en": "SharedPreferences keeps name-value pairs after the app is closed.",
+          "id": "SharedPreferences menyimpan pasangan nama-nilai setelah app ditutup."
+        },
+        "options": [
+          {
+            "en": "The Manifest forbids variables.",
+            "id": "Manifest melarang variabel."
+          },
+          {
+            "en": "SharedPreferences is faster to draw.",
+            "id": "SharedPreferences lebih cepat digambar."
+          },
+          {
+            "en": "Variables cannot store text.",
+            "id": "Variabel tidak bisa menyimpan teks."
+          },
+          {
+            "en": "A normal variable is lost when the app closes.",
+            "id": "Variabel biasa hilang saat app ditutup."
+          }
+        ],
+        "answer": 3
+      },
+      {
+        "source": "[ADDED]",
+        "q": {
+          "en": "Which Android storage class keeps small name-value pairs after the app is closed? (name it)",
+          "id": "Class penyimpanan Android mana yang menyimpan pasangan nama-nilai kecil setelah app ditutup? (sebutkan)"
+        },
+        "why": {
+          "en": "SharedPreferences.",
+          "id": "SharedPreferences."
+        },
+        "accept": [
+          "SharedPreferences",
+          "shared preferences"
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": {
+      "en": "7. Web APIs and Background Work",
+      "id": "7. Web API dan Pekerjaan Latar Belakang"
+    },
+    "questions": [
+      {
+        "source": "SCUT lecture p. 19",
+        "q": {
+          "en": "Why must a weather API request not run on the main UI thread?",
+          "id": "Kenapa request API cuaca tidak boleh di main UI thread?"
+        },
+        "why": {
+          "en": "Slide p. 19: network requests must not block the main UI thread.",
+          "id": "Slide hlm. 19: request jaringan tidak boleh memblokir main UI thread."
+        },
+        "options": [
+          {
+            "en": "SQLite cannot store JSON.",
+            "id": "SQLite tidak bisa menyimpan JSON."
+          },
+          {
+            "en": "It would block (freeze) the UI.",
+            "id": "Akan memblokir (membekukan) UI."
+          },
+          {
+            "en": "The Manifest forbids it.",
+            "id": "Manifest melarangnya."
+          },
+          {
+            "en": "ListView cannot show text.",
+            "id": "ListView tidak bisa menampilkan teks."
+          }
+        ],
+        "answer": 1
+      },
+      {
+        "source": "SCUT lecture p. 25",
+        "q": {
+          "en": "Which permission must the Weather app declare to download data?",
+          "id": "Permission mana yang harus dideklarasikan app Cuaca untuk mengunduh data?"
+        },
+        "why": {
+          "en": "Slide p. 25: Internet permission.",
+          "id": "Slide hlm. 25: permission Internet."
+        },
+        "options": [
+          {
+            "en": "SMS",
+            "id": "SMS"
+          },
+          {
+            "en": "BLUETOOTH",
+            "id": "BLUETOOTH"
+          },
+          {
+            "en": "CAMERA",
+            "id": "CAMERA"
+          },
+          {
+            "en": "INTERNET",
+            "id": "INTERNET"
+          }
+        ],
+        "answer": 3
+      },
+      {
+        "source": "Practice 2 p. 1",
+        "q": {
+          "en": "In the Weather app, which API is called first?",
+          "id": "Di app Cuaca, API mana yang dipanggil pertama?"
+        },
+        "why": {
+          "en": "Practice 2: geocoding first gives latitude/longitude, then the forecast API uses them.",
+          "id": "Practice 2: geocoding dulu memberi lintang/bujur, lalu forecast API memakainya."
+        },
+        "options": [
+          {
+            "en": "The forecast API",
+            "id": "The forecast API"
+          },
+          {
+            "en": "The geocoding API (city → coordinates).",
+            "id": "Geocoding API (kota → koordinat)."
+          },
+          {
+            "en": "The SQLite API",
+            "id": "The SQLite API"
+          },
+          {
+            "en": "The Notification API",
+            "id": "The Notification API"
+          }
+        ],
+        "answer": 1
+      },
+      {
+        "source": "SCUT lecture p. 21",
+        "q": {
+          "en": "On Android 8+, what is needed before an app can show notifications?",
+          "id": "Di Android 8+, apa yang dibutuhkan sebelum app bisa menampilkan notifikasi?"
+        },
+        "why": {
+          "en": "Slide p. 21: a notification channel is needed on Android 8+.",
+          "id": "Slide hlm. 21: notification channel dibutuhkan di Android 8+."
+        },
+        "options": [
+          {
+            "en": "A ContentProvider",
+            "id": "A ContentProvider"
+          },
+          {
+            "en": "A ListView",
+            "id": "A ListView"
+          },
+          {
+            "en": "A notification channel",
+            "id": "A notification channel"
+          },
+          {
+            "en": "A SQLite table",
+            "id": "A SQLite table"
+          }
+        ],
+        "answer": 2
+      },
+      {
+        "source": "SCUT lecture p. 30",
+        "q": {
+          "en": "Which component receives the alarm when a medicine reminder time arrives?",
+          "id": "Komponen mana yang menerima alarm saat waktu pengingat obat tiba?"
+        },
+        "why": {
+          "en": "Slide p. 30: the system delivers a broadcast; the receiver builds the notification.",
+          "id": "Slide hlm. 30: sistem mengirim broadcast; receiver membuat notifikasi."
+        },
+        "options": [
+          {
+            "en": "ContentProvider",
+            "id": "ContentProvider"
+          },
+          {
+            "en": "EditText",
+            "id": "EditText"
+          },
+          {
+            "en": "BroadcastReceiver",
+            "id": "BroadcastReceiver"
+          },
+          {
+            "en": "Activity",
+            "id": "Activity"
+          }
+        ],
+        "answer": 2
+      },
+      {
+        "source": "SCUT lecture p. 26",
+        "q": {
+          "en": "The city does not exist. What should the Weather app do?",
+          "id": "Kota tidak ada. Apa yang sebaiknya dilakukan app Cuaca?"
+        },
+        "why": {
+          "en": "Slide p. 26: never leave the screen stuck on Loading.",
+          "id": "Slide hlm. 26: jangan biarkan layar terjebak di Loading."
+        },
+        "options": [
+          {
+            "en": "Stay on \"Loading...\" forever.",
+            "id": "Stay on \"Loading...\" forever."
+          },
+          {
+            "en": "Close the app.",
+            "id": "Close the app."
+          },
+          {
+            "en": "Show a useful message and allow another search.",
+            "id": "Tampilkan pesan berguna dan izinkan pencarian lain."
+          },
+          {
+            "en": "Delete the saved cities.",
+            "id": "Delete the saved cities."
+          }
+        ],
+        "answer": 2
+      }
+    ]
+  },
+  {
+    "chapter": {
+      "en": "8. The Five Class Projects",
+      "id": "8. Lima Proyek Kelas"
+    },
+    "questions": [
+      {
+        "source": "SCUT lecture p. 33",
+        "q": {
+          "en": "Which project uses a two-table SQLite design with student and date records?",
+          "id": "Proyek mana yang memakai SQLite dua tabel dengan data siswa dan tanggal?"
+        },
+        "why": {
+          "en": "Slide p. 27: Student Attendance, SQLite two-table design.",
+          "id": "Slide hlm. 27: Student Attendance, desain SQLite dua tabel."
+        },
+        "options": [
+          {
+            "en": "Food Ordering",
+            "id": "Food Ordering"
+          },
+          {
+            "en": "Attendance",
+            "id": "Attendance"
+          },
+          {
+            "en": "Weather Forecast",
+            "id": "Weather Forecast"
+          },
+          {
+            "en": "Medicine Reminder",
+            "id": "Medicine Reminder"
+          }
+        ],
+        "answer": 1
+      },
+      {
+        "source": "SCUT lecture p. 29",
+        "q": {
+          "en": "Which project uses TimePickerDialog, SharedPreferences, AlarmManager and a BroadcastReceiver?",
+          "id": "Proyek mana yang memakai TimePickerDialog, SharedPreferences, AlarmManager, dan BroadcastReceiver?"
+        },
+        "why": {
+          "en": "Slide p. 29.",
+          "id": "Slide hlm. 29."
+        },
+        "options": [
+          {
+            "en": "Food Ordering",
+            "id": "Food Ordering"
+          },
+          {
+            "en": "Expense Tracker",
+            "id": "Expense Tracker"
+          },
+          {
+            "en": "Attendance",
+            "id": "Attendance"
+          },
+          {
+            "en": "Medicine Reminder",
+            "id": "Medicine Reminder"
+          }
+        ],
+        "answer": 3
+      },
+      {
+        "source": "SCUT lecture p. 31",
+        "q": {
+          "en": "Which project calculates a cart total with arrays and loops?",
+          "id": "Proyek mana yang menghitung total keranjang dengan array dan loop?"
+        },
+        "why": {
+          "en": "Slide p. 31-32.",
+          "id": "Slide hlm. 31-32."
+        },
+        "options": [
+          {
+            "en": "Attendance",
+            "id": "Attendance"
+          },
+          {
+            "en": "Food Ordering",
+            "id": "Food Ordering"
+          },
+          {
+            "en": "Weather Forecast",
+            "id": "Weather Forecast"
+          },
+          {
+            "en": "Expense Tracker",
+            "id": "Expense Tracker"
+          }
+        ],
+        "answer": 1
+      },
+      {
+        "source": "SCUT lecture p. 25",
+        "q": {
+          "en": "Which project needs the Internet permission, JSON parsing and a ProgressBar?",
+          "id": "Proyek mana yang butuh permission Internet, parsing JSON, dan ProgressBar?"
+        },
+        "why": {
+          "en": "Slide p. 25.",
+          "id": "Slide hlm. 25."
+        },
+        "options": [
+          {
+            "en": "Attendance",
+            "id": "Attendance"
+          },
+          {
+            "en": "Food Ordering",
+            "id": "Food Ordering"
+          },
+          {
+            "en": "Weather Forecast",
+            "id": "Weather Forecast"
+          },
+          {
+            "en": "Expense Tracker",
+            "id": "Expense Tracker"
+          }
+        ],
+        "answer": 2
+      },
+      {
+        "source": "SCUT lecture p. 28",
+        "q": {
+          "en": "Attendance is marked twice for the same day. What does the starter app do?",
+          "id": "Absensi ditandai dua kali untuk hari yang sama. Apa yang dilakukan app awal?"
+        },
+        "why": {
+          "en": "Slide p. 28: it updates the existing daily record rather than counting two days.",
+          "id": "Slide hlm. 28: memperbarui catatan harian yang ada, bukan menghitung dua hari."
+        },
+        "options": [
+          {
+            "en": "Updates the existing daily record.",
+            "id": "Memperbarui catatan harian yang ada."
+          },
+          {
+            "en": "Crashes.",
+            "id": "Crashes."
+          },
+          {
+            "en": "Counts two days.",
+            "id": "Counts two days."
+          },
+          {
+            "en": "Deletes the student.",
+            "id": "Deletes the student."
+          }
+        ],
+        "answer": 0
+      },
+      {
+        "source": "SCUT lecture p. 34",
+        "q": {
+          "en": "What is the first step when planning an app before coding?",
+          "id": "Apa langkah pertama saat merencanakan app sebelum coding?"
+        },
+        "why": {
+          "en": "Slide p. 34: Problem → Screens → Data model → UI + Java → Test.",
+          "id": "Slide hlm. 34: Problem → Screens → Data model → UI + Java → Test."
+        },
+        "options": [
+          {
+            "en": "Define the problem",
+            "id": "Define the problem"
+          },
+          {
+            "en": "Build the database",
+            "id": "Build the database"
+          },
+          {
+            "en": "Write 200 lines of code",
+            "id": "Write 200 lines of code"
+          },
+          {
+            "en": "Test the app",
+            "id": "Test the app"
+          }
+        ],
+        "answer": 0
+      }
+    ]
+  },
+  {
+    "chapter": {
+      "en": "Mock Exam (teacher's paper)",
+      "id": "Mock Exam (soal dari dosen)"
+    },
+    "note": {
+      "en": "Section A is the teacher's mock exam (practice only). Q11-Q13 are open: type your answer, then compare with the model answer, which was written for this site [ADDED].",
+      "id": "Section A adalah mock exam dosen (hanya latihan). Q11-Q13 soal terbuka: ketik jawabanmu, lalu bandingkan dengan jawaban contoh yang ditulis untuk situs ini [ADDED]."
+    },
+    "questions": [
+      {
+        "source": "Mock exam Q1",
+        "q": {
+          "en": "Which Android component normally represents a screen that users interact with?",
+          "id": "Komponen Android mana yang biasanya mewakili layar yang berinteraksi dengan user?"
+        },
+        "why": {
+          "en": "Activity = a screen.",
+          "id": "Activity = sebuah layar."
+        },
+        "options": [
+          {
+            "en": "Activity",
+            "id": "Activity"
+          },
+          {
+            "en": "Service",
+            "id": "Service"
+          },
+          {
+            "en": "BroadcastReceiver",
+            "id": "BroadcastReceiver"
+          },
+          {
+            "en": "ContentProvider",
+            "id": "ContentProvider"
+          }
+        ],
+        "answer": 0
+      },
+      {
+        "source": "Mock exam Q2",
+        "q": {
+          "en": "Which component is typically used to request opening another Activity?",
+          "id": "Komponen mana yang biasanya dipakai untuk meminta membuka Activity lain?"
+        },
+        "why": {
+          "en": "An Intent is a request to Android.",
+          "id": "Intent adalah permintaan ke Android."
+        },
+        "options": [
+          {
+            "en": "Toast",
+            "id": "Toast"
+          },
+          {
+            "en": "Intent",
+            "id": "Intent"
+          },
+          {
+            "en": "TextView",
+            "id": "TextView"
+          },
+          {
+            "en": "SQLite",
+            "id": "SQLite"
+          }
+        ],
+        "answer": 1
+      },
+      {
+        "source": "Mock exam Q3",
+        "q": {
+          "en": "Which component is best suited to performing background work without a visible screen?",
+          "id": "Komponen mana yang paling cocok untuk pekerjaan latar belakang tanpa layar terlihat?"
+        },
+        "why": {
+          "en": "Service = background work.",
+          "id": "Service = pekerjaan latar belakang."
+        },
+        "options": [
+          {
+            "en": "Button",
+            "id": "Button"
+          },
+          {
+            "en": "EditText",
+            "id": "EditText"
+          },
+          {
+            "en": "Service",
+            "id": "Service"
+          },
+          {
+            "en": "LinearLayout",
+            "id": "LinearLayout"
+          }
+        ],
+        "answer": 2
+      },
+      {
+        "source": "Mock exam Q4",
+        "q": {
+          "en": "Which Android component receives and responds to broadcast messages?",
+          "id": "Komponen Android mana yang menerima dan merespons pesan broadcast?"
+        },
+        "why": {
+          "en": "BroadcastReceiver responds to system/app events.",
+          "id": "BroadcastReceiver merespons event sistem/app."
+        },
+        "options": [
+          {
+            "en": "BroadcastReceiver",
+            "id": "BroadcastReceiver"
+          },
+          {
+            "en": "Activity",
+            "id": "Activity"
+          },
+          {
+            "en": "ImageView",
+            "id": "ImageView"
+          },
+          {
+            "en": "TimePicker",
+            "id": "TimePicker"
+          }
+        ],
+        "answer": 0
+      },
+      {
+        "source": "Mock exam Q5",
+        "q": {
+          "en": "Which component exposes structured data for controlled sharing between apps?",
+          "id": "Komponen mana yang membuka data terstruktur untuk dibagikan secara terkontrol antar app?"
+        },
+        "why": {
+          "en": "ContentProvider = structured data sharing.",
+          "id": "ContentProvider = berbagi data terstruktur."
+        },
+        "options": [
+          {
+            "en": "Button",
+            "id": "Button"
+          },
+          {
+            "en": "Toast",
+            "id": "Toast"
+          },
+          {
+            "en": "TextView",
+            "id": "TextView"
+          },
+          {
+            "en": "ContentProvider",
+            "id": "ContentProvider"
+          }
+        ],
+        "answer": 3
+      },
+      {
+        "source": "Mock exam Q6",
+        "q": {
+          "en": "Which widget displays non-editable text on a screen?",
+          "id": "Widget mana yang menampilkan teks yang tidak bisa diedit di layar?"
+        },
+        "why": {
+          "en": "TextView shows text; EditText is editable.",
+          "id": "TextView menampilkan teks; EditText bisa diedit."
+        },
+        "options": [
+          {
+            "en": "EditText",
+            "id": "EditText"
+          },
+          {
+            "en": "TextView",
+            "id": "TextView"
+          },
+          {
+            "en": "Button",
+            "id": "Button"
+          },
+          {
+            "en": "CheckBox",
+            "id": "CheckBox"
+          }
+        ],
+        "answer": 1
+      },
+      {
+        "source": "Mock exam Q7",
+        "q": {
+          "en": "Which widget allows a user to enter the number of parking hours?",
+          "id": "Widget mana yang memungkinkan user memasukkan jumlah jam parkir?"
+        },
+        "why": {
+          "en": "EditText is the input box.",
+          "id": "EditText adalah kotak input."
+        },
+        "options": [
+          {
+            "en": "EditText",
+            "id": "EditText"
+          },
+          {
+            "en": "TextView",
+            "id": "TextView"
+          },
+          {
+            "en": "Toast",
+            "id": "Toast"
+          },
+          {
+            "en": "ImageView",
+            "id": "ImageView"
+          }
+        ],
+        "answer": 0
+      },
+      {
+        "source": "Mock exam Q8",
+        "q": {
+          "en": "Which method is commonly used to respond when a Button is tapped?",
+          "id": "Method mana yang umum dipakai untuk merespons saat Button ditekan?"
+        },
+        "why": {
+          "en": "setOnClickListener registers the tap handler.",
+          "id": "setOnClickListener mendaftarkan handler tap."
+        },
+        "options": [
+          {
+            "en": "getString()",
+            "id": "getString()"
+          },
+          {
+            "en": "setText()",
+            "id": "setText()"
+          },
+          {
+            "en": "setOnClickListener()",
+            "id": "setOnClickListener()"
+          },
+          {
+            "en": "putString()",
+            "id": "putString()"
+          }
+        ],
+        "answer": 2
+      },
+      {
+        "source": "Mock exam Q9",
+        "q": {
+          "en": "Which Android feature can display a brief confirmation message?",
+          "id": "Fitur Android mana yang bisa menampilkan pesan konfirmasi singkat?"
+        },
+        "why": {
+          "en": "Toast = a short message that disappears by itself.",
+          "id": "Toast = pesan singkat yang hilang sendiri."
+        },
+        "options": [
+          {
+            "en": "Intent",
+            "id": "Intent"
+          },
+          {
+            "en": "Toast",
+            "id": "Toast"
+          },
+          {
+            "en": "Service",
+            "id": "Service"
+          },
+          {
+            "en": "ContentProvider",
+            "id": "ContentProvider"
+          }
+        ],
+        "answer": 1
+      },
+      {
+        "source": "Mock exam Q10",
+        "q": {
+          "en": "Which option is appropriate for saving a small subject-and-time preference locally?",
+          "id": "Opsi mana yang tepat untuk menyimpan preferensi kecil subjek dan jam secara lokal?"
+        },
+        "why": {
+          "en": "SharedPreferences stores small name-value pairs that stay after the app closes.",
+          "id": "SharedPreferences menyimpan pasangan nama-nilai kecil yang tetap ada setelah app ditutup."
+        },
+        "options": [
+          {
+            "en": "TimePickerDialog",
+            "id": "TimePickerDialog"
+          },
+          {
+            "en": "TextView",
+            "id": "TextView"
+          },
+          {
+            "en": "BroadcastReceiver",
+            "id": "BroadcastReceiver"
+          },
+          {
+            "en": "SharedPreferences",
+            "id": "SharedPreferences"
+          }
+        ],
+        "answer": 3
+      },
+      {
+        "source": "Mock exam Q11 (5 marks) · model answer [ADDED]",
+        "q": {
+          "en": "Q11. A Campus Shuttle Application displays shuttle routes, provides arrival alerts, and uses the device location to help students find nearby stops. Explain how each of the five Android architecture layers supports this application. Give one practical example for each layer.",
+          "id": "Q11. Aplikasi Campus Shuttle menampilkan rute shuttle, memberi peringatan kedatangan, dan memakai lokasi perangkat untuk membantu mahasiswa menemukan halte terdekat. Jelaskan bagaimana setiap dari lima layer arsitektur Android mendukung aplikasi ini. Beri satu contoh praktis untuk tiap layer."
+        },
+        "model": {
+          "en": "Applications: the shuttle app itself, e.g. the screen listing routes and arrival times.\nApplication Framework: Notification Manager sends the arrival alert; Location Manager gives the device position.\nAndroid Runtime: ART runs the Java/Kotlin code of the app.\nPlatform Libraries: SQLite stores routes and stops; OpenGL draws the map.\nLinux Kernel: GPS and Wi-Fi drivers provide the location data.",
+          "id": "Applications: app shuttle itu sendiri, misalnya layar daftar rute dan jam kedatangan.\nApplication Framework: Notification Manager mengirim peringatan kedatangan; Location Manager memberi posisi perangkat.\nAndroid Runtime: ART menjalankan kode Java/Kotlin app.\nPlatform Libraries: SQLite menyimpan rute dan halte; OpenGL menggambar peta.\nLinux Kernel: driver GPS dan Wi-Fi menyediakan data lokasi."
+        }
+      },
+      {
+        "source": "Mock exam Q12 (15 marks) · model answer [ADDED]",
+        "q": {
+          "en": "Q12. Parking Fee Calculator: Rs. 100 per hour. Users enter the number of hours, tap Calculate, and view the total fee. (a) Interface layout (4): labeled layout, components, parent layout. (b) Implementation logic (6): initialize components, handle the click, read hours, compute, update output. (c) Input validation (3): reject empty, non-numeric, zero or negative; show the error. (d) Sample output (2): fee for 3 hours.",
+          "id": "Q12. Parking Fee Calculator: Rs. 100 per jam. User memasukkan jumlah jam, menekan Calculate, dan melihat total biaya. (a) Layout (4): layout berlabel, komponen, parent layout. (b) Logika (6): inisialisasi komponen, tangani klik, baca jam, hitung, perbarui output. (c) Validasi (3): tolak kosong, bukan angka, nol atau negatif; tampilkan error. (d) Contoh output (2): biaya untuk 3 jam."
+        },
+        "model": {
+          "en": "(a) Parent: vertical LinearLayout. EditText etHours (inputType=number, hint \"Enter hours\"), Button btnCalc (\"Calculate\"), TextView tvResult.\n(b) onCreate: find etHours, btnCalc, tvResult with findViewById. btnCalc.setOnClickListener: text = etHours.getText().toString(); (validate); hours = Integer.parseInt(text); fee = hours * 100; tvResult.setText(\"Total Fee: Rs. \" + fee).\n(c) Empty: etHours.setError(\"Enter hours\"); return. Not a number: catch NumberFormatException, setError(\"Numbers only\"); return. hours <= 0: setError(\"Must be > 0\"); return.\n(d) 3 × 100 = 300, so the screen shows: Total Fee: Rs. 300",
+          "id": "(a) Parent: LinearLayout vertikal. EditText etHours (inputType=number, hint \"Enter hours\"), Button btnCalc (\"Calculate\"), TextView tvResult.\n(b) onCreate: temukan etHours, btnCalc, tvResult dengan findViewById. btnCalc.setOnClickListener: text = etHours.getText().toString(); (validasi); hours = Integer.parseInt(text); fee = hours * 100; tvResult.setText(\"Total Fee: Rs. \" + fee).\n(c) Kosong: etHours.setError(\"Enter hours\"); return. Bukan angka: tangkap NumberFormatException, setError(\"Numbers only\"); return. hours <= 0: setError(\"Must be > 0\"); return.\n(d) 3 × 100 = 300, jadi layar menampilkan: Total Fee: Rs. 300"
+        }
+      },
+      {
+        "source": "Mock exam Q13 (15 marks) · model answer [ADDED]",
+        "q": {
+          "en": "Q13. Study Session Planner: enter a study subject, choose a start time, save the plan so it is shown again when the app is reopened. (a) Interface layout (4): subject field, Select Time button, selected-time display, Save Plan button, saved-plan display. (b) Event handling (6): initialize views, open a TimePickerDialog, show the selected time, show subject and time on Save Plan. (c) Local storage (3): SharedPreferences save and restore. (d) Validation (2): empty subject or no time selected.",
+          "id": "Q13. Study Session Planner: isi subjek belajar, pilih jam mulai, simpan rencana agar tampil lagi saat app dibuka ulang. (a) Layout (4): kolom subjek, tombol Select Time, tampilan jam terpilih, tombol Save Plan, tampilan rencana tersimpan. (b) Event handling (6): inisialisasi view, buka TimePickerDialog, tampilkan jam terpilih, tampilkan subjek dan jam saat Save Plan. (c) Penyimpanan lokal (3): simpan dan pulihkan dengan SharedPreferences. (d) Validasi (2): subjek kosong atau jam belum dipilih."
+        },
+        "model": {
+          "en": "(a) Vertical LinearLayout: EditText etSubject, Button btnTime (\"Select Time\"), TextView tvTime, Button btnSave (\"Save Plan\"), TextView tvPlan.\n(b) btnTime.setOnClickListener: new TimePickerDialog(this, (view, hour, minute) -> { selectedTime = hour + \":\" + minute; tvTime.setText(selectedTime); }, 8, 0, true).show(). btnSave.setOnClickListener: (validate); tvPlan.setText(\"Subject: \" + subject + \", Time: \" + selectedTime).\n(c) Save: prefs = getSharedPreferences(\"study\", MODE_PRIVATE); prefs.edit().putString(\"subject\", subject).putString(\"time\", selectedTime).apply(). Restore in onCreate: prefs.getString(\"subject\", \"\") and prefs.getString(\"time\", \"\"); if not empty, show them in tvPlan.\n(d) Empty subject: etSubject.setError(\"Enter subject\"); return. No time selected: Toast \"Select a time first\"; return.",
+          "id": "(a) LinearLayout vertikal: EditText etSubject, Button btnTime (\"Select Time\"), TextView tvTime, Button btnSave (\"Save Plan\"), TextView tvPlan.\n(b) btnTime.setOnClickListener: new TimePickerDialog(this, (view, hour, minute) -> { selectedTime = hour + \":\" + minute; tvTime.setText(selectedTime); }, 8, 0, true).show(). btnSave.setOnClickListener: (validasi); tvPlan.setText(\"Subject: \" + subject + \", Time: \" + selectedTime).\n(c) Simpan: prefs = getSharedPreferences(\"study\", MODE_PRIVATE); prefs.edit().putString(\"subject\", subject).putString(\"time\", selectedTime).apply(). Pulihkan di onCreate: prefs.getString(\"subject\", \"\") dan prefs.getString(\"time\", \"\"); jika tidak kosong, tampilkan di tvPlan.\n(d) Subjek kosong: etSubject.setError(\"Enter subject\"); return. Jam belum dipilih: Toast \"Select a time first\"; return."
+        }
+      }
+    ]
+  },
+  {
+    "chapter": {
+      "en": "Mock Test (AI-made practice)",
+      "id": "Mock Test (latihan buatan AI)"
+    },
+    "note": {
+      "en": "This test was written for this site, in the style of the teacher's mock exam. It is not from the teacher [ADDED].",
+      "id": "Tes ini ditulis untuk situs ini, dengan gaya mock exam dosen. Bukan dari dosen [ADDED]."
+    },
+    "questions": [
+      {
+        "source": "[ADDED]",
+        "q": {
+          "en": "A music app must keep playing after the user leaves the screen. Which component fits best?",
+          "id": "App musik harus terus memutar setelah user meninggalkan layar. Komponen mana yang paling cocok?"
+        },
+        "why": {
+          "en": "Service does background work with no visible screen.",
+          "id": "Service bekerja di latar belakang tanpa layar terlihat."
+        },
+        "options": [
+          {
+            "en": "Activity",
+            "id": "Activity"
+          },
+          {
+            "en": "ContentProvider",
+            "id": "ContentProvider"
+          },
+          {
+            "en": "Toast",
+            "id": "Toast"
+          },
+          {
+            "en": "Service",
+            "id": "Service"
+          }
+        ],
+        "answer": 3
+      },
+      {
+        "source": "[ADDED]",
+        "q": {
+          "en": "An app must react when the phone battery becomes low. Which component receives this system event?",
+          "id": "App harus bereaksi saat baterai ponsel lemah. Komponen mana yang menerima event sistem ini?"
+        },
+        "why": {
+          "en": "BroadcastReceiver responds to system/app events.",
+          "id": "BroadcastReceiver merespons event sistem/app."
+        },
+        "options": [
+          {
+            "en": "Intent",
+            "id": "Intent"
+          },
+          {
+            "en": "BroadcastReceiver",
+            "id": "BroadcastReceiver"
+          },
+          {
+            "en": "TextView",
+            "id": "TextView"
+          },
+          {
+            "en": "SharedPreferences",
+            "id": "SharedPreferences"
+          }
+        ],
+        "answer": 1
+      },
+      {
+        "source": "[ADDED]",
+        "q": {
+          "en": "Which order correctly shows a photo request travelling down the layers?",
+          "id": "Urutan mana yang benar untuk permintaan foto yang turun lewat layer?"
+        },
+        "why": {
+          "en": "Slide: App UI → Camera API → camera system service → native libraries → device driver → hardware.",
+          "id": "Slide: App UI → Camera API → camera system service → library native → driver → hardware."
+        },
+        "options": [
+          {
+            "en": "Hardware → App → driver → Camera API",
+            "id": "Hardware → App → driver → Camera API"
+          },
+          {
+            "en": "Driver → App → native libraries → hardware",
+            "id": "Driver → App → library native → hardware"
+          },
+          {
+            "en": "App → Camera API → system service → native libraries → driver → hardware",
+            "id": "App → Camera API → system service → library native → driver → hardware"
+          },
+          {
+            "en": "App → driver → Camera API → hardware",
+            "id": "App → driver → Camera API → hardware"
+          }
+        ],
+        "answer": 2
+      },
+      {
+        "source": "[ADDED]",
+        "q": {
+          "en": "You want to move a button to another position on the screen. Which file do you open?",
+          "id": "Kamu ingin memindahkan tombol ke posisi lain. File mana yang dibuka?"
+        },
+        "why": {
+          "en": "Position and arrangement are layout (XML) matters.",
+          "id": "Posisi dan susunan adalah urusan layout (XML)."
+        },
+        "options": [
+          {
+            "en": "activity_main.xml",
+            "id": "activity_main.xml"
+          },
+          {
+            "en": "AndroidManifest.xml",
+            "id": "AndroidManifest.xml"
+          },
+          {
+            "en": "build.gradle",
+            "id": "build.gradle"
+          },
+          {
+            "en": "MainActivity.java",
+            "id": "MainActivity.java"
+          }
+        ],
+        "answer": 0
+      },
+      {
+        "source": "[ADDED]",
+        "q": {
+          "en": "Which line reads what the user typed in etName?",
+          "id": "Baris mana yang membaca yang diketik user di etName?"
+        },
+        "why": {
+          "en": "getText().toString() reads the content; findViewById only finds the view.",
+          "id": "getText().toString() membaca isi; findViewById hanya menemukan view."
+        },
+        "options": [
+          {
+            "en": "String s = Toast.makeText(etName);",
+            "id": "String s = Toast.makeText(etName);"
+          },
+          {
+            "en": "String s = etName.setOnClickListener();",
+            "id": "String s = etName.setOnClickListener();"
+          },
+          {
+            "en": "String s = findViewById(R.id.etName);",
+            "id": "String s = findViewById(R.id.etName);"
+          },
+          {
+            "en": "String s = etName.getText().toString();",
+            "id": "String s = etName.getText().toString();"
+          }
+        ],
+        "answer": 3
+      },
+      {
+        "source": "[ADDED]",
+        "q": {
+          "en": "The user rotates the screen. What should the app assume?",
+          "id": "User memutar layar. Apa yang sebaiknya diasumsikan app?"
+        },
+        "why": {
+          "en": "Slide: the framework may recreate an Activity after rotation.",
+          "id": "Slide: framework bisa membuat ulang Activity setelah rotasi."
+        },
+        "options": [
+          {
+            "en": "The Activity may be recreated, so important data should be saved.",
+            "id": "Activity mungkin dibuat ulang, jadi data penting sebaiknya disimpan."
+          },
+          {
+            "en": "The Manifest is rebuilt.",
+            "id": "The Manifest is rebuilt."
+          },
+          {
+            "en": "Nothing changes at all.",
+            "id": "Nothing changes at all."
+          },
+          {
+            "en": "SQLite is deleted.",
+            "id": "SQLite is deleted."
+          }
+        ],
+        "answer": 0
+      },
+      {
+        "source": "[ADDED]",
+        "q": {
+          "en": "Which one is NOT an Activity lifecycle method?",
+          "id": "Manakah yang BUKAN method lifecycle Activity?"
+        },
+        "why": {
+          "en": "onCalculate is not a lifecycle method.",
+          "id": "onCalculate bukan method lifecycle."
+        },
+        "options": [
+          {
+            "en": "onStart()",
+            "id": "onStart()"
+          },
+          {
+            "en": "onCalculate()",
+            "id": "onCalculate()"
+          },
+          {
+            "en": "onCreate()",
+            "id": "onCreate()"
+          },
+          {
+            "en": "onResume()",
+            "id": "onResume()"
+          }
+        ],
+        "answer": 1
+      },
+      {
+        "source": "[ADDED]",
+        "q": {
+          "en": "Which two things does the Weather app need to download data safely without freezing?",
+          "id": "Dua hal apa yang dibutuhkan app Cuaca untuk mengunduh data tanpa membeku?"
+        },
+        "why": {
+          "en": "Permission lets the app use the network; the background thread keeps the UI responsive.",
+          "id": "Permission mengizinkan jaringan; background thread menjaga UI tetap responsif."
+        },
+        "options": [
+          {
+            "en": "SharedPreferences and TimePickerDialog.",
+            "id": "SharedPreferences and TimePickerDialog."
+          },
+          {
+            "en": "The INTERNET permission and a background thread.",
+            "id": "Permission INTERNET dan background thread."
+          },
+          {
+            "en": "ContentProvider and Service only.",
+            "id": "ContentProvider and Service only."
+          },
+          {
+            "en": "A Toast and a ListView.",
+            "id": "A Toast and a ListView."
+          }
+        ],
+        "answer": 1
+      },
+      {
+        "source": "[ADDED]",
+        "q": {
+          "en": "A list of 100 transactions, each with date, category and amount. Best storage?",
+          "id": "Daftar 100 transaksi, masing-masing dengan tanggal, kategori, dan jumlah. Penyimpanan terbaik?"
+        },
+        "why": {
+          "en": "Related records with several fields → SQLite.",
+          "id": "Data berkaitan dengan banyak field → SQLite."
+        },
+        "options": [
+          {
+            "en": "SharedPreferences",
+            "id": "SharedPreferences"
+          },
+          {
+            "en": "TextView",
+            "id": "TextView"
+          },
+          {
+            "en": "SQLite",
+            "id": "SQLite"
+          },
+          {
+            "en": "Toast",
+            "id": "Toast"
+          }
+        ],
+        "answer": 2
+      },
+      {
+        "source": "[ADDED]",
+        "q": {
+          "en": "After reopening the Study Planner, the saved plan must appear again. Which code in onCreate does this?",
+          "id": "Setelah Study Planner dibuka ulang, rencana tersimpan harus muncul lagi. Kode mana di onCreate yang melakukannya?"
+        },
+        "why": {
+          "en": "getString restores the saved value; edit().putString().apply() saves it.",
+          "id": "getString memulihkan nilai tersimpan; edit().putString().apply() menyimpannya."
+        },
+        "options": [
+          {
+            "en": "etSubject.setError(\"\")",
+            "id": "etSubject.setError(\"\")"
+          },
+          {
+            "en": "new Intent(this, Plan.class)",
+            "id": "new Intent(this, Plan.class)"
+          },
+          {
+            "en": "prefs.getString(\"subject\", \"\")",
+            "id": "prefs.getString(\"subject\", \"\")"
+          },
+          {
+            "en": "prefs.edit().apply()",
+            "id": "prefs.edit().apply()"
+          }
+        ],
+        "answer": 2
+      },
+      {
+        "source": "[ADDED]",
+        "q": {
+          "en": "A TimePickerDialog calls your code with which values?",
+          "id": "TimePickerDialog memanggil kodemu dengan nilai apa?"
+        },
+        "why": {
+          "en": "The callback gives the chosen hour and minute.",
+          "id": "Callback memberi jam dan menit yang dipilih."
+        },
+        "options": [
+          {
+            "en": "subject and fee",
+            "id": "subject and fee"
+          },
+          {
+            "en": "id and name",
+            "id": "id and name"
+          },
+          {
+            "en": "hour and minute",
+            "id": "hour and minute"
+          },
+          {
+            "en": "latitude and longitude",
+            "id": "latitude and longitude"
+          }
+        ],
+        "answer": 2
+      },
+      {
+        "source": "[ADDED]",
+        "q": {
+          "en": "The user types abc in a hours field. Which part of the code catches it?",
+          "id": "User mengetik abc di kolom jam. Bagian kode mana yang menangkapnya?"
+        },
+        "why": {
+          "en": "parseInt(\"abc\") throws NumberFormatException.",
+          "id": "parseInt(\"abc\") melempar NumberFormatException."
+        },
+        "options": [
+          {
+            "en": "if (hours <= 0)",
+            "id": "if (hours <= 0)"
+          },
+          {
+            "en": "if (text.isEmpty())",
+            "id": "if (text.isEmpty())"
+          },
+          {
+            "en": "catch (NumberFormatException e)",
+            "id": "catch (NumberFormatException e)"
+          },
+          {
+            "en": "setOnClickListener",
+            "id": "setOnClickListener"
+          }
+        ],
+        "answer": 2
+      },
+      {
+        "source": "[ADDED]",
+        "q": {
+          "en": "Parking is Rs. 100 per hour. What is displayed for 5 hours?",
+          "id": "Parkir Rs. 100 per jam. Apa yang tampil untuk 5 jam?"
+        },
+        "why": {
+          "en": "5 × 100 = 500.",
+          "id": "5 × 100 = 500."
+        },
+        "options": [
+          {
+            "en": "Total Fee: Rs. 500",
+            "id": "Total Fee: Rs. 500"
+          },
+          {
+            "en": "Total Fee: Rs. 105",
+            "id": "Total Fee: Rs. 105"
+          },
+          {
+            "en": "Total Fee: Rs. 5",
+            "id": "Total Fee: Rs. 5"
+          },
+          {
+            "en": "Total Fee: Rs. 50",
+            "id": "Total Fee: Rs. 50"
+          }
+        ],
+        "answer": 0
+      },
+      {
+        "source": "[ADDED]",
+        "q": {
+          "en": "prices = {100, 50}, quantity = {3, 2}. What does the loop total give?",
+          "id": "prices = {100, 50}, quantity = {3, 2}. Berapa total dari loop?"
+        },
+        "why": {
+          "en": "100×3 + 50×2 = 300 + 100 = 400.",
+          "id": "100×3 + 50×2 = 300 + 100 = 400."
+        },
+        "code": "int total = 0;\nfor (int i = 0; i < prices.length; i++) {\n    total += prices[i] * quantity[i];\n}",
+        "options": [
+          {
+            "en": "150",
+            "id": "150"
+          },
+          {
+            "en": "300",
+            "id": "300"
+          },
+          {
+            "en": "250",
+            "id": "250"
+          },
+          {
+            "en": "400",
+            "id": "400"
+          }
+        ],
+        "answer": 3
+      },
+      {
+        "source": "[ADDED]",
+        "q": {
+          "en": "A student was present on 7 of 10 recorded days. Attendance?",
+          "id": "Seorang siswa hadir 7 dari 10 hari tercatat. Persentase kehadiran?"
+        },
+        "why": {
+          "en": "7 ÷ 10 × 100 = 70%.",
+          "id": "7 ÷ 10 × 100 = 70%."
+        },
+        "options": [
+          {
+            "en": "7%",
+            "id": "7%"
+          },
+          {
+            "en": "30%",
+            "id": "30%"
+          },
+          {
+            "en": "170%",
+            "id": "170%"
+          },
+          {
+            "en": "70%",
+            "id": "70%"
+          }
+        ],
+        "answer": 3
+      },
+      {
+        "source": "[ADDED]",
+        "q": {
+          "en": "Income 5000, expenses 1200 and 300. What is the balance?",
+          "id": "Pemasukan 5000, pengeluaran 1200 dan 300. Berapa balance?"
+        },
+        "why": {
+          "en": "5000 − (1200 + 300) = 3500.",
+          "id": "5000 − (1200 + 300) = 3500."
+        },
+        "options": [
+          {
+            "en": "3800",
+            "id": "3800"
+          },
+          {
+            "en": "4700",
+            "id": "4700"
+          },
+          {
+            "en": "3500",
+            "id": "3500"
+          },
+          {
+            "en": "6500",
+            "id": "6500"
+          }
+        ],
+        "answer": 2
+      },
+      {
+        "source": "[ADDED]",
+        "q": {
+          "en": "Which statement about Toast is true?",
+          "id": "Pernyataan mana tentang Toast yang benar?"
+        },
+        "why": {
+          "en": "Toast is for brief messages like \"Saved\".",
+          "id": "Toast untuk pesan singkat seperti \"Saved\"."
+        },
+        "options": [
+          {
+            "en": "It opens another Activity.",
+            "id": "It opens another Activity."
+          },
+          {
+            "en": "It runs in the Linux Kernel.",
+            "id": "It runs in the Linux Kernel."
+          },
+          {
+            "en": "It stores data permanently.",
+            "id": "It stores data permanently."
+          },
+          {
+            "en": "It shows a short message that disappears by itself.",
+            "id": "Menampilkan pesan singkat yang hilang sendiri."
+          }
+        ],
+        "answer": 3
+      },
+      {
+        "source": "[ADDED]",
+        "q": {
+          "en": "Which statement about ART is correct?",
+          "id": "Pernyataan mana tentang ART yang benar?"
+        },
+        "why": {
+          "en": "ART is the modern runtime; Dalvik was older.",
+          "id": "ART adalah runtime modern; Dalvik lebih lama."
+        },
+        "options": [
+          {
+            "en": "It is the same as the Linux Kernel.",
+            "id": "It is the same as the Linux Kernel."
+          },
+          {
+            "en": "It is the modern Android runtime that executes DEX bytecode.",
+            "id": "It is the modern Android runtime that executes DEX bytecode."
+          },
+          {
+            "en": "It is the older runtime replaced by Dalvik.",
+            "id": "It is the older runtime replaced by Dalvik."
+          },
+          {
+            "en": "It stores the app's database.",
+            "id": "It stores the app's database."
+          }
+        ],
+        "answer": 1
+      },
+      {
+        "source": "[ADDED]",
+        "q": {
+          "en": "What does putExtra(\"month\", \"2026-11\") on an Intent do?",
+          "id": "Apa fungsi putExtra(\"month\", \"2026-11\") pada Intent?"
+        },
+        "why": {
+          "en": "The Expense Tracker sends the month to the Summary screen this way.",
+          "id": "Expense Tracker mengirim bulan ke layar Summary dengan cara ini."
+        },
+        "options": [
+          {
+            "en": "Starts a Service.",
+            "id": "Starts a Service."
+          },
+          {
+            "en": "Draws a TextView.",
+            "id": "Draws a TextView."
+          },
+          {
+            "en": "Sends a small value to the next Activity.",
+            "id": "Mengirim nilai kecil ke Activity berikutnya."
+          },
+          {
+            "en": "Saves the value in SQLite.",
+            "id": "Saves the value in SQLite."
+          }
+        ],
+        "answer": 2
+      },
+      {
+        "source": "[ADDED]",
+        "q": {
+          "en": "Name the method that registers a click handler on a Button.",
+          "id": "Sebutkan method yang mendaftarkan handler klik pada Button."
+        },
+        "why": {
+          "en": "setOnClickListener.",
+          "id": "setOnClickListener."
+        },
+        "accept": [
+          "setOnClickListener"
+        ]
+      },
+      {
+        "source": "[ADDED]",
+        "q": {
+          "en": "Which file registers every Activity and the permissions of the app? (name it)",
+          "id": "File mana yang mendaftarkan setiap Activity dan permission app? (sebutkan)"
+        },
+        "why": {
+          "en": "AndroidManifest.xml.",
+          "id": "AndroidManifest.xml."
+        },
+        "accept": [
+          "AndroidManifest.xml",
+          "AndroidManifest",
+          "manifest"
+        ]
+      },
+      {
+        "source": "[ADDED]",
+        "q": {
+          "en": "The layer that contains the device drivers is the Linux ___ (one word).",
+          "id": "Layer yang berisi driver perangkat adalah Linux ___ (satu kata)."
+        },
+        "why": {
+          "en": "Linux Kernel.",
+          "id": "Linux Kernel."
+        },
+        "accept": [
+          "Kernel"
+        ]
+      },
+      {
+        "source": "[ADDED] open question · model answer",
+        "q": {
+          "en": "Food Ordering mini app: a menu of 3 items with quantity boxes, a Place Order button and a total. (a) Name the components and the parent layout. (b) Write the logic for the total. (c) Name one validation. (d) Which storage keeps the last order?",
+          "id": "Mini app Food Ordering: menu 3 item dengan kotak jumlah, tombol Place Order, dan total. (a) Sebutkan komponen dan parent layout. (b) Tulis logika total. (c) Sebutkan satu validasi. (d) Penyimpanan mana yang menyimpan pesanan terakhir?"
+        },
+        "model": {
+          "en": "(a) ScrollView + vertical LinearLayout; TextView per item name, EditText (number) per quantity, Button \"Place Order\", TextView total.\n(b) total = 0; for i in items: total += price[i] * quantity[i]; totalText.setText(\"Total: \" + total).\n(c) Customer name must not be empty (setError); quantities must not be negative.\n(d) SharedPreferences (simple last-order value).",
+          "id": "(a) ScrollView + LinearLayout vertikal; TextView untuk nama item, EditText (angka) untuk jumlah, Button \"Place Order\", TextView total.\n(b) total = 0; untuk tiap item: total += harga[i] * jumlah[i]; totalText.setText(\"Total: \" + total).\n(c) Nama pelanggan tidak boleh kosong (setError); jumlah tidak boleh negatif.\n(d) SharedPreferences (nilai pesanan terakhir yang sederhana)."
+        }
+      },
+      {
+        "source": "[ADDED] open question · model answer",
+        "q": {
+          "en": "Explain the flow of the Weather Forecast app from tapping Search to showing the result, and why a background thread is used.",
+          "id": "Jelaskan alur app Weather Forecast dari menekan Search sampai hasil tampil, dan kenapa background thread dipakai."
+        },
+        "model": {
+          "en": "Tap Search → validate the city (empty → setError) → show ProgressBar and disable the button → on a background thread call the geocoding API (city → latitude/longitude) → call the forecast API → parse the JSON → runOnUiThread: show current weather and the 3-day forecast, hide ProgressBar. Errors (city not found, no network) show a message. The background thread is used because network calls on the main thread would freeze the UI. The Manifest needs the INTERNET permission.",
+          "id": "Tekan Search → validasi kota (kosong → setError) → tampilkan ProgressBar dan nonaktifkan tombol → di background thread panggil geocoding API (kota → lintang/bujur) → panggil forecast API → parse JSON → runOnUiThread: tampilkan cuaca sekarang dan prakiraan 3 hari, sembunyikan ProgressBar. Error (kota tidak ditemukan, tanpa jaringan) menampilkan pesan. Background thread dipakai karena panggilan jaringan di main thread akan membekukan UI. Manifest butuh permission INTERNET."
+        }
+      }
+    ]
+  }
+]

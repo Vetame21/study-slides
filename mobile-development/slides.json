@@ -1,0 +1,720 @@
+[
+  {
+    "chapter": "1. Android Architecture",
+    "title": "Five layers of Android",
+    "tag": "WHAT",
+    "body": "Android is a stack of five layers, top to bottom:\nApplications · Application Framework · Android Runtime · Platform Libraries · Linux Kernel.\nEach layer serves the layer above it.",
+    "explain": "Higher layers hide the difficult details of lower layers (abstraction). That is why the same app runs on phones with different hardware.",
+    "quick_check": {
+      "q": "Name the five layers from the top.",
+      "a": "Applications, Application Framework, Android Runtime, Platform Libraries, Linux Kernel."
+    },
+    "demo": "layers",
+    "id": {
+      "chapter": "1. Arsitektur Android",
+      "title": "Lima layer Android",
+      "body": "Android adalah tumpukan lima layer, dari atas ke bawah:\nApplications · Application Framework · Android Runtime · Platform Libraries · Linux Kernel.\nSetiap layer melayani layer di atasnya.",
+      "explain": "Layer atas menyembunyikan detail rumit layer bawah (abstraksi). Karena itu app yang sama bisa jalan di ponsel dengan hardware berbeda.",
+      "quick_check": {
+        "q": "Sebutkan lima layer dari atas.",
+        "a": "Applications, Application Framework, Android Runtime, Platform Libraries, Linux Kernel."
+      }
+    }
+  },
+  {
+    "chapter": "1. Android Architecture",
+    "title": "Layer 1: Applications",
+    "tag": "WHAT",
+    "body": "The top layer, visible to the user: built-in apps (Phone, Camera, Contacts, Gallery) and third-party apps (chat, games).\nEach app normally runs in its own sandboxed process.",
+    "quick_check": {
+      "q": "Is a chat app from the Play Store in the Applications layer?",
+      "a": "Yes. Third-party apps live in this layer too."
+    },
+    "id": {
+      "chapter": "1. Arsitektur Android",
+      "title": "Layer 1: Applications",
+      "body": "Layer paling atas yang terlihat user: app bawaan (Phone, Camera, Contacts, Gallery) dan app pihak ketiga (chat, game).\nSetiap app biasanya berjalan di proses sandbox sendiri.",
+      "quick_check": {
+        "q": "Apakah app chat dari Play Store ada di layer Applications?",
+        "a": "Ya. App pihak ketiga juga ada di layer ini."
+      }
+    }
+  },
+  {
+    "chapter": "1. Android Architecture",
+    "title": "Layer 2: Application Framework",
+    "tag": "WHAT",
+    "body": "High-level services and APIs used to build apps.\nActivity Manager · Notification Manager · Package Manager · Location Manager · Window Manager · Resource Manager · Connectivity Manager.",
+    "explain": "Think of a service desk between your app and the lower system: your code asks, the framework coordinates the work.",
+    "quick_check": {
+      "q": "Which layer contains Activity Manager and Notification Manager?",
+      "a": "Application Framework."
+    },
+    "id": {
+      "chapter": "1. Arsitektur Android",
+      "title": "Layer 2: Application Framework",
+      "body": "Layanan dan API tingkat tinggi untuk membuat app.\nActivity Manager · Notification Manager · Package Manager · Location Manager · Window Manager · Resource Manager · Connectivity Manager.",
+      "explain": "Bayangkan meja layanan antara app dan sistem di bawahnya: kode kamu meminta, framework mengatur pekerjaannya.",
+      "quick_check": {
+        "q": "Layer mana yang berisi Activity Manager dan Notification Manager?",
+        "a": "Application Framework."
+      }
+    }
+  },
+  {
+    "chapter": "1. Android Architecture",
+    "title": "Layer 3: Android Runtime (ART)",
+    "tag": "WHAT",
+    "body": "Executes the app's DEX bytecode and provides memory management, garbage collection and threading.\nCore libraries let apps be written in Java and Kotlin.",
+    "explain": "[NOTE] The older slides name the Dalvik virtual machine; the newer slides say modern Android uses ART instead of Dalvik. Write \"Android Runtime (ART)\" in answers.\nFlow: Kotlin/Java source → build tools → DEX bytecode → ART → CPU.",
+    "quick_check": {
+      "q": "Which layer executes DEX bytecode?",
+      "a": "Android Runtime (ART)."
+    },
+    "id": {
+      "chapter": "1. Arsitektur Android",
+      "title": "Layer 3: Android Runtime (ART)",
+      "body": "Menjalankan DEX bytecode app dan menyediakan manajemen memori, garbage collection, dan threading.\nCore libraries memungkinkan app ditulis dengan Java dan Kotlin.",
+      "explain": "[NOTE] Slide lama menyebut Dalvik virtual machine; slide baru bilang Android modern memakai ART, bukan Dalvik. Tulis \"Android Runtime (ART)\" di jawaban.\nAlur: source Kotlin/Java → build tools → DEX bytecode → ART → CPU.",
+      "quick_check": {
+        "q": "Layer mana yang menjalankan DEX bytecode?",
+        "a": "Android Runtime (ART)."
+      }
+    }
+  },
+  {
+    "chapter": "1. Android Architecture",
+    "title": "Layer 4: Platform Libraries",
+    "tag": "WHAT",
+    "body": "Native C/C++ libraries: SQLite (database), OpenGL ES / Vulkan (graphics), Media (audio/video codecs), SSL (secure link), WebKit (web content), FreeType (fonts).",
+    "quick_check": {
+      "q": "Where do SQLite and OpenGL live?",
+      "a": "Platform Libraries."
+    },
+    "id": {
+      "chapter": "1. Arsitektur Android",
+      "title": "Layer 4: Platform Libraries",
+      "body": "Library native C/C++: SQLite (database), OpenGL ES / Vulkan (grafik), Media (codec audio/video), SSL (koneksi aman), WebKit (konten web), FreeType (font).",
+      "quick_check": {
+        "q": "Di layer mana SQLite dan OpenGL?",
+        "a": "Platform Libraries."
+      }
+    }
+  },
+  {
+    "chapter": "1. Android Architecture",
+    "title": "Layer 5: Linux Kernel",
+    "tag": "WHAT",
+    "body": "The foundation. It manages device drivers (camera, display, Bluetooth, audio), memory, processes, networking and low-level security.\nIt sits between hardware and the other layers.",
+    "explain": "Its five features: security, memory management, process management, network stack, driver model.",
+    "quick_check": {
+      "q": "Which layer contains the device drivers?",
+      "a": "Linux Kernel."
+    },
+    "id": {
+      "chapter": "1. Arsitektur Android",
+      "title": "Layer 5: Linux Kernel",
+      "body": "Fondasinya. Mengatur driver perangkat (kamera, layar, Bluetooth, audio), memori, proses, jaringan, dan keamanan tingkat rendah.\nBerada di antara hardware dan layer lain.",
+      "explain": "Lima fiturnya: security, memory management, process management, network stack, driver model.",
+      "quick_check": {
+        "q": "Layer mana yang berisi driver perangkat?",
+        "a": "Linux Kernel."
+      }
+    }
+  },
+  {
+    "chapter": "1. Android Architecture",
+    "title": "An app never touches hardware directly",
+    "tag": "WHY",
+    "body": "A request goes down the layers and back up.\nTaking a photo: App → Camera API → camera system service → native libraries → driver → camera hardware.",
+    "wrong_right": {
+      "wrong": "\"My app talks directly to the camera.\"",
+      "right": "\"My app calls a Camera API; services and drivers reach the hardware.\"",
+      "reason": "Apps normally use framework APIs and system services (slide: Common Misunderstandings)."
+    },
+    "quick_check": {
+      "q": "Why use framework APIs instead of the hardware?",
+      "a": "Abstraction, security and portability."
+    },
+    "id": {
+      "chapter": "1. Arsitektur Android",
+      "title": "App tidak pernah menyentuh hardware langsung",
+      "body": "Permintaan turun lewat layer lalu naik kembali.\nMengambil foto: App → Camera API → camera system service → library native → driver → hardware kamera.",
+      "wrong_right_reason": "App biasanya memakai API framework dan system service (slide: Common Misunderstandings).",
+      "quick_check": {
+        "q": "Kenapa pakai API framework, bukan hardware langsung?",
+        "a": "Abstraksi, keamanan, dan portabilitas."
+      }
+    }
+  },
+  {
+    "chapter": "1. Android Architecture",
+    "title": "Framework, Libraries, Runtime: do not mix up",
+    "tag": "REMEMBER",
+    "body": "Framework = managers for developers (Activity, Notification).\nPlatform Libraries = native tools (SQLite, OpenGL, Media).\nART = runs app code. ART is not the Linux Kernel.",
+    "quick_check": {
+      "q": "Is ART the same as the Linux Kernel?",
+      "a": "No. ART is the managed runtime; the kernel is the low-level OS foundation."
+    },
+    "id": {
+      "chapter": "1. Arsitektur Android",
+      "title": "Framework, Libraries, Runtime: jangan tertukar",
+      "body": "Framework = manajer untuk developer (Activity, Notification).\nPlatform Libraries = alat native (SQLite, OpenGL, Media).\nART = menjalankan kode app. ART bukan Linux Kernel.",
+      "quick_check": {
+        "q": "Apakah ART sama dengan Linux Kernel?",
+        "a": "Tidak. ART adalah managed runtime; kernel adalah fondasi OS tingkat rendah."
+      }
+    }
+  },
+  {
+    "chapter": "2. App Components",
+    "title": "Four app components",
+    "tag": "WHAT",
+    "body": "Activity: a screen the user interacts with.\nService: background or long-running work.\nBroadcastReceiver: responds to system or app events.\nContentProvider: shares structured data.",
+    "explain": "An app also has resources (layouts, strings, images, themes) and AndroidManifest.xml.",
+    "quick_check": {
+      "q": "Which component keeps music playing after you leave the screen?",
+      "a": "Service."
+    },
+    "id": {
+      "chapter": "2. Komponen Aplikasi",
+      "title": "Empat komponen app",
+      "body": "Activity: layar yang berinteraksi dengan user.\nService: pekerjaan latar belakang atau lama.\nBroadcastReceiver: merespons event sistem atau app.\nContentProvider: berbagi data terstruktur.",
+      "explain": "App juga punya resources (layout, string, gambar, tema) dan AndroidManifest.xml.",
+      "quick_check": {
+        "q": "Komponen mana yang membuat musik tetap jalan setelah kamu meninggalkan layar?",
+        "a": "Service."
+      }
+    }
+  },
+  {
+    "chapter": "2. App Components",
+    "title": "Activity: a screen with behavior",
+    "tag": "WHAT",
+    "body": "An Activity is usually one screen. onCreate() sets it up; setContentView() connects the Java code to the XML layout.",
+    "code": "public class MainActivity extends Activity {\n    @Override\n    protected void onCreate(Bundle state) {\n        super.onCreate(state);\n        setContentView(R.layout.activity_main);\n    }\n}",
+    "quick_check": {
+      "q": "What does setContentView() do?",
+      "a": "Connects the Java Activity to its XML layout."
+    },
+    "id": {
+      "chapter": "2. Komponen Aplikasi",
+      "title": "Activity: layar dengan perilaku",
+      "body": "Activity biasanya satu layar. onCreate() menyiapkannya; setContentView() menghubungkan kode Java ke layout XML.",
+      "quick_check": {
+        "q": "Apa fungsi setContentView()?",
+        "a": "Menghubungkan Activity Java ke layout XML-nya."
+      }
+    }
+  },
+  {
+    "chapter": "2. App Components",
+    "title": "Keywords for Service, Receiver, Provider",
+    "tag": "REMEMBER",
+    "body": "Service = works with no visible screen.\nBroadcastReceiver = listens for announcements (alarm fired, battery low).\nContentProvider = controlled data sharing between apps.",
+    "quick_check": {
+      "q": "Which component receives a scheduled reminder broadcast?",
+      "a": "BroadcastReceiver."
+    },
+    "id": {
+      "chapter": "2. Komponen Aplikasi",
+      "title": "Kata kunci Service, Receiver, Provider",
+      "body": "Service = bekerja tanpa layar terlihat.\nBroadcastReceiver = mendengar pengumuman (alarm berbunyi, baterai lemah).\nContentProvider = berbagi data terkontrol antar app.",
+      "quick_check": {
+        "q": "Komponen mana yang menerima broadcast pengingat terjadwal?",
+        "a": "BroadcastReceiver."
+      }
+    }
+  },
+  {
+    "chapter": "2. App Components",
+    "title": "AndroidManifest.xml",
+    "tag": "WHAT",
+    "body": "Declares the components, permissions and capabilities of the app, and which Activity opens first (MAIN + LAUNCHER).\nAn Activity that is not listed cannot start (\"Activity not found\").",
+    "quick_check": {
+      "q": "Where must every Activity be registered?",
+      "a": "AndroidManifest.xml."
+    },
+    "id": {
+      "chapter": "2. Komponen Aplikasi",
+      "title": "AndroidManifest.xml",
+      "body": "Mendeklarasikan komponen, permission, dan kemampuan app, serta Activity yang dibuka pertama (MAIN + LAUNCHER).\nActivity yang tidak terdaftar tidak bisa jalan (\"Activity not found\").",
+      "quick_check": {
+        "q": "Di mana setiap Activity harus didaftarkan?",
+        "a": "AndroidManifest.xml."
+      }
+    }
+  },
+  {
+    "chapter": "2. App Components",
+    "title": "Intent: open another screen",
+    "tag": "HOW",
+    "body": "[ADDED] An Intent is a request to Android, for example \"open another Activity\". putExtra() sends a small value along.\nThe Expense Tracker sends the chosen month to the Summary screen this way.",
+    "code": "Intent i = new Intent(this, SummaryActivity.class);\ni.putExtra(\"month\", \"2026-11\");\nstartActivity(i);",
+    "quick_check": {
+      "q": "Which component is used to request opening another Activity?",
+      "a": "Intent."
+    },
+    "id": {
+      "chapter": "2. Komponen Aplikasi",
+      "title": "Intent: membuka layar lain",
+      "body": "[ADDED] Intent adalah permintaan ke Android, misalnya \"buka Activity lain\". putExtra() mengirim nilai kecil bersamanya.\nExpense Tracker mengirim bulan terpilih ke layar Summary dengan cara ini.",
+      "quick_check": {
+        "q": "Komponen mana yang dipakai untuk meminta membuka Activity lain?",
+        "a": "Intent."
+      }
+    }
+  },
+  {
+    "chapter": "3. Activity Lifecycle",
+    "title": "The lifecycle order",
+    "tag": "WHAT",
+    "body": "onCreate() → onStart() → onResume() → user interacts → onPause() → onStop() → onDestroy().\nAndroid controls this order, not your code.",
+    "quick_check": {
+      "q": "Which method is called first when an Activity starts?",
+      "a": "onCreate()."
+    },
+    "demo": "lifecycle",
+    "id": {
+      "chapter": "3. Lifecycle Activity",
+      "title": "Urutan lifecycle",
+      "body": "onCreate() → onStart() → onResume() → user berinteraksi → onPause() → onStop() → onDestroy().\nAndroid yang mengatur urutan ini, bukan kodemu.",
+      "quick_check": {
+        "q": "Method mana yang dipanggil pertama saat Activity mulai?",
+        "a": "onCreate()."
+      }
+    }
+  },
+  {
+    "chapter": "3. Activity Lifecycle",
+    "title": "Why the lifecycle matters",
+    "tag": "WHY",
+    "body": "A user can leave, return, rotate or close the app. Android may recreate an Activity after rotation or memory pressure.\nSave important information instead of assuming the screen stays alive.",
+    "explain": "onDestroy(): the Activity may be removed. A normal variable is lost then, which is why the Study Planner stores data in SharedPreferences.",
+    "quick_check": {
+      "q": "When may onPause() / onStop() be called?",
+      "a": "When the app moves to the background."
+    },
+    "id": {
+      "chapter": "3. Lifecycle Activity",
+      "title": "Kenapa lifecycle penting",
+      "body": "User bisa keluar, kembali, memutar layar, atau menutup app. Android bisa membuat ulang Activity setelah rotasi atau memori penuh.\nSimpan informasi penting, jangan berasumsi layar selalu hidup.",
+      "explain": "onDestroy(): Activity mungkin dihapus. Variabel biasa hilang saat itu, karena itu Study Planner menyimpan data di SharedPreferences.",
+      "quick_check": {
+        "q": "Kapan onPause() / onStop() bisa dipanggil?",
+        "a": "Saat app pindah ke latar belakang."
+      }
+    }
+  },
+  {
+    "chapter": "4. Screens: XML, Layouts, Widgets",
+    "title": "XML = looks, Java = actions",
+    "tag": "WHAT",
+    "body": "XML describes what the screen looks like. Java describes what happens when the user interacts.\nIf you can see it (text, colour, position) → XML. If it is an action or a calculation → Activity.",
+    "quick_check": {
+      "q": "Where do you change the text of a button?",
+      "a": "In the XML (android:text)."
+    },
+    "demo": "xml-activity",
+    "id": {
+      "chapter": "4. Layar: XML, Layout, Widget",
+      "title": "XML = tampilan, Java = aksi",
+      "body": "XML menjelaskan seperti apa tampilan layar. Java menjelaskan apa yang terjadi saat user berinteraksi.\nKalau terlihat (teks, warna, posisi) → XML. Kalau aksi atau hitungan → Activity.",
+      "quick_check": {
+        "q": "Di mana kamu mengubah teks tombol?",
+        "a": "Di XML (android:text)."
+      }
+    }
+  },
+  {
+    "chapter": "4. Screens: XML, Layouts, Widgets",
+    "title": "Layouts",
+    "tag": "WHAT",
+    "body": "LinearLayout: arranges views vertically or horizontally.\nScrollView: scrolls when content does not fit.\nConstraintLayout: positions views relative to constraints.\nTeaching choice: a vertical LinearLayout inside a ScrollView.",
+    "quick_check": {
+      "q": "Which layout arranges elements vertically or horizontally?",
+      "a": "LinearLayout."
+    },
+    "id": {
+      "chapter": "4. Layar: XML, Layout, Widget",
+      "title": "Layout",
+      "body": "LinearLayout: menyusun view vertikal atau horizontal.\nScrollView: bisa di-scroll saat isi tidak muat.\nConstraintLayout: posisi view relatif terhadap constraint.\nPilihan mengajar: LinearLayout vertikal di dalam ScrollView.",
+      "quick_check": {
+        "q": "Layout mana yang menyusun elemen vertikal atau horizontal?",
+        "a": "LinearLayout."
+      }
+    }
+  },
+  {
+    "chapter": "4. Screens: XML, Layouts, Widgets",
+    "title": "Common widgets",
+    "tag": "REMEMBER",
+    "body": "EditText: the user types input.\nButton: Add, Save, Calculate.\nTextView: non-editable text (totals, results).\nListView: a list of records.\nTimePickerDialog: choose a time.\nProgressBar: loading.",
+    "quick_check": {
+      "q": "Which widget shows non-editable text?",
+      "a": "TextView."
+    },
+    "id": {
+      "chapter": "4. Layar: XML, Layout, Widget",
+      "title": "Widget yang umum",
+      "body": "EditText: user mengetik input.\nButton: Add, Save, Calculate.\nTextView: teks yang tidak bisa diedit (total, hasil).\nListView: daftar data.\nTimePickerDialog: memilih jam.\nProgressBar: loading.",
+      "quick_check": {
+        "q": "Widget mana yang menampilkan teks yang tidak bisa diedit?",
+        "a": "TextView."
+      }
+    }
+  },
+  {
+    "chapter": "4. Screens: XML, Layouts, Widgets",
+    "title": "IDs connect XML to Java",
+    "tag": "HOW",
+    "body": "Give each view an android:id in XML, then find it with findViewById() in Java. The two names must match exactly.\nfindViewById finds the view; getText() reads what is typed in it.",
+    "code": "<EditText\n    android:id=\"@+id/etHours\"\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"wrap_content\"\n    android:hint=\"Enter hours\" />",
+    "wrong_right": {
+      "wrong": "EditText etHours = findViewById(R.id.etHour);   // typo",
+      "right": "EditText etHours = findViewById(R.id.etHours);",
+      "reason": "The id in Java must match the XML exactly, or the view is not found (red error or crash). Slide: Debugging, \"Check XML IDs and findViewById() names\"."
+    },
+    "quick_check": {
+      "q": "What does findViewById return: the box or its content?",
+      "a": "The box (the view). Use getText().toString() for the content."
+    },
+    "id": {
+      "chapter": "4. Layar: XML, Layout, Widget",
+      "title": "ID menghubungkan XML ke Java",
+      "body": "Beri setiap view android:id di XML, lalu temukan dengan findViewById() di Java. Kedua nama harus persis sama.\nfindViewById menemukan view; getText() membaca isi yang diketik.",
+      "wrong_right_reason": "Id di Java harus persis sama dengan XML, kalau tidak view tidak ketemu (error merah atau crash). Slide: Debugging, \"Check XML IDs and findViewById() names\".",
+      "quick_check": {
+        "q": "Apa yang dikembalikan findViewById: kotaknya atau isinya?",
+        "a": "Kotaknya (view). Pakai getText().toString() untuk isinya."
+      }
+    }
+  },
+  {
+    "chapter": "4. Screens: XML, Layouts, Widgets",
+    "title": "Design principles",
+    "tag": "REMEMBER",
+    "body": "Clarity: meaningful labels.\nConsistency: similar spacing and styles.\nFeedback: show success, error, loading and empty states.\nAccessibility: readable text, large tap targets.\nValidation: block blank or wrong input before saving.",
+    "quick_check": {
+      "q": "Name two design principles.",
+      "a": "For example Clarity and Validation (any two of the five)."
+    },
+    "id": {
+      "chapter": "4. Layar: XML, Layout, Widget",
+      "title": "Prinsip desain",
+      "body": "Clarity: label yang bermakna.\nConsistency: spasi dan gaya yang seragam.\nFeedback: tampilkan status sukses, error, loading, dan kosong.\nAccessibility: teks terbaca, area tap besar.\nValidation: cegah input kosong atau salah sebelum disimpan.",
+      "quick_check": {
+        "q": "Sebutkan dua prinsip desain.",
+        "a": "Misalnya Clarity dan Validation (dua dari lima mana saja)."
+      }
+    }
+  },
+  {
+    "chapter": "5. Events and Validation",
+    "title": "The event pattern",
+    "tag": "HOW",
+    "body": "Every interactive feature follows five steps:\nfind view → listen for click → validate → process → update UI.\nThis is the pattern for the long exam questions.",
+    "code": "Button addButton = findViewById(R.id.addButton);\naddButton.setOnClickListener(v -> {\n    String name = nameInput.getText().toString().trim();\n    if (name.isEmpty()) {\n        nameInput.setError(\"Enter student name\");\n        return;\n    }\n    // Save or process the entered name here.\n});",
+    "quick_check": {
+      "q": "What is the step right after \"listen for click\"?",
+      "a": "Validate."
+    },
+    "demo": "parking",
+    "id": {
+      "chapter": "5. Event dan Validasi",
+      "title": "Pola event",
+      "body": "Setiap fitur interaktif mengikuti lima langkah:\nfind view → listen for click → validate → process → update UI.\nIni pola untuk soal panjang di ujian.",
+      "quick_check": {
+        "q": "Apa langkah tepat setelah \"listen for click\"?",
+        "a": "Validate."
+      }
+    }
+  },
+  {
+    "chapter": "5. Events and Validation",
+    "title": "Validation: reject what is wrong",
+    "tag": "HOW",
+    "body": "[ADDED] Three checks for a number input: empty, not a number, zero or negative.\nCheck the text first, convert it to a number, then compare with 0. Show the error with setError() and return.",
+    "wrong_right": {
+      "wrong": "if (hours >= 0) { return; }",
+      "right": "if (hours <= 0) { return; }",
+      "reason": "Reject the wrong case. >= 0 would reject valid hours; <= 0 rejects 0 and negatives."
+    },
+    "quick_check": {
+      "q": "Which comparison rejects both 0 and negative hours?",
+      "a": "hours <= 0."
+    },
+    "id": {
+      "chapter": "5. Event dan Validasi",
+      "title": "Validasi: tolak yang salah",
+      "body": "[ADDED] Tiga cek untuk input angka: kosong, bukan angka, nol atau negatif.\nCek teksnya dulu, ubah jadi angka, baru bandingkan dengan 0. Tampilkan error dengan setError() lalu return.",
+      "wrong_right_reason": "Tolak kasus yang salah. >= 0 akan menolak jam yang valid; <= 0 menolak 0 dan negatif.",
+      "quick_check": {
+        "q": "Perbandingan mana yang menolak 0 sekaligus jam negatif?",
+        "a": "hours <= 0."
+      }
+    }
+  },
+  {
+    "chapter": "5. Events and Validation",
+    "title": "Worked example: Parking Fee",
+    "tag": "HOW",
+    "body": "[ADDED] Mock exam Q12: Rs. 100 per hour. Read the hours, validate, compute fee = hours × 100, show \"Total Fee: Rs. 300\" for 3 hours.\nNever hard-code the result.",
+    "code": "btnCalc.setOnClickListener(v -> {\n    String text = etHours.getText().toString().trim();\n    if (text.isEmpty()) {\n        etHours.setError(\"Enter hours\");\n        return;\n    }\n    int hours;\n    try {\n        hours = Integer.parseInt(text);\n    } catch (NumberFormatException e) {\n        etHours.setError(\"Numbers only\");\n        return;\n    }\n    if (hours <= 0) {\n        etHours.setError(\"Must be > 0\");\n        return;\n    }\n    int fee = hours * 100;\n    tvResult.setText(\"Total Fee: Rs. \" + fee);\n});",
+    "quick_check": {
+      "q": "What is displayed for 3 hours?",
+      "a": "Total Fee: Rs. 300"
+    },
+    "id": {
+      "chapter": "5. Event dan Validasi",
+      "title": "Contoh: Parking Fee",
+      "body": "[ADDED] Mock exam Q12: Rs. 100 per jam. Baca jam, validasi, hitung fee = jam × 100, tampilkan \"Total Fee: Rs. 300\" untuk 3 jam.\nJangan menulis hasil secara langsung.",
+      "quick_check": {
+        "q": "Apa yang tampil untuk 3 jam?",
+        "a": "Total Fee: Rs. 300"
+      }
+    }
+  },
+  {
+    "chapter": "5. Events and Validation",
+    "title": "Toast and setError",
+    "tag": "HOW",
+    "body": "[ADDED] Toast: a short message that appears for a moment and disappears by itself (for example \"Saved\").\nsetError(): a red message on an input field.\nToast is also used to check that a click runs (debugging).",
+    "code": "Toast.makeText(this, \"Saved\", Toast.LENGTH_SHORT).show();",
+    "quick_check": {
+      "q": "Which Android feature shows a brief confirmation message?",
+      "a": "Toast."
+    },
+    "id": {
+      "chapter": "5. Event dan Validasi",
+      "title": "Toast dan setError",
+      "body": "[ADDED] Toast: pesan singkat yang muncul sebentar lalu hilang sendiri (misalnya \"Saved\").\nsetError(): pesan merah pada kolom input.\nToast juga dipakai untuk memastikan klik berjalan (debugging).",
+      "quick_check": {
+        "q": "Fitur Android mana yang menampilkan pesan konfirmasi singkat?",
+        "a": "Toast."
+      }
+    }
+  },
+  {
+    "chapter": "6. Data Storage",
+    "title": "Which storage?",
+    "tag": "REMEMBER",
+    "body": "SharedPreferences: small settings or simple values (last food order, reminder list).\nSQLite: structured records with several fields (students, attendance, transactions).\nSimple key-value → SharedPreferences; related records → SQLite.",
+    "quick_check": {
+      "q": "A single saved value after closing the app: which storage?",
+      "a": "SharedPreferences."
+    },
+    "id": {
+      "chapter": "6. Penyimpanan Data",
+      "title": "Penyimpanan mana?",
+      "body": "SharedPreferences: pengaturan kecil atau nilai sederhana (pesanan terakhir, daftar pengingat).\nSQLite: data terstruktur dengan banyak field (siswa, absensi, transaksi).\nKey-value sederhana → SharedPreferences; data berkaitan → SQLite.",
+      "quick_check": {
+        "q": "Satu nilai yang disimpan setelah app ditutup: penyimpanan mana?",
+        "a": "SharedPreferences."
+      }
+    }
+  },
+  {
+    "chapter": "6. Data Storage",
+    "title": "SharedPreferences: the small notebook",
+    "tag": "HOW",
+    "body": "[ADDED] Stores name-value pairs that stay after the app is closed. A normal variable is lost.\nSave with edit().putString(...).apply(); restore with getString(key, default) in onCreate().",
+    "code": "SharedPreferences prefs = getSharedPreferences(\"study\", MODE_PRIVATE);\n\n// save\nprefs.edit()\n     .putString(\"subject\", subject)\n     .putString(\"time\", selectedTime)\n     .apply();\n\n// restore (in onCreate)\nString s = prefs.getString(\"subject\", \"\");\nString t = prefs.getString(\"time\", \"\");",
+    "quick_check": {
+      "q": "Why not keep the subject in a normal variable?",
+      "a": "The variable is lost when the app closes."
+    },
+    "id": {
+      "chapter": "6. Penyimpanan Data",
+      "title": "SharedPreferences: buku catatan kecil",
+      "body": "[ADDED] Menyimpan pasangan nama-nilai yang tetap ada setelah app ditutup. Variabel biasa hilang.\nSimpan dengan edit().putString(...).apply(); pulihkan dengan getString(key, default) di onCreate().",
+      "quick_check": {
+        "q": "Kenapa subjek tidak disimpan di variabel biasa?",
+        "a": "Variabel hilang saat app ditutup."
+      }
+    }
+  },
+  {
+    "chapter": "6. Data Storage",
+    "title": "TimePickerDialog and the Study Planner",
+    "tag": "HOW",
+    "body": "[ADDED] Mock exam Q13: enter a subject, pick a time with a TimePickerDialog, tap Save Plan, show it again after reopening.\nValidate: subject not empty and a time chosen.",
+    "code": "btnTime.setOnClickListener(v -> {\n    new TimePickerDialog(this, (view, hour, minute) -> {\n        selectedTime = hour + \":\" + minute;\n        tvTime.setText(selectedTime);\n    }, 8, 0, true).show();\n});",
+    "quick_check": {
+      "q": "What does the user choose with a TimePickerDialog?",
+      "a": "A time (hour and minute)."
+    },
+    "demo": "study-planner",
+    "id": {
+      "chapter": "6. Penyimpanan Data",
+      "title": "TimePickerDialog dan Study Planner",
+      "body": "[ADDED] Mock exam Q13: isi subjek, pilih jam dengan TimePickerDialog, tekan Save Plan, tampilkan lagi setelah app dibuka ulang.\nValidasi: subjek tidak kosong dan jam sudah dipilih.",
+      "quick_check": {
+        "q": "Apa yang dipilih user dengan TimePickerDialog?",
+        "a": "Sebuah jam (jam dan menit)."
+      }
+    }
+  },
+  {
+    "chapter": "6. Data Storage",
+    "title": "SQLite and CRUD",
+    "tag": "WHAT",
+    "body": "SQLite stores data in tables, rows and columns. The four basic operations are CRUD: Create, Read, Update, Delete.\nExample: register a student, show attendance, change a daily status, delete a record.",
+    "code": "CREATE TABLE students (\n    id INTEGER PRIMARY KEY AUTOINCREMENT,\n    name TEXT NOT NULL,\n    roll TEXT NOT NULL UNIQUE\n);",
+    "quick_check": {
+      "q": "What does CRUD stand for?",
+      "a": "Create, Read, Update, Delete."
+    },
+    "id": {
+      "chapter": "6. Penyimpanan Data",
+      "title": "SQLite dan CRUD",
+      "body": "SQLite menyimpan data dalam tabel, baris, dan kolom. Empat operasi dasarnya CRUD: Create, Read, Update, Delete.\nContoh: daftarkan siswa, tampilkan absensi, ubah status harian, hapus data.",
+      "quick_check": {
+        "q": "CRUD singkatan dari apa?",
+        "a": "Create, Read, Update, Delete."
+      }
+    }
+  },
+  {
+    "chapter": "6. Data Storage",
+    "title": "Money as integer cents",
+    "tag": "WHY",
+    "body": "The Expense Tracker stores 12.50 as 1250 cents. Decimal (floating point) numbers can cause rounding errors; integers are exact.\nBalance = income − expenses.",
+    "formula": [
+      "\\text{Balance} = 3000 - (450 + 120) = 2430"
+    ],
+    "quick_check": {
+      "q": "Why store money as integer cents?",
+      "a": "To avoid rounding errors of floating-point numbers."
+    },
+    "id": {
+      "chapter": "6. Penyimpanan Data",
+      "title": "Uang sebagai integer cents",
+      "body": "Expense Tracker menyimpan 12.50 sebagai 1250 cents. Bilangan desimal (floating point) bisa menimbulkan galat pembulatan; integer itu tepat.\nBalance = pemasukan − pengeluaran.",
+      "quick_check": {
+        "q": "Kenapa uang disimpan sebagai integer cents?",
+        "a": "Untuk menghindari galat pembulatan bilangan floating point."
+      }
+    }
+  },
+  {
+    "chapter": "7. Web APIs and Background Work",
+    "title": "Web APIs and JSON",
+    "tag": "WHAT",
+    "body": "An API returns data, often as JSON. Weather app flow: search city → geocoding API → coordinates → forecast API → show weather.\nShow loading, no-result and network-error states.",
+    "quick_check": {
+      "q": "What should happen if the city does not exist?",
+      "a": "Show a useful message and allow another search; never stay on \"Loading...\"."
+    },
+    "id": {
+      "chapter": "7. Web API dan Pekerjaan Latar Belakang",
+      "title": "Web API dan JSON",
+      "body": "API mengembalikan data, sering berupa JSON. Alur app cuaca: cari kota → geocoding API → koordinat → forecast API → tampilkan cuaca.\nTampilkan status loading, tidak ada hasil, dan error jaringan.",
+      "quick_check": {
+        "q": "Apa yang harus terjadi jika kota tidak ada?",
+        "a": "Tampilkan pesan yang berguna dan izinkan pencarian lain; jangan terjebak di \"Loading...\"."
+      }
+    }
+  },
+  {
+    "chapter": "7. Web APIs and Background Work",
+    "title": "Permission and background thread",
+    "tag": "HOW",
+    "body": "Add the INTERNET permission in the Manifest. Run network requests on a background thread (Executor) so the screen does not freeze, then update the UI with runOnUiThread.",
+    "code": "<uses-permission android:name=\"android.permission.INTERNET\" />",
+    "quick_check": {
+      "q": "Why must weather requests not run on the main UI thread?",
+      "a": "They would block (freeze) the UI."
+    },
+    "id": {
+      "chapter": "7. Web API dan Pekerjaan Latar Belakang",
+      "title": "Permission dan background thread",
+      "body": "Tambahkan permission INTERNET di Manifest. Jalankan request jaringan di background thread (Executor) supaya layar tidak membeku, lalu update UI dengan runOnUiThread.",
+      "quick_check": {
+        "q": "Kenapa request cuaca tidak boleh di main UI thread?",
+        "a": "Akan memblokir (membekukan) UI."
+      }
+    }
+  },
+  {
+    "chapter": "7. Web APIs and Background Work",
+    "title": "Reminders: alarm, receiver, notification",
+    "tag": "WHAT",
+    "body": "Select time → schedule alarm (AlarmManager) → the system fires → BroadcastReceiver → notification.\nAndroid 13+ needs notification permission; Android 8+ needs a notification channel. Inexact alarms can be delayed.",
+    "quick_check": {
+      "q": "Which component builds the notification when the alarm fires?",
+      "a": "The BroadcastReceiver."
+    },
+    "id": {
+      "chapter": "7. Web API dan Pekerjaan Latar Belakang",
+      "title": "Pengingat: alarm, receiver, notifikasi",
+      "body": "Pilih jam → jadwalkan alarm (AlarmManager) → sistem memicu → BroadcastReceiver → notifikasi.\nAndroid 13+ butuh permission notifikasi; Android 8+ butuh notification channel. Alarm tidak tepat bisa tertunda.",
+      "quick_check": {
+        "q": "Komponen mana yang membuat notifikasi saat alarm berbunyi?",
+        "a": "BroadcastReceiver."
+      }
+    }
+  },
+  {
+    "chapter": "8. The Five Class Projects",
+    "title": "The five projects compared",
+    "tag": "REMEMBER",
+    "body": "1 Expense Tracker: SQLite, multiple screens.\n2 Weather Forecast: web API, JSON, ProgressBar.\n3 Attendance: SQLite two tables.\n4 Medicine Reminder: TimePicker, SharedPreferences, alarm.\n5 Food Ordering: arrays, loops, cart total.",
+    "quick_check": {
+      "q": "Which project uses a web API and JSON?",
+      "a": "Weather Forecast."
+    },
+    "id": {
+      "chapter": "8. Lima Proyek Kelas",
+      "title": "Perbandingan lima proyek",
+      "body": "1 Expense Tracker: SQLite, banyak layar.\n2 Weather Forecast: web API, JSON, ProgressBar.\n3 Attendance: SQLite dua tabel.\n4 Medicine Reminder: TimePicker, SharedPreferences, alarm.\n5 Food Ordering: array, loop, total keranjang.",
+      "quick_check": {
+        "q": "Proyek mana yang memakai web API dan JSON?",
+        "a": "Weather Forecast."
+      }
+    }
+  },
+  {
+    "chapter": "8. The Five Class Projects",
+    "title": "Formulas to know",
+    "tag": "REMEMBER",
+    "body": "Attendance % = present days ÷ total recorded days × 100.\nCart total = sum of price × quantity (a loop over the arrays).\nBalance = income − expenses.",
+    "code": "int total = 0;\nfor (int i = 0; i < prices.length; i++) {\n    total += prices[i] * quantity[i];\n}",
+    "formula": [
+      "\\text{Attendance} = \\dfrac{8}{10} \\times 100 = 80\\%",
+      "\\text{Total} = \\sum_i \\text{price}_i \\times \\text{quantity}_i = 2\\cdot 500 + 250 + 200 = 1450"
+    ],
+    "quick_check": {
+      "q": "8 present out of 10 recorded days: attendance?",
+      "a": "80%."
+    },
+    "id": {
+      "chapter": "8. Lima Proyek Kelas",
+      "title": "Rumus yang perlu diketahui",
+      "body": "Attendance % = hari hadir ÷ total hari tercatat × 100.\nTotal keranjang = jumlah harga × kuantitas (loop pada array).\nBalance = pemasukan − pengeluaran.",
+      "quick_check": {
+        "q": "Hadir 8 dari 10 hari tercatat: persentase kehadiran?",
+        "a": "80%."
+      }
+    }
+  },
+  {
+    "chapter": "8. The Five Class Projects",
+    "title": "Plan, test, debug",
+    "tag": "HOW",
+    "body": "Plan: Problem → Screens → Data model → UI + Java → Test.\nTest empty, wrong and repeated input, and save-then-restart.\nDebug: read the first error in Logcat, check XML ids, confirm the Manifest Activity, use Toast to see that a click runs.",
+    "quick_check": {
+      "q": "What should you read first when debugging?",
+      "a": "The first meaningful error message in Build Output or Logcat."
+    },
+    "id": {
+      "chapter": "8. Lima Proyek Kelas",
+      "title": "Rencanakan, uji, debug",
+      "body": "Rencana: Problem → Screens → Data model → UI + Java → Test.\nUji input kosong, salah, dan berulang, serta simpan-lalu-restart.\nDebug: baca error pertama di Logcat, cek id XML, pastikan Activity ada di Manifest, pakai Toast untuk memastikan klik berjalan.",
+      "quick_check": {
+        "q": "Apa yang dibaca pertama saat debugging?",
+        "a": "Pesan error pertama yang bermakna di Build Output atau Logcat."
+      }
+    }
+  }
+]

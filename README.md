@@ -32,8 +32,11 @@ college-physics-2/
   homework.json, homework/  HW01, HW02, HW04, HW05 practice + solution PDFs (generated)
 comprehensive-chinese-a/
   slides.json, quiz.json    Lessons with 汉字 + pinyin on every slide (generated, see below)
+mobile-development/
+  slides.json, quiz.json    8 chapters + chapter quizzes + teacher's mock exam + AI-made mock test, with 5 animated demos
 tools/figures.py            draws the Data Structure figures
 tools/chinese/              source of the Comprehensive Chinese A lessons
+tools/mobile-development/   source of the Mobile Application Development slides, quizzes and demos
 ```
 
 A subject folder shows **"Coming soon"** until it has a `slides.json` or `quiz.json`.
@@ -328,6 +331,11 @@ A slide with `"demo": "<name>"` gets a live widget under it ("▶ Try it"). Demo
 | `dipole-axis` | Ch 22 Dipole Field | exact field vs 2kp/z³ on a log scale |
 | `ink-jet` | Ch 22 Ink-Jet Printing | fire a drop between the plates; y = QEL²/(2mvₓ²) |
 | `dipole-field` | Ch 22 Dipole in a Field | rotate or release the dipole; τ = pE sinθ, U = −pE cosθ |
+| `layers` | Mobile Dev ch 1 | animated request travelling down the five Android layers and back (photo, location, video) |
+| `lifecycle` | Mobile Dev ch 3 | press Home / Back / Rotate and watch the callbacks; a variable is lost, SharedPreferences is kept |
+| `xml-activity` | Mobile Dev ch 4 | decide for 8 changes whether they belong in XML or the Activity; the phone updates |
+| `parking` | Mobile Dev ch 5 | the 5-step event pattern lights up as you tap Calculate (empty, abc, 0, -2, 3) |
+| `study-planner` | Mobile Dev ch 6 | TimePickerDialog + Save Plan; close and reopen the app with or without SharedPreferences |
 | `flux-loop` | Ch 23 Flux | tilt a loop; Φ = EA cosθ goes +, 0, − |
 | `gauss` | Ch 23 Gauss' Law | drag a Gaussian sphere; numerically integrated ∮E·dA vs q_enc/ε₀ |
 | `spheres` | Ch 23 Spherical Symmetry | E(r) for shell, solid sphere, and sphere + conducting shell |
@@ -420,3 +428,23 @@ Output JSON matching the slides.json format in this repo's README.
 
 Slide content is based on our lecturers' course materials. Each subject page names its textbook
 when the course slides do. Figures are redrawn for this site.
+
+---
+
+## Mobile Application Development
+
+The slides, quizzes and demos are written in `tools/mobile-development/` (`slides_src.py`, `quiz_src.py`,
+`demos_mobile.js`). Edit those, then run:
+
+```bash
+python3 tools/mobile-development/build.py
+```
+
+It rewrites `mobile-development/slides.json` and `quiz.json`, and copies `demos_mobile.js` into `demos.js` between
+the `<mobile-demos>` markers. Quiz options are shuffled with a fixed seed, so `answer` is always computed for you.
+
+- Sources: the teacher's Android Architecture PPT, the Mobile Application Architecture deck, the SCUT lecture and the
+  five class-practice guides. Anything else is marked `[ADDED]`.
+- **Mock Exam (teacher's paper)**: Section A (10 MCQ) as written by the teacher; Q11-Q13 are open questions whose
+  model answers were written for this site (`[ADDED]`).
+- **Mock Test (AI-made practice)**: new questions in the same style, all `[ADDED]`.
